@@ -1,0 +1,96 @@
+NAAb
+====
+
+NAAb is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2024 by Brandon Mackert.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222024%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2024
+ https://pldb.io/concepts/../lists/creators.html#q=Brandon%20Mackert Brandon Mackert
+
+#1596 on PLDB
+2 Years Old
+
+```Download source code:
+git clone https://github.com/b-macker/NAAb
+```
+
+NAAb is a polyglot programming language that embeds 12 languages (Python, JavaScript, Rust, C++, Go, Nim, Zig, Julia, Ruby, PHP, C#, Shell) in a single file with a built-in LLM governance engine. It includes 50+ governance checks that detect hallucinated APIs, oversimplified stubs, incomplete logic, and security issues in AI-generated code. Features include variable binding across language boundaries, parallel polyglot execution, empirical benchmarking via naab-lang calibrate, and three-tier enforcement (hard/soft/advisory).
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- NAAb is developed on <a href="https://github.com/b-macker/NAAb">GitHub</a> and has 2 stars
+- Early development of NAAb happened in <a href="../lists/labs.html#q=https://github.com/b-macker">https://github.com/b-macker</a>
+- NAAb is written in <a href="cpp.html">C++</a>, <a href="cmake.html">CMake</a>
+
+```Example from the web:
+main {
+    let data = &lt;&lt;python
+import statistics
+statistics.mean([10, 20, 30])
+&gt;&gt;
+    io.write(&quot;Mean: &quot; + data)
+}
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Module Pattern
+ FeatureLink ../features/hasModules.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // A comment
+ Token 
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v178.2.3
+
+license mit
+
+hasLambdas true
+hasPipeOperator true

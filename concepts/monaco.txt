@@ -1,21 +1,23 @@
 Monaco Editor
 =============
 
-Monaco Editor is an open source editor created in 2016.
+Monaco Editor is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22editor%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">editor</a> created in 2016.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2016
 
-#172 on PLDB
-8 Years Old
+#178 on PLDB
+10 Years Old
 
+```Download source code:
 git clone https://github.com/Microsoft/monaco-editor
+```
 
 The Monaco Editor is the code editor that powers VS Code.
 
-- Tags: editor
-- Monaco Editor is developed on GitHub and has 39,317 stars
-- Early development of Monaco Editor happened in Microsoft
-- Monaco Editor is written in TypeScript, JSON, JavaScript, HTML, Markdown, YAML, CSS, SVG, SCSS, Bourne shell
-- See also: (1 related languages) CodeMirror
-- 5 PLDB concepts link to Monaco Editor: Ace Editor, CodeMirror, highlight.js, Prism, Pygments
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"editor"%5D%7D%5D%2C"logic"%3A"AND"%7D'>editor</a>
+- Monaco Editor is developed on <a href="https://github.com/Microsoft/monaco-editor">GitHub</a> and has 39,317 stars
+- Early development of Monaco Editor happened in <a href="../lists/labs.html#q=Microsoft">Microsoft</a>
+- Monaco Editor is written in <a href="typescript.html">TypeScript</a>, <a href="json.html">JSON</a>, <a href="javascript.html">JavaScript</a>, <a href="html.html">HTML</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="css.html">CSS</a>, <a href="svg.html">SVG</a>, <a href="scss.html">SCSS</a>, <a href="bourne-shell.html">Bourne shell</a>
+- See also: (1 related languages) <a href="codemirror.html">CodeMirror</a>
+- 5 PLDB concepts link to Monaco Editor: <a href="ace.html">Ace Editor</a>, <a href="codemirror.html">CodeMirror</a>, <a href="highlightjs.html">highlight.js</a>, <a href="prismjs.html">Prism</a>, <a href="pygments.html">Pygments</a>
 
-View source
+Built with Scroll v178.2.3

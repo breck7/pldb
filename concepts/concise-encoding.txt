@@ -1,23 +1,26 @@
 Concise Encoding
 ================
 
-Concise Encoding is a data notation created in 2018 by Karl Stenerud.
+Concise Encoding is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 2018 by Karl Stenerud.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2018
  https://pldb.io/concepts/../lists/creators.html#q=Karl%20Stenerud Karl Stenerud
 
-#675 on PLDB
-6 Years Old
+#692 on PLDB
+8 Years Old
 
+```Download source code:
 git clone https://github.com/kstenerud/concise-encoding
+```
 
 Concise Encoding gives you ease and efficiency with its 1:1 compatible text and binary formats.
 
-- Tags: dataNotation
-- Concise Encoding is developed on GitHub and has 257 stars
-- Early development of Concise Encoding happened in https://github.com/kstenerud/concise-encoding
-- Concise Encoding is written in Markdown, SVG, JSON
-- concise-encoding.org was registered in 2019
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- Concise Encoding is developed on <a href="https://github.com/kstenerud/concise-encoding">GitHub</a> and has 257 stars
+- Early development of Concise Encoding happened in <a href="../lists/labs.html#q=https://github.com/kstenerud/concise-encoding">https://github.com/kstenerud/concise-encoding</a>
+- Concise Encoding is written in <a href="markdown.html">Markdown</a>, <a href="svg.html">SVG</a>, <a href="json.html">JSON</a>
+- <a href="https://concise-encoding.org">concise-encoding.org</a> was registered in 2019
 
+```Example from the web:
 c1
 {
     &quot;boolean&quot;       = true
@@ -33,14 +36,18 @@ c1
     &quot;infinity&quot;      = inf
     &quot;neg infinity&quot;  = -inf
 }
+```
 
+```Example from the web:
 c1
 {
     &quot;string&quot; = &quot;Strings support escape sequences: \n \t \+1f415.&quot;
     &quot;url&quot;    = @&quot;https://example.com/&quot;
     &quot;email&quot;  = @&quot;mailto:me@somewhere.com&quot;
 }
+```
 
+```Example from the web:
 c1
 {
     &quot;uuid&quot;      = f1ce4567-e89b-12d3-a456-426655440000
@@ -51,7 +58,9 @@ c1
     &quot;media&quot;     = |m application/x-sh 23 21 2f 62 69 6e 2f 73 68 0a 0a
                     65 63 68 6f 20 68 65 6c 6c 6f 20 77 6f 72 6c 64 0a|
 }
+```
 
+```Example from the web:
 c1
 {
     &quot;list&quot;          = [1 2.5 &quot;a string&quot;]
@@ -61,7 +70,9 @@ c1
     &quot;uint16 hex&quot;    = |u16x 91fe 443a 9c15|
     &quot;float32 array&quot; = |f32 1.5e10 -8.31e-12|
 }
+```
 
+```Example from the web:
 c1
 [
     @vehicle&lt;&quot;make&quot;   &quot;model&quot;    &quot;drive&quot; &quot;sunroof&quot;&gt;
@@ -69,7 +80,9 @@ c1
     @vehicle(&quot;Toyota&quot; &quot;Corolla&quot;  &quot;fwd&quot;   false    )
     @vehicle(&quot;Honda&quot;  &quot;Civic&quot;    &quot;fwd&quot;   false    )
 ]
+```
 
+```Example from the web:
 c1
 [
     {
@@ -91,7 +104,9 @@ c1
         &quot;sunroof&quot; = false
     }
 ]
+```
 
+```Example from the web:
 c1
 //
 // The tree:
@@ -119,7 +134,9 @@ c1
         )
     )
 )
+```
 
+```Example from the web:
 c1
 //
 // The weighted graph:
@@ -145,7 +162,9 @@ c1
         @($c {&quot;weight&quot;=4 &quot;direction&quot;=&quot;both&quot;} $d)
     ]
 }
+```
 
+```Example from the web:
 c1
 {
     // Entire map will be referenced later as $id1
@@ -156,44 +175,47 @@ c1
     &quot;ref2&quot; = $id1
 
     // Reference pointing to part of another document.
-    &quot;outside ref&quot; = TEMPLATEquot;https://xyz.com/document.cte#some_id&quot;
+    &quot;outside ref&quot; = $&quot;https://xyz.com/document.cte#some_id&quot;
 }
+```
 
+```Example from the web:
 c1
 {
     // Custom types are user-defined, with user-supplied codecs.
     &quot;custom text&quot;   = |c &quot;cplx(2.94+3i)&quot;|
     &quot;custom binary&quot; = |c 01 f6 28 3c 40 00 00 40 40|
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

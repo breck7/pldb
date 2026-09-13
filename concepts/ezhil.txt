@@ -1,32 +1,38 @@
 Ezhil
 =====
 
-Ezhil is an open source programming language created in 2007 by Muthu Annamalai.
+Ezhil is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2007 by Muthu Annamalai.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2007
  https://pldb.io/concepts/../lists/creators.html#q=Muthu%20Annamalai Muthu Annamalai
 
-#1008 on PLDB
-17 Years Old
+#1039 on PLDB
+19 Years Old
 
 Ezhil, in Tamil language script (எழில்), is a compact, open source, interpreted, programming language, originally designed to enable native-Tamil speaking students, K-12 age-group to learn computer programming, and enable learning numeracy and computing, outside of linguistic expertise in predominately English language-based computer systems. In the Ezhil programming language, Tamil keywords and language-grammar are chosen to easily enable the native Tamil speaker write programs in the Ezhil system. Ezhil allows easy representation of computer program closer to the Tamil language logical constructs equivalent to the conditional, branch and loop statements in modern English based programming languages. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Ezhil_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Ezhil happened in Google
-- Explore Ezhil snippets on Rosetta Code
-- Pygments supports syntax highlighting for Ezhil
-- ezhillang.org was registered in 2021
-- See also: (4 related languages) Linux, Logo, BASIC, Python
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Ezhil happened in <a href="../lists/labs.html#q=Google">Google</a>
+- Explore Ezhil snippets on <a href="http://www.rosettacode.org/wiki/Category:Ezhil">Rosetta Code</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/ezhil.py">syntax highlighting</a> for Ezhil
+- <a href="http://ezhillang.org">ezhillang.org</a> was registered in 2021
+- See also: (4 related languages) <a href="linux.html">Linux</a>, <a href="logo.html">Logo</a>, <a href="basic.html">BASIC</a>, <a href="python.html">Python</a>
 
+```Example from <a href='https://riju.codes/ezhil'>Riju</a>:
 பதிப்பி &quot;வணக்கம், உலகமே!&quot;
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Ezhil'>the Hello World Collection</a>:
 # Hello world in Ezhil
 
 பதிப்பி &quot;வணக்கம்!&quot;
 பதிப்பி &quot;உலகே வணக்கம்&quot;
 பதிப்பி &quot;******* நன்றி!. *******&quot;
 exit()
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Ezhil_(programming_language)'>Wikipedia</a>:
 நிரல்பாகம் yin(radius, color1, color2)
     #turtle_width(3)
     turtle_color(&quot;black&quot;)
@@ -61,35 +67,36 @@ exit()
 முடி
 
 main()
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token True False
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -1,0 +1,23 @@
+../code/conceptPage.scroll
+
+id brep
+name BRep Format
+appeared 1999
+tags 3d textDataFormat cad
+spec http://www.cppblog.com/images/cppblog_com/eryar/Windows-Live-Writer/OpenCascade-BRep-_13240/brep_wp.pdf
+standsFor Boundary Representation Format
+description BREP format is used to store 3D models and allows to store a model which consists of vertices, edges, wires, faces, shells, solids, compsolids, compounds, edge triangulations, face triangulations, polylines on triangulations, space location and orientation. Any set of such models may be stored as a single model which is a compound of the models.
+
+docs https://dev.opencascade.org/doc/occt-6.7.0/overview/html/occt_brep_format.html
+
+example
+     Locations  3
+    1
+                   0               0               1               0
+                   1               0               0               0
+                   0               1               0               0
+    1
+                   1               0               0               4
+                   0               1               0               5
+                   0               0               1               6
+    2   1 1 2 1 0

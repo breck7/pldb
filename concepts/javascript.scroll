@@ -110,6 +110,11 @@ supportsBreakpoints true
  if (false)
    debugger
 hasPointers false
+hasSinglePassParser false
+ console.log(message())
+ function message() {
+  return "The function Has been hoisted"
+ }
 hasIntegers true
  80766866
 hasLists true
@@ -233,6 +238,8 @@ hasAnonymousFunctions true
  (() => console.log("hello world"))()
 hasMacros false
 hasFunctionOverloading false
+hasNamedArguments false
+ // idiomatically emulated using parameters that expect objects
 hasMultilineStrings true
  const lines = `one
  two`
@@ -256,6 +263,9 @@ hasSwitch true
   case "dog": console.log("yay"); break;
   case "cat": console.log("oh"); break;
  }
+hasStaticTyping false
+hasStructuralTyping false
+hasTypeClasses false
 hasTernaryOperators true
  let i = true ? 1 : 0
 hasWhileLoops true

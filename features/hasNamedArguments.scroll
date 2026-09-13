@@ -1,0 +1,50 @@
+header.scroll
+
+title Named Arguments - language feature
+tags Feature
+printTitle Named Arguments
+
+<a class="trueBaseThemePreviousItem" href="hasMultipleInheritance.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasNamespaces.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/python.html">Python</a>
+ print(&quot;Hello&quot;, end=&quot;!\n&quot;)
+ 
+ # details: any parameter that hasn&#39;t been explicitly marked as positional-only
+ # can be provided as a named argument
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ruby.html">Ruby</a>
+ String.new(&quot;abc&quot;, encoding: &quot;utf-8&quot;, capacity: 16)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/scala.html">Scala</a>
+ &quot;abcdef&quot;.slice(from=2, until=4)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/kotlin.html">Kotlin</a>
+ &quot;abcdef&quot;.subSequence(startIndex=2, endIndex=4)
+
+***
+
+* Languages *with* Named Arguments include <a href="../concepts/python.html">Python</a>, <a href="../concepts/ruby.html">Ruby</a>, <a href="../concepts/scala.html">Scala</a>, <a href="../concepts/kotlin.html">Kotlin</a>
+
+***
+
+* Languages *without* Named Arguments include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/cpp.html">C++</a>, <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/bash.html">Bash</a>, <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/haskell.html">Haskell</a>
+
+***
+
+View all concepts with or missing a *hasNamedArguments* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasNamedArguments&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasNamedArguments%22%2C%22origData%22%3A%22hasNamedArguments%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasNamedArguments&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasNamedArguments%22%2C%22origData%22%3A%22hasNamedArguments%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Named Arguments on the web: 1.
+ https://en.wikipedia.org/wiki/Named_parameter 1.
+
+keyboardNav hasMultipleInheritance.html hasNamespaces.html
+
+../footer.scroll

@@ -1,27 +1,30 @@
 Filebench WML
 =============
 
-Filebench WML is an open source programming language created in 2011 by Vasily Tarasov.
+Filebench WML is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2011 by Vasily Tarasov.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2011
  https://pldb.io/concepts/../lists/creators.html#q=Vasily%20Tarasov Vasily Tarasov
 
-#526 on PLDB
-13 Years Old
-566 Repos
+#548 on PLDB
+15 Years Old
+566 <span title="Filebench WML repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/filebench/filebench
+```
 
 Filebench is a file system and storage benchmark that can generate a large variety of workloads. Unlike typical benchmarks it is extremely flexible and allows to specify application's I/O behavior using its extensive Workload Model Language (WML).
 
-- Tags: programming language
-- Filebench WML is developed on GitHub and has 339 stars
-- There are at least 566 Filebench WML repos on GitHub
-- Early development of Filebench WML happened in https://github.com/filebench
-- Filebench WML is written in FORTRAN 77, C, Make, C++, Yacc, M4, Lex
-- The  Google BigQuery Public Dataset GitHub snapshot shows 16 users using Filebench WML in 19 repos on GitHub
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Filebench WML is developed on <a href="https://github.com/filebench/filebench">GitHub</a> and has 339 stars
+- There are at least 566 Filebench WML repos on <a href="https://github.com/search?q=language:Filebench WML">GitHub</a>
+- Early development of Filebench WML happened in <a href="../lists/labs.html#q=https://github.com/filebench">https://github.com/filebench</a>
+- Filebench WML is written in <a href="fortran-77.html">FORTRAN 77</a>, <a href="c.html">C</a>, <a href="make.html">Make</a>, <a href="cpp.html">C++</a>, <a href="yacc.html">Yacc</a>, <a href="m4.html">M4</a>, <a href="lex.html">Lex</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 16 users using Filebench WML in 19 repos on <a href="https://api.github.com/search/repositories?q=language:Filebench WML">GitHub</a>
 - Read more about Filebench WML on the web: 1.
  https://github.com/filebench/filebench/wiki/Workload-model-language 1.
 
+```Example from the web:
 #
 # CDDL HEADER START
 #
@@ -74,28 +77,30 @@ define process name=filereader,instances=1
 
 echo  &quot;Copyfiles Version 3.0 personality successfully loaded&quot;
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

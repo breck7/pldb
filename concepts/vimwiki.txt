@@ -1,21 +1,25 @@
 Vimwiki
 =======
 
-Vimwiki is a wiki markup created in 2008 by Maxim Kim.
+Vimwiki is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22wikiMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">wiki markup</a> created in 2008 by Maxim Kim.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
  https://pldb.io/concepts/../lists/creators.html#q=Maxim%20Kim Maxim Kim
 
-#703 on PLDB
-16 Years Old
+#751 on PLDB
+18 Years Old
 
+```Download source code:
 git clone https://github.com/vimwiki/vimwiki
+```
 
 Personal Wiki for Vim
 
-- Tags: wikiMarkup
-- Vimwiki is developed on GitHub and has 8,674 stars
-- Vimwiki is written in Vim script, Markdown, Bourne shell, SVG, YAML, CSS, Dockerfile, TOML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"wikiMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>wikiMarkup</a>
+- Vimwiki is developed on <a href="https://github.com/vimwiki/vimwiki">GitHub</a> and has 8,674 stars
+- Vimwiki is written in <a href="vim-script.html">Vim script</a>, <a href="markdown.html">Markdown</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="svg.html">SVG</a>, <a href="yaml.html">YAML</a>, <a href="css.html">CSS</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="toml.html">TOML</a>
 
+```Example from <a href='https://riju.codes/vimwiki'>Riju</a>:
 Hello, world!
+```
 
-View source
+Built with Scroll v178.2.3

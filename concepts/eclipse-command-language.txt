@@ -1,22 +1,23 @@
 Eclipse Command Language
 ========================
 
-Eclipse Command Language is a programming language created in 2008.
+Eclipse Command Language is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2008.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
 
-#858 on PLDB
-16 Years Old
-0 Repos
+#883 on PLDB
+18 Years Old
+0 <span title="Eclipse Command Language repos on GitHub.">Repos</span>
 
-- Tags: programming language
-- There are at least 0 Eclipse Command Language repos on GitHub
-- Early development of Eclipse Command Language happened in Eclipse Foundation
-- The  Google BigQuery Public Dataset GitHub snapshot shows 24 users using Eclipse Command Language in 24 repos on GitHub
-- Monaco package for syntax highlighting Eclipse Command Language
-- GitHub supports syntax highlighting for Eclipse Command Language
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 0 Eclipse Command Language repos on <a href="https://github.com/search?q=language:ECLiPSe">GitHub</a>
+- Early development of Eclipse Command Language happened in <a href="../lists/labs.html#q=Eclipse Foundation">Eclipse Foundation</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 24 users using Eclipse Command Language in 24 repos on <a href="https://api.github.com/search/repositories?q=language:Ecl">GitHub</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/ecl">package</a> for syntax highlighting Eclipse Command Language
+- GitHub supports <a href="https://github.com/alnkpa/sublimeprolog" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Eclipse Command Language
 - Read more about Eclipse Command Language on the web: 1.
  https://www.eclipse.org/rcptt/documentation/userguide/ecl/ 1.
 
+```Example from <a href='https://github.com/alnkpa/sublimeprolog'>Linguist</a>:
 :- lib(ic).
 
 /**
@@ -106,34 +107,37 @@ faitListe([_, _, _, _, _], Taille, 1, 3). =&gt; Taille = 5 !!!!!!!!!!!!!!!!
 
 faitListe(ListVar, 18, -9, 9), suite(ListVar). =&gt; 99 solutions
 */
+```
 
+```Eclipse Command Language <a href="../lists/keywords.html#q=eclipse-command-language">Keywords</a>
 __compressed__ after all and any as atmost before beginc best between case cluster compressed compression const counter csv default descend embed encoding encrypt end endc endembed endmacro enum escape except exclusive expire export extend fail few fileposition first flat forward from full function functionmacro group grouped heading hole ifblock import in inner interface internal joined keep keyed last left limit linkcounted literal little_endian load local locale lookup lzw macro many maxcount maxlength min skew module mofn multiple named namespace nocase noroot noscan nosort not noxpath of onfail only opt or outer overwrite packed partition penalty physicallength pipe prefetch quote record repeat retry return right right1 right2 rows rowset scan scope self separator service shared skew skip smart soapaction sql stable store terminator thor threshold timelimit timeout token transform trim type unicodeorder unordered unsorted unstable update use validate virtual whole width wild within wnotrim xml xpath
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -141,22 +145,22 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % A comment
  Token %
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

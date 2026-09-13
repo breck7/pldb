@@ -1,52 +1,61 @@
 awk
 ===
 
-awk, aka Aho, Weinberger, Kernighan, is a programming language created in 1977 by Alfred Aho and Peter J. Weinberger and Brian Kernighan.
+awk, aka Aho, Weinberger, Kernighan, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1977 by Alfred Aho and Peter J. Weinberger and Brian Kernighan.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221977%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1977
  https://pldb.io/concepts/../lists/creators.html#q=Alfred%20Aho Alfred Aho
  https://pldb.io/concepts/../lists/creators.html#q=Peter%20J.%20Weinberger Peter J. Weinberger
  https://pldb.io/concepts/../lists/creators.html#q=Brian%20Kernighan Brian Kernighan
 
-#61 on PLDB
-47 Years Old
-3k Repos
+#64 on PLDB
+49 Years Old
+3k <span title="awk repos on GitHub.">Repos</span>
 
 AWK is a programming language designed for text processing and typically used as a data extraction and reporting tool. It is a standard feature of most Unix-like operating systems. The AWK language is a data-driven scripting language consisting of a set of actions to be taken against streams of textual data – either run directly on files or used as part of a pipeline – for purposes of extracting or transforming text, such as producing formatted reports. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/AWK Read more on Wikipedia...
 
-- Tags: programming language
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
 - Interview with the creators of awk: 1.
  https://pldb.io/blog/brianKernighan.html 1.
-- There are at least 2,552 awk repos on GitHub
-- Early development of awk happened in Bell Labs
-- The  Google BigQuery Public Dataset GitHub snapshot shows 14k users using awk in 21k repos on GitHub
-- There are 1,929 members in the awk subreddit
-- There are 14 Project Euler users using awk
-- Explore awk snippets on Rosetta Code
+- There are at least 2,552 awk repos on <a href="https://github.com/search?q=language:Awk">GitHub</a>
+- Early development of awk happened in <a href="../lists/labs.html#q=Bell Labs">Bell Labs</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 14k users using awk in 21k repos on <a href="https://api.github.com/search/repositories?q=language:Awk">GitHub</a>
+- There are 1,929 members in the <a href="https://reddit.com/r/awk">awk subreddit</a>
+- There are 14 <a href="https://projecteuler.net/language=AWK">Project Euler</a> users using awk
+- Explore awk snippets on <a href="http://www.rosettacode.org/wiki/Category:AWK">Rosetta Code</a>
 - awk on HOPL
  https://hopl.info/showlanguage.prx?exp=1844 awk on HOPL
-- awk ranks #37 in the TIOBE Index
+- awk ranks #37 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - awk Ubuntu package
  https://packages.ubuntu.com/jammy/gawk awk Ubuntu package
-- Pygments supports syntax highlighting for awk
-- GitHub supports syntax highlighting for awk
-- awk appears in the Quine Relay project
-- Learn awk on exercism.
-- Indeed.com has 7 matches for "awk engineer".
-- See also: (14 related languages) C, SNOBOL, Bourne shell, Tcl, AMPL, Perl, Lua, Regular Expressions, Unix, sed, FreeBSD, Solaris, Java, ISBN
-- 44 PLDB concepts link to awk: Armed Bear Common Lisp, Apache Arrow, Bash, bawk, beef-lang, Chapel, Civet, crmsh, Eiffel, ELFE, FFmpeg, FLEX, Flow9, Gforth, Go, groff, HHVM, Incipit, Java, kona, ktye/k, latino, Lil, Linux, mal, Manim, MongoDB, NGS, Node.js, Noweb, PHP, GNU Poke, POV-Ray SDL, Prism, Pygments, Ragel, Revolution, Ruby, Slony, Semantic Patch Language, Swift, V, Wonkey, XL
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/textedit.py">syntax highlighting</a> for awk
+- GitHub supports <a href="https://github.com/github-linguist/awk-sublime" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for awk
+- awk appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Learn <a href="https://exercism.org/tracks/awk">awk on exercism.</a>
+- Indeed.com has 7 matches for <a href="https://www.indeed.com/jobs?q=awk engineer">"awk engineer"</a>.
+- See also: (14 related languages) <a href="c.html">C</a>, <a href="snobol.html">SNOBOL</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="tcl.html">Tcl</a>, <a href="ampl.html">AMPL</a>, <a href="perl.html">Perl</a>, <a href="lua.html">Lua</a>, <a href="regex.html">Regular Expressions</a>, <a href="unix.html">Unix</a>, <a href="sed.html">sed</a>, <a href="freebsd.html">FreeBSD</a>, <a href="solaris.html">Solaris</a>, <a href="java.html">Java</a>, <a href="isbn.html">ISBN</a>
+- 47 PLDB concepts link to awk: <a href="abcl-lang.html">Armed Bear Common Lisp</a>, <a href="arrow-format.html">Apache Arrow</a>, <a href="bash.html">Bash</a>, <a href="bawk.html">bawk</a>, <a href="beef.html">beef-lang</a>, <a href="berkeleydb.html">Berkeley DB</a>, <a href="cir.html">CIR</a>, <a href="civet.html">Civet</a>, <a href="crmsh.html">crmsh</a>, <a href="ecl.html">ECL</a>, <a href="eiffel.html">Eiffel</a>, <a href="elfe.html">ELFE</a>, <a href="ffmpeg.html">FFmpeg</a>, <a href="flex.html">FLEX</a>, <a href="flow9.html">Flow9</a>, <a href="gforth.html">Gforth</a>, <a href="go.html">Go</a>, <a href="groff.html">groff</a>, <a href="hhvm.html">HHVM</a>, <a href="incipit.html">Incipit</a>, <a href="java.html">Java</a>, <a href="kona.html">kona</a>, <a href="ktyek.html">ktye/k</a>, <a href="latino.html">latino</a>, <a href="lil.html">Lil</a>, <a href="linux.html">Linux</a>, <a href="mal.html">mal</a>, <a href="manim.html">Manim</a>, <a href="michelson.html">michelson</a>, <a href="mongodb.html">MongoDB</a>, <a href="ngs.html">NGS</a>, <a href="nodejs.html">Node.js</a>, <a href="noweb.html">Noweb</a>, <a href="php.html">PHP</a>, <a href="poke.html">GNU Poke</a>, <a href="pov-ray-sdl.html">POV-Ray SDL</a>, <a href="prismjs.html">Prism</a>, <a href="pygments.html">Pygments</a>, <a href="ragel.html">Ragel</a>, <a href="revolution-programming-language.html">Revolution</a>, <a href="ruby.html">Ruby</a>, <a href="slony.html">Slony</a>, <a href="smpl.html">Semantic Patch Language</a>, <a href="swift.html">Swift</a>, <a href="v.html">V</a>, <a href="wonkey.html">Wonkey</a>, <a href="xl-lang.html">XL</a>
 
+```Example from <a href='https://riju.codes/awk'>Riju</a>:
 BEGIN { print &quot;Hello, world!&quot; }
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/a/AWK.awk'>hello-world</a>:
 # awk -f awk.awk
 BEGIN { print &quot;Hello World&quot; }
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Aho%2C'>the Hello World Collection</a>:
 # Hello world in AWK
 
 BEGIN {
   print &quot;Hello World!&quot;
 }
+```
 
+```Example from <a href='https://github.com/github-linguist/awk-sublime'>Linguist</a>:
 #!/bin/awk -f
 
 BEGIN {
@@ -169,6 +178,9 @@ END {
   print &quot; &#39;&quot; FILENAME &quot;&#39; done.&quot;;
 }
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/AWK'>Wikipedia</a>:
 BEGIN {
     pattern = ARGV[1]
     for (i = 1; i &lt; ARGC; i++) # remove first argument
@@ -180,62 +192,63 @@ BEGIN {
     }
 }
 $0 ~ pattern { print FILENAME &quot;:&quot; $0 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # [0-9]+
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # 0x[0-9a-fA-F]+
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -1,28 +1,31 @@
 Jinja
 =====
 
-Jinja is an open source template language created in 2006 by Armin Ronacher.
+Jinja is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22template%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">template language</a> created in 2006 by Armin Ronacher.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
  https://pldb.io/concepts/../lists/creators.html#q=Armin%20Ronacher Armin Ronacher
 
-#198 on PLDB
-18 Years Old
-37k Repos
+#208 on PLDB
+20 Years Old
+37k <span title="Jinja repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/pallets/jinja
+```
 
 Jinja is a template engine for the Python programming language and is licensed under a BSD License created by Armin Ronacher. It is similar to the Django template engine but provides Python-like expressions while ensuring that the templates are evaluated in a sandbox. It is a text-based template language and thus can be used to generate any markup as well as sourcecode. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Jinja_(template_engine) Read more on Wikipedia...
 
-- Tags: template language
-- Jinja is developed on GitHub and has 10,136 stars
-- There are at least 37,267 Jinja repos on GitHub
-- Early development of Jinja happened in https://github.com/pallets/jinja/issues/
-- Jinja is written in Python, reStructuredText, YAML, HTML, Markdown, SVG, TOML, Ini, JSON, Make, Bourne shell
-- The  Google BigQuery Public Dataset GitHub snapshot shows 701 users using Jinja in 981 repos on GitHub
-- GitHub supports syntax highlighting for Jinja
-- See also: (5 related languages) Python, Django, Smarty, Unix, ISBN
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"template"%5D%7D%5D%2C"logic"%3A"AND"%7D'>template language</a>
+- Jinja is developed on <a href="https://github.com/pallets/jinja">GitHub</a> and has 10,136 stars
+- There are at least 37,267 Jinja repos on <a href="https://github.com/search?q=language:HTML+Django">GitHub</a>
+- Early development of Jinja happened in <a href="../lists/labs.html#q=https://github.com/pallets/jinja/issues/">https://github.com/pallets/jinja/issues/</a>
+- Jinja is written in <a href="python.html">Python</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="yaml.html">YAML</a>, <a href="html.html">HTML</a>, <a href="markdown.html">Markdown</a>, <a href="svg.html">SVG</a>, <a href="toml.html">TOML</a>, <a href="ini.html">Ini</a>, <a href="json.html">JSON</a>, <a href="make.html">Make</a>, <a href="bourne-shell.html">Bourne shell</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 701 users using Jinja in 981 repos on <a href="https://api.github.com/search/repositories?q=language:Jinja">GitHub</a>
+- GitHub supports <a href="https://github.com/textmate/python-django.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Jinja
+- See also: (5 related languages) <a href="python.html">Python</a>, <a href="django.html">Django</a>, <a href="smarty.html">Smarty</a>, <a href="unix.html">Unix</a>, <a href="isbn.html">ISBN</a>
 
+```Example from <a href='https://github.com/textmate/python-django.tmbundle'>Linguist</a>:
 &lt;h1&gt;Workers&lt;/h1&gt;
 
 &lt;table class=&quot;workers&quot;&gt;
@@ -62,6 +65,9 @@ Jinja is a template engine for the Python programming language and is licensed u
 {% endfor %}
 &lt;/table&gt;
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Jinja_(template_engine)'>Wikipedia</a>:
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -76,5 +82,6 @@ Jinja is a template engine for the Python programming language and is licensed u
     6
   &lt;/body&gt;
 &lt;/html&gt;
+```
 
-View source
+Built with Scroll v178.2.3

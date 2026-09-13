@@ -1,0 +1,19 @@
+../code/conceptPage.scroll
+
+id lego
+name LEGO
+appeared 1992
+creators Randy Pollack
+tags pl mathematics
+website https://www.dcs.ed.ac.uk/home/lego/
+hoplId 6971
+description LEGO is an interactive proof assistant developed by Randy Pollack at the University of Edinburgh. It implements type theories including the Edinburgh Logical Framework (LF), Calculus of Constructions (CoC), Generalized Calculus of Constructions (GCC), and Unified Theory of Dependent Types (UTT), supporting formal proof development in natural deduction style.
+lab University of Edinburgh
+
+influencedBy automath lambda-calculus
+related automath coq isabelle
+country United Kingdom
+
+wikipedia https://en.wikipedia.org/wiki/LEGO_(proof_assistant)
+
+hopl https://hopl.info/showlanguage.prx?exp=6971&language=LEGO

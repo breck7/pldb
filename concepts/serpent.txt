@@ -1,0 +1,76 @@
+Serpent
+=======
+
+Serpent is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22contractLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">contract language</a> created in 2015 by Vitalik Buterin.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
+ https://pldb.io/concepts/../lists/creators.html#q=Vitalik%20Buterin Vitalik Buterin
+
+#1506 on PLDB
+11 Years Old
+
+```Download source code:
+git clone https://github.com/ethereum/serpent
+```
+
+Serpent is an assembly language that compiles to EVM code that is extended with various high-level features.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"contractLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>contractLanguage</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"assembly"%5D%7D%5D%2C"logic"%3A"AND"%7D'>assembly language</a>
+- Serpent is developed on <a href="https://github.com/ethereum/serpent">GitHub</a> and has 367 stars
+
+```Example from the web:
+data campaigns[2^80](recipient, goal, deadline, contrib_total, contrib_count, contribs[2^50](sender, value))
+
+def create_campaign(id, recipient, goal, timelimit):
+    if self.campaigns[id].recipient:
+        return(0)
+    self.campaigns[id].recipient = recipient
+    self.campaigns[id].goal = goal
+    self.campaigns[id].deadline = block.timestamp + timelimit
+
+def contribute(id):
+    # Update contribution total
+    total_contributed = self.campaigns[id].contrib_total + msg.value
+    self.campaigns[id].contrib_total = total_contributed
+
+    # Record new contribution
+    sub_index = self.campaigns[id].contrib_count
+    self.campaigns[id].contribs[sub_index].sender = msg.sender
+    self.campaigns[id].contribs[sub_index].value = msg.value
+    self.campaigns[id].contrib_count = sub_index + 1
+
+    # Enough funding?
+    if total_contributed &gt;= self.campaigns[id].goal:
+        send(self.campaigns[id].recipient, total_contributed)
+        self.clear(id)
+        return(1)
+
+    # Expired?
+    if block.timestamp &gt; self.campaigns[id].deadline:
+        i = 0
+        c = self.campaigns[id].contrib_count
+        while i &lt; c:
+            send(self.campaigns[id].contribs[i].sender, self.campaigns[id].contribs[i].value)
+            i += 1
+        self.clear(id)
+        return(2)
+
+def progress_report(id):
+    return(self.campaigns[id].contrib_total)
+
+# Clearing function for internal use
+def clear(id):
+    if self == msg.sender:
+        self.campaigns[id].recipient = 0
+        self.campaigns[id].goal = 0
+        self.campaigns[id].deadline = 0
+        c = self.campaigns[id].contrib_count
+        self.campaigns[id].contrib_count = 0
+        self.campaigns[id].contrib_total = 0
+        i = 0
+        while i &lt; c:
+            self.campaigns[id].contribs[i].sender = 0
+            self.campaigns[id].contribs[i].value = 0
+            i += 1
+```
+
+Built with Scroll v178.2.3

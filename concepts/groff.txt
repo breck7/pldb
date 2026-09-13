@@ -1,36 +1,40 @@
 groff
 =====
 
-groff is a text markup language created in 1990.
+groff is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 1990.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1990
 
-#507 on PLDB
-34 Years Old
+#510 on PLDB
+36 Years Old
 
+```Download source code:
 git clone https://git.savannah.gnu.org/git/groff.git/
+```
 
 Groff (GNU troff) is a typesetting system that reads plain text mixed with formatting commands and produces formatted output. Output may be PostScript or PDF, html, or ASCII/UTF8 for display at the terminal. Formatting commands may be either low-level typesetting requests (“primitives”) or macros from a supplied set. Users may also write their own macros. All three may be combined.
 
-- Tags: text markup language
-- Early development of groff happened in GNU Project
-- groff is written in Bourne shell, C++, Make, C, HTML, M4, Perl, Protocol Buffers, sed, Objective C++, C#, CSS, awk, Tex, Ruby, Forth, Vim script, Diff
-- The  Google BigQuery Public Dataset GitHub snapshot shows 20k users using groff in 26k repos on GitHub
-- There are 357 members in the groff subreddit
-- Pygments supports syntax highlighting for groff
-- See also: (1 related languages) Troff
-- 2 PLDB concepts link to groff: Frundis, nroff
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- Early development of groff happened in <a href="../lists/labs.html#q=GNU Project">GNU Project</a>
+- groff is written in <a href="bourne-shell.html">Bourne shell</a>, <a href="cpp.html">C++</a>, <a href="make.html">Make</a>, <a href="c.html">C</a>, <a href="html.html">HTML</a>, <a href="m4.html">M4</a>, <a href="perl.html">Perl</a>, <a href="protobuf.html">Protocol Buffers</a>, <a href="sed.html">sed</a>, <a href="objective-cpp.html">Objective C++</a>, <a href="csharp.html">C#</a>, <a href="css.html">CSS</a>, <a href="awk.html">awk</a>, <a href="tex.html">Tex</a>, <a href="ruby.html">Ruby</a>, <a href="forth.html">Forth</a>, <a href="vim-script.html">Vim script</a>, <a href="diff.html">Diff</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 20k users using groff in 26k repos on <a href="https://api.github.com/search/repositories?q=language:Groff">GitHub</a>
+- There are 357 members in the <a href="https://reddit.com/r/groff">groff subreddit</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/markup.py">syntax highlighting</a> for groff
+- See also: (1 related languages) <a href="troff.html">Troff</a>
+- 2 PLDB concepts link to groff: <a href="frundis.html">Frundis</a>, <a href="nroff.html">nroff</a>
 
+```Example from the web:
 .sp 1.5i
 My thoughts on the subject
 .sp
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   text text text...
   .ig
@@ -46,7 +50,7 @@ row
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   .de P
   .  br
@@ -56,7 +60,7 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   Test
   \" comment
@@ -66,4 +70,4 @@ row
   Test
  Token
 
-View source
+Built with Scroll v178.2.3

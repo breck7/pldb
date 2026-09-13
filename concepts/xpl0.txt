@@ -1,49 +1,52 @@
 XPL0
 ====
 
-XPL0 is a programming language created in 1976.
+XPL0 is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1976.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221976%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1976
 
-#1752 on PLDB
-48 Years Old
+#1799 on PLDB
+50 Years Old
 
 XPL0 is a computer programming language that is essentially a cross between Pascal and C. It was created in 1976 by Peter J. R. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/XPL0 Read more on Wikipedia...
 
-- Tags: programming language
-- Explore XPL0 snippets on Rosetta Code
-- See also: (6 related languages) Pascal, C, BASIC, PL/0, Algol, Assembly language
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Explore XPL0 snippets on <a href="http://www.rosettacode.org/wiki/Category:XPL0">Rosetta Code</a>
+- See also: (6 related languages) <a href="pascal.html">Pascal</a>, <a href="c.html">C</a>, <a href="basic.html">BASIC</a>, <a href="pl-0.html">PL/0</a>, <a href="algol.html">Algol</a>, <a href="assembly-language.html">Assembly language</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/x/XPL0.xpl'>hello-world</a>:
 code Text=12;
 Text(0, &quot;Hello World&quot;)
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token Text
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

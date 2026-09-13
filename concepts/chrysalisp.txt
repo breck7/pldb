@@ -1,22 +1,25 @@
 chrysaLisp
 ==========
 
-chrysaLisp is a programming language created in 2015 by Chris Hinsley.
+chrysaLisp is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2015 by Chris Hinsley.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
  https://pldb.io/concepts/../lists/creators.html#q=Chris%20Hinsley Chris Hinsley
 
-#913 on PLDB
-9 Years Old
+#966 on PLDB
+11 Years Old
 
+```Download source code:
 git clone https://github.com/vygr/ChrysaLisp
+```
 
 Parallel OS, with GUI, Terminal, OO Assembler, Class libraries, C-Script compiler, Lisp interpreter and more...
 
-- Tags: programming language
-- chrysaLisp is developed on GitHub and has 1,608 stars
-- Early development of chrysaLisp happened in Tao Group
-- chrysaLisp is written in Markdown, Lisp, Pascal, SVG, PowerShell, Bourne shell, C++, C, PHP, Make
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"lisp"%5D%7D%5D%2C"logic"%3A"AND"%7D'>lisp</a>
+- chrysaLisp is developed on <a href="https://github.com/vygr/ChrysaLisp">GitHub</a> and has 1,608 stars
+- Early development of chrysaLisp happened in <a href="../lists/labs.html#q=Tao Group">Tao Group</a>
+- chrysaLisp is written in <a href="markdown.html">Markdown</a>, <a href="lisp.html">Lisp</a>, <a href="pascal.html">Pascal</a>, <a href="svg.html">SVG</a>, <a href="powershell.html">PowerShell</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="cpp.html">C++</a>, <a href="c.html">C</a>, <a href="php.html">PHP</a>, <a href="make.html">Make</a>
 
+```Example from the web:
 ;imports
 (import &#39;sys/lisp.inc)
 (import &#39;class/lisp.inc)
@@ -89,5 +92,6 @@ Parallel OS, with GUI, Terminal, OO Assembler, Class libraries, C-Script compile
     (t (view-event window msg))))
 
 (view-hide window)
+```
 
-View source
+Built with Scroll v178.2.3

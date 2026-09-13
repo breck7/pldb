@@ -1,18 +1,19 @@
 concurnas
 =========
 
-concurnas is a programming language created in 2018.
+concurnas is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2018.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2018
 
-#1816 on PLDB
-6 Years Old
+#1897 on PLDB
+8 Years Old
 
-- Tags: programming language
-- Early development of concurnas happened in https://github.com/Concurnas
-- concurnas.com was registered in 2018
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of concurnas happened in <a href="../lists/labs.html#q=https://github.com/Concurnas">https://github.com/Concurnas</a>
+- <a href="http://concurnas.com/">concurnas.com</a> was registered in 2018
 - Read more about concurnas on the web: 1.
  https://news.ycombinator.com/item?id=23321096 1.
 
+```Example from the web:
 def gcd(x int, y int){//greatest common divisor of two integers
   while(y){
     (x, y) = (y, x mod y)
@@ -23,24 +24,28 @@ calc1 = gcd(8, 20)!//run this calculation in a isolate
 calc2 = gcd(6, 45)!//run this calculation in a separate isolate
 calc3 = calc1 if calc1 &gt; calc2 else calc2
 //^^^ wait for the results of calc1 and calc2 before assigning calc3
+```
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/c/Concurnas.conc'>hello-world</a>:
 System.out.println(&quot;Hello World&quot;)
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token System.out.println
 
-View source
+Built with Scroll v178.2.3

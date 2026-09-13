@@ -7,7 +7,7 @@ printTitle Doc comments
 <a class="trueBaseThemePreviousItem" href="hasDisposeBlocks.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasDuckTyping.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -24,10 +24,10 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/purescript.
  bool false _ x = x
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3</a>
- /**
-  * @param [in] foo &quot;The foo value&quot;
-  * @return &quot;the toal foo count&quot;
-  **/
+ &lt;*
+  @param [in] foo &quot;The foo value&quot;
+  @return &quot;the toal foo count&quot;
+ *&gt;
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
  // Documentation comment for a_function

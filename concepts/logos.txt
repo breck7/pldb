@@ -1,25 +1,26 @@
 Logos
 =====
 
-Logos is a programming language created in 2010.
+Logos is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2010.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2010
 
-#608 on PLDB
-14 Years Old
-6k Repos
+#597 on PLDB
+16 Years Old
+6k <span title="Logos repos on GitHub.">Repos</span>
 
 Logos is a component of the Theos development suite that allows method hooking code to be written easily and clearly, using a set of special preprocessor directives. Theos is a cross-platform suite of development tools for managing, developing, and deploying iOS software without the use of Xcode. It is an important tool for people building extensions (tweaks) for jailbroken iOS; most extension developers use Theos.
 
-- Tags: programming language
-- There are at least 6,281 Logos repos on GitHub
-- Early development of Logos happened in https://github.com/DHowett/theos-logos-examples/issues
-- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using Logos in 4k repos on GitHub
-- Pygments supports syntax highlighting for Logos
-- GitHub supports syntax highlighting for Logos
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 6,281 Logos repos on <a href="https://github.com/search?q=language:Logos">GitHub</a>
+- Early development of Logos happened in <a href="../lists/labs.html#q=https://github.com/DHowett/theos-logos-examples/issues">https://github.com/DHowett/theos-logos-examples/issues</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using Logos in 4k repos on <a href="https://api.github.com/search/repositories?q=language:Logos">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/objective.py">syntax highlighting</a> for Logos
+- GitHub supports <a href="https://github.com/Cykey/Sublime-Logos" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Logos
 - Read more about Logos on the web: 1.
  https://github.com/DHowett/theos-logos-examples 1.
-- 22 PLDB concepts link to Logos: cloc, Cryptol, Eiffel, expresso, fo, Futhark, GHC, Go, hacspec, HAML, haste, JAL compiler, kitlang, Koka, nesC, Opal, Pygments, Rust, Wasp, Wyvern, Ecstasy, Yet Another Scripting Language
+- 24 PLDB concepts link to Logos: <a href="cir.html">CIR</a>, <a href="cloc.html">cloc</a>, <a href="cperl.html">cperl</a>, <a href="cryptol.html">Cryptol</a>, <a href="eiffel.html">Eiffel</a>, <a href="expresso.html">expresso</a>, <a href="fo.html">fo</a>, <a href="futhark.html">Futhark</a>, <a href="ghc.html">GHC</a>, <a href="go.html">Go</a>, <a href="hacspec.html">hacspec</a>, <a href="haml.html">HAML</a>, <a href="haste.html">haste</a>, <a href="jal-compiler.html">JAL compiler</a>, <a href="kitlang.html">kitlang</a>, <a href="koka.html">Koka</a>, <a href="nesc.html">nesC</a>, <a href="opal.html">Opal</a>, <a href="pygments.html">Pygments</a>, <a href="rust.html">Rust</a>, <a href="wasp-lang.html">Wasp</a>, <a href="wyvern.html">Wyvern</a>, <a href="xtclang.html">Ecstasy</a>, <a href="yasl.html">Yet Another Scripting Language</a>
 
+```Example from the web:
 %group iOS8
 %hook IOS8_SPECIFIC_CLASS
   // your code here
@@ -39,35 +40,39 @@ Logos is a component of the Theos development suite that allows method hooking c
     %init(iOS8);
   }
 }
+```
 
+```Example from <a href='https://github.com/Cykey/Sublime-Logos'>Linguist</a>:
 # APPLE LOCAL file string workaround 4943900
 if { [istarget &quot;*-*-darwin\[9123\]*&quot;] } {
   set additional_flags &quot;-framework Foundation -fconstant-cfstrings&quot;
 }
 return 0
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

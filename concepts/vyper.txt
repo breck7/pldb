@@ -1,21 +1,55 @@
-vyper
+Vyper
 =====
 
-vyper is a programming language created in 2016.
+Vyper is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22contractLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">contract language</a> created in 2016 by Vitalik Buterin.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2016
+ https://pldb.io/concepts/../lists/creators.html#q=Vitalik%20Buterin Vitalik Buterin
 
-#912 on PLDB
-8 Years Old
-117 Repos
+#262 on PLDB
+10 Years Old
+117 <span title="Vyper repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/ethereum/vyper
+```
 
-Pythonic Smart Contract Language for the EVM
+Pythonic language for the EVM.
 
-- Tags: programming language
-- vyper is developed on GitHub and has 4,828 stars
-- There are at least 117 vyper repos on GitHub
-- vyper is written in Python, reStructuredText, Markdown, YAML, Make, HTML, Dockerfile, TOML, Bash, SVG, Bourne shell
-- The  Google BigQuery Public Dataset GitHub snapshot shows 1 users using vyper in 1 repos on GitHub
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"contractLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>contractLanguage</a>
+- Vyper is developed on <a href="https://github.com/ethereum/vyper">GitHub</a> and has 4,828 stars
+- There are at least 117 Vyper repos on <a href="https://github.com/search?q=language:Vyper">GitHub</a>
+- Vyper is written in <a href="python.html">Python</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="make.html">Make</a>, <a href="html.html">HTML</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="toml.html">TOML</a>, <a href="bash.html">Bash</a>, <a href="svg.html">SVG</a>, <a href="bourne-shell.html">Bourne shell</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 1 users using Vyper in 1 repos on <a href="https://api.github.com/search/repositories?q=language:Vyper">GitHub</a>
+- Read more about Vyper on the web: 1.
+ https://ethereumclassic.org/blog/2017-03-13-viper 1.
 
-View source
+```Example from the web:
+# @version &gt;=0.2.4 &lt;0.3.0
+
+DNA_DIGITS: constant(uint256) = 16
+DNA_MODULUS: constant(uint256) = 10 ** DNA_DIGITS
+
+struct Pokemon:
+    name: String[32]
+    dna: uint256
+    HP: uint256
+    matches: uint256
+    wins: uint256
+
+# Declare totalPokemonCount
+pokemonList: HashMap[uint256, Pokemon]
+
+@internal
+def _createPokemon(_name: String[32], _dna: uint256, _HP: uint256):
+    # use totalPokemonCount
+    self.pokemonList[0] = Pokemon({
+        name: _name,
+        dna: _dna,
+        HP: _HP,
+        matches: 0,
+        wins: 0
+    })
+    # increment totalPokemonCount by 1
+```
+
+Built with Scroll v178.2.3

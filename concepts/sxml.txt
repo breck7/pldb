@@ -1,0 +1,65 @@
+SXML
+====
+
+SXML is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 2001 by Oleg Kiselyov.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2001
+ https://pldb.io/concepts/../lists/creators.html#q=Oleg%20Kiselyov Oleg Kiselyov
+
+#1403 on PLDB
+25 Years Old
+
+SXML is an abstract syntax tree of an XML document. SXML is also a concrete representation of the XML Infoset in the form of S-expressions. The generic tree structure of SXML lends itself to a compact library of combinators for querying and transforming SXML.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- <a href="s-expressions.html">S-expressions</a> and <a href="xml.html">XML</a> influenced the design of SXML
+- SXML compiles to <a href="xml.html">XML</a>
+- See also: (1 related languages) <a href="laml.html">LAML</a>
+- Read more about SXML on the web: 1.
+ https://okmij.org/ftp/Scheme/LaXmL.txt 1.
+- 2 PLDB concepts link to SXML: <a href="laml.html">LAML</a>, <a href="sxpath.html">SXPath</a>
+
+```Example from the web:
+(a (@
+     (href &quot;http://somewhere/&quot;
+       (@ (*parent* a-node))       ; &lt;annotations&gt; of the attribute &#39;href&#39;
+       )
+     (@ (*parent* a-parent-node))) ; &lt;annotations&gt; of the element &#39;a&#39;
+   &quot;link&quot;)
+```
+
+```Example from the web:
+(define Content &#39;(
+ (html:begin
+  (Header
+   (title &quot;SXML&quot;)
+   (description &quot;Definition of SXML: ...&quot;)
+   (keywords &quot;XML, XML parsing, XML Infoset, XPath, SXML, Scheme&quot;)
+   (long-title &quot;SXML&quot;)
+   (Links
+    (start &quot;index.html&quot; (title &quot;Scheme Hash&quot;))
+    (contents &quot;../README.html&quot;)
+    (prev &quot;xml.html&quot;)
+    (home &quot;http://pobox.com/~oleg/ftp/&quot;)))
+
+  (body
+   (navbar)
+   (page-title)
+   (p &quot;SXML is an instance of XML Infoset as S-expressions. SXML is an
+Abstract Syntax Tree of an XML document.&quot;)
+   (p (b &quot;Revision: 2.0&quot;))
+
+   (TOC)
+
+   (Section 2 &quot;Introduction&quot;)
+   (p
+    &quot;An XML information set (Infoset) ... XML Infoset is described in &quot;
+    (cite &quot;XML Infoset&quot;) &quot;. Although technically Infoset is specified for
+XML, it largely applies to HTML as well.&quot;)
+   (p
+    &quot;SXML is...&quot;)
+
+   (Section 2 &quot;Notation&quot;)
+   ))))
+```
+
+Built with Scroll v178.2.3

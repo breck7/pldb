@@ -1,9 +1,9 @@
 baseUrl https://pldb.io/books/
 buildConcepts books.json books.tsv books.csv
+editBaseUrl /edit.html?folderName=pldb.io&fileName=books/
 permalink index.html
-replace BASE_URL ..
 title Books for Programmers
-viewSourceBaseUrl https://github.com/breck7/pldb/blob/main/books/
+replace BASE_URL ..
 
 // A ScrollSet with information on books about programming languages
 
@@ -24,7 +24,7 @@ css
 
 container
 
-table books.csv
+datatable books.csv
  rename bookTitle title
   links homepage source pdf
    select title authors links year pages languagesUsed publisher
@@ -87,6 +87,13 @@ publisher Addison-Wesley
 pages 352
 homepage https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/
 
+bookTitle Version Control with Git
+authors Prem Kumar Ponuthorai and Jon Loeliger
+year 2009
+publisher O'Reilly Media
+pages 546
+homepage https://www.oreilly.com/library/view/version-control-with/9781492091189/
+
 bookTitle Structure and Interpretation of Computer Programs
 authors Harold Abelson and Gerald Jay Sussman and Julie Sussman
 year 1985
@@ -148,6 +155,14 @@ publisher O'Reilly Media
 languagesUsed javascript
 pages 1128
 source https://github.com/getify/You-Dont-Know-JS
+
+bookTitle The Reasoned Schemer
+authors Daniel P. Friedman and William E. Byrd and Oleg Kiselyov and Jason Hemann
+year 2018
+publisher MIT Press
+languagesUsed scheme
+pages 208
+homepage https://mitpress.mit.edu/9780262535519/the-reasoned-schemer/
 
 bookTitle The Clean Coder: A Code of Conduct for Professional Programmers
 authors Robert C. Martin
@@ -415,6 +430,12 @@ languagesUsed lisp
 pages 504
 homepage https://www.gigamonkeys.com/book/
 
+bookTitle Recursive Programming Techniques
+authors William H. Burge
+year 1975
+publisher Addison-Wesley
+pages 300
+
 bookTitle Real World Haskell
 authors Bryan O'Sullivan and Don Stewart and John Goerzen
 year 2008
@@ -576,6 +597,36 @@ publisher O'Reilly Media
 languagesUsed python
 pages 256
 homepage https://www.oreilly.com/library/view/programming-collective/9780596529321/
+
+bookTitle The Fun of Programming
+authors Jeremy Gibbons and Oege de Moor
+year 2003
+publisher Red Globe Press
+languagesUsed haskell
+pages 277
+pdf http://conal.net/papers/functional-images/fop-conal.pdf
+
+bookTitle Compilers: Principles, Techniques, and Tools
+authors Alfred V. Aho and Monica S. Lam and Ravi Sethi and Jeffrey D. Ullman
+year 1986
+publisher Pearson Education
+pages 1040
+pdf https://github.com/qshadun/books/blob/master/Compilers%20Principles%20Techniques%20and%20Tools%20(2nd%20Edition)%20.pdf
+
+bookTitle Types and Programming Languages
+authors Benjamin C. Pierce
+year 2002
+publisher MIT Press
+pages 648
+homepage https://www.cis.upenn.edu/~bcpierce/tapl/
+pdf https://github.com/MPRI/M2-4-2/blob/master/Types%20and%20Programming%20Languages.pdf
+
+bookTitle Engineering a Compiler
+authors Keith D. Cooper and Linda Torczon
+year 2011
+pages 824
+publisher Morgan Kaufmann
+pdf https://github.com/lighthousand/books/blob/master/Engineering%20A%20Compiler%202nd%20Edition%20by%20Cooper%20and%20Torczon.pdf
 
 ****
 

@@ -1,30 +1,33 @@
 Ring
 ====
 
-Ring is an open source programming language created in 2016 by Mahmoud Fayed.
+Ring is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2016 by Mahmoud Fayed.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2016
  https://pldb.io/concepts/../lists/creators.html#q=Mahmoud%20Fayed Mahmoud Fayed
 
-#365 on PLDB
-8 Years Old
-195 Repos
+#367 on PLDB
+10 Years Old
+195 <span title="Ring repos on GitHub.">Repos</span>
 
 Ring is a dynamic and general-purpose programming language. It can be embedded in C/C++ projects, extended using C/C++ code and/or used as a standalone language. The supported programming paradigms are imperative, procedural, object-oriented, functional, Meta programming, declarative programming using nested structures, and natural programming. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Ring_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 195 Ring repos on GitHub
-- Early development of Ring happened in King Saud University
-- The  Google BigQuery Public Dataset GitHub snapshot shows 3 users using Ring in 3 repos on GitHub
-- Explore Ring snippets on Rosetta Code
-- Ring appears in the TIOBE Index
-- GitHub supports syntax highlighting for Ring
-- ring-lang.net was registered in 2016
-- See also: (9 related languages) C, Linux, Lua, Python, Ruby, C#, BASIC, QML, xBase
-- 5 PLDB concepts link to Ring: Adept, cloc, Eiffel, RapidBatch, Zig
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 195 Ring repos on <a href="https://github.com/search?q=language:Ring">GitHub</a>
+- Early development of Ring happened in <a href="../lists/labs.html#q=King Saud University">King Saud University</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 3 users using Ring in 3 repos on <a href="https://api.github.com/search/repositories?q=language:Ring">GitHub</a>
+- Explore Ring snippets on <a href="http://www.rosettacode.org/wiki/Category:Ring">Rosetta Code</a>
+- Ring appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- GitHub supports <a href="https://github.com/MahmoudFayed/atom-language-ring" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Ring
+- <a href="http://ring-lang.net">ring-lang.net</a> was registered in 2016
+- See also: (9 related languages) <a href="c.html">C</a>, <a href="linux.html">Linux</a>, <a href="lua.html">Lua</a>, <a href="python.html">Python</a>, <a href="ruby.html">Ruby</a>, <a href="csharp.html">C#</a>, <a href="basic.html">BASIC</a>, <a href="qml.html">QML</a>, <a href="xbase.html">xBase</a>
+- 7 PLDB concepts link to Ring: <a href="adept.html">Adept</a>, <a href="cloc.html">cloc</a>, <a href="ecl.html">ECL</a>, <a href="eiffel.html">Eiffel</a>, <a href="rapidbatch.html">RapidBatch</a>, <a href="reko-decompiler.html">Reko</a>, <a href="zig.html">Zig</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/r/Ring.ring'>hello-world</a>:
 see &quot;Hello World&quot;
+```
 
+```Example from <a href='https://github.com/MahmoudFayed/atom-language-ring'>Linguist</a>:
 New App
 {
         I want window
@@ -70,34 +73,36 @@ Class App
                 # Keywords to ignore, just give them any value
                         the=0
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

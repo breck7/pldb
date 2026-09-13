@@ -1,38 +1,39 @@
 Ada
 ===
 
-Ada is a programming language created in 1980 by Jean Ichbiah.
+Ada is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1980 by Jean Ichbiah.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221980%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1980
  https://pldb.io/concepts/../lists/creators.html#q=Jean%20Ichbiah Jean Ichbiah
 
-#49 on PLDB
-44 Years Old
-5k Repos
+#50 on PLDB
+46 Years Old
+5k <span title="Ada repos on GitHub.">Repos</span>
 
 Ada is a structured, statically typed, imperative, wide-spectrum, and object-oriented high-level computer programming language, extended from Pascal and other languages. It has built-in language support for design-by-contract, extremely strong typing, explicit concurrency, offering tasks, synchronous message passing, protected objects, and non-determinism. Ada improves code safety and maintainability by using the compiler to find errors in favor of runtime errors. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Ada_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 4,785 Ada repos on GitHub
-- Early development of Ada happened in CII Honeywell Bull
-- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Ada in 2k repos on GitHub
-- There are 8,055 members in the Ada subreddit
-- There are 129 Project Euler users using Ada
-- Explore Ada snippets on Rosetta Code
-- Ada is supported by the GDB
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 4,785 Ada repos on <a href="https://github.com/search?q=language:Ada">GitHub</a>
+- Early development of Ada happened in <a href="../lists/labs.html#q=CII Honeywell Bull">CII Honeywell Bull</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Ada in 2k repos on <a href="https://api.github.com/search/repositories?q=language:Ada">GitHub</a>
+- There are 8,055 members in the <a href="https://reddit.com/r/ada">Ada subreddit</a>
+- There are 129 <a href="https://projecteuler.net/language=Ada">Project Euler</a> users using Ada
+- Explore Ada snippets on <a href="http://www.rosettacode.org/wiki/Category:Ada">Rosetta Code</a>
+- Ada is supported by the <a href="https://www.sourceware.org/gdb/">GDB</a>
 - Ada on HOPL
  https://hopl.info/showlanguage.prx?exp=840 Ada on HOPL
-- Ada ranks #28 in the TIOBE Index
+- Ada ranks #28 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - Ada Ubuntu package
  https://packages.ubuntu.com/jammy/gnat Ada Ubuntu package
-- Pygments supports syntax highlighting for Ada
-- GitHub supports syntax highlighting for Ada
-- Ada appears in the Quine Relay project
-- Indeed.com has 2,184 matches for "ada developer".
-- adaic.org was registered in 1998
-- See also: (22 related languages) Apache Spark, Ravenscar profile, ALGOL 68, Pascal, Smalltalk, Java, Eiffel, Chapel, Nim, PL/SQL, PL/pgSQL, Ruby, Rust, Seed7, SQL/PSM, VHDL, Unicode, Lisp, SETL, Algol, ALGOL 60, APSE
-- 13 PLDB concepts link to Ada: Ace Editor, Bazel, Eiffel, Felix, GAP, GCC, High Level Assembly, mal, POV-Ray SDL, Pygments, Racket, Snowball, Spark
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/ada.py">syntax highlighting</a> for Ada
+- GitHub supports <a href="https://github.com/textmate/ada.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Ada
+- Ada appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Indeed.com has 2,184 matches for <a href="https://www.indeed.com/jobs?q=ada developer">"ada developer"</a>.
+- <a href="http://www.adaic.org">adaic.org</a> was registered in 1998
+- See also: (22 related languages) <a href="spark.html">Apache Spark</a>, <a href="ravenscar-profile.html">Ravenscar profile</a>, <a href="algol-68.html">ALGOL 68</a>, <a href="pascal.html">Pascal</a>, <a href="smalltalk.html">Smalltalk</a>, <a href="java.html">Java</a>, <a href="eiffel.html">Eiffel</a>, <a href="chapel.html">Chapel</a>, <a href="nim.html">Nim</a>, <a href="pl-sql.html">PL/SQL</a>, <a href="plpgsql.html">PL/pgSQL</a>, <a href="ruby.html">Ruby</a>, <a href="rust.html">Rust</a>, <a href="seed7.html">Seed7</a>, <a href="sql-psm.html">SQL/PSM</a>, <a href="vhdl.html">VHDL</a>, <a href="unicode.html">Unicode</a>, <a href="lisp.html">Lisp</a>, <a href="setl.html">SETL</a>, <a href="algol.html">Algol</a>, <a href="algol-60.html">ALGOL 60</a>, <a href="apse.html">APSE</a>
+- 14 PLDB concepts link to Ada: <a href="ace.html">Ace Editor</a>, <a href="bazel.html">Bazel</a>, <a href="chapel.html">Chapel</a>, <a href="eiffel.html">Eiffel</a>, <a href="felix.html">Felix</a>, <a href="gap.html">GAP</a>, <a href="gcc.html">GCC</a>, <a href="hla.html">High Level Assembly</a>, <a href="mal.html">mal</a>, <a href="pov-ray-sdl.html">POV-Ray SDL</a>, <a href="pygments.html">Pygments</a>, <a href="racket.html">Racket</a>, <a href="snowball-programming-language.html">Snowball</a>, <a href="spark-pl.html">Spark</a>
 
+```Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
 -- This pragma will remove the warning produced by the default
 -- CE filename and the procedure name differing,
 -- see : https://gcc.gnu.org/onlinedocs/gcc-8.2.0/gnat_rm/Pragma-Source_005fFile_005fName.html#Pragma-Source_005fFile_005fName
@@ -51,6 +52,9 @@ end Square;
 -- compilation unit.
 -- function Square(num : Integer) return Integer is (num**2);
 
+```
+
+```Example from <a href='https://riju.codes/ada'>Riju</a>:
 with Ada.Text_IO;
 
 procedure Main is
@@ -58,6 +62,9 @@ begin
    Ada.Text_IO.Put_Line(&quot;Hello, world!&quot;);
 end Main;
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/a/Ada.adb'>hello-world</a>:
 with Ada.Text_IO;
 
 procedure Hello_World is
@@ -66,6 +73,9 @@ begin
    Put_line (&quot;Hello World&quot;);
 end Hello_World;
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Ada'>the Hello World Collection</a>:
 -- Hello World in Ada
 
 with Text_IO;
@@ -75,6 +85,9 @@ begin
   Text_IO.Put_Line(&quot;Hello World!&quot;);
 end Hello_World;
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Ada_(programming_language)'>Wikipedia</a>:
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Traffic is
@@ -179,99 +192,108 @@ begin
       delay 4.0;
    end loop;
 end Traffic;
+```
 
+```Ada <a href="../lists/keywords.html#q=ada">Keywords</a>
 abort else new return abs elsif not reverse abstract end null accept entry select access exception of separate aliased exit or some all others subtype and for out synchronized array function overriding at tagged generic package task begin goto pragma terminate body private then if procedure type case in protected constant interface until is raise use declare range delay limited record when delta loop rem while digits renames with do mod requeue xor
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Scientific Notation
  FeatureLink ../features/hasScientificNotation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Fixed Point Numbers
  FeatureLink ../features/hasFixedPoint.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- [0-9_]+
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- [0-9_]+\.[0-9_]*
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- [0-9_]+#[0-9a-f_\.]+#
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token True False
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token :=
 row
+ Feature Single Pass Compiler
+ FeatureLink ../features/hasSinglePassParser.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token Text_IO.Put_Line
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token --
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   with Gnat.Io; use Gnat.Io;
   procedure Numbers is
@@ -289,26 +311,26 @@ row
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token 
 row
  Feature Generics
  FeatureLink ../features/hasGenerics.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   generic
      Max_Size : Natural; -- a generic formal value
@@ -324,7 +346,7 @@ row
      Underflow : exception;
   private
      subtype Index_Type is Size_Type range 1 .. Max_Size;
-     type Vector is array (Index_Type range ) of Element_Type;
+     type Vector is array (Index_Type range <>) of Element_Type;
      type Stack (Allocated_Size : Size_Type := 0) is record
         Top : Index_Type;
         Storage : Vector (1 .. Allocated_Size);
@@ -334,26 +356,26 @@ row
 row
  Feature Pointers
  FeatureLink ../features/hasPointers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

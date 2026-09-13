@@ -1,0 +1,114 @@
+../code/conceptPage.scroll
+
+id moonbit
+name MoonBit
+appeared 2022
+creators Hongbo Zhang
+tags pl
+website https://www.moonbitlang.cn
+webRepl https://try.moonbitlang.com
+description Intelligent developer platform for Cloud and Edge using WASM.
+lab International Digital Economy Academy
+fileExtensions mbt
+writtenIn moonbit json markdown yaml toml bourne-shell
+
+influencedBy rust go
+docs https://docs.moonbitlang.com/
+repoStats
+ firstCommit 2024
+ newestCommit 2025
+ commits 2395
+ committers 90
+ files 500
+ mb 6
+ linesOfCode 92511
+country China
+
+discord https://discord.gg/CVFRavvRav
+twitter https://x.com/moonbitlang
+youtubes http://www.youtube.com/@MoonBit_lang
+example
+ fn main {
+  println(@lib.hello())
+ }
+
+githubRepo https://github.com/moonbitlang/core
+ stars 616
+ forks 78
+ subscribers 14
+ created 2024
+ updated 2024
+ description MoonBit's Core library
+ issues 76
+
+hasBooleans true
+ let a = true
+hasIntegers true
+ 42
+hasFloats true
+ 3.14
+hasOctals true
+ 0o1234
+hasHexadecimals true
+ 0XA
+hasMaps true
+ let map : Map[String, Int] = { "x": 1, "y": 2, "z": 3 }
+hasStructs true
+ struct User {
+  id: Int
+  name: String
+  mut email: String
+ }
+hasEnums true
+ enum Relation {
+  Smaller
+  Greater
+  Equal
+ }
+hasFunctions true
+ fn main {
+ }
+hasTypeAliases true
+ pub typealias Index = Int
+ typealias MapString[X] = Map[String, X]
+hasPatternMatching true
+hasOperatorOverloading true
+ struct T {
+   x:Int
+ } derive(Show)
+ 
+ fn op_add(self: T, other: T) -> T {
+   { x: self.x + other.x }
+ }
+ 
+ fn main {
+   let a = { x:0, }
+   let b = { x:2, }
+   println(a + b)
+ }
+hasPipes true
+ fn init {
+  x |> f     // 等价于 f(x)
+  x |> f(y)  // 等价于 f(x, y)
+  }
+hasBitWiseOperators true
+ 1 & 0
+hasExceptions true
+ type! DivError String
+ fn div(x: Int, y: Int) -> Int!DivError  {
+  if y == 0 {
+    raise DivError("division by zero")
+  }
+  x / y
+ }
+hasAccessModifiers true
+ pub struct R2 {       // 显式的公共结构
+  x: Int              // 隐式的公共字段
+  pub y: Int          // WARNING: `pub` 是多余的！
+  priv z: Int         // 显式的私有字段
+ }
+hasInterfaces true
+ trait Number {
+  op_add(Self, Self) -> Self
+  op_mul(Self, Self) -> Self
+ }

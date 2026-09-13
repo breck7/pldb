@@ -1,40 +1,47 @@
 sed
 ===
 
-sed is a programming language created in 1974 by Lee E. McMahon.
+sed is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1974 by Lee E. McMahon.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221974%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1974
  https://pldb.io/concepts/../lists/creators.html#q=Lee%20E.%20McMahon Lee E. McMahon
 
-#123 on PLDB
-50 Years Old
-322 Repos
+#127 on PLDB
+52 Years Old
+322 <span title="sed repos on GitHub.">Repos</span>
 
 sed (stream editor) is a Unix utility that parses and transforms text, using a simple, compact programming language. sed was developed from 1973 to 1974 by Lee E. McMahon of Bell Labs, and is available today for most operating systems. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Sed Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 322 sed repos on GitHub
-- Early development of sed happened in Bell Labs
-- The  Google BigQuery Public Dataset GitHub snapshot shows 998 users using sed in 1k repos on GitHub
-- Explore sed snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 322 sed repos on <a href="https://github.com/search?q=language:sed">GitHub</a>
+- Early development of sed happened in <a href="../lists/labs.html#q=Bell Labs">Bell Labs</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 998 users using sed in 1k repos on <a href="https://api.github.com/search/repositories?q=language:sed">GitHub</a>
+- Explore sed snippets on <a href="http://www.rosettacode.org/wiki/Category:Sed">Rosetta Code</a>
 - sed on HOPL
  https://hopl.info/showlanguage.prx?exp=782 sed on HOPL
-- sed appears in the TIOBE Index
+- sed appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - sed Ubuntu package
  https://packages.ubuntu.com/jammy/sed sed Ubuntu package
-- Pygments supports syntax highlighting for sed
-- GitHub supports syntax highlighting for sed
-- sed appears in the Quine Relay project
-- See also: (9 related languages) C, Chomski, Perl, awk, Unix, Regular Expressions, grep, vi, Vim
-- 25 PLDB concepts link to sed: Apache Arrow, Bash, Boomerang Decompiler, Chapel, Eiffel, Erlang, Gforth, groff, HHVM, Java, Koka, Kubernetes, latino, Linux, NCAR Command Language, NGS, Node.js, opam-pm, GNU Poke, PostgreSQL, Pygments, Recfiles, Rholang, Ruby, tao3d
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/textedit.py">syntax highlighting</a> for sed
+- GitHub supports <a href="https://github.com/Alhadis/language-sed" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for sed
+- sed appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- See also: (9 related languages) <a href="c.html">C</a>, <a href="chomski.html">Chomski</a>, <a href="perl.html">Perl</a>, <a href="awk.html">awk</a>, <a href="unix.html">Unix</a>, <a href="regex.html">Regular Expressions</a>, <a href="grep.html">grep</a>, <a href="vi.html">vi</a>, <a href="vim.html">Vim</a>
+- 24 PLDB concepts link to sed: <a href="arrow-format.html">Apache Arrow</a>, <a href="bash.html">Bash</a>, <a href="boomerang-decompiler.html">Boomerang Decompiler</a>, <a href="eiffel.html">Eiffel</a>, <a href="erlang.html">Erlang</a>, <a href="gforth.html">Gforth</a>, <a href="groff.html">groff</a>, <a href="hhvm.html">HHVM</a>, <a href="java.html">Java</a>, <a href="koka.html">Koka</a>, <a href="kubernetes.html">Kubernetes</a>, <a href="latino.html">latino</a>, <a href="linux.html">Linux</a>, <a href="ncl.html">NCAR Command Language</a>, <a href="ngs.html">NGS</a>, <a href="nodejs.html">Node.js</a>, <a href="opam-pm.html">opam-pm</a>, <a href="poke.html">GNU Poke</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="pygments.html">Pygments</a>, <a href="recfiles.html">Recfiles</a>, <a href="rholang.html">Rholang</a>, <a href="ruby.html">Ruby</a>, <a href="tao3d.html">tao3d</a>
 
+```Example from <a href='https://riju.codes/sed'>Riju</a>:
 s/.*/Hello, world!/
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/s/Sed.sed'>hello-world</a>:
 #!/usr/bin/sed -f sed.sed
 c\
 Hello World
 q
 
+```
+
+```Example from <a href='https://github.com/Alhadis/language-sed'>Linguist</a>:
 # Towers of Hanoi in sed.
 #
 #	@(#)hanoi.sed	8.1 (Berkeley) 6/6/93
@@ -139,31 +146,35 @@ tb
 s/.*/Done!  Try another, or end with ^D./p
 d
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Sed'>Wikipedia</a>:
 This is my dog, whose name is Frank.
 This is my fish,
 whose name is George.
 This is my goat, whose name is Adam.
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

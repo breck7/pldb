@@ -1,38 +1,41 @@
 DOT
 ===
 
-DOT is a diagram lang created in 2007 by Emden R. Gansner and Eleftherios Koutsofios and Stephen North.
+DOT is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22diagramLang%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">diagram lang</a> created in 2007 by Emden R. Gansner and Eleftherios Koutsofios and Stephen North.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2007
  https://pldb.io/concepts/../lists/creators.html#q=Emden%20R.%20Gansner Emden R. Gansner
  https://pldb.io/concepts/../lists/creators.html#q=Eleftherios%20Koutsofios Eleftherios Koutsofios
  https://pldb.io/concepts/../lists/creators.html#q=Stephen%20North Stephen North
 
-#190 on PLDB
-17 Years Old
-28k Repos
+#193 on PLDB
+19 Years Old
+28k <span title="DOT repos on GitHub.">Repos</span>
 
 DOT is a plain text graph description language. DOT graphs are typically files with the file extension gv or dot. The extension gv is preferred to avoid confusion with the extension dot used by early (pre-2007) versions of Microsoft Word. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/DOT_(graph_description_language) Read more on Wikipedia...
 
-- Tags: diagramLang
-- There are at least 27,831 DOT repos on GitHub
-- Early development of DOT happened in AT&T
-- The  Google BigQuery Public Dataset GitHub snapshot shows 67 users using DOT in 68 repos on GitHub
-- ANTLR grammar for DOT
-- Pygments supports syntax highlighting for DOT
-- GitHub supports syntax highlighting for DOT
-- There is 1 Jupyter Kernel for DOT
-- See also: (6 related languages) JavaScript, Java, Python, Google Cloud Platform, ActionScript, SVG
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"diagramLang"%5D%7D%5D%2C"logic"%3A"AND"%7D'>diagramLang</a>
+- There are at least 27,831 DOT repos on <a href="https://github.com/search?q=language:Graphviz (DOT)">GitHub</a>
+- Early development of DOT happened in <a href="../lists/labs.html#q=AT&T">AT&T</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 67 users using DOT in 68 repos on <a href="https://api.github.com/search/repositories?q=language:Graphviz (DOT)">GitHub</a>
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/dot">grammar</a> for DOT
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/graphviz.py">syntax highlighting</a> for DOT
+- GitHub supports <a href="https://github.com/textmate/graphviz.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for DOT
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/laixintao/jupyter-dot-kernel">Kernel</a> for DOT
+- See also: (6 related languages) <a href="javascript.html">JavaScript</a>, <a href="java.html">Java</a>, <a href="python.html">Python</a>, <a href="google-cloud.html">Google Cloud Platform</a>, <a href="actionscript.html">ActionScript</a>, <a href="svg.html">SVG</a>
 - Read more about DOT on the web: 1.
  https://www.graphviz.org/pdf/dotguide.pdf 1.
-- 7 PLDB concepts link to DOT: D2, FCL, FlowchartFun, Flowgorithm, Finite State Language, Mscgen, Workfl
+- 7 PLDB concepts link to DOT: <a href="d2.html">D2</a>, <a href="fcl.html">FCL</a>, <a href="flowchart-fun.html">FlowchartFun</a>, <a href="flowgorithm.html">Flowgorithm</a>, <a href="fsl.html">Finite State Language</a>, <a href="mscgen.html">Mscgen</a>, <a href="workfl.html">Workfl</a>
 
+```Example from the web:
  // The graph name and the semicolons are optional
 graph graphname {
     a -- b -- c;
     b -- d;
 }
+```
 
+```Example from <a href='https://github.com/textmate/graphviz.tmbundle'>Linguist</a>:
 /*
   Huffman Tree DOT graph.
 
@@ -83,7 +86,9 @@ digraph G {
     2 -&gt; Y [label=1];
     47 -&gt; 29 -&gt; 16 -&gt; GFWYBD -&gt; WYBD -&gt; BD -&gt; D [label=1];
 }
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/DOT_(graph_description_language)'>Wikipedia</a>:
 digraph g {
 	node [shape=plaintext];
 	A1 -&gt; B1;
@@ -98,14 +103,15 @@ digraph g {
 	{ rank=same; A1 A2 A3 }
 	{ rank=same; B1 B2 B3 }
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -113,22 +119,22 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

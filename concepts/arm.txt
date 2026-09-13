@@ -1,24 +1,25 @@
 ARM
 ===
 
-ARM, aka Acorn RISC Machine, is an assembly language created in 1985 by Sophie Wilson and Steve Furber.
+ARM, aka Acorn RISC Machine, is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22assembly%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">assembly language</a> created in 1985 by Sophie Wilson and Steve Furber.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221985%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1985
  https://pldb.io/concepts/../lists/creators.html#q=Sophie%20Wilson Sophie Wilson
  https://pldb.io/concepts/../lists/creators.html#q=Steve%20Furber Steve Furber
 
-#93 on PLDB
-39 Years Old
+#99 on PLDB
+41 Years Old
 
 ARM, originally Acorn RISC Machine, later Advanced RISC Machine, is a family of reduced instruction set computing (RISC) architectures for computer processors, configured for various environments. British company ARM Holdings develops the architecture and licenses it to other companies, who design their own products that implement one of those architectures‍—‌including systems-on-chips (SoC) and systems-on-modules (SoM) that incorporate memory, interfaces, radios, etc. It also designs cores that implement this instruction set and licenses these designs to a number of companies that incorporate those core designs into their own products. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/ARM_architecture Read more on Wikipedia...
 
-- Tags: assembly language
-- Early development of ARM happened in Acorn Computers
-- There is 1 Jupyter Kernel for ARM
-- Indeed.com has 6,588 matches for "arm architecture developer".
-- See also: (17 related languages) X86, Java Bytecode, BBC BASIC, Verilog, C, Assembly language, Java, C#, Perl, Python, MMX instruction set, JavaScript, Android, Unix, iOS, FreeBSD, Linux
-- 1 PLDB concepts link to ARM: B3 IR
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"assembly"%5D%7D%5D%2C"logic"%3A"AND"%7D'>assembly language</a>
+- Early development of ARM happened in <a href="../lists/labs.html#q=Acorn Computers">Acorn Computers</a>
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/DeepHorizons/iarm">Kernel</a> for ARM
+- Indeed.com has 6,588 matches for <a href="https://www.indeed.com/jobs?q=arm architecture developer">"arm architecture developer"</a>.
+- See also: (17 related languages) <a href="x86-isa.html">X86</a>, <a href="java-bytecode.html">Java Bytecode</a>, <a href="bbc-basic.html">BBC BASIC</a>, <a href="verilog.html">Verilog</a>, <a href="c.html">C</a>, <a href="assembly-language.html">Assembly language</a>, <a href="java.html">Java</a>, <a href="csharp.html">C#</a>, <a href="perl.html">Perl</a>, <a href="python.html">Python</a>, <a href="mmx.html">MMX instruction set</a>, <a href="javascript.html">JavaScript</a>, <a href="android.html">Android</a>, <a href="unix.html">Unix</a>, <a href="ios.html">iOS</a>, <a href="freebsd.html">FreeBSD</a>, <a href="linux.html">Linux</a>
+- 1 PLDB concepts link to ARM: <a href="b3-ir.html">B3 IR</a>
 
+```Example from <a href='https://riju.codes/arm'>Riju</a>:
 	.text
 	.globl main
 main:
@@ -34,6 +35,9 @@ main:
 message:
 	.string &quot;Hello, world!\n&quot;
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/ARM_architecture'>Wikipedia</a>:
 ; if (r0 == r1)
 CMP r0, r1
 ITE EQ        ; ARM: no code ... Thumb: IT instruction
@@ -42,29 +46,30 @@ MOVEQ r0, r2  ; ARM: conditional; Thumb: condition via ITE &#39;T&#39; (then)
 ; else r0 = r3;
 MOVNE r0, r3  ; ARM: conditional; Thumb: condition via ITE &#39;E&#39; (else)
 ; recall that the Thumb MOV instruction has no bits to encode &quot;EQ&quot; or &quot;NE&quot;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token ;
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

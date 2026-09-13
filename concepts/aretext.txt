@@ -1,22 +1,24 @@
 aretext
 =======
 
-aretext is an open source editor created in 2020 by Will Daly.
+aretext is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22editor%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">editor</a> created in 2020 by Will Daly.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
  https://pldb.io/concepts/../lists/creators.html#q=Will%20Daly Will Daly
 
-#804 on PLDB
-4 Years Old
+#824 on PLDB
+6 Years Old
 
+```Download source code:
 git clone https://github.com/aretext/aretext
+```
 
 Minimalist text editor with vim-compatible key bindings.
 
-- Tags: editor
-- aretext is developed on GitHub and has 248 stars
-- Early development of aretext happened in https://dev-nonsense.com
-- aretext is written in Go, Markdown, YAML, JSON, Bourne shell, Make, XML, HTML, Python, C, Rust
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"editor"%5D%7D%5D%2C"logic"%3A"AND"%7D'>editor</a>
+- aretext is developed on <a href="https://github.com/aretext/aretext">GitHub</a> and has 248 stars
+- Early development of aretext happened in <a href="../lists/labs.html#q=https://dev-nonsense.com">https://dev-nonsense.com</a>
+- aretext is written in <a href="go.html">Go</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="json.html">JSON</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="make.html">Make</a>, <a href="xml.html">XML</a>, <a href="html.html">HTML</a>, <a href="python.html">Python</a>, <a href="c.html">C</a>, <a href="rust.html">Rust</a>
 - Read more about aretext on the web: 1.
  https://aretext.org/docs/#getting-started 1.
 
-View source
+Built with Scroll v178.2.3

@@ -1,38 +1,45 @@
 ColdFusion
 ==========
 
-ColdFusion is an open source programming language created in 1995 by Joseph J. Allaire.
+ColdFusion is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1995 by Joseph J. Allaire.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221995%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1995
  https://pldb.io/concepts/../lists/creators.html#q=Joseph%20J.%20Allaire Joseph J. Allaire
 
-#164 on PLDB
-29 Years Old
-21k Repos
+#168 on PLDB
+31 Years Old
+21k <span title="ColdFusion repos on GitHub.">Repos</span>
 
 Adobe ColdFusion is a commercial rapid web application development platform created by J. J. Allaire in 1995. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/ColdFusion Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 20,756 ColdFusion repos on GitHub
-- Early development of ColdFusion happened in Adobe
-- The  Google BigQuery Public Dataset GitHub snapshot shows 1k users using ColdFusion in 2k repos on GitHub
-- Check out the 22 ColdFusion meetup groups on Meetup.com.
-- There are 10 Project Euler users using ColdFusion
-- Explore ColdFusion snippets on Rosetta Code
-- Pygments supports syntax highlighting for ColdFusion
-- GitHub supports syntax highlighting for ColdFusion
-- There is a central package repository for ColdFusion
-- See also: (23 related languages) Java, HTML, CFML, ASP, JSP, PHP, JavaScript, CFScript, SOAP, PDF, SMTP, FTP, XML, XPath, Solaris, Microsoft Excel, Linux, Eclipse, WSDL, JSON, Jython, Groovy, JRuby
-- 4 PLDB concepts link to ColdFusion: Ace Editor, cloc, ColdFusion Components, Pygments
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 20,756 ColdFusion repos on <a href="https://github.com/search?q=language:ColdFusion">GitHub</a>
+- Early development of ColdFusion happened in <a href="../lists/labs.html#q=Adobe">Adobe</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 1k users using ColdFusion in 2k repos on <a href="https://api.github.com/search/repositories?q=language:ColdFusion">GitHub</a>
+- Check out the 22 <a href="https://www.meetup.com/topics/coldfusion/">ColdFusion meetup groups</a> on Meetup.com.
+- There are 10 <a href="https://projecteuler.net/language=ColdFusion">Project Euler</a> users using ColdFusion
+- Explore ColdFusion snippets on <a href="http://www.rosettacode.org/wiki/Category:ColdFusion">Rosetta Code</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/templates.py">syntax highlighting</a> for ColdFusion
+- GitHub supports <a href="https://github.com/SublimeText/ColdFusion" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for ColdFusion
+- There is a <a href="https://www.forgebox.io/">central package repository</a> for ColdFusion
+- See also: (23 related languages) <a href="java.html">Java</a>, <a href="html.html">HTML</a>, <a href="cfml.html">CFML</a>, <a href="asp.html">ASP</a>, <a href="java-server-pages.html">JSP</a>, <a href="php.html">PHP</a>, <a href="javascript.html">JavaScript</a>, <a href="cfscript.html">CFScript</a>, <a href="soap.html">SOAP</a>, <a href="pdf.html">PDF</a>, <a href="smtp.html">SMTP</a>, <a href="ftp.html">FTP</a>, <a href="xml.html">XML</a>, <a href="xpath.html">XPath</a>, <a href="solaris.html">Solaris</a>, <a href="excel-app.html">Microsoft Excel</a>, <a href="linux.html">Linux</a>, <a href="eclipse-editor.html">Eclipse</a>, <a href="wsdl.html">WSDL</a>, <a href="json.html">JSON</a>, <a href="jython.html">Jython</a>, <a href="groovy.html">Groovy</a>, <a href="jruby.html">JRuby</a>
+- 4 PLDB concepts link to ColdFusion: <a href="ace.html">Ace Editor</a>, <a href="cloc.html">cloc</a>, <a href="coldfusion-components.html">ColdFusion Components</a>, <a href="pygments.html">Pygments</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/c/ColdFusion.cfm'>hello-world</a>:
 &lt;cfset message = &quot;Hello World&quot;&gt;
 &lt;cfoutput&gt; #message#&lt;/cfoutput&gt;
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#ColdFusion'>the Hello World Collection</a>:
 &lt;!---Hello world in ColdFusion---&gt;
 
 &lt;cfset message = &quot;Hello World&quot;&gt;
 &lt;cfoutput&gt; #message#&lt;/cfoutput&gt;
 
+```
+
+```Example from <a href='https://github.com/SublimeText/ColdFusion'>Linguist</a>:
 &lt;!--- cfcomment ---&gt;
 &lt;!--- nested &lt;!--- cfcomment ---&gt; ---&gt;
 &lt;!--- multi-line
@@ -83,36 +90,39 @@ cfcomment
 &lt;cfset c = a + b&gt;
 &lt;cfset c = a - b&gt;
 &lt;!--- &lt;!-- another &lt;!--- nested --&gt; ---&gt; comment ---&gt;
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/ColdFusion'>Wikipedia</a>:
 http://path/to/components/Component.cfc?method=search&amp;query=your+query&amp;mode=strict
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token cfoutput
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

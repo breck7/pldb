@@ -13,13 +13,13 @@ container 600px
 
 # Tools
 - Parser Designer
- link designer/index.html
+ designer/index.html
 - Particles Sandbox
- link sandbox/index.html
+ sandbox/index.html
 
 # Docs
 - SDK Release Notes
- link releaseNotes.html
+ releaseNotes.html
 - Particles Homepage
  https://particles.scroll.pub
 - Particles FAQ
@@ -30,13 +30,13 @@ container 600px
 # Tests
 https://github.com/breck7/scrollsdk/actions/workflows/didTheTestsPass.yaml/badge.svg
  width 153px
- link https://github.com/breck7/scrollsdk/actions/workflows/didTheTestsPass.yaml
+ https://github.com/breck7/scrollsdk/actions/workflows/didTheTestsPass.yaml
 - ScrollSDK Node Tests
  https://github.com/breck7/scrollsdk/actions/workflows/didTheTestsPass.yaml
 - ScrollSDK Browser Unit Tests
- link sandbox/test.html
+ sandbox/test.html
 - ScrollSDK Browser Perf Tests
- link sandbox/perfTests.html
+ sandbox/perfTests.html
 
 ***
 
@@ -48,7 +48,7 @@ This repo is for advanced Scroll developers.
 
 ? How do I build Parsers?
 You can try the Parsers tutorial.
- link parsersTutorial.html Parsers tutorial
+ parsersTutorial.html Parsers tutorial
 
 ***
 
@@ -56,7 +56,7 @@ You can try the Parsers tutorial.
 This ScrollSDK contains two implementations of Parsers: one in TypeScript and one in Parsers.
 
 You write Parsers to extend Scroll. By creating Parsers with the SDK you get a parser, a type checker, syntax highlighting, autocomplete, a compiler, and virtual machine for executing your version of Scroll. The ScrollSDK also includes a simple web IDE for writing Parsers called Parser Designer.
- link designer/index.html Parser Designer
+ designer/index.html Parser Designer
 
 At this point in time, to make your Parsers do very useful things, you also need to use another language that you know. The ScrollSDK lets you create new languages using just Scroll or Scroll + Javascript. Parsers can include code from any programming language, not just Javascript. Though at the moment only Scroll + Javascript is supported.
 
@@ -113,7 +113,7 @@ image images/diagram.jpg
 
 # Development Status
 All breaking changes are mentioned in the releaseNotes. We follow semantic versioning, so breaking changes should not happen if you stay on the same major version.
- link releaseNotes.html releaseNotes
+ releaseNotes.html releaseNotes
 
 ***
 

@@ -1,51 +1,53 @@
 fp
 ==
 
-fp, aka Functional Programming, is a programming language created in 2022 by Joona Piirainen.
+fp, aka Functional Programming, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2022 by Joona Piirainen.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2022
  https://pldb.io/concepts/../lists/creators.html#q=Joona%20Piirainen Joona Piirainen
 
-#1162 on PLDB
-2 Years Old
+#1203 on PLDB
+4 Years Old
 
+```Download source code:
 git clone https://github.com/japiirainen/fp
+```
 
 A small, weird and unpractical programming language.
 
-- Tags: programming language
-- fp is developed on GitHub and has 102 stars
-- Early development of fp happened in https://japiirainen.com/
-- fp is written in GLSL, Haskell, YAML, Bash, Nix, Markdown, TOML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- fp is developed on <a href="https://github.com/japiirainen/fp">GitHub</a> and has 102 stars
+- Early development of fp happened in <a href="../lists/labs.html#q=https://japiirainen.com/">https://japiirainen.com/</a>
+- fp is written in <a href="glsl.html">GLSL</a>, <a href="haskell.html">Haskell</a>, <a href="yaml.html">YAML</a>, <a href="bash.html">Bash</a>, <a href="nix.html">Nix</a>, <a href="markdown.html">Markdown</a>, <a href="toml.html">TOML</a>
 - Read more about fp on the web: 1.
  https://dl.acm.org/doi/10.1145/359576.359579 1.
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Function Composition
  FeatureLink ../features/hasFunctionComposition.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
-  /+∘α(bu + 1):
+  /+∘α(bu + 1):<1,2,3,4,5,6,7,8,9,10>
  Token 
 row
  Feature Lists
  FeatureLink ../features/hasLists.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

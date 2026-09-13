@@ -1,20 +1,21 @@
 CLOS
 ====
 
-CLOS is a programming language created in 1988.
+CLOS is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1988.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221988%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1988
 
-#1879 on PLDB
-36 Years Old
+#1956 on PLDB
+38 Years Old
 
 The Common Lisp Object System (CLOS) is the facility for object-oriented programming which is part of ANSI Common Lisp. CLOS is a powerful dynamic object system which differs radically from the OOP facilities found in more static languages such as C++ or Java. CLOS was inspired by earlier Lisp object systems such as MIT Flavors and CommonLoops, although it is more general than either. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/CLOS Read more on Wikipedia...
 
-- Tags: programming language
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
 - CLOS on HOPL
  https://hopl.info/showlanguage.prx?exp=1389 CLOS on HOPL
-- See also: (11 related languages) Common Lisp, Java, CommonLoops, EuLisp, Emacs Lisp, Flavors, Interlisp, Dylan, Guile, ISLISP, Cadence SKILL
+- See also: (11 related languages) <a href="common-lisp.html">Common Lisp</a>, <a href="java.html">Java</a>, <a href="commonloops.html">CommonLoops</a>, <a href="eulisp.html">EuLisp</a>, <a href="emacs-lisp.html">Emacs Lisp</a>, <a href="flavors.html">Flavors</a>, <a href="interlisp.html">Interlisp</a>, <a href="dylan.html">Dylan</a>, <a href="guile.html">Guile</a>, <a href="islisp.html">ISLISP</a>, <a href="cadence-skill.html">Cadence SKILL</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/CLOS'>Wikipedia</a>:
 ; declare the common argument structure prototype
 (defgeneric f (x y))
 
@@ -27,29 +28,30 @@ The Common Lisp Object System (CLOS) is the facility for object-oriented program
 (defmethod f ((x integer) (y real)) 2)
 
 (f 1 2.0) =&gt; 2 ; dispatch changed at runtime
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token ;
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

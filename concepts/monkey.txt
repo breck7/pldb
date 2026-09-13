@@ -1,32 +1,38 @@
 Monkey
 ======
 
-Monkey is a programming language created in 2011 by Anthony Diamond.
+Monkey is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2011 by Anthony Diamond.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2011
  https://pldb.io/concepts/../lists/creators.html#q=Anthony%20Diamond Anthony Diamond
 
-#618 on PLDB
-13 Years Old
-254 Repos
+#632 on PLDB
+15 Years Old
+254 <span title="Monkey repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/Regal-Internet-Brothers/webcc-monkey
+```
 
 Monkey X is a high-level programming language designed for video game development for many different platforms, including desktop and laptop computers, mobile phones, tablets, and video game consoles. The language itself is an object-oriented dialect of BASIC, which the compiler translates into native source code for several target platforms. The resulting code is then compiled normally. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Monkey_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Monkey is developed on GitHub and has 0 stars
-- There are at least 254 Monkey repos on GitHub
-- Early development of Monkey happened in https://github.com/Regal-Internet-Brothers
-- Monkey is written in JavaScript, HTML, Markdown
-- The  Google BigQuery Public Dataset GitHub snapshot shows 53 users using Monkey in 116 repos on GitHub
-- Explore Monkey snippets on Rosetta Code
-- Pygments supports syntax highlighting for Monkey
-- GitHub supports syntax highlighting for Monkey
-- See also: (15 related languages) Linux, BlitzBasic, C, C#, JavaScript, Java, BASIC, Android, iOS, Python, OpenGL, WebGL, Objective-C, LLVM IR, Haxe
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Monkey is developed on <a href="https://github.com/Regal-Internet-Brothers/webcc-monkey">GitHub</a> and has 0 stars
+- There are at least 254 Monkey repos on <a href="https://github.com/search?q=language:Monkey">GitHub</a>
+- Early development of Monkey happened in <a href="../lists/labs.html#q=https://github.com/Regal-Internet-Brothers">https://github.com/Regal-Internet-Brothers</a>
+- Monkey is written in <a href="javascript.html">JavaScript</a>, <a href="html.html">HTML</a>, <a href="markdown.html">Markdown</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 53 users using Monkey in 116 repos on <a href="https://api.github.com/search/repositories?q=language:Monkey">GitHub</a>
+- Explore Monkey snippets on <a href="http://www.rosettacode.org/wiki/Category:Monkey">Rosetta Code</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/basic.py">syntax highlighting</a> for Monkey
+- GitHub supports <a href="https://github.com/gingerbeardman/monkey.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Monkey
+- See also: (15 related languages) <a href="linux.html">Linux</a>, <a href="blitzbasic.html">BlitzBasic</a>, <a href="c.html">C</a>, <a href="csharp.html">C#</a>, <a href="javascript.html">JavaScript</a>, <a href="java.html">Java</a>, <a href="basic.html">BASIC</a>, <a href="android.html">Android</a>, <a href="ios.html">iOS</a>, <a href="python.html">Python</a>, <a href="opengl.html">OpenGL</a>, <a href="webgl.html">WebGL</a>, <a href="objective-c.html">Objective-C</a>, <a href="llvmir.html">LLVM IR</a>, <a href="haxe.html">Haxe</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/m/Monkey'>hello-world</a>:
 puts(&quot;Hello World&quot;)
 
+```
+
+```Example from <a href='https://github.com/gingerbeardman/monkey.tmbundle'>Linguist</a>:
 &#39;Showcases use of Lambda functions and Generics.
 
 #Import &quot;&lt;std&gt;&quot;
@@ -55,7 +61,9 @@ End
 Struct MyObject
 	Field depth := 0
 End
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Monkey_(programming_language)'>Wikipedia</a>:
 &#39; The &#39;Player&#39; class, as referenced previously (Placement does not matter):
 Class Player
   &#39; Declare all of our fields (Class-local variables):
@@ -91,76 +99,77 @@ Class Player
     Return
   End
 End
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ' \%[10]+
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ' [0-9]+
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ' [0-9]+\.[0-9]*(?!\.)
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ' \$[0-9a-fA-Z]+
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token puts
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ' A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ' A comment
  Token '
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

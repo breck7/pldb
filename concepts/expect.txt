@@ -1,22 +1,23 @@
 Expect
 ======
 
-Expect is an open source programming language created in 1990.
+Expect is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1990.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1990
 
-#293 on PLDB
-34 Years Old
+#287 on PLDB
+36 Years Old
 
 Expect, an extension to the Tcl scripting language written by Don Libes, is a program to automate interactions with programs that expose a text terminal interface.  Expect was originally written in 1990 for Unix systems, but has since become available for Microsoft Windows and other systems.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Expect Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Expect happened in www.tcl.tk/community/coreteam
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Expect happened in <a href="../lists/labs.html#q=www.tcl.tk/community/coreteam">www.tcl.tk/community/coreteam</a>
 - Expect on HOPL
  https://hopl.info/showlanguage.prx?exp=1622 Expect on HOPL
-- See also: (6 related languages) Tcl, Unix, Regular Expressions, Python, Ruby, Perl
-- 16 PLDB concepts link to Expect: Ad-hoc, beef-lang, crmsh, Dern, eC, Flow, HHVM, icarus, invokator, Java, MicroPython, oil, GNU Poke, Racket, skip, Wonkey
+- See also: (6 related languages) <a href="tcl.html">Tcl</a>, <a href="unix.html">Unix</a>, <a href="regex.html">Regular Expressions</a>, <a href="python.html">Python</a>, <a href="ruby.html">Ruby</a>, <a href="perl.html">Perl</a>
+- 23 PLDB concepts link to Expect: <a href="ad-hoc.html">Ad-hoc</a>, <a href="beef.html">beef-lang</a>, <a href="borgo.html">Borgo</a>, <a href="cir.html">CIR</a>, <a href="cmake.html">CMake</a>, <a href="crmsh.html">crmsh</a>, <a href="dern.html">Dern</a>, <a href="ec.html">eC</a>, <a href="ecl.html">ECL</a>, <a href="flow.html">Flow</a>, <a href="hhvm.html">HHVM</a>, <a href="icarus.html">icarus</a>, <a href="invokator.html">invokator</a>, <a href="java.html">Java</a>, <a href="menhir.html">Menhir</a>, <a href="micropython.html">MicroPython</a>, <a href="oil.html">oil</a>, <a href="plasma.html">Plasma</a>, <a href="poke.html">GNU Poke</a>, <a href="racket.html">Racket</a>, <a href="reko-decompiler.html">Reko</a>, <a href="skip.html">skip</a>, <a href="wonkey.html">Wonkey</a>
 
+```Example from the web:
 # Assume $remote_server, $my_user_id, $my_password, and $my_command were read in earlier
 # in the script.
 # Open a telnet session to a remote server, and wait for a username prompt.
@@ -36,7 +37,9 @@ set results $expect_out(buffer)
 # Exit the telnet session, and wait for a special end-of-file character.
 send &quot;exit\r&quot;
 expect eof
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Expect'>Wikipedia</a>:
 #timeout is a predefined variable in expect which by default is set to 10 sec
 #spawn_id is another default variable in expect.
 #It is good practice to close spawn_id handle created by spawn command
@@ -53,29 +56,30 @@ while {1} {
 }
 wait
 close $spawn_id
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -37,7 +37,7 @@ const SVGS = {
 
 const delimiter = `¶`
 const quickTable = (rows, header) =>
-  `table\n delimiter ${delimiter}\n printTable\n data\n  ${new Particle(rows)
+  `datatable\n delimiter ${delimiter}\n printTable\n data\n  ${new Particle(rows)
     .toDelimited(delimiter, header, false)
     .replace(/\n/g, "\n  ")}`
 
@@ -582,7 +582,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
         subparticle.set("repoLink", subparticle.get("url"))
       })
       return `## Trending <a href="https://github.com/trending/${githubId}?since=monthly">${title} repos</a> on GitHub
-table
+datatable
  delimiter ,
  printTable
  data
@@ -604,7 +604,7 @@ table
       subparticle.set("titleLink", `https://www.semanticscholar.org/paper/${subparticle.get("paperId")}`)
     })
     return `## Publications about ${title} from Semantic Scholar
-table
+datatable
  delimiter |
  printTable
  data
@@ -629,7 +629,7 @@ table
       subparticle.set("titleLink", `https://isbndb.com/book/${subparticle.get("isbn13")}`)
     })
     return `## Books about ${title} from ISBNdb
-table
+datatable
  delimiter |
  printTable
  data
@@ -650,7 +650,7 @@ table
       )
     })
     return `## Books about ${title} on goodreads
-table
+datatable
  delimiter |
  printTable
  data
@@ -673,7 +673,7 @@ table
         )
       })
       return `## ${dblp.get("hits")} publications about ${title} on <a href="${this.get("dblp")}">DBLP</a>
-table
+datatable
  delimiter |
  printTable
  data
@@ -706,7 +706,7 @@ table
 FeatureLink ${feature.titleLink}
 Supported ${supported ? `<span class="hasFeature">✓</span>` : `<span class="doesNotHaveFeature">X</span>`}
 Example
-Token ${supported && tokenPath ? this.get(tokenPath) ?? "" : ""}`
+Token ${supported && tokenPath ? (this.get(tokenPath) ?? "") : ""}`
         )
         .touchParticle("Example")
         .setSubparticles(particle.subparticlesToString())
@@ -714,7 +714,7 @@ Token ${supported && tokenPath ? this.get(tokenPath) ?? "" : ""}`
 
     return `## Language <a href="../lists/features.html">features</a>
 
-table
+datatable
  delimiter particles
  printTable
  data
@@ -737,15 +737,11 @@ table
       .trim()
     return `## HackerNews discussions of ${this.name}
 
-table
+datatable
  delimiter |
  printTable
  data
   ${delimited}`
-  }
-
-  get sourceUrl() {
-    return `https://github.com/breck7/pldb/blob/main/concepts/${this.id}.scroll`
   }
 
   get title() {
@@ -777,7 +773,7 @@ printTitle ${title}
 <a class="trueBaseThemePreviousItem" href="${this.prevPage}">&lt;</a>
 <a class="trueBaseThemeNextItem" href="${this.nextPage}">&gt;</a>
 
-viewSourceUrl ${this.sourceUrl}
+editBaseUrl /edit.html?folderName=pldb.io&fileName=concepts/
 
 container 800px
 
@@ -902,11 +898,7 @@ image ${image}
       tiktok: this.getPrimary("tiktoks"),
       festival: this.getPrimary("conferences"),
       twitter: this.get("twitter"),
-      edit: `https://sdk.scroll.pub/designer#${encodeURIComponent(
-        new Particle(
-          `url https://pldb.io/pldb.parsers\nprogramUrl https://pldb.io/concepts/${this.id}.scroll`
-        ).toString()
-      )}`
+      edit: `/edit.html?folderName=pldb.io&fileName=concepts%2F${this.id}.scroll`
     }
     return Object.keys(links)
       .filter(key => links[key])
@@ -1486,7 +1478,7 @@ printTitle ${title}
 <a class="trueBaseThemePreviousItem" href="${previous.permalink}">&lt;</a>
 <a class="trueBaseThemeNextItem" href="${next.permalink}">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -1560,7 +1552,7 @@ class Tables {
     const cols = lodash.keys(data[0])
     const rows = lodash.map(data, row => cols.map(col => row[col]).join(","))
     const tsv = [cols.join(","), ...rows].join("\n  ")
-    return "table\n delimiter ,\n printTable\n data\n  " + tsv
+    return "datatable\n delimiter ,\n printTable\n data\n  " + tsv
   }
 
   _top
@@ -1616,6 +1608,7 @@ class Tables {
       this._conceptPageCache[file.id] = page
       this._conceptPages.push(page)
     })
+    console.log(`Computer.js loaded ${this.pldb.length} langs from pldb.json`)
   }
 
   getConceptPage(id) {
@@ -1626,7 +1619,13 @@ class Tables {
   getLanguageTemplate(absolutePath) {
     if (absolutePath.endsWith("conceptPage.scroll")) return ""
     const name = path.basename(absolutePath).replace(".scroll", "")
-    return this.getConceptPage(name).toScroll()
+    try {
+      return this.getConceptPage(name).toScroll()
+    } catch (err) {
+      console.error(err)
+      console.error(`Error loading '${name}' in '${absolutePath}'`)
+      return ""
+    }
   }
 
   get measures() {
@@ -1733,7 +1732,7 @@ class Tables {
     const birthYears = rows.map(row => row.born).filter(i => i)
     birthYears.sort()
 
-    const minYear = Math.min(...birthYears)
+    const minYear = 1906 // Math.min(...birthYears)
     const maxYear = 2024
     const histogram = Array.from(
       { length: maxYear - minYear + 1 },
@@ -1891,43 +1890,6 @@ class Tables {
     }
 
     return this.quickCache.keywordsTable
-  }
-
-  get acknowledgements() {
-    const sources = this.measures.map(col => col.Source).filter(i => i)
-    let writtenIn = [
-      "javascript",
-      "nodejs",
-      "html",
-      "css",
-      "particles",
-      "scroll",
-      "parsers",
-      "git",
-      "python",
-      "bash",
-      "markdown",
-      "json",
-      "typescript",
-      "png",
-      "svg",
-      "explorer",
-      "gitignore"
-    ].map(id => this.getConceptPage(id).parsed)
-
-    const npmPackages = Object.keys({
-      ...require("./package.json").devDependencies
-    })
-    npmPackages.sort()
-
-    return {
-      WRITTEN_IN_TABLE: lodash
-        .sortBy(writtenIn, "rank")
-        .map(file => `- ${file.id}\n link ../concepts/${file.id}.html`)
-        .join("\n"),
-      PACKAGES_TABLE: npmPackages.map(s => `- ${s}\n https://www.npmjs.com/package/${s}`).join("\n"),
-      SOURCES_TABLE: sources.map(s => `- ${s}\n https://${s}`).join("\n")
-    }
   }
 }
 

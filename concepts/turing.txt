@@ -1,26 +1,27 @@
 Turing
 ======
 
-Turing is a programming language created in 1982 by Ric Holt.
+Turing is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1982 by Ric Holt.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221982%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1982
  https://pldb.io/concepts/../lists/creators.html#q=Ric%20Holt Ric Holt
 
-#536 on PLDB
-42 Years Old
-524 Repos
+#556 on PLDB
+44 Years Old
+524 <span title="Turing repos on GitHub.">Repos</span>
 
 Turing is a Pascal-like programming language developed in 1982 by Ric Holt and James Cordy, then of University of Toronto, Canada. Turing is a descendant of Euclid, Pascal and SP/k that features a clean syntax and precise machine-independent semantics. Turing 4.1.0 is the latest stable version of Turing. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Turing_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 524 Turing repos on GitHub
-- The  Google BigQuery Public Dataset GitHub snapshot shows 153 users using Turing in 167 repos on GitHub
-- Explore Turing snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 524 Turing repos on <a href="https://github.com/search?q=language:Turing">GitHub</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 153 users using Turing in 167 repos on <a href="https://api.github.com/search/repositories?q=language:Turing">GitHub</a>
+- Explore Turing snippets on <a href="http://www.rosettacode.org/wiki/Category:Turing">Rosetta Code</a>
 - Turing on HOPL
  https://hopl.info/showlanguage.prx?exp=1023 Turing on HOPL
-- GitHub supports syntax highlighting for Turing
-- See also: (5 related languages) Euclid, Pascal, SP/k, MIPS architecture, TXL
+- GitHub supports <a href="https://github.com/Alhadis/language-turing" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Turing
+- See also: (5 related languages) <a href="euclid.html">Euclid</a>, <a href="pascal.html">Pascal</a>, <a href="sp-k.html">SP/k</a>, <a href="mips.html">MIPS architecture</a>, <a href="txl.html">TXL</a>
 
+```Example from the web:
 % Accepts a number and calculates its factorial
 
 function factorial (n: int) : real
@@ -40,9 +41,14 @@ loop
 end loop
 
 put &quot;The factorial of &quot;, n, &quot; is &quot;, factorial (n)
+```
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/t/Turing.t'>hello-world</a>:
 put &quot;Hello World&quot;
 
+```
+
+```Example from <a href='https://github.com/Alhadis/language-turing'>Linguist</a>:
 % Accepts a number and calculates its factorial
 
 function factorial (n: int) : real
@@ -62,7 +68,9 @@ loop
 end loop
 
 put &quot;The factorial of &quot;, n, &quot; is &quot;, factorial (n)
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Turing_(programming_language)'>Wikipedia</a>:
 % Accepts a number and calculates its factorial
  
  function factorial (n: int) : real
@@ -82,42 +90,43 @@ put &quot;The factorial of &quot;, n, &quot; is &quot;, factorial (n)
  end loop
  
  put &quot;The factorial of &quot;, n, &quot; is &quot;, factorial (n)
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token put
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % A comment
  Token %
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

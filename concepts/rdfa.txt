@@ -1,26 +1,28 @@
 RDFa
 ====
 
-RDFa is a xml format created in 2004.
+RDFa is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22xmlFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">xml format</a> created in 2004.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2004
 
-#826 on PLDB
-20 Years Old
+#856 on PLDB
+22 Years Old
 
 RDFa (or Resource Description Framework in Attributes) is  a W3C Recommendation that adds a set of attribute-level extensions to HTML, XHTML and various XML-based document types for embedding rich metadata within Web documents. The RDF data-model mapping enables its use for embedding RDF subject-predicate-object expressions within XHTML documents. It also enables the extraction of RDF model triples by compliant user agents. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/RDFa Read more on Wikipedia...
 
-- Tags: xmlFormat
-- Early development of RDFa happened in W3C
-- rdfa.info was registered in 2006
-- See also: (1 related languages) JSON-LD
-- 1 PLDB concepts link to RDFa: Notation3
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"xmlFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>xmlFormat</a>
+- Early development of RDFa happened in <a href="../lists/labs.html#q=W3C">W3C</a>
+- <a href="http://rdfa.info/">rdfa.info</a> was registered in 2006
+- See also: (1 related languages) <a href="json-ld.html">JSON-LD</a>
+- 1 PLDB concepts link to RDFa: <a href="notation3.html">Notation3</a>
 
+```Example from the web:
 &lt;div xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot;
   about=&quot;http://www.example.com/books/wikinomics&quot;&gt;
   &lt;span property=&quot;dc:title&quot;&gt;Wikinomics&lt;/span&gt;
   &lt;span property=&quot;dc:creator&quot;&gt;Don Tapscott&lt;/span&gt;
   &lt;span property=&quot;dc:date&quot;&gt;2006-10-01&lt;/span&gt;
 &lt;/div&gt;
+```
 
-View source
+Built with Scroll v178.2.3

@@ -1,21 +1,23 @@
 Wasp
 ====
 
-Wasp, aka Web App Specification Language, is a programming language created in 2019 by Martin Šošić.
+Wasp, aka Web App Specification Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2019 by Martin Šošić.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2019
  https://pldb.io/concepts/../lists/creators.html#q=Martin%20%C5%A0o%C5%A1i%C4%87 Martin Šošić
 
-#552 on PLDB
-5 Years Old
+#574 on PLDB
+7 Years Old
 
+```Download source code:
 git clone https://github.com/wasp-lang/wasp
+```
 
 The fastest way to develop full-stack web apps with React & Node.js.
 
-- Tags: programming language
-- Wasp is developed on GitHub and has 12,925 stars
-- Wasp is written in TypeScript, Haskell, Markdown, JavaScript, JSON, JSX, SQL, CSS, SVG, TOML, HTML, YAML, Dockerfile, Bourne shell, Tex, XML, Bash, Logos, PowerShell
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Wasp is developed on <a href="https://github.com/wasp-lang/wasp">GitHub</a> and has 12,925 stars
+- Wasp is written in <a href="typescript.html">TypeScript</a>, <a href="haskell.html">Haskell</a>, <a href="markdown.html">Markdown</a>, <a href="javascript.html">JavaScript</a>, <a href="json.html">JSON</a>, <a href="jsx.html">JSX</a>, <a href="sql.html">SQL</a>, <a href="css.html">CSS</a>, <a href="svg.html">SVG</a>, <a href="toml.html">TOML</a>, <a href="html.html">HTML</a>, <a href="yaml.html">YAML</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="tex.html">Tex</a>, <a href="xml.html">XML</a>, <a href="bash.html">Bash</a>, <a href="logos.html">Logos</a>, <a href="powershell.html">PowerShell</a>
 - Read more about Wasp on the web: 1.
  https://www.reddit.com/r/ProgrammingLanguages/comments/f7r8n9/brother_and_i_are_developing_a_declarative_dsl/ 1.
 
-View source
+Built with Scroll v178.2.3

@@ -1,22 +1,23 @@
 ALEF
 ====
 
-ALEF is a programming language created in 1992 by Phil Winterbottom.
+ALEF is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1992 by Phil Winterbottom.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221992%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1992
  https://pldb.io/concepts/../lists/creators.html#q=Phil%20Winterbottom Phil Winterbottom
 
-#1524 on PLDB
-32 Years Old
+#1582 on PLDB
+34 Years Old
 
 Alef is a discontinued concurrent programming language, designed as part of the Plan 9 operating system by Phil Winterbottom of Bell Labs. It implemented the channel-based concurrency model of Newsqueak in a compiled, C-like language.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Alef_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of ALEF happened in Bell Labs
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of ALEF happened in <a href="../lists/labs.html#q=Bell Labs">Bell Labs</a>
 - ALEF on HOPL
  https://hopl.info/showlanguage.prx?exp=1799 ALEF on HOPL
-- See also: (6 related languages) C, Newsqueak, Limbo, Rust, Go, CSP
+- See also: (6 related languages) <a href="c.html">C</a>, <a href="newsqueak.html">Newsqueak</a>, <a href="limbo.html">Limbo</a>, <a href="rust.html">Rust</a>, <a href="go.html">Go</a>, <a href="csp.html">CSP</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Alef_(programming_language)'>Wikipedia</a>:
 (int, byte*, byte)
 func()
 {
@@ -31,5 +32,6 @@ main()
     byte c;
     (a, str, c) = func();
 }
+```
 
-View source
+Built with Scroll v178.2.3

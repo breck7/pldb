@@ -1,0 +1,13 @@
+../code/conceptPage.scroll
+
+id spz
+name SPZ
+appeared 2024
+tags binaryDataFormat 3d
+website https://scaniverse.com/spz
+description File format for 3D Gaussian splats. About 10x smaller than the PLY equivalent with virtually no perceptible loss in visual quality. SPZ splats are about 90% smaller than PLYs, roughly 25 MB versus 250 MB for a fairly rich scene.
+lab Ninantic
+
+related ply gzip
+
+githubRepo https://github.com/nianticlabs/spz

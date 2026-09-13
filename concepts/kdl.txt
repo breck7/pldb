@@ -1,0 +1,56 @@
+KDL
+===
+
+KDL is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2020.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
+
+#885 on PLDB
+6 Years Old
+
+```Download source code:
+git clone https://github.com/kdl-org/kdl
+```
+
+KDL is a small, pleasant document language with XML-like node semantics that looks like you're invoking a bunch of CLI commands! It's meant to be used both as a serialization format and a configuration language, much like JSON, YAML, or XML.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- KDL is developed on <a href="https://github.com/kdl-org/kdl">GitHub</a> and has 1,231 stars
+- <a href="sdlang.html">SDLang</a> influenced the design of KDL
+- KDL is written in <a href="markdown.html">Markdown</a>, <a href="svg.html">SVG</a>, <a href="yaml.html">YAML</a>, <a href="python.html">Python</a>, <a href="json.html">JSON</a>, <a href="xml.html">XML</a>
+
+```Example from the web:
+package {
+  name my-pkg
+  version &quot;1.2.3&quot;
+  dependencies {
+    // Nodes can have standalone values as well as
+    // key/value pairs.
+    lodash &quot;^3.2.1&quot; optional=#true alias=underscore
+  }
+  scripts {
+    // &quot;Raw&quot; and dedented multi-line strings are supported.
+    message &quot;&quot;&quot;
+      hello
+      world
+      &quot;&quot;&quot;
+    build #&quot;&quot;&quot;
+      echo &quot;foo&quot;
+      node -c &quot;console.log(&#39;hello, world!&#39;);&quot;
+      echo &quot;foo&quot; &gt; some-file.txt
+      &quot;&quot;&quot;#
+  }
+  // `\` breaks up a single node across multiple lines.
+  the-matrix 1 2 3 \
+             4 5 6 \
+             7 8 9
+  // &quot;Slashdash&quot; comments operate at the node level,
+  // with just `/-`.
+  /-this-is-commented {
+    this entire node {
+      is gone
+    }
+  }
+}
+```
+
+Built with Scroll v178.2.3

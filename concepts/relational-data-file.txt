@@ -1,21 +1,26 @@
 Relational Data File
 ====================
 
-Relational Data File is a query language created in 1965.
+Relational Data File is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22queryLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">query language</a> created in 1965 by Roger Levien and M. E. Maron.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221965%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1965
+ https://pldb.io/concepts/../lists/creators.html#q=Roger%20Levien Roger Levien
+ https://pldb.io/concepts/../lists/creators.html#q=M.%20E.%20Maron M. E. Maron
 
-#3158 on PLDB
-59 Years Old
+#2770 on PLDB
+61 Years Old
 
 A tool for mechanized inference execution and data retrieval.
 
-- Tags: queryLanguage
-- Early development of Relational Data File happened in RAND
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"queryLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>queryLanguage</a>
+- Early development of Relational Data File happened in <a href="../lists/labs.html#q=RAND">RAND</a>
 - Read more about Relational Data File on the web: 1.
  https://www.rand.org/pubs/research_memoranda/RM4793.html 1.
+- 1 PLDB concepts link to Relational Data File: <a href="relational-model.html">Relational Model</a>
 
+```Example from the web:
 IF (x AUTHORED PAPER y)
 AND (y SUBJECT INDEXED UNDER pattern recognition)
 THEN (x CONDUCTS RESEARCH ON pattern recognition)
+```
 
-View source
+Built with Scroll v178.2.3

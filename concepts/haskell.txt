@@ -1,190 +1,213 @@
 Haskell
 =======
 
-Haskell is an open source programming language created in 1990 by Paul Hudak and John Hughes.
+Haskell is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1990 by Paul Hudak and John Hughes.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1990
  https://pldb.io/concepts/../lists/creators.html#q=Paul%20Hudak Paul Hudak
  https://pldb.io/concepts/../lists/creators.html#q=John%20Hughes John Hughes
 
 #26 on PLDB
-34 Years Old
-127k Repos
+36 Years Old
+127k <span title="Haskell repos on GitHub.">Repos</span>
 
 Haskell  is a standardized, general-purpose purely functional programming language, with non-strict semantics and strong static typing. It is named after logician Haskell Curry. The latest standard of Haskell is Haskell 2010. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Haskell_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 126,924 Haskell repos on GitHub
-- Early development of Haskell happened in Yale University and Chalmers University and Microsoft and University of Edinburgh
-- The  Google BigQuery Public Dataset GitHub snapshot shows 13k users using Haskell in 30k repos on GitHub
-- Check out the 311 Haskell meetup groups on Meetup.com.
-- There are 7,098 Project Euler users using Haskell
-- In the 2021 StackOverflow developer survey Haskell programmers reported a median salary of $67,021. 2% of respondents reported using Haskell. 1,749 programmers reported using Haskell, and 3,453 said they wanted to use it
-- Explore Haskell snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 126,924 Haskell repos on <a href="https://github.com/search?q=language:Haskell">GitHub</a>
+- Early development of Haskell happened in <a href="../lists/labs.html#q=Yale University">Yale University</a> and <a href="../lists/labs.html#q=Chalmers University">Chalmers University</a> and <a href="../lists/labs.html#q=Microsoft">Microsoft</a> and <a href="../lists/labs.html#q=University of Edinburgh">University of Edinburgh</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 13k users using Haskell in 30k repos on <a href="https://api.github.com/search/repositories?q=language:Haskell">GitHub</a>
+- Check out the 311 <a href="https://www.meetup.com/topics/haskell/">Haskell meetup groups</a> on Meetup.com.
+- There are 7,098 <a href="https://projecteuler.net/language=Haskell">Project Euler</a> users using Haskell
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> Haskell programmers reported a median salary of $67,021. 2% of respondents reported using Haskell. 1,749 programmers reported using Haskell, and 3,453 said they wanted to use it
+- Explore Haskell snippets on <a href="http://www.rosettacode.org/wiki/Category:Haskell">Rosetta Code</a>
 - Haskell on HOPL
  https://hopl.info/showlanguage.prx?exp=1555 Haskell on HOPL
-- Haskell appears in the TIOBE Index
+- Haskell appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - Haskell Ubuntu package
  https://packages.ubuntu.com/jammy/ghc Haskell Ubuntu package
-- Haskell LSP implementation
-- CodeMirror package for syntax highlighting Haskell
-- Pygments supports syntax highlighting for Haskell
-- GitHub supports syntax highlighting for Haskell
-- Haskell appears in the Quine Relay project
-- Learn Haskell on exercism.
-- There is 1 Jupyter Kernel for Haskell
-- There is a central package repository for Haskell
-- Indeed.com has 190 matches for "haskell developer".
-- haskell.org was registered in 1996
-- See also: (43 related languages) Clean, FP, HOPE, Irvine Dataflow, ISWIM, KRC, Lisp, Miranda, ML, Standard ML, Scheme, SISAL, Agda, C#, LINQ, Cayenne, Clojure, CoffeeScript, Curry, Elm, Epigram, F#, Frege, Hack, Idris, Java, LiveScript, Mercury, Raku, Python, Rust, Scala, Swift, Visual Basic .NET, C, C--, LLVM IR, OpenGL, JavaScript, Lazy ML, Pandoc, Cryptol, JVM
-- 86 PLDB concepts link to Haskell: Ace Editor, Aith, Astatine, asterius-compiler, atomspace, attoparsec, badlanguage, Boomerang Decompiler, Bruijn, carp, carth, Chapel, Civet, clash, cloc, Cryptol, Curly, Curry, Darcs Advanced Revision Control System, datafun, dex, Dhall, Differential Datalog, Đ, Egison, Elm, Encore, Enso, expresso, fay, Felix, Flare, forest-lang, fp, Frank, F*, Futhark, GHC, Gren, hakaru, hamler, harlan, haste, helium, Idris, JSON lambda, juvix, Kalyn, kei, keli, kima, kitlang, kitten, Koka, lambcalc, lamdu-editor, Lamdu, Lawvere, Ligo, Lucid, Luna, mal, Megaparsec, monte, neut, Nit, Octune, oden, Pact, Pandoc, Parsec, Particles, plam, psyche-c, PureScript, Pygments, reflex-framework, Scrapscript, Simplicity, sixten, Slab, son, Topaz, UCL, Wasp, Z
+- Haskell <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/haskell/haskell-ide-engine">implementation</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/haskell">package</a> for syntax highlighting Haskell
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/haskell.py">syntax highlighting</a> for Haskell
+- GitHub supports <a href="https://github.com/atom-haskell/language-haskell" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Haskell
+- Haskell appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Learn <a href="https://exercism.org/tracks/haskell">Haskell on exercism.</a>
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/gibiansky/IHaskell">Kernel</a> for Haskell
+- There is a <a href="https://hackage.haskell.org/">central package repository</a> for Haskell
+- Indeed.com has 190 matches for <a href="https://www.indeed.com/jobs?q=haskell developer">"haskell developer"</a>.
+- <a href="https://www.haskell.org">haskell.org</a> was registered in 1996
+- See also: (43 related languages) <a href="clean.html">Clean</a>, <a href="fp.html">FP</a>, <a href="hope.html">HOPE</a>, <a href="id.html">Irvine Dataflow</a>, <a href="iswim.html">ISWIM</a>, <a href="krc.html">KRC</a>, <a href="lisp.html">Lisp</a>, <a href="miranda.html">Miranda</a>, <a href="ml.html">ML</a>, <a href="standard-ml.html">Standard ML</a>, <a href="scheme.html">Scheme</a>, <a href="sisal.html">SISAL</a>, <a href="agda.html">Agda</a>, <a href="csharp.html">C#</a>, <a href="linq.html">LINQ</a>, <a href="cayenne.html">Cayenne</a>, <a href="clojure.html">Clojure</a>, <a href="coffeescript.html">CoffeeScript</a>, <a href="curry.html">Curry</a>, <a href="elm.html">Elm</a>, <a href="epigram.html">Epigram</a>, <a href="f-sharp.html">F#</a>, <a href="frege.html">Frege</a>, <a href="hack.html">Hack</a>, <a href="idris.html">Idris</a>, <a href="java.html">Java</a>, <a href="livescript.html">LiveScript</a>, <a href="mercury.html">Mercury</a>, <a href="raku.html">Raku</a>, <a href="python.html">Python</a>, <a href="rust.html">Rust</a>, <a href="scala.html">Scala</a>, <a href="swift.html">Swift</a>, <a href="visual-basic.net.html">Visual Basic .NET</a>, <a href="c.html">C</a>, <a href="c--.html">C--</a>, <a href="llvmir.html">LLVM IR</a>, <a href="opengl.html">OpenGL</a>, <a href="javascript.html">JavaScript</a>, <a href="lazyml.html">Lazy ML</a>, <a href="pandoc-app.html">Pandoc</a>, <a href="cryptol.html">Cryptol</a>, <a href="jvm.html">JVM</a>
+- 90 PLDB concepts link to Haskell: <a href="ace.html">Ace Editor</a>, <a href="aith.html">Aith</a>, <a href="astatine.html">Astatine</a>, <a href="asterius-compiler.html">asterius-compiler</a>, <a href="atomspace.html">atomspace</a>, <a href="attoparsec.html">attoparsec</a>, <a href="badlanguage.html">badlanguage</a>, <a href="boomerang-decompiler.html">Boomerang Decompiler</a>, <a href="bruijn.html">Bruijn</a>, <a href="carp.html">carp</a>, <a href="carth.html">carth</a>, <a href="civet.html">Civet</a>, <a href="clash.html">clash</a>, <a href="cloc.html">cloc</a>, <a href="cryptol.html">Cryptol</a>, <a href="curly.html">Curly</a>, <a href="curry.html">Curry</a>, <a href="darcs.html">Darcs Advanced Revision Control System</a>, <a href="datafun.html">datafun</a>, <a href="dex.html">dex</a>, <a href="dhall.html">Dhall</a>, <a href="differential-datalog.html">Differential Datalog</a>, <a href="edh.html">Đ</a>, <a href="egison.html">Egison</a>, <a href="elm.html">Elm</a>, <a href="encore.html">Encore</a>, <a href="enso.html">Enso</a>, <a href="expresso.html">expresso</a>, <a href="fay.html">fay</a>, <a href="felix.html">Felix</a>, <a href="flare.html">Flare</a>, <a href="forest-lang.html">forest-lang</a>, <a href="forml.html">Forml</a>, <a href="fp3.html">fp</a>, <a href="frank-lang.html">Frank</a>, <a href="fstar.html">F*</a>, <a href="futhark.html">Futhark</a>, <a href="ghc.html">GHC</a>, <a href="gren.html">Gren</a>, <a href="hakaru.html">hakaru</a>, <a href="hamler.html">hamler</a>, <a href="harlan.html">harlan</a>, <a href="haste.html">haste</a>, <a href="helium.html">helium</a>, <a href="idris.html">Idris</a>, <a href="json-lambda.html">JSON lambda</a>, <a href="juvix.html">juvix</a>, <a href="kalyn.html">Kalyn</a>, <a href="kei.html">kei</a>, <a href="keli.html">keli</a>, <a href="kima.html">kima</a>, <a href="kitlang.html">kitlang</a>, <a href="kitten.html">kitten</a>, <a href="koka.html">Koka</a>, <a href="lambcalc.html">lambcalc</a>, <a href="lamdu-editor.html">lamdu-editor</a>, <a href="lamdu.html">Lamdu</a>, <a href="lawvere.html">Lawvere</a>, <a href="ligo.html">Ligo</a>, <a href="lucid-lang.html">Lucid</a>, <a href="luna.html">Luna</a>, <a href="mal.html">mal</a>, <a href="megaparsec.html">Megaparsec</a>, <a href="mlscript.html">MLscript</a>, <a href="monte.html">monte</a>, <a href="mushroom.html">Mushroom</a>, <a href="netbeans-editor.html">netbeans-editor</a>, <a href="neut.html">Neut</a>, <a href="nit.html">Nit</a>, <a href="octune.html">Octune</a>, <a href="oden.html">oden</a>, <a href="pact.html">Pact</a>, <a href="pandoc-app.html">Pandoc</a>, <a href="parsec.html">Parsec</a>, <a href="particles.html">Particles</a>, <a href="plam.html">plam</a>, <a href="psyche-c.html">psyche-c</a>, <a href="purescript.html">PureScript</a>, <a href="pygments.html">Pygments</a>, <a href="reach.html">Reach</a>, <a href="reflex-framework.html">reflex-framework</a>, <a href="scrapscript.html">Scrapscript</a>, <a href="simplictiy.html">Simplicity</a>, <a href="sixten.html">Sixten</a>, <a href="slab.html">Slab</a>, <a href="son.html">son</a>, <a href="topaz-lang.html">Topaz</a>, <a href="ucl.html">UCL</a>, <a href="unison.html">unison</a>, <a href="wasp-lang.html">Wasp</a>
 
+```Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
 module Example where
 
 sumOverArray :: [Int] -&gt; Int
 sumOverArray (x:xs) = x + sumOverArray xs
 sumOverArray [] =  0
 
+```
+
+```Example from <a href='https://riju.codes/haskell'>Riju</a>:
 module Main where
 
 main :: IO ()
 main = putStrLn &quot;Hello, world!&quot;
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/h/Haskell.hs'>hello-world</a>:
 module Main where
 
 main = putStrLn &quot;Hello World&quot;
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Haskell'>the Hello World Collection</a>:
 -- Hello World in Haskell
- 
 main = putStrLn &quot;Hello World&quot;
 
+```
+
+```Example from <a href='https://github.com/atom-haskell/language-haskell'>Linguist</a>:
 import Data.Char
 
 main :: IO ()
 main = do
 	let hello = &quot;hello world&quot;
 	putStrLn $ map toUpper hello
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Haskell_(programming_language)'>Wikipedia</a>:
 $ ghci
 Prelude&gt; import Data.Int
 Prelude Data.Int&gt; fromIntegral (32767 :: Int16) :: Int8
 -1
 Prelude Data.Int&gt; fromInteger (2^64 :: Integer) :: Int32
 0
+```
 
-! ' '' - - :: ;  > ? # \* @ [|, |] \ \_ ` {, } {-, -} | ~ as case of class data family instance default deriving do forall foreign hiding if then else import infix infixl infixr let in mdo module newtype proc qualified rec type where
+```Haskell <a href="../lists/keywords.html#q=haskell">Keywords</a>
+! ' '' - -< -<< -> :: ; <- , = => > ? # \* @ [|, |] \ \_ ` {, } {-, -} | ~ as case of class data family instance default deriving do forall foreign hiding if then else import infix infixl infixr let in mdo module newtype proc qualified rec type where
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Standard Library
  FeatureLink ../features/hasStandardLibrary.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   main = putStrLn "Hello, World!"
  Token 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- 0[bB]_*[01](_*[01])*
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- \d(_*\d)*
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- 0[xX]_*[\da-fA-F](_*[\da-fA-F])*_*[pP][+-]?\d(_*\d)*
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- 0[xX]_*[\da-fA-F](_*[\da-fA-F])*
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- 0[oO]_*[0-7](_*[0-7])*
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token putStrLn
 row
  Feature Range Operator
  FeatureLink ../features/hasRangeOperators.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Function Composition
  FeatureLink ../features/hasFunctionComposition.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   foo = f . g
  Token 
 row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token --
 row
  Feature Type Inference
  FeatureLink ../features/hasTypeInference.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   import Data.Maybe
   import Mod as Foo
@@ -196,20 +219,20 @@ row
 row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   {-# INLINE foo #-}
  Token 
 row
  Feature Garbage Collection
  FeatureLink ../features/hasGarbageCollection.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Pattern Matching
  FeatureLink ../features/hasPatternMatching.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   fib 0 = 1
   fib 1 = 1
@@ -219,20 +242,20 @@ row
 row
  Feature Zippers
  FeatureLink ../features/hasZippers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- https://wiki.haskell.org/Zipper_monad/TravelTree
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token {- -}
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
    -- a single line comment
    {- A multiline comment
@@ -242,30 +265,67 @@ row
 row
  Feature Map Functions
  FeatureLink ../features/hasMapFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   class Functor f where
      fmap :: (a -> b) -> f a -> f b
-     ( f b -> f a
+     (<$) :: a -> f b -> f a
  Token 
 row
  Feature Monad
  FeatureLink ../features/hasMonads.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- https://stackoverflow.com/questions/44965/what-is-a-monad
-  parseExpr = parseString  parseNumber
+  parseExpr = parseString <|> parseNumber
   
   parseString = do
           char '"'
-          x ✓
+          x <- many (noneOf "\"")
+          char '"'
+          return (StringValue x)
+  
+  parseNumber = do
+      num <- many1 digit
+      return (NumberValue (read num))
+ Token 
+row
+ Feature Typed Holes
+ FeatureLink ../features/hasTypedHoles.html
+ Supported <span class="hasFeature">✓</span>
  Example
   -- Found hole `_' with type f (Free f b)
  Token 
 row
+ Feature Type Classes
+ FeatureLink ../features/hasTypeClasses.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  class ToTypedJson a where
+    toTypedJson :: a -> String
+  
+  instance ToTypedJson Integer where
+    toTypedJson x =
+      "{\"type\": \"int\", \"value\": " ++ (show x) ++ "}"
+  
+  printAsTypedJson :: ToTypedJson a => a -> IO ()
+  printAsTypedJson x = do
+    putStrLn (toTypedJson x)
+  
+  main :: IO ()
+  main = do
+    printAsTypedJson (123 :: Integer)
+ Token 
+row
+ Feature Static Typing
+ FeatureLink ../features/hasStaticTyping.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
  Feature Runtime Guards
  FeatureLink ../features/hasRunTimeGuards.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   f x
    | x > 0 = 1
@@ -274,15 +334,33 @@ row
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "hello world"
  Token "
 row
+ Feature Single Pass Compiler
+ FeatureLink ../features/hasSinglePassParser.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Named Arguments
+ FeatureLink ../features/hasNamedArguments.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Function Overloading
+ FeatureLink ../features/hasFunctionOverloading.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

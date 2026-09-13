@@ -1,18 +1,19 @@
 FIGlet Font
 ===========
 
-FIGlet Font is an application created in 1991.
+FIGlet Font is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 1991.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221991%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1991
 
-#1765 on PLDB
-33 Years Old
+#1840 on PLDB
+35 Years Old
 
-- Tags: application
-- Early development of FIGlet Font happened in http://www.figlet.org
-- GitHub supports syntax highlighting for FIGlet Font
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>
+- Early development of FIGlet Font happened in <a href="../lists/labs.html#q=http://www.figlet.org">http://www.figlet.org</a>
+- GitHub supports <a href="https://github.com/Alhadis/language-fontforge" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for FIGlet Font
 - Read more about FIGlet Font on the web: 1.
  https://en.wikipedia.org/wiki/FIGlet 1.
 
+```Example from <a href='https://github.com/Alhadis/language-fontforge'>Linguist</a>:
 flf2a$ 6 5 76 15 14 1 16271 39
 Ivrit (Hebrew) Unicode font assembled by John Cowan &lt;cowan@ccil.org&gt;
 Latin chars from  Standard by G. Chappell &amp; Ian Chai
@@ -164,5 +165,6 @@ of new full-width/kern/smush alternatives, but default output is NOT changed.
   / /_  @
  | &#39;_ \ @
  | (_)
+```
 
-View source
+Built with Scroll v178.2.3

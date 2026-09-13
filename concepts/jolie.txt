@@ -1,26 +1,27 @@
 Jolie
 =====
 
-Jolie, aka Java Orchestration Language Interpreter Engine, is a programming language created in 2006 by Claudio Guidi and Fabrizio Montesi.
+Jolie, aka Java Orchestration Language Interpreter Engine, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2006 by Claudio Guidi and Fabrizio Montesi.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
  https://pldb.io/concepts/../lists/creators.html#q=Claudio%20Guidi Claudio Guidi
  https://pldb.io/concepts/../lists/creators.html#q=Fabrizio%20Montesi Fabrizio Montesi
 
-#938 on PLDB
-18 Years Old
-129 Repos
+#975 on PLDB
+20 Years Old
+129 <span title="Jolie repos on GitHub.">Repos</span>
 
 Jolie (Java Orchestration Language Interpreter Engine) is an open-source programming language for developing distributed applications based on microservices. In the programming paradigm proposed with Jolie, each program is a service that can communicate with other programs by sending and receiving messages over a network. Jolie supports an abstraction layer that allows services to communicate using different mediums, ranging from TCP/IP sockets to local in-memory communications between processes.Jolie is currently supported by an interpreter implemented in the Java language, which can be run in multiple operating systems including Linux-based operating systems, OS X, and Windows. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Jolie_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 129 Jolie repos on GitHub
-- Early development of Jolie happened in University of Bologna
-- The  Google BigQuery Public Dataset GitHub snapshot shows 15 users using Jolie in 16 repos on GitHub
-- GitHub supports syntax highlighting for Jolie
-- jolie-lang.org was registered in 2008
-- See also: (6 related languages) Java, Linux, BPEL, XML, C, JavaScript
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 129 Jolie repos on <a href="https://github.com/search?q=language:Jolie">GitHub</a>
+- Early development of Jolie happened in <a href="../lists/labs.html#q=University of Bologna">University of Bologna</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 15 users using Jolie in 16 repos on <a href="https://api.github.com/search/repositories?q=language:Jolie">GitHub</a>
+- GitHub supports <a href="https://github.com/fmontesi/language-jolie" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Jolie
+- <a href="http://jolie-lang.org/">jolie-lang.org</a> was registered in 2008
+- See also: (6 related languages) <a href="java.html">Java</a>, <a href="linux.html">Linux</a>, <a href="bpel.html">BPEL</a>, <a href="xml.html">XML</a>, <a href="c.html">C</a>, <a href="javascript.html">JavaScript</a>
 
+```Example from <a href='https://github.com/fmontesi/language-jolie'>Linguist</a>:
 include &quot;common.iol&quot;
 include &quot;ui/swing_ui.iol&quot;
 include &quot;console.iol&quot;
@@ -48,4 +49,6 @@ main
 	}
 }
 
-View source
+```
+
+Built with Scroll v178.2.3

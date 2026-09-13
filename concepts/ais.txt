@@ -1,19 +1,19 @@
 Alternate Instruction Set
 =========================
 
-Alternate Instruction Set is an instruction set architecture created in 2001.
+Alternate Instruction Set is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22isa%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">instruction set architecture</a> created in 2001.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2001
 
-#3614 on PLDB
-23 Years Old
+#3436 on PLDB
+25 Years Old
 
 The Alternate Instruction Set (AIS) is a second 32-bit instruction set architecture found in some x86 CPUs made by VIA Technologies.  On these VIA C3 processors, the second hidden processor mode is accessed by executing the x86 instruction ALTINST (0F 3F).  If AIS mode has been enabled, the processor will perform a JMP EAX and begin executing AIS instructions at the address of the EAX register. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Alternate_Instruction_Set Read more on Wikipedia...
 
-- Tags: instruction set architecture
-- Early development of Alternate Instruction Set happened in VIA Technologies, Inc
-- See also: (2 related languages) MMX instruction set, Netwide Assembler
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"isa"%5D%7D%5D%2C"logic"%3A"AND"%7D'>instruction set architecture</a>
+- Early development of Alternate Instruction Set happened in <a href="../lists/labs.html#q=VIA Technologies, Inc">VIA Technologies, Inc</a>
+- See also: (2 related languages) <a href="mmx.html">MMX instruction set</a>, <a href="nasm.html">Netwide Assembler</a>
 - Read more about Alternate Instruction Set on the web: 1.
  http://datasheets.chipdb.org/VIA/Eden-ESP/Eden%20v1.4.pdf 1.
 
-View source
+Built with Scroll v178.2.3

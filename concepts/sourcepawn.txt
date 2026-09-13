@@ -1,26 +1,29 @@
 SourcePawn
 ==========
 
-SourcePawn is an open source programming language created in 2014.
+SourcePawn is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2014.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
 
-#485 on PLDB
-10 Years Old
-8k Repos
+#507 on PLDB
+12 Years Old
+8k <span title="SourcePawn repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/alliedmodders/sourcepawn
+```
 
 A small, statically typed scripting language.
 
-- Tags: programming language
-- SourcePawn is developed on GitHub and has 358 stars
-- There are at least 7,547 SourcePawn repos on GitHub
-- Early development of SourcePawn happened in AlliedModders LLC
-- SourcePawn is written in C++, Pascal, PHP, C#, C, Python, Markdown, YAML, XML, Ini, Bourne shell, SQL, CSS, JavaScript
-- The  Google BigQuery Public Dataset GitHub snapshot shows 7k users using SourcePawn in 9k repos on GitHub
-- Pygments supports syntax highlighting for SourcePawn
-- GitHub supports syntax highlighting for SourcePawn
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- SourcePawn is developed on <a href="https://github.com/alliedmodders/sourcepawn">GitHub</a> and has 358 stars
+- There are at least 7,547 SourcePawn repos on <a href="https://github.com/search?q=language:SourcePawn">GitHub</a>
+- Early development of SourcePawn happened in <a href="../lists/labs.html#q=AlliedModders LLC">AlliedModders LLC</a>
+- SourcePawn is written in <a href="cpp.html">C++</a>, <a href="pascal.html">Pascal</a>, <a href="php.html">PHP</a>, <a href="csharp.html">C#</a>, <a href="c.html">C</a>, <a href="python.html">Python</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="xml.html">XML</a>, <a href="ini.html">Ini</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="sql.html">SQL</a>, <a href="css.html">CSS</a>, <a href="javascript.html">JavaScript</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 7k users using SourcePawn in 9k repos on <a href="https://api.github.com/search/repositories?q=language:SourcePawn">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/pawn.py">syntax highlighting</a> for SourcePawn
+- GitHub supports <a href="https://github.com/github-linguist/sublime-sourcepawn" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for SourcePawn
 
+```Example from <a href='https://github.com/github-linguist/sublime-sourcepawn'>Linguist</a>:
 /* Fixed point arithmetic
  *
  * (c) Copyright 1998-2011, ITB CompuPhase
@@ -111,44 +114,45 @@ stock bool:operator!=(Fixed:oper1, oper2)       /* &quot;!=&quot; is commutative
 forward operator%(Fixed:oper1, Fixed:oper2);
 forward operator%(Fixed:oper1, oper2);
 forward operator%(oper1, Fixed:oper2);
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -156,7 +160,7 @@ row
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -164,8 +168,8 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

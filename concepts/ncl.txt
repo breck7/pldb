@@ -1,26 +1,29 @@
 NCAR Command Language
 =====================
 
-NCAR Command Language, aka NCAR Command Language, is an open source programming language created in 1994.
+NCAR Command Language, aka NCAR Command Language, is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1994.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221994%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1994
 
-#494 on PLDB
-30 Years Old
-654 Repos
+#515 on PLDB
+32 Years Old
+654 <span title="NCAR Command Language repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/NCAR/ncl
+```
 
 (The NCAR Command Language (NCL), a product of the Computational & Information Systems Laboratory at the National Center for Atmospheric Research (NCAR) and sponsored by the National Science Foundation, is a free interpreted language designed specifically for scientific data processing and visualization.
 
-- Tags: programming language, weather
-- NCAR Command Language is developed on GitHub and has 258 stars
-- There are at least 654 NCAR Command Language repos on GitHub
-- Early development of NCAR Command Language happened in University Corporation for Atmospheric Research
-- NCAR Command Language is written in FORTRAN 77, C, Objective-C, MATLAB, MUMPS, C shell, Rescript, sed, Mathematica, Bourne shell, Fortran 90, Python, XML, Perl, Make, Markdown, Lex, Java, YAML, Korn shell, Yacc, CSV, XSLT, Ini, Diff, Visual Basic
-- The  Google BigQuery Public Dataset GitHub snapshot shows 61 users using NCAR Command Language in 64 repos on GitHub
-- Pygments supports syntax highlighting for NCAR Command Language
-- GitHub supports syntax highlighting for NCAR Command Language
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"weather"%5D%7D%5D%2C"logic"%3A"AND"%7D'>weather</a>
+- NCAR Command Language is developed on <a href="https://github.com/NCAR/ncl">GitHub</a> and has 258 stars
+- There are at least 654 NCAR Command Language repos on <a href="https://github.com/search?q=language:NCL">GitHub</a>
+- Early development of NCAR Command Language happened in <a href="../lists/labs.html#q=University Corporation for Atmospheric Research">University Corporation for Atmospheric Research</a>
+- NCAR Command Language is written in <a href="fortran-77.html">FORTRAN 77</a>, <a href="c.html">C</a>, <a href="objective-c.html">Objective-C</a>, <a href="matlab.html">MATLAB</a>, <a href="mumps.html">MUMPS</a>, <a href="c-shell.html">C shell</a>, <a href="rescript.html">Rescript</a>, <a href="sed.html">sed</a>, <a href="mathematica.html">Mathematica</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="fortran-90.html">Fortran 90</a>, <a href="python.html">Python</a>, <a href="xml.html">XML</a>, <a href="perl.html">Perl</a>, <a href="make.html">Make</a>, <a href="markdown.html">Markdown</a>, <a href="lex.html">Lex</a>, <a href="java.html">Java</a>, <a href="yaml.html">YAML</a>, <a href="korn-shell.html">Korn shell</a>, <a href="yacc.html">Yacc</a>, <a href="csv.html">CSV</a>, <a href="xslt.html">XSLT</a>, <a href="ini.html">Ini</a>, <a href="diff.html">Diff</a>, <a href="visual-basic.html">Visual Basic</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 61 users using NCAR Command Language in 64 repos on <a href="https://api.github.com/search/repositories?q=language:NCL">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/ncl.py">syntax highlighting</a> for NCAR Command Language
+- GitHub supports <a href="https://github.com/rpavlick/language-ncl.git" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for NCAR Command Language
 
+```Example from the web:
 ;-----------------------------------------------------------------
 ;  NCL User Guide Example:   NUG_bar_chart.ncl
 ;
@@ -63,33 +66,36 @@ begin
    plot = gsn_csm_xy(wks, x, y, res)
 
 end
+```
 
+```Example from <a href='https://github.com/rpavlick/language-ncl.git'>Linguist</a>:
 val=102
 a=val/4.
 print(a)
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token ;
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

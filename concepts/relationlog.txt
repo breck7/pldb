@@ -1,17 +1,21 @@
 Relationlog
 ===========
 
-Relationlog is a programming language created in 2001.
+Relationlog is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22queryLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">query language</a> created in 2001 by Mengchi Liu.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2001
+ https://pldb.io/concepts/../lists/creators.html#q=Mengchi%20Liu Mengchi Liu
 
-#4399 on PLDB
-23 Years Old
+#2994 on PLDB
+25 Years Old
 
-- Tags: programming language
-- Early development of Relationlog happened in University of Regina
+The Relationlog system is a novel persistent deductive database system for advanced data and knowledge-based applications. It directly supports the storage and inference of data with complex structures, especially data supported in nested relational and complex-object models. The Relationlog system supports the Relationlog query language, which is a typed extension of Datalog with tuples and sets and stands in the same relationship to the nested relational and complex-object models as Datalog stands to the relational model. It also supports an SQL-like data definition language and a declarative data manipulation language.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"queryLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>queryLanguage</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"database"%5D%7D%5D%2C"logic"%3A"AND"%7D'>database</a>
+- Early development of Relationlog happened in <a href="../lists/labs.html#q=University of Regina">University of Regina</a>
+- <a href="https://doi.org/10.1002/spe.378">First announcement of</a> Relationlog
 - Relationlog on HOPL
  https://hopl.info/showlanguage.prx?exp=7143 Relationlog on HOPL
 - Read more about Relationlog on Semantic Scholar: 1.
  https://semanticscholar.org/paper/f116f44111bc612531792a2ab4267adb7e2c21b8 1.
 
-View source
+Built with Scroll v178.2.3

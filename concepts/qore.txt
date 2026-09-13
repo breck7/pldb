@@ -1,24 +1,27 @@
 Qore
 ====
 
-Qore is a programming language created in 2006 by David Nichols.
+Qore is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2006 by David Nichols.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
  https://pldb.io/concepts/../lists/creators.html#q=David%20Nichols David Nichols
 
-#975 on PLDB
-18 Years Old
+#1010 on PLDB
+20 Years Old
 
+```Download source code:
 git clone https://github.com/qorelanguage/qore
+```
 
 Qore is an interpreted, high-level, general-purpose, garbage collected  dynamic programming language, featuring support for code embedding and sandboxing with optional strong typing and a focus on fundamental support for multithreading and SMP scalability. Qore is unique because it is an interpreted scripting language with fundamental support for multithreading (meaning more than one part of the same code can run at the same time), and additionally because it features automatic memory management (meaning programmers do not have to allocate and free memory explicitly) while also supporting the RAII idiom with destructors for scope-based resource management and exception-safe programming.  This is due to Qore's unique prompt collection implementation for garbage collection.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Qore_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Qore is developed on GitHub and has 58 stars
-- Early development of Qore happened in https://github.com/qorelanguage
-- Qore is written in C++, CMake, Bourne shell, Make, M4, YAML, Vim script, SVG, Assembly language, XML, HTML, Markdown, JSON, Lisp, CSS
-- qore.org was registered in 2008
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Qore is developed on <a href="https://github.com/qorelanguage/qore">GitHub</a> and has 58 stars
+- Early development of Qore happened in <a href="../lists/labs.html#q=https://github.com/qorelanguage">https://github.com/qorelanguage</a>
+- Qore is written in <a href="cpp.html">C++</a>, <a href="cmake.html">CMake</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="make.html">Make</a>, <a href="m4.html">M4</a>, <a href="yaml.html">YAML</a>, <a href="vim-script.html">Vim script</a>, <a href="svg.html">SVG</a>, <a href="assembly-language.html">Assembly language</a>, <a href="xml.html">XML</a>, <a href="html.html">HTML</a>, <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>, <a href="lisp.html">Lisp</a>, <a href="css.html">CSS</a>
+- <a href="http://qore.org/">qore.org</a> was registered in 2008
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/q/Qore.q'>hello-world</a>:
 #!/usr/bin/env qore
 %exec-class HelloWorld
 class HelloWorld
@@ -32,22 +35,23 @@ class HelloWorld
 	    printf(&quot;%s\n&quot;, $arg);
     }
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token printf
 
-View source
+Built with Scroll v178.2.3

@@ -8,6 +8,7 @@ tags pl
 standsFor COmmon Business Oriented Language
 lab Conference/Committee on Data Systems Languages
 fileExtensions cbl cob cpy
+leetSheets ../leetSheets/cobol.jpg
 
 exercism https://exercism.org/tracks/cobol
 clocExtensions CBL cbl ccp COB cob cobol cpy
@@ -80,6 +81,7 @@ booleanTokens TRUE FALSE
 hasPointers true
 hasComments true
 hasZeroBasedNumbering false
+hasSinglePassParser true
 hasMultiLineComments false
 hasLineComments true
  MOVE ABC to XYZ  *> This is a comment.

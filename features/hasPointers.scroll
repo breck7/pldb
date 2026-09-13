@@ -7,7 +7,7 @@ printTitle Pointers
 <a class="trueBaseThemePreviousItem" href="hasPipes.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasPolymorphism.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -37,6 +37,21 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/csharp.html
  // Pointers supported only under certain conditions.
  // Get 16 bytes of memory from the process&#39;s unmanaged memory
  IntPtr pointer = System.Runtime.InteropServices.Marshal.AllocHGlobal(16);
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/wa.html">Wa-lang</a>
+ func main {
+   i, j := 42, 2701
+ 
+   p := &amp;i         // point to i
+   println(*p) // read i through the pointer
+   *p = 21         // set i through the pointer
+   println(i)  // see the new value of i
+ 
+   p = &amp;j         // point to j
+   *p = *p / 37   // divide j through the pointer
+   println(j) // see the new value of j
+ }
+ 
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/felix.html">Felix</a>
  var x = 1;
@@ -71,7 +86,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/fortran-90.
 
 ***
 
-* Languages *with* Pointers include <a href="../concepts/c.html">C</a>, <a href="../concepts/go.html">Go</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/objective-c.html">Objective-C</a>, <a href="../concepts/cobol.html">COBOL</a>, <a href="../concepts/ada.html">Ada</a>, <a href="../concepts/d.html">D</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/eiffel.html">Eiffel</a>, <a href="../concepts/pl-i.html">PL/I</a>, <a href="../concepts/modula-2.html">Modula-2</a>, <a href="../concepts/oberon.html">Oberon</a>, <a href="../concepts/felix.html">Felix</a>, <a href="../concepts/dale.html">Dale</a>, <a href="../concepts/blitzmax.html">BlitzMax</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/freebasic.html">FreeBASIC</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/fortran-90.html">Fortran 90</a>
+* Languages *with* Pointers include <a href="../concepts/c.html">C</a>, <a href="../concepts/go.html">Go</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/objective-c.html">Objective-C</a>, <a href="../concepts/cobol.html">COBOL</a>, <a href="../concepts/ada.html">Ada</a>, <a href="../concepts/d.html">D</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/eiffel.html">Eiffel</a>, <a href="../concepts/wa.html">Wa-lang</a>, <a href="../concepts/pl-i.html">PL/I</a>, <a href="../concepts/modula-2.html">Modula-2</a>, <a href="../concepts/oberon.html">Oberon</a>, <a href="../concepts/felix.html">Felix</a>, <a href="../concepts/dale.html">Dale</a>, <a href="../concepts/blitzmax.html">BlitzMax</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/freebasic.html">FreeBASIC</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/fortran-90.html">Fortran 90</a>
 
 ***
 

@@ -1,26 +1,29 @@
 PogoScript
 ==========
 
-PogoScript is an open source programming language created in 2011.
+PogoScript is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2011.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2011
 
-#828 on PLDB
-13 Years Old
-51 Repos
+#852 on PLDB
+15 Years Old
+51 <span title="PogoScript repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/featurist/pogoscript
+```
 
 A readable, DSL friendly programming language with excellent concurrency primitives
 
-- Tags: programming language
-- PogoScript is developed on GitHub and has 129 stars
-- There are at least 51 PogoScript repos on GitHub
-- Early development of PogoScript happened in https://github.com/featurist
-- PogoScript is written in JavaScript, Markdown, Make, Ruby, JSON, Diff, HTML, YAML
-- The  Google BigQuery Public Dataset GitHub snapshot shows 4 users using PogoScript in 12 repos on GitHub
-- GitHub supports syntax highlighting for PogoScript
-- pogoscript.org was registered in 2011
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- PogoScript is developed on <a href="https://github.com/featurist/pogoscript">GitHub</a> and has 129 stars
+- There are at least 51 PogoScript repos on <a href="https://github.com/search?q=language:PogoScript">GitHub</a>
+- Early development of PogoScript happened in <a href="../lists/labs.html#q=https://github.com/featurist">https://github.com/featurist</a>
+- PogoScript is written in <a href="javascript.html">JavaScript</a>, <a href="markdown.html">Markdown</a>, <a href="make.html">Make</a>, <a href="ruby.html">Ruby</a>, <a href="json.html">JSON</a>, <a href="diff.html">Diff</a>, <a href="html.html">HTML</a>, <a href="yaml.html">YAML</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4 users using PogoScript in 12 repos on <a href="https://api.github.com/search/repositories?q=language:PogoScript">GitHub</a>
+- GitHub supports <a href="https://github.com/featurist/PogoScript.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for PogoScript
+- <a href="http://pogoscript.org/">pogoscript.org</a> was registered in 2011
 
+```Example from <a href='https://github.com/featurist/PogoScript.tmbundle'>Linguist</a>:
 httpism = require &#39;httpism&#39;
 async = require &#39;async&#39;
 resolve = require &#39;url&#39;.resolve
@@ -66,4 +69,6 @@ elements in (html) matching (reg) as (tag) =
     
     elements
 
-View source
+```
+
+Built with Scroll v178.2.3

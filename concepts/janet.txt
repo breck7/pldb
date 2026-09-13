@@ -1,26 +1,29 @@
 Janet
 =====
 
-Janet is a programming language created in 2018 by Calvin Rose.
+Janet is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2018 by Calvin Rose.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2018
  https://pldb.io/concepts/../lists/creators.html#q=Calvin%20Rose Calvin Rose
 
-#205 on PLDB
-6 Years Old
-88 Repos
+#216 on PLDB
+8 Years Old
+88 <span title="Janet repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/janet-lang/janet
+```
 
 A dynamic language and bytecode vm
 
-- Tags: programming language
-- Janet is developed on GitHub and has 3,396 stars
-- There are at least 88 Janet repos on GitHub
-- Early development of Janet happened in https://github.com/janet-lang
-- Janet is written in C, YAML, Bourne shell, Markdown, Make, Meson, SVG, Assembly language
-- There are 0 members in the Janet subreddit
-- janet-lang.org was registered in 2018
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Janet is developed on <a href="https://github.com/janet-lang/janet">GitHub</a> and has 3,396 stars
+- There are at least 88 Janet repos on <a href="https://github.com/search?q=language:Janet">GitHub</a>
+- Early development of Janet happened in <a href="../lists/labs.html#q=https://github.com/janet-lang">https://github.com/janet-lang</a>
+- Janet is written in <a href="c.html">C</a>, <a href="yaml.html">YAML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="markdown.html">Markdown</a>, <a href="make.html">Make</a>, <a href="meson.html">Meson</a>, <a href="svg.html">SVG</a>, <a href="assembly-language.html">Assembly language</a>
+- There are 0 members in the <a href="https://www.reddit.com/r/janetlang/">Janet subreddit</a>
+- <a href="https://janet-lang.org">janet-lang.org</a> was registered in 2018
 
+```Example from the web:
 import joy)
 
 (defn home [request]
@@ -31,68 +34,69 @@ import joy)
 (def app (joy/handler routes))
 
 (joy/server app 8000)
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Lists
  FeatureLink ../features/hasLists.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
@@ -102,4 +106,4 @@ HackerNews discussions of Janet
 title|titleLink|date|score|comments
 Janet is a Lisp for scripting, or embedding in other programs|https://news.ycombinator.com/item?id=19171121|02/15/2019|3|0
 
-View source
+Built with Scroll v178.2.3

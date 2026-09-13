@@ -1,17 +1,17 @@
 Generic Expression Language
 ===========================
 
-Generic Expression Language, aka Generic Expression Language, is a text markup language created in 2008.
+Generic Expression Language, aka Generic Expression Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2008.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
 
-#2849 on PLDB
-16 Years Old
+#2970 on PLDB
+18 Years Old
 
 Generic Expression Language (Gel) is a rich generic syntax that embodies many of the common syntactic conventions for operators, grouping and lists in widely-used languages. Prefix/infix operators are disambiguated by white-space, so that documents which violate common white-space conventions will not necessarily parse correctly with Gel. With some character replacements and adjusting for mismatch in operator precedence, Gel can extract meaningful structure from typical files in many languages, including Java, CSS, Smalltalk, and ANTLR grammars. This evaluation shows the expressive power of Gel, not that Gel can be used as a parser for existing languages. Gel is intended to serve as a generic language for creating composable domainspecific languages.
 
-- Tags: text markup language
-- Early development of Generic Expression Language happened in University of Texas at Austin
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- Early development of Generic Expression Language happened in <a href="../lists/labs.html#q=University of Texas at Austin">University of Texas at Austin</a>
 - Read more about Generic Expression Language on the web: 1.
  https://www.cs.utexas.edu/~wcook/Drafts/2008/gel.pdf 1.
 
-View source
+Built with Scroll v178.2.3

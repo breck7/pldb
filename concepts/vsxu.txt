@@ -1,21 +1,23 @@
 VSXu
 ====
 
-VSXu is an open source visual programming language created in 2004.
+VSXu is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22visual%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">visual programming language</a> created in 2004.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2004
 
-#1002 on PLDB
-20 Years Old
+#1045 on PLDB
+22 Years Old
 
+```Download source code:
 git clone https://github.com/vovoid/vsxu
+```
 
 VSXu (VSX Ultra) is an OpenGL-based (hardware-accelerated), modular programming environment with its main purpose to visualize music/audio data and create 3D effects in real-time. Available for Windows and GNU/Linux. It is currently released as free software under terms of the  GNU General Public License v2 and maintained by Vovoid Media Technologies AB. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/VSXu Read more on Wikipedia...
 
-- Tags: visual programming language
-- VSXu is developed on GitHub and has 367 stars
-- VSXu is written in C++, HTML, CMake, C, Bourne shell, XML, GLSL, Make, M4, CSS, Markdown, SVG, Go, Python, JavaScript, Yacc, Perl, Lex, YAML
-- vsxu.com was registered in 2003
-- See also: (3 related languages) Linux, Pure Data, OpenGL
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"visual"%5D%7D%5D%2C"logic"%3A"AND"%7D'>visual programming language</a>
+- VSXu is developed on <a href="https://github.com/vovoid/vsxu">GitHub</a> and has 367 stars
+- VSXu is written in <a href="cpp.html">C++</a>, <a href="html.html">HTML</a>, <a href="cmake.html">CMake</a>, <a href="c.html">C</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="xml.html">XML</a>, <a href="glsl.html">GLSL</a>, <a href="make.html">Make</a>, <a href="m4.html">M4</a>, <a href="css.html">CSS</a>, <a href="markdown.html">Markdown</a>, <a href="svg.html">SVG</a>, <a href="go.html">Go</a>, <a href="python.html">Python</a>, <a href="javascript.html">JavaScript</a>, <a href="yacc.html">Yacc</a>, <a href="perl.html">Perl</a>, <a href="lex.html">Lex</a>, <a href="yaml.html">YAML</a>
+- <a href="http://vsxu.com">vsxu.com</a> was registered in 2003
+- See also: (3 related languages) <a href="linux.html">Linux</a>, <a href="puredata.html">Pure Data</a>, <a href="opengl.html">OpenGL</a>
 
-View source
+Built with Scroll v178.2.3

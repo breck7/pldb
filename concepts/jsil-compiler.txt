@@ -1,21 +1,23 @@
 jsil-compiler
 =============
 
-jsil-compiler is an open source compiler created in 2010 by Kevin Gadd.
+jsil-compiler is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22compiler%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">compiler</a> created in 2010 by Kevin Gadd.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2010
  https://pldb.io/concepts/../lists/creators.html#q=Kevin%20Gadd Kevin Gadd
 
-#492 on PLDB
-14 Years Old
+#519 on PLDB
+16 Years Old
 
+```Download source code:
 git clone https://github.com/sq/JSIL
+```
 
 JSIL is a compiler that transforms .NET applications and libraries from their native executable format - CIL bytecode - into standards-compliant, cross-browser JavaScript.
 
-- Tags: compiler
-- jsil-compiler is developed on GitHub and has 1,728 stars
-- Early development of jsil-compiler happened in https://github.com/sq
-- jsil-compiler is written in C#, JavaScript, HTML, XML, CSS, F#, Cadence SKILL, ASP.NET, Bourne shell, TypeScript, C++, YAML, JSON, Visual Basic .NET, Markdown
-- jsil.org was registered in 2011
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"compiler"%5D%7D%5D%2C"logic"%3A"AND"%7D'>compiler</a>
+- jsil-compiler is developed on <a href="https://github.com/sq/JSIL">GitHub</a> and has 1,728 stars
+- Early development of jsil-compiler happened in <a href="../lists/labs.html#q=https://github.com/sq">https://github.com/sq</a>
+- jsil-compiler is written in <a href="csharp.html">C#</a>, <a href="javascript.html">JavaScript</a>, <a href="html.html">HTML</a>, <a href="xml.html">XML</a>, <a href="css.html">CSS</a>, <a href="f-sharp.html">F#</a>, <a href="cadence-skill.html">Cadence SKILL</a>, <a href="asp.net.html">ASP.NET</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="typescript.html">TypeScript</a>, <a href="cpp.html">C++</a>, <a href="yaml.html">YAML</a>, <a href="json.html">JSON</a>, <a href="visual-basic.net.html">Visual Basic .NET</a>, <a href="markdown.html">Markdown</a>
+- <a href="http://jsil.org/">jsil.org</a> was registered in 2011
 
-View source
+Built with Scroll v178.2.3

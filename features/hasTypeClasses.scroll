@@ -1,0 +1,85 @@
+header.scroll
+
+title Type Classes - language feature
+tags Feature
+printTitle Type Classes
+
+<a class="trueBaseThemePreviousItem" href="hasTypeAnnotations.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasTypeInference.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/rust.html">Rust</a>
+ // https://doc.rust-lang.org/book/ch10-02-traits.html
+ trait ToTypedJson {
+   fn to_typed_json(&amp;self) -&gt; String;
+ }
+ 
+ impl ToTypedJson for i64 {
+   fn to_typed_json(&amp;self) -&gt; String {
+     return format!(&quot;{{\&quot;type\&quot;: \&quot;int\&quot;, \&quot;value\&quot;: {}}}&quot;, self)
+   }
+ }
+ 
+ fn print_as_typed_json(x: impl ToTypedJson) {
+   println!(&quot;{}&quot;, x.to_typed_json());
+ }
+ 
+ fn main() {
+   print_as_typed_json(123);
+ }
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/scala.html">Scala</a>
+ // https://docs.scala-lang.org/scala3/book/ca-type-classes.html
+ trait TypedJsonConvertible[A]:
+   extension (a: A) def toTypedJson: String
+ 
+ given TypedJsonConvertible[Int] with
+   extension (x: Int) def toTypedJson: String =
+     s&quot;{\&quot;type\&quot;: \&quot;int\&quot;, \&quot;value\&quot;: ${x}}&quot;
+ 
+ def printAsTypedJson[T: TypedJsonConvertible](x: T): Unit =
+   println(x.toTypedJson);
+ 
+ printAsTypedJson(123);
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/haskell.html">Haskell</a>
+ class ToTypedJson a where
+   toTypedJson :: a -&gt; String
+ 
+ instance ToTypedJson Integer where
+   toTypedJson x =
+     &quot;{\&quot;type\&quot;: \&quot;int\&quot;, \&quot;value\&quot;: &quot; ++ (show x) ++ &quot;}&quot;
+ 
+ printAsTypedJson :: ToTypedJson a =&gt; a -&gt; IO ()
+ printAsTypedJson x = do
+   putStrLn (toTypedJson x)
+ 
+ main :: IO ()
+ main = do
+   printAsTypedJson (123 :: Integer)
+
+***
+
+* Languages *with* Type Classes include <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/scala.html">Scala</a>, <a href="../concepts/haskell.html">Haskell</a>, <a href="../concepts/coq.html">Coq</a>, <a href="../concepts/idris.html">Idris</a>
+
+***
+
+* Languages *without* Type Classes include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/cpp.html">C++</a>, <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/kotlin.html">Kotlin</a>, <a href="../concepts/ocaml.html">OCaml</a>
+
+***
+
+View all concepts with or missing a *hasTypeClasses* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTypeClasses&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasTypeClasses%22%2C%22origData%22%3A%22hasTypeClasses%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasTypeClasses&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasTypeClasses%22%2C%22origData%22%3A%22hasTypeClasses%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Type Classes on the web: 1.
+ https://en.wikipedia.org/wiki/Type_class 1.
+
+keyboardNav hasTypeAnnotations.html hasTypeInference.html
+
+../footer.scroll

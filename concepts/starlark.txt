@@ -1,28 +1,31 @@
 starlark
 ========
 
-starlark is a programming language created in 2018 by Laurent Le Brun.
+starlark is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2018 by Laurent Le Brun.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2018
  https://pldb.io/concepts/../lists/creators.html#q=Laurent%20Le%20Brun Laurent Le Brun
 
-#117 on PLDB
-6 Years Old
-3k Repos
+#122 on PLDB
+8 Years Old
+3k <span title="starlark repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/bazelbuild/starlark
+```
 
 The language used in Bazel. Starlark is designed to be small, simple, and thread-safe. Although it is inspired from Python, it is not a general-purpose language and most Python features are not included. Starlark is syntactically a subset of Python 3
 
-- Tags: programming language
-- starlark is developed on GitHub and has 2,392 stars
-- There are at least 3,423 starlark repos on GitHub
-- Early development of starlark happened in https://github.com/bazelbuild
-- starlark is written in Markdown, Python, Bazel, YAML, Bourne shell
-- The  Google BigQuery Public Dataset GitHub snapshot shows 562 users using starlark in 1k repos on GitHub
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- starlark is developed on <a href="https://github.com/bazelbuild/starlark">GitHub</a> and has 2,392 stars
+- There are at least 3,423 starlark repos on <a href="https://github.com/search?q=language:Starlark">GitHub</a>
+- Early development of starlark happened in <a href="../lists/labs.html#q=https://github.com/bazelbuild">https://github.com/bazelbuild</a>
+- starlark is written in <a href="markdown.html">Markdown</a>, <a href="python.html">Python</a>, <a href="bazel.html">Bazel</a>, <a href="yaml.html">YAML</a>, <a href="bourne-shell.html">Bourne shell</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 562 users using starlark in 1k repos on <a href="https://api.github.com/search/repositories?q=language:Starlark">GitHub</a>
 - Read more about starlark on the web: 1.
  https://bazel.build/contribute/policy 1.
-- 18 PLDB concepts link to starlark: asterius-compiler, Bazel, Cap'n Proto, Carbon, Claro, cloc, Closure Templates, FlatBuffers, JFlex, Jsonnet, Kubernetes, MongoDB, Node.js, PCRE, PyTorch, TensorFlow, v8, YARA
+- 22 PLDB concepts link to starlark: <a href="asterius-compiler.html">asterius-compiler</a>, <a href="bazel.html">Bazel</a>, <a href="capn-proto.html">Cap'n Proto</a>, <a href="carbon.html">Carbon</a>, <a href="cir.html">CIR</a>, <a href="claro.html">Claro</a>, <a href="cloc.html">cloc</a>, <a href="closure-templates.html">Closure Templates</a>, <a href="codeql.html">CodeQL</a>, <a href="flatbuffers.html">FlatBuffers</a>, <a href="jflex.html">JFlex</a>, <a href="jsonnet.html">Jsonnet</a>, <a href="kubernetes.html">Kubernetes</a>, <a href="mongodb.html">MongoDB</a>, <a href="nodejs.html">Node.js</a>, <a href="pcre.html">PCRE</a>, <a href="pytorch.html">PyTorch</a>, <a href="tensorflow.html">TensorFlow</a>, <a href="v8.html">V8</a>, <a href="wiredtiger.html">WiredTiger</a>, <a href="xla.html">XLA</a>, <a href="yara.html">YARA</a>
 
+```Example from the web:
 # Define a number
 number = 18
 
@@ -58,44 +61,48 @@ def fizz_buzz(n):
         print(s if s else i)
 
 fizz_buzz(20)
+```
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/s/Starlark.star'>hello-world</a>:
 print(&quot;Hello World&quot;)
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

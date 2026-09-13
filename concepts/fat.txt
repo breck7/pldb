@@ -1,17 +1,17 @@
 FAT
 ===
 
-FAT, aka File Allocation Table, is a filesystem created in 1977.
+FAT, aka File Allocation Table, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22filesystem%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">filesystem</a> created in 1977.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221977%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1977
 
-#910 on PLDB
-47 Years Old
+#964 on PLDB
+49 Years Old
 
 File Allocation Table (FAT) is a computer file system architecture and a family of industry-standard file systems utilizing it. The FAT file system is a continuing standard which borrows source code from the original, legacy file system and proves to be simple and robust. It offers useful performance even in lightweight implementations, but cannot deliver the same performance, reliability and scalability as some modern file systems. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/File_Allocation_Table Read more on Wikipedia...
 
-- Tags: filesystem
-- Early development of FAT happened in Microsoft and IBM and NCR Corporation and Seattle Computer Products and Compaq Computer Corporation and Digital Research and Novell and Caldera
-- See also: (10 related languages) ExFAT, New Technology File System, Linux, FreeBSD, Ext4, ASCII, x86 Assembly, Rexx, Java, Android
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"filesystem"%5D%7D%5D%2C"logic"%3A"AND"%7D'>filesystem</a>
+- Early development of FAT happened in <a href="../lists/labs.html#q=Microsoft">Microsoft</a> and <a href="../lists/labs.html#q=IBM">IBM</a> and <a href="../lists/labs.html#q=NCR Corporation">NCR Corporation</a> and <a href="../lists/labs.html#q=Seattle Computer Products">Seattle Computer Products</a> and <a href="../lists/labs.html#q=Compaq Computer Corporation">Compaq Computer Corporation</a> and <a href="../lists/labs.html#q=Digital Research">Digital Research</a> and <a href="../lists/labs.html#q=Novell">Novell</a> and <a href="../lists/labs.html#q=Caldera">Caldera</a>
+- See also: (10 related languages) <a href="exfat.html">ExFAT</a>, <a href="ntfs.html">New Technology File System</a>, <a href="linux.html">Linux</a>, <a href="freebsd.html">FreeBSD</a>, <a href="ext4.html">Ext4</a>, <a href="ascii.html">ASCII</a>, <a href="x86-assembly.html">x86 Assembly</a>, <a href="rexx.html">Rexx</a>, <a href="java.html">Java</a>, <a href="android.html">Android</a>
 
-View source
+Built with Scroll v178.2.3

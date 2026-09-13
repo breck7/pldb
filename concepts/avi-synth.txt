@@ -1,7 +1,7 @@
 AviSynth
 ========
 
-AviSynth is an open source editor created in 2000 by Ben Rudiak-Gould and Edwin van Eggelen and Klaus Post and Richard Berg and Ian Brabham.
+AviSynth is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22editor%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">editor</a> created in 2000 by Ben Rudiak-Gould and Edwin van Eggelen and Klaus Post and Richard Berg and Ian Brabham.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2000
  https://pldb.io/concepts/../lists/creators.html#q=Ben%20Rudiak-Gould Ben Rudiak-Gould
  https://pldb.io/concepts/../lists/creators.html#q=Edwin%20van%20Eggelen Edwin van Eggelen
@@ -9,23 +9,27 @@ AviSynth is an open source editor created in 2000 by Ben Rudiak-Gould and Edwin 
  https://pldb.io/concepts/../lists/creators.html#q=Richard%20Berg Richard Berg
  https://pldb.io/concepts/../lists/creators.html#q=Ian%20Brabham Ian Brabham
 
-#349 on PLDB
-24 Years Old
+#370 on PLDB
+26 Years Old
 
+```Download source code:
 git clone https://github.com/AviSynth/AviSynthPlus
+```
 
 Avisynth is a scripting language and a collection of filters for simple (and not so simple!) non-linear video editing tasks. It frameserves video to applications
 
-- Tags: editor
-- AviSynth is developed on GitHub and has 935 stars
-- Early development of AviSynth happened in https://forum.doom9.org/showthread.php?t=181351
-- AviSynth is written in reStructuredText, C++, HTML, CMake, SVG, Make, YAML, C, Markdown, Python, PowerShell
-- There is a central package repository for AviSynth
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"editor"%5D%7D%5D%2C"logic"%3A"AND"%7D'>editor</a>
+- AviSynth is developed on <a href="https://github.com/AviSynth/AviSynthPlus">GitHub</a> and has 935 stars
+- Early development of AviSynth happened in <a href="../lists/labs.html#q=https://forum.doom9.org/showthread.php?t=181351">https://forum.doom9.org/showthread.php?t=181351</a>
+- AviSynth is written in <a href="restructuredtext.html">reStructuredText</a>, <a href="cpp.html">C++</a>, <a href="html.html">HTML</a>, <a href="cmake.html">CMake</a>, <a href="svg.html">SVG</a>, <a href="make.html">Make</a>, <a href="yaml.html">YAML</a>, <a href="c.html">C</a>, <a href="markdown.html">Markdown</a>, <a href="python.html">Python</a>, <a href="powershell.html">PowerShell</a>
+- There is a <a href="https://www.npmjs.com/package/avisynth">central package repository</a> for AviSynth
 
+```Example from the web:
 filename=&quot;somefile.avi&quot;
 logfile=&quot;output.txt&quot;
 path=&quot;P:\ath\To\Files\&quot;
 lumathresh=80
 imageprefix=&quot;prefix_&quot;
+```
 
-View source
+Built with Scroll v178.2.3

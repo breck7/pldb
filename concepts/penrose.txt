@@ -1,19 +1,48 @@
-penrose
+Penrose
 =======
 
-penrose is a programming language created in 2016.
+Penrose is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22diagramLang%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">diagram lang</a> created in 2016 by Katherine Ye and Wode Ni and Max Krieger and Dor Ma’Ayan and Jenna Wise and Jonathan Aldrich and Joshua Sunshine and Keenan Crane.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2016
+ https://pldb.io/concepts/../lists/creators.html#q=Katherine%20Ye Katherine Ye
+ https://pldb.io/concepts/../lists/creators.html#q=Wode%20Ni Wode Ni
+ https://pldb.io/concepts/../lists/creators.html#q=Max%20Krieger Max Krieger
+ https://pldb.io/concepts/../lists/creators.html#q=Dor%20Ma%E2%80%99Ayan Dor Ma’Ayan
+ https://pldb.io/concepts/../lists/creators.html#q=Jenna%20Wise Jenna Wise
+ https://pldb.io/concepts/../lists/creators.html#q=Jonathan%20Aldrich Jonathan Aldrich
+ https://pldb.io/concepts/../lists/creators.html#q=Joshua%20Sunshine Joshua Sunshine
+ https://pldb.io/concepts/../lists/creators.html#q=Keenan%20Crane Keenan Crane
 
-#503 on PLDB
-8 Years Old
+#244 on PLDB
+10 Years Old
 
+```Download source code:
 git clone https://github.com/penrose/penrose
+```
 
 Create beautiful diagrams just by typing notation in plain text.
 
-- Tags: programming language
-- penrose is developed on GitHub and has 6,734 stars
-- Early development of penrose happened in Carnegie Mellon
-- penrose is written in JSON, TypeScript, Markdown, SVG, CSS, HTML, JavaScript, YAML, Vim script, Python, Lisp, Handlebars, Bourne shell
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"diagramLang"%5D%7D%5D%2C"logic"%3A"AND"%7D'>diagramLang</a>
+- Penrose is developed on <a href="https://github.com/penrose/penrose">GitHub</a> and has 6,734 stars
+- Early development of Penrose happened in <a href="../lists/labs.html#q=Carnegie Mellon">Carnegie Mellon</a>
+- Penrose is written in <a href="json.html">JSON</a>, <a href="typescript.html">TypeScript</a>, <a href="markdown.html">Markdown</a>, <a href="svg.html">SVG</a>, <a href="css.html">CSS</a>, <a href="html.html">HTML</a>, <a href="javascript.html">JavaScript</a>, <a href="yaml.html">YAML</a>, <a href="vim-script.html">Vim script</a>, <a href="python.html">Python</a>, <a href="lisp.html">Lisp</a>, <a href="handlebars.html">Handlebars</a>, <a href="bourne-shell.html">Bourne shell</a>
+- <a href="https://penrose.cs.cmu.edu/media/Penrose_SIGGRAPH2020a.pdf">First announcement of</a> Penrose
 
-View source
+```Example from the web:
+Set A, B, C, D, E, F, G
+
+Subset(B, A)
+Subset(C, A)
+Subset(D, B)
+Subset(E, B)
+Subset(F, C)
+Subset(G, C)
+
+Disjoint(E, D)
+Disjoint(F, G)
+Disjoint(B, C)
+
+AutoLabel All
+
+```
+
+Built with Scroll v178.2.3

@@ -1,3 +1,47 @@
+// todo: move out of here
+monacoEditorParser
+ cueFromId
+ extends abstractScrollParser
+ description A Monaco code editor.
+ baseParser blobParser
+ example
+  monacoEditor javascript
+   // Hello world
+ javascript
+  buildHtml() {
+   return `<div id="monacoContainer"></div>
+    <script defer src="../node_modules/monaco-editor/min/vs/loader.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    require.config({ paths: { vs: '../node_modules/monaco-editor/min/vs' } })
+    require(["vs/editor/editor.main"], function() {
+      monaco.editor.create(document.getElementById('monacoContainer'), {
+          value: \`${this.subparticlesToString().replace(/\n/g, "\\n")}\`,
+          language: '${this.getAtom(1)}',
+          minimap: {
+            enabled: false
+        },
+        scrollbar: {
+            vertical:"hidden",
+            horizontal: "hidden",
+            handleMouseWheel:false,
+        },
+        overviewRulerLanes: 0,
+        hideCursorInOverviewRuler: true,
+        overviewRulerBorder: false,
+        wordWrap: 'on',
+        //lineNumbers: 'off',
+      glyphMargin: false,
+      folding: false,
+      // Undocumented see https://github.com/Microsoft/vscode/issues/30795#issuecomment-410998882
+      lineDecorationsWidth: 10,
+      lineNumbersMinChars: 2
+        });
+      });
+      })
+    </script>`
+  }
+
 // Common Measures
 
 abstractHashMapMeasureParser
@@ -24,7 +68,7 @@ abstractYearMeasureParser
 
 abstractAnnualPopulationCountParser
  atoms yearAtom countAtom
- uniqueFirstAtom
+ uniqueCue
 abstractAnnualPopulationCountMapParser
  catchAllParser abstractAnnualPopulationCountParser
  description A map of counts, one per year.
@@ -300,10 +344,10 @@ descriptionParser
  description What is a short description of this language?
 
 subDescriptionParser
- // todo fix columnName crux path issue.
+ // todo fix columnName cue path issue.
  extends descriptionParser
  description How is this language described here?
- crux description
+ cue description
 
 tiktoksParser
  extends abstractUrlsMeasureParser
@@ -521,10 +565,6 @@ gitRepoParser
  description What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?
  extends abstractGitRepoUrlMeasureParser
 
-specRepoParser
- description What is the URL of the official spec for the language project?
- extends abstractGitRepoUrlMeasureParser
-
 mainRepoParser
  boolean isComputed true
  extends abstractStringMeasureParser
@@ -673,6 +713,13 @@ hackerNewsDiscussionsParser
  description What are URLS to Hacker News posts discussing this language?
  string sourceDomain news.ycombinator.com
  float sortIndex 18
+
+hasSinglePassParserParser
+ extends abstractFeatureParser
+ description Is the language designed for a single pass parser requiring define before use (topological sorting)?
+ string title Single Pass Compiler
+ string pseudoExample x = 2; print x
+ string reference https://en.wikipedia.org/wiki/One-pass_compiler
 
 hasAbstractTypesParser
  extends abstractFeatureParser
@@ -911,6 +958,8 @@ hasDynamicSizedArraysParser
 hasDynamicTypingParser
  description Are types of variables fixed or can they change during runtime?
  extends abstractFeatureParser
+ string title Dynamic Typing
+ string reference https://en.wikipedia.org/wiki/Type_system#Dynamic_type_checking_and_runtime_type_information
 
 hasEnumsParser
  extends abstractFeatureParser
@@ -1077,7 +1126,7 @@ hasIfElsesParser
  extends abstractFeatureParser
 
 hasIfsParser
- description Does the language have "if" statements or expressoins?
+ description Does the language have "if" statements or expressions?
  extends abstractFeatureParser
 
 hasImplicitArgumentsParser
@@ -1311,6 +1360,12 @@ hasMultipleInheritanceParser
  string title Multiple Inheritance
  string pseudoExample extends parentWhichExtendsSomethingElse
  string reference https://en.wikipedia.org/wiki/Multiple_inheritance
+
+hasNamedArgumentsParser
+ extends abstractFeatureParser
+ description Does the language have named arguments / named parameters?
+ string title Named Arguments
+ string reference https://en.wikipedia.org/wiki/Named_parameter
 
 hasNamespacesParser
  extends abstractFeatureParser
@@ -1567,6 +1622,12 @@ hasStructsParser
  string pseudoExample struct pldbFile { int rank; char *title; };
  string reference https://en.wikipedia.org/wiki/Struct_(C_programming_language)
 
+hasStructuralTypingParser
+ extends abstractFeatureParser
+ description Does the language feature (significant) structural typing?
+ string title Structural Typing
+ string reference https://en.wikipedia.org/wiki/Structural_type_system
+
 hasSwitchParser
  extends abstractFeatureParser
  description Does the language have switch statements or expressions?
@@ -1639,6 +1700,12 @@ hasTypeAnnotationsParser
  description Does the language have a syntax for annotating the types of variables?
  string title Type Annotations
  string pseudoExample score: number
+
+hasTypeClassesParser
+ extends abstractFeatureParser
+ description Does the language have type classes?
+ string title Type Classes
+ string reference https://en.wikipedia.org/wiki/Type_class
 
 hasTypeInferenceParser
  extends abstractFeatureParser
@@ -1745,7 +1812,7 @@ hasZippersParser
 helloWorldCollectionParser
  description What is the name of this project in the Hello World Collection?
  extends abstractExampleParser
- cruxFromId
+ cueFromId
  atoms measureNameAtom
  catchAllAtomType stringAtom
  string sourceDomain helloworldcollection.de
@@ -2072,7 +2139,7 @@ abstractAnnualRankMapParser
  extends abstractHashMapMeasureParser
 annualRankParser
  atoms yearAtom integerAtom
- uniqueFirstAtom
+ uniqueCue
 
 // reddit
 // todo trim the trailing slash
@@ -2193,6 +2260,12 @@ repoStatsParser
  filesParser
   extends abstractCountMeasureParser
   description How many files in the repo?
+ mbParser
+  extends abstractCountMeasureParser
+  description How many MBs in .git/objects?
+ linesOfCodeParser
+  extends abstractCountMeasureParser
+  description How many lines of code?
 
 rijuReplParser
  extends abstractUrlMeasureParser
@@ -2229,6 +2302,15 @@ specParser
  description What is a URL to the official spec for this language?
  float sortIndex 1.22
 
+isoParser
+ extends specParser
+ description What is the link to ISO standard for this language or standard?
+ float sortIndex 2.2
+
+specRepoParser
+ description What is the URL of the official spec for the language project?
+ extends abstractGitRepoUrlMeasureParser
+
 stackOverflowSurveyParser
  float sortIndex 36
  extends abstractHashMapMeasureParser
@@ -2238,7 +2320,7 @@ stackOverflowSurveyParser
   description What are the survey results for a particular year?
   atoms yearAtom
   pattern \d+
-  uniqueFirstAtom
+  uniqueCue
   usersParser
    extends abstractPopulationCountMeasureParser
    description How many developers reported using this language?
@@ -2286,13 +2368,14 @@ twitterParser
   extends abstractPopulationCountMeasureParser
 
 tagAtom
- enum assembly pl barCodeFormat video audio hardwareDescriptionLanguage knowledgeBase binaryDataFormat contractLanguage timeFormat computingMachine xmlFormat yamlFormat jsonFormat compiler grammarLanguage dataValidationLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding arrayLang idl library editor cloud textDataFormat visual plzoo interpreter notation binaryExecutable dataNotation stylesheetLanguage schema bytecode vm filesystem standard linter packageManager framework webApi feature optimizingCompiler numeralSystem hashFunction database font distribution headerLang dataStructure musicalNotation textEncodingFormat equation wikiMarkup decompiler configFormat diffFormat unixApplication webBrowser browserEngine constructedLanguage dataVis dataFlow commandLineApp versionControlApplication staticSiteGenerator network microblogging lisp diagramLang chemistry physics biology mathematics weather simulation messagingProtocol shadingLanguage searchEngine cryptoProtocol cad spreadsheet
+ enum assembly pl barCodeFormat video audio hardwareDescriptionLanguage knowledgeBase binaryDataFormat contractLanguage timeFormat computingMachine xmlFormat yamlFormat jsonFormat compiler grammarLanguage dataValidationLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding arrayLang geoCode idl library editor cloud textDataFormat visual plzoo interpreter notation binaryExecutable dataNotation stylesheetLanguage schema bytecode vm filesystem standard linter packageManager framework webApi feature optimizingCompiler numeralSystem hashFunction database font distribution headerLang dataStructure musicalNotation textEncodingFormat equation wikiMarkup decompiler configFormat diffFormat unixApplication webBrowser browserEngine constructedLanguage dataVis dataFlow commandLineApp versionControlApplication staticSiteGenerator network microblogging lisp diagramLang chemistry physics biology mathematics weather simulation messagingProtocol shadingLanguage searchEngine cryptoProtocol cad spreadsheet functional linker 3d
  paint constant.language
 tagsParser
  float sortIndex 1.2
  description Which category(ies) in PLDB's subjective ontology does this entity fit into?
  boolean isMeasureRequired true
  extends abstractEnumsMeasureParser
+ atoms measureNameAtom tagAtom
  catchAllAtomType tagAtom
 
 ubuntuPackageParser

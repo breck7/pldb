@@ -7,7 +7,7 @@ printTitle Constants
 <a class="trueBaseThemePreviousItem" href="hasConditionals.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasConstructors.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -23,9 +23,15 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ruby.html">
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/lua.html">Lua</a>
  pi &lt;const&gt; = 3.14159
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/chapel.html">Chapel</a>
+ param
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3</a>
  const FOO = 123;
  const void* BAR = null;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/toit.html">Toit</a>
+ X ::= 0
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
  const PI = 3.14159265359
@@ -33,17 +39,17 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/cwerg.html">Cwerg</a>
  global N uint = 1000 * 1000 * 1000
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/aardvark.html">Aardvark</a>
+ `static` keyword
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
  constants
   Opened = 1
   Closed = 2
 
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/aardvark.html">Aardvark</a>
- `static` keyword
-
 ***
 
-* Languages *with* Constants include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/ruby.html">Ruby</a>, <a href="../concepts/php.html">PHP</a>, <a href="../concepts/go.html">Go</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/lua.html">Lua</a>, <a href="../concepts/kotlin.html">Kotlin</a>, <a href="../concepts/objective-c.html">Objective-C</a>, <a href="../concepts/julia.html">Julia</a>, <a href="../concepts/dart.html">Dart</a>, <a href="../concepts/groovy.html">Groovy</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/f-sharp.html">F#</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/systemverilog.html">SystemVerilog</a>, <a href="../concepts/c2.html">C2</a>, <a href="../concepts/veryl.html">Veryl</a>, <a href="../concepts/angelscript.html">Angelscript</a>, <a href="../concepts/apex.html">Apex</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/cwerg.html">Cwerg</a>, <a href="../concepts/eclipse-command-language.html">Eclipse Command Language</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/nimrod.html">nimrod</a>
+* Languages *with* Constants include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/ruby.html">Ruby</a>, <a href="../concepts/php.html">PHP</a>, <a href="../concepts/go.html">Go</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/lua.html">Lua</a>, <a href="../concepts/kotlin.html">Kotlin</a>, <a href="../concepts/objective-c.html">Objective-C</a>, <a href="../concepts/julia.html">Julia</a>, <a href="../concepts/dart.html">Dart</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/groovy.html">Groovy</a>, <a href="../concepts/f-sharp.html">F#</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/wa.html">Wa-lang</a>, <a href="../concepts/systemverilog.html">SystemVerilog</a>, <a href="../concepts/c2.html">C2</a>, <a href="../concepts/toit.html">Toit</a>, <a href="../concepts/veryl.html">Veryl</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/angelscript.html">Angelscript</a>, <a href="../concepts/apex.html">Apex</a>, <a href="../concepts/cwerg.html">Cwerg</a>, <a href="../concepts/eclipse-command-language.html">Eclipse Command Language</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/nimrod.html">nimrod</a>
 
 ***
 

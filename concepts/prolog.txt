@@ -1,126 +1,140 @@
 Prolog
 ======
 
-Prolog is a programming language created in 1972 by Alain Colmerauer.
+Prolog is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1972 by Alain Colmerauer.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221972%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1972
  https://pldb.io/concepts/../lists/creators.html#q=Alain%20Colmerauer Alain Colmerauer
 
-#34 on PLDB
-52 Years Old
-23k Repos
+#32 on PLDB
+54 Years Old
+23k <span title="Prolog repos on GitHub.">Repos</span>
 
 Prolog is a general-purpose logic programming language associated with artificial intelligence and computational linguistics. Prolog has its roots in first-order logic, a formal logic, and unlike many other programming languages, Prolog is intended as primarily a declarative programming language: the program logic is expressed in terms of relations, represented as facts and rules. A computation is initiated by running a query over these relations. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Prolog Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 22,512 Prolog repos on GitHub
-- Early development of Prolog happened in University of Edinburgh and Aix-Marseille University
-- The  Google BigQuery Public Dataset GitHub snapshot shows 9k users using Prolog in 11k repos on GitHub
-- Check out the 8 Prolog meetup groups on Meetup.com.
-- There are 7,884 members in the Prolog subreddit
-- There are 156 Project Euler users using Prolog
-- Explore Prolog snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 22,512 Prolog repos on <a href="https://github.com/search?q=language:Prolog">GitHub</a>
+- Early development of Prolog happened in <a href="../lists/labs.html#q=University of Edinburgh">University of Edinburgh</a> and <a href="../lists/labs.html#q=Aix-Marseille University">Aix-Marseille University</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 9k users using Prolog in 11k repos on <a href="https://api.github.com/search/repositories?q=language:Prolog">GitHub</a>
+- Check out the 8 <a href="https://www.meetup.com/topics/prolog/">Prolog meetup groups</a> on Meetup.com.
+- There are 7,884 members in the <a href="https://reddit.com/r/prolog">Prolog subreddit</a>
+- There are 156 <a href="https://projecteuler.net/language=Prolog">Project Euler</a> users using Prolog
+- Explore Prolog snippets on <a href="http://www.rosettacode.org/wiki/Category:Prolog">Rosetta Code</a>
 - Prolog on HOPL
  https://hopl.info/showlanguage.prx?exp=562 Prolog on HOPL
-- Prolog ranks #41 in the TIOBE Index
+- Prolog ranks #41 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - Prolog Ubuntu package
  https://packages.ubuntu.com/jammy/swi-prolog Prolog Ubuntu package
-- ANTLR grammar for Prolog
-- Pygments supports syntax highlighting for Prolog
-- GitHub supports syntax highlighting for Prolog
-- Prolog appears in the Quine Relay project
-- Learn Prolog on exercism.
-- There is 1 Jupyter Kernel for Prolog
-- There is a central package repository for Prolog
-- Indeed.com has 79 matches for "prolog developer".
-- See also: (17 related languages) POPLOG, SWI Prolog, Visual Prolog, Mercury, Oz, Erlang, Datalog, Unicode, ΛProlog, HTML, XML, RDF, OWL, ActionScript, Lisp, PLANNER, AgentSpeak
-- 16 PLDB concepts link to Prolog: cloc, CLPR, Euphoria, Fern, GAEA, juicy, mal, OpenCV, Perl, Picat, Podlite, Progol, proto-GNOSIS, Pygments, Scryer Prolog, SWI Prolog
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/prolog">grammar</a> for Prolog
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/prolog.py">syntax highlighting</a> for Prolog
+- GitHub supports <a href="https://github.com/alnkpa/sublimeprolog" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Prolog
+- Prolog appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Learn <a href="https://exercism.org/tracks/prolog">Prolog on exercism.</a>
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/Calysto/calysto_prolog">Kernel</a> for Prolog
+- There is a <a href="http://www.swi-prolog.org/pldoc/doc/_SWI_/library/prolog_pack.pl">central package repository</a> for Prolog
+- Indeed.com has 79 matches for <a href="https://www.indeed.com/jobs?q=prolog developer">"prolog developer"</a>.
+- See also: (17 related languages) <a href="poplog.html">POPLOG</a>, <a href="swi-prolog.html">SWI Prolog</a>, <a href="visual-prolog.html">Visual Prolog</a>, <a href="mercury.html">Mercury</a>, <a href="oz.html">Oz</a>, <a href="erlang.html">Erlang</a>, <a href="datalog.html">Datalog</a>, <a href="unicode.html">Unicode</a>, <a href="lambda-prolog.html">λProlog</a>, <a href="html.html">HTML</a>, <a href="xml.html">XML</a>, <a href="rdf.html">RDF</a>, <a href="owl.html">OWL</a>, <a href="actionscript.html">ActionScript</a>, <a href="lisp.html">Lisp</a>, <a href="planner.html">PLANNER</a>, <a href="agentspeak.html">AgentSpeak</a>
+- 20 PLDB concepts link to Prolog: <a href="attempto.html">Attempto Controlled English</a>, <a href="cloc.html">cloc</a>, <a href="clpr.html">CLPR</a>, <a href="cperl.html">cperl</a>, <a href="euphoria.html">Euphoria</a>, <a href="fern.html">Fern</a>, <a href="gaea.html">GAEA</a>, <a href="juicy.html">juicy</a>, <a href="mal.html">mal</a>, <a href="netbeans-editor.html">netbeans-editor</a>, <a href="opencv.html">OpenCV</a>, <a href="perl.html">Perl</a>, <a href="picat.html">Picat</a>, <a href="podlite.html">Podlite</a>, <a href="progol.html">Progol</a>, <a href="proto-gnosis.html">proto-GNOSIS</a>, <a href="pygments.html">Pygments</a>, <a href="scryer.html">Scryer Prolog</a>, <a href="swi-prolog.html">SWI Prolog</a>, <a href="tptp.html">TPTP</a>
 
+```Example from <a href='https://riju.codes/prolog'>Riju</a>:
 :- initialization main.
 
 main :-
     write(&quot;Hello, world!&quot;), nl.
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/p/Prolog.pro'>hello-world</a>:
 helloWorld :-
   write(&#39;Hello World&#39;).
 
 :- helloWorld.
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Prolog'>the Hello World Collection</a>:
 % Hello World in Prolog
 
 hello :- display(&#39;Hello World!&#39;) , nl .
 
+```
+
+```Example from <a href='https://github.com/alnkpa/sublimeprolog'>Linguist</a>:
 %6.8
 subset(Set, Subset) :-
 	append(L1, Subset, Set).
 powerset(Set, Subset) :-
 	bagof(Subset, subset(Set, Subset), Subset).
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Prolog'>Wikipedia</a>:
 rule(q0, 1, q0, 1, right).
 rule(q0, b, qf, 1, stay).
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Standard Library
  FeatureLink ../features/hasStandardLibrary.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   write('Hello, World!'), nl.
  Token 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % 0b[01]+
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % \d\d?\'[a-zA-Z0-9]+
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % (\d+\.\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % 0x[0-9a-fA-F]+
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % 0o[0-7]+
  Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   'Hello world'
  Token '
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -128,20 +142,20 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token write
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % A comment
  Token %
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   term_expansion(parent_child(Parent, Child),
                child_parent(Child, Parent)).
@@ -153,26 +167,26 @@ row
 row
  Feature Type Inference
  FeatureLink ../features/hasTypeInference.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

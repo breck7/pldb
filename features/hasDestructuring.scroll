@@ -7,13 +7,26 @@ printTitle Destructuring
 <a class="trueBaseThemePreviousItem" href="hasDependentTypes.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasDirectives.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/javascript.html">JavaScript</a>
  const o = {p: 42, q: true};
  const {p, q} = o;
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/python.html">Python</a>
+ # destructuring assignment works for sequences, including nested ones:
+ (a, (b, c), *d) = (1, (2, 3), 4, 5, 6)  # result: a=1, b=2, c=3, d=(4,5,6)
+ 
+ # it is NOT implemented for more complicated types like dictionaries:
+ {&quot;a&quot;: a} = {&quot;a&quot;: 1}  # ERROR
+ 
+ # more complex destructuring is possible using the match statement:
+ d = {&quot;a&quot;: {&quot;b&quot;: [1, 2]}}
+ match d:
+   case {&quot;a&quot;: {&quot;b&quot;: [1, x]}}: pass  # result: x=2
+   case _: raise ValueError(&quot;destructuring failed!&quot;)
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/reason.html">Reason</a>
  type person = {name: string, age: int};
@@ -30,7 +43,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/bog.html">b
 
 ***
 
-* Languages *with* Destructuring include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/reason.html">Reason</a>, <a href="../concepts/coconut.html">Coconut</a>, <a href="../concepts/bog.html">bog</a>, <a href="../concepts/bio.html">Bio</a>
+* Languages *with* Destructuring include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/reason.html">Reason</a>, <a href="../concepts/coconut.html">Coconut</a>, <a href="../concepts/bog.html">bog</a>, <a href="../concepts/bio.html">Bio</a>
 
 ***
 

@@ -1,74 +1,86 @@
 SQL
 ===
 
-SQL, aka Structured Query Language, is a query language created in 1974 by Donald D. Chamberlin and Raymond F. Boyce.
+SQL, aka Structured Query Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22queryLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">query language</a> created in 1974 by Donald D. Chamberlin and Raymond F. Boyce.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221974%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1974
  https://pldb.io/concepts/../lists/creators.html#q=Donald%20D.%20Chamberlin Donald D. Chamberlin
  https://pldb.io/concepts/../lists/creators.html#q=Raymond%20F.%20Boyce Raymond F. Boyce
 
-#15 on PLDB
-50 Years Old
-1k Repos
+#14 on PLDB
+52 Years Old
+1k <span title="SQL repos on GitHub.">Repos</span>
 
 SQL ( ( listen) ESS-kew-EL or  ( listen) SEE-kwəl or  SKWEEL, Structured Query Language) is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). In comparison to older read/write APIs like ISAM or VSAM, SQL offers two main advantages: first, it introduced the concept of accessing many records with one single command; and second, it eliminates the need to specify how to reach a record, e.g. with or without an index. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/SQL Read more on Wikipedia...
 
-- Tags: queryLanguage
-- There are at least 1,222 SQL repos on GitHub
-- Early development of SQL happened in IBM
-- The  Google BigQuery Public Dataset GitHub snapshot shows 602 users using SQL in 641 repos on GitHub
-- There are 124 Project Euler users using SQL
-- In the 2021 StackOverflow developer survey SQL programmers reported a median salary of $56,228. 47% of respondents reported using SQL. 38,835 programmers reported using SQL, and 26,631 said they wanted to use it
-- Explore SQL snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"queryLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>queryLanguage</a>
+- There are at least 1,222 SQL repos on <a href="https://github.com/search?q=language:SQL">GitHub</a>
+- Early development of SQL happened in <a href="../lists/labs.html#q=IBM">IBM</a>
+- <a href="relational-model.html">Relational Model</a> influenced the design of SQL
+- The  Google BigQuery Public Dataset GitHub snapshot shows 602 users using SQL in 641 repos on <a href="https://api.github.com/search/repositories?q=language:SQL">GitHub</a>
+- There are 124 <a href="https://projecteuler.net/language=SQL">Project Euler</a> users using SQL
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> SQL programmers reported a median salary of $56,228. 47% of respondents reported using SQL. 38,835 programmers reported using SQL, and 26,631 said they wanted to use it
+- Explore SQL snippets on <a href="http://www.rosettacode.org/wiki/Category:SQL">Rosetta Code</a>
 - SQL on HOPL
  https://hopl.info/showlanguage.prx?exp=533 SQL on HOPL
-- SQL ranks #9 in the TIOBE Index
-- CodeMirror package for syntax highlighting SQL
-- Monaco package for syntax highlighting SQL
-- Pygments supports syntax highlighting for SQL
-- GitHub supports syntax highlighting for SQL
-- There is 1 Jupyter Kernel for SQL
-- Indeed.com has 147,983 matches for "sql developer".
-- See also: (26 related languages) SQL-92, Datalog, LINQ, PowerShell, C, SQL/PSM, SQLPL, Transact-SQL, MySQL, PL/SQL, Ada, PostgreSQL, PL/pgSQL, Java, Perl, Python, Tcl, JavaScript, XML, XQuery, .QL, ISBL, QUEL, MUMPS, ISBN, DOI
-- 52 PLDB concepts link to SQL: Ace Editor, Apache Arrow, atomspace, Ballerina, Bucardo, categorical-query-language, cloc, dexvis, Differential Datalog, DRAKON, Eiffel, Erlang, Factor, gogs-editor, Haxe Library Manager, HHVM, Ibis, Impala, Java, Kefir, Lil, Links, Logica, mal, Mastodon, Mindsdb, nesC, Nim, Node.js, Openverse, Particles, partiql, Perl, PgBouncer, PostgreSQL, PRQL, Pygments, Amazon Redshift, Revolution, SDMS, Slony, SourcePawn, SQHTML, tornado, TQL, ultralisp-pm, UrWeb, V, wasmer, Wasp, YAWL, Yes It Is
+- SQL ranks #9 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/sql">package</a> for syntax highlighting SQL
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/sql">package</a> for syntax highlighting SQL
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/sql.py">syntax highlighting</a> for SQL
+- GitHub supports <a href="https://github.com/textmate/sql.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for SQL
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://teradata.github.io/jupyterextensions/">Kernel</a> for SQL
+- Indeed.com has 147,983 matches for <a href="https://www.indeed.com/jobs?q=sql developer">"sql developer"</a>.
+- See also: (26 related languages) <a href="sql-92.html">SQL-92</a>, <a href="datalog.html">Datalog</a>, <a href="linq.html">LINQ</a>, <a href="powershell.html">PowerShell</a>, <a href="c.html">C</a>, <a href="sql-psm.html">SQL/PSM</a>, <a href="sqlpl.html">SQLPL</a>, <a href="transact-sql.html">Transact-SQL</a>, <a href="mysql.html">MySQL</a>, <a href="pl-sql.html">PL/SQL</a>, <a href="ada.html">Ada</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="plpgsql.html">PL/pgSQL</a>, <a href="java.html">Java</a>, <a href="perl.html">Perl</a>, <a href="python.html">Python</a>, <a href="tcl.html">Tcl</a>, <a href="javascript.html">JavaScript</a>, <a href="xml.html">XML</a>, <a href="xquery.html">XQuery</a>, <a href="dot-ql.html">.QL</a>, <a href="isbl.html">ISBL</a>, <a href="quel.html">QUEL</a>, <a href="mumps.html">MUMPS</a>, <a href="isbn.html">ISBN</a>, <a href="doi.html">DOI</a>
+- 66 PLDB concepts link to SQL: <a href="ace.html">Ace Editor</a>, <a href="arrow-format.html">Apache Arrow</a>, <a href="atomspace.html">atomspace</a>, <a href="ballerina.html">Ballerina</a>, <a href="bucardo.html">Bucardo</a>, <a href="categorical-query-language.html">categorical-query-language</a>, <a href="cloc.html">cloc</a>, <a href="codeql.html">CodeQL</a>, <a href="cperl.html">cperl</a>, <a href="dexvis.html">dexvis</a>, <a href="differential-datalog.html">Differential Datalog</a>, <a href="drakon.html">DRAKON</a>, <a href="drupal.html">Drupal</a>, <a href="eiffel.html">Eiffel</a>, <a href="erlang.html">Erlang</a>, <a href="factor.html">Factor</a>, <a href="gogs-editor.html">gogs-editor</a>, <a href="haxelibs-pm.html">Haxe Library Manager</a>, <a href="hhvm.html">HHVM</a>, <a href="htsql.html">HTSQL</a>, <a href="ibis.html">Ibis</a>, <a href="impala.html">Impala</a>, <a href="java.html">Java</a>, <a href="kefir.html">Kefir</a>, <a href="lil.html">Lil</a>, <a href="links-programming-language.html">Links</a>, <a href="logica.html">Logica</a>, <a href="mal.html">mal</a>, <a href="mastodon.html">Mastodon</a>, <a href="michelson.html">michelson</a>, <a href="minidsdb.html">Mindsdb</a>, <a href="nesc.html">nesC</a>, <a href="netbeans-editor.html">netbeans-editor</a>, <a href="nim.html">Nim</a>, <a href="nimskull.html">Nimskull</a>, <a href="nodejs.html">Node.js</a>, <a href="olc.html">Open Location Code</a>, <a href="openverse.html">Openverse</a>, <a href="particles.html">Particles</a>, <a href="partiql.html">partiql</a>, <a href="perl.html">Perl</a>, <a href="pgbouncer.html">PgBouncer</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="prql.html">PRQL</a>, <a href="pygments.html">Pygments</a>, <a href="redshift.html">Amazon Redshift</a>, <a href="reko-decompiler.html">Reko</a>, <a href="revolution-programming-language.html">Revolution</a>, <a href="saltstack.html">SaltStack</a>, <a href="sdms.html">SDMS</a>, <a href="sequel-2.html">SEQUEL 2</a>, <a href="slony.html">Slony</a>, <a href="sourcepawn.html">SourcePawn</a>, <a href="sqhtml.html">SQHTML</a>, <a href="sqlite.html">SQLite</a>, <a href="square.html">SQUARE</a>, <a href="tornado.html">tornado</a>, <a href="tql.html">TQL</a>, <a href="ultralisp-pm.html">ultralisp-pm</a>, <a href="unison.html">unison</a>, <a href="urweb.html">UrWeb</a>, <a href="v.html">V</a>, <a href="wasmer.html">wasmer</a>, <a href="wasp-lang.html">Wasp</a>, <a href="yawl.html">YAWL</a>, <a href="yii.html">Yes It Is</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/s/SQL.sql'>hello-world</a>:
 SELECT &#39;Hello World&#39;;
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Structured'>the Hello World Collection</a>:
 # Hello World in SQL
 
 SELECT &#39;Hello World&#39;;
 
+```
+
+```Example from <a href='https://github.com/textmate/sql.tmbundle'>Linguist</a>:
 --this is the most basic oracle sql command
 select * from dual;
 
-ADD ALL ALLOCATE ALTER AND ANY ARE AS ASC ASSERTION AT AUTHORIZATION AVG BEGIN BETWEEN BIT BOOLEAN BOTH BY CALL CASCADE CASCADED CASE CAST CHAR CHARACTER CHECK CLOSE COLLATE COLLATION COLUMN COMMIT CONNECT CONNECTION CONSTRAINT CONSTRAINTS CONTINUE CONVERT CORRESPONDING COUNT CREATE CURRENT CURRENT_DATE CURRENT_TIME CURRENT_TIMESTAMP CURRENT_USER CURSOR DEALLOCATE DEC DECIMAL DECLARE DEFERRABLE DEFERRED DELETE DESC DESCRIBE DIAGNOSTICS DISCONNECT DISTINCT DOUBLE DROP ELSE END ENDEXEC ESCAPE EXCEPT EXCEPTION EXEC EXECUTE EXISTS EXPLAIN EXTERNAL FALSE FETCH FIRST FLOAT FOR FOREIGN FOUND FROM FULL FUNCTION GET GET_CURRENT_CONNECTION GLOBAL GO GOTO GRANT GROUP HAVING HOUR IDENTITY IMMEDIATE IN INDICATOR INITIALLY INNER INOUT INPUT INSENSITIVE INSERT INT INTEGER INTERSECT INTO IS ISOLATION JOIN KEY LAST LEFT LIKE LONGINT LOWER LTRIM MATCH MAX MIN MINUTE NATIONAL NATURAL NCHAR NVARCHAR NEXT NO NOT NULL NULLIF NUMERIC OF ON ONLY OPEN OPTION OR ORDER OUT OUTER OUTPUT OVERLAPS PAD PARTIAL PREPARE PRESERVE PRIMARY PRIOR PRIVILEGES PROCEDURE PUBLIC READ REAL REFERENCES RELATIVE RESTRICT REVOKE RIGHT ROLLBACK ROWS RTRIM SCHEMA SCROLL SECOND SELECT SESSION_USER SET SMALLINT SOME SPACE SQL SQLCODE SQLERROR SQLSTATE SUBSTR SUBSTRING SUM SYSTEM_USER TABLE TEMPORARY TIMEZONE_HOUR TIMEZONE_MINUTE TO TRAILING TRANSACTION TRANSLATE TRANSLATION TRUE UNION UNIQUE UNKNOWN UPDATE UPPER USER USING VALUES VARCHAR VARYING VIEW WHENEVER WHERE WITH WORK WRITE XML XMLEXISTS XMLPARSE XMLSERIALIZE YEAR
+```
 
-Language features
+```SQL <a href="../lists/keywords.html#q=sql">Keywords</a>
+ADD ALL ALLOCATE ALTER AND ANY ARE AS ASC ASSERTION AT AUTHORIZATION AVG BEGIN BETWEEN BIT BOOLEAN BOTH BY CALL CASCADE CASCADED CASE CAST CHAR CHARACTER CHECK CLOSE COLLATE COLLATION COLUMN COMMIT CONNECT CONNECTION CONSTRAINT CONSTRAINTS CONTINUE CONVERT CORRESPONDING COUNT CREATE CURRENT CURRENT_DATE CURRENT_TIME CURRENT_TIMESTAMP CURRENT_USER CURSOR DEALLOCATE DEC DECIMAL DECLARE DEFERRABLE DEFERRED DELETE DESC DESCRIBE DIAGNOSTICS DISCONNECT DISTINCT DOUBLE DROP ELSE END ENDEXEC ESCAPE EXCEPT EXCEPTION EXEC EXECUTE EXISTS EXPLAIN EXTERNAL FALSE FETCH FIRST FLOAT FOR FOREIGN FOUND FROM FULL FUNCTION GET GET_CURRENT_CONNECTION GLOBAL GO GOTO GRANT GROUP HAVING HOUR IDENTITY IMMEDIATE IN INDICATOR INITIALLY INNER INOUT INPUT INSENSITIVE INSERT INT INTEGER INTERSECT INTO IS ISOLATION JOIN KEY LAST LEFT LIKE LONGINT LOWER LTRIM MATCH MAX MIN MINUTE NATIONAL NATURAL NCHAR NVARCHAR NEXT NO NOT NULL NULLIF NUMERIC OF ON ONLY OPEN OPTION OR ORDER OUT OUTER OUTPUT OVERLAPS PAD PARTIAL PREPARE PRESERVE PRIMARY PRIOR PRIVILEGES PROCEDURE PUBLIC READ REAL REFERENCES RELATIVE RESTRICT REVOKE RIGHT ROLLBACK ROWS RTRIM SCHEMA SCROLL SECOND SELECT SESSION_USER SET SMALLINT SOME SPACE SQL SQLCODE SQLERROR SQLSTATE SUBSTR SUBSTRING SUM SYSTEM_USER TABLE TEMPORARY TIMEZONE_HOUR TIMEZONE_MINUTE TO TRAILING TRANSACTION TRANSLATE TRANSLATION TRUE UNION UNIQUE UNKNOWN UPDATE UPPER USER USING VALUES VARCHAR VARYING VIEW WHENEVER WHERE WITH WORK WRITE XML XMLEXISTS XMLPARSE XMLSERIALIZE YEAR
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Fixed Point Numbers
  FeatureLink ../features/hasFixedPoint.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- [0-9]+
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token TRUE FALSE
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -76,39 +88,39 @@ row
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token '
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token --
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

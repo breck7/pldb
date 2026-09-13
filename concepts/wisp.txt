@@ -1,30 +1,35 @@
 wisp
 ====
 
-wisp is an open source programming language created in 2012 by Santosh Rajan and Irakli Gozalishvili and LeXofLeviafan and Chris McCormick.
+wisp is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2012 by Santosh Rajan and Irakli Gozalishvili and LeXofLeviafan and Chris McCormick.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
  https://pldb.io/concepts/../lists/creators.html#q=Santosh%20Rajan Santosh Rajan
  https://pldb.io/concepts/../lists/creators.html#q=Irakli%20Gozalishvili Irakli Gozalishvili
  https://pldb.io/concepts/../lists/creators.html#q=LeXofLeviafan LeXofLeviafan
  https://pldb.io/concepts/../lists/creators.html#q=Chris%20McCormick Chris McCormick
 
-#344 on PLDB
-12 Years Old
-30 Repos
+#366 on PLDB
+14 Years Old
+30 <span title="wisp repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/Gozala/wisp
+```
 
 A little Clojure-like LISP in JavaScript
 
-- Tags: programming language
-- wisp is developed on GitHub and has 983 stars
-- There are at least 30 wisp repos on GitHub
-- wisp is written in Markdown, JSON, Make, YAML, JavaScript
-- The  Google BigQuery Public Dataset GitHub snapshot shows 17 users using wisp in 23 repos on GitHub
-- GitHub supports syntax highlighting for wisp
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"lisp"%5D%7D%5D%2C"logic"%3A"AND"%7D'>lisp</a>
+- wisp is developed on <a href="https://github.com/Gozala/wisp">GitHub</a> and has 983 stars
+- There are at least 30 wisp repos on <a href="https://github.com/search?q=language:wisp">GitHub</a>
+- wisp is written in <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>, <a href="make.html">Make</a>, <a href="yaml.html">YAML</a>, <a href="javascript.html">JavaScript</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 17 users using wisp in 23 repos on <a href="https://api.github.com/search/repositories?q=language:wisp">GitHub</a>
+- GitHub supports <a href="https://github.com/atom/language-clojure" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for wisp
 
+```Example from the web:
 (alert &quot;Hello world!&quot;)
+```
 
+```Example from <a href='https://github.com/atom/language-clojure'>Linguist</a>:
 ;; # wisp
 
 ; Wisp is homoiconic JS dialect with a clojure syntax, s-expressions and
@@ -85,42 +90,43 @@ My name is wisp!&quot;
 
 ;; # Conventions
 ;; Wisp puts a lot of effort in making naming conventions tra
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token ;
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -1,27 +1,30 @@
 Varnish Configuration Language
 ==============================
 
-Varnish Configuration Language is an application created in 2006.
+Varnish Configuration Language is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 2006.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
 
-#1550 on PLDB
-18 Years Old
-594 Repos
+#1612 on PLDB
+20 Years Old
+594 <span title="Varnish Configuration Language repos on GitHub.">Repos</span>
 
-- Tags: application
-- There are at least 594 Varnish Configuration Language repos on GitHub
-- The  Google BigQuery Public Dataset GitHub snapshot shows 404 users using Varnish Configuration Language in 428 repos on GitHub
-- Pygments supports syntax highlighting for Varnish Configuration Language
-- GitHub supports syntax highlighting for Varnish Configuration Language
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>
+- There are at least 594 Varnish Configuration Language repos on <a href="https://github.com/search?q=language:VCL">GitHub</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 404 users using Varnish Configuration Language in 428 repos on <a href="https://api.github.com/search/repositories?q=language:VCL">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/varnish.py">syntax highlighting</a> for Varnish Configuration Language
+- GitHub supports <a href="https://github.com/brandonwamboldt/sublime-varnish" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Varnish Configuration Language
 - Read more about Varnish Configuration Language on the web: 1.
  https://en.wikipedia.org/wiki/Varnish_(software) 1.
 
+```Example from the web:
 acl local {
  &quot;localhost&quot;;         // myself
  &quot;192.0.2.0&quot;/24;      // and everyone on the local network
  ! &quot;192.0.2.23&quot;;      // except for the dialin router
 }
+```
 
+```Example from <a href='https://github.com/brandonwamboldt/sublime-varnish'>Linguist</a>:
 /*-
  * Copyright (c) 2006 Verdens Gang AS
  * Copyright (c) 2006-2011 Varnish Software AS
@@ -171,5 +174,6 @@ sub vcl_init {
 sub vcl_fini {
 	return (ok);
 }
+```
 
-View source
+Built with Scroll v178.2.3

@@ -1,32 +1,36 @@
 Logtalk
 =======
 
-Logtalk is a programming language created in 1998 by Paulo Moura.
+Logtalk is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1998 by Paulo Moura.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221998%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1998
  https://pldb.io/concepts/../lists/creators.html#q=Paulo%20Moura Paulo Moura
 
 #532 on PLDB
-26 Years Old
-65 Repos
+28 Years Old
+65 <span title="Logtalk repos on GitHub.">Repos</span>
 
 Logtalk is an object-oriented logic programming language that extends and leverages the Prolog language with a feature set suitable for programming in the large. It provides support for encapsulation and data hiding, separation of concerns and enhanced code reuse. Logtalk uses standard Prolog syntax with the addition of a few operators and directives. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Logtalk_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 65 Logtalk repos on GitHub
-- Early development of Logtalk happened in https://github.com/LogtalkDotOrg
-- The  Google BigQuery Public Dataset GitHub snapshot shows 50 users using Logtalk in 52 repos on GitHub
-- Explore Logtalk snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 65 Logtalk repos on <a href="https://github.com/search?q=language:Logtalk">GitHub</a>
+- Early development of Logtalk happened in <a href="../lists/labs.html#q=https://github.com/LogtalkDotOrg">https://github.com/LogtalkDotOrg</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 50 users using Logtalk in 52 repos on <a href="https://api.github.com/search/repositories?q=language:Logtalk">GitHub</a>
+- Explore Logtalk snippets on <a href="http://www.rosettacode.org/wiki/Category:Logtalk">Rosetta Code</a>
 - Logtalk on HOPL
  https://hopl.info/showlanguage.prx?exp=3555 Logtalk on HOPL
-- Pygments supports syntax highlighting for Logtalk
-- GitHub supports syntax highlighting for Logtalk
-- logtalk.org was registered in 2002
-- See also: (7 related languages) Prolog, Smalltalk, Objective-C, SWI Prolog, Mercury, Oz, Visual Prolog
-- 3 PLDB concepts link to Logtalk: Ace Editor, cloc, Pygments
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/prolog.py">syntax highlighting</a> for Logtalk
+- GitHub supports <a href="https://github.com/textmate/logtalk.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Logtalk
+- <a href="http://logtalk.org">logtalk.org</a> was registered in 2002
+- See also: (7 related languages) <a href="prolog.html">Prolog</a>, <a href="smalltalk.html">Smalltalk</a>, <a href="objective-c.html">Objective-C</a>, <a href="swi-prolog.html">SWI Prolog</a>, <a href="mercury.html">Mercury</a>, <a href="oz.html">Oz</a>, <a href="visual-prolog.html">Visual Prolog</a>
+- 3 PLDB concepts link to Logtalk: <a href="ace.html">Ace Editor</a>, <a href="cloc.html">cloc</a>, <a href="pygments.html">Pygments</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/l/Logtalk.lgt'>hello-world</a>:
 write(&#39;Hello World&#39;)
 
+```
+
+```Example from <a href='https://github.com/textmate/logtalk.tmbundle'>Linguist</a>:
 % this is a Logtalk source file
 
 :- object(hello_world).
@@ -37,60 +41,64 @@ write(&#39;Hello World&#39;)
 
 :- end_object.
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Logtalk_(programming_language)'>Wikipedia</a>:
 ?- my_first_object::p2.
 ERROR: error(permission_error(access, private_predicate, p2), my_first_object::p2, user)
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   'Hello world'
  Token '
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token write
 row
  Feature Multiple Inheritance
  FeatureLink ../features/hasMultipleInheritance.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

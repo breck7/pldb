@@ -1,22 +1,25 @@
 mermaid
 =======
 
-mermaid is a diagram lang created in 2014 by Knut Sveidqvist.
+mermaid is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22diagramLang%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">diagram lang</a> created in 2014 by Knut Sveidqvist.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
  https://pldb.io/concepts/../lists/creators.html#q=Knut%20Sveidqvist Knut Sveidqvist
 
-#392 on PLDB
-10 Years Old
+#409 on PLDB
+12 Years Old
 
+```Download source code:
 git clone https://github.com/mermaid-js/mermaid
+```
 
 Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown
 
-- Tags: diagramLang
-- mermaid is developed on GitHub and has 69,540 stars
-- Early development of mermaid happened in https://github.com/mermaid-js
-- mermaid is written in TypeScript, JavaScript, Markdown, HTML, YAML, JSON, SVG, Bash, CSS, TOML, Bourne shell, CSV, Diff, Dockerfile
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"diagramLang"%5D%7D%5D%2C"logic"%3A"AND"%7D'>diagramLang</a>
+- mermaid is developed on <a href="https://github.com/mermaid-js/mermaid">GitHub</a> and has 69,540 stars
+- Early development of mermaid happened in <a href="../lists/labs.html#q=https://github.com/mermaid-js">https://github.com/mermaid-js</a>
+- mermaid is written in <a href="typescript.html">TypeScript</a>, <a href="javascript.html">JavaScript</a>, <a href="markdown.html">Markdown</a>, <a href="html.html">HTML</a>, <a href="yaml.html">YAML</a>, <a href="json.html">JSON</a>, <a href="svg.html">SVG</a>, <a href="bash.html">Bash</a>, <a href="css.html">CSS</a>, <a href="toml.html">TOML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="csv.html">CSV</a>, <a href="diff.html">Diff</a>, <a href="dockerfile.html">Dockerfile</a>
 
+```Example from the web:
 gitGraph:
 options
 {
@@ -33,5 +36,6 @@ checkout master
 commit
 commit
 merge newbranch
+```
 
-View source
+Built with Scroll v178.2.3

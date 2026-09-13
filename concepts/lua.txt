@@ -1,54 +1,64 @@
 Lua
 ===
 
-Lua is an open source programming language created in 1993 by Roberto Ierusalimschy.
+Lua is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1993 by Roberto Ierusalimschy.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221993%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1993
  https://pldb.io/concepts/../lists/creators.html#q=Roberto%20Ierusalimschy Roberto Ierusalimschy
 
-#23 on PLDB
-31 Years Old
-244k Repos
+#24 on PLDB
+33 Years Old
+244k <span title="Lua repos on GitHub.">Repos</span>
 
 Lua ( LOO-ə, from Portuguese: lua [ˈlu.(w)ɐ] meaning moon) is a lightweight, multi-paradigm programming language designed primarily for embedded systems and clients. Lua is cross-platform, since the interpreter is written in ANSI C, and has a relatively simple C API. Lua was originally designed in 1993 as a language for extending software applications to meet the increasing demand for customization at the time. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Lua_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 243,541 Lua repos on GitHub
-- Early development of Lua happened in Tecgraf
-- The  Google BigQuery Public Dataset GitHub snapshot shows 23k users using Lua in 34k repos on GitHub
-- Check out the 24 Lua meetup groups on Meetup.com.
-- There are 20,927 members in the Lua subreddit
-- There are 477 Project Euler users using Lua
-- Explore Lua snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 243,541 Lua repos on <a href="https://github.com/search?q=language:Lua">GitHub</a>
+- Early development of Lua happened in <a href="../lists/labs.html#q=Tecgraf">Tecgraf</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 23k users using Lua in 34k repos on <a href="https://api.github.com/search/repositories?q=language:Lua">GitHub</a>
+- Check out the 24 <a href="https://www.meetup.com/topics/lua/">Lua meetup groups</a> on Meetup.com.
+- There are 20,927 members in the <a href="https://reddit.com/r/lua">Lua subreddit</a>
+- There are 477 <a href="https://projecteuler.net/language=Lua">Project Euler</a> users using Lua
+- Explore Lua snippets on <a href="http://www.rosettacode.org/wiki/Category:Lua">Rosetta Code</a>
 - Lua on HOPL
  https://hopl.info/showlanguage.prx?exp=2196 Lua on HOPL
-- Lua ranks #30 in the TIOBE Index
+- Lua ranks #30 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - Lua Ubuntu package
  https://packages.ubuntu.com/jammy/lua5.4 Lua Ubuntu package
-- ANTLR grammar for Lua
-- Lua LSP implementation
-- CodeMirror package for syntax highlighting Lua
-- Monaco package for syntax highlighting Lua
-- Pygments supports syntax highlighting for Lua
-- GitHub supports syntax highlighting for Lua
-- Lua appears in the Quine Relay project
-- Learn Lua on exercism.
-- PLDB has 3 Jupyter Kernels for Lua: github.com, github.com, github.com
-- There is a central package repository for Lua
-- Indeed.com has 736 matches for "lua developer".
-- lua.org was registered in 2000
-- See also: (28 related languages) CLU, Modula-2, Scheme, SNOBOL, Falcon, GameMonkey Script, Io, JavaScript, Julia, MiniD, Red, Ruby, Squirrel, Tcl, Lisp, Python, Modula, awk, Ada, Eiffel, Haskell, SQL, VHDL, Self, Raku, Parrot, Android, C
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/lua">grammar</a> for Lua
+- Lua <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/LuaLS/lua-language-server">implementation</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/lua">package</a> for syntax highlighting Lua
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/lua">package</a> for syntax highlighting Lua
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/scripting.py">syntax highlighting</a> for Lua
+- GitHub supports <a href="https://github.com/LuaLS/lua.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Lua
+- Lua appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Learn <a href="https://exercism.org/tracks/lua">Lua on exercism.</a>
+- PLDB has 3 <a href="jupyter-notebook.html">Jupyter</a> Kernels for Lua: <a href="https://github.com/pakozm/IPyLua">github.com</a>, <a href="https://github.com/neomantra/lua_ipython_kernel">github.com</a>, <a href="https://github.com/scrapinghub/splash/tree/master/splash/kernel">github.com</a>
+- There is a <a href="https://luarocks.org/">central package repository</a> for Lua
+- Indeed.com has 736 matches for <a href="https://www.indeed.com/jobs?q=lua developer">"lua developer"</a>.
+- <a href="https://www.lua.org/">lua.org</a> was registered in 2000
+- See also: (28 related languages) <a href="clu.html">CLU</a>, <a href="modula-2.html">Modula-2</a>, <a href="scheme.html">Scheme</a>, <a href="snobol.html">SNOBOL</a>, <a href="falcon.html">Falcon</a>, <a href="gamemonkey-script.html">GameMonkey Script</a>, <a href="io.html">Io</a>, <a href="javascript.html">JavaScript</a>, <a href="julia.html">Julia</a>, <a href="minid.html">MiniD</a>, <a href="red.html">Red</a>, <a href="ruby.html">Ruby</a>, <a href="squirrel.html">Squirrel</a>, <a href="tcl.html">Tcl</a>, <a href="lisp.html">Lisp</a>, <a href="python.html">Python</a>, <a href="modula.html">Modula</a>, <a href="awk.html">awk</a>, <a href="ada.html">Ada</a>, <a href="eiffel.html">Eiffel</a>, <a href="haskell.html">Haskell</a>, <a href="sql.html">SQL</a>, <a href="vhdl.html">VHDL</a>, <a href="self.html">Self</a>, <a href="raku.html">Raku</a>, <a href="parrot-vm.html">Parrot</a>, <a href="android.html">Android</a>, <a href="c.html">C</a>
 - Read more about Lua on the web: 1.
  http://www.lua.org/manual/5.1/manual.html#2.1 1.
-- 65 PLDB concepts link to Lua: Ace Editor, Apache Arrow, BlitzMax, Bounce, buzz, Carbon, circle-lang, cloc, commonmark, CSpydr, Cyber, Deno, Djot, DRAKON, Emscripten, Encore, Factor, Fennel, FlatBuffers, Haxe, Hina, Hook, Hush, Ibis, Jakt, Jammy, Lean, Lil, Lily, LuaJIT, mal, Matplotlib, micro-editor, Minilang, MongoDB, MoonScript, mun-lang, mycroft, Nelua, oopsilon, PHP, Pragtical, Prism, Pygments, raptorjit, Redis, RMarkdown, rosie, Savi, sile, Speedie, tbox-lib, Terra, Textadept, titan, Typed Lua, UCL, Umka, UrWeb, VLC, WebAssembly, Wax, Wonkey, Wren, Wu
+- 72 PLDB concepts link to Lua: <a href="ace.html">Ace Editor</a>, <a href="arrow-format.html">Apache Arrow</a>, <a href="blitzmax.html">BlitzMax</a>, <a href="bounce-lang.html">Bounce</a>, <a href="buzz.html">buzz</a>, <a href="carbon.html">Carbon</a>, <a href="cir.html">CIR</a>, <a href="circle-lang.html">circle-lang</a>, <a href="cloc.html">cloc</a>, <a href="cmake.html">CMake</a>, <a href="codeql.html">CodeQL</a>, <a href="commonmark.html">commonmark</a>, <a href="concurr.html">ConCurr</a>, <a href="cspydr.html">CSpydr</a>, <a href="cyber.html">Cyber</a>, <a href="deno.html">Deno</a>, <a href="djot.html">Djot</a>, <a href="drakon.html">DRAKON</a>, <a href="emscripten.html">Emscripten</a>, <a href="encore.html">Encore</a>, <a href="factor.html">Factor</a>, <a href="fennel.html">Fennel</a>, <a href="flatbuffers.html">FlatBuffers</a>, <a href="haxe.html">Haxe</a>, <a href="hina.html">Hina</a>, <a href="hook.html">Hook</a>, <a href="hush.html">Hush</a>, <a href="ibis.html">Ibis</a>, <a href="jakt.html">Jakt</a>, <a href="jammy.html">Jammy</a>, <a href="lean.html">Lean</a>, <a href="lil.html">Lil</a>, <a href="lily.html">Lily</a>, <a href="luajit.html">LuaJIT</a>, <a href="mal.html">mal</a>, <a href="matplotlib.html">Matplotlib</a>, <a href="micro-editor.html">micro-editor</a>, <a href="minilang.html">Minilang</a>, <a href="mongodb.html">MongoDB</a>, <a href="moonscript.html">MoonScript</a>, <a href="mun-lang.html">mun-lang</a>, <a href="mycroft.html">mycroft</a>, <a href="nelua.html">Nelua</a>, <a href="oopsilon.html">oopsilon</a>, <a href="php.html">PHP</a>, <a href="plasma.html">Plasma</a>, <a href="pragtical.html">Pragtical</a>, <a href="prismjs.html">Prism</a>, <a href="pygments.html">Pygments</a>, <a href="raptorjit.html">raptorjit</a>, <a href="redis.html">Redis</a>, <a href="rmarkdown.html">RMarkdown</a>, <a href="rosie.html">rosie</a>, <a href="savi.html">Savi</a>, <a href="sile.html">sile</a>, <a href="speedie.html">Speedie</a>, <a href="sporth.html">sporth</a>, <a href="srt.html">SRT</a>, <a href="tbox-lib.html">tbox-lib</a>, <a href="terra.html">Terra</a>, <a href="textadept-editor.html">Textadept</a>, <a href="tiscript.html">TIScript</a>, <a href="titan.html">titan</a>, <a href="tl.html">Typed Lua</a>, <a href="ucl.html">UCL</a>, <a href="urweb.html">UrWeb</a>, <a href="vlc.html">VLC</a>, <a href="wasm.html">WebAssembly</a>, <a href="wax.html">Wax</a>, <a href="wonkey.html">Wonkey</a>, <a href="wren.html">Wren</a>, <a href="wu.html">Wu</a>
 
+```Example from <a href='https://riju.codes/lua'>Riju</a>:
 print(&quot;Hello, world!&quot;)
 
-print(&quot;Hello World&quot;)
+```
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/l/Lua.lua'>hello-world</a>:
+print(&quot;Hello World&quot;)
+```
+
+```Example from <a href='http://helloworldcollection.de/#Lua'>the Hello World Collection</a>:
 # Hello World in Lua
 
 print &quot;Hello world&quot;
+
+```
+
+```Example from <a href='https://github.com/LuaLS/lua.tmbundle'>Linguist</a>:
 
 -- A simple counting object that increments an internal counter whenever it receives a bang at its first inlet, or changes to whatever number it receives at its second inlet.
 
@@ -70,47 +80,53 @@ function HelloCounter:in_2_float(f)
 	self.num = f
 end
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Lua_(programming_language)'>Wikipedia</a>:
 $ cc -o example example.c -llua
 $ ./example
 Result: 8
+```
 
+```Lua <a href="../lists/keywords.html#q=lua">Keywords</a>
 and break do else elseif end false for function goto if in local nil not or repeat return then true until while
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Standard Library
  FeatureLink ../features/hasStandardLibrary.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   print("Hello, World!")
  Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
-  pi  = 3.14159
+  pi <const> = 3.14159
  Token 
 row
  Feature Lists
  FeatureLink ../features/hasLists.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   myList = {1, 2, 3}
  Token 
 row
  Feature Bitwise Operators
  FeatureLink ../features/hasBitWiseOperators.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
-  & | ~ > ~
+  & | ~ << >> ~
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- 0[xX][0-9a-fA-F]+ (integer)
   -- 0[xX][0-9a-fA-F]*\.[0-9a-fA-F]+([pP][+-]?[0-9]+)? (float)
@@ -122,14 +138,14 @@ row
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   80766866
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- [0-9]*\.[0-9]+([eE][+-]?[0-9]+)? -- (decimal float)
   -- 0[xX][0-9a-fA-F]*\.[0-9a-fA-F]+([pP][+-]?[0-9]+)? -- (hex float)
@@ -137,7 +153,7 @@ row
 row
  Feature Scientific Notation
  FeatureLink ../features/hasScientificNotation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   1E2
   .12345E+6
@@ -152,7 +168,7 @@ row
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   if true then
       print("true")
@@ -161,7 +177,7 @@ row
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   function myFunction()
       print("hello")
@@ -170,7 +186,7 @@ row
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   while true do
       print("hello")
@@ -179,7 +195,7 @@ row
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   true
   false
@@ -187,21 +203,21 @@ row
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   print("hello world")
  Token print
 row
  Feature Maps
  FeatureLink ../features/hasMaps.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   myMap = {
       key = "value",
@@ -211,26 +227,26 @@ row
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token --
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   --[[
   A comment.
@@ -239,26 +255,26 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

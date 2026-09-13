@@ -7,7 +7,7 @@ printTitle Type Aliases
 <a class="trueBaseThemePreviousItem" href="hasTryCatch.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasTypeAnnotations.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -19,9 +19,13 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/gleam.html"
   List(#(String, String))
  let headers: Headers = [#(&quot;Content-Type&quot;, &quot;application/json&quot;)]
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/moonbit.html">MoonBit</a>
+ pub typealias Index = Int
+ typealias MapString[X] = Map[String, X]
+
 ***
 
-* Languages *with* Type Aliases include <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/gleam.html">Gleam</a>
+* Languages *with* Type Aliases include <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/gleam.html">Gleam</a>, <a href="../concepts/moonbit.html">MoonBit</a>
 
 ***
 

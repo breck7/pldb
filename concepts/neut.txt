@@ -1,23 +1,26 @@
-neut
+Neut
 ====
 
-neut is a programming language created in 2018.
+Neut is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2018.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2018
 
-#697 on PLDB
-6 Years Old
+#671 on PLDB
+8 Years Old
 
+```Download source code:
 git clone https://github.com/u2zv1wx/neut
+```
 
 A dependently-typed programming language with static memory management
 
-- Tags: programming language
-- neut is developed on GitHub and has 831 stars
-- Early development of neut happened in https://github.com/vekatze/neut/issues
-- neut is written in Haskell, Markdown, JSON, YAML, Bourne shell, JavaScript, CSS, TypeScript, Handlebars, Dockerfile, SVG, TOML, C
-- Read more about neut on the web: 1.
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Neut is developed on <a href="https://github.com/u2zv1wx/neut">GitHub</a> and has 831 stars
+- Early development of Neut happened in <a href="../lists/labs.html#q=https://github.com/vekatze/neut/issues">https://github.com/vekatze/neut/issues</a>
+- Neut is written in <a href="haskell.html">Haskell</a>, <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>, <a href="yaml.html">YAML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="javascript.html">JavaScript</a>, <a href="css.html">CSS</a>, <a href="typescript.html">TypeScript</a>, <a href="handlebars.html">Handlebars</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="svg.html">SVG</a>, <a href="toml.html">TOML</a>, <a href="c.html">C</a>
+- Read more about Neut on the web: 1.
  https://www.reddit.com/r/ProgrammingLanguages/comments/gprche/neut_a_dependentlytyped_programming_language_with/ 1.
 
+```Example from the web:
 ; download the core library
 (ensure core/0.1.0.0
   &quot;https://github.com/u2zv1wx/neut-core/raw/master/release/0.1.0.0.tar.gz&quot;)
@@ -29,29 +32,30 @@ A dependently-typed programming language with static memory management
   (let _ (string.print str))
   (let _ (string.print str))
   (string.print str))
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token ;
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -1,17 +1,29 @@
 SEQUEL 2
 ========
 
-SEQUEL 2 is a programming language created in 1976.
+SEQUEL 2 is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22queryLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">query language</a> created in 1976 by Donald D. Chamberlin and M. M. Astrahan and K. P. Eswaran and P. P. Griffiths and Raymond Lorie and J. W. Mehl and P. Reisner and B. W. Wade.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221976%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1976
+ https://pldb.io/concepts/../lists/creators.html#q=Donald%20D.%20Chamberlin Donald D. Chamberlin
+ https://pldb.io/concepts/../lists/creators.html#q=M.%20M.%20Astrahan M. M. Astrahan
+ https://pldb.io/concepts/../lists/creators.html#q=K.%20P.%20Eswaran K. P. Eswaran
+ https://pldb.io/concepts/../lists/creators.html#q=P.%20P.%20Griffiths P. P. Griffiths
+ https://pldb.io/concepts/../lists/creators.html#q=Raymond%20Lorie Raymond Lorie
+ https://pldb.io/concepts/../lists/creators.html#q=J.%20W.%20Mehl J. W. Mehl
+ https://pldb.io/concepts/../lists/creators.html#q=P.%20Reisner P. Reisner
+ https://pldb.io/concepts/../lists/creators.html#q=B.%20W.%20Wade B. W. Wade
 
-#4425 on PLDB
-48 Years Old
+#2690 on PLDB
+50 Years Old
 
-- Tags: programming language
-- Early development of SEQUEL 2 happened in IBM
+Sequel 2 is a relational data language that provides a consistent, English keyword-oriented set of facilities for query, data definition, data manipulation, and data control. Sequel 2 may be used either as a stand-alone interface for nonspecialists in data processing or as a data sublanguage embedded in a host programming language for use by application programmers and data base administrators.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"queryLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>queryLanguage</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"database"%5D%7D%5D%2C"logic"%3A"AND"%7D'>database</a>
+- Early development of SEQUEL 2 happened in <a href="../lists/labs.html#q=IBM">IBM</a>
+- <a href="relational-model.html">Relational Model</a> and <a href="sql.html">SQL</a> influenced the design of SEQUEL 2
+- <a href="https://doi.org/10.1147/rd.206.0560">First announcement of</a> SEQUEL 2
 - SEQUEL 2 on HOPL
  https://hopl.info/showlanguage.prx?exp=3959 SEQUEL 2 on HOPL
 - Read more about SEQUEL 2 on Semantic Scholar: 1.
  https://semanticscholar.org/paper/b5cab20a32862302d24fc4dbfc454090d132124e 1.
 
-View source
+Built with Scroll v178.2.3

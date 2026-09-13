@@ -1,24 +1,27 @@
 SubRip Text
 ===========
 
-SubRip Text is an application created in 2005.
+SubRip Text is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 2005.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2005
 
-#2044 on PLDB
-19 Years Old
-522k Repos
+#2131 on PLDB
+21 Years Old
+522k <span title="SubRip Text repos on GitHub.">Repos</span>
 
-- Tags: application
-- There are at least 521,758 SubRip Text repos on GitHub
-- GitHub supports syntax highlighting for SubRip Text
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>
+- There are at least 521,758 SubRip Text repos on <a href="https://github.com/search?q=language:SubRip Text">GitHub</a>
+- GitHub supports <a href="https://github.com/314eter/atom-language-srt" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for SubRip Text
 - Read more about SubRip Text on the web: 1.
  https://en.wikipedia.org/wiki/SubRip 1.
 
+```Example from the web:
 168
 00:20:41,150 --&gt; 00:20:45,109
 - How did he do that?
 - Made him an offer he couldn&#39;t refuse.
+```
 
+```Example from <a href='https://github.com/314eter/atom-language-srt'>Linguist</a>:
 1
 00:00:01,250 --&gt; 00:00:03,740
 Adding NCL language.
@@ -259,5 +262,6 @@ R. Pavlick, thanks for this. These changes will be live in the next release of L
 58
 00:05:05,970 --&gt; 00:05:07,450
 Great! Thanks.
+```
 
-View source
+Built with Scroll v178.2.3

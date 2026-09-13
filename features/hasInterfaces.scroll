@@ -7,7 +7,7 @@ printTitle Interfaces
 <a class="trueBaseThemePreviousItem" href="hasIntegers.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasIterators.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -102,9 +102,15 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/graphql.htm
    primaryFunction: String
  }
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/moonbit.html">MoonBit</a>
+ trait Number {
+  op_add(Self, Self) -&gt; Self
+  op_mul(Self, Self) -&gt; Self
+ }
+
 ***
 
-* Languages *with* Interfaces include <a href="../concepts/java.html">Java</a>, <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/swift.html">Swift</a>, <a href="../concepts/kotlin.html">Kotlin</a>, <a href="../concepts/objective-c.html">Objective-C</a>, <a href="../concepts/graphql.html">GraphQL</a>
+* Languages *with* Interfaces include <a href="../concepts/java.html">Java</a>, <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/swift.html">Swift</a>, <a href="../concepts/kotlin.html">Kotlin</a>, <a href="../concepts/objective-c.html">Objective-C</a>, <a href="../concepts/graphql.html">GraphQL</a>, <a href="../concepts/moonbit.html">MoonBit</a>
 
 ***
 

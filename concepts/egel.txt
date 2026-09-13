@@ -1,20 +1,42 @@
-egel
+Egel
 ====
 
-egel is an open source interpreter created in 2016.
+Egel is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2016 by Marco Devillers.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2016
+ https://pldb.io/concepts/../lists/creators.html#q=Marco%20Devillers Marco Devillers
 
-#1166 on PLDB
-8 Years Old
+#1633 on PLDB
+10 Years Old
 
+```Download source code:
 git clone https://github.com/egel-lang/egel
+```
 
-Egel An interpreter for eager untyped combinator rewriting implemented in C++.
+A simple untyped eager functional language.
 
-- Tags: interpreter
-- egel is developed on GitHub and has 80 stars
-- Early development of egel happened in https://github.com/egel-lang
-- egel is written in C, Bourne shell, M4, Markdown, C++, Make, CMake, SVG, Python, YAML, Vim script, Tex, Pascal, HTML, Protocol Buffers
-- Explore egel snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"functional"%5D%7D%5D%2C"logic"%3A"AND"%7D'>functional</a>
+- Egel is developed on <a href="https://github.com/egel-lang/egel">GitHub</a> and has 80 stars
+- Egel is written in <a href="cpp.html">C++</a>
 
-View source
+```Example from the web:
+# Rosetta Code example 99 Bottles.
+#
+# See: http://rosettacode.org
+
+import &quot;prelude.eg&quot;
+
+using System
+
+def print_rhyme =
+    [ 0 -&gt;
+        print &quot;better go to the store, and buy some more\n&quot;
+    | N -&gt;
+        let _ = print N &quot; bottles of beer on the wall\n&quot; in
+        let _ = print N &quot; bottles of beer\n&quot; in
+        let _ = print &quot;take one down, pass it around\n&quot; in
+            print_rhyme (N - 1) ]
+
+def main = print_rhyme 99
+```
+
+Built with Scroll v178.2.3

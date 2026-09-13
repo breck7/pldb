@@ -1,36 +1,40 @@
 Handlebars
 ==========
 
-Handlebars is a template language created in 2010.
+Handlebars is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22template%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">template language</a> created in 2010.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2010
 
-#669 on PLDB
-14 Years Old
-28k Repos
+#665 on PLDB
+16 Years Old
+28k <span title="Handlebars repos on GitHub.">Repos</span>
 
-- Tags: template language
-- There are at least 28,186 Handlebars repos on GitHub
-- Early development of Handlebars happened in https://github.com/handlebars-lang
-- The  Google BigQuery Public Dataset GitHub snapshot shows 6k users using Handlebars in 8k repos on GitHub
-- CodeMirror package for syntax highlighting Handlebars
-- Monaco package for syntax highlighting Handlebars
-- Pygments supports syntax highlighting for Handlebars
-- GitHub supports syntax highlighting for Handlebars
-- handlebarsjs.com was registered in 2011
-- 13 PLDB concepts link to Handlebars: Ace Editor, AT Protocol, Ballerina, Caramel, emberjs-framework, neut, penrose, Prettier, PRQL, Pygments, SandDance, tibet, xlwings-editor
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"template"%5D%7D%5D%2C"logic"%3A"AND"%7D'>template language</a>
+- There are at least 28,186 Handlebars repos on <a href="https://github.com/search?q=language:Handlebars">GitHub</a>
+- Early development of Handlebars happened in <a href="../lists/labs.html#q=https://github.com/handlebars-lang">https://github.com/handlebars-lang</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 6k users using Handlebars in 8k repos on <a href="https://api.github.com/search/repositories?q=language:Handlebars">GitHub</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/handlebars">package</a> for syntax highlighting Handlebars
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/handlebars">package</a> for syntax highlighting Handlebars
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/templates.py">syntax highlighting</a> for Handlebars
+- GitHub supports <a href="https://github.com/daaain/Handlebars" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Handlebars
+- <a href="http://handlebarsjs.com/">handlebarsjs.com</a> was registered in 2011
+- 16 PLDB concepts link to Handlebars: <a href="ace.html">Ace Editor</a>, <a href="atprotocol.html">AT Protocol</a>, <a href="ballerina.html">Ballerina</a>, <a href="caramel.html">Caramel</a>, <a href="codeql.html">CodeQL</a>, <a href="emberjs-framework.html">emberjs-framework</a>, <a href="netbeans-editor.html">netbeans-editor</a>, <a href="neut.html">Neut</a>, <a href="penrose.html">Penrose</a>, <a href="prettier.html">Prettier</a>, <a href="prql.html">PRQL</a>, <a href="pygments.html">Pygments</a>, <a href="sanddance.html">SandDance</a>, <a href="tibet.html">tibet</a>, <a href="vine.html">Vine</a>, <a href="xlwings-editor.html">xlwings-editor</a>
 
+```Example from the web:
 &lt;div class=&quot;entry&quot;&gt;
  &lt;h1&gt;{{title}}&lt;/h1&gt;
  &lt;div class=&quot;body&quot;&gt;
    {{body}}
  &lt;/div&gt;
 &lt;/div&gt;
+```
 
+```Example from <a href='https://github.com/daaain/Handlebars'>Linguist</a>:
 &lt;div class=&quot;entry&quot;&gt;
   &lt;h1&gt;{{title}}&lt;/h1&gt;
   &lt;div class=&quot;body&quot;&gt;
     {{body}}
   &lt;/div&gt;
 &lt;/div&gt;
+```
 
-View source
+Built with Scroll v178.2.3

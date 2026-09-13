@@ -1,20 +1,21 @@
 XAML
 ====
 
-XAML is a xml format created in 2008.
+XAML is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22xmlFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">xml format</a> created in 2008.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
 
-#743 on PLDB
-16 Years Old
+#766 on PLDB
+18 Years Old
 
 Extensible Application Markup Language (XAML  (listen)) is a declarative XML-based language developed by Microsoft that is used for initializing structured values and objects. It is available under Microsoft's Open Specification Promise. The acronym originally stood for Extensible Avalon Markup Language, Avalon being the code-name for Windows Presentation Foundation (WPF).XAML is used extensively in .NET Framework 3.0 & .NET Framework 4.0 technologies, particularly Windows Presentation Foundation (WPF), Silverlight, Windows Workflow Foundation (WF), Windows Runtime XAML Framework and Windows Store apps. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language Read more on Wikipedia...
 
-- Tags: xmlFormat
-- There are 202,070 members in the XAML subreddit
-- See also: (8 related languages) XML, Visual Studio, C#, Visual Basic .NET, XML Binding Language, HTML, JavaScript, Linux
-- 9 PLDB concepts link to XAML: Flow9, HHVM, jinx, MonkeyX, OpenCV, PowerShell, Ripple, Roslyn compiler, Uno
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"xmlFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>xmlFormat</a>
+- There are 202,070 members in the <a href="https://reddit.com/r/xaml">XAML subreddit</a>
+- See also: (8 related languages) <a href="xml.html">XML</a>, <a href="visual-studio-editor.html">Visual Studio</a>, <a href="csharp.html">C#</a>, <a href="visual-basic.net.html">Visual Basic .NET</a>, <a href="xbl.html">XML Binding Language</a>, <a href="html.html">HTML</a>, <a href="javascript.html">JavaScript</a>, <a href="linux.html">Linux</a>
+- 11 PLDB concepts link to XAML: <a href="cmake.html">CMake</a>, <a href="dynamo-visual-language.html">Dynamo</a>, <a href="flow9.html">Flow9</a>, <a href="hhvm.html">HHVM</a>, <a href="jinx.html">jinx</a>, <a href="monkeyx.html">MonkeyX</a>, <a href="opencv.html">OpenCV</a>, <a href="powershell.html">PowerShell</a>, <a href="ripple.html">Ripple</a>, <a href="roslyn-compiler.html">Roslyn compiler</a>, <a href="uno.html">Uno</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language'>Wikipedia</a>:
 &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
   &lt;head&gt;
     &lt;title&gt;XAML Example&lt;/title&gt;
@@ -29,5 +30,6 @@ Extensible Application Markup Language (XAML  (listen)) is a declarative XML-bas
     &lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;
+```
 
-View source
+Built with Scroll v178.2.3

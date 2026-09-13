@@ -1,28 +1,31 @@
 Literate CoffeeScript
 =====================
 
-Literate CoffeeScript is a programming language created in 2013 by Jeremy Ashkenas.
+Literate CoffeeScript is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2013 by Jeremy Ashkenas.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2013
  https://pldb.io/concepts/../lists/creators.html#q=Jeremy%20Ashkenas Jeremy Ashkenas
 
-#230 on PLDB
-11 Years Old
-8k Repos
+#240 on PLDB
+13 Years Old
+8k <span title="Literate CoffeeScript repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/jashkenas/coffeescript
+```
 
 Besides being used as an ordinary programming language, CoffeeScript may also be written in “literate” mode. If you name your file with a .litcoffee extension, you can write it as a Markdown document — a document that also happens to be executable CoffeeScript code. The compiler will treat any indented blocks (Markdown’s way of indicating source code) as executable code, and ignore the rest as comments. Code blocks must also be separated from comments by at least one blank line.
 
-- Tags: programming language
-- Literate CoffeeScript is developed on GitHub and has 16,466 stars
-- There are at least 7,938 Literate CoffeeScript repos on GitHub
-- Early development of Literate CoffeeScript happened in https://github.com/jashkenas/coffeescript/issues
-- Literate CoffeeScript is written in Markdown, CoffeeScript, HTML, JavaScript, CSS, JSON, SVG, YAML, XML
-- GitHub supports syntax highlighting for Literate CoffeeScript
-- coffeescript.org was registered in 2009
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Literate CoffeeScript is developed on <a href="https://github.com/jashkenas/coffeescript">GitHub</a> and has 16,466 stars
+- There are at least 7,938 Literate CoffeeScript repos on <a href="https://github.com/search?q=language:Literate CoffeeScript">GitHub</a>
+- Early development of Literate CoffeeScript happened in <a href="../lists/labs.html#q=https://github.com/jashkenas/coffeescript/issues">https://github.com/jashkenas/coffeescript/issues</a>
+- Literate CoffeeScript is written in <a href="markdown.html">Markdown</a>, <a href="coffeescript.html">CoffeeScript</a>, <a href="html.html">HTML</a>, <a href="javascript.html">JavaScript</a>, <a href="css.html">CSS</a>, <a href="json.html">JSON</a>, <a href="svg.html">SVG</a>, <a href="yaml.html">YAML</a>, <a href="xml.html">XML</a>
+- GitHub supports <a href="https://github.com/atom/language-coffee-script" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Literate CoffeeScript
+- <a href="https://coffeescript.org/#literate">coffeescript.org</a> was registered in 2009
 - Read more about Literate CoffeeScript on the web: 1.
  https://news.ycombinator.com/item?id=5277916 1.
 
+```Example from <a href='https://github.com/atom/language-coffee-script'>Linguist</a>:
 The **Scope** class regulates lexical scoping within CoffeeScript. As you
 generate code, you create a tree of scopes in the same shape as the nested
 function bodies. Each scope knows about the variables declared within it,
@@ -139,15 +142,16 @@ of this scope.
 
       assignedVariables: -&gt;
         &quot;#{v.name} = #{v.type.value}&quot; for v in @variables when v.type.assigned
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

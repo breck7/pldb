@@ -1,18 +1,19 @@
 VlibTemplate
 ============
 
-VlibTemplate is a template language created in 2003.
+VlibTemplate is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22template%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">template language</a> created in 2003.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2003
 
-#4585 on PLDB
-21 Years Old
+#4712 on PLDB
+23 Years Old
 
 vlibTemplate is a template engine written in PHP. Programmers and web developers may use it for web development. vlibTemplate is a PHP class that is intended to make splitting PHP from HTML a simple and natural task, using markup tags. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/VlibTemplate Read more on Wikipedia...
 
-- Tags: template language
-- See also: (4 related languages) PHP, HTML, MySQL, PostgreSQL
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"template"%5D%7D%5D%2C"logic"%3A"AND"%7D'>template language</a>
+- See also: (4 related languages) <a href="php.html">PHP</a>, <a href="html.html">HTML</a>, <a href="mysql.html">MySQL</a>, <a href="postgresql.html">PostgreSQL</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/VlibTemplate'>Wikipedia</a>:
 require_once &#39;vlib/vlibTemplate.php&#39;;
 
 $tmpl = new vlibTemplate(&#39;tmpl/basic.htm&#39;);
@@ -21,5 +22,6 @@ $tmpl-&gt;setvar(&#39;title_text&#39;, &#39;TITLE: This is the vLIB basic exampl
 $tmpl-&gt;setvar(&#39;body_text&#39;, &#39;BODY: This is the message set using setvar()&#39;);
 $tmpl-&gt;setvar(&#39;div_cont&#39; , &#39;DIV : This is div paragraph&#39;);
 $tmpl-&gt;pparse();
+```
 
-View source
+Built with Scroll v178.2.3

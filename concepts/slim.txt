@@ -1,31 +1,34 @@
 Slim
 ====
 
-Slim is an open source template language created in 2010 by  Andy Stone.
+Slim is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22template%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">template language</a> created in 2010 by  Andy Stone.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2010
  https://pldb.io/concepts/../lists/creators.html#q=%20Andy%20Stone  Andy Stone
 
-#104 on PLDB
-14 Years Old
-305 Repos
+#108 on PLDB
+16 Years Old
+305 <span title="Slim repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/slim-template/slim
+```
 
 A lightweight templating engine
 
-- Tags: template language
-- Slim is developed on GitHub and has 5,292 stars
-- There are at least 305 Slim repos on GitHub
-- Early development of Slim happened in https://github.com/slim-template
-- Slim is written in Ruby, Slim, Markdown, YAML, ERB, JavaScript
-- The  Google BigQuery Public Dataset GitHub snapshot shows 176 users using Slim in 206 repos on GitHub
-- Pygments supports syntax highlighting for Slim
-- GitHub supports syntax highlighting for Slim
-- slim-lang.com was registered in 2010
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"template"%5D%7D%5D%2C"logic"%3A"AND"%7D'>template language</a>
+- Slim is developed on <a href="https://github.com/slim-template/slim">GitHub</a> and has 5,292 stars
+- There are at least 305 Slim repos on <a href="https://github.com/search?q=language:Slim">GitHub</a>
+- Early development of Slim happened in <a href="../lists/labs.html#q=https://github.com/slim-template">https://github.com/slim-template</a>
+- Slim is written in <a href="ruby.html">Ruby</a>, <a href="slim.html">Slim</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="erb.html">ERB</a>, <a href="javascript.html">JavaScript</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 176 users using Slim in 206 repos on <a href="https://api.github.com/search/repositories?q=language:Slim">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/webmisc.py">syntax highlighting</a> for Slim
+- GitHub supports <a href="https://github.com/slim-template/ruby-slim.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Slim
+- <a href="https://slim-template.github.io">slim-lang.com</a> was registered in 2010
 - Read more about Slim on the web: 1.
  https://web.archive.org/web/20150313184235/http://slim-lang.com/ 1.
-- 5 PLDB concepts link to Slim: Ace Editor, cloc, HAML, Pygments, Slim
+- 5 PLDB concepts link to Slim: <a href="ace.html">Ace Editor</a>, <a href="cloc.html">cloc</a>, <a href="haml.html">HAML</a>, <a href="pygments.html">Pygments</a>, <a href="slim.html">Slim</a>
 
+```Example from the web:
 doctype html
 html
   head
@@ -37,13 +40,17 @@ html
 
   body
     h1 Markup examples
+```
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/s/Slim.slim'>hello-world</a>:
 doctype html
 head
   title Hello World
 body
   h1 Hello World
+```
 
+```Example from <a href='https://github.com/slim-template/ruby-slim.tmbundle'>Linguist</a>:
 doctype html
 html
   head
@@ -75,6 +82,7 @@ html
     div id=&quot;footer&quot;
       = render &#39;footer&#39;
       | Copyright © #{year} #{author}
+```
 
 HackerNews discussions of Slim
 ==============================
@@ -82,4 +90,4 @@ HackerNews discussions of Slim
 title|titleLink|date|score|comments
 Slim - A Fast, Lightweight Template Engine for Ruby|https://news.ycombinator.com/item?id=2821133|07/29/2011|5|7
 
-View source
+Built with Scroll v178.2.3

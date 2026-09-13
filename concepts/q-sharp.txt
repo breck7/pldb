@@ -1,19 +1,20 @@
 Q#
 ==
 
-Q# is a programming language created in 2017.
+Q# is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2017.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2017
 
-#1590 on PLDB
-7 Years Old
-768 Repos
+#1657 on PLDB
+9 Years Old
+768 <span title="Q# repos on GitHub.">Repos</span>
 
-- Tags: programming language
-- There are at least 768 Q# repos on GitHub
-- Early development of Q# happened in Microsoft
-- The  Google BigQuery Public Dataset GitHub snapshot shows 4 users using Q# in 4 repos on GitHub
-- Monaco package for syntax highlighting Q#
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 768 Q# repos on <a href="https://github.com/search?q=language:Q#">GitHub</a>
+- Early development of Q# happened in <a href="../lists/labs.html#q=Microsoft">Microsoft</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4 users using Q# in 4 repos on <a href="https://api.github.com/search/repositories?q=language:Q#">GitHub</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/qsharp">package</a> for syntax highlighting Q#
 
+```Example from <a href='https://riju.codes/qsharp'>Riju</a>:
 namespace main {
 
     open Microsoft.Quantum.Canon;
@@ -25,6 +26,9 @@ namespace main {
     }
 }
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/q/QSharp.qs'>hello-world</a>:
 ﻿namespace Quantum.HelloWorld {
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Intrinsic;
@@ -34,48 +38,52 @@ namespace main {
     }
 }
 
-namespace open as operation function body adjoint newtype controlled if elif else repeat until fixup for in while return fail within apply Adjoint Controlled Adj Ctl is self auto distribute invert intrinsic let set w/ new not and or use borrow using borrowing mutable
+```
 
-Language features
+```Q# <a href="../lists/keywords.html#q=q-sharp">Keywords</a>
+namespace open as operation function body adjoint newtype controlled if elif else repeat until fixup for in while return fail within apply Adjoint Controlled Adj Ctl is self auto distribute invert intrinsic let set w/ new not and or use borrow using borrowing mutable
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token "
 
-View source
+Built with Scroll v178.2.3

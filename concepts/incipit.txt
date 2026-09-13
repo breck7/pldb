@@ -1,22 +1,25 @@
 Incipit
 =======
 
-Incipit is a text markup language created in 2021 by Lucas de Sena.
+Incipit is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2021 by Lucas de Sena.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2021
  https://pldb.io/concepts/../lists/creators.html#q=Lucas%20de%20Sena Lucas de Sena
 
-#2173 on PLDB
-3 Years Old
+#2267 on PLDB
+5 Years Old
 
+```Download source code:
 git clone https://github.com/phillbush/incipit
+```
 
 The ‘Incipit Markup Language’ (or ‘Incipit’, for short) is a plain text markup language that uses Unicode characters and the structure of the text itself to format documents.
 
-- Tags: text markup language
-- Incipit is developed on GitHub and has 9 stars
-- Early development of Incipit happened in https://github.com/phillbush/incipit/issues
-- Incipit is written in awk, Make
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- Incipit is developed on <a href="https://github.com/phillbush/incipit">GitHub</a> and has 9 stars
+- Early development of Incipit happened in <a href="../lists/labs.html#q=https://github.com/phillbush/incipit/issues">https://github.com/phillbush/incipit/issues</a>
+- Incipit is written in <a href="awk.html">awk</a>, <a href="make.html">Make</a>
 
+```Example from the web:
 .Enumeration incipit.
 Each enumeration item can have a incipit colon, which will be explained
 on the “§ Incipit” section below.  The incipit colon is a colon
@@ -35,5 +38,6 @@ The following is an example of enumeration.
     • Third subitem of third item.
     • Fourth subitem of third item.
 • (D) Fourth item.
+```
 
-View source
+Built with Scroll v178.2.3

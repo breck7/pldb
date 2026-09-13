@@ -37,10 +37,12 @@ packageRepository https://mvnrepository.com/popular
 ubuntuPackage openjdk-8-jdk
 repoStats
  firstCommit 2007
- commits 81875
- committers 1918
- files 68263
- newestCommit 2024
+ commits 85056
+ committers 2003
+ files 68966
+ newestCommit 2025
+ mb 1317
+ linesOfCode 7210891
 country United States
 proposals https://openjdk.org/jeps/0
 projectEuler Java
@@ -115,6 +117,7 @@ booleanTokens true false
 
 hasSExpressions false
 hasVariableSubstitutionSyntax false
+hasSinglePassParser false
 hasAssertStatements true
  // By default, assertions are disabled
  // java –enableassertions Test
@@ -126,10 +129,18 @@ hasGenerics true
  v.add("test");
  Integer i = v.get(0); // (type error)  compilation-time error
 hasSingleDispatch true
+hasStaticTyping true
+hasStructuralTyping false
+ https://stackoverflow.com/q/44484287
+hasTypeClasses false
 hasPointers false
 hasStrings true
  "hello world"
 hasComments true
+hasFunctions true
+ TODO
+hasFunctionOverloading true
+hasNamedArguments false
 hasConstructors true
 hasGarbageCollection true
 hasImports true

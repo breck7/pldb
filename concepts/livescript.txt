@@ -1,34 +1,41 @@
 LiveScript
 ==========
 
-LiveScript is an open source programming language created in 2011 by Jeremy Ashkenas and Satoshi Murakami and George Zahariev.
+LiveScript is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2011 by Jeremy Ashkenas and Satoshi Murakami and George Zahariev.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2011
  https://pldb.io/concepts/../lists/creators.html#q=Jeremy%20Ashkenas Jeremy Ashkenas
  https://pldb.io/concepts/../lists/creators.html#q=Satoshi%20Murakami Satoshi Murakami
  https://pldb.io/concepts/../lists/creators.html#q=George%20Zahariev George Zahariev
 
-#479 on PLDB
-13 Years Old
-2k Repos
+#490 on PLDB
+15 Years Old
+2k <span title="LiveScript repos on GitHub.">Repos</span>
 
 LiveScript is a functional programming language that compiles to JavaScript. It was created by Jeremy Ashkenas—the creator of CoffeeScript—along with Satoshi Muramaki, George Zahariev, and many others. For a brief period in the 1990s, LiveScript was the name of JavaScript.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/LiveScript_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 1,905 LiveScript repos on GitHub
-- Early development of LiveScript happened in https://github.com/gkz/LiveScript/issues
-- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using LiveScript in 2k repos on GitHub
-- Explore LiveScript snippets on Rosetta Code
-- Pygments supports syntax highlighting for LiveScript
-- GitHub supports syntax highlighting for LiveScript
-- There is 1 Jupyter Kernel for LiveScript
-- See also: (5 related languages) JavaScript, Haskell, CoffeeScript, F#, Elixir
-- 1 PLDB concepts link to LiveScript: Civet
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 1,905 LiveScript repos on <a href="https://github.com/search?q=language:LiveScript">GitHub</a>
+- Early development of LiveScript happened in <a href="../lists/labs.html#q=https://github.com/gkz/LiveScript/issues">https://github.com/gkz/LiveScript/issues</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using LiveScript in 2k repos on <a href="https://api.github.com/search/repositories?q=language:LiveScript">GitHub</a>
+- Explore LiveScript snippets on <a href="http://www.rosettacode.org/wiki/Category:LiveScript">Rosetta Code</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/javascript.py">syntax highlighting</a> for LiveScript
+- GitHub supports <a href="https://github.com/paulmillr/LiveScript.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for LiveScript
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/p2edwards/jp-livescript">Kernel</a> for LiveScript
+- See also: (5 related languages) <a href="javascript.html">JavaScript</a>, <a href="haskell.html">Haskell</a>, <a href="coffeescript.html">CoffeeScript</a>, <a href="f-sharp.html">F#</a>, <a href="elixir.html">Elixir</a>
+- 1 PLDB concepts link to LiveScript: <a href="civet.html">Civet</a>
 
+```Example from <a href='https://riju.codes/livescript'>Riju</a>:
 console.log &quot;Hello, world!&quot;
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/l/LiveScript.ls'>hello-world</a>:
 console.log &quot;Hello World&quot;
 
+```
+
+```Example from <a href='https://github.com/paulmillr/LiveScript.tmbundle'>Linguist</a>:
 a = -&gt; 1
 const b = --&gt; 2
 var c = ~&gt; 3
@@ -65,34 +72,36 @@ copy = (from, to, callback) --&gt;
 # Comment
 /* Comment */
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # [0-9]+(~[0-9a-z]+)?(?:[a-zA-Z_]+)?
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # [0-9]+\.[0-9]+([eE][0-9]+)?[fd]?(?:[a-zA-Z_]+)?
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -100,28 +109,28 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token console.log
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

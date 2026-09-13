@@ -1,23 +1,26 @@
 Rholang
 =======
 
-Rholang is an open source contract language created in 2016.
+Rholang is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22contractLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">contract language</a> created in 2016.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2016
 
-#403 on PLDB
-8 Years Old
+#424 on PLDB
+10 Years Old
 
+```Download source code:
 git clone https://github.com/rchain/rchain
+```
 
 Rholang is an open and scalable blockchain language designed for speed, reliability and formal process orchestration build on latest research in the reflective high order process calculus.
 
-- Tags: contractLanguage
-- Rholang is developed on GitHub and has 691 stars
-- Early development of Rholang happened in https://rchain-community.github.io/
-- Rholang is written in Scala, C++, Markdown, C, Python, Make, Bourne shell, XML, Protocol Buffers, YAML, Bash, JSON, CMake, Nix, Perl, Ini, Dockerfile, TypeScript, TOML, sed
-- There are 1,000 members in the Rholang subreddit
-- Indeed.com has 13 matches for "couchdb developer".
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"contractLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>contractLanguage</a>
+- Rholang is developed on <a href="https://github.com/rchain/rchain">GitHub</a> and has 691 stars
+- Early development of Rholang happened in <a href="../lists/labs.html#q=https://rchain-community.github.io/">https://rchain-community.github.io/</a>
+- Rholang is written in <a href="scala.html">Scala</a>, <a href="cpp.html">C++</a>, <a href="markdown.html">Markdown</a>, <a href="c.html">C</a>, <a href="python.html">Python</a>, <a href="make.html">Make</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="xml.html">XML</a>, <a href="protobuf.html">Protocol Buffers</a>, <a href="yaml.html">YAML</a>, <a href="bash.html">Bash</a>, <a href="json.html">JSON</a>, <a href="cmake.html">CMake</a>, <a href="nix.html">Nix</a>, <a href="perl.html">Perl</a>, <a href="ini.html">Ini</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="typescript.html">TypeScript</a>, <a href="toml.html">TOML</a>, <a href="sed.html">sed</a>
+- There are 1,000 members in the <a href="https://www.reddit.com/r/CouchDB">Rholang subreddit</a>
+- Indeed.com has 13 matches for <a href="https://www.indeed.com/jobs?q=couchdb developer">"couchdb developer"</a>.
 
+```Example from the web:
 new helloworld, stdout(`rho:io:stdout`) in {
    contract helloworld( world ) = {
        for( @msg &lt;- world ) {
@@ -32,4 +35,6 @@ new helloworld, stdout(`rho:io:stdout`) in {
    }
 }
 
-View source
+```
+
+Built with Scroll v178.2.3

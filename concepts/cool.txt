@@ -1,30 +1,34 @@
 Classroom Object Oriented Language
 ==================================
 
-Classroom Object Oriented Language, aka Classroom Object Oriented Language, is a programming language created in 1996 by Alexander Aiken.
+Classroom Object Oriented Language, aka Classroom Object Oriented Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1996 by Alexander Aiken.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1996
  https://pldb.io/concepts/../lists/creators.html#q=Alexander%20Aiken Alexander Aiken
 
-#659 on PLDB
-28 Years Old
-102 Repos
+#686 on PLDB
+30 Years Old
+102 <span title="Classroom Object Oriented Language repos on GitHub.">Repos</span>
 
 Cool, an acronym for Classroom Object Oriented Language, is a computer programming language designed by Alexander Aiken for use in an undergraduate compiler course project. While small enough for a one term project, Cool still has many of the features of modern programming languages, including objects, automatic memory management, strong static typing and simple reflection. The reference Cool compiler is written in C++, built fully on the public domain tools. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Cool_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 102 Classroom Object Oriented Language repos on GitHub
-- Early development of Classroom Object Oriented Language happened in Stanford University
-- The  Google BigQuery Public Dataset GitHub snapshot shows 56 users using Classroom Object Oriented Language in 57 repos on GitHub
-- GitHub supports syntax highlighting for Classroom Object Oriented Language
-- See also: (7 related languages) CLIPS, Sather, Java, ML, Pascal, OCaml, MIPS architecture
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 102 Classroom Object Oriented Language repos on <a href="https://github.com/search?q=language:Cool">GitHub</a>
+- Early development of Classroom Object Oriented Language happened in <a href="../lists/labs.html#q=Stanford University">Stanford University</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 56 users using Classroom Object Oriented Language in 57 repos on <a href="https://api.github.com/search/repositories?q=language:Cool">GitHub</a>
+- GitHub supports <a href="https://github.com/anunayk/cool-tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Classroom Object Oriented Language
+- See also: (7 related languages) <a href="clips.html">CLIPS</a>, <a href="sather.html">Sather</a>, <a href="java.html">Java</a>, <a href="ml.html">ML</a>, <a href="pascal.html">Pascal</a>, <a href="ocaml.html">OCaml</a>, <a href="mips.html">MIPS architecture</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/c/Cool.cl'>hello-world</a>:
 class Main inherits IO {
    main(): Object {
 	out_string(&quot;Hello World.\n&quot;)
    };
 };
 
+```
+
+```Example from <a href='https://github.com/anunayk/cool-tmbundle'>Linguist</a>:
 (* This simple example of a list class is adapted from an example in the
    Cool distribution. *)
 
@@ -52,6 +56,9 @@ class Cons inherits List {
    };
 };
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Cool_(programming_language)'>Wikipedia</a>:
 class Main inherits IO {
   main(): Object {{
     out_string(&quot;Enter an integer greater-than or equal-to 0: &quot;);
@@ -71,20 +78,21 @@ class Main inherits IO {
     if num = 0 then 1 else num * factorial(num - 1) fi
   };
 };
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (* A comment
   *)
@@ -92,28 +100,28 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token out_string
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token --
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -1,7 +1,7 @@
 turnstile
 =========
 
-turnstile is a grammar language created in 2017 by Stephen Chang and Alex Knauth and Ben Greenman and Milo Turner and Michael Ballantyne.
+turnstile is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22grammarLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">grammar language</a> created in 2017 by Stephen Chang and Alex Knauth and Ben Greenman and Milo Turner and Michael Ballantyne.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2017
  https://pldb.io/concepts/../lists/creators.html#q=Stephen%20Chang Stephen Chang
  https://pldb.io/concepts/../lists/creators.html#q=Alex%20Knauth Alex Knauth
@@ -9,23 +9,21 @@ turnstile is a grammar language created in 2017 by Stephen Chang and Alex Knauth
  https://pldb.io/concepts/../lists/creators.html#q=Milo%20Turner Milo Turner
  https://pldb.io/concepts/../lists/creators.html#q=Michael%20Ballantyne Michael Ballantyne
 
-#2588 on PLDB
-7 Years Old
+#2696 on PLDB
+9 Years Old
 
 Turnstile aims to help Racket programmers create typed languages. It does so with extensions of Racket’s macro-definition forms that facilitate implementation of type rules alongside normal macro code. As a result, the macros implementing a new language directly type check the program during expansion, obviating the need to create and call out to a separate type checker. Thus, a complete typed language implementation remains a series of macro definitions that may be imported and exported in the standard way that Racket programmers are accustomed to.
 
-- Tags: grammarLanguage
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"grammarLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>grammarLanguage</a>
 - Read more about turnstile on the web: 1.
  https://docs.racket-lang.org/turnstile/index.html 1.
 
+```Example from the web:
 #lang turnstile
 (provide → Int λ #%app #%datum + ann)
- 
 (define-base-type Int)
 (define-type-constructor → #:arity &gt; 0)
- 
 (define-primop + : (→ Int Int Int))
- 
 ; [APP]
 (define-typed-syntax (#%app e_fn e_arg ...) ≫
   [⊢ e_fn ≫ e_fn- ⇒ (~→ τ_in ... τ_out)]
@@ -62,29 +60,30 @@ Turnstile aims to help Racket programmers create typed languages. It does so wit
    --------
    [#:error (type-error #:src #&#39;x
                         #:msg &quot;Unsupported literal: ~v&quot; #&#39;x)]])
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token ;
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

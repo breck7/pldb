@@ -1,50 +1,52 @@
 JCL
 ===
 
-JCL, aka Job Control Language, is a programming language created in 1964.
+JCL, aka Job Control Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1964.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221964%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1964
 
-#436 on PLDB
-60 Years Old
+#444 on PLDB
+62 Years Old
 
 Job Control Language (JCL) is a name for scripting languages used on IBM mainframe operating systems to instruct the system on how to run a batch job or start a subsystem. More specifically, the purpose of JCL is to say which programs to run, using which files or devices  for input or output, and at times to also indicate under what conditions to skip a step. There are two distinct IBM Job Control languages: one for the operating system lineage that begins with DOS/360 and whose latest member is z/VSE; and the other for the lineage from OS/360 to z/OS, the latter now including JES extensions, Job Entry Control Language (JECL). Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Job_Control_Language Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of JCL happened in IBM
-- Explore JCL snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of JCL happened in <a href="../lists/labs.html#q=IBM">IBM</a>
+- Explore JCL snippets on <a href="http://www.rosettacode.org/wiki/Category:JCL">Rosetta Code</a>
 - JCL on HOPL
  https://hopl.info/showlanguage.prx?exp=2134 JCL on HOPL
-- Pygments supports syntax highlighting for JCL
-- See also: (3 related languages) Unix, Assembly language, CLIST
-- 2 PLDB concepts link to JCL: cloc, Pygments
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/scripting.py">syntax highlighting</a> for JCL
+- See also: (3 related languages) <a href="unix.html">Unix</a>, <a href="assembly-language.html">Assembly language</a>, <a href="clist.html">CLIST</a>
+- 2 PLDB concepts link to JCL: <a href="cloc.html">cloc</a>, <a href="pygments.html">Pygments</a>
 
-* $ JOB JNM=NAME,DISP=K,CLASS=2
+```Example from <a href='https://en.wikipedia.org/wiki/Job_Control_Language'>Wikipedia</a>:
+* $$ JOB JNM=NAME,DISP=K,CLASS=2
 
 [some JCL statements here]
 
-* $ EOJ
+* $$ EOJ
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

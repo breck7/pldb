@@ -1,25 +1,29 @@
 AsciiDoc
 ========
 
-AsciiDoc is an open source text markup language created in 2002 by Stuart Rackham.
+AsciiDoc is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2002 by Stuart Rackham.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222002%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2002
  https://pldb.io/concepts/../lists/creators.html#q=Stuart%20Rackham Stuart Rackham
 
-#602 on PLDB
-22 Years Old
-21 Repos
+#596 on PLDB
+24 Years Old
+21 <span title="AsciiDoc repos on GitHub.">Repos</span>
 
 AsciiDoc is a human-readable document format, semantically equivalent to DocBook XML, but using plain-text mark-up conventions.  AsciiDoc documents can be created using any text editor and read “as-is”, or rendered to HTML or any other format supported by a DocBook tool-chain, i.e. PDF, TeX, Unix manpages, e-books, slide presentations, etc.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/AsciiDoc Read more on Wikipedia...
 
-- Tags: text markup language
-- There are at least 21 AsciiDoc repos on GitHub
-- GitHub supports syntax highlighting for AsciiDoc
-- See also: (7 related languages) Python, Ruby, XML, HTML, Tex, Unix, Java
-- 23 PLDB concepts link to AsciiDoc: Ace Editor, Apache Hbase, Bucklescript, Caramel, Ceylon, cloc, crmsh, glush, Golo, Gradle, Kakoune, Kotlin, Ninja, Oxyl, partiql, ramen, Rust, SpiderBasic, tridash, Txt2tags, XL, xodio, YAMP
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- There are at least 21 AsciiDoc repos on <a href="https://github.com/search?q=language:AsciiDoc">GitHub</a>
+- GitHub supports <a href="https://github.com/zuckschwerdt/asciidoc.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for AsciiDoc
+- See also: (7 related languages) <a href="python.html">Python</a>, <a href="ruby.html">Ruby</a>, <a href="xml.html">XML</a>, <a href="html.html">HTML</a>, <a href="tex.html">Tex</a>, <a href="unix.html">Unix</a>, <a href="java.html">Java</a>
+- 27 PLDB concepts link to AsciiDoc: <a href="ace.html">Ace Editor</a>, <a href="apache-hbase.html">Apache Hbase</a>, <a href="bucklescript.html">Bucklescript</a>, <a href="cairo.html">Cairo</a>, <a href="caramel.html">Caramel</a>, <a href="ceylon.html">Ceylon</a>, <a href="cloc.html">cloc</a>, <a href="crmsh.html">crmsh</a>, <a href="glush.html">glush</a>, <a href="golo.html">Golo</a>, <a href="gradle.html">Gradle</a>, <a href="kakoune-editor.html">Kakoune</a>, <a href="kotlin.html">Kotlin</a>, <a href="ninja.html">Ninja</a>, <a href="olc.html">Open Location Code</a>, <a href="oxyl.html">Oxyl</a>, <a href="partiql.html">partiql</a>, <a href="pkl.html">Pkl</a>, <a href="ramen.html">ramen</a>, <a href="rescript.html">Rescript</a>, <a href="rust.html">Rust</a>, <a href="spiderbasic.html">SpiderBasic</a>, <a href="tridash.html">tridash</a>, <a href="txt2tags.html">Txt2tags</a>, <a href="xl-lang.html">XL</a>, <a href="xodio.html">xodio</a>, <a href="yamp.html">YAMP</a>
 
+```Example from <a href='https://riju.codes/asciidoc'>Riju</a>:
 Hello, world!
 
+```
+
+```Example from <a href='https://github.com/zuckschwerdt/asciidoc.tmbundle'>Linguist</a>:
 AsciiDoc Home Page
 ==================
 
@@ -34,6 +38,9 @@ Example Articles
 
 - Item 3
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/AsciiDoc'>Wikipedia</a>:
 = My Article
 J. Smith
 
@@ -55,5 +62,6 @@ Metals commonly used include:
 * copper
 * tin
 * lead
+```
 
-View source
+Built with Scroll v178.2.3

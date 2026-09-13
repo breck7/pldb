@@ -1,19 +1,21 @@
 cK
 ==
 
-cK is a programming language created in 2003 by Stevan Apter.
+cK is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2003 by Stevan Apter.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2003
  https://pldb.io/concepts/../lists/creators.html#q=Stevan%20Apter Stevan Apter
 
-#2246 on PLDB
-21 Years Old
+#2348 on PLDB
+23 Years Old
 
 cK is a Joy-style concatenative syntactic overlay for the K programming language.
 
-- Tags: programming language, arrayLang
-- Early development of cK happened in https://nsl.com/
-- Joy and K influenced the design of cK
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"arrayLang"%5D%7D%5D%2C"logic"%3A"AND"%7D'>arrayLang</a>
+- Early development of cK happened in <a href="../lists/labs.html#q=https://nsl.com/">https://nsl.com/</a>
+- <a href="joy.html">Joy</a> and <a href="k.html">K</a> influenced the design of cK
 
+```Example from the web:
 10 20 30 [[`x`y`z] x y + z -] let
+```
 
-View source
+Built with Scroll v178.2.3

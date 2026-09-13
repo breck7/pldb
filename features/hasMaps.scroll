@@ -7,7 +7,7 @@ printTitle Maps
 <a class="trueBaseThemePreviousItem" href="hasMapFunctions.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasMemberVariables.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -22,6 +22,9 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/lua.html">L
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/elixir.html">Elixir</a>
  %{key: &quot;value&quot;}
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/moonbit.html">MoonBit</a>
+ let map : Map[String, Int] = { &quot;x&quot;: 1, &quot;y&quot;: 2, &quot;z&quot;: 3 }
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/wax.html">Wax</a>
  (let m (map str int) (alloc (map str int)))
@@ -46,13 +49,16 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">
      2: &quot;Key 2&quot;,
  }
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/mmcif.html">mmCIF</a>
+ _entry.id   1BNA
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
  || x = [&quot;a&quot;:&quot;Apple&quot;, &quot;b&quot;:&quot;Bird&quot;, &quot;c&quot;:&quot;Cat&quot;]
  printline x[&quot;b&quot;] // Bird
 
 ***
 
-* Languages *with* Maps include <a href="../concepts/json.html">JSON</a>, <a href="../concepts/lua.html">Lua</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/edn.html">EDN</a>, <a href="../concepts/wax.html">Wax</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/speedie.html">Speedie</a>
+* Languages *with* Maps include <a href="../concepts/json.html">JSON</a>, <a href="../concepts/lua.html">Lua</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/edn.html">EDN</a>, <a href="../concepts/moonbit.html">MoonBit</a>, <a href="../concepts/wax.html">Wax</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/mmcif.html">mmCIF</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/lone.html">Lone</a>
 
 ***
 

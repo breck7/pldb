@@ -1,25 +1,29 @@
 Lucid
 =====
 
-Lucid is a template language created in 2014 by Chris Done.
+Lucid is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22template%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">template language</a> created in 2014 by Chris Done.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
  https://pldb.io/concepts/../lists/creators.html#q=Chris%20Done Chris Done
 
-#1198 on PLDB
-10 Years Old
+#1258 on PLDB
+12 Years Old
 
+```Download source code:
 git clone https://github.com/chrisdone/lucid
+```
 
 Clear to write, read and edit DSL for writing HTML
 
-- Tags: template language
-- Lucid is developed on GitHub and has 279 stars
-- Early development of Lucid happened in https://github.com/chrisdone/lucid/issues
-- Lucid is written in Haskell, Markdown, YAML, CSS, JavaScript, Dockerfile
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"template"%5D%7D%5D%2C"logic"%3A"AND"%7D'>template language</a>
+- Lucid is developed on <a href="https://github.com/chrisdone/lucid">GitHub</a> and has 279 stars
+- Early development of Lucid happened in <a href="../lists/labs.html#q=https://github.com/chrisdone/lucid/issues">https://github.com/chrisdone/lucid/issues</a>
+- Lucid is written in <a href="haskell.html">Haskell</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="css.html">CSS</a>, <a href="javascript.html">JavaScript</a>, <a href="dockerfile.html">Dockerfile</a>
 
+```Example from the web:
 table_ [rows_ &quot;2&quot;]
        (tr_ (do td_ [class_ &quot;top&quot;,colspan_ &quot;2&quot;,style_ &quot;color:red&quot;]
                     (p_ &quot;Hello, attributes!&quot;)
                 td_ &quot;yay!&quot;))
+```
 
-View source
+Built with Scroll v178.2.3

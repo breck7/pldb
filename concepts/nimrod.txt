@@ -1,68 +1,70 @@
 nimrod
 ======
 
-nimrod is a programming language created in 2013.
+nimrod is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2013.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2013
 
-#1718 on PLDB
-11 Years Old
+#1800 on PLDB
+13 Years Old
 
-- Tags: programming language
-- The  Google BigQuery Public Dataset GitHub snapshot shows 375 users using nimrod in 601 repos on GitHub
-- Pygments supports syntax highlighting for nimrod
-- nimrod-lang.org was registered in 2013
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 375 users using nimrod in 601 repos on <a href="https://api.github.com/search/repositories?q=language:Nimrod">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/nimrod.py">syntax highlighting</a> for nimrod
+- <a href="http://nimrod-lang.org">nimrod-lang.org</a> was registered in 2013
 
+```nimrod <a href="../lists/keywords.html#q=nimrod">Keywords</a>
 addr and as asm bind block break case cast concept const continue converter defer discard distinct div do elif else end enum except export finally for func if in yield interface is isnot iterator let macro method mixin mod not notin object of or out proc ptr raise ref return shl shr static template try tuple type using when while xor
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
@@ -72,4 +74,4 @@ HackerNews discussions of nimrod
 title|titleLink|date|score|comments
 Nimrod: A new approach to metaprogramming|https://news.ycombinator.com/item?id=6820474|11/29/2013|218|57
 
-View source
+Built with Scroll v178.2.3

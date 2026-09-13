@@ -1,75 +1,86 @@
 Ioke
 ====
 
-Ioke is an open source programming language created in 2008 by Ola Bini.
+Ioke is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2008 by Ola Bini.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
  https://pldb.io/concepts/../lists/creators.html#q=Ola%20Bini Ola Bini
 
-#442 on PLDB
-16 Years Old
-17 Repos
+#460 on PLDB
+18 Years Old
+17 <span title="Ioke repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/olabini/ioke
+```
 
 Ioke is a dynamic, strongly typed, prototype-based programming language targeting the Java Virtual Machine and the Common Language Runtime. It was designed by Ola Bini, a developer of JRuby. It has a very simple homoiconic syntax, somewhat similar to Io.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Ioke_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Ioke is developed on GitHub and has 164 stars
-- There are at least 17 Ioke repos on GitHub
-- Early development of Ioke happened in https://github.com/olabini/ioke/issues/
-- Ioke is written in Java, C#, XML, HTML, Lisp, CSS, PHP, Bash, Python, Ruby
-- The  Google BigQuery Public Dataset GitHub snapshot shows 39 users using Ioke in 41 repos on GitHub
-- Explore Ioke snippets on Rosetta Code
-- Ioke appears in the TIOBE Index
-- Pygments supports syntax highlighting for Ioke
-- GitHub supports syntax highlighting for Ioke
-- ioke.org was registered in 2008
-- See also: (5 related languages) Io, Smalltalk, Lisp, Ruby, JRuby
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Ioke is developed on <a href="https://github.com/olabini/ioke">GitHub</a> and has 164 stars
+- There are at least 17 Ioke repos on <a href="https://github.com/search?q=language:Ioke">GitHub</a>
+- Early development of Ioke happened in <a href="../lists/labs.html#q=https://github.com/olabini/ioke/issues/">https://github.com/olabini/ioke/issues/</a>
+- Ioke is written in <a href="java.html">Java</a>, <a href="csharp.html">C#</a>, <a href="xml.html">XML</a>, <a href="html.html">HTML</a>, <a href="lisp.html">Lisp</a>, <a href="css.html">CSS</a>, <a href="php.html">PHP</a>, <a href="bash.html">Bash</a>, <a href="python.html">Python</a>, <a href="ruby.html">Ruby</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 39 users using Ioke in 41 repos on <a href="https://api.github.com/search/repositories?q=language:Ioke">GitHub</a>
+- Explore Ioke snippets on <a href="http://www.rosettacode.org/wiki/Category:Ioke">Rosetta Code</a>
+- Ioke appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/jvm.py">syntax highlighting</a> for Ioke
+- GitHub supports <a href="https://github.com/vic/ioke-outdated" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Ioke
+- <a href="http://ioke.org">ioke.org</a> was registered in 2008
+- See also: (5 related languages) <a href="io.html">Io</a>, <a href="smalltalk.html">Smalltalk</a>, <a href="lisp.html">Lisp</a>, <a href="ruby.html">Ruby</a>, <a href="jruby.html">JRuby</a>
 - Read more about Ioke on the web: 1.
  https://ioke.org/wiki/index.php/Guide 1.
 
+```Example from <a href='https://riju.codes/ioke'>Riju</a>:
 &quot;Hello, world!&quot; println
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/i/Ioke.ik'>hello-world</a>:
 &quot;Hello World&quot; println
 
+```
+
+```Example from <a href='https://github.com/vic/ioke-outdated'>Linguist</a>:
 #!/usr/bin/env ioke
 
 &quot;Hello world.&quot; println
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token println
 
-View source
+Built with Scroll v178.2.3

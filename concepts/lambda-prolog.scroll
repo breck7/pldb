@@ -1,12 +1,26 @@
 ../code/conceptPage.scroll
 
 id lambda-prolog
-name ΛProlog
+name λProlog
 appeared 1986
+creators Gopalan Nadathur and Dale Miller
 tags pl
-lab École polytechnique
+website https://www.lix.polytechnique.fr/Labo/Dale.Miller/lProlog/
+lab Duke University && University of Pennsylvania
+description λProlog is a logic programming language that extends Prolog by incorporating notions of higher-order functions, λ-terms, higher-order unification, polymorphic types, and mechanisms for building modules and secure abstract data types.
 
-country France
+reference https://www-users.cse.umn.edu/~ngopalan/papers/oldholp.pdf
+
+example
+ reverse L K :- pi rev \
+   (rev nil K &
+    (pi H\ pi T\ pi S\ rev (H::T) S :- rev T (H::S)))
+       => rev L nil.
+ 
+ ?- reverse [1, 2, 3] L.
+ 
+ Success:
+   L = 3 :: 2 :: 1 :: nil
 
 wikipedia https://en.wikipedia.org/wiki/%CE%9BProlog
  related prolog
@@ -17,5 +31,7 @@ wikipedia https://en.wikipedia.org/wiki/%CE%9BProlog
  revisionCount 52
  dailyPageViews 11
  appeared 1986
+
+hopl https://hopl.info/showlanguage.prx?exp=4206
 
 semanticScholar 0

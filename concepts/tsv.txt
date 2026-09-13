@@ -1,26 +1,28 @@
 TSV
 ===
 
-TSV, aka tab-separated values, is a data notation created in 1993.
+TSV, aka tab-separated values, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 1993.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221993%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1993
 
-#1877 on PLDB
-31 Years Old
-0 Repos
+#1951 on PLDB
+33 Years Old
+0 <span title="TSV repos on GitHub.">Repos</span>
 
 A tab-separated values (TSV) file is a simple text format for storing data in a tabular structure, e.g., database table or spreadsheet data, and a way of exchanging information between databases. Each record in the table is one line of the text file. Each field value of a record is separated from the next by a tab character. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Tab-separated_values Read more on Wikipedia...
 
-- Tags: dataNotation
-- There are at least 0 TSV repos on GitHub
-- See also: (2 related languages) MIME, CSV
-- 1 PLDB concepts link to TSV: Scroll
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- There are at least 0 TSV repos on <a href="https://github.com/search?q=language:TSV">GitHub</a>
+- See also: (2 related languages) <a href="mime.html">MIME</a>, <a href="csv.html">CSV</a>
+- 1 PLDB concepts link to TSV: <a href="scroll.html">Scroll</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Tab-separated_values'>Wikipedia</a>:
 Sepal length	Sepal width	Petal length	Petal width	Species
 5.1	3.5	1.4	0.2	I. setosa
 4.9	3.0	1.4	0.2	I. setosa
 4.7	3.2	1.3	0.2	I. setosa
 4.6	3.1	1.5	0.2	I. setosa
 5.0	3.6	1.4	0.2	I. setosa
+```
 
-View source
+Built with Scroll v178.2.3

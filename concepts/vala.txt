@@ -1,29 +1,30 @@
 Vala
 ====
 
-Vala is an open source programming language created in 2006.
+Vala is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2006.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
 
-#196 on PLDB
-18 Years Old
-3k Repos
+#199 on PLDB
+20 Years Old
+3k <span title="Vala repos on GitHub.">Repos</span>
 
 Vala is an object-oriented programming language with a self-hosting compiler that generates C code and uses the GObject system. Vala is syntactically similar to C# and includes several features such as: anonymous functions, signals, properties, generics, assisted memory management, exception handling, type inference, and foreach statements. Its developers Jürg Billeter and Raffaele Sandrini aim to bring these features to the plain C runtime with little overhead and no special runtime support by targeting the GObject object system. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Vala_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 3,465 Vala repos on GitHub
-- Vala compiles to C
-- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Vala in 2k repos on GitHub
-- Explore Vala snippets on Rosetta Code
-- Pygments supports syntax highlighting for Vala
-- GitHub supports syntax highlighting for Vala
-- See also: (13 related languages) C, C#, D, Java, Boo, Emacs, Sublime Text, TextMate, Eclipse, Vim, Visual Studio Code, Genie, Python
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 3,465 Vala repos on <a href="https://github.com/search?q=language:Vala">GitHub</a>
+- Vala compiles to <a href="c.html">C</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Vala in 2k repos on <a href="https://api.github.com/search/repositories?q=language:Vala">GitHub</a>
+- Explore Vala snippets on <a href="http://www.rosettacode.org/wiki/Category:Vala">Rosetta Code</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/c_like.py">syntax highlighting</a> for Vala
+- GitHub supports <a href="https://github.com/technosophos/Vala-TMBundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Vala
+- See also: (13 related languages) <a href="c.html">C</a>, <a href="csharp.html">C#</a>, <a href="d.html">D</a>, <a href="java.html">Java</a>, <a href="boo.html">Boo</a>, <a href="emacs-editor.html">Emacs</a>, <a href="sublime-editor.html">Sublime Text</a>, <a href="textmate-editor.html">TextMate</a>, <a href="eclipse-editor.html">Eclipse</a>, <a href="vim.html">Vim</a>, <a href="visual-studio-code-editor.html">Visual Studio Code</a>, <a href="genie.html">Genie</a>, <a href="python.html">Python</a>
 - Read more about Vala on the web: 1. 2.
  https://vala.dev/ 1.
  https://news.ycombinator.com/item?id=32113825 2.
-- 4 PLDB concepts link to Vala: Ace Editor, Apache Arrow, cloc, mal
+- 4 PLDB concepts link to Vala: <a href="ace.html">Ace Editor</a>, <a href="arrow-format.html">Apache Arrow</a>, <a href="cloc.html">cloc</a>, <a href="mal.html">mal</a>
 
+```Example from the web:
 int main (string[] args) {
    var app = new Gtk.Application(
      &quot;com.example.App&quot;,
@@ -41,55 +42,64 @@ int main (string[] args) {
    })
    return app.run(args);
  }
+```
 
+```Example from <a href='https://riju.codes/vala'>Riju</a>:
 void main () {
     print(&quot;Hello, world!\n&quot;);
 }
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/v/Vala.vala'>hello-world</a>:
 static void main (string[] args)
 {
 	stdout.printf (&quot;Hello World\n&quot;);
 }
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Vala_(programming_language)'>Wikipedia</a>:
 void main () {
   print(&quot;Hello, world!\n&quot;);
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token stdout.printf
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

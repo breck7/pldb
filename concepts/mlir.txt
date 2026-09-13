@@ -1,29 +1,33 @@
-mlir
+MLIR
 ====
 
-mlir is an intermediate representation language created in 2019 by Chris Lattner.
+MLIR, aka Multi-Level Intermediate Representation, is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22ir%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">intermediate representation language</a> created in 2019 by Chris Lattner.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2019
  https://pldb.io/concepts/../lists/creators.html#q=Chris%20Lattner Chris Lattner
 
-#250 on PLDB
-5 Years Old
-84 Repos
+#218 on PLDB
+7 Years Old
+84 <span title="MLIR repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/tensorflow/mlir
+```
 
-"Multi-Level Intermediate Representation" Compiler Infrastructure
+The MLIR project is a novel approach to building reusable and extensible compiler infrastructure. MLIR aims to address software fragmentation, improve compilation for heterogeneous hardware, significantly reduce the cost of building domain specific compilers, and aid in connecting existing compilers together.
 
-- Tags: intermediate representation language
-- mlir is developed on GitHub and has 1,728 stars
-- There are at least 84 mlir repos on GitHub
-- Early development of mlir happened in https://github.com/tensorflow
-- mlir is written in Markdown
-- The  Google BigQuery Public Dataset GitHub snapshot shows 27 users using mlir in 30 repos on GitHub
-- First announcement of mlir
-- Read more about mlir on the web: 1.
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"ir"%5D%7D%5D%2C"logic"%3A"AND"%7D'>intermediate representation language</a>
+- MLIR is developed on <a href="https://github.com/tensorflow/mlir">GitHub</a> and has 1,728 stars
+- There are at least 84 MLIR repos on <a href="https://github.com/search?q=language:MLIR">GitHub</a>
+- Early development of MLIR happened in <a href="../lists/labs.html#q=Google">Google</a>
+- <a href="llvmir.html">LLVM IR</a> and <a href="swift-il.html">Swift SIL</a> and <a href="xla.html">XLA</a> influenced the design of MLIR
+- MLIR is written in <a href="markdown.html">Markdown</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 27 users using MLIR in 30 repos on <a href="https://api.github.com/search/repositories?q=language:MLIR">GitHub</a>
+- <a href="https://ieeexplore.ieee.org/document/9370308">First announcement of</a> MLIR
+- Read more about MLIR on the web: 1.
  https://blog.tensorflow.org/2019/04/mlir-new-intermediate-representation.html 1.
-- 1 PLDB concepts link to mlir: Mojo
+- 1 PLDB concepts link to MLIR: <a href="mojo.html">Mojo</a>
 
+```Example from the web:
 // Syntactically similar to LLVM:
 func @testFunction(%arg0: i32) {
   %x = call @thingToCall(%arg0) : (i32) -&gt; i32
@@ -32,7 +36,9 @@ func @testFunction(%arg0: i32) {
   %y = addi %x, %x : i32
   return %y : i32
 }
+```
 
+```Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
 // Example code of an affine reduction.
 // MLIR example code may not always work out of the box because the textual MLIR format is not stable.
 // The example tries to be compatible with the latest MLIR version, which may not work on previous versions.
@@ -48,28 +54,30 @@ func @affine_parallel_with_reductions_i64(%arg0: memref&lt;3x3xi64&gt;, %arg1: m
   return %0#0, %0#1 : i64, i64
 }
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -1,19 +1,21 @@
 nulan
 =====
 
-nulan is a programming language created in 2012.
+nulan is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2012.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
 
-#2012 on PLDB
-12 Years Old
+#2085 on PLDB
+14 Years Old
 
+```Download source code:
 git clone https://github.com/Pauan/nulan
+```
 
 Purely functional statically typed Lisp which compiles to JavaScript
 
-- Tags: programming language
-- nulan is developed on GitHub and has 46 stars
-- Early development of nulan happened in https://github.com/Pauan/nulan/issues
-- nulan is written in JavaScript, reStructuredText, TypeScript, SVG, HTML, PureScript, JSON, Markdown
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- nulan is developed on <a href="https://github.com/Pauan/nulan">GitHub</a> and has 46 stars
+- Early development of nulan happened in <a href="../lists/labs.html#q=https://github.com/Pauan/nulan/issues">https://github.com/Pauan/nulan/issues</a>
+- nulan is written in <a href="javascript.html">JavaScript</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="typescript.html">TypeScript</a>, <a href="svg.html">SVG</a>, <a href="html.html">HTML</a>, <a href="purescript.html">PureScript</a>, <a href="json.html">JSON</a>, <a href="markdown.html">Markdown</a>
 
-View source
+Built with Scroll v178.2.3

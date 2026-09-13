@@ -4,7 +4,7 @@ checklistTodoParser
  example
   [] Get milk
  description A task todo.
- crux []
+ cue []
  string checked 
  javascript
   get text() {
@@ -18,6 +18,6 @@ checklistDoneParser
  extends checklistTodoParser
  description A completed task.
  string checked checked
- crux [x]
+ cue [x]
  example
   [x] get milk

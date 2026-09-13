@@ -1,26 +1,27 @@
 Cython
 ======
 
-Cython is an open source programming language created in 2007.
+Cython is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2007.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2007
 
-#162 on PLDB
-17 Years Old
-698 Repos
+#164 on PLDB
+19 Years Old
+698 <span title="Cython repos on GitHub.">Repos</span>
 
 Cython is a superset of the Python programming language, designed to give C-like performance with code which is mostly written in Python. Cython is a compiled language that generates CPython extension modules. These extension modules can then be loaded and used by regular Python code using the import statement. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Cython Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 698 Cython repos on GitHub
-- Cython is a superset of Python
-- Early development of Cython happened in https://github.com/sagemath
-- The  Google BigQuery Public Dataset GitHub snapshot shows 528 users using Cython in 580 repos on GitHub
-- Pygments supports syntax highlighting for Cython
-- GitHub supports syntax highlighting for Cython
-- See also: (9 related languages) Python, C, Linux, Pyrex, Sage, XML, SciPy, Pandas, Scikit-learn
-- 14 PLDB concepts link to Cython: Apache Arrow, atomspace, Chapel, edgedb, Fardlang, HHVM, Horse64, Impala, Pandas, Scikit-learn, SciPy, Sqlalchemy, TensorFlow, tornado
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 698 Cython repos on <a href="https://github.com/search?q=language:Cython">GitHub</a>
+- Cython is a <a href="../lists/explorer.html#columns=rank~id~appeared~tags~creators~supersetOf&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22supersetOf%22%2C%22origData%22%3A%22supersetOf%22%2C%22tags%22%3A%22html%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">superset</a> of <a href="python.html">Python</a>
+- Early development of Cython happened in <a href="../lists/labs.html#q=https://github.com/sagemath">https://github.com/sagemath</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 528 users using Cython in 580 repos on <a href="https://api.github.com/search/repositories?q=language:Cython">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/python.py">syntax highlighting</a> for Cython
+- GitHub supports <a href="https://github.com/textmate/cython.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Cython
+- See also: (9 related languages) <a href="python.html">Python</a>, <a href="c.html">C</a>, <a href="linux.html">Linux</a>, <a href="pyrex.html">Pyrex</a>, <a href="sagemath.html">Sage</a>, <a href="xml.html">XML</a>, <a href="scipy.html">SciPy</a>, <a href="pandas.html">Pandas</a>, <a href="scikit-learn.html">Scikit-learn</a>
+- 15 PLDB concepts link to Cython: <a href="arrow-format.html">Apache Arrow</a>, <a href="atomspace.html">atomspace</a>, <a href="edgedb.html">edgedb</a>, <a href="fardlang.html">Fardlang</a>, <a href="hhvm.html">HHVM</a>, <a href="horse64.html">Horse64</a>, <a href="htsql.html">HTSQL</a>, <a href="impala.html">Impala</a>, <a href="pandas.html">Pandas</a>, <a href="saltstack.html">SaltStack</a>, <a href="scikit-learn.html">Scikit-learn</a>, <a href="scipy.html">SciPy</a>, <a href="sqlalchemy.html">Sqlalchemy</a>, <a href="tensorflow.html">TensorFlow</a>, <a href="tornado.html">tornado</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Cython'>Wikipedia</a>:
 In [1]: %load_ext Cython
 
 In [2]: %%cython
@@ -42,33 +43,34 @@ In [3]: %timeit f(1000000)
 
 In [4]: %timeit g(1000000)
 74 µs ± 16.6 ns per loop (mean ± std. dev. of 7 runs, 10000 loops each)
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

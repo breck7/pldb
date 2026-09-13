@@ -1,24 +1,27 @@
 MDX
 ===
 
-MDX is a text markup language created in 2017 by John Otander.
+MDX is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2017 by John Otander.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2017
  https://pldb.io/concepts/../lists/creators.html#q=John%20Otander John Otander
 
-#167 on PLDB
-7 Years Old
+#174 on PLDB
+9 Years Old
 
+```Download source code:
 git clone https://github.com/mdx-js/mdx
+```
 
 MDX allows you to use JSX in your markdown content. You can import components, such as interactive charts or alerts, and embed them within your content.
 
-- Tags: text markup language
-- MDX is developed on GitHub and has 17,208 stars
-- Early development of MDX happened in https://github.com/mdx-js
-- MDX is written in JavaScript, Markdown, JSX, JSON, YAML, TypeScript, CSS, SVG, JSON5
-- mdxjs.com was registered in 2018
-- 1 PLDB concepts link to MDX: Slashdown
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- MDX is developed on <a href="https://github.com/mdx-js/mdx">GitHub</a> and has 17,208 stars
+- Early development of MDX happened in <a href="../lists/labs.html#q=https://github.com/mdx-js">https://github.com/mdx-js</a>
+- MDX is written in <a href="javascript.html">JavaScript</a>, <a href="markdown.html">Markdown</a>, <a href="jsx.html">JSX</a>, <a href="json.html">JSON</a>, <a href="yaml.html">YAML</a>, <a href="typescript.html">TypeScript</a>, <a href="css.html">CSS</a>, <a href="svg.html">SVG</a>, <a href="json5.html">JSON5</a>
+- <a href="https://mdxjs.com/">mdxjs.com</a> was registered in 2018
+- 1 PLDB concepts link to MDX: <a href="slashdown.html">Slashdown</a>
 
+```Example from the web:
 import { Chart } from &#39;../components/chart&#39;
 
 # Here’s a chart
@@ -26,5 +29,6 @@ import { Chart } from &#39;../components/chart&#39;
 The chart is rendered inside our MDX document.
 
 &lt;Chart /&gt;
+```
 
-View source
+Built with Scroll v178.2.3

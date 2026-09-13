@@ -1,56 +1,70 @@
 TypeScript
 ==========
 
-TypeScript is an open source programming language created in 2012 by Anders Hejlsberg.
+TypeScript is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2012 by Anders Hejlsberg.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
  https://pldb.io/concepts/../lists/creators.html#q=Anders%20Hejlsberg Anders Hejlsberg
 
-#14 on PLDB
-12 Years Old
-3m Repos
+#15 on PLDB
+14 Years Old
+3m <span title="TypeScript repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/microsoft/TypeScript
+```
 
 TypeScript is a free and open-source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript, and adds optional static typing to the language. Anders Hejlsberg, lead architect of C# and creator of Delphi and Turbo Pascal, has worked on the development of TypeScript. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/TypeScript Read more on Wikipedia...
 
-- Tags: programming language
-- TypeScript is developed on GitHub and has 99,410 stars
-- Watch the history of the TypeScript repo visualized with Gource
-- There are at least 3,281,749 TypeScript repos on GitHub
-- TypeScript is a superset of JavaScript
-- Early development of TypeScript happened in Microsoft
-- TypeScript is written in TypeScript, JavaScript, JSON, Markdown, YAML, Diff, XML, Bourne shell, Dockerfile
-- The  Google BigQuery Public Dataset GitHub snapshot shows 36k users using TypeScript in 48k repos on GitHub
-- There are 87,839 members in the TypeScript subreddit
-- In the 2021 StackOverflow developer survey TypeScript programmers reported a median salary of $59,172. 30% of respondents reported using TypeScript. 24,909 programmers reported using TypeScript, and 26,905 said they wanted to use it
-- Explore TypeScript snippets on Rosetta Code
-- TypeScript appears in the TIOBE Index
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- TypeScript is developed on <a href="https://github.com/microsoft/TypeScript">GitHub</a> and has 99,410 stars
+- Watch the history of <a href="https://www.youtube.com/watch?v=EhdSkuJafG8">the TypeScript repo visualized with Gource</a>
+- There are at least 3,281,749 TypeScript repos on <a href="https://github.com/search?q=language:TypeScript">GitHub</a>
+- TypeScript is a <a href="../lists/explorer.html#columns=rank~id~appeared~tags~creators~supersetOf&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22supersetOf%22%2C%22origData%22%3A%22supersetOf%22%2C%22tags%22%3A%22html%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">superset</a> of <a href="javascript.html">JavaScript</a>
+- Early development of TypeScript happened in <a href="../lists/labs.html#q=Microsoft">Microsoft</a>
+- TypeScript is written in <a href="typescript.html">TypeScript</a>, <a href="javascript.html">JavaScript</a>, <a href="json.html">JSON</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="diff.html">Diff</a>, <a href="xml.html">XML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="dockerfile.html">Dockerfile</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 36k users using TypeScript in 48k repos on <a href="https://api.github.com/search/repositories?q=language:TypeScript">GitHub</a>
+- There are 87,839 members in the <a href="https://reddit.com/r/typescript">TypeScript subreddit</a>
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> TypeScript programmers reported a median salary of $59,172. 30% of respondents reported using TypeScript. 24,909 programmers reported using TypeScript, and 26,905 said they wanted to use it
+- Explore TypeScript snippets on <a href="http://www.rosettacode.org/wiki/Category:TypeScript">Rosetta Code</a>
+- TypeScript appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - TypeScript Ubuntu package
  https://packages.ubuntu.com/jammy/node-typescript TypeScript Ubuntu package
-- TypeScript LSP implementation
-- Monaco package for syntax highlighting TypeScript
-- Pygments supports syntax highlighting for TypeScript
-- GitHub supports syntax highlighting for TypeScript
-- TypeScript appears in the Quine Relay project
-- Learn TypeScript on exercism.
-- There is 1 Jupyter Kernel for TypeScript
-- There is a central package repository for TypeScript
-- Indeed.com has 1,542 matches for "typescript developer".
-- typescriptlang.org was registered in 2012
-- See also: (18 related languages) JavaScript, Java, C#, Delphi, Turbo Pascal, JQuery, MongoDB, D3.js, Visual Studio, Eclipse, Emacs, Vim, Sublime Text, Visual Studio Code, Apache Maven, Dart, CoffeeScript, Elm
-- 158 PLDB concepts link to TypeScript: 11ty, Ace Editor, Argdown, arret, Apache Arrow, AssemblyScript, AT Protocol, Austral, Bicep, Bitsy, blur-markup-language, bosque, Broccoli, Bucklescript, Bun, buzz, Candy, Caramel, cat, Chapel, chevrotain, Ć, Civet, Claro, cloc, Closure Templates, codecept, CodeMirror, Cortex, D3.js, Deno, dex, Differential Datalog, TypeScript Type Declarations, Elpi, Elvish, emberjs-framework, Emscripten, Enso, erg, Eve, Fardlang, FlatBuffers, Flow9, FlowchartFun, GETlang, GHC, Gleam, Glisp, gridstudio-editor, Gun, Hera, Heron, HHVM, highlight.js, htmx, HuwCode, Hyperscript, Imba, Insitux, Jakt, jsil-compiler, json->url, JSON5, Koka, Kotlin, kumir, leo-editor, Lesma, Ligo, Link, lobster, Lodash, Luna, mal, Mapgen, Marko, Markwhen, Marp, Mask, Mastodon, MathJSON, Mathpix Markdown, MDX, Mech, Melody, mermaid, mochajs, Monaco Editor, Mond, neut, NilScript, Node.js, nomnoml, nulan, Observable Framework, Observable Plot, Obsidian, Ohayo, ohm, OK, Openverse, Parsers, Particles, PEG.js, penrose, Pod6, Podlite, Porffor, PostCSS, Prettier, PROMETHEUS, PRQL, Pug, Quint, React Native, Recursive teXt, Rholang, Roc, rpscript, Rust, SandDance, Savi, SDMS, Seq, Serious, Slashdown, spiral, SQRL, Static Typescript, Storymatic, Superjson, Svelte, tao3d, Tawa, tea, Timpani, tldraw, Truth, tsquery, Twine, TypeScript, Uno, V, v8, vega-editor-app, Vega, Veryl, Virgil, Vue, Wasp, Wax, 文言文編程語言, Wing, Wonkey, xlwings-editor, Xtext, YoptaScript
+- TypeScript <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/theia-ide/typescript-language-server">implementation</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/typescript">package</a> for syntax highlighting TypeScript
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/javascript.py">syntax highlighting</a> for TypeScript
+- GitHub supports <a href="https://github.com/Microsoft/TypeScript-TmLanguage" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for TypeScript
+- TypeScript appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Learn <a href="https://exercism.org/tracks/typescript">TypeScript on exercism.</a>
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/nearbydelta/itypescript">Kernel</a> for TypeScript
+- There is a <a href="https://npmjs.org/">central package repository</a> for TypeScript
+- Indeed.com has 1,542 matches for <a href="https://www.indeed.com/jobs?q=typescript developer">"typescript developer"</a>.
+- <a href="http://www.typescriptlang.org/">typescriptlang.org</a> was registered in 2012
+- See also: (18 related languages) <a href="javascript.html">JavaScript</a>, <a href="java.html">Java</a>, <a href="csharp.html">C#</a>, <a href="delphi.html">Delphi</a>, <a href="turbo-pascal.html">Turbo Pascal</a>, <a href="jquery.html">JQuery</a>, <a href="mongodb.html">MongoDB</a>, <a href="d3.html">D3.js</a>, <a href="visual-studio-editor.html">Visual Studio</a>, <a href="eclipse-editor.html">Eclipse</a>, <a href="emacs-editor.html">Emacs</a>, <a href="vim.html">Vim</a>, <a href="sublime-editor.html">Sublime Text</a>, <a href="visual-studio-code-editor.html">Visual Studio Code</a>, <a href="maven-pom.html">Apache Maven</a>, <a href="dart.html">Dart</a>, <a href="coffeescript.html">CoffeeScript</a>, <a href="elm.html">Elm</a>
+- 172 PLDB concepts link to TypeScript: <a href="11ty.html">11ty</a>, <a href="ace.html">Ace Editor</a>, <a href="argdown.html">Argdown</a>, <a href="arret.html">arret</a>, <a href="arrow-format.html">Apache Arrow</a>, <a href="assemblyscript.html">AssemblyScript</a>, <a href="atprotocol.html">AT Protocol</a>, <a href="austral.html">Austral</a>, <a href="bicep.html">Bicep</a>, <a href="bitsy.html">Bitsy</a>, <a href="blur-markup-language.html">blur-markup-language</a>, <a href="borgo.html">Borgo</a>, <a href="bosque.html">bosque</a>, <a href="bucklescript.html">Bucklescript</a>, <a href="bun.html">Bun</a>, <a href="buzz.html">buzz</a>, <a href="candy.html">Candy</a>, <a href="caramel.html">Caramel</a>, <a href="cat.html">cat</a>, <a href="chevrotain.html">chevrotain</a>, <a href="cir.html">CIR</a>, <a href="cito.html">Ć</a>, <a href="civet.html">Civet</a>, <a href="claro.html">Claro</a>, <a href="cloc.html">cloc</a>, <a href="closure-templates.html">Closure Templates</a>, <a href="codecept.html">codecept</a>, <a href="codemirror.html">CodeMirror</a>, <a href="codeql.html">CodeQL</a>, <a href="cortex.html">Cortex</a>, <a href="d3.html">D3.js</a>, <a href="deno.html">Deno</a>, <a href="dex.html">dex</a>, <a href="differential-datalog.html">Differential Datalog</a>, <a href="dts.html">TypeScript Type Declarations</a>, <a href="ecl.html">ECL</a>, <a href="elpi.html">Elpi</a>, <a href="elvish.html">Elvish</a>, <a href="emberjs-framework.html">emberjs-framework</a>, <a href="emscripten.html">Emscripten</a>, <a href="enso.html">Enso</a>, <a href="erg.html">erg</a>, <a href="eve.html">Eve</a>, <a href="fardlang.html">Fardlang</a>, <a href="flatbuffers.html">FlatBuffers</a>, <a href="flow9.html">Flow9</a>, <a href="flowchart-fun.html">FlowchartFun</a>, <a href="getlang.html">GETlang</a>, <a href="ghc.html">GHC</a>, <a href="gleam.html">Gleam</a>, <a href="glisp.html">Glisp</a>, <a href="gridstudio-editor.html">gridstudio-editor</a>, <a href="gun.html">Gun</a>, <a href="hedy.html">Hedy</a>, <a href="hera.html">Hera</a>, <a href="heron-lang.html">Heron</a>, <a href="hhvm.html">HHVM</a>, <a href="highlightjs.html">highlight.js</a>, <a href="htmx.html">htmx</a>, <a href="huwcode.html">HuwCode</a>, <a href="hyperscript-lang.html">Hyperscript</a>, <a href="imba.html">Imba</a>, <a href="insitux.html">Insitux</a>, <a href="jakt.html">Jakt</a>, <a href="jsil-compiler.html">jsil-compiler</a>, <a href="json-url.html">json->url</a>, <a href="json5.html">JSON5</a>, <a href="koka.html">Koka</a>, <a href="kotlin.html">Kotlin</a>, <a href="kumir.html">kumir</a>, <a href="leo-editor.html">leo-editor</a>, <a href="lesma.html">Lesma</a>, <a href="ligo.html">Ligo</a>, <a href="link.html">Link</a>, <a href="lobster.html">lobster</a>, <a href="lodash.html">Lodash</a>, <a href="luna.html">Luna</a>, <a href="mal.html">mal</a>, <a href="mapgen.html">Mapgen</a>, <a href="marko.html">Marko</a>, <a href="markwhen.html">Markwhen</a>, <a href="marp.html">Marp</a>, <a href="maskjs.html">Mask</a>, <a href="mastodon.html">Mastodon</a>, <a href="mathjson.html">MathJSON</a>, <a href="mathpix-markdown.html">Mathpix Markdown</a>, <a href="mcp.html">Model Context Protocol</a>, <a href="mdx.html">MDX</a>, <a href="mech-lang.html">Mech</a>, <a href="melody.html">Melody</a>, <a href="mermaid.html">mermaid</a>, <a href="michelson.html">michelson</a>, <a href="mlscript.html">MLscript</a>, <a href="mochajs.html">mochajs</a>, <a href="monaco.html">Monaco Editor</a>, <a href="mond.html">Mond</a>, <a href="netbeans-editor.html">netbeans-editor</a>, <a href="neut.html">Neut</a>, <a href="nilscript.html">NilScript</a>, <a href="nodejs.html">Node.js</a>, <a href="nomnoml.html">nomnoml</a>, <a href="nulan.html">nulan</a>, <a href="observable-framework.html">Observable Framework</a>, <a href="observable-plot.html">Observable Plot</a>, <a href="obsidian-lang.html">Obsidian</a>, <a href="ohayo.html">Ohayo</a>, <a href="ohm.html">ohm</a>, <a href="ok.html">OK</a>, <a href="openverse.html">Openverse</a>, <a href="parsers.html">Parsers</a>, <a href="particles.html">Particles</a>, <a href="pegjs.html">PEG.js</a>, <a href="penrose.html">Penrose</a>, <a href="pod6.html">Pod6</a>, <a href="podlite.html">Podlite</a>, <a href="porffor.html">Porffor</a>, <a href="postcss.html">PostCSS</a>, <a href="prettier.html">Prettier</a>, <a href="prometheus.html">PROMETHEUS</a>, <a href="prql.html">PRQL</a>, <a href="psvg.html">PSVG</a>, <a href="pug.html">Pug</a>, <a href="quint.html">Quint</a>, <a href="reach.html">Reach</a>, <a href="react-native.html">React Native</a>, <a href="reactjs.html">ReactJS</a>, <a href="recursivetext.html">Recursive teXt</a>, <a href="rescript.html">Rescript</a>, <a href="rholang.html">Rholang</a>, <a href="roc.html">Roc</a>, <a href="rpscript.html">rpscript</a>, <a href="rust.html">Rust</a>, <a href="sagemath.html">Sage</a>, <a href="sanddance.html">SandDance</a>, <a href="savi.html">Savi</a>, <a href="sdms.html">SDMS</a>, <a href="seq.html">Seq</a>, <a href="serious.html">Serious</a>, <a href="slashdown.html">Slashdown</a>, <a href="spiral.html">spiral</a>, <a href="sqrl.html">SQRL</a>, <a href="static-typescript.html">Static Typescript</a>, <a href="storymatic.html">Storymatic</a>, <a href="superjson.html">Superjson</a>, <a href="svelte.html">Svelte</a>, <a href="tao3d.html">tao3d</a>, <a href="tawa.html">Tawa</a>, <a href="tea-pm.html">tea</a>, <a href="timpani.html">Timpani</a>, <a href="tldraw.html">tldraw</a>, <a href="truth.html">Truth</a>, <a href="tsquery.html">tsquery</a>, <a href="twine.html">Twine</a>, <a href="typescript.html">TypeScript</a>, <a href="uno.html">Uno</a>, <a href="v.html">V</a>, <a href="v8.html">V8</a>, <a href="vega-editor-app.html">vega-editor-app</a>, <a href="vega.html">Vega</a>, <a href="veryl.html">Veryl</a>, <a href="vine.html">Vine</a>, <a href="virgil.html">Virgil</a>, <a href="vuejs.html">Vue</a>, <a href="wasp-lang.html">Wasp</a>, <a href="wax.html">Wax</a>, <a href="web3js.html">Web3.js</a>, <a href="wenyan.html">文言文編程語言</a>, <a href="wing.html">Wing</a>, <a href="wonkey.html">Wonkey</a>, <a href="xlwings-editor.html">xlwings-editor</a>, <a href="xtext.html">Xtext</a>, <a href="yoptascript.html">YoptaScript</a>
 
+```Example from <a href='https://riju.codes/typescript'>Riju</a>:
 console.log(&quot;Hello, world!&quot;);
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/t/TypeScript.ts'>hello-world</a>:
 console.log(&quot;Hello World&quot;);
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#TypeScript'>the Hello World Collection</a>:
 // Hello world in TypeScript
 
 alert(&#39;Hello world!&#39;);
+```
 
+```Example from <a href='https://github.com/Microsoft/TypeScript-TmLanguage'>Linguist</a>:
 console.log(&quot;Hello, World!&quot;);
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/TypeScript'>Wikipedia</a>:
 class Person {
     private name: string;
     private age: number;
@@ -66,34 +80,35 @@ class Person {
         return `${this.name} (${this.age}) (${this.salary})`; // As of version 1.4
     }
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Standard Library
  FeatureLink ../features/hasStandardLibrary.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   console.log("Hello, World!");
  Token 
 row
  Feature Type Aliases
  FeatureLink ../features/hasTypeAliases.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   type Second = number;
  Token 
 row
  Feature hasGradualTypes
  FeatureLink ../features/hasGradualTypes.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -101,70 +116,92 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Algebraic Data Type
  FeatureLink ../features/hasAlgebraicTypes.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   declare type numOrString = string | number
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Union Types
  FeatureLink ../features/hasUnionTypes.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   declare type numOrString = string | number
  Token 
 row
  Feature Single-Type Arrays
  FeatureLink ../features/hasSingleTypeArrays.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   const scores: int[]
  Token 
 row
  Feature Type Inference
  FeatureLink ../features/hasTypeInference.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "hello world"
  Token "
 row
  Feature Type Parameters
  FeatureLink ../features/hasTypeParameters.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
-  function identity(arg: T): T {
+  function identity<T>(arg: T): T {
      return arg;
   }
  Token 
 row
  Feature Static Typing
  FeatureLink ../features/hasStaticTyping.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
+ Token 
+row
+ Feature Structural Typing
+ FeatureLink ../features/hasStructuralTyping.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // https://www.typescriptlang.org/docs/handbook/type-compatibility.html
+  // Subtype relations are structural for both interfaces and classes.
+  // Interface example:
+  interface CanCheckIncludes<T> {
+      includes(x: T): boolean;
+  }
+  
+  function logIfIncludes<T>(includer: CanCheckIncludes<T>, includee: T) {
+      if (includer.includes(includee)) {
+          console.log(includer);
+      }
+  }
+  
+  logIfIncludes("abc", "b");
+  logIfIncludes([1, 2, 3], 4);
+  logIfIncludes(1, 1);  // Fails typechecking, as numbers don't have includes()
  Token 
 row
  Feature Inheritance
  FeatureLink ../features/hasInheritance.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   class B {}
   class A extends B {}
@@ -172,14 +209,14 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   console.log("Hi")
  Token console.log
 row
  Feature Namespaces
  FeatureLink ../features/hasNamespaces.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // Typescript even supports splitting namespaces across multiple files:
   // Validation.ts
@@ -189,7 +226,7 @@ row
       }
   }
   // LettersOnlyValidator.ts
-  /// 
+  /// <reference path="Validation.ts" />
   namespace Validation {
       const lettersRegexp = /^[A-Za-z]+$/;
       export class LettersOnlyValidator implements StringValidator {
@@ -202,7 +239,7 @@ row
 row
  Feature Mixins
  FeatureLink ../features/hasMixins.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // https://www.typescriptlang.org/docs/handbook/mixins.html
   class SmartObject implements Disposable, Activatable {
@@ -212,7 +249,7 @@ row
 row
  Feature Interfaces
  FeatureLink ../features/hasInterfaces.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // https://www.typescriptlang.org/docs/handbook/interfaces.html
   interface SquareConfig {
@@ -223,48 +260,48 @@ row
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   import { ZipCodeValidator } from "./ZipCodeValidator";
-  /// 
-  /// 
+  /// <reference path="../typings/jquery.d.ts"/>
+  /// <reference path="components/someclass.ts"/>
   import moo = module('moo');
-  /// 
+  /// <amd-dependency path="legacy/moduleA" name="moduleA"/>
  Token 
 row
  Feature Type Casting
  FeatureLink ../features/hasExplicitTypeCasting.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
-  something;
+  <number>something;
  Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   class Person {}
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   const result = true
  Token 
 row
  Feature Generics
  FeatureLink ../features/hasGenerics.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
-  function identity(arg: T): T {
+  function identity<T>(arg: T): T {
      return arg;
   }
  Token 
 row
  Feature Abstract Types
  FeatureLink ../features/hasAbstractTypes.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   abstract class Animal {}
   class Dog extends Animal
@@ -272,7 +309,7 @@ row
 row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   class Person {
     private _age = 2
@@ -285,7 +322,7 @@ row
 row
  Feature Static Methods
  FeatureLink ../features/hasStaticMethods.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   class Person {
     static sayHi() {
@@ -296,7 +333,7 @@ row
 row
  Feature Enums
  FeatureLink ../features/hasEnums.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   enum Direction {
    Up,
@@ -306,20 +343,34 @@ row
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
+ Token 
+row
+ Feature Type Classes
+ FeatureLink ../features/hasTypeClasses.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+   https://github.com/microsoft/TypeScript/issues/10844#issuecomment-256182331
  Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
+ Token 
+row
+ Feature Named Arguments
+ FeatureLink ../features/hasNamedArguments.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+  // idiomatically emulated using parameters that expect objects
  Token
 
-View source
+Built with Scroll v178.2.3

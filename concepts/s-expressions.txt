@@ -1,25 +1,28 @@
 S-expressions
 =============
 
-S-expressions is a data notation created in 1960.
+S-expressions is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 1960.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221960%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1960
 
-#667 on PLDB
-64 Years Old
+#662 on PLDB
+66 Years Old
 
 In computing, s-expressions, sexprs or sexps (for "symbolic expression") are a notation for nested list (tree-structured) data, invented for and popularized by the programming language Lisp, which uses them for source code as well as data. In the usual parenthesized syntax of Lisp, an s-expression is classically defined as an atom, or an expression of the form (x . y) where x and y are s-expressions. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/S-expression Read more on Wikipedia...
 
-- Tags: dataNotation
-- Early development of S-expressions happened in MIT
-- ANTLR grammar for S-expressions
-- See also: (10 related languages) Lisp, Scheme, C, Common Lisp, XML, Python, ISLISP, RFC, I-expressions, Bayer Expressions
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- Early development of S-expressions happened in <a href="../lists/labs.html#q=MIT">MIT</a>
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/sexpression">grammar</a> for S-expressions
+- See also: (10 related languages) <a href="lisp.html">Lisp</a>, <a href="scheme.html">Scheme</a>, <a href="c.html">C</a>, <a href="common-lisp.html">Common Lisp</a>, <a href="xml.html">XML</a>, <a href="python.html">Python</a>, <a href="islisp.html">ISLISP</a>, <a href="rfc.html">RFC</a>, <a href="i-expressions.html">I-expressions</a>, <a href="bayer-expressions.html">Bayer Expressions</a>
 - Read more about S-expressions on the web: 1.
  https://dev-docs.kicad.org/en/components/sexpr/ 1.
-- 4 PLDB concepts link to S-expressions: Bayer Expressions, Liso, SUSN, Sweet Expressions
+- 7 PLDB concepts link to S-expressions: <a href="bayer-expressions.html">Bayer Expressions</a>, <a href="l-expressions.html">Line-expressions</a>, <a href="liso.html">Liso</a>, <a href="shrubbery.html">Shrubbery Notation</a>, <a href="susn.html">SUSN</a>, <a href="sweet-expressions.html">Sweet Expressions</a>, <a href="sxml.html">SXML</a>
 
+```Example from the web:
 (x . y)
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/S-expression'>Wikipedia</a>:
 def parse_sexp(string):
     &quot;&quot;&quot;
     &gt;&gt;&gt; parse_sexp(&quot;(+ 5 (+ 3 5))&quot;)
@@ -47,5 +50,6 @@ def parse_sexp(string):
         else:
             word += char
     return sexp[0]
+```
 
-View source
+Built with Scroll v178.2.3

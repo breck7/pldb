@@ -1,31 +1,32 @@
 Oz
 ==
 
-Oz is an open source programming language created in 1991 by Gert Smolka.
+Oz is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1991 by Gert Smolka.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221991%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1991
  https://pldb.io/concepts/../lists/creators.html#q=Gert%20Smolka Gert Smolka
 
-#428 on PLDB
-33 Years Old
-371 Repos
+#449 on PLDB
+35 Years Old
+371 <span title="Oz repos on GitHub.">Repos</span>
 
 Oz is a multiparadigm programming language, developed in the Programming Systems Lab at Université catholique de Louvain, for programming language education. It has a canonical textbook: Concepts, Techniques, and Models of Computer Programming. Oz was first designed by Gert Smolka and his students in 1991. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Oz_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 371 Oz repos on GitHub
-- Early development of Oz happened in Universität des Saarlandes
-- The  Google BigQuery Public Dataset GitHub snapshot shows 70 users using Oz in 72 repos on GitHub
-- There are 4 Project Euler users using Oz
-- Explore Oz snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 371 Oz repos on <a href="https://github.com/search?q=language:Oz">GitHub</a>
+- Early development of Oz happened in <a href="../lists/labs.html#q=Universität des Saarlandes">Universität des Saarlandes</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 70 users using Oz in 72 repos on <a href="https://api.github.com/search/repositories?q=language:Oz">GitHub</a>
+- There are 4 <a href="https://projecteuler.net/language=Oz">Project Euler</a> users using Oz
+- Explore Oz snippets on <a href="http://www.rosettacode.org/wiki/Category:Oz">Rosetta Code</a>
 - Oz on HOPL
  https://hopl.info/showlanguage.prx?exp=2327 Oz on HOPL
-- Oz appears in the TIOBE Index
-- CodeMirror package for syntax highlighting Oz
-- GitHub supports syntax highlighting for Oz
-- Indeed.com has 0 matches for "oz engineer".
-- See also: (11 related languages) Erlang, Lisp, Prolog, Alice, Scala, Unix, FreeBSD, Linux, Curry, Mercury, Visual Prolog
+- Oz appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/oz">package</a> for syntax highlighting Oz
+- GitHub supports <a href="https://github.com/eregon/oz-tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Oz
+- Indeed.com has 0 matches for <a href="https://www.indeed.com/jobs?q=oz engineer">"oz engineer"</a>.
+- See also: (11 related languages) <a href="erlang.html">Erlang</a>, <a href="lisp.html">Lisp</a>, <a href="prolog.html">Prolog</a>, <a href="alice.html">Alice</a>, <a href="scala.html">Scala</a>, <a href="unix.html">Unix</a>, <a href="freebsd.html">FreeBSD</a>, <a href="linux.html">Linux</a>, <a href="curry.html">Curry</a>, <a href="mercury.html">Mercury</a>, <a href="visual-prolog.html">Visual Prolog</a>
 
+```Example from <a href='https://riju.codes/oz'>Riju</a>:
 functor
 import
     Application
@@ -34,7 +35,9 @@ define
     {System.showInfo &#39;Hello, world!&#39;}
     {Application.exit 0}
 end
+```
 
+```Example from <a href='http://helloworldcollection.de/#Oz'>the Hello World Collection</a>:
 % Hello World in Oz
 
 functor
@@ -45,7 +48,9 @@ define
   {System.showInfo &quot;Hello World!&quot;}
   {Application.exit 0}
 end
+```
 
+```Example from <a href='https://github.com/eregon/oz-tmbundle'>Linguist</a>:
 % You can get a lot of information about Oz by following theses links  :
 % - http://mozart.github.io/
 % - http://en.wikipedia.org/wiki/Oz_(programming_language)
@@ -99,6 +104,9 @@ fun {Reverse L}
   end
 end
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Oz_(programming_language)'>Wikipedia</a>:
 class Counter
    attr val
    meth init(Value)
@@ -117,34 +125,35 @@ local C in
    {C inc(6)}
    {C browse}
 end
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % A comment
  Token %
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -19,12 +19,12 @@ endColumns
 // A ScrollSet with information on programming podcasts
 
 container
-table podcasts.tsv
+datatable podcasts.tsv
  orderBy -episodes
   printTable
 
 expander Measures
-table podcastMeasures.csv
+datatable podcastMeasures.csv
  printTable
 
 idParser
@@ -65,14 +65,14 @@ appleLinkParser
  pattern ^(https\:\/\/podcasts\.apple\.com|appleLink)
  description Apple link and number of ratings.
  extends abstractQuickLinkParser
- crux appleLink
- // todo: should not need crux. currently needed by parseMeasures
+ cue appleLink
+ // todo: should not need cue. currently needed by parseMeasures
  float sortIndex 1.7
  javascript
   computeValue(concept) {
     // todo: fix binding bug so we can move this to abstract class
     const hit = concept.find(particle => particle.getLine().startsWith("https://podcasts.apple.com/"))
-    return hit ? hit.firstAtom : ""
+    return hit ? hit.cue : ""
   }
 
 appleParser
@@ -82,36 +82,36 @@ appleParser
  float sortIndex 1.71
  javascript
   computeValue(concept) {
-    // todo: fix binding bug so we can move this to abstract class
-    const count = concept.getFrom("https://podcasts.apple.com/")
-    return count ? parseInt(count.split(" ")[1]) : ""
+   // todo: fix binding bug so we can move this to abstract class
+   const count = concept.getFrom("https://podcasts.apple.com/")
+   return count ? parseInt(count.split(" ")[1]) : ""
   }
 
 youtubeLinkParser
  pattern ^(https\:\/\/www\.youtube\.com|youtubeLink)
  description YouTube link and number of subscribers.
  float sortIndex 1.8
- crux youtubeLink
- // todo: should not need crux. currently needed by parseMeasures
+ cue youtubeLink
+ // todo: should not need cue. currently needed by parseMeasures
  extends abstractQuickLinkParser
  javascript
   computeValue(concept) {
     // todo: fix binding bug so we can move this to abstract class
     const hit = concept.find(particle => particle.getLine().startsWith("https://www.youtube.com/"))
-    return hit ? hit.firstAtom : ""
+    return hit ? hit.cue : ""
   }
 
 pldbYoutubeParser
- crux youtube
+ cue youtube
  extends abstractCountParser
  float sortIndex 1.81
  description Number of subscribers.
  string measureName youtube
  javascript
   computeValue(concept) {
-    // todo: fix binding bug so we can move this to abstract class
-    const count = concept.getFrom("https://www.youtube.com/")
-    return count ? parseInt(count.split(" ")[1]) : ""
+   // todo: fix binding bug so we can move this to abstract class
+   const count = concept.getFrom("https://www.youtube.com/")
+   return count ? parseInt(count.split(" ")[1]) : ""
   }
 
 id CoRecursive

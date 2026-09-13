@@ -1,23 +1,26 @@
 Cognate
 =======
 
-Cognate is a programming language created in 2020 by Finn Barber.
+Cognate is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2020 by Finn Barber.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
  https://pldb.io/concepts/../lists/creators.html#q=Finn%20Barber Finn Barber
 
-#1193 on PLDB
-4 Years Old
+#1242 on PLDB
+6 Years Old
 
+```Download source code:
 git clone https://github.com/cognate-lang/cognate
+```
 
 A human readable quasi-concatenative programming language. Cognate is a small, dynamic, concatenative language for functional programming. Cognate aims to express complex programs in a simple and readable way through its unique syntax, which emphasises embedding comments into statements. This makes programs very readable and helps a programmer better express their intentions.
 
-- Tags: programming language
-- Cognate is developed on GitHub and has 233 stars
-- Cognate compiles to C
-- Cognate is written in YAML, C, Lex, Yacc, Markdown, Make
-- First announcement of Cognate
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Cognate is developed on <a href="https://github.com/cognate-lang/cognate">GitHub</a> and has 233 stars
+- Cognate compiles to <a href="c.html">C</a>
+- Cognate is written in <a href="yaml.html">YAML</a>, <a href="c.html">C</a>, <a href="lex.html">Lex</a>, <a href="yacc.html">Yacc</a>, <a href="markdown.html">Markdown</a>, <a href="make.html">Make</a>
+- <a href="https://cognate-lang.github.io/learn.html">First announcement of</a> Cognate
 
+```Example from the web:
 ~~ Prime numbers in Cognate
 Def Factor (Zero? Modulo Swap);
 Def Primes (
@@ -33,5 +36,6 @@ Def Primes (
    )
 );
 Print Primes up to 1000;
+```
 
-View source
+Built with Scroll v178.2.3

@@ -1,28 +1,30 @@
 YAMP
 ====
 
-YAMP, aka Yet Another Macro Processor, is a data notation created in 2019.
+YAMP, aka Yet Another Macro Processor, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 2019.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2019
 
-#2161 on PLDB
-5 Years Old
+#2238 on PLDB
+7 Years Old
 
+```Download source code:
 git clone https://github.com/birchb1024/yamp
+```
 
 Yet Another Macro Processor - for YAML - Superseded by Goyamp
 
-- Tags: dataNotation
-- YAMP is developed on GitHub and has 13 stars
-- YAMP is a superset of YAML
-- YAMP is written in YAML, Python, JSON, Bourne shell, HTML, AsciiDoc, Dockerfile, Markdown
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- YAMP is developed on <a href="https://github.com/birchb1024/yamp">GitHub</a> and has 13 stars
+- YAMP is a <a href="../lists/explorer.html#columns=rank~id~appeared~tags~creators~supersetOf&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22supersetOf%22%2C%22origData%22%3A%22supersetOf%22%2C%22tags%22%3A%22html%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">superset</a> of <a href="yaml.html">YAML</a>
+- YAMP is written in <a href="yaml.html">YAML</a>, <a href="python.html">Python</a>, <a href="json.html">JSON</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="html.html">HTML</a>, <a href="asciidoc.html">AsciiDoc</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="markdown.html">Markdown</a>
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   - defmacro:
     name: foo
@@ -33,4 +35,4 @@ row
     who: World
  Token
 
-View source
+Built with Scroll v178.2.3

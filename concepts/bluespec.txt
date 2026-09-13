@@ -1,23 +1,24 @@
 Bluespec
 ========
 
-Bluespec is a programming language created in 2000.
+Bluespec is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2000.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2000
 
-#870 on PLDB
-24 Years Old
-275 Repos
+#901 on PLDB
+26 Years Old
+275 <span title="Bluespec repos on GitHub.">Repos</span>
 
 Bluespec, Inc. is a semiconductor tool design company co-founded by Prof. Arvind of MIT in June 2003. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Bluespec Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 275 Bluespec repos on GitHub
-- Early development of Bluespec happened in Bluespec, Inc
-- The  Google BigQuery Public Dataset GitHub snapshot shows 32 users using Bluespec in 51 repos on GitHub
-- GitHub supports syntax highlighting for Bluespec
-- See also: (2 related languages) Haskell, SystemVerilog
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 275 Bluespec repos on <a href="https://github.com/search?q=language:Bluespec">GitHub</a>
+- Early development of Bluespec happened in <a href="../lists/labs.html#q=Bluespec, Inc">Bluespec, Inc</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 32 users using Bluespec in 51 repos on <a href="https://api.github.com/search/repositories?q=language:Bluespec">GitHub</a>
+- GitHub supports <a href="https://github.com/thotypous/sublime-bsv" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Bluespec
+- See also: (2 related languages) <a href="haskell.html">Haskell</a>, <a href="systemverilog.html">SystemVerilog</a>
 
+```Example from <a href='https://github.com/thotypous/sublime-bsv'>Linguist</a>:
 package TbTL;
 
 import TL::*;
@@ -127,19 +128,21 @@ endmodule
 
 endpackage
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token True False
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (* A comment
   *)
@@ -147,7 +150,7 @@ row
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (* A comment
   *)
@@ -155,8 +158,8 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

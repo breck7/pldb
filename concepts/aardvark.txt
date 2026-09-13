@@ -1,7 +1,7 @@
 Aardvark
 ========
 
-Aardvark is an open source programming language created in 2020 by Hg0428 and JustCoding123 and CompilingCoder and TheBoys619 and PlasDev and ZDev1.
+Aardvark is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2020 by Hg0428 and JustCoding123 and CompilingCoder and TheBoys619 and PlasDev and ZDev1.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
  https://pldb.io/concepts/../lists/creators.html#q=Hg0428 Hg0428
  https://pldb.io/concepts/../lists/creators.html#q=JustCoding123 JustCoding123
@@ -10,312 +10,316 @@ Aardvark is an open source programming language created in 2020 by Hg0428 and Ju
  https://pldb.io/concepts/../lists/creators.html#q=PlasDev PlasDev
  https://pldb.io/concepts/../lists/creators.html#q=ZDev1 ZDev1
 
-#1336 on PLDB
-4 Years Old
+#1286 on PLDB
+6 Years Old
 
+```Download source code:
 git clone https://github.com/Aardvark-team/Aardvark-py
+```
 
 Aardvark was originally designed in Python as an interpretter. This encompassed all releases up to 1.0. Then, in 2021 and 2022, other implementations started emerging, written in language such as Go and C++. In 2022, however, Aardvark underwent the 1.0 redesign. The language was redesigned from the ground up and re-implemented with a new, but temporary Python interpretter. Now, in 2023, the team is building the final compiler. This compiler is written in Aardvark itself and compiles to LLVM. It has the goal of being faster than C while easier than Python. It was designed for beginners and pros alike. The documentation is avaialiable here: https://aardvark-docs.programit.repl.co. It includes many tutorials and articles.
 
-- Tags: programming language
-- Aardvark is developed on GitHub and has 8 stars
-- Early development of Aardvark happened in discord
-- Aardvark is written in Python, Markdown, Bourne shell, TOML, PowerShell, JSON
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Aardvark is developed on <a href="https://github.com/Aardvark-team/Aardvark-py">GitHub</a> and has 8 stars
+- Early development of Aardvark happened in <a href="../lists/labs.html#q=discord">discord</a>
+- Aardvark is written in <a href="python.html">Python</a>, <a href="markdown.html">Markdown</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="toml.html">TOML</a>, <a href="powershell.html">PowerShell</a>, <a href="json.html">JSON</a>
 
+```Example from the web:
 stdout.write(&quot;Hello World!\n&quot;)
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature hasSelfOrThisWord
  FeatureLink ../features/hasSelfOrThisWord.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   You can name it whatever you like.
  Token 
 row
  Feature hasReservedWords
  FeatureLink ../features/hasReservedWords.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Sets
  FeatureLink ../features/hasSets.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Prefix Notation
  FeatureLink ../features/hasPrefixNotation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Postfix Notation
  FeatureLink ../features/hasPostfixNotation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Pointers
  FeatureLink ../features/hasPointers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Pattern Matching
  FeatureLink ../features/hasPatternMatching.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   This functionality is included in switch statements.
  Token 
 row
  Feature Operators
  FeatureLink ../features/hasOperators.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Null
  FeatureLink ../features/hasNull.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   `null`
  Token 
 row
  Feature Multiple Inheritance
  FeatureLink ../features/hasMultipleInheritance.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Multiline Strings
  FeatureLink ../features/hasMultilineStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Module Pattern
  FeatureLink ../features/hasModules.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Manual Memory Management
  FeatureLink ../features/hasManualMemoryManagement.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Lists
  FeatureLink ../features/hasLists.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Infix Notation
  FeatureLink ../features/hasInfixNotation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Increment and decrement operators
  FeatureLink ../features/hasIncrementAndDecrementOperators.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ++ and --
  Token 
 row
  Feature Implicit Arguments
  FeatureLink ../features/hasImplicitArguments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Inheritance
  FeatureLink ../features/hasInheritance.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature hasIfs
  FeatureLink ../features/hasIfs.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature hasIfElses
  FeatureLink ../features/hasIfElses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Here Document
  FeatureLink ../features/hasHereDocs.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   `16_fa7` would evaluate as a hexadecimal number
  Token 
 row
  Feature hasGlobalScope
  FeatureLink ../features/hasGlobalScope.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature hasForLoops
  FeatureLink ../features/hasForLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature hasFnArguments
  FeatureLink ../features/hasFnArguments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature First-Class Functions
  FeatureLink ../features/hasFirstClassFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   Has throw, try, and catch
  Token 
 row
  Feature Dynamic Properties
  FeatureLink ../features/hasDynamicProperties.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   `static` keyword
  Token 
 row
  Feature Constructors
  FeatureLink ../features/hasConstructors.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature hasContinue
  FeatureLink ../features/hasContinue.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature hasBreak
  FeatureLink ../features/hasBreak.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   `2_101` would evaluate as a binary number.
  Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Anonymous Functions
  FeatureLink ../features/hasAnonymousFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Labels
  FeatureLink ../features/hasLabels.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

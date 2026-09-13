@@ -20,7 +20,7 @@ endSnippet
 
 ## Data used in this post:
 
-table
+datatable
  delimiter ,
  compose titleLink BASE_URL/concepts/{id}.html
   printTable

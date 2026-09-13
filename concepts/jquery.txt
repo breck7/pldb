@@ -1,29 +1,32 @@
 JQuery
 ======
 
-JQuery is an open source library created in 2006 by John Resig.
+JQuery is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22library%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">library</a> created in 2006 by John Resig.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
  https://pldb.io/concepts/../lists/creators.html#q=John%20Resig John Resig
 
-#114 on PLDB
-18 Years Old
+#121 on PLDB
+20 Years Old
 
+```Download source code:
 git clone https://github.com/jquery/jquery
+```
 
 jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. It is free, open-source software using the permissive MIT License. Web analysis indicates that it is the most widely deployed JavaScript library by a large margin. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/JQuery Read more on Wikipedia...
 
-- Tags: library
-- JQuery is developed on GitHub and has 59,065 stars
-- Watch the history of the JQuery repo visualized with Gource
-- Early development of JQuery happened in https://jquery.org/team/
-- JQuery is written in JavaScript, HTML, Markdown, YAML, JSON, PHP, CSS, XML, Bourne shell, SVG
-- Check out the 670 JQuery meetup groups on Meetup.com.
-- There are 0 members in the JQuery subreddit
-- Indeed.com has 9,286 matches for "jquery developer".
-- jquery.com was registered in 2005
-- See also: (6 related languages) JavaScript, HTML, Visual Studio, CSS, JSON, XML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"library"%5D%7D%5D%2C"logic"%3A"AND"%7D'>library</a>
+- JQuery is developed on <a href="https://github.com/jquery/jquery">GitHub</a> and has 59,065 stars
+- Watch the history of <a href="https://www.youtube.com/watch?v=xDfdTOgQsHo">the JQuery repo visualized with Gource</a>
+- Early development of JQuery happened in <a href="../lists/labs.html#q=https://jquery.org/team/">https://jquery.org/team/</a>
+- JQuery is written in <a href="javascript.html">JavaScript</a>, <a href="html.html">HTML</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="json.html">JSON</a>, <a href="php.html">PHP</a>, <a href="css.html">CSS</a>, <a href="xml.html">XML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="svg.html">SVG</a>
+- Check out the 670 <a href="https://www.meetup.com/topics/jquery/">JQuery meetup groups</a> on Meetup.com.
+- There are 0 members in the <a href="https://www.reddit.com/r/jquery/">JQuery subreddit</a>
+- Indeed.com has 9,286 matches for <a href="https://www.indeed.com/jobs?q=jquery developer">"jquery developer"</a>.
+- <a href="https://jquery.com">jquery.com</a> was registered in 2005
+- See also: (6 related languages) <a href="javascript.html">JavaScript</a>, <a href="html.html">HTML</a>, <a href="visual-studio-editor.html">Visual Studio</a>, <a href="css.html">CSS</a>, <a href="json.html">JSON</a>, <a href="xml.html">XML</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/JQuery'>Wikipedia</a>:
 $.ajax({
   type: &#39;POST&#39;,
   url: &#39;/process/submit.php&#39;,
@@ -40,5 +43,6 @@ $.ajax({
       + &#39;,\nStatus Text: &#39; + statusText
       + &#39;,\nError Thrown: &#39; + errorThrown);
 });
+```
 
-View source
+Built with Scroll v178.2.3

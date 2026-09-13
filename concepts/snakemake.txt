@@ -1,19 +1,20 @@
 snakemake
 =========
 
-snakemake is a programming language created in 2012.
+snakemake is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2012.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
 
-#3174 on PLDB
-12 Years Old
+#3313 on PLDB
+14 Years Old
 
 A workflow is defined in a ‘Snakefile’ through a domain-specific language that is close to standard Python syntax. It consists of rules that denote how to create output files from input files. The workflow is implied by dependencies between the rules that arise from one rule needing an output file of another as an input file.
 
-- Tags: programming language
-- Early development of snakemake happened in University of Duisburg-Essen
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of snakemake happened in <a href="../lists/labs.html#q=University of Duisburg-Essen">University of Duisburg-Essen</a>
 - Read more about snakemake on the web: 1.
  https://academic.oup.com/bioinformatics/article/28/19/2520/290322 1.
 
+```Example from the web:
 SAMPLES = &quot;100 101 102 103&quot;.split()
 
 REF = &quot;hg19.fa&quot;
@@ -67,5 +68,6 @@ rule plot_coverage_histogram:
       iterable = True))))
 
     savefig(output.hist)
+```
 
-View source
+Built with Scroll v178.2.3

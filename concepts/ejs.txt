@@ -1,31 +1,36 @@
 EJS
 ===
 
-EJS is an open source template language created in 2010 by Tj Holowaychuk.
+EJS is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22template%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">template language</a> created in 2010 by Tj Holowaychuk.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2010
  https://pldb.io/concepts/../lists/creators.html#q=Tj%20Holowaychuk Tj Holowaychuk
 
-#144 on PLDB
-14 Years Old
-93k Repos
+#142 on PLDB
+16 Years Old
+93k <span title="EJS repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/tj/ejs
+```
 
 Embedded JavaScript templates for node
 
-- Tags: template language
-- EJS is developed on GitHub and has 4,469 stars
-- There are at least 92,857 EJS repos on GitHub
-- Early development of EJS happened in https://apex.sh
-- EJS is written in EJS, JavaScript, HTML, Markdown, Make, JSON, YAML, CSS
-- The  Google BigQuery Public Dataset GitHub snapshot shows 560 users using EJS in 614 repos on GitHub
-- GitHub supports syntax highlighting for EJS
-- 10 PLDB concepts link to EJS: Ace Editor, cloc, EJS, exkited, Kotlin, Mathpix Markdown, skulpt, Snowman, SQRL, Wyvern
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"template"%5D%7D%5D%2C"logic"%3A"AND"%7D'>template language</a>
+- EJS is developed on <a href="https://github.com/tj/ejs">GitHub</a> and has 4,469 stars
+- There are at least 92,857 EJS repos on <a href="https://github.com/search?q=language:EJS">GitHub</a>
+- Early development of EJS happened in <a href="../lists/labs.html#q=https://apex.sh">https://apex.sh</a>
+- EJS is written in <a href="ejs.html">EJS</a>, <a href="javascript.html">JavaScript</a>, <a href="html.html">HTML</a>, <a href="markdown.html">Markdown</a>, <a href="make.html">Make</a>, <a href="json.html">JSON</a>, <a href="yaml.html">YAML</a>, <a href="css.html">CSS</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 560 users using EJS in 614 repos on <a href="https://api.github.com/search/repositories?q=language:EJS">GitHub</a>
+- GitHub supports <a href="https://github.com/gregory-m/ejs-tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for EJS
+- 11 PLDB concepts link to EJS: <a href="ace.html">Ace Editor</a>, <a href="cloc.html">cloc</a>, <a href="codeql.html">CodeQL</a>, <a href="ejs.html">EJS</a>, <a href="exkited.html">exkited</a>, <a href="kotlin.html">Kotlin</a>, <a href="mathpix-markdown.html">Mathpix Markdown</a>, <a href="skulpt.html">skulpt</a>, <a href="snowman-decompiler.html">Snowman</a>, <a href="sqrl.html">SQRL</a>, <a href="wyvern.html">Wyvern</a>
 
+```Example from the web:
 &lt;% if (user) { %&gt;
    &lt;h2&gt;&lt;%= user.name %&gt;&lt;/h2&gt;
 &lt;% } %&gt;
+```
 
+```Example from <a href='https://github.com/gregory-m/ejs-tmbundle'>Linguist</a>:
 &lt;% include parts/depend %&gt;
 
 &lt;div class=&quot;row&quot;&gt;
@@ -39,5 +44,6 @@ Embedded JavaScript templates for node
     &lt;center&gt;&lt;h2&gt;There seems to be a problem&lt;/h2&gt;&lt;/center&gt;
   &lt;% } %&gt;
 &lt;/div&gt;
+```
 
-View source
+Built with Scroll v178.2.3

@@ -1,22 +1,23 @@
 Ion
 ===
 
-Ion is an interface design language created in 2016.
+Ion is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22idl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">interface design language</a> created in 2016.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2016
 
-#1640 on PLDB
-8 Years Old
+#1691 on PLDB
+10 Years Old
 
 Amazon Ion is a richly-typed, self-describing, hierarchical data serialization format offering interchangeable binary and text representations. The text format (a superset of JSON) is easy to read and author, supporting rapid prototyping. The binary representation is efficient to store, transmit, and skip-scan parse.
 
-- Tags: interface design language
-- Ion is a superset of JSON
-- Early development of Ion happened in Amazon
-- See also: (1 related languages) Protocol Buffers
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"idl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>interface design language</a>
+- Ion is a <a href="../lists/explorer.html#columns=rank~id~appeared~tags~creators~supersetOf&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22supersetOf%22%2C%22origData%22%3A%22supersetOf%22%2C%22tags%22%3A%22html%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">superset</a> of <a href="json.html">JSON</a>
+- Early development of Ion happened in <a href="../lists/labs.html#q=Amazon">Amazon</a>
+- See also: (1 related languages) <a href="protobuf.html">Protocol Buffers</a>
 - Read more about Ion on the web: 1.
  https://amzn.github.io/ion-docs/ 1.
-- 1 PLDB concepts link to Ion: Ion Schema Language
+- 1 PLDB concepts link to Ion: <a href="ion-schema.html">Ion Schema Language</a>
 
+```Example from the web:
 /* Ion supports comments. */
 // Here is a struct, which is similar to a JSON object
 {
@@ -44,14 +45,15 @@ Amazon Ion is a richly-typed, self-describing, hierarchical data serialization f
   // base64-encoded in Ion text encoding
   buzz: {{VG8gaW5maW5pdHkuLi4gYW5kIGJleW9uZCE=}},
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -59,14 +61,14 @@ row
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature S-Expressions
  FeatureLink ../features/hasSExpressions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   null.sexp         // A null S-expression value
   ()                // An empty expression value
@@ -79,7 +81,7 @@ row
 row
  Feature Lists
  FeatureLink ../features/hasLists.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   null.list         // A null list value
   []                // An empty list value
@@ -92,7 +94,7 @@ row
 row
  Feature Type Annotations
  FeatureLink ../features/hasTypeAnnotations.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   int32::12                                // Suggests 32 bits as end-user type
   'my.custom.type' :: { x : 12 , y : -1 }  // Gives a struct a user-defined type
@@ -107,7 +109,7 @@ row
 row
  Feature hasSymbols
  FeatureLink ../features/hasSymbols.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   myvar2       // A different symbol
   'hi ho'      // Symbol requiring quotes
@@ -115,7 +117,7 @@ row
 row
  Feature Decimals
  FeatureLink ../features/hasDecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   null.decimal      // A null decimal value
   0.123             // Type is decimal
@@ -127,7 +129,7 @@ row
 row
  Feature hasTimestamps
  FeatureLink ../features/hasTimestamps.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // Timestamps represent a specific moment in time, always include a local offset, and are capable of arbitrary precision.
   2007-02-23T12:14Z                // Seconds are optional, but local offset is not
@@ -136,7 +138,7 @@ row
 row
  Feature Clobs
  FeatureLink ../features/hasClobs.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // The clob type is similar to blob in that it holds uninterpreted binary data. The difference is that the content is expected to be text, so we use a text notation that’s more readable than Base64.
   // An Ion clob type is similar to the blob type except that the denotation in the Ion text format uses an ASCII-based string notation rather than a base64 encoding to denote its binary value. It is important to make the distinction that clob is a sequence of raw octets and string is a sequence of Unicode code points.
@@ -145,7 +147,7 @@ row
 row
  Feature hasBlobs
  FeatureLink ../features/hasBlobs.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // In the text format, blob values are denoted as RFC 4648-compliant Base64 text within two pairs of curly braces.
   // A valid blob value with one required padding character.
@@ -154,21 +156,21 @@ row
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "hello world"
  Token 
 row
  Feature Null
  FeatureLink ../features/hasNull.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   null
  Token 
 row
  Feature Multiline Strings
  FeatureLink ../features/hasMultilineStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ( '''hello '''     // Sexp with one element
     '''world!'''  )
@@ -186,7 +188,7 @@ row
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // http://amzn.github.io/ion-docs/docs/spec.html
   null.int   // A null int value
@@ -203,14 +205,14 @@ row
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A subset of symbols called identifiers can be denoted in text without single-quotes.
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // http://amzn.github.io/ion-docs/docs/spec.html
   -0.12e4           // Type is float
@@ -218,7 +220,7 @@ row
 row
  Feature Structs
  FeatureLink ../features/hasStructs.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   { first : "Tom" , last: "Riddle" }  // Structure with two fields
   {"first":"Tom","last":"Riddle"}     // The same value with confusing style
@@ -227,13 +229,13 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   null.bool
   true
@@ -242,8 +244,8 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

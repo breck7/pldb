@@ -1,65 +1,72 @@
 Clipper
 =======
 
-Clipper is a programming language created in 1985.
+Clipper is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1985.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221985%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1985
 
-#591 on PLDB
-39 Years Old
+#609 on PLDB
+41 Years Old
 
 Clipper is an xBase compiler, which is a computer programming language, that is used to create software programs that originally operated primarily under MS-DOS. Although it is a powerful general-purpose programming language, it was primarily used to create database/business programs.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Clipper_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Clipper happened in Nantucket Corporation
-- Explore Clipper snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Clipper happened in <a href="../lists/labs.html#q=Nantucket Corporation">Nantucket Corporation</a>
+- Explore Clipper snippets on <a href="http://www.rosettacode.org/wiki/Category:Clipper">Rosetta Code</a>
 - Clipper on HOPL
  https://hopl.info/showlanguage.prx?exp=1909 Clipper on HOPL
-- Clipper appears in the TIOBE Index
-- See also: (11 related languages) xBase, C, Visual Objects, Visual Basic, Delphi, XBase++, Linux, Unix, Visual FoxPro, SQL, DBase
+- Clipper appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- See also: (11 related languages) <a href="xbase.html">xBase</a>, <a href="c.html">C</a>, <a href="visual-objects.html">Visual Objects</a>, <a href="visual-basic.html">Visual Basic</a>, <a href="delphi.html">Delphi</a>, <a href="xbasepp.html">XBase++</a>, <a href="linux.html">Linux</a>, <a href="unix.html">Unix</a>, <a href="visual-foxpro.html">Visual FoxPro</a>, <a href="sql.html">SQL</a>, <a href="dbase.html">DBase</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/c/Clipper.prg'>hello-world</a>:
 ? &quot;Hello World&quot;
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Clipper'>the Hello World Collection</a>:
 // Hello World in Clipper
 
 ? &quot;Hello World&quot;
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Clipper_(programming_language)'>Wikipedia</a>:
 USE Customer SHARED NEW
 clear
 @  1, 0 SAY &quot;CustNum&quot; GET Customer-&gt;CustNum PICT &quot;999999&quot; VALID Customer-&gt;CustNum &gt; 0
 @  3, 0 SAY &quot;Contact&quot; GET Customer-&gt;Contact VALID !empty(Customer-&gt;Contact)
 @  4, 0 SAY &quot;Address&quot; GET Customer-&gt;Address
 READ
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

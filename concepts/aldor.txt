@@ -1,7 +1,7 @@
 Aldor
 =====
 
-Aldor is an open source programming language created in 1990 by Richard Dimick Jenks and Barry Trager and Stephen Watt and James Davenport and Robert Sutor and Scott Morrison.
+Aldor is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1990 by Richard Dimick Jenks and Barry Trager and Stephen Watt and James Davenport and Robert Sutor and Scott Morrison.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1990
  https://pldb.io/concepts/../lists/creators.html#q=Richard%20Dimick%20Jenks Richard Dimick Jenks
  https://pldb.io/concepts/../lists/creators.html#q=Barry%20Trager Barry Trager
@@ -10,20 +10,21 @@ Aldor is an open source programming language created in 1990 by Richard Dimick J
  https://pldb.io/concepts/../lists/creators.html#q=Robert%20Sutor Robert Sutor
  https://pldb.io/concepts/../lists/creators.html#q=Scott%20Morrison Scott Morrison
 
-#1213 on PLDB
-34 Years Old
+#1249 on PLDB
+36 Years Old
 
 Aldor is a programming language. It is the successor of A# as the extension language of the Axiom computer algebra system. Aldor combines imperative, functional, and object-oriented features. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Aldor Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Aldor happened in Western University
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Aldor happened in <a href="../lists/labs.html#q=Western University">Western University</a>
 - Aldor on HOPL
  https://hopl.info/showlanguage.prx?exp=6911 Aldor on HOPL
-- There is 1 Jupyter Kernel for Aldor
-- aldor.org was registered in 2000
-- See also: (5 related languages) Linux, Solaris, Pascal, Haskell, Python
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/mattpap/IAldor">Kernel</a> for Aldor
+- <a href="http://www.aldor.org">aldor.org</a> was registered in 2000
+- See also: (5 related languages) <a href="linux.html">Linux</a>, <a href="solaris.html">Solaris</a>, <a href="pascal.html">Pascal</a>, <a href="haskell.html">Haskell</a>, <a href="python.html">Python</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Aldor'>Wikipedia</a>:
 #include &quot;aldor&quot;
 #include &quot;aldorio&quot;
 
@@ -59,29 +60,30 @@ main(): () == {
 }
 
 main();
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token --
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

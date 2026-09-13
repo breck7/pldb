@@ -6,6 +6,7 @@ appeared 1990
 creators Paul Hudak and John Hughes
 tags pl
 website https://www.haskell.org
+spec https://www.haskell.org/onlinereport/haskell2010/
 download https://www.haskell.org/downloads/
 latestVersion 2010
 lab Yale University && Chalmers University && Microsoft && University of Edinburgh
@@ -34,7 +35,6 @@ projectEuler Haskell
 
 helloWorldCollection Haskell
  -- Hello World in Haskell
-  
  main = putStrLn "Hello World"
  
 pygmentsHighlighter Haskell
@@ -82,6 +82,22 @@ hasRunTimeGuards true
  f x
   | x > 0 = 1
   | otherwise = 0
+hasStaticTyping true
+hasTypeClasses true
+ class ToTypedJson a where
+   toTypedJson :: a -> String
+ 
+ instance ToTypedJson Integer where
+   toTypedJson x =
+     "{\"type\": \"int\", \"value\": " ++ (show x) ++ "}"
+ 
+ printAsTypedJson :: ToTypedJson a => a -> IO ()
+ printAsTypedJson x = do
+   putStrLn (toTypedJson x)
+ 
+ main :: IO ()
+ main = do
+   printAsTypedJson (123 :: Integer)
 hasTypedHoles true
  -- Found hole `_' with type f (Free f b)
 hasMonads true
@@ -130,6 +146,9 @@ hasCaseInsensitiveIdentifiers false
 hasTypeInference true
 hasLineComments true
  -- A comment
+hasFunctions true
+hasFunctionOverloading false
+hasNamedArguments false
 hasFunctionComposition true
  foo = f . g
 hasRangeOperators true
@@ -137,6 +156,7 @@ hasPrintDebugging true
 isCaseSensitive true
 hasClasses true
 hasConditionals true
+hasSinglePassParser false
 hasOctals true
  -- 0[oO]_*[0-7](_*[0-7])*
 hasHexadecimals true

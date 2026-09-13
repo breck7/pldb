@@ -1,26 +1,34 @@
-Org
-===
+Org Mode
+========
 
-Org is an open source text markup language created in 2003 by Carsten Dominik.
+Org Mode is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2003 by Carsten Dominik.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2003
  https://pldb.io/concepts/../lists/creators.html#q=Carsten%20Dominik Carsten Dominik
 
-#522 on PLDB
-21 Years Old
-18 Repos
+#95 on PLDB
+23 Years Old
+18 <span title="Org Mode repos on GitHub.">Repos</span>
+
+```Download source code:
+git clone https://git.savannah.gnu.org/git/emacs/org-mode.git
+```
 
 Org-mode (also: Org mode; ) is a document editing, formatting, and organizing mode, designed for notes, planning, and authoring within the free software text editor Emacs. The name is used to encompass plain text files ("org files") that include simple marks to indicate levels of a hierarchy (such as the outline of an essay, a topic list with subtopics, nested computer code, etc.), and an editor with functions that can read the markup and manipulate hierarchy elements (expand/hide elements, move blocks of elements, check off to-do list items, etc.). Org-mode was created by Carsten Dominik in 2003, originally to organize his own life and work, and since the first release numerous other users and developers have contributed to this free software package. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Org-mode Read more on Wikipedia...
 
-- Tags: text markup language
-- There are at least 18 Org repos on GitHub
-- Early development of Org happened in https://list.orgmode.org/
-- The  Google BigQuery Public Dataset GitHub snapshot shows 1 users using Org in 1 repos on GitHub
-- orgmode.org was registered in 2007
-- See also: (11 related languages) Emacs, HTML, LaTeX, Markdown, reStructuredText, Textile, Git, MediaWiki, Pandoc, Vim, Sublime Text
-- Read more about Org on the web: 1.
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- There are at least 18 Org Mode repos on <a href="https://github.com/search?q=language:Org">GitHub</a>
+- Early development of Org Mode happened in <a href="../lists/labs.html#q=https://list.orgmode.org/">https://list.orgmode.org/</a>
+- Org Mode is written in <a href="lisp.html">Lisp</a>, <a href="make.html">Make</a>, <a href="xml.html">XML</a>, <a href="tex.html">Tex</a>, <a href="perl.html">Perl</a>, <a href="html.html">HTML</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 1 users using Org Mode in 1 repos on <a href="https://api.github.com/search/repositories?q=language:Org">GitHub</a>
+- There are 23,000 members in the <a href="https://www.reddit.com/r/orgmode/">Org Mode subreddit</a>
+- <a href="https://orgmode.org/">orgmode.org</a> was registered in 2007
+- See also: (12 related languages) <a href="emacs-editor.html">Emacs</a>, <a href="html.html">HTML</a>, <a href="latex.html">LaTeX</a>, <a href="markdown.html">Markdown</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="textile.html">Textile</a>, <a href="git.html">Git</a>, <a href="mediawiki.html">MediaWiki</a>, <a href="pandoc-app.html">Pandoc</a>, <a href="vim.html">Vim</a>, <a href="sublime-editor.html">Sublime Text</a>, <a href="scroll.html">Scroll</a>
+- Read more about Org Mode on the web: 1.
  https://orgmode.org/org.html#Document-structure 1.
+- 1 PLDB concepts link to Org Mode: <a href="bike.html">Bike</a>
 
+```Example from the web:
 * Top level headline
 ** Second level
 *** 3rd level
@@ -29,7 +37,9 @@ Org-mode (also: Org mode; ) is a document editing, formatting, and organizing mo
     more text
 
 * Another top level headline
+```
 
+```Example from the web:
 #+OPTIONS:    H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:t skip:nil d:(HIDE) tags:not-in-toc
 #+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate
 #+SEQ_TODO:   TODO(t) INPROGRESS(i) WAITING(w@) | DONE(d) CANCELED(c@)
@@ -194,18 +204,26 @@ tags:
 
   That&#39;s all there is to it!
 
+```
+
+```Example from <a href='https://riju.codes/org'>Riju</a>:
 Hello, world!
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/o/Org-mode.org'>hello-world</a>:
 Hello World
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

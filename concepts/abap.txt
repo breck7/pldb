@@ -1,38 +1,42 @@
 ABAP
 ====
 
-ABAP, aka Advanced Business Application Programming, is a programming language created in 1983.
+ABAP, aka Advanced Business Application Programming, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1983.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221983%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1983
 
-#137 on PLDB
-41 Years Old
-4k Repos
+#139 on PLDB
+43 Years Old
+4k <span title="ABAP repos on GitHub.">Repos</span>
 
 ABAP (Advanced Business Application Programming, originally Allgemeiner Berichts-Aufbereitungs-Prozessor, German for "general report creation processor") is a high-level programming language created by the German software company SAP SE. It is currently positioned, alongside Java, as the language for programming the SAP Application Server, which is part of the NetWeaver platform for building business applications.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/ABAP Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 4,488 ABAP repos on GitHub
-- Early development of ABAP happened in SAP
-- The  Google BigQuery Public Dataset GitHub snapshot shows 387 users using ABAP in 450 repos on GitHub
-- There are 47 Project Euler users using ABAP
-- Explore ABAP snippets on Rosetta Code
-- ABAP ranks #40 in the TIOBE Index
-- Monaco package for syntax highlighting ABAP
-- Pygments supports syntax highlighting for ABAP
-- GitHub supports syntax highlighting for ABAP
-- Learn ABAP on exercism.
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 4,488 ABAP repos on <a href="https://github.com/search?q=language:ABAP">GitHub</a>
+- Early development of ABAP happened in <a href="../lists/labs.html#q=SAP">SAP</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 387 users using ABAP in 450 repos on <a href="https://api.github.com/search/repositories?q=language:ABAP">GitHub</a>
+- There are 47 <a href="https://projecteuler.net/language=ABAP">Project Euler</a> users using ABAP
+- Explore ABAP snippets on <a href="http://www.rosettacode.org/wiki/Category:ABAP">Rosetta Code</a>
+- ABAP ranks #40 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/abap">package</a> for syntax highlighting ABAP
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/business.py">syntax highlighting</a> for ABAP
+- GitHub supports <a href="https://github.com/pvl/abap.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for ABAP
+- Learn <a href="https://exercism.org/tracks/abap">ABAP on exercism.</a>
 - Events page for ABAP
  https://blogs.sap.com/2020/04/21/abap-community-online-events/ Events page for ABAP
-- Indeed.com has 283 matches for "abap developer".
-- See also: (9 related languages) Objective-C, COBOL, SQL, Java, Unix, Solaris, Linux, IBM System z, Eclipse
-- 1 PLDB concepts link to ABAP: Ace Editor
+- Indeed.com has 283 matches for <a href="https://www.indeed.com/jobs?q=abap developer">"abap developer"</a>.
+- See also: (9 related languages) <a href="objective-c.html">Objective-C</a>, <a href="cobol.html">COBOL</a>, <a href="sql.html">SQL</a>, <a href="java.html">Java</a>, <a href="unix.html">Unix</a>, <a href="solaris.html">Solaris</a>, <a href="linux.html">Linux</a>, <a href="systemz.html">IBM System z</a>, <a href="eclipse-editor.html">Eclipse</a>
+- 1 PLDB concepts link to ABAP: <a href="ace.html">Ace Editor</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/a/ABAP.abap'>hello-world</a>:
 REPORT ZHELLO_WORLD.
 
 START-OF-SELECTION.
     WRITE: &#39;Hello World&#39;.
 
+```
+
+```Example from <a href='https://github.com/pvl/abap.tmbundle'>Linguist</a>:
 */**
 * The MIT License (MIT)
 * Copyright (c) 2012 René van Mil
@@ -246,7 +250,9 @@ class cl_csv_parser implementation.
     returning = csvvalues.
   endmethod.                    &quot;_parse_line
 endclass.                    &quot;CL_CSV_PARSER IMPLEMENTATION
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/ABAP'>Wikipedia</a>:
 * First define structured type
 TYPES: BEGIN OF t_vbrk,
          VBELN TYPE VBRK-VBELN,
@@ -264,98 +270,101 @@ DATA : gs_vbrk TYPE t_vbrk,
 
 * You can also define table type if needed
 TYPES tt_vbrk TYPE STANDARD TABLE OF t_vbrk.
+```
 
+```ABAP <a href="../lists/keywords.html#q=abap">Keywords</a>
 abap-source abbreviated abstract accept accepting according activation actual add add-corresponding adjacent after alias aliases align all allocate alpha analysis analyzer and append appendage appending application archive area arithmetic as ascending aspect assert assign assigned assigning association asynchronous at attributes authority authority-check avg back background backup backward badi base before begin between big binary bintohex bit black blank blanks blob block blocks blue bound boundaries bounds boxed break-point buffer by bypassing byte byte-order call calling case cast casting catch center centered chain chain-input chain-request change changing channels character char-to-hex check checkbox ci_ circular class class-coding class-data class-events class-methods class-pool cleanup clear client clob clock close coalesce code coding col_background col_group col_heading col_key col_negative col_normal col_positive col_total collect color column columns comment comments commit common communication comparing component components compression compute concat concat_with_space concatenate cond condense condition connect connection constants context contexts continue control controls conv conversion convert copies copy corresponding country cover cpi create creating critical currency currency_conversion current cursor cursor-selection customer customer-function dangerous data database datainfo dataset date dats_add_days dats_add_months dats_days_between dats_is_valid daylight dd/mm/yy dd/mm/yyyy ddmmyy deallocate decimal_shift decimals declarations deep default deferred define defining definition delete deleting demand department descending describe destination detail dialog directory disconnect display display-mode distinct divide divide-corresponding division do dummy duplicate duplicates duration during dynamic dynpro edit editor-call else elseif empty enabled enabling encoding end endat endcase endcatch endchain endclass enddo endenhancement end-enhancement-section endexec endform endfunction endian endif ending endinterface end-lines endloop endmethod endmodule end-of-definition end-of-editing end-of-file end-of-page end-of-selection endon endprovide endselect end-test-injection end-test-seam endtry endwhile endwith engineering enhancement enhancement-point enhancements enhancement-section entries entry enum environment equiv errormessage errors escaping event events exact except exception exceptions exception-table exclude excluding exec execute exists exit exit-command expand expanding expiration explicit exponent export exporting extend extended extension extract fail fetch field field-groups fields field-symbol field-symbols file filter filters filter-table final find first first-line fixed-point fkeq fkge flush font for form format forward found frame frames free friends from function functionality function-pool further gaps generate get giving gkeq gkge global grant green group groups handle handler harmless hashed having hdb header headers heading head-lines help-id help-request hextobin hide high hint hold hotspot icon id identification identifier ids if ignore ignoring immediately implementation implementations implemented implicit import importing in inactive incl include includes including increment index index-line infotypes inheriting init initial initialization inner inout input insert instance instances instr intensified interface interface-pool interfaces internal intervals into inverse inverted-date is iso job join keep keeping kernel key keys keywords kind language last late layout leading leave left left-justified leftplus leftspace legacy length let level levels like line lines line-count linefeed line-selection line-size list listbox list-processing little llang load load-of-program lob local locale locator logfile logical log-point long loop low lower lpad lpi ltrim mail main major-id mapping margin mark mask match matchcode max maximum medium members memory mesh message message-id messages messaging method methods min minimum minor-id mm/dd/yy mm/dd/yyyy mmddyy mode modif modifier modify module move move-corresponding multiply multiply-corresponding name nametab native nested nesting new new-line new-page new-section next no no-display no-extension no-gap no-gaps no-grouping no-heading no-scrolling no-sign no-title no-topofpage no-zero node nodes non-unicode non-unique not null number object objects obligatory occurrence occurrences occurs of off offset ole on only open option optional options or order other others out outer output output-length overflow overlay pack package pad padding page pages parameter parameters parameter-table part partially pattern percentage perform performing person pf1 pf10 pf11 pf12 pf13 pf14 pf15 pf2 pf3 pf4 pf5 pf6 pf7 pf8 pf9 pf-status pink places pool pos_high pos_low position pragmas precompiled preferred preserving primary print print-control priority private procedure process program property protected provide public push pushbutton put queue-only quickinfo radiobutton raise raising range ranges read reader read-only receive received receiver receiving red redefinition reduce reduced ref reference refresh regex reject remote renaming replace replacement replacing report request requested reserve reset resolution respecting responsible result results resumable resume retry return returncode returning returns right right-justified rightplus rightspace risk rmc_communication_failure rmc_invalid_status rmc_system_failure role rollback rows rpad rtrim run sap sap-spool saving scale_preserving scale_preserving_scientific scan scientific scientific_with_leading_zero scroll scroll-boundary scrolling search secondary seconds section select selection selections selection-screen selection-set selection-sets selection-table select-options send separate separated set shared shift short shortdump-id sign_as_postfix single size skip skipping smart some sort sortable sorted source specified split spool spots sql sqlscript stable stamp standard starting start-of-editing start-of-selection state statement statements static statics statusinfo step-loop stop structure structures style subkey submatches submit subroutine subscreen subtract subtract-corresponding suffix sum summary summing supplied supply suppress switch switchstates symbol syncpoints syntax syntax-check syntax-trace system-call system-exceptions system-exit tab tabbed table tables tableview tabstrip target task tasks test testing test-injection test-seam text textpool then throw time times timestamp timezone tims_is_valid title titlebar title-lines to tokenization tokens top-lines top-of-page trace-file trace-table trailing transaction transfer transformation translate transporting trmac truncate truncation try tstmp_add_seconds tstmp_current_utctimestamp tstmp_is_valid tstmp_seconds_between type type-pool type-pools types uline unassign under unicode union unique unit_conversion unix unpack until unwind up update upper user user-command using utf-8 valid value value-request values vary varying verification-message version via view visible wait warning when whenever where while width window windows with with-heading without with-title word work write writer xml xsd yellow yes yymmdd zero zone abap_system_timezone abap_user_timezone access action adabas adjust_numbers allow_precision_loss allowed amdp applicationuser as_geo_json as400 associations balance behavior breakup bulk cds cds_client check_before_save child clients corr corr_spearman cross cycles datn_add_days datn_add_months datn_days_between dats_from_datn dats_tims_to_tstmp dats_to_datn db2 db6 ddl dense_rank depth deterministic discarding entities entity error failed finalize first_value fltp_to_dec following fractional full graph grouping hierarchy hierarchy_ancestors hierarchy_ancestors_aggregate hierarchy_descendants hierarchy_descendants_aggregate hierarchy_siblings incremental indicators lag last_value lead leaves like_regexpr link locale_sap lock locks many mapped matched measures median mssqlnt multiple nodetype ntile nulls occurrences_regexpr one operations oracle orphans over parent parents partition pcre period pfcg_mapping preceding privileged product projection rank redirected replace_regexpr reported response responses root row row_number sap_system_date save schema session sets shortdump siblings spantree start stddev string_agg subtotal sybase tims_from_timn tims_to_timn to_blob to_clob total trace-entry tstmp_to_dats tstmp_to_dst tstmp_to_tims tstmpl_from_utcl tstmpl_to_utcl unbounded utcl_add_seconds utcl_current utcl_seconds_between uuid var verbatim
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   * [0-9]+
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   'Hello world'
  Token '
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   * A comment
  Token *
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

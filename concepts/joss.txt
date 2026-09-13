@@ -1,25 +1,27 @@
 JOSS
 ====
 
-JOSS, aka JOHNNIAC Open Shop System, is a programming language created in 1966 by Cliff Shaw.
+JOSS, aka JOHNNIAC Open Shop System, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1966 by Cliff Shaw.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221966%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1966
  https://pldb.io/concepts/../lists/creators.html#q=Cliff%20Shaw Cliff Shaw
 
-#1384 on PLDB
-58 Years Old
+#1429 on PLDB
+60 Years Old
 
 JOSS (an acronym for JOHNNIAC Open Shop System) was one of the very first interactive, time-sharing programming languages. JOSS I, developed by J. Clifford Shaw at RAND was first implemented, in beta form, on the JOHNNIAC computer in May 1963. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/JOSS Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of JOSS happened in RAND
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of JOSS happened in <a href="../lists/labs.html#q=RAND">RAND</a>
 - JOSS on HOPL
  https://hopl.info/showlanguage.prx?exp=200 JOSS on HOPL
-- See also: (6 related languages) ALGOL 58, BASIC, TELCOMP, Formulating On-Line Calculations in Algebraic Language, MUMPS, JOSS Extended and Adapted for Nineteen-hundred
-- 1 PLDB concepts link to JOSS: JOSS II
+- See also: (6 related languages) <a href="algol-58.html">ALGOL 58</a>, <a href="basic.html">BASIC</a>, <a href="telcomp.html">TELCOMP</a>, <a href="focal.html">Formulating On-Line Calculations in Algebraic Language</a>, <a href="mumps.html">MUMPS</a>, <a href="jean.html">JOSS Extended and Adapted for Nineteen-hundred</a>
+- 1 PLDB concepts link to JOSS: <a href="joss-ii.html">JOSS II</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/JOSS'>Wikipedia</a>:
 Form 1: &quot;  L(%.0f,%.0f)  =&quot;
 Form 2: &quot;  -L(%.0f,%.0f)  =&quot;
 Form 3: &quot;  %.0f\n&quot;
+```
 
-View source
+Built with Scroll v178.2.3

@@ -1,32 +1,37 @@
 Closure Templates
 =================
 
-Closure Templates is an open source template language created in 2009.
+Closure Templates is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22template%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">template language</a> created in 2009.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2009
 
-#426 on PLDB
-15 Years Old
-424k Repos
+#447 on PLDB
+17 Years Old
+424k <span title="Closure Templates repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/google/closure-templates
+```
 
 A client- and server-side templating system that helps you dynamically build reusable HTML and UI elements
 
-- Tags: template language
-- Closure Templates is developed on GitHub and has 635 stars
-- There are at least 424,389 Closure Templates repos on GitHub
-- Early development of Closure Templates happened in Google
-- Closure Templates is written in Java, starlark, Markdown, HTML, JavaScript, Protocol Buffers, Python, XML, TypeScript, JSON, Bazel, YAML
-- The  Google BigQuery Public Dataset GitHub snapshot shows 18 users using Closure Templates in 25 repos on GitHub
-- GitHub supports syntax highlighting for Closure Templates
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"template"%5D%7D%5D%2C"logic"%3A"AND"%7D'>template language</a>
+- Closure Templates is developed on <a href="https://github.com/google/closure-templates">GitHub</a> and has 635 stars
+- There are at least 424,389 Closure Templates repos on <a href="https://github.com/search?q=language:Closure Templates">GitHub</a>
+- Early development of Closure Templates happened in <a href="../lists/labs.html#q=Google">Google</a>
+- Closure Templates is written in <a href="java.html">Java</a>, <a href="starlark.html">starlark</a>, <a href="markdown.html">Markdown</a>, <a href="html.html">HTML</a>, <a href="javascript.html">JavaScript</a>, <a href="protobuf.html">Protocol Buffers</a>, <a href="python.html">Python</a>, <a href="xml.html">XML</a>, <a href="typescript.html">TypeScript</a>, <a href="json.html">JSON</a>, <a href="bazel.html">Bazel</a>, <a href="yaml.html">YAML</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 18 users using Closure Templates in 25 repos on <a href="https://api.github.com/search/repositories?q=language:Closure Templates">GitHub</a>
+- GitHub supports <a href="https://github.com/mthadley/language-closure-templates" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Closure Templates
 
+```Example from the web:
 /**
  * Says hello to the world.
  */
 {template .helloWorld}
   Hello world!
 {/template}
+```
 
+```Example from <a href='https://github.com/mthadley/language-closure-templates'>Linguist</a>:
 {namespace Exmaple}
 
 /**
@@ -51,14 +56,15 @@ A client- and server-side templating system that helps you dynamically build reu
     {/switch}
   &lt;/div&gt;
 {/template}
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -66,7 +72,7 @@ row
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -74,8 +80,8 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

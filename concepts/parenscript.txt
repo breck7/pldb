@@ -1,24 +1,26 @@
 Parenscript
 ===========
 
-Parenscript is an open source programming language created in 2009 by Manuel Odendahl and Edward Marco Baringer.
+Parenscript is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2009 by Manuel Odendahl and Edward Marco Baringer.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2009
  https://pldb.io/concepts/../lists/creators.html#q=Manuel%20Odendahl Manuel Odendahl
  https://pldb.io/concepts/../lists/creators.html#q=Edward%20Marco%20Baringer Edward Marco Baringer
 
-#951 on PLDB
-15 Years Old
+#988 on PLDB
+17 Years Old
 
+```Download source code:
 git clone https://github.com/vsedach/Parenscript
+```
 
 MOVED TO https://gitlab.common-lisp.net/parenscript/parenscript
 
-- Tags: programming language, lisp
-- Parenscript is developed on GitHub and has 244 stars
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"lisp"%5D%7D%5D%2C"logic"%3A"AND"%7D'>lisp</a>
+- Parenscript is developed on <a href="https://github.com/vsedach/Parenscript">GitHub</a> and has 244 stars
 - Parenscript on GitLab
  https://gitlab.common-lisp.net/parenscript/parenscript Parenscript on GitLab
-- Early development of Parenscript happened in https://gitlab.common-lisp.net/parenscript/parenscript/-/issues
-- Parenscript compiles to JavaScript
-- Parenscript is written in Lisp, HTML
+- Early development of Parenscript happened in <a href="../lists/labs.html#q=https://gitlab.common-lisp.net/parenscript/parenscript/-/issues">https://gitlab.common-lisp.net/parenscript/parenscript/-/issues</a>
+- Parenscript compiles to <a href="javascript.html">JavaScript</a>
+- Parenscript is written in <a href="lisp.html">Lisp</a>, <a href="html.html">HTML</a>
 
-View source
+Built with Scroll v178.2.3

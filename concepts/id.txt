@@ -1,22 +1,24 @@
 Irvine Dataflow
 ===============
 
-Irvine Dataflow, aka Irvine Dataflow, is a programming language created in 1975.
+Irvine Dataflow, aka Irvine Dataflow, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1975.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221975%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1975
 
-#1911 on PLDB
-49 Years Old
+#1987 on PLDB
+51 Years Old
 
 Irvine Dataflow (Id) is a general-purpose parallel programming language, started at the University of California at Irvine in 1975 by Arvind and K. P. Gostelow. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Id_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Irvine Dataflow happened in University of California Irvine
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Irvine Dataflow happened in <a href="../lists/labs.html#q=University of California Irvine">University of California Irvine</a>
 - Irvine Dataflow on HOPL
  https://hopl.info/showlanguage.prx?exp=812 Irvine Dataflow on HOPL
-- See also: (1 related languages) Haskell
+- See also: (1 related languages) <a href="haskell.html">Haskell</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Id_(programming_language)'>Wikipedia</a>:
 False? :: bool -&gt; bool
    and :: bool -&gt; bool -&gt; bool
+```
 
-View source
+Built with Scroll v178.2.3

@@ -1,75 +1,88 @@
 PHP
 ===
 
-PHP, aka Personal Home Page, is a programming language created in 1995 by Rasmus Lerdorf.
+PHP, aka Personal Home Page, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1995 by Rasmus Lerdorf.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221995%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1995
  https://pldb.io/concepts/../lists/creators.html#q=Rasmus%20Lerdorf Rasmus Lerdorf
 
 #10 on PLDB
-29 Years Old
-3m Repos
+31 Years Old
+3m <span title="PHP repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/php/php-src
+```
 
 PHP is a server-side scripting language designed primarily for web development but also used as a general-purpose programming language. Originally created by Rasmus Lerdorf in 1994, the PHP reference implementation is now produced by The PHP Development Team. PHP originally stood for Personal Home Page, but it now stands for the recursive acronym PHP: Hypertext Preprocessor. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/PHP Read more on Wikipedia...
 
-- Tags: programming language
-- PHP is developed on GitHub and has 37,688 stars
-- Watch the history of the PHP repo visualized with Gource
-- There are at least 3,479,326 PHP repos on GitHub
-- Early development of PHP happened in Zend
-- PHP is written in PHP, C, Pascal, M4, JSON, XML, Assembly language, YAML, Markdown, C++, Bourne shell, GLSL, HTML, XSLT, XSD, reStructuredText, Ini, Lua, Diff, Reason, CSV, DTD, Yacc, awk, Lex, JavaScript, Python, D, Make, Bash, Dockerfile
-- The  Google BigQuery Public Dataset GitHub snapshot shows 202k users using PHP in 340k repos on GitHub
-- Check out the 2,012 PHP meetup groups on Meetup.com.
-- There are 150,168 members in the PHP subreddit
-- There are 3,210 Project Euler users using PHP
-- In the 2021 StackOverflow developer survey PHP programmers reported a median salary of $38,916. 22% of respondents reported using PHP. 18,130 programmers reported using PHP, and 8,852 said they wanted to use it
-- Explore PHP snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- PHP is developed on <a href="https://github.com/php/php-src">GitHub</a> and has 37,688 stars
+- Watch the history of <a href="https://www.youtube.com/watch?v=yLsUwIhg_k4">the PHP repo visualized with Gource</a>
+- There are at least 3,479,326 PHP repos on <a href="https://github.com/search?q=language:PHP">GitHub</a>
+- Early development of PHP happened in <a href="../lists/labs.html#q=Zend">Zend</a>
+- PHP is written in <a href="php.html">PHP</a>, <a href="c.html">C</a>, <a href="pascal.html">Pascal</a>, <a href="m4.html">M4</a>, <a href="json.html">JSON</a>, <a href="xml.html">XML</a>, <a href="assembly-language.html">Assembly language</a>, <a href="yaml.html">YAML</a>, <a href="markdown.html">Markdown</a>, <a href="cpp.html">C++</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="glsl.html">GLSL</a>, <a href="html.html">HTML</a>, <a href="xslt.html">XSLT</a>, <a href="xsd.html">XSD</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="ini.html">Ini</a>, <a href="lua.html">Lua</a>, <a href="diff.html">Diff</a>, <a href="reason.html">Reason</a>, <a href="csv.html">CSV</a>, <a href="dtd.html">DTD</a>, <a href="yacc.html">Yacc</a>, <a href="awk.html">awk</a>, <a href="lex.html">Lex</a>, <a href="javascript.html">JavaScript</a>, <a href="python.html">Python</a>, <a href="d.html">D</a>, <a href="make.html">Make</a>, <a href="bash.html">Bash</a>, <a href="dockerfile.html">Dockerfile</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 202k users using PHP in 340k repos on <a href="https://api.github.com/search/repositories?q=language:PHP">GitHub</a>
+- Check out the 2,012 <a href="https://www.meetup.com/topics/php/">PHP meetup groups</a> on Meetup.com.
+- There are 150,168 members in the <a href="https://reddit.com/r/PHP">PHP subreddit</a>
+- There are 3,210 <a href="https://projecteuler.net/language=PHP">Project Euler</a> users using PHP
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> PHP programmers reported a median salary of $38,916. 22% of respondents reported using PHP. 18,130 programmers reported using PHP, and 8,852 said they wanted to use it
+- Explore PHP snippets on <a href="http://www.rosettacode.org/wiki/Category:PHP">Rosetta Code</a>
 - PHP on HOPL
  https://hopl.info/showlanguage.prx?exp=2361 PHP on HOPL
-- PHP ranks #10 in the TIOBE Index
+- PHP ranks #10 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - PHP Ubuntu package
  https://packages.ubuntu.com/jammy/php-cli PHP Ubuntu package
-- ANTLR grammar for PHP
-- PHP LSP implementation
-- CodeMirror package for syntax highlighting PHP
-- Monaco package for syntax highlighting PHP
-- Pygments supports syntax highlighting for PHP
-- GitHub supports syntax highlighting for PHP
-- PHP appears in the Quine Relay project
-- Learn PHP on exercism.
-- PLDB has 2 Jupyter Kernels for PHP: github.com, github.com
-- There is a central package repository for PHP
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/php">grammar</a> for PHP
+- PHP <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/phan/phan">implementation</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/php">package</a> for syntax highlighting PHP
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/php">package</a> for syntax highlighting PHP
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/php.py">syntax highlighting</a> for PHP
+- GitHub supports <a href="https://github.com/textmate/php.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for PHP
+- PHP appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Learn <a href="https://exercism.org/tracks/php">PHP on exercism.</a>
+- PLDB has 2 <a href="jupyter-notebook.html">Jupyter</a> Kernels for PHP: <a href="https://github.com/dawehner/ipython-php">github.com</a>, <a href="https://github.com/Litipk/Jupyter-PHP">github.com</a>
+- There is a <a href="https://packagist.org/">central package repository</a> for PHP
 - Annual Reports for PHP
  https://www.zend.com/blog/state-php-2022 Annual Reports for PHP
 - Events page for PHP
  https://www.php.net/cal.php Events page for PHP
-- Indeed.com has 9,017 matches for "php developer".
-- php.net was registered in 1997
-- See also: (28 related languages) C, HHVM, Parrot, Java, Perl, Tcl, Falcon, Hack, HTML, X86, Unicode, WordPress, JSON, MySQL, MIME, JavaScript, XML, PIR, CIL, FTP, PostgreSQL, SQLite, AWS, JSP, Linux, Python, MediaWiki, Drupal
+- Indeed.com has 9,017 matches for <a href="https://www.indeed.com/jobs?q=php developer">"php developer"</a>.
+- <a href="https://php.net">php.net</a> was registered in 1997
+- See also: (28 related languages) <a href="c.html">C</a>, <a href="hhvm.html">HHVM</a>, <a href="parrot-vm.html">Parrot</a>, <a href="java.html">Java</a>, <a href="perl.html">Perl</a>, <a href="tcl.html">Tcl</a>, <a href="falcon.html">Falcon</a>, <a href="hack.html">Hack</a>, <a href="html.html">HTML</a>, <a href="x86-isa.html">X86</a>, <a href="unicode.html">Unicode</a>, <a href="wordpress.html">WordPress</a>, <a href="json.html">JSON</a>, <a href="mysql.html">MySQL</a>, <a href="mime.html">MIME</a>, <a href="javascript.html">JavaScript</a>, <a href="xml.html">XML</a>, <a href="parrot-internal-representation.html">PIR</a>, <a href="cil.html">CIL</a>, <a href="ftp.html">FTP</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="sqlite.html">SQLite</a>, <a href="aws.html">AWS</a>, <a href="java-server-pages.html">JSP</a>, <a href="linux.html">Linux</a>, <a href="python.html">Python</a>, <a href="mediawiki.html">MediaWiki</a>, <a href="drupal.html">Drupal</a>
 - Read more about PHP on the web: 1.
  http://php.net/manual/en/reserved.keywords.php 1.
-- 57 PLDB concepts link to PHP: Ace Editor, Apache Hbase, AsciiMath, chaiscript, Chapel, chrysaLisp, cloc, codecept, Cyber, dexvis, Eiffel, FlatBuffers, Flow9, Functional PHP Preprocessor, Haxe, HHVM, Hook, huginn, Ioke, Jedi, Jekyll, Jison, JQuery, Latte, ldpl, leo-editor, Lux, mal, MongoDB, MonkeyX, Nadesiko, Node.js, Nuua, packagist-pm, Pharen, Phel, PHP, POV-Ray SDL, PRQL, Pygments, ramen, SDMS, Slim Framework, SmallBASIC, SourcePawn, SQHTML, SRL, Swym, Textile, tht, ToonTalk, Twig, Typoscript, wasmer, WordPress, Yes It Is, Zephir
+- 63 PLDB concepts link to PHP: <a href="ace.html">Ace Editor</a>, <a href="apache-hbase.html">Apache Hbase</a>, <a href="asciimath.html">AsciiMath</a>, <a href="chaiscript.html">chaiscript</a>, <a href="chrysalisp.html">chrysaLisp</a>, <a href="cloc.html">cloc</a>, <a href="cmake.html">CMake</a>, <a href="codecept.html">codecept</a>, <a href="cyber.html">Cyber</a>, <a href="dexvis.html">dexvis</a>, <a href="drupal.html">Drupal</a>, <a href="eiffel.html">Eiffel</a>, <a href="flatbuffers.html">FlatBuffers</a>, <a href="flow9.html">Flow9</a>, <a href="fpp.html">Functional PHP Preprocessor</a>, <a href="haxe.html">Haxe</a>, <a href="hhvm.html">HHVM</a>, <a href="hook.html">Hook</a>, <a href="huginn.html">huginn</a>, <a href="ioke.html">Ioke</a>, <a href="jedi.html">Jedi</a>, <a href="jekyll.html">Jekyll</a>, <a href="jison.html">Jison</a>, <a href="jquery.html">JQuery</a>, <a href="latte.html">Latte</a>, <a href="ldpl.html">ldpl</a>, <a href="leo-editor.html">leo-editor</a>, <a href="lux.html">Lux</a>, <a href="mal.html">mal</a>, <a href="mobl-lang.html">Mobl</a>, <a href="mongodb.html">MongoDB</a>, <a href="monkeyx.html">MonkeyX</a>, <a href="nadesiko.html">Nadesiko</a>, <a href="netbeans-editor.html">netbeans-editor</a>, <a href="nodejs.html">Node.js</a>, <a href="nuua.html">Nuua</a>, <a href="packagist-pm.html">packagist-pm</a>, <a href="pharen.html">Pharen</a>, <a href="phel.html">Phel</a>, <a href="php.html">PHP</a>, <a href="pov-ray-sdl.html">POV-Ray SDL</a>, <a href="prql.html">PRQL</a>, <a href="pygments.html">Pygments</a>, <a href="ramen.html">ramen</a>, <a href="reko-decompiler.html">Reko</a>, <a href="sdms.html">SDMS</a>, <a href="slash.html">Slash</a>, <a href="slim-framework.html">Slim Framework</a>, <a href="smallbasic.html">SmallBASIC</a>, <a href="sourcepawn.html">SourcePawn</a>, <a href="sqhtml.html">SQHTML</a>, <a href="srl.html">SRL</a>, <a href="swym.html">Swym</a>, <a href="textile.html">Textile</a>, <a href="tht.html">tht</a>, <a href="tiscript.html">TIScript</a>, <a href="toontalk.html">ToonTalk</a>, <a href="twig.html">Twig</a>, <a href="typoscript.html">Typoscript</a>, <a href="wasmer.html">wasmer</a>, <a href="wordpress.html">WordPress</a>, <a href="yii.html">Yes It Is</a>, <a href="zephir.html">Zephir</a>
 
+```Example from <a href='https://riju.codes/php'>Riju</a>:
 &lt;?php
 
 echo &quot;Hello, world!\n&quot;;
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/p/PHP.php'>hello-world</a>:
 &lt;?php
 
 echo &#39;Hello World&#39;;
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#PHP'>the Hello World Collection</a>:
 &lt;?php
   // Hello world in PHP
   echo &#39;Hello World!&#39;;
 ?&gt;
+```
 
+```Example from <a href='https://github.com/textmate/php.tmbundle'>Linguist</a>:
 #!/usr/bin/php
 &lt;?php
 
 echo &quot;PHP\n&quot;;
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/PHP'>Wikipedia</a>:
 class Person
 {
     public $firstName;
@@ -104,71 +117,74 @@ echo $other-&gt;greet(); // prints &quot;Hello, my name is iAmine.&quot;
 echo &#39;&lt;br /&gt;&#39;;
 
 echo Person::staticGreet(&#39;Jane&#39;, &#39;Doe&#39;); // prints &quot;Hello, my name is Jane Doe.&quot;
+```
 
+```PHP <a href="../lists/keywords.html#q=php">Keywords</a>
 __CLASS__ __DIR__ __FILE__ __FUNCTION__ __halt_compiler() __LINE__ __METHOD__ __NAMESPACE__ __TRAIT__ abstract and array() as break callable case catch class clone const continue declare default die() do echo else elseif empty() enddeclare endfor endforeach endif endswitch endwhile eval() exit() extends final finally for foreach function global goto if implements include include_once instanceof insteadof interface isset() list() namespace new or print private protected public require require_once return static switch throw trait try unset() use var while xor yield
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Standard Library
  FeatureLink ../features/hasStandardLibrary.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
-  
+  <?php echo "Hello, World!"; ?>
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Inheritance
  FeatureLink ../features/hasInheritance.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -176,32 +192,32 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token echo
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Increment and decrement operators
  FeatureLink ../features/hasIncrementAndDecrementOperators.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Variadic Functions
  FeatureLink ../features/hasVariadicFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   function sum(...$nums)
   {
@@ -212,7 +228,7 @@ row
 row
  Feature Traits
  FeatureLink ../features/hasTraits.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // The template
   trait TSingleton
@@ -241,44 +257,64 @@ row
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Multiline Strings
  FeatureLink ../features/hasMultilineStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
-  $xml = ✓
+  $xml = <<<XML
+  l
+  vv
+  XML;
+ Token 
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported <span class="hasFeature">✓</span>
  Example
-  ✓
+  <?php
+  include 'vars.php';
+  require 'filename'; // FATAL error if fails
+ Token 
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported <span class="hasFeature">✓</span>
  Example
   $name = "John"
  Token 
 row
  Feature Ternary operators
  FeatureLink ../features/hasTernaryOperators.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
-  ✓
+  <?php echo 1 ? 1 : 0;
+ Token 
+row
+ Feature Here Document
+ FeatureLink ../features/hasHereDocs.html
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Constructors
  FeatureLink ../features/hasConstructors.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Magic Getters and Setters
  FeatureLink ../features/hasMagicGettersAndSetters.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
       public function __set($name, $value)
      {
@@ -305,27 +341,27 @@ row
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "hello world"
  Token '
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

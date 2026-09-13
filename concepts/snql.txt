@@ -1,22 +1,24 @@
 SNQL: A Social Network Query and Transformation Language
 ========================================================
 
-SNQL: A Social Network Query and Transformation Language is a query language created in 2011.
+SNQL: A Social Network Query and Transformation Language is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22queryLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">query language</a> created in 2011.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2011
 
-#4459 on PLDB
-13 Years Old
+#4606 on PLDB
+15 Years Old
 
-- Tags: queryLanguage
-- Early development of SNQL: A Social Network Query and Transformation Language happened in Universidad de Chile and University of London
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"queryLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>queryLanguage</a>
+- Early development of SNQL: A Social Network Query and Transformation Language happened in <a href="../lists/labs.html#q=Universidad de Chile">Universidad de Chile</a> and <a href="../lists/labs.html#q=University of London">University of London</a>
 - Read more about SNQL: A Social Network Query and Transformation Language on the web: 1.
  http://ceur-ws.org/Vol-749/paper18.pdf 1.
 
+```Example from the web:
 CONSTRUCT CP1
  WHERE EP2 FILTER ((A3 != A4) AND (A3 = A1 OR A3 = A2) AND
  (A4 = A1 OR A4 = A5))
  AND (TC(A1, A2, EP1) WITH L1=’John’)
  AND (TC(A1, A5, EP3) WITH L1=’John’)
 FROM FriendshipNetwork
+```
 
-View source
+Built with Scroll v178.2.3

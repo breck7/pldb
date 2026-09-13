@@ -1,26 +1,27 @@
 SystemVerilog
 =============
 
-SystemVerilog is a programming language created in 2002.
+SystemVerilog is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2002.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222002%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2002
 
-#292 on PLDB
-22 Years Old
-10k Repos
+#312 on PLDB
+24 Years Old
+10k <span title="SystemVerilog repos on GitHub.">Repos</span>
 
 SystemVerilog, standardized as IEEE 1800, is a hardware description and hardware verification language used to model, design, simulate, test and implement electronic systems. SystemVerilog is based on Verilog and some extensions, and since 2008 Verilog is now part of the same IEEE standard. It is commonly used in the semiconductor and electronic design industry as an evolution of Verilog.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/SystemVerilog Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 9,972 SystemVerilog repos on GitHub
-- Early development of SystemVerilog happened in Synopsys
-- The  Google BigQuery Public Dataset GitHub snapshot shows 872 users using SystemVerilog in 1k repos on GitHub
-- Explore SystemVerilog snippets on Rosetta Code
-- Monaco package for syntax highlighting SystemVerilog
-- Pygments supports syntax highlighting for SystemVerilog
-- GitHub supports syntax highlighting for SystemVerilog
-- See also: (7 related languages) Verilog, VHDL, OpenVera, Java, C, Property Specification Language, AXIOM
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 9,972 SystemVerilog repos on <a href="https://github.com/search?q=language:SystemVerilog">GitHub</a>
+- Early development of SystemVerilog happened in <a href="../lists/labs.html#q=Synopsys">Synopsys</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 872 users using SystemVerilog in 1k repos on <a href="https://api.github.com/search/repositories?q=language:SystemVerilog">GitHub</a>
+- Explore SystemVerilog snippets on <a href="http://www.rosettacode.org/wiki/Category:SystemVerilog">Rosetta Code</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/systemverilog">package</a> for syntax highlighting SystemVerilog
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/hdl.py">syntax highlighting</a> for SystemVerilog
+- GitHub supports <a href="https://github.com/TheClams/SystemVerilog" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for SystemVerilog
+- See also: (7 related languages) <a href="verilog.html">Verilog</a>, <a href="vhdl.html">VHDL</a>, <a href="openvera.html">OpenVera</a>, <a href="java.html">Java</a>, <a href="c.html">C</a>, <a href="property-specification-language.html">Property Specification Language</a>, <a href="axiom.html">AXIOM</a>
 
+```Example from <a href='https://github.com/TheClams/SystemVerilog'>Linguist</a>:
 function integer log2;
   input integer x;
   begin
@@ -30,6 +31,9 @@ function integer log2;
   end
 endfunction
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/SystemVerilog'>Wikipedia</a>:
 class eth_frame;
    // Definitions as above
    covergroup cov;
@@ -49,87 +53,90 @@ class eth_frame;
       sz_x_t: cross f_type, psize;
    endgroup
 endclass
+```
 
+```SystemVerilog <a href="../lists/keywords.html#q=systemverilog">Keywords</a>
 accept_on alias always always_comb always_ff always_latch and assert assign assume automatic before begin bind bins binsof bit break buf bufif0 bufif1 byte case casex casez cell chandle checker class clocking cmos config const constraint context continue cover covergroup coverpoint cross deassign default defparam design disable dist do edge else end endcase endchecker endclass endclocking endconfig endfunction endgenerate endgroup endinterface endmodule endpackage endprimitive endprogram endproperty endspecify endsequence endtable endtask enum event eventually expect export extends extern final first_match for force foreach forever fork forkjoin function generate genvar global highz0 highz1 if iff ifnone ignore_bins illegal_bins implements implies import incdir include initial inout input inside instance int integer interconnect interface intersect join join_any join_none large let liblist library local localparam logic longint macromodule matches medium modport module nand negedge nettype new nexttime nmos nor noshowcancelled not notif0 notif1 null or output package packed parameter pmos posedge primitive priority program property protected pull0 pull1 pulldown pullup pulsestyle_ondetect pulsestyle_onevent pure rand randc randcase randsequence rcmos real realtime ref reg reject_on release repeat restrict return rnmos rpmos rtran rtranif0 rtranif1 s_always s_eventually s_nexttime s_until s_until_with scalared sequence shortint shortreal showcancelled signed small soft solve specify specparam static string strong strong0 strong1 struct super supply0 supply1 sync_accept_on sync_reject_on table tagged task this throughout time timeprecision timeunit tran tranif0 tranif1 tri tri0 tri1 triand trior trireg type typedef union unique unique0 unsigned until until_with untyped use uwire var vectored virtual void wait wait_order wand weak weak0 weak1 while wildcard wire with within wor xnor xor
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // ([1-9][_0-9]*)?\s*\'[sS]?[bB]\s*[xXzZ?01][_xXzZ?01]*
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // ([1-9][_0-9]*)?\s*\'[sS]?[dD]\s*[xXzZ?0-9][_xXzZ?0-9]*
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // (\d+\.\d*|\.\d+|\d+)[eE][+-]?\d+[lL]?
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // ([1-9][_0-9]*)?\s*\'[sS]?[hH]\s*[xXzZ?0-9a-fA-F][_xXzZ?0-9a-fA-F]*
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // ([1-9][_0-9]*)?\s*\'[sS]?[oO]\s*[xXzZ?0-7][_xXzZ?0-7]*
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Inheritance
  FeatureLink ../features/hasInheritance.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -137,28 +144,28 @@ row
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

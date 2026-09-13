@@ -1,7 +1,7 @@
 Modula-3
 ========
 
-Modula-3 is an open source programming language created in 1986 by Luca Cardelli and James Donahue and Lucille Glassman and Mick Jordan and Bill Kalsow and Greg Nelson.
+Modula-3 is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1986 by Luca Cardelli and James Donahue and Lucille Glassman and Mick Jordan and Bill Kalsow and Greg Nelson.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1986
  https://pldb.io/concepts/../lists/creators.html#q=Luca%20Cardelli Luca Cardelli
  https://pldb.io/concepts/../lists/creators.html#q=James%20Donahue James Donahue
@@ -10,34 +10,37 @@ Modula-3 is an open source programming language created in 1986 by Luca Cardelli
  https://pldb.io/concepts/../lists/creators.html#q=Bill%20Kalsow Bill Kalsow
  https://pldb.io/concepts/../lists/creators.html#q=Greg%20Nelson Greg Nelson
 
-#419 on PLDB
-38 Years Old
-137 Repos
+#438 on PLDB
+40 Years Old
+137 <span title="Modula-3 repos on GitHub.">Repos</span>
 
 Modula-3 is a programming language conceived as a successor to an upgraded version of Modula-2 known as Modula-2+. While it has been influential in research circles (influencing the designs of languages such as Java, C#, and Python) it has not been adopted widely in industry. It was designed by Luca Cardelli, James Donahue, Lucille Glassman, Mick Jordan (before at the Olivetti Software Technology Laboratory), Bill Kalsow and Greg Nelson at the DEC (DEC) Systems Research Center (SRC) and the Olivetti Research Center (ORC) in the late 1980s. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Modula-3 Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 137 Modula-3 repos on GitHub
-- Early development of Modula-3 happened in DEC and elego Software Solutions GmbH
-- The  Google BigQuery Public Dataset GitHub snapshot shows 18 users using Modula-3 in 19 repos on GitHub
-- Explore Modula-3 snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 137 Modula-3 repos on <a href="https://github.com/search?q=language:Modula-3">GitHub</a>
+- Early development of Modula-3 happened in <a href="../lists/labs.html#q=DEC">DEC</a> and <a href="../lists/labs.html#q=elego Software Solutions GmbH">elego Software Solutions GmbH</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 18 users using Modula-3 in 19 repos on <a href="https://api.github.com/search/repositories?q=language:Modula-3">GitHub</a>
+- Explore Modula-3 snippets on <a href="http://www.rosettacode.org/wiki/Category:Modula-3">Rosetta Code</a>
 - Modula-3 on HOPL
  https://hopl.info/showlanguage.prx?exp=1411 Modula-3 on HOPL
-- Modula-3 appears in the TIOBE Index
-- Monaco package for syntax highlighting Modula-3
-- GitHub supports syntax highlighting for Modula-3
-- modula3.org was registered in 2007
-- See also: (17 related languages) Modula-2, Pascal, Algol, Oberon, Java, Python, Caml, C#, Nim, ARM, Mesa, Object Pascal, Euclid, C, Delphi, Scala, Obliq
+- Modula-3 appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/m3">package</a> for syntax highlighting Modula-3
+- GitHub supports <a href="https://github.com/newgrammars/m3" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Modula-3
+- <a href="http://www.modula3.org">modula3.org</a> was registered in 2007
+- See also: (17 related languages) <a href="modula-2.html">Modula-2</a>, <a href="pascal.html">Pascal</a>, <a href="algol.html">Algol</a>, <a href="oberon.html">Oberon</a>, <a href="java.html">Java</a>, <a href="python.html">Python</a>, <a href="caml.html">Caml</a>, <a href="csharp.html">C#</a>, <a href="nim.html">Nim</a>, <a href="arm.html">ARM</a>, <a href="mesa.html">Mesa</a>, <a href="object-pascal.html">Object Pascal</a>, <a href="euclid.html">Euclid</a>, <a href="c.html">C</a>, <a href="delphi.html">Delphi</a>, <a href="scala.html">Scala</a>, <a href="obliq.html">Obliq</a>
 - Read more about Modula-3 on the web: 1.
  https://www.cs.purdue.edu/homes/hosking/m3/reference/syntax.html 1.
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/m/Modula 3.m3'>hello-world</a>:
 MODULE HelloWorld;
 IMPORT Io;
 BEGIN
     IO.Put (&quot;Hello World\n&quot;)
 END HelloWorld.
+```
 
+```Example from <a href='http://helloworldcollection.de/#Modula-3'>the Hello World Collection</a>:
 (* Hello World in Modula-3 *)
 
 MODULE Hello EXPORTS Main;
@@ -47,7 +50,9 @@ IMPORT IO;
 BEGIN
  IO.Put(&quot;Hello World!\n&quot;);
 END Hello.
+```
 
+```Example from <a href='https://github.com/newgrammars/m3'>Linguist</a>:
 (* Copyright (C) 1989, DEC           *)
 (* All rights reserved.                                        *)
 (* See the file COPYRIGHT for a full description.              *)
@@ -247,6 +252,9 @@ PROCEDURE CloseDefault(rd: Rd.T) RAISES {Failure, Alerted};
 
 END RdClass.
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Modula-3'>Wikipedia</a>:
 MODULE Person;
 
 REVEAL T = Public BRANDED
@@ -272,22 +280,25 @@ PROCEDURE Init(self: T; name: TEXT; age: INTEGER): T =
 
 BEGIN
 END Person.
+```
 
+```Modula-3 <a href="../lists/keywords.html#q=modula-3">Keywords</a>
 AND ANY ARRAY AS BEGIN BITS BRANDED BY CASE CONST DIV DO ELSE ELSIF END EVAL EXCEPT EXCEPTION EXIT EXPORTS FINALLY FOR FROM GENERIC IF IMPORT IN INTERFACE LOCK LOOP METHODS MOD MODULE NOT OBJECT OF OR OVERRIDES PROCEDURE RAISE RAISES READONLY RECORD REF REPEAT RETURN REVEAL SET THEN TO TRY TYPE TYPECASE UNSAFE UNTIL UNTRACED VALUE VAR WHILE WITH
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token TRUE FALSE
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (* A comment
   *)
@@ -295,26 +306,26 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

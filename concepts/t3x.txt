@@ -1,34 +1,36 @@
 T3X
 ===
 
-T3X is a programming language created in 1995 by Nils M Holm.
+T3X is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1995 by Nils M Holm.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221995%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1995
  https://pldb.io/concepts/../lists/creators.html#q=Nils%20M%20Holm Nils M Holm
 
-#1987 on PLDB
-29 Years Old
+#2070 on PLDB
+31 Years Old
 
 T3X is a small, portable, procedural, block-structured, recursive, almost typeless, and to some degree object-oriented programming language. Its syntax is similar to Pascal, its semantics resembles BCPL's.
 
-- Tags: programming language
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
 - T3X on HOPL
  https://hopl.info/showlanguage.prx?exp=2549 T3X on HOPL
-- t3x.org was registered in 2000
+- <a href="http://www.t3x.org/">t3x.org</a> was registered in 2000
 - Read more about T3X on the web: 1.
  https://news.ycombinator.com/item?id=14273177 1.
 
+```Example from the web:
 USE t3x: t;
 DO t.write(T3X.SYSOUT, &quot;Hello, World!\n&quot;, 14); END
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   DO END  ! Do nothing
  Token !
 
-View source
+Built with Scroll v178.2.3

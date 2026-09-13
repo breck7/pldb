@@ -1,37 +1,40 @@
 GraphQL
 =======
 
-GraphQL is a query language created in 2012 by Lee Byron.
+GraphQL is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22queryLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">query language</a> created in 2012 by Lee Byron.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
  https://pldb.io/concepts/../lists/creators.html#q=Lee%20Byron Lee Byron
 
-#58 on PLDB
-12 Years Old
-1 Repos
+#56 on PLDB
+14 Years Old
+1 <span title="GraphQL repos on GitHub.">Repos</span>
 
 GraphQL is a data query language developed internally by Facebook in 2012 before being publicly released in 2015. It provides an alternative to REST and ad-hoc webservice architectures.. It allows clients to define the structure of the data required, and exactly the same structure of the data is returned from the server. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/GraphQL Read more on Wikipedia...
 
-- Tags: queryLanguage
-- There are at least 1 GraphQL repos on GitHub
-- Early development of GraphQL happened in Facebook
-- There are 17,480 members in the GraphQL subreddit
-- ANTLR grammar for GraphQL
-- GraphQL LSP implementation
-- Monaco package for syntax highlighting GraphQL
-- GitHub supports syntax highlighting for GraphQL
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"queryLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>queryLanguage</a>
+- There are at least 1 GraphQL repos on <a href="https://github.com/search?q=language:GraphQL">GitHub</a>
+- Early development of GraphQL happened in <a href="../lists/labs.html#q=Facebook">Facebook</a>
+- There are 17,480 members in the <a href="https://reddit.com/r/GraphQL">GraphQL subreddit</a>
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/graphql">grammar</a> for GraphQL
+- GraphQL <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/Mayank1791989/gql-language-server">implementation</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/graphql">package</a> for syntax highlighting GraphQL
+- GitHub supports <a href="https://github.com/rmosolgo/language-graphql" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for GraphQL
 - Annual Reports for GraphQL
  https://graphql.org/foundation/annual-reports/ Annual Reports for GraphQL
 - Events page for GraphQL
  https://graphql.org/community/upcoming-events/ Events page for GraphQL
-- graphql.org was registered in 2015
-- See also: (3 related languages) JavaScript, Ruby, Scala
-- 8 PLDB concepts link to GraphQL: Ace Editor, cloc, dgraph, gintonic, Noms GraphQL, Prettier, Pygments, wasmer
+- <a href="http://graphql.org/">graphql.org</a> was registered in 2015
+- See also: (3 related languages) <a href="javascript.html">JavaScript</a>, <a href="ruby.html">Ruby</a>, <a href="scala.html">Scala</a>
+- 10 PLDB concepts link to GraphQL: <a href="ace.html">Ace Editor</a>, <a href="cloc.html">cloc</a>, <a href="codeql.html">CodeQL</a>, <a href="dgraph.html">dgraph</a>, <a href="gintonic.html">gintonic</a>, <a href="michelson.html">michelson</a>, <a href="ngql.html">Noms GraphQL</a>, <a href="prettier.html">Prettier</a>, <a href="pygments.html">Pygments</a>, <a href="wasmer.html">wasmer</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/g/GraphQL.graphql'>hello-world</a>:
 {
     &quot;Hello World&quot;
 }
+```
 
+```Example from <a href='https://github.com/rmosolgo/language-graphql'>Linguist</a>:
 # Copyright (c) 2015, Facebook, Inc.
 # All rights reserved.
 #
@@ -83,29 +86,33 @@ directive @include(if: Boolean!)
    | FRAGMENT_SPREAD
    | INLINE_FRAGMENT
 
-null true false query mutation subscription extend schema directive scalar type interface union enum input implements fragment on
+```
 
-Language features
+```GraphQL <a href="../lists/keywords.html#q=graphql">Keywords</a>
+null true false query mutation subscription extend schema directive scalar type interface union enum input implements fragment on
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature hasIds
  FeatureLink ../features/hasIds.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # The ID scalar type represents a unique identifier, often used to refetch an object or as the key for a cache. The ID type is serialized in the same way as a String; however, defining it as an ID signifies that it is not intended to be human‐readable.
   query {
@@ -120,32 +127,32 @@ row
 row
  Feature Lists
  FeatureLink ../features/hasLists.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Union Types
  FeatureLink ../features/hasUnionTypes.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   union SearchResult = Human | Droid | Starship
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token "
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Interfaces
  FeatureLink ../features/hasInterfaces.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   interface Character {
    id: ID!
@@ -172,13 +179,13 @@ row
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Enums
  FeatureLink ../features/hasEnums.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   enum Episode {
     NEWHOPE
@@ -189,20 +196,20 @@ row
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

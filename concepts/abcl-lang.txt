@@ -1,18 +1,20 @@
 Armed Bear Common Lisp
 ======================
 
-Armed Bear Common Lisp, aka Armed Bear Common Lisp, is a programming language created in 2008.
+Armed Bear Common Lisp, aka Armed Bear Common Lisp, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2008.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
 
-#1217 on PLDB
-16 Years Old
+#1271 on PLDB
+18 Years Old
 
+```Download source code:
 git clone https://github.com/armedbear/abcl
+```
 
 Armed Bear Common Lisp (ABCL) is a full implementation of the Common Lisp language featuring both an interpreter and a compiler, running in the JVM. Originally started to be a scripting language for the J editor, it now supports JSR-223 (Java scripting API): it can be a scripting engine in any Java application. Additionally, it can be used to implement (parts of) the application using Java to Lisp integration APIs.
 
-- Tags: programming language
-- Armed Bear Common Lisp is developed on GitHub and has 287 stars
-- Armed Bear Common Lisp is written in Lisp, Java, Markdown, Bash, Tex, XML, Diff, HTML, YAML, Bourne shell, reStructuredText, Dockerfile, Korn shell, Make, awk
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Armed Bear Common Lisp is developed on <a href="https://github.com/armedbear/abcl">GitHub</a> and has 287 stars
+- Armed Bear Common Lisp is written in <a href="lisp.html">Lisp</a>, <a href="java.html">Java</a>, <a href="markdown.html">Markdown</a>, <a href="bash.html">Bash</a>, <a href="tex.html">Tex</a>, <a href="xml.html">XML</a>, <a href="diff.html">Diff</a>, <a href="html.html">HTML</a>, <a href="yaml.html">YAML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="korn-shell.html">Korn shell</a>, <a href="make.html">Make</a>, <a href="awk.html">awk</a>
 
-View source
+Built with Scroll v178.2.3

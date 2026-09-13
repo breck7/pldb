@@ -1,24 +1,28 @@
 Jison
 =====
 
-Jison is an open source programming language created in 2009 by Zachary Carter.
+Jison is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2009 by Zachary Carter.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2009
  https://pldb.io/concepts/../lists/creators.html#q=Zachary%20Carter Zachary Carter
 
-#255 on PLDB
-15 Years Old
-0 Repos
+#269 on PLDB
+17 Years Old
+0 <span title="Jison repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/zaach/jison
+```
 
 Bison in JavaScript.
 
-- Tags: programming language
-- Jison is developed on GitHub and has 4,338 stars
-- There are at least 0 Jison repos on GitHub
-- Early development of Jison happened in https://github.com/zaach/jison/issues
-- Jison is written in JavaScript, C#, HTML, JSON, CSS, XML, Ruby, Markdown, YAML, PHP, Yacc, Make
-- GitHub supports syntax highlighting for Jison
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Jison is developed on <a href="https://github.com/zaach/jison">GitHub</a> and has 4,338 stars
+- There are at least 0 Jison repos on <a href="https://github.com/search?q=language:Jison">GitHub</a>
+- Early development of Jison happened in <a href="../lists/labs.html#q=https://github.com/zaach/jison/issues">https://github.com/zaach/jison/issues</a>
+- Jison is written in <a href="javascript.html">JavaScript</a>, <a href="csharp.html">C#</a>, <a href="html.html">HTML</a>, <a href="json.html">JSON</a>, <a href="css.html">CSS</a>, <a href="xml.html">XML</a>, <a href="ruby.html">Ruby</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="php.html">PHP</a>, <a href="yacc.html">Yacc</a>, <a href="make.html">Make</a>
+- GitHub supports <a href="https://github.com/cdibbs/language-jison" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Jison
+
+```Example from <a href='https://github.com/cdibbs/language-jison'>Linguist</a>:
 
 /* description: ClassyLang grammar. Very classy. */
 /*
@@ -101,14 +105,15 @@ e
     | e DOT id LPAREN e RPAREN
     | LPAREN e RPAREN
     ;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -116,7 +121,7 @@ row
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -124,8 +129,8 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

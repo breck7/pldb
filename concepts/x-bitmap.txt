@@ -1,21 +1,22 @@
 X BitMap
 ========
 
-X BitMap is an application created in 1989.
+X BitMap is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 1989.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221989%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1989
 
-#2155 on PLDB
-35 Years Old
-8k Repos
+#2243 on PLDB
+37 Years Old
+8k <span title="X BitMap repos on GitHub.">Repos</span>
 
 In computer graphics, the X Window System used X BitMap (XBM), a plain text binary image format, for storing cursor and icon bitmaps used in the X GUI. The XBM format is superseded by XPM, which first appeared for X11 in 1989.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/X_BitMap Read more on Wikipedia...
 
-- Tags: application
-- There are at least 8,276 X BitMap repos on GitHub
-- GitHub supports syntax highlighting for X BitMap
-- See also: (2 related languages) C, X PixMap
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>
+- There are at least 8,276 X BitMap repos on <a href="https://github.com/search?q=language:X BitMap">GitHub</a>
+- GitHub supports <a href="https://github.com/textmate/c.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for X BitMap
+- See also: (2 related languages) <a href="c.html">C</a>, <a href="x-pixmap.html">X PixMap</a>
 
+```Example from <a href='https://github.com/textmate/c.tmbundle'>Linguist</a>:
 #define image_width 32
 #define image_height 32
 static unsigned char image_bits[] = {
@@ -53,10 +54,14 @@ static unsigned char image_bits[] = {
 	0x00, 0xF0, 0x1F, 0x00,
 };
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/X_BitMap'>Wikipedia</a>:
 #define test_width 16
 #define test_height 7
 static char test_bits[] = {
 0x13, 0x00, 0x15, 0x00, 0x93, 0xcd, 0x55, 0xa5, 0x93, 0xc5, 0x00, 0x80,
 0x00, 0x60 };
+```
 
-View source
+Built with Scroll v178.2.3

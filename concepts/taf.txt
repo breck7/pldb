@@ -1,23 +1,26 @@
 taf
 ===
 
-taf is a programming language created in 2012 by Manuel Simoni.
+taf is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2012 by Manuel Simoni.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
  https://pldb.io/concepts/../lists/creators.html#q=Manuel%20Simoni Manuel Simoni
 
-#1431 on PLDB
-12 Years Old
+#1477 on PLDB
+14 Years Old
 
+```Download source code:
 git clone https://github.com/manuel/taf
+```
 
 A Lisp with row polymorphism, delimited continuations, and hygienic macros. [vaporware]
 
-- Tags: programming language
-- taf is developed on GitHub and has 56 stars
-- taf is written in HTML, JavaScript, CSS
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- taf is developed on <a href="https://github.com/manuel/taf">GitHub</a> and has 56 stars
+- taf is written in <a href="html.html">HTML</a>, <a href="javascript.html">JavaScript</a>, <a href="css.html">CSS</a>
 - Read more about taf on the web: 1.
  http://www.manuelsimoni.net/taf/doc/plan.html 1.
 
+```Example from the web:
 (define (make-person name email)
   #(person :name name :email email)) ; creates a person record with name and email fields
 
@@ -27,29 +30,30 @@ A Lisp with row polymorphism, delimited continuations, and hygienic macros. [vap
 
 (to-string (make-person &quot;Manuel&quot; &quot;msimoni@gmail.com&quot;))
 ; ==&gt; &quot;Manuel &lt;msimoni@gmail.com&gt;&quot;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token ;
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

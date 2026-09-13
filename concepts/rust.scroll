@@ -33,10 +33,12 @@ packageRepository https://crates.io/
 ubuntuPackage rustc
 repoStats
  firstCommit 2010
- commits 259266
- committers 6746
- files 47502
- newestCommit 2024
+ commits 287557
+ committers 7485
+ files 52262
+ newestCommit 2025
+ mb 686
+ linesOfCode 4271950
 proposals https://github.com/rust-lang/rfcs
 projectEuler Rust
  memberCount
@@ -170,13 +172,40 @@ hasPrintDebugging true
  println!("Hi");
 hasSemanticIndentation false
 hasCaseInsensitiveIdentifiers false
+hasStaticTyping true
+hasStructuralTyping false
+ tuples can be seen as structural, [1] but other fundamental types like structs
+ and traits are not structural and don't have structural analogues
+hasTypeClasses true
+ // https://doc.rust-lang.org/book/ch10-02-traits.html
+ trait ToTypedJson {
+   fn to_typed_json(&self) -> String;
+ }
+ 
+ impl ToTypedJson for i64 {
+   fn to_typed_json(&self) -> String {
+     return format!("{{\"type\": \"int\", \"value\": {}}}", self)
+   }
+ }
+ 
+ fn print_as_typed_json(x: impl ToTypedJson) {
+   println!("{}", x.to_typed_json());
+ }
+ 
+ fn main() {
+   print_as_typed_json(123);
+ }
 hasTypeInference true
 hasLineComments true
  // A comment
 hasBooleans true
 hasWhileLoops true
 hasConstants true
+hasSinglePassParser false
 hasConditionals true
+hasFunctions true
+hasFunctionOverloading false
+hasNamedArguments false
 hasStandardLibrary true
  println!("Hello, World!");
 
@@ -379,3 +408,5 @@ semanticScholar 36
  2021|Translating C to safer Rust|10.1145/3485498|1|0|Mehmet Emre and Ryan Schroeder and Kyle Dewey and B. Hardekopf|d0fb133db727fc51913e623041a6e86eb99e8c6c
  2021|Performance vs Programming Effort between Rust and C on Multicore Architectures: Case Study in N-Body|10.1109/CLEI53233.2021.9640225|1|0|Manuel Costanzo and Enzo Rucci and M. Naiouf and A. D. Giusti|74dfb86326be51d0cc2d0aee69d3266d8994ea31
  2019|On Evaluating Rust as a Programming Language for the Future of Massive Agent-Based Simulations|10.1007/978-981-15-1078-6_2|1|0|Alessia Antelmi and G. Cordasco and Matteo D'Auria and Daniele De Vinco and A. Negro and Carmine Spagnuolo|f57083b736fa347d6e48d09bdc09a308df017eeb
+
+ [1]: https://doc.rust-lang.org/reference/types/tuple.html

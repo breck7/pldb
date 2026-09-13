@@ -1,20 +1,21 @@
 Gerber Image
 ============
 
-Gerber Image is an application created in 1980.
+Gerber Image is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 1980.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221980%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1980
 
-#1288 on PLDB
-44 Years Old
+#1344 on PLDB
+46 Years Old
 
 The Gerber format is an open ASCII vector format for 2D binary images. It is the de facto standard used by printed circuit board (PCB) industry software to describe the printed circuit board images: copper layers, solder mask, legend, etc.Gerber is used in PCB fabrication data. PCBs are designed on a specialized electronic design automation (EDA) or a computer-aided design (CAD) system. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Gerber_format Read more on Wikipedia...
 
-- Tags: application, cad
-- Early development of Gerber Image happened in Ucamco
-- GitHub supports syntax highlighting for Gerber Image
-- See also: (1 related languages) ASCII
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"cad"%5D%7D%5D%2C"logic"%3A"AND"%7D'>cad</a>
+- Early development of Gerber Image happened in <a href="../lists/labs.html#q=Ucamco">Ucamco</a>
+- GitHub supports <a href="https://github.com/Alhadis/language-pcb" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Gerber Image
+- See also: (1 related languages) <a href="ascii.html">ASCII</a>
 
+```Example from <a href='https://github.com/Alhadis/language-pcb'>Linguist</a>:
 G04 #@! TF.FileFunction,Paste,Top*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
@@ -28,6 +29,9 @@ G04 APERTURE END LIST*
 D10*
 M02*
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Gerber_format'>Wikipedia</a>:
 D11*
 X1785250Y2173980D02*
 X1796650Y2177730D01*
@@ -37,5 +41,6 @@ D12*
 X3421095Y1407208D03*
 X1785250Y2173980D03*
 M02*
+```
 
-View source
+Built with Scroll v178.2.3

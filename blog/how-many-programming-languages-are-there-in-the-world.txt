@@ -61,7 +61,7 @@ Jean Sammet was an early computer pioneer, helping developer the COBOL language.
 What do I say?
 ==============
 At the moment I am closely tracking hundreds of programming languages with thousands more in my periphery. Until I have a more comprehensive database across all the languages I track, I'll have to make some estimates.
- https://pldb.io/blog/../lists/languages.html programming languages
+ https://pldb.io/../lists/languages.html programming languages
 
 My current estimate for *active general purpose programming languages is between 500 and 2,000*.
 
@@ -75,9 +75,11 @@ Reproducibility notes
 =====================
 A hard count of programming languages was made by querying the PLDB database, which consists of thousands of human-checked facts about programming languages. Confidence intervals were added ad hoc through spot checking with the reference lists above.
 
+```
 html.h1 How Many Programming Languages are there in the World?
 web.get https://pldb.io/pldb.csv
  filter.where type = pl
   show.rowCount
+```
 
-View source
+Built with Scroll v178.2.3

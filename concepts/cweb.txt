@@ -1,26 +1,27 @@
 CWEB
 ====
 
-CWEB is an open source text markup language created in 1987 by Donald Knuth.
+CWEB is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 1987 by Donald Knuth.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221987%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1987
  https://pldb.io/concepts/../lists/creators.html#q=Donald%20Knuth Donald Knuth
 
-#1069 on PLDB
-37 Years Old
-425 Repos
+#1093 on PLDB
+39 Years Old
+425 <span title="CWEB repos on GitHub.">Repos</span>
 
 CWEB is a computer programming system created by Donald Knuth and Silvio Levy as a follow-up to Knuth's WEB literate programming system, using the C programming language (and to a lesser extent the C++ and Java programming languages) instead of Pascal. Like WEB, it consists of two primary programs: CTANGLE, which produces compilable C code from the source texts, and CWEAVE, which produces nicely-formatted printable documentation using TeX.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/CWEB Read more on Wikipedia...
 
-- Tags: text markup language
-- There are at least 425 CWEB repos on GitHub
-- Early development of CWEB happened in Stanford University
-- The  Google BigQuery Public Dataset GitHub snapshot shows 53 users using CWEB in 53 repos on GitHub
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- There are at least 425 CWEB repos on <a href="https://github.com/search?q=language:CWeb">GitHub</a>
+- Early development of CWEB happened in <a href="../lists/labs.html#q=Stanford University">Stanford University</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 53 users using CWEB in 53 repos on <a href="https://api.github.com/search/repositories?q=language:CWeb">GitHub</a>
 - CWEB on HOPL
  https://hopl.info/showlanguage.prx?exp=1939 CWEB on HOPL
-- See also: (4 related languages) Tex, C, Java, Pascal
-- 1 PLDB concepts link to CWEB: Noweb
+- See also: (4 related languages) <a href="tex.html">Tex</a>, <a href="c.html">C</a>, <a href="java.html">Java</a>, <a href="pascal.html">Pascal</a>
+- 1 PLDB concepts link to CWEB: <a href="noweb.html">Noweb</a>
 
+```Example from the web:
 \datethis
 @*Intro. This program generates clauses for the transition relation
 from time $t$ to time $t+1$ in Conway&#39;s Game of Life, assuming that
@@ -61,9 +62,11 @@ last four neighbors of cell $(10,11)$ are alive.
 Those auxiliary variables receive values by means of up to 77 clauses per cell.
 For example, if $u$ and~$v$ are the neighbors of cell~$z$ that correspond
 to a pairing of type~\.D, there are six clauses
-$\bar u d_1,\quad
+$$\bar u d_1,\quad
   \bar v d_1,\quad
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/CWEB'>Wikipedia</a>:
 % This file is part of CWEB.
  % This program by Silvio Levy and Donald E. Knuth
  % is based on a program by Knuth.
@@ -80,5 +83,6 @@ $\bar u d_1,\quad
  % document under the conditions for verbatim copying, provided that the
  % entire resulting derived work is given a different name and distributed
  % under the terms of a permission notice identical to this one.
+```
 
-View source
+Built with Scroll v178.2.3

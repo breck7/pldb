@@ -1,59 +1,66 @@
 LiveCode
 ========
 
-LiveCode is a programming language created in 2001.
+LiveCode is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2001.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2001
 
-#579 on PLDB
-23 Years Old
+#584 on PLDB
+25 Years Old
 
 LiveCode (formerly Revolution and MetaCard) is a cross-platform rapid application development runtime environment inspired by HyperCard. It features the Transcript (formerly MetaTalk) programming language which belongs to the family of xTalk scripting languages like HyperCard's HyperTalk. The environment was introduced in 2001. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/LiveCode Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of LiveCode happened in LiveCode Ltd
-- There are 1 Project Euler users using LiveCode
-- Explore LiveCode snippets on Rosetta Code
-- LiveCode appears in the TIOBE Index
-- livecode.org was registered in 2012
-- See also: (6 related languages) Linux, Android, iOS, HyperTalk, HyperCard, SQL
-- 1 PLDB concepts link to LiveCode: Revolution
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of LiveCode happened in <a href="../lists/labs.html#q=LiveCode Ltd">LiveCode Ltd</a>
+- There are 1 <a href="https://projecteuler.net/language=LiveCode">Project Euler</a> users using LiveCode
+- Explore LiveCode snippets on <a href="http://www.rosettacode.org/wiki/Category:LiveCode">Rosetta Code</a>
+- LiveCode appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="https://livecode.org/">livecode.org</a> was registered in 2012
+- See also: (6 related languages) <a href="linux.html">Linux</a>, <a href="android.html">Android</a>, <a href="ios.html">iOS</a>, <a href="hypertalk.html">HyperTalk</a>, <a href="hypercard.html">HyperCard</a>, <a href="sql.html">SQL</a>
+- 1 PLDB concepts link to LiveCode: <a href="revolution-programming-language.html">Revolution</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/l/LiveCode'>hello-world</a>:
 answer &quot;Hello World!&quot;
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#LiveCode'>the Hello World Collection</a>:
 -- Hello world in LiveCode (formerly called Revolution, formerly called Transcript)
 
 answer &quot;Hello World!&quot;
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/LiveCode'>Wikipedia</a>:
 put url &quot;binfile:picture.jpg&quot; into url &quot;ftp://john:passwd@ftp.example.net:2121/picture.jpg&quot;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token answer
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token --
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

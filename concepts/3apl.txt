@@ -1,23 +1,24 @@
 3APL
 ====
 
-3APL is a programming language created in 1998.
+3APL is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1998.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221998%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1998
 
-#3192 on PLDB
-26 Years Old
+#3116 on PLDB
+28 Years Old
 
 An Abstract Agent Programming Language or Artificial Autonomous Agents Programming Language or 3APL (pronounced triple-A-P-L) is an experimental tool and programming language for the development, implementation and testing of multiple cognitive agents using the Belief-Desire-Intention (BDI) approach.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/3APL Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of 3APL happened in Computer science Department, Utrecht University
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of 3APL happened in <a href="../lists/labs.html#q=Computer science Department, Utrecht University">Computer science Department, Utrecht University</a>
 - 3APL on HOPL
  https://hopl.info/showlanguage.prx?exp=7802 3APL on HOPL
-- See also: (3 related languages) Java, Prolog, Strips
+- See also: (3 related languages) <a href="java.html">Java</a>, <a href="prolog.html">Prolog</a>, <a href="strips.html">Strips</a>
 - Read more about 3APL on Semantic Scholar: 1.
  https://semanticscholar.org/paper/5167cbb780bac55456a0f69c16f175eb61269c8d 1.
 
+```Example from <a href='https://en.wikipedia.org/wiki/3APL'>Wikipedia</a>:
 PLANBASE { SetStatus(started); }
 PR-RULES {
 	goTo(R) &lt;- location(R,X,Y) AND NOT at(X,Y) | {
@@ -27,5 +28,6 @@ PR-RULES {
 		Clean(R);
 	}
 }
+```
 
-View source
+Built with Scroll v178.2.3

@@ -1,19 +1,20 @@
 Sweave
 ======
 
-Sweave is a template language created in 2002.
+Sweave is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22template%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">template language</a> created in 2002.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222002%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2002
 
-#2626 on PLDB
-22 Years Old
+#2723 on PLDB
+24 Years Old
 
 Sweave is a function in the statistical programming language R that enables integration of R code into LaTeX or LyX documents. The purpose is "to create dynamic reports, which can be updated automatically if data or analysis change".The data analysis is performed at the moment of writing the report, or more exactly, at the moment of compiling the Sweave code with Sweave (i.e., essentially with R) and subsequently with LaTeX. This can facilitate the creation of up-to-date reports for the author. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Sweave Read more on Wikipedia...
 
-- Tags: template language
-- Sweave compiles to LaTeX
-- See also: (4 related languages) R, LaTeX, LyX, Knitr
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"template"%5D%7D%5D%2C"logic"%3A"AND"%7D'>template language</a>
+- Sweave compiles to <a href="latex.html">LaTeX</a>
+- See also: (4 related languages) <a href="r.html">R</a>, <a href="latex.html">LaTeX</a>, <a href="lyx-editor.html">LyX</a>, <a href="knitr.html">Knitr</a>
 
+```Example from the web:
 %-------------------------------------------
 \section{Introduction}
 %--------------------------------------------
@@ -28,5 +29,6 @@ print(&quot;hello&quot;)
 @
 
 We can call R commands from the text. For example a+b= \Sexpr{a+b}
+```
 
-View source
+Built with Scroll v178.2.3

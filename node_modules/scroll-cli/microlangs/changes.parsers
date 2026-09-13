@@ -1,7 +1,7 @@
 // Changes: A Microlang for Change Logs.
 
 versionParser
- crux 📦
+ cue 📦
  atoms cueAtom semanticVersionAtom dateAtom
  description What is the semantic version number?
  extends h1Parser
@@ -17,16 +17,16 @@ versionParser
   measureName = "version"
 
 bugFixParser
- crux 🏥
+ cue 🏥
  extends abstractCustomListItemParser
 newFeatureParser
- crux 🎉
+ cue 🎉
  extends abstractCustomListItemParser
 breakingChangeParser
- crux ⚠️
+ cue ⚠️
  extends abstractCustomListItemParser
 styleTweakParser
- crux 🎨
+ cue 🎨
  extends abstractCustomListItemParser
 
 releaseDateParser

@@ -1,23 +1,25 @@
 tea
 ===
 
-tea is an open source package manager created in 2021 by Max Howell.
+tea is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22packageManager%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">package manager</a> created in 2021 by Max Howell.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2021
  https://pldb.io/concepts/../lists/creators.html#q=Max%20Howell Max Howell
 
-#294 on PLDB
-3 Years Old
+#317 on PLDB
+5 Years Old
 
+```Download source code:
 git clone https://github.com/teaxyz/cli
+```
 
 From the creator of brew, tea is a standalone, binary download for all platforms that puts the entire open source ecosystem at your fingertips. Casually and effortlessly use the latest and greatest or the oldest and most mature from any layer of any stack. Break down the silos between programming communities, throw together scripts that use entirely separate tools and languages and share them with the world with a simple one-liner.All you need is tea.
 
-- Tags: packageManager
-- tea is developed on GitHub and has 8,817 stars
-- Early development of tea happened in tea inc
-- Homebrew influenced the design of tea
-- tea is written in TypeScript, YAML, Markdown, JSON, TOML, Bourne shell, Dockerfile
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"packageManager"%5D%7D%5D%2C"logic"%3A"AND"%7D'>packageManager</a>
+- tea is developed on <a href="https://github.com/teaxyz/cli">GitHub</a> and has 8,817 stars
+- Early development of tea happened in <a href="../lists/labs.html#q=tea inc">tea inc</a>
+- <a href="homebrew-pm.html">Homebrew</a> influenced the design of tea
+- tea is written in <a href="typescript.html">TypeScript</a>, <a href="yaml.html">YAML</a>, <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>, <a href="toml.html">TOML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="dockerfile.html">Dockerfile</a>
 - Read more about tea on the web: 1.
  https://tea.xyz/white-paper/ 1.
 
-View source
+Built with Scroll v178.2.3

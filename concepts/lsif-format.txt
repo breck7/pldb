@@ -1,22 +1,25 @@
 Language Server Index Format
 ============================
 
-Language Server Index Format, aka Language Server Index Format, is a json format created in 2019 by Dan Adler.
+Language Server Index Format, aka Language Server Index Format, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22jsonFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">json format</a> created in 2019 by Dan Adler.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2019
  https://pldb.io/concepts/../lists/creators.html#q=Dan%20Adler Dan Adler
 
-#1405 on PLDB
-5 Years Old
+#1440 on PLDB
+7 Years Old
 
+```Download source code:
 git clone https://github.com/lsif/lsif.github.io
+```
 
 https://lsif.dev
 
-- Tags: jsonFormat
-- Language Server Index Format is developed on GitHub and has 17 stars
-- Early development of Language Server Index Format happened in Sourcegraph
-- Language Server Index Format is written in HTML, CSS, Markdown
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"jsonFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>jsonFormat</a>
+- Language Server Index Format is developed on <a href="https://github.com/lsif/lsif.github.io">GitHub</a> and has 17 stars
+- Early development of Language Server Index Format happened in <a href="../lists/labs.html#q=Sourcegraph">Sourcegraph</a>
+- Language Server Index Format is written in <a href="html.html">HTML</a>, <a href="css.html">CSS</a>, <a href="markdown.html">Markdown</a>
 
+```Example from the web:
 // a vertex representing the document
 { id: 1, type: &quot;vertex&quot;, label: &quot;document&quot;, uri: &quot;file:///Users/username/sample.ts&quot;, languageId: &quot;typescript&quot; }
 // a vertex representing the range for the identifier bar
@@ -33,29 +36,30 @@ https://lsif.dev
 }
 // an edge linking the hover result to the range.
 { id: 7, type: &quot;edge&quot;, label: &quot;textDocument/hover&quot;, outV: 4, inV: 6 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

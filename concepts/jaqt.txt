@@ -1,20 +1,24 @@
 jaqt
 ====
 
-jaqt is a query language created in 2023 by Auke van Slooten.
+jaqt is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22queryLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">query language</a> created in 2023 by Auke van Slooten.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222023%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2023
  https://pldb.io/concepts/../lists/creators.html#q=Auke%20van%20Slooten Auke van Slooten
 
-#3621 on PLDB
-1 Years Old
+#2280 on PLDB
+3 Years Old
 
+```Download source code:
 git clone https://github.com/muze-nl/jaqt
+```
 
 GraphQL-style Array.select() and Array.where() for javascript
 
-- Tags: queryLanguage, library
-- jaqt is developed on GitHub and has 108 stars
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"queryLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>queryLanguage</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"library"%5D%7D%5D%2C"logic"%3A"AND"%7D'>library</a>
+- jaqt is developed on <a href="https://github.com/muze-nl/jaqt">GitHub</a> and has 108 stars
+- jaqt is written in <a href="javascript.html">JavaScript</a>, <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>
 
+```Example from the web:
 from(data.people)
 .select({
     metrics: {
@@ -22,5 +26,6 @@ from(data.people)
     },
     lastName:_
 })
+```
 
-View source
+Built with Scroll v178.2.3

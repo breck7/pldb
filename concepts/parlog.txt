@@ -1,22 +1,23 @@
 Parlog
 ======
 
-Parlog is a programming language created in 1983 by Steve Gregory and Keith L. Clark.
+Parlog is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1983 by Steve Gregory and Keith L. Clark.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221983%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1983
  https://pldb.io/concepts/../lists/creators.html#q=Steve%20Gregory Steve Gregory
  https://pldb.io/concepts/../lists/creators.html#q=Keith%20L.%20Clark Keith L. Clark
 
-#1809 on PLDB
-41 Years Old
+#1879 on PLDB
+43 Years Old
 
 Parlog is a logic programming language designed for efficient utilization of parallel computer architectures. Its semantics is based on first order predicate logic. It expresses concurrency, interprocess communication, indeterminacy and synchronization within the declarative language framework.It was designed at Imperial College, London by Steve Gregory and Keith L. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Parlog Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Parlog happened in Imperial College
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Parlog happened in <a href="../lists/labs.html#q=Imperial College">Imperial College</a>
 - Parlog on HOPL
  https://hopl.info/showlanguage.prx?exp=1049 Parlog on HOPL
 
+```Example from the web:
 mode qsort(list?,sorted_list^).
 qsort([N|Rest],Sorted) &lt;-
 partition(N,Rest,LessN,MoreN),
@@ -24,5 +25,6 @@ qsort(LessN,SortedLess),
 qsort(MoreN,SortedMore),
 append(SortedLess,[N|SortedMore],Sorted).
 qsort([],[]).
+```
 
-View source
+Built with Scroll v178.2.3

@@ -1,21 +1,24 @@
 GNU Poke
 ========
 
-GNU Poke is an open source programming language created in 2017 by Jose E. Marchesi.
+GNU Poke is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2017 by Jose E. Marchesi.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2017
  https://pldb.io/concepts/../lists/creators.html#q=Jose%20E.%20Marchesi Jose E. Marchesi
 
-#1333 on PLDB
-7 Years Old
+#1356 on PLDB
+9 Years Old
 
+```Download source code:
 git clone https://git.savannah.gnu.org/git/poke.git
+```
 
 GNU poke is a new interactive editor for binary data. Not limited to editing basic entities such as bits and bytes, it provides a full-fledged procedural, interactive programming language designed to describe data structures and to operate on them.
 
-- Tags: programming language, editor
-- Guile influenced the design of GNU Poke
-- GNU Poke is written in C, Make, Expect, M4, Bourne shell, Lex, Yacc, Vim script, CSS, Lisp, sed, awk, Scheme, Nix, Pascal
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"editor"%5D%7D%5D%2C"logic"%3A"AND"%7D'>editor</a>
+- <a href="guile.html">Guile</a> influenced the design of GNU Poke
+- GNU Poke is written in <a href="c.html">C</a>, <a href="make.html">Make</a>, <a href="expect.html">Expect</a>, <a href="m4.html">M4</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="lex.html">Lex</a>, <a href="yacc.html">Yacc</a>, <a href="vim-script.html">Vim script</a>, <a href="css.html">CSS</a>, <a href="lisp.html">Lisp</a>, <a href="sed.html">sed</a>, <a href="awk.html">awk</a>, <a href="scheme.html">Scheme</a>, <a href="nix.html">Nix</a>, <a href="pascal.html">Pascal</a>
 
+```Example from the web:
 # The following two lines are dot commands
 .load my-pickle.pk
 .set obase 16
@@ -26,17 +29,18 @@ dump :size 0x100#B :from 0x10#B
 # The following line is a Poke expression statement without any side effect.
 # Consequently it is valid, but rather useless.
 4 == 4
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   #!/usr/bin/poke -L
   !#
  Token
 
-View source
+Built with Scroll v178.2.3

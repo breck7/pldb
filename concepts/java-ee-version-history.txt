@@ -1,19 +1,20 @@
 Java EE version history
 =======================
 
-Java EE version history is a programming language created in 1998.
+Java EE version history is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1998.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221998%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1998
 
-#3233 on PLDB
-26 Years Old
+#3354 on PLDB
+28 Years Old
 
 Java Platform, Enterprise Edition (Java EE), formerly Java 2 Platform, Enterprise Edition (J2EE), currently Jakarta EE, is a set of specifications, extending Java SE 8 (i.e. not based on latest Java 11; while can also work with later it or later than Java 8) with specifications for enterprise features such as distributed computing and web services. Java EE applications are run on reference runtimes, that can be microservices or application servers, which handle transactions, security, scalability, concurrency and management of the components it is deploying. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Java_EE_version_history Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Java EE version history happened in Oracle
-- See also: (3 related languages) JSP, Facelets, Java EE version history
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Java EE version history happened in <a href="../lists/labs.html#q=Oracle">Oracle</a>
+- See also: (3 related languages) <a href="java-server-pages.html">JSP</a>, <a href="facelets.html">Facelets</a>, <a href="java-ee-version-history.html">Java EE version history</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Java_EE_version_history'>Wikipedia</a>:
 @Entity
 public class User {
 
@@ -52,5 +53,6 @@ public class User {
     }
 
 }
+```
 
-View source
+Built with Scroll v178.2.3

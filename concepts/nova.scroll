@@ -1,0 +1,28 @@
+../code/conceptPage.scroll
+
+id nova
+name NOVA
+appeared 2026
+creators Hesara Perera
+tags pl
+website https://github.com/ieeecsopen/NOVA
+description NOVA is a constraint-native programming language unifying object-capability security and row-typed effect systems. Authority to touch the outside world (Runtime, Clock, Filesystem, Network) is an unforgeable token passed explicitly rather than granted by import, and a function's effects are checked as part of its type signature, so a closure cannot silently launder a captured capability into a context that expects a pure function. 0.2 research preview: the frontend (lexer, parser, Hindley-Milner type inference, effect and capability checking) and a reference interpreter are implemented and tested against a 49-case conformance suite, alongside a first-order native C backend for a subset of the language.
+fileExtensions nova
+license Apache-2.0
+isOpenSource true
+writtenIn python
+
+lineCommentToken //
+multiLineCommentTokens /* */
+hasComments true
+hasMultiLineComments true
+hasStrings true
+hasStaticTyping true
+hasTypeInference true
+hasPatternMatching true
+hasAnonymousFunctions true
+
+githubRepo https://github.com/ieeecsopen/NOVA
+ stars 7
+ forks 4
+ created 2026

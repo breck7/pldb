@@ -5,9 +5,9 @@ tags Feature
 printTitle Structs
 
 <a class="trueBaseThemePreviousItem" href="hasStrings.html">&lt;</a>
-<a class="trueBaseThemeNextItem" href="hasSwitch.html">&gt;</a>
+<a class="trueBaseThemeNextItem" href="hasStructuralTyping.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -19,12 +19,22 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c.html">C</
    float balance;
  };
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/chapel.html">Chapel</a>
+ record
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3</a>
  struct Test
  {
     int x;
     float y;
     String z;
+ }
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/moonbit.html">MoonBit</a>
+ struct User {
+  id: Int
+  name: String
+  mut email: String
  }
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/wax.html">Wax</a>
@@ -40,6 +50,9 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">
      salary: f32
  }
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/mmcif.html">mmCIF</a>
+ _struct.title
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
  struct Fuel
   |int| A
@@ -52,7 +65,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ion.html">I
 
 ***
 
-* Languages *with* Structs include <a href="../concepts/c.html">C</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/c2.html">C2</a>, <a href="../concepts/wax.html">Wax</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/ion.html">Ion</a>
+* Languages *with* Structs include <a href="../concepts/c.html">C</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/moonbit.html">MoonBit</a>, <a href="../concepts/c2.html">C2</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/wax.html">Wax</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/mmcif.html">mmCIF</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/ion.html">Ion</a>
 
 ***
 
@@ -65,6 +78,6 @@ View all concepts with or missing a *hasStructs* measurement
 * Read more about Structs on the web: 1.
  https://en.wikipedia.org/wiki/Struct_(C_programming_language) 1.
 
-keyboardNav hasStrings.html hasSwitch.html
+keyboardNav hasStrings.html hasStructuralTyping.html
 
 ../footer.scroll

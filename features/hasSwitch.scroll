@@ -4,10 +4,10 @@ title Switch Statements - language feature
 tags Feature
 printTitle Switch Statements
 
-<a class="trueBaseThemePreviousItem" href="hasStructs.html">&lt;</a>
+<a class="trueBaseThemePreviousItem" href="hasStructuralTyping.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasSymbolTables.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -27,6 +27,15 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c.html">C</
     break;
  }
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/python.html">Python</a>
+ match x:
+   case 0:
+     print(&quot;zero&quot;)
+   case 1:
+     print(&quot;one&quot;)
+   case _:
+     print(f&quot;other: {x}&quot;)
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/pug.html">Pug</a>
  - var friends = 10
  case friends
@@ -36,6 +45,9 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/pug.html">P
      p you have a friend
    default
      p you have #{friends} friends
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/chapel.html">Chapel</a>
+ select
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3</a>
  switch(expression)
@@ -72,7 +84,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">
 
 ***
 
-* Languages *with* Switch Statements include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/php.html">PHP</a>, <a href="../concepts/go.html">Go</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/powershell.html">PowerShell</a>, <a href="../concepts/swift.html">Swift</a>, <a href="../concepts/coffeescript.html">CoffeeScript</a>, <a href="../concepts/objective-c.html">Objective-C</a>, <a href="../concepts/dart.html">Dart</a>, <a href="../concepts/reason.html">Reason</a>, <a href="../concepts/pug.html">Pug</a>, <a href="../concepts/groovy.html">Groovy</a>, <a href="../concepts/abap.html">ABAP</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/wolfram.html">Wolfram Language</a>, <a href="../concepts/slope.html">Slope</a>, <a href="../concepts/flow9.html">Flow9</a>, <a href="../concepts/x10.html">X10</a>, <a href="../concepts/angelscript.html">Angelscript</a>, <a href="../concepts/apex.html">Apex</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/jspp.html">JS++</a>
+* Languages *with* Switch Statements include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/php.html">PHP</a>, <a href="../concepts/go.html">Go</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/powershell.html">PowerShell</a>, <a href="../concepts/swift.html">Swift</a>, <a href="../concepts/coffeescript.html">CoffeeScript</a>, <a href="../concepts/objective-c.html">Objective-C</a>, <a href="../concepts/dart.html">Dart</a>, <a href="../concepts/reason.html">Reason</a>, <a href="../concepts/pug.html">Pug</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/groovy.html">Groovy</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/abap.html">ABAP</a>, <a href="../concepts/wa.html">Wa-lang</a>, <a href="../concepts/wolfram.html">Wolfram Language</a>, <a href="../concepts/slope.html">Slope</a>, <a href="../concepts/x10.html">X10</a>, <a href="../concepts/flow9.html">Flow9</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/angelscript.html">Angelscript</a>, <a href="../concepts/apex.html">Apex</a>, <a href="../concepts/jspp.html">JS++</a>
 
 ***
 
@@ -89,6 +101,6 @@ View all concepts with or missing a *hasSwitch* measurement
 * Read more about Switch Statements on the web: 1.
  https://en.wikipedia.org/wiki/Switch_statement 1.
 
-keyboardNav hasStructs.html hasSymbolTables.html
+keyboardNav hasStructuralTyping.html hasSymbolTables.html
 
 ../footer.scroll

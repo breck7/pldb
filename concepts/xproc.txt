@@ -1,23 +1,24 @@
 XProc
 =====
 
-XProc is a programming language created in 1990.
+XProc is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1990.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1990
 
-#1325 on PLDB
-34 Years Old
-93 Repos
+#1387 on PLDB
+36 Years Old
+93 <span title="XProc repos on GitHub.">Repos</span>
 
 XProc is a W3C Recommendation to define an XML transformation language to define XML Pipelines. Below is an example abbreviated XProc file:  This is a pipeline that consists of two atomic steps, XInclude and Validate. The pipeline itself has three inputs, “source” (a source document), “schemas” (a list of W3C XML Schemas) and  “parameters” (for passing parameters). Read more on Wikipedia...
  https://en.wikipedia.org/wiki/XProc Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 93 XProc repos on GitHub
-- The  Google BigQuery Public Dataset GitHub snapshot shows 174 users using XProc in 223 repos on GitHub
-- Explore XProc snippets on Rosetta Code
-- GitHub supports syntax highlighting for XProc
-- See also: (4 related languages) XML, Java, XQuery, XPath
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 93 XProc repos on <a href="https://github.com/search?q=language:XProc">GitHub</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 174 users using XProc in 223 repos on <a href="https://api.github.com/search/repositories?q=language:XProc">GitHub</a>
+- Explore XProc snippets on <a href="http://www.rosettacode.org/wiki/Category:XProc">Rosetta Code</a>
+- GitHub supports <a href="https://github.com/textmate/xml.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for XProc
+- See also: (4 related languages) <a href="xml.html">XML</a>, <a href="java.html">Java</a>, <a href="xquery.html">XQuery</a>, <a href="xpath.html">XPath</a>
 
+```Example from <a href='https://github.com/textmate/xml.tmbundle'>Linguist</a>:
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;p:declare-step xmlns:p=&quot;http://www.w3.org/ns/xproc&quot;
     xmlns:c=&quot;http://www.w3.org/ns/xproc-step&quot; version=&quot;1.0&quot;&gt;
@@ -29,7 +30,9 @@ XProc is a W3C Recommendation to define an XML transformation language to define
     &lt;p:output port=&quot;result&quot;/&gt;
     &lt;p:identity/&gt;
 &lt;/p:declare-step&gt;
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/XProc'>Wikipedia</a>:
 &lt;p:pipeline name=&quot;pipeline&quot; xmlns:p=&quot;http://www.w3.org/ns/xproc&quot;
   version=&quot;1.0&quot;&gt;
   &lt;p:input port=&quot;schemas&quot; sequence=&quot;true&quot;/&gt;
@@ -49,5 +52,6 @@ XProc is a W3C Recommendation to define an XML transformation language to define
     &lt;/p:input&gt;
   &lt;/p:validate-with-xml-schema&gt;
 &lt;/p:pipeline&gt;
+```
 
-View source
+Built with Scroll v178.2.3

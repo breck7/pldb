@@ -95,7 +95,6 @@ linguistGrammarRepo https://github.com/bitbased/sublime-spintools
   '' Prints signed decimal value in space-padded, fixed-width field
   
     lcd.str(num.decf(value, width))
-    
   
   PUB decx(value, digits)
   
@@ -145,7 +144,6 @@ linguistGrammarRepo https://github.com/bitbased/sublime-spintools
   '' Moves cursor to 0, 0
   
     lcd.home
-    
   
   PUB gotoxy(col, line)
   

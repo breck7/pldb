@@ -1,4 +1,4 @@
-replaceJs CURRENT_YEAR dayjs().format("YYYY")
+replaceJs CURRENT_YEAR require("dayjs")().format("YYYY")
 
 ## Citation
 PLDB content is published to the public domain and you can use it freely. If needed, here are 3 options for citing PLDB:

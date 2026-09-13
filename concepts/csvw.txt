@@ -1,24 +1,27 @@
 CSVw
 ====
 
-CSVw, aka CSV on the Web, is a data validation language created in 2014 by Ivan Herman.
+CSVw, aka CSV on the Web, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataValidationLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data validation language</a> created in 2014 by Ivan Herman.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
  https://pldb.io/concepts/../lists/creators.html#q=Ivan%20Herman Ivan Herman
 
-#1044 on PLDB
-10 Years Old
+#1085 on PLDB
+12 Years Old
 
+```Download source code:
 git clone https://github.com/w3c/csvw
+```
 
 The CSV on the Web Working Group has developed standard ways to express useful metadata about CSV files and other kinds of tabular data.
 
-- Tags: dataValidationLanguage
-- CSVw is developed on GitHub and has 162 stars
-- Early development of CSVw happened in CSV on the Web Working Group and CSV on the Web Community Group
-- CSVw is written in JSON, CSV, HTML, Markdown, JavaScript, Bourne shell, SVG, XML, Ruby, HAML, CSS, Python, YAML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataValidationLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataValidationLanguage</a>
+- CSVw is developed on <a href="https://github.com/w3c/csvw">GitHub</a> and has 162 stars
+- Early development of CSVw happened in <a href="../lists/labs.html#q=CSV on the Web Working Group">CSV on the Web Working Group</a> and <a href="../lists/labs.html#q=CSV on the Web Community Group">CSV on the Web Community Group</a>
+- CSVw is written in <a href="json.html">JSON</a>, <a href="csv.html">CSV</a>, <a href="html.html">HTML</a>, <a href="markdown.html">Markdown</a>, <a href="javascript.html">JavaScript</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="svg.html">SVG</a>, <a href="xml.html">XML</a>, <a href="ruby.html">Ruby</a>, <a href="haml.html">HAML</a>, <a href="css.html">CSS</a>, <a href="python.html">Python</a>, <a href="yaml.html">YAML</a>
 - Read more about CSVw on the web: 1.
  https://www.w3.org/TR/tabular-data-primer/ 1.
 
+```Example from the web:
 {
   &quot;@context&quot;: &quot;http://www.w3.org/ns/csvw&quot;,
   &quot;url&quot;: &quot;countries.csv&quot;,
@@ -47,5 +50,6 @@ The CSV on the Web Working Group has developed standard ways to express useful m
     }]
   }
 }
+```
 
-View source
+Built with Scroll v178.2.3

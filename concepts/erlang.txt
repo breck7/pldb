@@ -1,68 +1,79 @@
 Erlang
 ======
 
-Erlang is an open source programming language created in 1986 by Joe Armstrong and Robert Virding and Mike Williams.
+Erlang is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1986 by Joe Armstrong and Robert Virding and Mike Williams.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1986
  https://pldb.io/concepts/../lists/creators.html#q=Joe%20Armstrong Joe Armstrong
  https://pldb.io/concepts/../lists/creators.html#q=Robert%20Virding Robert Virding
  https://pldb.io/concepts/../lists/creators.html#q=Mike%20Williams Mike Williams
 
 #30 on PLDB
-38 Years Old
-29k Repos
+40 Years Old
+29k <span title="Erlang repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/erlang/otp
+```
 
 Erlang ( ER-lang) is a general-purpose, concurrent, functional programming language, as well as a garbage-collected runtime system. The term Erlang is used interchangeably with Erlang/OTP, or OTP, which consists of the Erlang runtime system, a number of ready-to-use components mainly written in Erlang, and a set of design principles for Erlang programs. The Erlang runtime system is known for its designs that are well suited for systems with the following characteristics: Distributed Fault-tolerant Soft real-time, Highly available, non-stop applications Hot swapping, where code can be changed without stopping a system. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Erlang_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Erlang is developed on GitHub and has 11,203 stars
-- There are at least 28,645 Erlang repos on GitHub
-- Early development of Erlang happened in Ericsson
-- Erlang is written in Erlang, C, Markdown, Make, JSON, Bourne shell, C++, XML, Java, Elixir, XSD, Assembly language, Python, HTML, SQL, Perl, Lisp, D, M4, YAML, sed, Bash, Dockerfile, Ini, DTD, CSS, JavaScript, Diff, SVG, XSLT, plantuml
-- The  Google BigQuery Public Dataset GitHub snapshot shows 9k users using Erlang in 15k repos on GitHub
-- Check out the 306 Erlang meetup groups on Meetup.com.
-- There are 9,057 members in the Erlang subreddit
-- There are 618 Project Euler users using Erlang
-- In the 2021 StackOverflow developer survey Erlang programmers reported a median salary of $80,077. 1% of respondents reported using Erlang. 651 programmers reported using Erlang, and 1,379 said they wanted to use it
-- Explore Erlang snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Erlang is developed on <a href="https://github.com/erlang/otp">GitHub</a> and has 11,203 stars
+- There are at least 28,645 Erlang repos on <a href="https://github.com/search?q=language:Erlang">GitHub</a>
+- Early development of Erlang happened in <a href="../lists/labs.html#q=Ericsson">Ericsson</a>
+- Erlang is written in <a href="erlang.html">Erlang</a>, <a href="c.html">C</a>, <a href="markdown.html">Markdown</a>, <a href="make.html">Make</a>, <a href="json.html">JSON</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="cpp.html">C++</a>, <a href="xml.html">XML</a>, <a href="java.html">Java</a>, <a href="elixir.html">Elixir</a>, <a href="xsd.html">XSD</a>, <a href="assembly-language.html">Assembly language</a>, <a href="python.html">Python</a>, <a href="html.html">HTML</a>, <a href="sql.html">SQL</a>, <a href="perl.html">Perl</a>, <a href="lisp.html">Lisp</a>, <a href="d.html">D</a>, <a href="m4.html">M4</a>, <a href="yaml.html">YAML</a>, <a href="sed.html">sed</a>, <a href="bash.html">Bash</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="ini.html">Ini</a>, <a href="dtd.html">DTD</a>, <a href="css.html">CSS</a>, <a href="javascript.html">JavaScript</a>, <a href="diff.html">Diff</a>, <a href="svg.html">SVG</a>, <a href="xslt.html">XSLT</a>, <a href="plantuml.html">plantuml</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 9k users using Erlang in 15k repos on <a href="https://api.github.com/search/repositories?q=language:Erlang">GitHub</a>
+- Check out the 306 <a href="https://www.meetup.com/topics/erlang-programming/">Erlang meetup groups</a> on Meetup.com.
+- There are 9,057 members in the <a href="https://reddit.com/r/erlang">Erlang subreddit</a>
+- There are 618 <a href="https://projecteuler.net/language=Erlang">Project Euler</a> users using Erlang
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> Erlang programmers reported a median salary of $80,077. 1% of respondents reported using Erlang. 651 programmers reported using Erlang, and 1,379 said they wanted to use it
+- Explore Erlang snippets on <a href="http://www.rosettacode.org/wiki/Category:Erlang">Rosetta Code</a>
 - Erlang on HOPL
  https://hopl.info/showlanguage.prx?exp=1728 Erlang on HOPL
-- Erlang ranks #49 in the TIOBE Index
+- Erlang ranks #49 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - Erlang Ubuntu package
  https://packages.ubuntu.com/jammy/erlang Erlang Ubuntu package
-- ANTLR grammar for Erlang
-- Erlang LSP implementation
-- CodeMirror package for syntax highlighting Erlang
-- Pygments supports syntax highlighting for Erlang
-- GitHub supports syntax highlighting for Erlang
-- Erlang appears in the Quine Relay project
-- Learn Erlang on exercism.
-- PLDB has 2 Jupyter Kernels for Erlang: github.com, github.com
-- There is a central package repository for Erlang
-- Indeed.com has 183 matches for "erlang engineer".
-- erlang.org was registered in 1998
-- See also: (17 related languages) Prolog, Smalltalk, PLEX, F#, Clojure, Rust, Scala, Opa, Elixir, Dart, Oz, Java, ASCII, Occam, CSP, LFE, Lisp
-- 14 PLDB concepts link to Erlang: Ace Editor, Alpaca, Caramel, CouchDB, cuneiform, DRAKON, Elixir, Erlang, Gleam, hamler, mal, Pygments, Reia, Sophia
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/erlang">grammar</a> for Erlang
+- Erlang <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/erlang/sourcer">implementation</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/erlang">package</a> for syntax highlighting Erlang
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/erlang.py">syntax highlighting</a> for Erlang
+- GitHub supports <a href="https://github.com/textmate/erlang.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Erlang
+- Erlang appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Learn <a href="https://exercism.org/tracks/erlang">Erlang on exercism.</a>
+- PLDB has 2 <a href="jupyter-notebook.html">Jupyter</a> Kernels for Erlang: <a href="https://github.com/robbielynch/ierlang">github.com</a>, <a href="https://github.com/filmor/ierl">github.com</a>
+- There is a <a href="https://hex.pm/">central package repository</a> for Erlang
+- Indeed.com has 183 matches for <a href="https://www.indeed.com/jobs?q=erlang engineer">"erlang engineer"</a>.
+- <a href="https://www.erlang.org">erlang.org</a> was registered in 1998
+- See also: (17 related languages) <a href="prolog.html">Prolog</a>, <a href="smalltalk.html">Smalltalk</a>, <a href="plex.html">PLEX</a>, <a href="f-sharp.html">F#</a>, <a href="clojure.html">Clojure</a>, <a href="rust.html">Rust</a>, <a href="scala.html">Scala</a>, <a href="opa.html">Opa</a>, <a href="elixir.html">Elixir</a>, <a href="dart.html">Dart</a>, <a href="oz.html">Oz</a>, <a href="java.html">Java</a>, <a href="ascii.html">ASCII</a>, <a href="occam.html">Occam</a>, <a href="csp.html">CSP</a>, <a href="lfe.html">LFE</a>, <a href="lisp.html">Lisp</a>
+- 15 PLDB concepts link to Erlang: <a href="ace.html">Ace Editor</a>, <a href="alpaca.html">Alpaca</a>, <a href="axio.html">Axio</a>, <a href="caramel.html">Caramel</a>, <a href="couchdb.html">CouchDB</a>, <a href="cuneiform.html">cuneiform</a>, <a href="drakon.html">DRAKON</a>, <a href="elixir.html">Elixir</a>, <a href="erlang.html">Erlang</a>, <a href="gleam.html">Gleam</a>, <a href="hamler.html">hamler</a>, <a href="mal.html">mal</a>, <a href="pygments.html">Pygments</a>, <a href="reia.html">Reia</a>, <a href="sophia.html">Sophia</a>
 
+```Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
 -module(square).
 -export([square/1]).
 
 square(A) -&gt; A*A.
 
+```
+
+```Example from <a href='https://riju.codes/erlang'>Riju</a>:
 -module(main).
 -export([main/0]).
 
 main() -&gt;
     io:fwrite(&quot;Hello, world!\n&quot;).
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/e/Erlang.erl'>hello-world</a>:
 -module(erlang_hw).
 -export([start/0]).
 
 start() -&gt;
   io:format(&quot;Hello World~n&quot;).
+```
 
+```Example from <a href='http://helloworldcollection.de/#Erlang'>the Hello World Collection</a>:
 %% Hello World in Erlang
 
 -module(hello).
@@ -72,11 +83,17 @@ start() -&gt;
 hello() -&gt;
    io:format(&quot;Hello World!~n&quot;, []).
 
+```
+
+```Example from <a href='https://github.com/textmate/erlang.tmbundle'>Linguist</a>:
 #!/usr/bin/env escript
 -export([main/1]).
 
 main([]) -&gt; io:format(&quot;Hello, World!~n&quot;).
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Erlang_(programming_language)'>Wikipedia</a>:
 %% Second version
   -module(counter).
   -export([start/0, codeswitch/1]).
@@ -97,68 +114,71 @@ main([]) -&gt; io:format(&quot;Hello, World!~n&quot;).
     end.
 
   codeswitch(Sum) -&gt; loop(Sum).
+```
 
+```Erlang <a href="../lists/keywords.html#q=erlang">Keywords</a>
 after and andalso begin bnot bor bsl bsr bxor case catch cond div end fun if let not of or orelse receive rem try when xor
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Standard Library
  FeatureLink ../features/hasStandardLibrary.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   io:format("Hello, World!~n").
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % [+-]?(?:[2-9]|[12][0-9]|3[0-6])#[0-9a-zA-Z]+
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % [+-]?\d+.\d+
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token io:format
 row
  Feature Message Passing
  FeatureLink ../features/hasMessagePassing.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % A comment
  Token %
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -define(Const, Replacement).
   -define(Func(Var1,...,VarN), Replacement).
@@ -166,14 +186,14 @@ row
 row
  Feature hasExports
  FeatureLink ../features/hasExports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -export([start/0, codeswitch/1]).
  Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -include("my_records.hrl").
   -include("incdir/my_records.hrl").
@@ -184,7 +204,7 @@ row
 row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -define(TIMEOUT, 200).
   ...
@@ -195,41 +215,41 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % A comment
  Token 
 row
  Feature Shebang
  FeatureLink ../features/canDoShebang.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   #!/usr/bin/env escript
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "hello world"
  Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

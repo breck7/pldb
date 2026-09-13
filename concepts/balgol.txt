@@ -1,20 +1,21 @@
 BALGOL
 ======
 
-BALGOL is a programming language created in 1959 by Bob Barton.
+BALGOL is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1959 by Bob Barton.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221959%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1959
  https://pldb.io/concepts/../lists/creators.html#q=Bob%20Barton Bob Barton
 
-#2025 on PLDB
-65 Years Old
+#2108 on PLDB
+67 Years Old
 
-- Tags: programming language
-- Early development of BALGOL happened in Burroughs
-- ALGOL 58 and Fortran influenced the design of BALGOL
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of BALGOL happened in <a href="../lists/labs.html#q=Burroughs">Burroughs</a>
+- <a href="algol-58.html">ALGOL 58</a> and <a href="fortran.html">Fortran</a> influenced the design of BALGOL
 - Read more about BALGOL on the web: 1. 2.
  https://datatron.blogspot.com/2018/08/balgol-burroughs-algebraic-compiler.html 1.
  https://www.digm.com/UNITE/2019/2019-Origins-Burroughs-Algol.pdf 2.
 
+```Example from the web:
 INTEGER I..., J..., K..., L..., M..., N...$
 BOOLEAN KEEP, LAST$
 REAL MAT..., JOULES$
@@ -29,62 +30,63 @@ UNTIL A &gt; 125 OR OUTTAHERE$
    OUTTAHERE = A EQL 77$
    A = A + 3
    END$
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   EITHER IF A > B$ FWD = 1$ OTHERWISE$ FWD = 0$
  Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ALPHA = BETA = GAMMA = 2DELTA + 1$
  Token 
 row
  Feature Expressions
  FeatureLink ../features/hasExpressions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ALPHA + BETA / GAMMA
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   FUNCTION TORADS(DEGREES) = DEGREES . 3.1415926/180$
  Token 
 row
  Feature Lists
  FeatureLink ../features/hasLists.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ARRAY MONTHDAYS(12) = (31,28,31,30,31,30,31,31,30,31,30,31)$
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

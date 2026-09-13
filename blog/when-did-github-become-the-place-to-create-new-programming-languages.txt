@@ -87,6 +87,7 @@ appeared,newLangs,repoOnGitHubSameYear,percent
 2017,26,15,58
 2018,7,4,57
 
+```
 html.h1 When did GitHub become the place to host new programming language projects?
 web.get https://pldb.io/pldb.csv
  filter.where appeared > 1950
@@ -97,5 +98,6 @@ web.get https://pldb.io/pldb.csv
       vega.bar
        colorColumn githubRepo
        yColumn count
+```
 
-View source
+Built with Scroll v178.2.3

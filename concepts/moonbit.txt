@@ -1,0 +1,190 @@
+MoonBit
+=======
+
+MoonBit is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2022 by Hongbo Zhang.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2022
+ https://pldb.io/concepts/../lists/creators.html#q=Hongbo%20Zhang Hongbo Zhang
+
+#271 on PLDB
+4 Years Old
+
+```Download source code:
+git clone https://github.com/moonbitlang/core
+```
+
+Intelligent developer platform for Cloud and Edge using WASM.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- MoonBit is developed on <a href="https://github.com/moonbitlang/core">GitHub</a> and has 616 stars
+- Early development of MoonBit happened in <a href="../lists/labs.html#q=International Digital Economy Academy">International Digital Economy Academy</a>
+- <a href="rust.html">Rust</a> and <a href="go.html">Go</a> influenced the design of MoonBit
+- MoonBit is written in <a href="moonbit.html">MoonBit</a>, <a href="json.html">JSON</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="toml.html">TOML</a>, <a href="bourne-shell.html">Bourne shell</a>
+- 1 PLDB concepts link to MoonBit: <a href="moonbit.html">MoonBit</a>
+
+```Example from the web:
+fn main {
+ println(@lib.hello())
+}
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Interfaces
+ FeatureLink ../features/hasInterfaces.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  trait Number {
+   op_add(Self, Self) -> Self
+   op_mul(Self, Self) -> Self
+  }
+ Token 
+row
+ Feature Access Modifiers
+ FeatureLink ../features/hasAccessModifiers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  pub struct R2 {       // 显式的公共结构
+   x: Int              // 隐式的公共字段
+   pub y: Int          // WARNING: `pub` 是多余的！
+   priv z: Int         // 显式的私有字段
+  }
+ Token 
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  type! DivError String
+  fn div(x: Int, y: Int) -> Int!DivError  {
+   if y == 0 {
+     raise DivError("division by zero")
+   }
+   x / y
+  }
+ Token 
+row
+ Feature Bitwise Operators
+ FeatureLink ../features/hasBitWiseOperators.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  1 & 0
+ Token 
+row
+ Feature Pipes
+ FeatureLink ../features/hasPipes.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  fn init {
+   x |> f     // 等价于 f(x)
+   x |> f(y)  // 等价于 f(x, y)
+   }
+ Token 
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  struct T {
+    x:Int
+  } derive(Show)
+  
+  fn op_add(self: T, other: T) -> T {
+    { x: self.x + other.x }
+  }
+  
+  fn main {
+    let a = { x:0, }
+    let b = { x:2, }
+    println(a + b)
+  }
+ Token 
+row
+ Feature Pattern Matching
+ FeatureLink ../features/hasPatternMatching.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Type Aliases
+ FeatureLink ../features/hasTypeAliases.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  pub typealias Index = Int
+  typealias MapString[X] = Map[String, X]
+ Token 
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  fn main {
+  }
+ Token 
+row
+ Feature Enums
+ FeatureLink ../features/hasEnums.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  enum Relation {
+   Smaller
+   Greater
+   Equal
+  }
+ Token 
+row
+ Feature Structs
+ FeatureLink ../features/hasStructs.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  struct User {
+   id: Int
+   name: String
+   mut email: String
+  }
+ Token 
+row
+ Feature Maps
+ FeatureLink ../features/hasMaps.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  let map : Map[String, Int] = { "x": 1, "y": 2, "z": 3 }
+ Token 
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  0XA
+ Token 
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  0o1234
+ Token 
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  3.14
+ Token 
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  42
+ Token 
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  let a = true
+ Token
+
+Built with Scroll v178.2.3

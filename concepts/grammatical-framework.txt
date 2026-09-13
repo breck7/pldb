@@ -1,23 +1,24 @@
 Grammatical Framework
 =====================
 
-Grammatical Framework is a grammar language created in 1998.
+Grammatical Framework is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22grammarLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">grammar language</a> created in 1998.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221998%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1998
 
-#1039 on PLDB
-26 Years Old
-624k Repos
+#1077 on PLDB
+28 Years Old
+624k <span title="Grammatical Framework repos on GitHub.">Repos</span>
 
 Grammatical Framework (GF) is a programming language for writing grammars of natural languages. GF is capable of parsing and generating texts in several languages simultaneously while working from a language-independent representation of meaning. Grammars written in GF can be compiled into different formats including JavaScript and Java and can be reused as software components. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Grammatical_Framework Read more on Wikipedia...
 
-- Tags: grammarLanguage
-- There are at least 624,169 Grammatical Framework repos on GitHub
-- Early development of Grammatical Framework happened in Xerox Research Centre Europe
-- The  Google BigQuery Public Dataset GitHub snapshot shows 32 users using Grammatical Framework in 37 repos on GitHub
-- GitHub supports syntax highlighting for Grammatical Framework
-- See also: (2 related languages) JavaScript, Java
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"grammarLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>grammarLanguage</a>
+- There are at least 624,169 Grammatical Framework repos on <a href="https://github.com/search?q=language:Grammatical Framework">GitHub</a>
+- Early development of Grammatical Framework happened in <a href="../lists/labs.html#q=Xerox Research Centre Europe">Xerox Research Centre Europe</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 32 users using Grammatical Framework in 37 repos on <a href="https://api.github.com/search/repositories?q=language:Grammatical Framework">GitHub</a>
+- GitHub supports <a href="https://github.com/atom-haskell/language-haskell" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Grammatical Framework
+- See also: (2 related languages) <a href="javascript.html">JavaScript</a>, <a href="java.html">Java</a>
 
+```Example from <a href='https://github.com/atom-haskell/language-haskell'>Linguist</a>:
 --# -path=.:present
 
 -- (c) 2009 Aarne Ranta under LGPL
@@ -26,30 +27,34 @@ concrete FoodsFin of Foods = FoodsI with
   (Syntax = SyntaxFin),
   (LexFoods = LexFoodsFin) ;
 
-&gt; parse -lang=Fre &quot;Marie aime Jean&quot; | align_words -lang=Fre,Dut,Lat -view=&quot;eog&quot;
+```
 
-Language features
+```Example from <a href='https://en.wikipedia.org/wiki/Grammatical_Framework'>Wikipedia</a>:
+&gt; parse -lang=Fre &quot;Marie aime Jean&quot; | align_words -lang=Fre,Dut,Lat -view=&quot;eog&quot;
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token --
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

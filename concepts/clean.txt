@@ -1,29 +1,30 @@
 Clean
 =====
 
-Clean is a programming language created in 1987.
+Clean is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1987.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221987%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1987
 
-#343 on PLDB
-37 Years Old
-206 Repos
+#350 on PLDB
+39 Years Old
+206 <span title="Clean repos on GitHub.">Repos</span>
 
 Clean is a general-purpose purely functional computer programming language. For much of the language's active development history it was called Concurrent Clean, but this was dropped at some point.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Clean_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 206 Clean repos on GitHub
-- Early development of Clean happened in Radboud University Nijmegen
-- The  Google BigQuery Public Dataset GitHub snapshot shows 231 users using Clean in 263 repos on GitHub
-- Explore Clean snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 206 Clean repos on <a href="https://github.com/search?q=language:Clean">GitHub</a>
+- Early development of Clean happened in <a href="../lists/labs.html#q=Radboud University Nijmegen">Radboud University Nijmegen</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 231 users using Clean in 263 repos on <a href="https://api.github.com/search/repositories?q=language:Clean">GitHub</a>
+- Explore Clean snippets on <a href="http://www.rosettacode.org/wiki/Category:Clean">Rosetta Code</a>
 - Clean on HOPL
  https://hopl.info/showlanguage.prx?exp=1305 Clean on HOPL
-- Clean appears in the TIOBE Index
-- Pygments supports syntax highlighting for Clean
-- GitHub supports syntax highlighting for Clean
-- See also: (7 related languages) Miranda, Haskell, C, Solaris, Linux, Fibonacci, Prolog
-- 2 PLDB concepts link to Clean: cloc, Pygments
+- Clean appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/clean.py">syntax highlighting</a> for Clean
+- GitHub supports <a href="https://github.com/timjs/atom-language-clean.git" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Clean
+- See also: (7 related languages) <a href="miranda.html">Miranda</a>, <a href="haskell.html">Haskell</a>, <a href="c.html">C</a>, <a href="solaris.html">Solaris</a>, <a href="linux.html">Linux</a>, <a href="fibonacci.html">Fibonacci</a>, <a href="prolog.html">Prolog</a>
+- 2 PLDB concepts link to Clean: <a href="cloc.html">cloc</a>, <a href="pygments.html">Pygments</a>
 
+```Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
 module example
 
 import StdInt
@@ -34,6 +35,9 @@ square n = n * n
 Start :: Int
 Start = square 3
 
+```
+
+```Example from <a href='https://riju.codes/clean'>Riju</a>:
 module main
 
 import StdEnv
@@ -44,10 +48,16 @@ Start world
   #(ok, world) = fclose console world
   = world
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/c/Clean.icl'>hello-world</a>:
 module hello
 Start :: {#Char}
 Start = &quot;Hello World&quot;
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Clean'>the Hello World Collection</a>:
 // Hello World in Clean
 
 module hello
@@ -55,6 +65,9 @@ module hello
 Start :: String
 Start = &quot;Hello World!\n&quot;
 
+```
+
+```Example from <a href='https://github.com/timjs/atom-language-clean.git'>Linguist</a>:
 definition module GenMap
 
 import StdGeneric
@@ -64,52 +77,58 @@ derive gMap c, UNIT, PAIR, EITHER, CONS, FIELD, OBJECT, {}, {!}
 
 derive gMap [], (,), (,,),  (,,,), (,,,,), (,,,,,), (,,,,,,), (,,,,,,,)
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Clean_(programming_language)'>Wikipedia</a>:
 (^) infixr 8 :: Int Int -&gt; Int
   (^) x 0 = 1
   (^) x n = x * x ^ (n-1)
+```
 
+```Clean <a href="../lists/keywords.html#q=clean">Keywords</a>
 case ccall class code code inline derive export foreign generic if in infix infixl infixr instance let of otherwise special stdcall where with
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

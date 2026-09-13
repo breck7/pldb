@@ -1,22 +1,24 @@
 clarity
 =======
 
-clarity is a contract language created in 2019.
+clarity is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22contractLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">contract language</a> created in 2019.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2019
 
-#1308 on PLDB
-5 Years Old
-84 Repos
+#1369 on PLDB
+7 Years Old
+84 <span title="clarity repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/clarity-lang/overview
+```
 
 Overview of the Clarity language for smart contracts
 
-- Tags: contractLanguage
-- clarity is developed on GitHub and has 166 stars
-- There are at least 84 clarity repos on GitHub
-- Early development of clarity happened in https://clarity-lang.org/
-- clarity is written in Markdown
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"contractLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>contractLanguage</a>
+- clarity is developed on <a href="https://github.com/clarity-lang/overview">GitHub</a> and has 166 stars
+- There are at least 84 clarity repos on <a href="https://github.com/search?q=language:Clarity">GitHub</a>
+- Early development of clarity happened in <a href="../lists/labs.html#q=https://clarity-lang.org/">https://clarity-lang.org/</a>
+- clarity is written in <a href="markdown.html">Markdown</a>
 
 HackerNews discussions of clarity
 =================================
@@ -24,4 +26,4 @@ HackerNews discussions of clarity
 title|titleLink|date|score|comments
 Show HN: Clarity language for predictable smart contracts|https://news.ycombinator.com/item?id=20308653|06/28/2019|3|0
 
-View source
+Built with Scroll v178.2.3

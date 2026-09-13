@@ -1,43 +1,45 @@
 SAKO
 ====
 
-SAKO, aka System Automatycznego Kodowania, is a programming language created in 1960.
+SAKO, aka System Automatycznego Kodowania, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1960.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221960%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1960
 
-#1185 on PLDB
-64 Years Old
+#1216 on PLDB
+66 Years Old
 
 SAKO (PL: System Automatycznego Kodowania - EN: An Automatic Coding System) is a non-English-based programming language written for Polish computers XYZ, ZAM-2, ZAM-21 and ZAM-41.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/SAKO_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of SAKO happened in Polish Academy of Sciences
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of SAKO happened in <a href="../lists/labs.html#q=Polish Academy of Sciences">Polish Academy of Sciences</a>
 - SAKO is written with the native language of Polish
 - SAKO on HOPL
  https://hopl.info/showlanguage.prx?exp=2178 SAKO on HOPL
 - Read more about SAKO on the web: 1.
  https://historiainformatyki.pl/skan.php?doc_id=1489&type=pdf&for_download=1 1.
 
+```Example from <a href='https://en.wikipedia.org/wiki/SAKO_(programming_language)'>Wikipedia</a>:
    TEKST:
    HELLO WORLD
    LINIA
    STOP NASTEPNY
    KONIEC
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Infix Notation
  FeatureLink ../features/hasInfixNotation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   I = 3 + 4
  Token 
 row
  Feature Lists
  FeatureLink ../features/hasLists.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   TABLICA(4): B
   1 2.0 3.4
@@ -47,7 +49,7 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   TEKST:
   HI
@@ -55,45 +57,45 @@ row
 row
  Feature Operators
  FeatureLink ../features/hasOperators.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   1 + 1 - 1 × 1 * 1 / 1
  Token 
 row
  Feature Bitwise Operators
  FeatureLink ../features/hasBitWiseOperators.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token =
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   K) A comment
  Token K)
 row
  Feature Zero-based numbering
  FeatureLink ../features/hasZeroBasedNumbering.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   CALKOWITE: I
   I = 80766866
@@ -101,32 +103,32 @@ row
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   A = 2.3
  Token 
 row
  Feature Scientific Notation
  FeatureLink ../features/hasScientificNotation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Gotos
  FeatureLink ../features/hasGotos.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   K) A comment
   : Also a comment (although, rarer and newer)
@@ -135,45 +137,45 @@ row
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token K)
 row
  Feature Disk Output
  FeatureLink ../features/canWriteToDisk.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   PISZ NA BEBEN OD 10: A
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Increment and decrement operators
  FeatureLink ../features/hasIncrementAndDecrementOperators.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

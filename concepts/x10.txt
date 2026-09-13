@@ -1,33 +1,35 @@
 X10
 ===
 
-X10 is an open source programming language created in 2004 by Kemal Ebcioğlu and Saravanan Arumugam and Vijay Saraswat and Vivek Sarkar.
+X10 is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2004 by Kemal Ebcioğlu and Saravanan Arumugam and Vijay Saraswat and Vivek Sarkar.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2004
  https://pldb.io/concepts/../lists/creators.html#q=Kemal%20Ebcio%C4%9Flu Kemal Ebcioğlu
  https://pldb.io/concepts/../lists/creators.html#q=Saravanan%20Arumugam Saravanan Arumugam
  https://pldb.io/concepts/../lists/creators.html#q=Vijay%20Saraswat Vijay Saraswat
  https://pldb.io/concepts/../lists/creators.html#q=Vivek%20Sarkar Vivek Sarkar
 
-#528 on PLDB
-20 Years Old
-45 Repos
+#432 on PLDB
+22 Years Old
+45 <span title="X10 repos on GitHub.">Repos</span>
 
 X10 is a programming language being developed by IBM at the Thomas J. Watson Research Center as part of the Productive, Easy-to-use, Reliable Computing System (PERCS) project funded by DARPA's High Productivity Computing Systems (HPCS) program. Its primary authors are Kemal Ebcioğlu, Vijay Saraswat, Saravanan Arumugam, and Vivek Sarkar. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/X10_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 45 X10 repos on GitHub
-- Early development of X10 happened in IBM
-- The  Google BigQuery Public Dataset GitHub snapshot shows 18 users using X10 in 19 repos on GitHub
-- Explore X10 snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 45 X10 repos on <a href="https://github.com/search?q=language:X10">GitHub</a>
+- Early development of X10 happened in <a href="../lists/labs.html#q=IBM">IBM</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 18 users using X10 in 19 repos on <a href="https://api.github.com/search/repositories?q=language:X10">GitHub</a>
+- Explore X10 snippets on <a href="http://www.rosettacode.org/wiki/Category:X10">Rosetta Code</a>
 - X10 on HOPL
  https://hopl.info/showlanguage.prx?exp=8172 X10 on HOPL
-- X10 appears in the TIOBE Index
-- Pygments supports syntax highlighting for X10
-- GitHub supports syntax highlighting for X10
-- x10-lang.org was registered in 2008
-- See also: (5 related languages) Linux, Java, Chapel, Fortress, UPC
+- X10 appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/x10.py">syntax highlighting</a> for X10
+- GitHub supports <a href="https://github.com/x10-lang/x10-highlighting" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for X10
+- <a href="http://x10-lang.org">x10-lang.org</a> was registered in 2008
+- See also: (5 related languages) <a href="linux.html">Linux</a>, <a href="java.html">Java</a>, <a href="chapel.html">Chapel</a>, <a href="fortress.html">Fortress</a>, <a href="unified-parallel-c.html">UPC</a>
+- 1 PLDB concepts link to X10: <a href="chapel.html">Chapel</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/x/X10.x10'>hello-world</a>:
 /*
  *  This file is part of the X10 project (http://x10-lang.org).
  *
@@ -47,6 +49,9 @@ public class HelloWorld {
   }
 }
 
+```
+
+```Example from <a href='https://github.com/x10-lang/x10-highlighting'>Linguist</a>:
 /*
  *  This file is part of the X10 project (http://x10-lang.org).
  *
@@ -69,77 +74,81 @@ class HelloWorld {
   }
 }
 
-as assert async at athome ateach atomic break case catch class clocked continue def default do else final finally finish for goto haszero here if import in instanceof interface isref new offer operator package return struct switch throw try type val var when while
+```
 
-Language features
+```X10 <a href="../lists/keywords.html#q=x10">Keywords</a>
+as assert async at athome ateach atomic break case catch class clocked continue def default do else final finally finish for goto haszero here if import in instanceof interface isref new offer operator package return struct switch throw try type val var when while
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Async Await
  FeatureLink ../features/hasAsyncAwait.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   import x10.io.Console;
  Token import
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -147,7 +156,7 @@ row
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -155,14 +164,14 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token Console.OUT.println
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

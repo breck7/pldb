@@ -1,0 +1,35 @@
+A-Frame
+=======
+
+A-Frame is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22framework%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">framework</a> created in 2015 by Diego Marcos and Don McCurdy and Kevin Ngo.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
+ https://pldb.io/concepts/../lists/creators.html#q=Diego%20Marcos Diego Marcos
+ https://pldb.io/concepts/../lists/creators.html#q=Don%20McCurdy Don McCurdy
+ https://pldb.io/concepts/../lists/creators.html#q=Kevin%20Ngo Kevin Ngo
+
+#754 on PLDB
+11 Years Old
+
+```Download source code:
+git clone https://github.com/aframevr/aframe
+```
+
+A-Frame is an open-source web framework for building virtual reality (VR) experiences. It is built on top of HTML, making it simple to create 3D scenes and VR applications that run in a web browser. A-Frame is based on the Entity-Component-System (ECS) pattern and integrates with WebVR/WebXR for immersive experiences.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"framework"%5D%7D%5D%2C"logic"%3A"AND"%7D'>framework</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"3d"%5D%7D%5D%2C"logic"%3A"AND"%7D'>3d</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"library"%5D%7D%5D%2C"logic"%3A"AND"%7D'>library</a>
+- A-Frame is developed on <a href="https://github.com/aframevr/aframe">GitHub</a>
+- Early development of A-Frame happened in <a href="../lists/labs.html#q=Mozilla">Mozilla</a>
+- A-Frame is written in <a href="javascript.html">JavaScript</a>, <a href="markdown.html">Markdown</a>, <a href="html.html">HTML</a>, <a href="json.html">JSON</a>, <a href="yaml.html">YAML</a>, <a href="svg.html">SVG</a>, <a href="css.html">CSS</a>
+
+```Example from the web:
+&lt;script src=&quot;https://aframe.io/releases/1.7.0/aframe.min.js&quot;&gt;&lt;/script&gt;
+&lt;a-scene&gt;
+  &lt;a-box position=&quot;-1 0.5 -3&quot; rotation=&quot;0 45 0&quot; color=&quot;green&quot;&gt;&lt;/a-box&gt;
+  &lt;a-sphere position=&quot;0 1.25 -5&quot; radius=&quot;1.25&quot; color=&quot;#EF2D5E&quot;&gt;&lt;/a-sphere&gt;
+  &lt;a-cylinder position=&quot;1 0.75 -3&quot; radius=&quot;0.5&quot; height=&quot;1.5&quot; color=&quot;#FFC65D&quot;&gt;&lt;/a-cylinder&gt;
+  &lt;a-plane position=&quot;0 0 -4&quot; rotation=&quot;-90 0 0&quot; width=&quot;4&quot; height=&quot;4&quot; color=&quot;#7BC8A4&quot;&gt;&lt;/a-plane&gt;
+  &lt;a-sky color=&quot;#ECECEC&quot;&gt;&lt;/a-sky&gt;
+ &lt;/a-scene&gt;
+```
+
+Built with Scroll v178.2.3

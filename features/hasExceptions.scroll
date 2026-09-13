@@ -7,7 +7,7 @@ printTitle Exceptions
 <a class="trueBaseThemePreviousItem" href="hasEscapeCharacters.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasExplicitTypeCasting.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -33,6 +33,18 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ruby.html">
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/elixir.html">Elixir</a>
  raise &quot;oops, something went wrong&quot;
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/chapel.html">Chapel</a>
+ throw throws
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/moonbit.html">MoonBit</a>
+ type! DivError String
+ fn div(x: Int, y: Int) -&gt; Int!DivError  {
+  if y == 0 {
+    raise DivError(&quot;division by zero&quot;)
+  }
+  x / y
+ }
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/rebol.html">REBOL</a>
  catch [throw 22 print &quot;You&#39;ll never see this.&quot;]
  
@@ -48,7 +60,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/boron.html"
 
 ***
 
-* Languages *with* Exceptions include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/cpp.html">C++</a>, <a href="../concepts/ruby.html">Ruby</a>, <a href="../concepts/php.html">PHP</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/powershell.html">PowerShell</a>, <a href="../concepts/swift.html">Swift</a>, <a href="../concepts/scala.html">Scala</a>, <a href="../concepts/kotlin.html">Kotlin</a>, <a href="../concepts/coffeescript.html">CoffeeScript</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/dart.html">Dart</a>, <a href="../concepts/solidity.html">Solidity</a>, <a href="../concepts/groovy.html">Groovy</a>, <a href="../concepts/abap.html">ABAP</a>, <a href="../concepts/rebol.html">REBOL</a>, <a href="../concepts/x10.html">X10</a>, <a href="../concepts/apex.html">Apex</a>, <a href="../concepts/sophia.html">Sophia</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/boron.html">Boron</a>
+* Languages *with* Exceptions include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/cpp.html">C++</a>, <a href="../concepts/ruby.html">Ruby</a>, <a href="../concepts/php.html">PHP</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/powershell.html">PowerShell</a>, <a href="../concepts/swift.html">Swift</a>, <a href="../concepts/scala.html">Scala</a>, <a href="../concepts/kotlin.html">Kotlin</a>, <a href="../concepts/coffeescript.html">CoffeeScript</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/dart.html">Dart</a>, <a href="../concepts/solidity.html">Solidity</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/groovy.html">Groovy</a>, <a href="../concepts/abap.html">ABAP</a>, <a href="../concepts/moonbit.html">MoonBit</a>, <a href="../concepts/rebol.html">REBOL</a>, <a href="../concepts/x10.html">X10</a>, <a href="../concepts/apex.html">Apex</a>, <a href="../concepts/sophia.html">Sophia</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/boron.html">Boron</a>, <a href="../concepts/naab.html">NAAb</a>
 
 ***
 

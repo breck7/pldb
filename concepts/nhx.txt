@@ -1,23 +1,25 @@
 The New Hampshire X Format
 ==========================
 
-The New Hampshire X Format, aka New Hampshire X, is a text data format created in 1999.
+The New Hampshire X Format, aka New Hampshire X, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textDataFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text data format</a> created in 1999.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221999%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1999
 
-#2103 on PLDB
-25 Years Old
+#2187 on PLDB
+27 Years Old
 
-- Tags: textDataFormat
-- Early development of The New Hampshire X Format happened in Washington University in St. Louis
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textDataFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>textDataFormat</a>
+- Early development of The New Hampshire X Format happened in <a href="../lists/labs.html#q=Washington University in St. Louis">Washington University in St. Louis</a>
 - Read more about The New Hampshire X Format on the web: 1. 2.
  https://www.cs.cmu.edu/~aiton/split/Manual-2.6.master014.html 1.
  https://www.cs.mcgill.ca/~birch/birchhomedir/doc/atv/NHX.pdf 2.
 
+```Example from the web:
 (((ADH2:0.1[&amp;&amp;NHX:S=human:E=1.1.1.1],ADH1:0.11[&amp;&amp;NHX:S=human:E=1.1.1.1]):0
 .05[&amp;&amp;NHX:S=Primates:E=1.1.1.1:D=Y:B=100],ADHY:0.1[&amp;&amp;NHX:S=nematode:E=1.1.
 1.1],ADHX:0.12[&amp;&amp;NHX:S=insect:E=1.1.1.1]):0.1[&amp;&amp;NHX:S=Metazoa:E=1.1.1.1:D=
 N],(ADH4:0.09[&amp;&amp;NHX:S=yeast:E=1.1.1.1],ADH3:0.13[&amp;&amp;NHX:S=yeast:E=1.1.1.1],
 ADH2:0.12[&amp;&amp;NHX:S=yeast:E=1.1.1.1],ADH1:0.11[&amp;&amp;NHX:S=yeast:E=1.1.1.1]):0.1
 [&amp;&amp;NHX:S=Fungi])[&amp;&amp;NHX:E=1.1.1.1:D=N];
+```
 
-View source
+Built with Scroll v178.2.3

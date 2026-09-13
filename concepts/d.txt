@@ -1,47 +1,51 @@
 D
 =
 
-D is a programming language created in 2001 by Walter Bright and Andrei Alexandrescu.
+D is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2001 by Walter Bright and Andrei Alexandrescu.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2001
  https://pldb.io/concepts/../lists/creators.html#q=Walter%20Bright Walter Bright
  https://pldb.io/concepts/../lists/creators.html#q=Andrei%20Alexandrescu Andrei Alexandrescu
 
-#56 on PLDB
-23 Years Old
-13k Repos
+#57 on PLDB
+25 Years Old
+13k <span title="D repos on GitHub.">Repos</span>
 
 The D programming language is an object-oriented, imperative, multi-paradigm system programming language created by Walter Bright of Digital Mars and released in 2001. Bright was joined in the design and development effort in 2007 by Andrei Alexandrescu. Though it originated as a re-engineering of C++, D is a distinct language, having redesigned some core C++ features while also taking inspiration from other languages, notably Java, Python, Ruby, C#, and Eiffel. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/D_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 13,224 D repos on GitHub
-- Early development of D happened in Digital Mars
-- The  Google BigQuery Public Dataset GitHub snapshot shows 6k users using D in 7k repos on GitHub
-- Check out the 7 D meetup groups on Meetup.com.
-- There are 243 Project Euler users using D
-- Explore D snippets on Rosetta Code
-- D is supported by the GDB
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 13,224 D repos on <a href="https://github.com/search?q=language:D">GitHub</a>
+- Early development of D happened in <a href="../lists/labs.html#q=Digital Mars">Digital Mars</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 6k users using D in 7k repos on <a href="https://api.github.com/search/repositories?q=language:D">GitHub</a>
+- Check out the 7 <a href="https://www.meetup.com/topics/dpl/">D meetup groups</a> on Meetup.com.
+- There are 243 <a href="https://projecteuler.net/language=D">Project Euler</a> users using D
+- Explore D snippets on <a href="http://www.rosettacode.org/wiki/Category:D">Rosetta Code</a>
+- D is supported by the <a href="https://www.sourceware.org/gdb/">GDB</a>
 - D on HOPL
  https://hopl.info/showlanguage.prx?exp=3173 D on HOPL
-- D ranks #26 in the TIOBE Index
+- D ranks #26 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - D Ubuntu package
  https://packages.ubuntu.com/jammy/gdc D Ubuntu package
-- D LSP implementation
-- CodeMirror package for syntax highlighting D
-- Pygments supports syntax highlighting for D
-- GitHub supports syntax highlighting for D
-- D appears in the Quine Relay project
-- Learn D on exercism.
-- There is a central package repository for D
-- dlang.org was registered in 2010
-- See also: (23 related languages) FreeBSD, Linux, C, C#, Eiffel, Java, Python, MiniD, Vala, Swift, Genie, Ruby, Assembly language, LLVM IR, CIL, Eclipse, Visual Studio, Emacs, Vim, TextMate, Visual Studio Code, GDB, UTF-8
-- 27 PLDB concepts link to D: Alma, Chapel, DRAKON, dub-pm, Encore, Erlang, Flow9, GCC, GHC, invokator, Iode, Java, Julia, mal, MongoDB, MonkeyX, Open Shading Language, Perl, PHP, Pony, PostgreSQL, Pygments, Python, Ruby, Rust, Swift, Volt
+- D <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/d-language-server/dls">implementation</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/d">package</a> for syntax highlighting D
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/d.py">syntax highlighting</a> for D
+- GitHub supports <a href="https://github.com/textmate/d.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for D
+- D appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Learn <a href="https://exercism.org/tracks/d">D on exercism.</a>
+- There is a <a href="https://code.dlang.org/">central package repository</a> for D
+- <a href="https://dlang.org">dlang.org</a> was registered in 2010
+- See also: (23 related languages) <a href="freebsd.html">FreeBSD</a>, <a href="linux.html">Linux</a>, <a href="c.html">C</a>, <a href="csharp.html">C#</a>, <a href="eiffel.html">Eiffel</a>, <a href="java.html">Java</a>, <a href="python.html">Python</a>, <a href="minid.html">MiniD</a>, <a href="vala.html">Vala</a>, <a href="swift.html">Swift</a>, <a href="genie.html">Genie</a>, <a href="ruby.html">Ruby</a>, <a href="assembly-language.html">Assembly language</a>, <a href="llvmir.html">LLVM IR</a>, <a href="cil.html">CIL</a>, <a href="eclipse-editor.html">Eclipse</a>, <a href="visual-studio-editor.html">Visual Studio</a>, <a href="emacs-editor.html">Emacs</a>, <a href="vim.html">Vim</a>, <a href="textmate-editor.html">TextMate</a>, <a href="visual-studio-code-editor.html">Visual Studio Code</a>, <a href="gdb.html">GDB</a>, <a href="utf-8.html">UTF-8</a>
+- 34 PLDB concepts link to D: <a href="alma-007.html">Alma</a>, <a href="berkeleydb.html">Berkeley DB</a>, <a href="cir.html">CIR</a>, <a href="cmake.html">CMake</a>, <a href="cperl.html">cperl</a>, <a href="dlvm.html">dlvm</a>, <a href="drakon.html">DRAKON</a>, <a href="dub-pm.html">dub-pm</a>, <a href="encore.html">Encore</a>, <a href="erlang.html">Erlang</a>, <a href="flow9.html">Flow9</a>, <a href="gcc.html">GCC</a>, <a href="ghc.html">GHC</a>, <a href="invokator.html">invokator</a>, <a href="iode.html">Iode</a>, <a href="java.html">Java</a>, <a href="julia.html">Julia</a>, <a href="mal.html">mal</a>, <a href="mongodb.html">MongoDB</a>, <a href="monkeyx.html">MonkeyX</a>, <a href="open-shading-language.html">Open Shading Language</a>, <a href="perl.html">Perl</a>, <a href="php.html">PHP</a>, <a href="pony.html">Pony</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="pygments.html">Pygments</a>, <a href="python.html">Python</a>, <a href="ruby.html">Ruby</a>, <a href="rust.html">Rust</a>, <a href="saltstack.html">SaltStack</a>, <a href="sdlang.html">SDLang</a>, <a href="surrealdb.html">SurrealDB</a>, <a href="swift.html">Swift</a>, <a href="volt.html">Volt</a>
 
+```Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
 // Type your code here, or load an example.
 int square(int num) {
     return num * num;
 }
 
+```
+
+```Example from <a href='https://riju.codes/d'>Riju</a>:
 import std.stdio;
 
 void main()
@@ -49,6 +53,9 @@ void main()
     writeln(&quot;Hello, world!&quot;);
 }
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#D'>the Hello World Collection</a>:
 // Hello World in D
 
 import std.stdio;
@@ -58,10 +65,16 @@ void main()
    writefln(&quot;Hello World!&quot;);
 }
 
+```
+
+```Example from <a href='https://github.com/textmate/d.tmbundle'>Linguist</a>:
 unittest
 {
 }
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/D_(programming_language)'>Wikipedia</a>:
 1 import std.stdio, std.algorithm, std.range, std.string;
  2
  3 void main()
@@ -79,56 +92,57 @@ unittest
 15         if(words.length &gt; 1)
 16             writefln(words.join(&quot; &quot;));
 17 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // 0[Bb][01_]+
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // (0|[1-9][0-9_]*)([LUu]|Lu|LU|uL|UL)?
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // 0[xX]([0-9a-fA-F_]*\.[0-9a-fA-F_]+|[0-9a-fA-F_]+)[pP][+\-]?[0-9_]+[fFL]?[i]?
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // 0[xX][0-9a-fA-F_]+
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // 0[0-7_]+
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /+ A comment
   +/
@@ -136,20 +150,20 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token printf
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Templates
  FeatureLink ../features/hasTemplates.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   template TCopy(T)
   {
@@ -164,38 +178,38 @@ row
 row
  Feature Type Inference
  FeatureLink ../features/hasTypeInference.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Pointers
  FeatureLink ../features/hasPointers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

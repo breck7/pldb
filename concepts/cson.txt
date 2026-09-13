@@ -1,29 +1,35 @@
 CSON
 ====
 
-CSON, aka CoffeeScript Object Notation, is an open source data notation created in 2011 by Benjamin Lupton.
+CSON, aka CoffeeScript Object Notation, is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 2011 by Benjamin Lupton.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2011
  https://pldb.io/concepts/../lists/creators.html#q=Benjamin%20Lupton Benjamin Lupton
 
-#241 on PLDB
-13 Years Old
-16 Repos
+#242 on PLDB
+15 Years Old
+16 <span title="CSON repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/bevry/cson
+```
 
 CoffeeScript-Object-Notation. Same as JSON but for CoffeeScript objects.
 
-- Tags: dataNotation
-- CSON is developed on GitHub and has 1,334 stars
-- There are at least 16 CSON repos on GitHub
-- Early development of CSON happened in https://bevry.me/
-- CSON is written in JSON, CSON, CoffeeScript, Markdown, YAML, JavaScript
-- The  Google BigQuery Public Dataset GitHub snapshot shows 1 users using CSON in 2 repos on GitHub
-- GitHub supports syntax highlighting for CSON
-- 10 PLDB concepts link to CSON: Ait, Catala, CSON, Factor, Flow9, fork-lang, invokator, ko, Koka, mirth
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- CSON is developed on <a href="https://github.com/bevry/cson">GitHub</a> and has 1,334 stars
+- There are at least 16 CSON repos on <a href="https://github.com/search?q=language:CSON">GitHub</a>
+- Early development of CSON happened in <a href="../lists/labs.html#q=https://bevry.me/">https://bevry.me/</a>
+- CSON is written in <a href="json.html">JSON</a>, <a href="cson.html">CSON</a>, <a href="coffeescript.html">CoffeeScript</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="javascript.html">JavaScript</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 1 users using CSON in 2 repos on <a href="https://api.github.com/search/repositories?q=language:CSON">GitHub</a>
+- GitHub supports <a href="https://github.com/atom/language-coffee-script" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for CSON
+- 11 PLDB concepts link to CSON: <a href="ait.html">Ait</a>, <a href="catala.html">Catala</a>, <a href="cson.html">CSON</a>, <a href="factor.html">Factor</a>, <a href="flow9.html">Flow9</a>, <a href="fork-lang.html">fork-lang</a>, <a href="invokator.html">invokator</a>, <a href="ko.html">ko</a>, <a href="koka.html">Koka</a>, <a href="mirth.html">mirth</a>, <a href="unison.html">unison</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/c/CSON.cson'>hello-world</a>:
 {&#39;Hello&#39;: &#39;World&#39;}
 
+```
+
+```Example from <a href='https://github.com/atom/language-coffee-script'>Linguist</a>:
 &#39;menu&#39;: [
   {
     &#39;label&#39;: &#39;Packages&#39;
@@ -35,5 +41,6 @@ CoffeeScript-Object-Notation. Same as JSON but for CoffeeScript objects.
     ]
   }
 ]
+```
 
-View source
+Built with Scroll v178.2.3

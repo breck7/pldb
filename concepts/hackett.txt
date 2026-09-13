@@ -1,22 +1,25 @@
 Hackett
 =======
 
-Hackett is an open source programming language created in 2017 by Alexis King.
+Hackett is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2017 by Alexis King.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2017
  https://pldb.io/concepts/../lists/creators.html#q=Alexis%20King Alexis King
 
-#668 on PLDB
-7 Years Old
+#696 on PLDB
+9 Years Old
 
+```Download source code:
 git clone https://github.com/lexi-lambda/hackett
+```
 
 Hackett is an attempt to implement a Haskell-like language with support for Racket’s macro system, built using the techniques described in the paper Type Systems as Macros.
 
-- Tags: programming language
-- Hackett is developed on GitHub and has 1,159 stars
-- Early development of Hackett happened in https://github.com/lexi-lambda/hackett/issues
-- Hackett is written in Racket, Markdown, YAML, CSS, Bourne shell
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"lisp"%5D%7D%5D%2C"logic"%3A"AND"%7D'>lisp</a>
+- Hackett is developed on <a href="https://github.com/lexi-lambda/hackett">GitHub</a> and has 1,159 stars
+- Early development of Hackett happened in <a href="../lists/labs.html#q=https://github.com/lexi-lambda/hackett/issues">https://github.com/lexi-lambda/hackett/issues</a>
+- Hackett is written in <a href="racket.html">Racket</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="css.html">CSS</a>, <a href="bourne-shell.html">Bourne shell</a>
 
+```Example from the web:
 #lang hackett
 
 (data (Maybe a)
@@ -34,5 +37,6 @@ Hackett is an attempt to implement a Haskell-like language with support for Rack
 (instance (forall [a] (Show a) =&gt; (Show (Maybe a)))
   [show (λ* [[(Just x)] {&quot;(Just &quot; ++ (show x) ++ &quot;)&quot;}]
             [[Nothing ] &quot;Nothing&quot;])])
+```
 
-View source
+Built with Scroll v178.2.3

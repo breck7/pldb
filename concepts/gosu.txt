@@ -1,82 +1,89 @@
 Gosu
 ====
 
-Gosu is an open source programming language created in 2002.
+Gosu is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2002.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222002%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2002
 
-#438 on PLDB
-22 Years Old
-701 Repos
+#459 on PLDB
+24 Years Old
+701 <span title="Gosu repos on GitHub.">Repos</span>
 
 Gosu is a statically-typed programming language that runs on the Java Virtual Machine released under the Apache 2. This general-purpose programming language is used in several open-source software projects including SparkGS and Ragnar DB among several others, and is widely used in the insurance industry via Guidewire Software's commercial products. The language borrows from several existing languages including Java, C#, and ECMAScript. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Gosu_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 701 Gosu repos on GitHub
-- Early development of Gosu happened in Guidewire Software, Inc
-- The  Google BigQuery Public Dataset GitHub snapshot shows 486 users using Gosu in 539 repos on GitHub
-- Explore Gosu snippets on Rosetta Code
-- Gosu appears in the TIOBE Index
-- Pygments supports syntax highlighting for Gosu
-- GitHub supports syntax highlighting for Gosu
-- gosu-lang.org was registered in 2009
-- See also: (7 related languages) Java Bytecode, Java, C#, Kotlin, JavaScript, Pascal, Go
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 701 Gosu repos on <a href="https://github.com/search?q=language:Gosu">GitHub</a>
+- Early development of Gosu happened in <a href="../lists/labs.html#q=Guidewire Software, Inc">Guidewire Software, Inc</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 486 users using Gosu in 539 repos on <a href="https://api.github.com/search/repositories?q=language:Gosu">GitHub</a>
+- Explore Gosu snippets on <a href="http://www.rosettacode.org/wiki/Category:Gosu">Rosetta Code</a>
+- Gosu appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/jvm.py">syntax highlighting</a> for Gosu
+- GitHub supports <a href="https://github.com/jpcamara/Textmate-Gosu-Bundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Gosu
+- <a href="http://gosu-lang.org/">gosu-lang.org</a> was registered in 2009
+- See also: (7 related languages) <a href="java-bytecode.html">Java Bytecode</a>, <a href="java.html">Java</a>, <a href="csharp.html">C#</a>, <a href="kotlin.html">Kotlin</a>, <a href="javascript.html">JavaScript</a>, <a href="pascal.html">Pascal</a>, <a href="go.html">Go</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/g/Gosu.gs'>hello-world</a>:
 print(&quot;Hello World&quot;)
 
+```
+
+```Example from <a href='https://github.com/jpcamara/Textmate-Gosu-Bundle'>Linguist</a>:
 function hello() {
   print(&quot;hello&quot;)
 }
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Gosu_(programming_language)'>Wikipedia</a>:
 var list = {1, 2, 3}
 var result = list.where(\ elem -&gt; elem &gt;= 2)
 print(result)
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print
 
-View source
+Built with Scroll v178.2.3

@@ -1,21 +1,21 @@
 UTF-8
 =====
 
-UTF-8 is a character encoding created in 1993 by Rob Pike and Ken Thompson.
+UTF-8 is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22characterEncoding%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">character encoding</a> created in 1993 by Rob Pike and Ken Thompson.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221993%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1993
  https://pldb.io/concepts/../lists/creators.html#q=Rob%20Pike Rob Pike
  https://pldb.io/concepts/../lists/creators.html#q=Ken%20Thompson Ken Thompson
 
-#1544 on PLDB
-31 Years Old
+#1599 on PLDB
+33 Years Old
 
 UTF-8 is a variable width character encoding capable of encoding all 1,112,064 valid code points in Unicode using one to four 8-bit bytes. The encoding is defined by the Unicode standard, and was originally designed by Ken Thompson and Rob Pike. The name is derived from Unicode (or Universal Coded Character Set) Transformation Format –  8-bit. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/UTF-8 Read more on Wikipedia...
 
-- Tags: characterEncoding
-- See also: (9 related languages) Unicode, ASCII, XML, HTML, CSS, MySQL, Java, Tcl, Unix
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"characterEncoding"%5D%7D%5D%2C"logic"%3A"AND"%7D'>characterEncoding</a>
+- See also: (9 related languages) <a href="unicode.html">Unicode</a>, <a href="ascii.html">ASCII</a>, <a href="xml.html">XML</a>, <a href="html.html">HTML</a>, <a href="css.html">CSS</a>, <a href="mysql.html">MySQL</a>, <a href="java.html">Java</a>, <a href="tcl.html">Tcl</a>, <a href="unix.html">Unix</a>
 - Read more about UTF-8 on the web: 1.
  https://news.ycombinator.com/item?id=21212445 1.
-- 1 PLDB concepts link to UTF-8: Plain text
+- 1 PLDB concepts link to UTF-8: <a href="txt.html">Plain text</a>
 
-View source
+Built with Scroll v178.2.3

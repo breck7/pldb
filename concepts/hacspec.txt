@@ -1,25 +1,28 @@
 hacspec
 =======
 
-hacspec is a programming language created in 2018 by Franziskus Kiefer.
+hacspec is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2018 by Franziskus Kiefer.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2018
  https://pldb.io/concepts/../lists/creators.html#q=Franziskus%20Kiefer Franziskus Kiefer
 
-#872 on PLDB
-6 Years Old
+#905 on PLDB
+8 Years Old
 
+```Download source code:
 git clone https://github.com/hacspec/hacspec
+```
 
 A specification language for crypto primitives and more in Rust.
 
-- Tags: programming language
-- hacspec is developed on GitHub and has 242 stars
-- Early development of hacspec happened in https://github.com/hacspec/hacspec/discussions
-- hacspec is written in Rust, Coq, TOML, Markdown, JSON, YAML, C, Make, Tex, Bourne shell, Dockerfile, Python, SVG, Logos
-- First announcement of hacspec
-- hacspec.org was registered in 2020
-- See also: (1 related languages) Rust
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- hacspec is developed on <a href="https://github.com/hacspec/hacspec">GitHub</a> and has 242 stars
+- Early development of hacspec happened in <a href="../lists/labs.html#q=https://github.com/hacspec/hacspec/discussions">https://github.com/hacspec/hacspec/discussions</a>
+- hacspec is written in <a href="rust.html">Rust</a>, <a href="coq.html">Coq</a>, <a href="toml.html">TOML</a>, <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>, <a href="yaml.html">YAML</a>, <a href="c.html">C</a>, <a href="make.html">Make</a>, <a href="tex.html">Tex</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="python.html">Python</a>, <a href="svg.html">SVG</a>, <a href="logos.html">Logos</a>
+- <a href="https://www.franziskuskiefer.de/publications/hacspec18/">First announcement of</a> hacspec
+- <a href="https://hacspec.org">hacspec.org</a> was registered in 2020
+- See also: (1 related languages) <a href="rust.html">Rust</a>
 
+```Example from the web:
 pub type Res = (usize, usize);
 pub enum ResTyp {
     Ok(Res),
@@ -38,5 +41,6 @@ pub fn test_tuple_destructuring() {
     let tuple = MyTupleType(1u16, 2u8).clone();
     let MyTupleType(_a, _b) = tuple;
 }
+```
 
-View source
+Built with Scroll v178.2.3

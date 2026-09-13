@@ -1,21 +1,24 @@
 nomnoml
 =======
 
-nomnoml is a diagram lang created in 2014 by Daniel Kallin.
+nomnoml is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22diagramLang%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">diagram lang</a> created in 2014 by Daniel Kallin.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
  https://pldb.io/concepts/../lists/creators.html#q=Daniel%20Kallin Daniel Kallin
 
-#375 on PLDB
-10 Years Old
+#398 on PLDB
+12 Years Old
 
+```Download source code:
 git clone https://github.com/skanaar/nomnoml
+```
 
 The sassy UML diagram renderer.
 
-- Tags: diagramLang
-- nomnoml is developed on GitHub and has 2,676 stars
-- nomnoml is written in TypeScript, JavaScript, JSON, CSS, HTML, Markdown, SVG
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"diagramLang"%5D%7D%5D%2C"logic"%3A"AND"%7D'>diagramLang</a>
+- nomnoml is developed on <a href="https://github.com/skanaar/nomnoml">GitHub</a> and has 2,676 stars
+- nomnoml is written in <a href="typescript.html">TypeScript</a>, <a href="javascript.html">JavaScript</a>, <a href="json.html">JSON</a>, <a href="css.html">CSS</a>, <a href="html.html">HTML</a>, <a href="markdown.html">Markdown</a>, <a href="svg.html">SVG</a>
 
+```Example from the web:
 [&lt;frame&gt;Decorator pattern|
   [&lt;abstract&gt;Component||+ operation()]
   [Client] depends --&gt; [Component]
@@ -24,32 +27,33 @@ The sassy UML diagram renderer.
   [Component] &lt;:- [Decorator]
   [Component] &lt;:- [ConcreteComponent]
 ]
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   #import: filename
  Token 
 row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   #title: filename
   #zoom: 1
   #acyclicer: greedy
  Token
 
-View source
+Built with Scroll v178.2.3

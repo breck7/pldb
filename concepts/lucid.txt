@@ -1,26 +1,27 @@
 LUCID
 =====
 
-LUCID is a programming language created in 1976 by Edward A. Ashcroft and William W. Wadge.
+LUCID is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1976 by Edward A. Ashcroft and William W. Wadge.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221976%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1976
  https://pldb.io/concepts/../lists/creators.html#q=Edward%20A.%20Ashcroft Edward A. Ashcroft
  https://pldb.io/concepts/../lists/creators.html#q=William%20W.%20Wadge William W. Wadge
 
-#1421 on PLDB
-48 Years Old
+#1471 on PLDB
+50 Years Old
 
 Lucid is a dataflow programming language designed to experiment with non-von Neumann programming models. It was designed by Bill Wadge and Ed Ashcroft and described in the 1985 book Lucid, the Dataflow Programming Language. pLucid was the first interpreter for Lucid.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Lucid_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of LUCID happened in University of Victoria and SRI
-- Explore LUCID snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of LUCID happened in <a href="../lists/labs.html#q=University of Victoria">University of Victoria</a> and <a href="../lists/labs.html#q=SRI">SRI</a>
+- Explore LUCID snippets on <a href="http://www.rosettacode.org/wiki/Category:Lucid">Rosetta Code</a>
 - LUCID on HOPL
  https://hopl.info/showlanguage.prx?exp=960 LUCID on HOPL
-- See also: (3 related languages) ISWIM, SISAL, Lustre
+- See also: (3 related languages) <a href="iswim.html">ISWIM</a>, <a href="sisal.html">SISAL</a>, <a href="lustre.html">Lustre</a>
 - Read more about LUCID on the web: 1.
  https://news.ycombinator.com/item?id=14233054 1.
 
+```Example from <a href='https://en.wikipedia.org/wiki/Lucid_(programming_language)'>Wikipedia</a>:
 h
    where
      h = 1 fby merge(merge(2 * h, 3 * h), 5 * h);
@@ -30,5 +31,6 @@ h
           yy = y upon yy &lt;= xx;
         end;
    end;
+```
 
-View source
+Built with Scroll v178.2.3

@@ -1,30 +1,34 @@
 Xojo
 ====
 
-Xojo is an open source programming language created in 1996.
+Xojo is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1996.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1996
 
-#410 on PLDB
-28 Years Old
-570 Repos
+#420 on PLDB
+30 Years Old
+570 <span title="Xojo repos on GitHub.">Repos</span>
 
 The Xojo programming environment is developed and commercially marketed by Xojo, Inc. of Austin, Texas for software development targeting macOS, Microsoft Windows, Linux, iOS, the Web and Raspberry Pi. Xojo uses a proprietary object-oriented BASIC dialect, also known as Xojo.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Xojo Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 570 Xojo repos on GitHub
-- The  Google BigQuery Public Dataset GitHub snapshot shows 43 users using Xojo in 68 repos on GitHub
-- Explore Xojo snippets on Rosetta Code
-- Xojo appears in the TIOBE Index
-- GitHub supports syntax highlighting for Xojo
-- See also: (8 related languages) Linux, iOS, BASIC, JVM, X86, XML, Visual Basic, Gambas
-- 1 PLDB concepts link to Xojo: REALBasic (now Xojo)
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 570 Xojo repos on <a href="https://github.com/search?q=language:Xojo">GitHub</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 43 users using Xojo in 68 repos on <a href="https://api.github.com/search/repositories?q=language:Xojo">GitHub</a>
+- Explore Xojo snippets on <a href="http://www.rosettacode.org/wiki/Category:Xojo">Rosetta Code</a>
+- Xojo appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- GitHub supports <a href="https://github.com/angryant0007/VBDotNetSyntax" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Xojo
+- See also: (8 related languages) <a href="linux.html">Linux</a>, <a href="ios.html">iOS</a>, <a href="basic.html">BASIC</a>, <a href="jvm.html">JVM</a>, <a href="x86-isa.html">X86</a>, <a href="xml.html">XML</a>, <a href="visual-basic.html">Visual Basic</a>, <a href="gambas.html">Gambas</a>
+- 1 PLDB concepts link to Xojo: <a href="realbasic.html">REALBasic (now Xojo)</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/r/RealBasic.realbasic'>hello-world</a>:
 Function Run(args() as String) As Integer
   Print &quot;Hello World&quot;
   Quit
 End Function
 
+```
+
+```Example from <a href='https://github.com/angryant0007/VBDotNetSyntax'>Linguist</a>:
 #tag Toolbar
 Begin Toolbar MyToolbar
 	Begin ToolButton FirstItem
@@ -40,45 +44,49 @@ Begin Toolbar MyToolbar
 End
 #tag EndToolbar
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Xojo'>Wikipedia</a>:
 Dim names() As String = Array(&quot;Red Sox&quot;, &quot;Yankees&quot;, &quot;Orioles&quot;, &quot;Blue Jays&quot;, &quot;Rays&quot;)
 For i As Integer = 0 To names.UBound
   ListBox1.AddRow(names(i))
 Next
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token Print
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

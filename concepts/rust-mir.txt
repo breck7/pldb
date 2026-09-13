@@ -1,24 +1,27 @@
 Rust MIR
 ========
 
-Rust MIR, aka Rust Mid-level Intermediate Representation, is an open source intermediate representation language created in 2016.
+Rust MIR, aka Rust Mid-level Intermediate Representation, is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22ir%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">intermediate representation language</a> created in 2016.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2016
 
-#1481 on PLDB
-8 Years Old
+#1518 on PLDB
+10 Years Old
 
+```Download source code:
 git clone https://github.com/rust-lang/rust/tree/master/src/librustc_mir
+```
 
-- Tags: intermediate representation language
-- Early development of Rust MIR happened in https://github.com/rust-lang
-- Rust MIR compiles to LLVM IR
-- rust-lang.org was registered in 2010
-- See also: (1 related languages) SIL
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"ir"%5D%7D%5D%2C"logic"%3A"AND"%7D'>intermediate representation language</a>
+- Early development of Rust MIR happened in <a href="../lists/labs.html#q=https://github.com/rust-lang">https://github.com/rust-lang</a>
+- Rust MIR compiles to <a href="llvmir.html">LLVM IR</a>
+- <a href="https://www.rust-lang.org">rust-lang.org</a> was registered in 2010
+- See also: (1 related languages) <a href="swift-il.html">Swift SIL</a>
 - Read more about Rust MIR on the web: 1. 2.
  https://rustc-dev-guide.rust-lang.org/hir.html 1.
  https://blog.rust-lang.org/2016/04/19/MIR.html 2.
-- 1 PLDB concepts link to Rust MIR: Rust HIR
+- 1 PLDB concepts link to Rust MIR: <a href="rust-hir.html">Rust HIR</a>
 
+```Example from the web:
 // WARNING: This output format is intended for human consumers only
 // and is subject to change without notice. Knock yourself out.
 fn main() -&gt; () {
@@ -72,29 +75,30 @@ fn main() -&gt; () {
         resume;                          // scope 0 at src/main.rs:1:1: 5:2
     }
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

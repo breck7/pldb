@@ -1,0 +1,29 @@
+Scallop
+=======
+
+Scallop is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2024 by Ziyang Li.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222024%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2024
+ https://pldb.io/concepts/../lists/creators.html#q=Ziyang%20Li Ziyang Li
+
+#1054 on PLDB
+2 Years Old
+
+```Download source code:
+git clone https://github.com/scallop-lang/scallop
+```
+
+Neurosymbolic Programming with Scallop. Based on Datalog.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Scallop is developed on <a href="https://github.com/scallop-lang/scallop">GitHub</a> and has 346 stars
+- Early development of Scallop happened in <a href="../lists/labs.html#q=University of Pennsylvania">University of Pennsylvania</a>
+- Scallop is written in <a href="rust.html">Rust</a>, <a href="python.html">Python</a>, <a href="markdown.html">Markdown</a>, <a href="toml.html">TOML</a>, <a href="csv.html">CSV</a>, <a href="make.html">Make</a>, <a href="json.html">JSON</a>, <a href="javascript.html">JavaScript</a>, <a href="yaml.html">YAML</a>, <a href="html.html">HTML</a>, <a href="xml.html">XML</a>
+- See also: (1 related languages) <a href="datalog.html">Datalog</a>
+
+```Example from the web:
+rel path(x, y) = dash(x, y)
+rel path(x, y) = path(x, z), dash(z, y)
+rel is_connected() = dot(x), dot(y), path(x, y), x != y
+```
+
+Built with Scroll v178.2.3

@@ -1,32 +1,33 @@
 VHDL
 ====
 
-VHDL, aka VHSIC Hardware Description Language, is a hardware description language created in 1983.
+VHDL, aka VHSIC Hardware Description Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22hardwareDescriptionLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">hardware description language</a> created in 1983.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221983%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1983
 
-#80 on PLDB
-41 Years Old
-34k Repos
+#81 on PLDB
+43 Years Old
+34k <span title="VHDL repos on GitHub.">Repos</span>
 
 VHDL (VHSIC Hardware Description Language) is a hardware description language used in electronic design automation to describe digital and mixed-signal systems such as field-programmable gate arrays and integrated circuits. VHDL can also be used as a general purpose parallel programming language.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/VHDL Read more on Wikipedia...
 
-- Tags: hardwareDescriptionLanguage
-- There are at least 34,211 VHDL repos on GitHub
-- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using VHDL in 2k repos on GitHub
-- There are 2,320 members in the VHDL subreddit
-- Explore VHDL snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"hardwareDescriptionLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>hardwareDescriptionLanguage</a>
+- There are at least 34,211 VHDL repos on <a href="https://github.com/search?q=language:VHDL">GitHub</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using VHDL in 2k repos on <a href="https://api.github.com/search/repositories?q=language:VHDL">GitHub</a>
+- There are 2,320 members in the <a href="https://reddit.com/r/VHDL">VHDL subreddit</a>
+- Explore VHDL snippets on <a href="http://www.rosettacode.org/wiki/Category:VHDL">Rosetta Code</a>
 - VHDL on HOPL
  https://hopl.info/showlanguage.prx?exp=1188 VHDL on HOPL
-- VHDL ranks #44 in the TIOBE Index
-- ANTLR grammar for VHDL
-- VHDL LSP implementation
-- CodeMirror package for syntax highlighting VHDL
-- Pygments supports syntax highlighting for VHDL
-- GitHub supports syntax highlighting for VHDL
-- See also: (6 related languages) Verilog, Ada, Pascal, VHDL-AMS, Property Specification Language, ISBN
-- 5 PLDB concepts link to VHDL: Ace Editor, invokator, mal, Pygments, Spatial
+- VHDL ranks #44 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/vhdl">grammar</a> for VHDL
+- VHDL <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/kraigher/rust_hdl">implementation</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/vhdl">package</a> for syntax highlighting VHDL
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/hdl.py">syntax highlighting</a> for VHDL
+- GitHub supports <a href="https://github.com/textmate/vhdl.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for VHDL
+- See also: (6 related languages) <a href="verilog.html">Verilog</a>, <a href="ada.html">Ada</a>, <a href="pascal.html">Pascal</a>, <a href="vhdl-ams.html">VHDL-AMS</a>, <a href="property-specification-language.html">Property Specification Language</a>, <a href="isbn.html">ISBN</a>
+- 5 PLDB concepts link to VHDL: <a href="ace.html">Ace Editor</a>, <a href="invokator.html">invokator</a>, <a href="mal.html">mal</a>, <a href="pygments.html">Pygments</a>, <a href="spatial.html">Spatial</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/v/VHDL.vhdl'>hello-world</a>:
 use std.textio.all;
 
 entity hello_world is
@@ -40,7 +41,9 @@ begin
        wait;
     end process;
 end behaviour;
+```
 
+```Example from <a href='http://helloworldcollection.de/#VHSIC'>the Hello World Collection</a>:
 --Hello World in VHDL
 
 ENTITY helloworld IS
@@ -56,6 +59,9 @@ SEVERITY NOTE;
 
 END hw;
 
+```
+
+```Example from <a href='https://github.com/textmate/vhdl.tmbundle'>Linguist</a>:
 -- VHDL example file
 
 library ieee;
@@ -71,6 +77,9 @@ begin
 	b &lt;= not a;
 end architecture;
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/VHDL'>Wikipedia</a>:
 process
 begin
   wait until START = &#39;1&#39;; -- wait until START is high
@@ -94,107 +103,115 @@ begin
 
   -- and so on...
 end process;
+```
 
+```VHDL <a href="../lists/keywords.html#q=vhdl">Keywords</a>
 abs access after alias all and architecture array assert attribute begin block body buffer bus case component configuration constant disconnect downto else elsif end entity exit file for function generate generic group guarded if impure in inertial inout is label library linkage literal loop map mod nand new next nor not null of on open or others out package port postponed procedure process pure range record register reject rem report return rol ror select severity signal shared sla sll sra srl subtype then to transport type unaffected units until use variable wait when while with xnor xor
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- B"[01_]+"
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- \d{1,2}#[0-9a-f_]+#?
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- (\d+\.\d*|\.\d+|\d+)E[+-]?\d+
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- X"[0-9a-f_]+"
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- O"[0-7_]+"
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   signals some_signal : integer ;
   signal some_other_signal : integer ;
   signal result : integer ;
-  ReSULT ✓
+  ReSULT <= SOME_SIGNAL + sOME_oTHer_SIGNal ; -- Although totally unrecommended - this is perfectly legal
+ Token 
+row
+ Feature Print() Debugging
+ FeatureLink ../features/hasPrintDebugging.html
+ Supported <span class="hasFeature">✓</span>
  Example
  Token write
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token --
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

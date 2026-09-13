@@ -1,32 +1,36 @@
 Gnuplot
 =======
 
-Gnuplot is an open source programming language created in 1986.
+Gnuplot is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1986.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1986
 
-#453 on PLDB
-38 Years Old
-2k Repos
+#473 on PLDB
+40 Years Old
+2k <span title="Gnuplot repos on GitHub.">Repos</span>
 
 gnuplot is a command-line program that can generate two- and three-dimensional plots of functions, data, and data fits. It is frequently used for publication-quality graphics as well as in education. The program runs on all major computers and operating systems (Linux, Unix, Microsoft Windows, macOS, and others). Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Gnuplot Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 2,276 Gnuplot repos on GitHub
-- Early development of Gnuplot happened in https://sourceforge.net/p/gnuplot/mailman/
-- The  Google BigQuery Public Dataset GitHub snapshot shows 3k users using Gnuplot in 3k repos on GitHub
-- Explore Gnuplot snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 2,276 Gnuplot repos on <a href="https://github.com/search?q=language:Gnuplot">GitHub</a>
+- Early development of Gnuplot happened in <a href="../lists/labs.html#q=https://sourceforge.net/p/gnuplot/mailman/">https://sourceforge.net/p/gnuplot/mailman/</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 3k users using Gnuplot in 3k repos on <a href="https://api.github.com/search/repositories?q=language:Gnuplot">GitHub</a>
+- Explore Gnuplot snippets on <a href="http://www.rosettacode.org/wiki/Category:Gnuplot">Rosetta Code</a>
 - Gnuplot Ubuntu package
  https://packages.ubuntu.com/jammy/gnuplot Gnuplot Ubuntu package
-- Pygments supports syntax highlighting for Gnuplot
-- GitHub supports syntax highlighting for Gnuplot
-- Gnuplot appears in the Quine Relay project
-- There is 1 Jupyter Kernel for Gnuplot
-- gnuplot.info was registered in 2002
-- See also: (20 related languages) C, Linux, Unix, SVG, LaTeX, Lua, Maxima, GNU Octave, Perl, Perl Data Language, Python, Sage, Julia, Java, Ruby, Ch computer programming, Haskell, Smalltalk, Squeak, Matplotlib
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/graphics.py">syntax highlighting</a> for Gnuplot
+- GitHub supports <a href="https://github.com/mattfoster/gnuplot-tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Gnuplot
+- Gnuplot appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/has2k1/gnuplot_kernel">Kernel</a> for Gnuplot
+- <a href="http://gnuplot.info/">gnuplot.info</a> was registered in 2002
+- See also: (20 related languages) <a href="c.html">C</a>, <a href="linux.html">Linux</a>, <a href="unix.html">Unix</a>, <a href="svg.html">SVG</a>, <a href="latex.html">LaTeX</a>, <a href="lua.html">Lua</a>, <a href="maxima.html">Maxima</a>, <a href="octave.html">GNU Octave</a>, <a href="perl.html">Perl</a>, <a href="perl-data-language.html">Perl Data Language</a>, <a href="python.html">Python</a>, <a href="sagemath.html">Sage</a>, <a href="julia.html">Julia</a>, <a href="java.html">Java</a>, <a href="ruby.html">Ruby</a>, <a href="ch.html">Ch computer programming</a>, <a href="haskell.html">Haskell</a>, <a href="smalltalk.html">Smalltalk</a>, <a href="squeak.html">Squeak</a>, <a href="matplotlib.html">Matplotlib</a>
 
+```Example from <a href='https://riju.codes/gnuplot'>Riju</a>:
 print &quot;Hello, world!&quot;
 
+```
+
+```Example from <a href='https://github.com/mattfoster/gnuplot-tmbundle'>Linguist</a>:
 #!/usr/bin/env gnuplot
 
 reset
@@ -42,20 +46,24 @@ set ylabel &quot;Response Rate&quot;
 
 plot &#39;rates100.dat&#39; pt 7 notitle
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Gnuplot'>Wikipedia</a>:
 set title &quot;Some Math Functions&quot;
 set xrange [-10:10]
 set yrange [-2:2]
 set zeroaxis
 plot (x/4)**2, sin(x), 1/x
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print
 
-View source
+Built with Scroll v178.2.3

@@ -1,28 +1,41 @@
 Breccia
 =======
 
-Breccia is a text markup language created in 2019 by Michael Allan.
- https://pldb.io/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2019
- https://pldb.io/../lists/creators.html#q=Michael%20Allan Michael Allan
+Breccia is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2019 by Michael Allan.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2019
+ https://pldb.io/concepts/../lists/creators.html#q=Michael%20Allan Michael Allan
 
-#2072 on PLDB
-5 Years Old
+#2155 on PLDB
+7 Years Old
 
+```Download source code:
 git clone https://github.com/Michael-Allan/Breccia
+```
 
 Lightweight markup for point-form outlining and drafting. (mirror)
 
-- Tags: text markup language
-- Breccia is developed on GitHub and has 2 stars
-- Early development of Breccia happened in reluk
-- Breccia is written in Markdown
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- Breccia is developed on <a href="https://github.com/Michael-Allan/Breccia">GitHub</a> and has 2 stars
+- Early development of Breccia happened in <a href="../lists/labs.html#q=reluk">reluk</a>
+- Breccia is written in <a href="markdown.html">Markdown</a>
 
+```Example from the web:
 Definition of terms for project Breccia
 
     : see also http://reluk.ca/project/wayic/refractory/index.brec
 
     @
         - A containment operator.
-        : see `^^containment clauseimportOnly
+        : see `^^containment clause$` @ language_definition.brec
+        : see `^^CS$` @ language_definition.brec
+    alphanumeric
+        - (of a character) Having a Unicode property of `Alphabetic` or `Decimal_Number`.
+            : re `Alphabetic` see https://www.unicode.org/reports/tr44/tr44-26.html#Alphabetic
+            : re `Decimal_Number`
+              see https://www.unicode.org/reports/tr44/tr44-26.html#General_Category_Values
+    .brec
+        - The file extension for Breccia.
+            : see `Filename extension` @ README.html
+```
 
-View source
+Built with Scroll v178.2.3

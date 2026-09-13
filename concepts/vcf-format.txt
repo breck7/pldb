@@ -1,20 +1,21 @@
 VCF
 ===
 
-VCF is a text data format created in 2011.
+VCF is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textDataFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text data format</a> created in 2011.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2011
 
-#2887 on PLDB
-13 Years Old
+#2956 on PLDB
+15 Years Old
 
 The Variant Call Format (VCF) specifies the format of a text file used in bioinformatics for storing gene sequence variations. The format has been developed with the advent of large-scale genotyping and DNA sequencing projects, such as the 1000 Genomes Project. Existing formats for genetic data such as General feature format (GFF) stored all of the genetic data, much of which is redundant because it will be shared across the genomes. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Variant_Call_Format Read more on Wikipedia...
 
-- Tags: textDataFormat
-- See also: (1 related languages) General feature format
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textDataFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>textDataFormat</a>
+- See also: (1 related languages) <a href="gff-format.html">General feature format</a>
 - Read more about VCF on the web: 1.
  https://academic.oup.com/bioinformatics/article/27/15/2156/402296 1.
 
+```Example from <a href='https://en.wikipedia.org/wiki/Variant_Call_Format'>Wikipedia</a>:
 ##fileformat=VCFv4.3
 ##fileDate=20090805
 ##source=myImputationProgramV3.1
@@ -39,5 +40,6 @@ The Variant Call Format (VCF) specifies the format of a text file used in bioinf
 20     1110696  rs6040355  A     G,T    67    PASS    NS=2;DP=10;AF=0.333,0.667;AA=T;DB GT:GQ:DP:HQ  1|2:21:6:23,27  2|1:2:0:18,2     2/2:35:4
 20     1230237  .          T     .      47    PASS    NS=3;DP=13;AA=T                   GT:GQ:DP:HQ  0|0:54:7:56,60  0|0:48:4:51,51   0/0:61:2
 20     1234567  microsat1  GTC   G,GTCT 50    PASS    NS=3;DP=9;AA=G                    GT:GQ:DP     0/1:35:4        0/2:17:2         1/1:40:3
+```
 
-View source
+Built with Scroll v178.2.3

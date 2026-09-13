@@ -1,27 +1,31 @@
 Blech
 =====
 
-Blech is a programming language created in 2019 by Franz-Josef Grosch.
+Blech is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2019 by Franz-Josef Grosch.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2019
  https://pldb.io/concepts/../lists/creators.html#q=Franz-Josef%20Grosch Franz-Josef Grosch
 
-#1330 on PLDB
-5 Years Old
+#1359 on PLDB
+7 Years Old
 
+```Download source code:
 git clone https://github.com/blech-lang/blech
+```
 
 Blech is a synchronous programming language for embedded, reactive, realtime-critical software. It allows writing reactive subprograms and combining them both sequentially and concurrently. Blech compiles to clean C, which may be integrated into existing projects or simulation frameworks. The name Blech ironically describes embedded hardware. It expresses that Blech programs can run directly on the Blech of pretty much any embedded device.
 
-- Tags: programming language
-- Blech is developed on GitHub and has 64 stars
-- Blech compiles to C
-- Blech is written in JSON, F#, XML, C, Markdown, YAML, Bourne shell
-- First announcement of Blech
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Blech is developed on <a href="https://github.com/blech-lang/blech">GitHub</a> and has 64 stars
+- Blech compiles to <a href="c.html">C</a>
+- Blech is written in <a href="json.html">JSON</a>, <a href="f-sharp.html">F#</a>, <a href="xml.html">XML</a>, <a href="c.html">C</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="bourne-shell.html">Bourne shell</a>
+- <a href="https://www.blech-lang.org/blog/2020/05/27/the-purpose-of-blech/">First announcement of</a> Blech
 
+```Example from the web:
 struct Display
     var hundredth: int32
     var seconds: int32
     var minutes: int32
 end
+```
 
-View source
+Built with Scroll v178.2.3

@@ -1,0 +1,28 @@
+div Join our new subreddit &nbsp; &nbsp;
+ https://www.reddit.com/r/pldb new subreddit
+ id emailBanner
+ class banner hide
+ a X
+  onclick hideEmailList()
+  class closeBannerButton
+
+css
+ .banner {
+   background: #f0f0f0;
+   padding: 10px;
+   text-align: center;
+ }
+ .closeBannerButton {cursor:pointer;display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: rgba(0, 0, 0, 0.1); color: #666; text-decoration: none; font-family: arial; font-size: 14px; line-height: 1; transition: all 0.2s ease; position: relative; top: -1px;}
+ .hide { display: none; }
+script
+ if (localStorage.getItem('subscribed') !== 'true')
+  document.getElementById('emailBanner').classList.remove('hide');
+ function hideEmailList() {
+   localStorage.setItem('subscribed', 'true');
+  document.getElementById('emailBanner').classList.add('hide');
+ }
+ function handleSubmit(e) {
+  e.preventDefault();
+  window.location.href = `mailto:breck7@gmail.com?subject=Join PLDB email list&body=Please add me to the PLDB email list`;
+   hideEmailList()
+ }

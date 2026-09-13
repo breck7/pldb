@@ -1,70 +1,74 @@
 Sophia
 ======
 
-Sophia is a contract language created in 2018 by Robert Virding.
+Sophia is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22contractLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">contract language</a> created in 2018 by Robert Virding.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2018
  https://pldb.io/concepts/../lists/creators.html#q=Robert%20Virding Robert Virding
 
-#906 on PLDB
-6 Years Old
+#935 on PLDB
+8 Years Old
 
+```Download source code:
 git clone https://github.com/aeternity/aesophia
+```
 
  Stand alone compiler for the Sophia smart contract language
 
-- Tags: contractLanguage
-- Sophia is developed on GitHub and has 51 stars
-- Early development of Sophia happened in https://github.com/aeternity
-- Sophia is written in Erlang, Markdown, YAML, Reason, HTML, Python
-- Monaco package for syntax highlighting Sophia
-- See also: (1 related languages) Solidity
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"contractLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>contractLanguage</a>
+- Sophia is developed on <a href="https://github.com/aeternity/aesophia">GitHub</a> and has 51 stars
+- Early development of Sophia happened in <a href="../lists/labs.html#q=https://github.com/aeternity">https://github.com/aeternity</a>
+- Sophia is written in <a href="erlang.html">Erlang</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="reason.html">Reason</a>, <a href="html.html">HTML</a>, <a href="python.html">Python</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/sophia">package</a> for syntax highlighting Sophia
+- See also: (1 related languages) <a href="solidity.html">Solidity</a>
 
+```Sophia <a href="../lists/keywords.html#q=sophia">Keywords</a>
 contract library entrypoint function stateful state hash signature tuple list address string bool int record datatype type option oracle oracle_query Call Bits Bytes Oracle String Crypto Address Auth Chain None Some bits bytes event let map private public true false var if else throw
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -72,15 +76,15 @@ row
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

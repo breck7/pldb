@@ -1,27 +1,32 @@
-odin
+Odin
 ====
 
-odin is a programming language created in 2016.
+Odin is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2016 by Bill Hall.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2016
+ https://pldb.io/concepts/../lists/creators.html#q=Bill%20Hall Bill Hall
 
-#98 on PLDB
-8 Years Old
-417 Repos
+#86 on PLDB
+10 Years Old
+417 <span title="Odin repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/odin-lang/Odin
+```
 
-Odin Programming Language
+Odin is a general-purpose programming language with distinct typing built for high performance, modern systems and data-oriented programming.
 
-- Tags: programming language
-- odin is developed on GitHub and has 6,235 stars
-- There are at least 417 odin repos on GitHub
-- Early development of odin happened in https://github.com/odin-lang
-- odin is written in odin, C, C++, Markdown, Make, Python, YAML, Bourne shell, XML, Assembly language, GLSL, HTML, JavaScript, Nix
-- The  Google BigQuery Public Dataset GitHub snapshot shows 5 users using odin in 6 repos on GitHub
-- Pygments supports syntax highlighting for odin
-- odin-lang.org was registered in 2017
-- 4 PLDB concepts link to odin: Ace Editor, cloc, odin, Pygments
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Odin is developed on <a href="https://github.com/odin-lang/Odin">GitHub</a> and has 6,235 stars
+- There are at least 417 Odin repos on <a href="https://github.com/search?q=language:Odin">GitHub</a>
+- Early development of Odin happened in <a href="../lists/labs.html#q=https://github.com/odin-lang">https://github.com/odin-lang</a>
+- Odin is written in <a href="odin.html">Odin</a>, <a href="c.html">C</a>, <a href="cpp.html">C++</a>, <a href="markdown.html">Markdown</a>, <a href="make.html">Make</a>, <a href="python.html">Python</a>, <a href="yaml.html">YAML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="xml.html">XML</a>, <a href="assembly-language.html">Assembly language</a>, <a href="glsl.html">GLSL</a>, <a href="html.html">HTML</a>, <a href="javascript.html">JavaScript</a>, <a href="nix.html">Nix</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 5 users using Odin in 6 repos on <a href="https://api.github.com/search/repositories?q=language:Odin">GitHub</a>
+- There are 1,700 members in the <a href="https://reddit.com/r/odinlang">Odin subreddit</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/archetype.py">syntax highlighting</a> for Odin
+- <a href="https://odin-lang.org">odin-lang.org</a> was registered in 2017
+- 4 PLDB concepts link to Odin: <a href="ace.html">Ace Editor</a>, <a href="cloc.html">cloc</a>, <a href="odin.html">Odin</a>, <a href="pygments.html">Pygments</a>
 
+```Example from the web:
 package main
 
 import &quot;core:fmt&quot;
@@ -44,7 +49,9 @@ main :: proc() {
  fmt.printf(&quot;The program \&quot;%s\&quot; calculates the value %d\n&quot;,
             program, accumulator);
 }
+```
 
+```Example from <a href='https://riju.codes/odin'>Riju</a>:
 package main
 
 import &quot;core:fmt&quot;
@@ -53,6 +60,9 @@ main :: proc() {
     fmt.printf(&quot;Hello, world!\n&quot;);
 }
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/o/Odin.odin'>hello-world</a>:
 package main
 
 import &quot;core:fmt&quot;
@@ -61,41 +71,43 @@ main :: proc() {
   fmt.println(&quot;Hello World&quot;);
 }
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token fmt.println
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

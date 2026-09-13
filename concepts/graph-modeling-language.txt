@@ -1,23 +1,24 @@
 Graph Modeling Language
 =======================
 
-Graph Modeling Language is an application created in 1997.
+Graph Modeling Language is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 1997.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1997
 
-#1606 on PLDB
-27 Years Old
-12k Repos
+#1667 on PLDB
+29 Years Old
+12k <span title="Graph Modeling Language repos on GitHub.">Repos</span>
 
 Graph Modeling Language (GML) is a hierarchical ASCII-based file format for describing graphs. It has been also named Graph Meta Language.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Graph_Modelling_Language Read more on Wikipedia...
 
-- Tags: application
-- There are at least 12,488 Graph Modeling Language repos on GitHub
-- Early development of Graph Modeling Language happened in University of Passau
-- See also: (3 related languages) GraphML, ASCII, Python
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>
+- There are at least 12,488 Graph Modeling Language repos on <a href="https://github.com/search?q=language:Graph Modeling Language">GitHub</a>
+- Early development of Graph Modeling Language happened in <a href="../lists/labs.html#q=University of Passau">University of Passau</a>
+- See also: (3 related languages) <a href="graphml.html">GraphML</a>, <a href="ascii.html">ASCII</a>, <a href="python.html">Python</a>
 - Read more about Graph Modeling Language on the web: 1.
  http://www.uni-passau.de/fileadmin/files/lehrstuhl/brandenburg/projekte/gml/gml-technical-report.pdf 1.
 
+```Example from the web:
 graph
 [
   directed 0
@@ -40,6 +41,9 @@ graph
   ]
 ]
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Graph_Modelling_Language'>Wikipedia</a>:
 graph [
 	comment &quot;This is a sample graph&quot;
 	directed 1
@@ -76,5 +80,6 @@ graph [
 		label &quot;Edge from node 3 to node 1&quot;
 	]
 ]
+```
 
-View source
+Built with Scroll v178.2.3

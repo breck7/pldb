@@ -1,23 +1,28 @@
 Alice
 =====
 
-Alice is an open source programming language created in 2000.
+Alice is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2000.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2000
 
-#1209 on PLDB
-24 Years Old
+#1254 on PLDB
+26 Years Old
 
 Alice ML is a programming language designed by the Programming Systems Laboratory at Saarland University, Saarbrücken, Germany. It is a dialect of Standard ML, augmented with support for lazy evaluation, concurrency (multithreading and distributed computing via remote procedure calls) and constraint programming.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Alice_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Alice happened in Saarland University
-- See also: (4 related languages) ML, Oz, Standard ML, Haskell
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Alice happened in <a href="../lists/labs.html#q=Saarland University">Saarland University</a>
+- See also: (4 related languages) <a href="ml.html">ML</a>, <a href="oz.html">Oz</a>, <a href="standard-ml.html">Standard ML</a>, <a href="haskell.html">Haskell</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/a/Alice.alice'>hello-world</a>:
 &quot;dlroW olleH&quot;d&amp;O`@
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Alice_(programming_language)'>Wikipedia</a>:
 fun fib 0 = 0
    | fib 1 = 1
    | fib n = spawn fib(n-1) + fib(n-2);
+```
 
-View source
+Built with Scroll v178.2.3

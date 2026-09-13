@@ -1,36 +1,42 @@
 ATS
 ===
 
-ATS, aka Applied Type System, is an open source programming language created in 2013 by Hongwei Xi.
+ATS, aka Applied Type System, is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2013 by Hongwei Xi.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2013
  https://pldb.io/concepts/../lists/creators.html#q=Hongwei%20Xi Hongwei Xi
 
-#464 on PLDB
-11 Years Old
-217 Repos
+#483 on PLDB
+13 Years Old
+217 <span title="ATS repos on GitHub.">Repos</span>
 
 ATS (Applied Type System) is a programming language designed to unify programming with formal specification. ATS has support for combining theorem proving with practical programming through the use of advanced type systems. A past version of The Computer Language Benchmarks Game has demonstrated that the performance of ATS is comparable to that of the C and C++ programming languages. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/ATS_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 217 ATS repos on GitHub
-- Early development of ATS happened in Boston University
-- The  Google BigQuery Public Dataset GitHub snapshot shows 26 users using ATS in 46 repos on GitHub
-- Explore ATS snippets on Rosetta Code
-- Monaco package for syntax highlighting ATS
-- GitHub supports syntax highlighting for ATS
-- ats-lang.org was registered in 2007
-- See also: (4 related languages) DML, ML, OCaml, C
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 217 ATS repos on <a href="https://github.com/search?q=language:ATS">GitHub</a>
+- Early development of ATS happened in <a href="../lists/labs.html#q=Boston University">Boston University</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 26 users using ATS in 46 repos on <a href="https://api.github.com/search/repositories?q=language:ATS">GitHub</a>
+- Explore ATS snippets on <a href="http://www.rosettacode.org/wiki/Category:ATS">Rosetta Code</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/postiats">package</a> for syntax highlighting ATS
+- GitHub supports <a href="https://github.com/steinwaywhw/ats-mode-sublimetext" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for ATS
+- <a href="http://www.ats-lang.org/">ats-lang.org</a> was registered in 2007
+- See also: (4 related languages) <a href="dependent-ml.html">DML</a>, <a href="ml.html">ML</a>, <a href="ocaml.html">OCaml</a>, <a href="c.html">C</a>
 
+```Example from <a href='https://riju.codes/ats'>Riju</a>:
 val _ = print (&quot;Hello, world!\n&quot;)
 implement main0 () = ()
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Applied'>the Hello World Collection</a>:
 // Hello world in ATS
 
 implement main () = begin
   print (&quot;Hello, world!&quot;); print_newline ()
 end
+```
 
+```Example from <a href='https://github.com/steinwaywhw/ats-mode-sublimetext'>Linguist</a>:
 (* ****** ****** *)
 //
 // HX-2013-11
@@ -75,30 +81,36 @@ end // end of [local]
 
 (* end of [DiningPhil2_thread.dats] *)
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/ATS_(programming_language)'>Wikipedia</a>:
 #define BUFLEN 10
 var !p_buf with pf_buf = @[byte][BUFLEN](0)    // pf_buf = @[byte][BUFLEN](0) @ p_buf[14]
+```
 
+```ATS <a href="../lists/keywords.html#q=ats">Keywords</a>
 abstype abst0ype absprop absview absvtype absviewtype absvt0ype absviewt0ype as and assume begin classdec datasort datatype dataprop dataview datavtype dataviewtype do end extern extype extvar exception fn fnx fun prfn prfun praxi castfn if then else ifcase in infix infixl infixr prefix postfix implmnt implement primplmnt primplement import let local macdef macrodef nonfix symelim symintr overload of op rec sif scase sortdef sta stacst stadef static staload dynload try tkindef typedef propdef viewdef vtypedef viewtypedef prval var prvar when where with withtype withprop withview withvtype withviewtype
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (* A comment
   *)
@@ -106,22 +118,22 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

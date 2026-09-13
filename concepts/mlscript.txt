@@ -1,0 +1,53 @@
+MLscript
+========
+
+MLscript is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2020 by Luyu Cheng and Lionel Parreaux.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
+ https://pldb.io/concepts/../lists/creators.html#q=Luyu%20Cheng Luyu Cheng
+ https://pldb.io/concepts/../lists/creators.html#q=Lionel%20Parreaux Lionel Parreaux
+
+#1007 on PLDB
+6 Years Old
+
+```Download source code:
+git clone https://github.com/hkust-taco/mlscript/
+```
+
+A step towards rethinking pattern matching to make it more powerful and natural to use.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- MLscript is developed on <a href="https://github.com/hkust-taco/mlscript/">GitHub</a> and has 170 stars
+- Early development of MLscript happened in <a href="../lists/labs.html#q=HKUST">HKUST</a>
+- <a href="ml.html">ML</a> and <a href="ocaml.html">OCaml</a> and <a href="haskell.html">Haskell</a> and <a href="standard-ml.html">Standard ML</a> and <a href="scala.html">Scala</a> and <a href="rust.html">Rust</a> influenced the design of MLscript
+- MLscript is written in <a href="scala.html">Scala</a>, <a href="standard-ml.html">Standard ML</a>, <a href="typescript.html">TypeScript</a>, <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>, <a href="html.html">HTML</a>, <a href="javascript.html">JavaScript</a>, <a href="css.html">CSS</a>, <a href="nix.html">Nix</a>, <a href="yaml.html">YAML</a>, <a href="make.html">Make</a>
+- <a href="https://dl.acm.org/doi/pdf/10.1145/3689746">First announcement of</a> MLscript
+
+```Example from the web:
+type List[A] = Cons[A] | Nil
+
+class Cons[out A](head: A, tail: List[A]) {
+  fun map: (A -&gt; &#39;B) -&gt; List[&#39;B]
+  map(f) = Cons of f(head), tail.map(f)
+}
+module Nil {
+  fun map(f) = Nil
+}
+
+fun (::) cons(x, xs) = Cons(x, xs)
+
+fun show(xs) =
+  let rec go(xs) = if xs is
+    Cons(h, Nil) then String(h)
+    Cons(h, t)   then join(String(h), &quot;, &quot;, go(t))
+    Nil          then &quot;&quot;
+  join(&quot;[&quot;, go(xs), &quot;]&quot;)
+
+let xs = 1 :: 2 :: 3 :: Nil
+
+show(xs)
+
+show(xs.map of x =&gt; succ(x))
+
+```
+
+Built with Scroll v178.2.3

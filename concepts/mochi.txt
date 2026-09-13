@@ -1,26 +1,30 @@
 mochi
 =====
 
-mochi is an open source programming language created in 2014.
+mochi is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2014.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
 
-#727 on PLDB
-10 Years Old
+#764 on PLDB
+12 Years Old
 
+```Download source code:
 git clone https://github.com/i2y/mochi
+```
 
 Mochi is a dynamically typed programming language for functional programming and actor-style programming. Its interpreter is written in Python3. The interpreter translates a program written in Mochi to Python3's AST / bytecode.
 
-- Tags: programming language
-- mochi is developed on GitHub and has 914 stars
-- Early development of mochi happened in https://github.com/i2y/mochi/issues
-- mochi is written in Python, Markdown, reStructuredText, Make, Bourne shell, Dockerfile
-- There is 1 Jupyter Kernel for mochi
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- mochi is developed on <a href="https://github.com/i2y/mochi">GitHub</a> and has 914 stars
+- Early development of mochi happened in <a href="../lists/labs.html#q=https://github.com/i2y/mochi/issues">https://github.com/i2y/mochi/issues</a>
+- mochi is written in <a href="python.html">Python</a>, <a href="markdown.html">Markdown</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="make.html">Make</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="dockerfile.html">Dockerfile</a>
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/pya/mochi-kernel">Kernel</a> for mochi
 
+```Example from the web:
 def factorial(n, m):
    if n == 1:
        m
    else:
        factorial(n - 1, n * m)
+```
 
-View source
+Built with Scroll v178.2.3

@@ -1,18 +1,19 @@
 EXPRESS
 =======
 
-EXPRESS is a data notation created in 2004.
+EXPRESS is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 2004.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2004
 
-#1061 on PLDB
-20 Years Old
+#1119 on PLDB
+22 Years Old
 
 EXPRESS is a standard data modeling language for product data. EXPRESS is formalized in the ISO Standard for the Exchange of Product model STEP (ISO 10303), and standardized as ISO 10303-11.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/EXPRESS_(data_modeling_language) Read more on Wikipedia...
 
-- Tags: dataNotation
-- Early development of EXPRESS happened in ISO
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- Early development of EXPRESS happened in <a href="../lists/labs.html#q=ISO">ISO</a>
 
+```Example from the web:
 SCHEMA Family;
 
 ENTITY Person
@@ -31,23 +32,26 @@ ENTITY Male
 END_ENTITY;
 
 END_SCHEMA;
+```
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/e/Express.js'>hello-world</a>:
 const express = require(&#39;express&#39;)
 const app = express()
 
 app.get(&#39;/&#39;, (_, res) =&gt; res.send(&quot;Hello World&quot;))
 
 app.listen(8080)
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 
-View source
+Built with Scroll v178.2.3

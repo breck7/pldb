@@ -1,25 +1,28 @@
 FLUX
 ====
 
-FLUX is an open source programming language created in 2014 by Paul O’Shannessy.
+FLUX is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2014 by Paul O’Shannessy.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
  https://pldb.io/concepts/../lists/creators.html#q=Paul%20O%E2%80%99Shannessy Paul O’Shannessy
 
-#148 on PLDB
-10 Years Old
-187 Repos
+#153 on PLDB
+12 Years Old
+187 <span title="FLUX repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/facebook/flux
+```
 
 Application Architecture for Building User Interfaces
 
-- Tags: programming language
-- FLUX is developed on GitHub and has 17,382 stars
-- There are at least 187 FLUX repos on GitHub
-- Early development of FLUX happened in https://github.com/fluxcd
-- FLUX is written in JavaScript, Markdown, JSON, SVG, CSS, HTML, YAML
-- The  Google BigQuery Public Dataset GitHub snapshot shows 792 users using FLUX in 853 repos on GitHub
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- FLUX is developed on <a href="https://github.com/facebook/flux">GitHub</a> and has 17,382 stars
+- There are at least 187 FLUX repos on <a href="https://github.com/search?q=language:FLUX">GitHub</a>
+- Early development of FLUX happened in <a href="../lists/labs.html#q=https://github.com/fluxcd">https://github.com/fluxcd</a>
+- FLUX is written in <a href="javascript.html">JavaScript</a>, <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>, <a href="svg.html">SVG</a>, <a href="css.html">CSS</a>, <a href="html.html">HTML</a>, <a href="yaml.html">YAML</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 792 users using FLUX in 853 repos on <a href="https://api.github.com/search/repositories?q=language:FLUX">GitHub</a>
 
+```Example from the web:
 // concrete node signatures
 Listen ()
   =&gt; (int socket);
@@ -58,28 +61,30 @@ atomic CheckCache:{cache};
 atomic StoreInCache:{cache};
 atomic Complete:{cache};
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

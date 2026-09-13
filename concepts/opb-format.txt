@@ -1,25 +1,27 @@
 OPB Format
 ==========
 
-OPB Format is a text data format created in 2009 by Olivier Roussel and Vasco Manquinho.
+OPB Format is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textDataFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text data format</a> created in 2009 by Olivier Roussel and Vasco Manquinho.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2009
  https://pldb.io/concepts/../lists/creators.html#q=Olivier%20Roussel Olivier Roussel
  https://pldb.io/concepts/../lists/creators.html#q=Vasco%20Manquinho Vasco Manquinho
 
-#2863 on PLDB
-15 Years Old
+#2985 on PLDB
+17 Years Old
 
 A format for encoding pseudo-Boolean optimization problems. It is used to represent linear pseudo-Boolean constraints and objective functions.
 
-- Tags: textDataFormat
-- See also: (1 related languages) MPS Format
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textDataFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>textDataFormat</a>
+- See also: (1 related languages) <a href="mps-format.html">MPS Format</a>
 - Read more about OPB Format on the web: 1. 2.
  http://www.cril.univ-artois.fr/PB12/format.pdf 1.
  https://www.gurobi.com/documentation/current/refman/opb_format.html 2.
 
+```Example from the web:
 * #variable= 3 #constraint= 2
 min: 3 x1 + 2 x2 + x3;
 2 x1 - 3 x2 + x3 &gt;= 5;
 x1 + x2 + x3 = 1;
+```
 
-View source
+Built with Scroll v178.2.3

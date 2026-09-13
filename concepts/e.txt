@@ -1,27 +1,28 @@
 E
 =
 
-E is an open source programming language created in 1997 by Mark S. Miller.
+E is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1997 by Mark S. Miller.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1997
  https://pldb.io/concepts/../lists/creators.html#q=Mark%20S.%20Miller Mark S. Miller
 
-#559 on PLDB
-27 Years Old
-354 Repos
+#578 on PLDB
+29 Years Old
+354 <span title="E repos on GitHub.">Repos</span>
 
 E is an object-oriented programming language for secure distributed computing, created by Mark S. Miller, Dan Bornstein, and others at Electric Communities in 1997.  E is mainly descended from the concurrent language Joule and from Original-E, a set of extensions to Java for secure distributed programming. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/E_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 354 E repos on GitHub
-- Early development of E happened in Combex, Inc.
-- The  Google BigQuery Public Dataset GitHub snapshot shows 291 users using E in 304 repos on GitHub
-- Explore E snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 354 E repos on <a href="https://github.com/search?q=language:E">GitHub</a>
+- Early development of E happened in <a href="../lists/labs.html#q=Combex, Inc.">Combex, Inc.</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 291 users using E in 304 repos on <a href="https://api.github.com/search/repositories?q=language:E">GitHub</a>
+- Explore E snippets on <a href="http://www.rosettacode.org/wiki/Category:E">Rosetta Code</a>
 - E on HOPL
  https://hopl.info/showlanguage.prx?exp=1990 E on HOPL
-- erights.org was registered in 1998
-- See also: (5 related languages) GNU E, Joule, Java, Python, Pascal
+- <a href="http://erights.org/">erights.org</a> was registered in 1998
+- See also: (5 related languages) <a href="gnu-e.html">GNU E</a>, <a href="joule.html">Joule</a>, <a href="java.html">Java</a>, <a href="python.html">Python</a>, <a href="pascal.html">Pascal</a>
 
+```Example from the web:
 def factorial(n :int) :int {
   if (n == 1) {
     return 1
@@ -31,7 +32,9 @@ def factorial(n :int) :int {
     throw(&quot;invalid argument to factorial: &quot;+n)
   }
 }
+```
 
+```Example from the web:
 # E snippet from
 # http://wiki.erights.org/wiki/Walnut/Distributed_Computing/Promises
 when (tempVow) -&gt; {
@@ -42,8 +45,14 @@ when (tempVow) -&gt; {
     #....log event
 }
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/e/E.e'>hello-world</a>:
 println(&quot;Hello World&quot;)
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/E_(programming_language)'>Wikipedia</a>:
 def makeMint(name) :any {
    def [sealer, unsealer] := makeBrandPair(name)
    def mint {
@@ -65,41 +74,42 @@ def makeMint(name) :any {
    }
    return mint
  }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token println
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

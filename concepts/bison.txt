@@ -1,29 +1,30 @@
 Bison
 =====
 
-Bison is an open source grammar language created in 1985 by Robert Corbett.
+Bison is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22grammarLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">grammar language</a> created in 1985 by Robert Corbett.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221985%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1985
  https://pldb.io/concepts/../lists/creators.html#q=Robert%20Corbett Robert Corbett
 
-#363 on PLDB
-39 Years Old
-196 Repos
+#376 on PLDB
+41 Years Old
+196 <span title="Bison repos on GitHub.">Repos</span>
 
 GNU bison, commonly known as Bison, is a parser generator that is part of the GNU Project. Bison reads a specification of a context-free language, warns about any parsing ambiguities, and generates a parser (either in C, C++, or Java) which reads sequences of tokens and decides whether the sequence conforms to the syntax specified by the grammar. Bison by default generates LALR parsers but can also create GLR parsers. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/GNU_bison Read more on Wikipedia...
 
-- Tags: grammarLanguage
-- There are at least 196 Bison repos on GitHub
-- Early development of Bison happened in GNU Project
-- The  Google BigQuery Public Dataset GitHub snapshot shows 3k users using Bison in 4k repos on GitHub
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"grammarLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>grammarLanguage</a>
+- There are at least 196 Bison repos on <a href="https://github.com/search?q=language:Bison">GitHub</a>
+- Early development of Bison happened in <a href="../lists/labs.html#q=GNU Project">GNU Project</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 3k users using Bison in 4k repos on <a href="https://api.github.com/search/repositories?q=language:Bison">GitHub</a>
 - Bison on HOPL
  https://hopl.info/showlanguage.prx?exp=4653 Bison on HOPL
-- GitHub supports syntax highlighting for Bison
-- See also: (12 related languages) C, M4, Java, Yacc, Ruby, PHP, Go, Bash, LilyPond, PostgreSQL, MySQL, GNU Octave
+- GitHub supports <a href="https://github.com/textmate/bison.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Bison
+- See also: (12 related languages) <a href="c.html">C</a>, <a href="m4.html">M4</a>, <a href="java.html">Java</a>, <a href="yacc.html">Yacc</a>, <a href="ruby.html">Ruby</a>, <a href="php.html">PHP</a>, <a href="go.html">Go</a>, <a href="bash.html">Bash</a>, <a href="lilypond.html">LilyPond</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="mysql.html">MySQL</a>, <a href="octave.html">GNU Octave</a>
 - Read more about Bison on the web: 1.
  https://github.com/babyraging/yash 1.
-- 1 PLDB concepts link to Bison: Lemon
+- 1 PLDB concepts link to Bison: <a href="lemon.html">Lemon</a>
 
+```Example from the web:
 /* Reverse Polish Notation calculator. */
 
 %{
@@ -37,7 +38,9 @@ GNU bison, commonly known as Bison, is a parser generator that is part of the GN
 %token NUM
 
 %% /* Grammar rules and actions follow. */
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/GNU_bison'>Wikipedia</a>:
 # Makefile
 
 FILES	= Lexer.c Parser.c Expression.c main.c
@@ -55,21 +58,22 @@ Parser.c:	Parser.y Lexer.c
 
 clean:
 		rm -f *.o *~ Lexer.c Lexer.h Parser.c Parser.h test
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -77,15 +81,15 @@ row
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

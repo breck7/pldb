@@ -1,23 +1,24 @@
 SRecode Template
 ================
 
-SRecode Template is a text markup language created in 2000.
+SRecode Template is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2000.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2000
 
-#1048 on PLDB
-24 Years Old
-705k Repos
+#1088 on PLDB
+26 Years Old
+705k <span title="SRecode Template repos on GitHub.">Repos</span>
 
 Semantic Recoder (or SRecode) is a template manager and code generator that is a part of CEDET.
 
-- Tags: text markup language
-- There are at least 705,466 SRecode Template repos on GitHub
-- Early development of SRecode Template happened in Free Software Foundation
-- The  Google BigQuery Public Dataset GitHub snapshot shows 160 users using SRecode Template in 163 repos on GitHub
-- GitHub supports syntax highlighting for SRecode Template
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- There are at least 705,466 SRecode Template repos on <a href="https://github.com/search?q=language:SRecode Template">GitHub</a>
+- Early development of SRecode Template happened in <a href="../lists/labs.html#q=Free Software Foundation">Free Software Foundation</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 160 users using SRecode Template in 163 repos on <a href="https://api.github.com/search/repositories?q=language:SRecode Template">GitHub</a>
+- GitHub supports <a href="https://github.com/textmate/lisp.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for SRecode Template
 - Read more about SRecode Template on the web: 1.
  https://www.gnu.org/software/emacs/manual/html_mono/srecode.html 1.
 
+```Example from <a href='https://github.com/textmate/lisp.tmbundle'>Linguist</a>:
 ;;; linguist.srt --- Template for linguist-example-mode
 
 ;; Not copyrighted whatsoever.
@@ -37,7 +38,7 @@ This block of multiline text was added because every other .srt file
 I could find was GPL-licensed and had long-winded copyright blobs in
 the file&#39;s header. Also, check out my sick line-wrapping abilities.&quot;
 
-set DOLLAR &quot;TEMPLATEquot;
+set DOLLAR &quot;$&quot;
 
 context file
 
@@ -62,28 +63,30 @@ template filecomment :file :user :time
 
 ;; end
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token ;
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

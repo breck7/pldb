@@ -63,6 +63,7 @@ body {
 }
 
 .trueBaseThemeHeader {
+  padding-right: 80px; /* if the width of browser is narrow, save room for view source button */
   margin-bottom: 10px;
 }
 .trueBaseThemeHeader a {
@@ -115,7 +116,7 @@ body {
   cursor: pointer;
 }
 
-.scrollTitle {
+.printTitleParser {
   font-size: 2em;
 }
 

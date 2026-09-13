@@ -1,27 +1,29 @@
 Genshi
 ======
 
-Genshi is a template language created in 2006.
+Genshi is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22template%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">template language</a> created in 2006.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
 
-#1945 on PLDB
-18 Years Old
-30 Repos
+#2021 on PLDB
+20 Years Old
+30 <span title="Genshi repos on GitHub.">Repos</span>
 
 Genshi is a template engine for XML-based vocabularies written in  Python.  Genshi is used to easily insert generated output into XML-based languages, usually HTML, and reuse elements between documents.  Genshi's syntax is based on Kid, but its architecture is different. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Genshi_(templating_language) Read more on Wikipedia...
 
-- Tags: template language
-- There are at least 30 Genshi repos on GitHub
-- Early development of Genshi happened in https://github.com/edgewall
-- The  Google BigQuery Public Dataset GitHub snapshot shows 101 users using Genshi in 115 repos on GitHub
-- Pygments supports syntax highlighting for Genshi
-- See also: (4 related languages) XML, Python, HTML, Kid templating language
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"template"%5D%7D%5D%2C"logic"%3A"AND"%7D'>template language</a>
+- There are at least 30 Genshi repos on <a href="https://github.com/search?q=language:Genshi">GitHub</a>
+- Early development of Genshi happened in <a href="../lists/labs.html#q=https://github.com/edgewall">https://github.com/edgewall</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 101 users using Genshi in 115 repos on <a href="https://api.github.com/search/repositories?q=language:Genshi">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/templates.py">syntax highlighting</a> for Genshi
+- See also: (4 related languages) <a href="xml.html">XML</a>, <a href="python.html">Python</a>, <a href="html.html">HTML</a>, <a href="kid.html">Kid templating language</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Genshi_(templating_language)'>Wikipedia</a>:
 &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xmlns:py=&quot;http://genshi.edgewall.org/&quot;&gt;
     &lt;body&gt;
         &lt;p py:content=&quot;2 + 2&quot;&gt;This will be replaced with 4&lt;/p&gt;
     &lt;/body&gt;
 &lt;/html&gt;
+```
 
-View source
+Built with Scroll v178.2.3

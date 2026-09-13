@@ -7,9 +7,17 @@ printTitle Static Typing
 <a class="trueBaseThemePreviousItem" href="hasStaticMethods.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasStreams.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/python.html">Python</a>
+ # Optional, checkable using external type checkers like Mypy or Pyright
+ def print_repeated(text: str, repetitions: int) -&gt; None:
+   print(&quot;\n&quot;.join([text]*repetitions))
+ 
+ print_repeated(&quot;Hello!&quot;, 10)
+ print_repeated(&quot;This won&#39;t typecheck...&quot;, &quot;not an integer&quot;)
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
  || x = &quot;Hello&quot;
@@ -17,7 +25,11 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.htm
 
 ***
 
-* Languages *with* Static Typing include <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/nim.html">Nim</a>, <a href="../concepts/haxe.html">Haxe</a>, <a href="../concepts/carp.html">carp</a>, <a href="../concepts/ceylon.html">Ceylon</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/xtend.html">Xtend</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/sisal.html">SISAL</a>
+* Languages *with* Static Typing include <a href="../concepts/c.html">C</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/cpp.html">C++</a>, <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/scala.html">Scala</a>, <a href="../concepts/kotlin.html">Kotlin</a>, <a href="../concepts/haskell.html">Haskell</a>, <a href="../concepts/nim.html">Nim</a>, <a href="../concepts/haxe.html">Haxe</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/ocaml.html">OCaml</a>, <a href="../concepts/carp.html">carp</a>, <a href="../concepts/ceylon.html">Ceylon</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/xtend.html">Xtend</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/sisal.html">SISAL</a>, <a href="../concepts/nova.html">NOVA</a>, <a href="../concepts/cobrust.html">Cobrust</a>, <a href="../concepts/lateralus.html">Lateralus</a>
+
+***
+
+* Languages *without* Static Typing include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/bash.html">Bash</a>
 
 ***
 

@@ -1,61 +1,75 @@
 Perl
 ====
 
-Perl is an open source programming language created in 1987 by Larry Wall.
+Perl is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1987 by Larry Wall.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221987%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1987
  https://pldb.io/concepts/../lists/creators.html#q=Larry%20Wall Larry Wall
 
 #8 on PLDB
-37 Years Old
-170k Repos
+39 Years Old
+170k <span title="Perl repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/Perl/perl5
+```
 
 Perl is a family of high-level, general-purpose, interpreted, dynamic programming languages. The languages in this family include Perl 5 and Perl 6. Though Perl is not officially an acronym, there are various backronyms in use, including "Practical Extraction and Reporting Language". Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Perl Read more on Wikipedia...
 
-- Tags: programming language
-- Perl is developed on GitHub and has 1,886 stars
-- There are at least 169,830 Perl repos on GitHub
-- Early development of Perl happened in Unisys
-- Perl is written in Perl, C, Bourne shell, XML, YAML, JSON, Markdown, Tex, Pascal, Make, Diff, Lisp, Prolog, SQL, Yacc, D
-- The  Google BigQuery Public Dataset GitHub snapshot shows 69k users using Perl in 102k repos on GitHub
-- Check out the 83 Perl meetup groups on Meetup.com.
-- There are 15,510 members in the Perl subreddit
-- There are 2,433 Project Euler users using Perl
-- In the 2021 StackOverflow developer survey Perl programmers reported a median salary of $80,000. 2% of respondents reported using Perl. 2,028 programmers reported using Perl, and 1,175 said they wanted to use it
-- Explore Perl snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Perl is developed on <a href="https://github.com/Perl/perl5">GitHub</a> and has 1,886 stars
+- There are at least 169,830 Perl repos on <a href="https://github.com/search?q=language:Perl">GitHub</a>
+- Early development of Perl happened in <a href="../lists/labs.html#q=Unisys">Unisys</a>
+- Perl is written in <a href="perl.html">Perl</a>, <a href="c.html">C</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="xml.html">XML</a>, <a href="yaml.html">YAML</a>, <a href="json.html">JSON</a>, <a href="markdown.html">Markdown</a>, <a href="tex.html">Tex</a>, <a href="pascal.html">Pascal</a>, <a href="make.html">Make</a>, <a href="diff.html">Diff</a>, <a href="lisp.html">Lisp</a>, <a href="prolog.html">Prolog</a>, <a href="sql.html">SQL</a>, <a href="yacc.html">Yacc</a>, <a href="d.html">D</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 69k users using Perl in 102k repos on <a href="https://api.github.com/search/repositories?q=language:Perl">GitHub</a>
+- Check out the 83 <a href="https://www.meetup.com/topics/perl/">Perl meetup groups</a> on Meetup.com.
+- There are 15,510 members in the <a href="https://reddit.com/r/perl">Perl subreddit</a>
+- There are 2,433 <a href="https://projecteuler.net/language=Perl">Project Euler</a> users using Perl
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> Perl programmers reported a median salary of $80,000. 2% of respondents reported using Perl. 2,028 programmers reported using Perl, and 1,175 said they wanted to use it
+- Explore Perl snippets on <a href="http://www.rosettacode.org/wiki/Category:Perl">Rosetta Code</a>
 - Perl on HOPL
  https://hopl.info/showlanguage.prx?exp=2355 Perl on HOPL
-- Perl ranks #15 in the TIOBE Index
-- CodeMirror package for syntax highlighting Perl
-- Monaco package for syntax highlighting Perl
-- Pygments supports syntax highlighting for Perl
-- GitHub supports syntax highlighting for Perl
-- Learn Perl on exercism.
-- PLDB has 4 Jupyter Kernels for Perl: metacpan.org, github.com, github.com, github.com
-- There is a central package repository for Perl
+- Perl ranks #15 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/perl">package</a> for syntax highlighting Perl
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/perl">package</a> for syntax highlighting Perl
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/perl.py">syntax highlighting</a> for Perl
+- GitHub supports <a href="https://github.com/textmate/perl.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Perl
+- Learn <a href="https://exercism.org/tracks/perl">Perl on exercism.</a>
+- PLDB has 4 <a href="jupyter-notebook.html">Jupyter</a> Kernels for Perl: <a href="https://metacpan.org/release/Devel-IPerl">metacpan.org</a>, <a href="https://github.com/gabrielash/p6-net-jupyter">github.com</a>, <a href="https://github.com/timo/iperl6kernel">github.com</a>, <a href="https://github.com/bduggan/p6-jupyter-kernel">github.com</a>
+- There is a <a href="https://www.cpan.org/">central package repository</a> for Perl
 - Annual Reports for Perl
  http://blogs.perl.org/users/mohammad_s_anwar/2022/01/ Annual Reports for Perl
 - Events page for Perl
  https://www.perl.org/events.html Events page for Perl
-- Indeed.com has 8,795 matches for "perl engineer".
-- perl.org was registered in 1995
-- See also: (37 related languages) PEARL, C, Lisp, Pascal, sed, CoffeeScript, Falcon, Groovy, JavaScript, Julia, LPC, Raku, PHP, Python, Ruby, PowerShell, Unix, Bourne shell, Regular Expressions, Unicode, Haskell, Parrot, DTrace, JSON, awk, Fortran, S-expressions, Yacc, Bison, SQL, HTML, XS, RFC, JVM, APL, Perl Data Language, Pod
-- 112 PLDB concepts link to Perl: Ace Editor, AL, Apache Hbase, Bash, Bazel, beef-lang, BlitzMax, Bucardo, Ceylon, Chapel, Ć, Civet, Click, clike, cloc, cosh, Cryptol, Cyber, Dale, Dashrep, eC, Eiffel, elymas, Erlang, Factor, Felix, FFmpeg, Flare, FLEX, Flow9, Frege, Frundis, GAP, GHC, Git, Go, groff, gura, hakaru, HHVM, Homa, icarus, Idio, Idris, Iterm2, JAL compiler, Java, Jemplate, JFlex, juicy, Kakoune, KaTeX, ko, Lean, Links, Linux, lobster, mal, Markdown, mathics, MongoDB, Mudlle, mythryl, NCAR Command Language, nesC, newclay, Nextflow, nianiolang, Nit, Node.js, Noweb, ObjectScript, Obsidian, Opa, Opal, OpenCV, OpenRC runscript, Pan, PCRE, Perl, polyglot-compiler, PostgreSQL, Potion, POV-Ray SDL, Pygments, Racket, Rakudo, Revolution, Rholang, RicScript, Roc, Ruby, skip, Slash, Slony, SmallBASIC, Semantic Patch Language, Snowball, souper, SWI Prolog, SymPy, tao3d, TensorFlow, TestML, TextFrame, Tiny C Compiler, txtzyme, Vcpkg, VLC, VSXu, Wonkey, zl
+- Indeed.com has 8,795 matches for <a href="https://www.indeed.com/jobs?q=perl engineer">"perl engineer"</a>.
+- <a href="https://www.perl.org">perl.org</a> was registered in 1995
+- See also: (37 related languages) <a href="pearl.html">PEARL</a>, <a href="c.html">C</a>, <a href="lisp.html">Lisp</a>, <a href="pascal.html">Pascal</a>, <a href="sed.html">sed</a>, <a href="coffeescript.html">CoffeeScript</a>, <a href="falcon.html">Falcon</a>, <a href="groovy.html">Groovy</a>, <a href="javascript.html">JavaScript</a>, <a href="julia.html">Julia</a>, <a href="lpc.html">LPC</a>, <a href="raku.html">Raku</a>, <a href="php.html">PHP</a>, <a href="python.html">Python</a>, <a href="ruby.html">Ruby</a>, <a href="powershell.html">PowerShell</a>, <a href="unix.html">Unix</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="regex.html">Regular Expressions</a>, <a href="unicode.html">Unicode</a>, <a href="haskell.html">Haskell</a>, <a href="parrot-vm.html">Parrot</a>, <a href="dtrace.html">DTrace</a>, <a href="json.html">JSON</a>, <a href="awk.html">awk</a>, <a href="fortran.html">Fortran</a>, <a href="s-expressions.html">S-expressions</a>, <a href="yacc.html">Yacc</a>, <a href="bison.html">Bison</a>, <a href="sql.html">SQL</a>, <a href="html.html">HTML</a>, <a href="xs.html">XS</a>, <a href="rfc.html">RFC</a>, <a href="jvm.html">JVM</a>, <a href="apl.html">APL</a>, <a href="perl-data-language.html">Perl Data Language</a>, <a href="pod.html">Pod</a>
+- 125 PLDB concepts link to Perl: <a href="ace.html">Ace Editor</a>, <a href="al.html">AL</a>, <a href="apache-hbase.html">Apache Hbase</a>, <a href="bash.html">Bash</a>, <a href="bazel.html">Bazel</a>, <a href="beef.html">beef-lang</a>, <a href="berkeleydb.html">Berkeley DB</a>, <a href="blitzmax.html">BlitzMax</a>, <a href="bucardo.html">Bucardo</a>, <a href="ceylon.html">Ceylon</a>, <a href="cir.html">CIR</a>, <a href="cito.html">Ć</a>, <a href="civet.html">Civet</a>, <a href="click.html">Click</a>, <a href="clike.html">clike</a>, <a href="cloc.html">cloc</a>, <a href="cmake.html">CMake</a>, <a href="codeql.html">CodeQL</a>, <a href="cosh.html">cosh</a>, <a href="cperl.html">cperl</a>, <a href="cryptol.html">Cryptol</a>, <a href="cyber.html">Cyber</a>, <a href="dale.html">Dale</a>, <a href="dashrep.html">Dashrep</a>, <a href="dlvm.html">dlvm</a>, <a href="ec.html">eC</a>, <a href="ecl.html">ECL</a>, <a href="eiffel.html">Eiffel</a>, <a href="elymas.html">elymas</a>, <a href="erlang.html">Erlang</a>, <a href="factor.html">Factor</a>, <a href="felix.html">Felix</a>, <a href="ffmpeg.html">FFmpeg</a>, <a href="flare.html">Flare</a>, <a href="flex.html">FLEX</a>, <a href="flow9.html">Flow9</a>, <a href="frege.html">Frege</a>, <a href="frundis.html">Frundis</a>, <a href="gap.html">GAP</a>, <a href="ghc.html">GHC</a>, <a href="git.html">Git</a>, <a href="go.html">Go</a>, <a href="groff.html">groff</a>, <a href="gura.html">gura</a>, <a href="hakaru.html">hakaru</a>, <a href="hhvm.html">HHVM</a>, <a href="homa.html">Homa</a>, <a href="icarus.html">icarus</a>, <a href="idio.html">Idio</a>, <a href="idris.html">Idris</a>, <a href="iterm2.html">Iterm2</a>, <a href="jal-compiler.html">JAL compiler</a>, <a href="java.html">Java</a>, <a href="jemplate.html">Jemplate</a>, <a href="jflex.html">JFlex</a>, <a href="juicy.html">juicy</a>, <a href="kakoune-editor.html">Kakoune</a>, <a href="katex.html">KaTeX</a>, <a href="ko.html">ko</a>, <a href="lean.html">Lean</a>, <a href="links-programming-language.html">Links</a>, <a href="linux.html">Linux</a>, <a href="lobster.html">lobster</a>, <a href="mal.html">mal</a>, <a href="markdown.html">Markdown</a>, <a href="mathics.html">mathics</a>, <a href="michelson.html">michelson</a>, <a href="mongodb.html">MongoDB</a>, <a href="mudlle.html">Mudlle</a>, <a href="mythryl.html">mythryl</a>, <a href="ncl.html">NCAR Command Language</a>, <a href="nesc.html">nesC</a>, <a href="netbeans-editor.html">netbeans-editor</a>, <a href="newclay.html">newclay</a>, <a href="nextflow.html">Nextflow</a>, <a href="nianiolang.html">nianiolang</a>, <a href="nit.html">Nit</a>, <a href="nodejs.html">Node.js</a>, <a href="noweb.html">Noweb</a>, <a href="objectscript.html">ObjectScript</a>, <a href="obsidian-lang.html">Obsidian</a>, <a href="opa.html">Opa</a>, <a href="opal.html">Opal</a>, <a href="opencv.html">OpenCV</a>, <a href="openrc-runscript.html">OpenRC runscript</a>, <a href="org.html">Org Mode</a>, <a href="pan.html">Pan</a>, <a href="paraview.html">ParaView</a>, <a href="pcre.html">PCRE</a>, <a href="perl.html">Perl</a>, <a href="polyglot-compiler.html">polyglot-compiler</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="potion.html">Potion</a>, <a href="pov-ray-sdl.html">POV-Ray SDL</a>, <a href="pygments.html">Pygments</a>, <a href="racket.html">Racket</a>, <a href="rakudo.html">Rakudo</a>, <a href="revolution-programming-language.html">Revolution</a>, <a href="rholang.html">Rholang</a>, <a href="ricscript.html">RicScript</a>, <a href="roc.html">Roc</a>, <a href="rocksdb.html">RocksDB</a>, <a href="ruby.html">Ruby</a>, <a href="skip.html">skip</a>, <a href="slash.html">Slash</a>, <a href="slony.html">Slony</a>, <a href="smallbasic.html">SmallBASIC</a>, <a href="smpl.html">Semantic Patch Language</a>, <a href="snowball-programming-language.html">Snowball</a>, <a href="souper.html">souper</a>, <a href="sporth.html">sporth</a>, <a href="swi-prolog.html">SWI Prolog</a>, <a href="sympy.html">SymPy</a>, <a href="tao3d.html">tao3d</a>, <a href="tensorflow.html">TensorFlow</a>, <a href="testml.html">TestML</a>, <a href="textframe.html">TextFrame</a>, <a href="tinyc-compiler.html">Tiny C Compiler</a>, <a href="txtzyme.html">txtzyme</a>, <a href="vcpkg-pm.html">Vcpkg</a>, <a href="vlc.html">VLC</a>, <a href="vsxu.html">VSXu</a>, <a href="wiredtiger.html">WiredTiger</a>, <a href="wonkey.html">Wonkey</a>, <a href="zl.html">zl</a>
 
+```Example from <a href='https://riju.codes/perl'>Riju</a>:
 print(&quot;Hello, world!\n&quot;);
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/p/Perl.pl'>hello-world</a>:
 #!/usr/bin/perl
 print &quot;Hello World\n&quot;;
+```
 
+```Example from <a href='http://helloworldcollection.de/#Perl'>the Hello World Collection</a>:
 # Hello world in perl
 
 print &quot;Hello World!\n&quot;;
 
+```
+
+```Example from <a href='https://github.com/textmate/perl.tmbundle'>Linguist</a>:
 #!/usr/local/bin/perl
 print &quot;Perl\n&quot;
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Perl'>Wikipedia</a>:
 #!/usr/bin/perl
 use strict;
 use warnings;
@@ -73,82 +87,85 @@ while ( $remaining ) {
 }
 
 print &quot;\n&quot;;
+```
 
+```Perl <a href="../lists/keywords.html#q=perl">Keywords</a>
 __DATA__ else lock qw __END__ elsif lt qx __FILE__ eq m s __LINE__ exp ne sub __PACKAGE__ for no tr and foreach or unless cmp ge package until continue gt q while CORE if qq xor do le qr y
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Standard Library
  FeatureLink ../features/hasStandardLibrary.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   print "Hello, World!\n";
  Token 
 row
  Feature Scientific Notation
  FeatureLink ../features/hasScientificNotation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # 0b[01]+(_[01]+)*
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # \d+(_\d+)*
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # (?i)(\d*(_\d*)*\.\d+(_\d*)*|\d+(_\d*)*\.\d+(_\d*)*)(e[+-]?\d+)?
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # 0x[0-9A-Fa-f]+(_[0-9A-Fa-f]+)*
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # 0_?[0-7]+(_[0-7]+)*
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print
 row
  Feature Range Operator
  FeatureLink ../features/hasRangeOperators.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # https://users.cs.cf.ac.uk/Dave.Marshall/PERL/node38.html
   @array = (1..10);
@@ -156,26 +173,26 @@ row
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Multiple Inheritance
  FeatureLink ../features/hasMultipleInheritance.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   use Digest::MD5 'md5_hex';
  Token 
 row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # In Perl, the keyword "use", which imports modules, can also be used to specify directives, such as use strict; or use utf8;
   use utf8;
@@ -183,20 +200,20 @@ row
 row
  Feature Here Document
  FeatureLink ../features/hasHereDocs.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   =begin comment
   This is all part of multiline comment.
@@ -208,35 +225,35 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Regular Expression Syntax Sugar
  FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   print "Hello World" =~ /(\w)/;
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "hello world"
  Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

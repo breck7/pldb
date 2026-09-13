@@ -1,27 +1,28 @@
 MediaWiki
 =========
 
-MediaWiki is an open source wiki markup created in 2002.
+MediaWiki is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22wikiMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">wiki markup</a> created in 2002.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222002%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2002
 
-#118 on PLDB
-22 Years Old
-10 Repos
+#123 on PLDB
+24 Years Old
+10 <span title="MediaWiki repos on GitHub.">Repos</span>
 
 MediaWiki is a free and open-source wiki software. Originally developed by Magnus Manske and improved by Lee Daniel Crocker, it runs on many websites, including Wikipedia, Wiktionary and Wikimedia Commons. It is written in the PHP programming language and stores the contents into a database. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/MediaWiki Read more on Wikipedia...
 
-- Tags: wikiMarkup
-- There are at least 10 MediaWiki repos on GitHub
-- Early development of MediaWiki happened in Wikimedia Foundation, Inc
-- GitHub supports syntax highlighting for MediaWiki
-- Indeed.com has 30 matches for "mediawiki developer".
-- See also: (20 related languages) PHP, Linux, FreeBSD, Solaris, WordPress, Perl, MySQL, Ruby on Rails, JavaScript, HTML, Python, XML, JSON, LaTeX, OCaml, JQuery, Lua, MariaDB, PostgreSQL, SQLite
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"wikiMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>wikiMarkup</a>
+- There are at least 10 MediaWiki repos on <a href="https://github.com/search?q=language:MediaWiki">GitHub</a>
+- Early development of MediaWiki happened in <a href="../lists/labs.html#q=Wikimedia Foundation, Inc">Wikimedia Foundation, Inc</a>
+- GitHub supports <a href="https://github.com/textmate/mediawiki.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for MediaWiki
+- Indeed.com has 30 matches for <a href="https://www.indeed.com/jobs?q=mediawiki developer">"mediawiki developer"</a>.
+- See also: (20 related languages) <a href="php.html">PHP</a>, <a href="linux.html">Linux</a>, <a href="freebsd.html">FreeBSD</a>, <a href="solaris.html">Solaris</a>, <a href="wordpress.html">WordPress</a>, <a href="perl.html">Perl</a>, <a href="mysql.html">MySQL</a>, <a href="rails.html">Ruby on Rails</a>, <a href="javascript.html">JavaScript</a>, <a href="html.html">HTML</a>, <a href="python.html">Python</a>, <a href="xml.html">XML</a>, <a href="json.html">JSON</a>, <a href="latex.html">LaTeX</a>, <a href="ocaml.html">OCaml</a>, <a href="jquery.html">JQuery</a>, <a href="lua.html">Lua</a>, <a href="mariadb.html">MariaDB</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="sqlite.html">SQLite</a>
 - Read more about MediaWiki on the web: 1. 2.
  https://www.mediawiki.org/wiki/Wikitext 1.
  https://doc.wikimedia.org/mediawiki-core/master/php/classParser.html 2.
-- 2 PLDB concepts link to MediaWiki: texti, Wikitax
+- 2 PLDB concepts link to MediaWiki: <a href="texti.html">texti</a>, <a href="wikitax.html">Wikitax</a>
 
+```Example from the web:
 = Heading 1 =
 Indentation as used on talk pages:
 :Each colon at the start of a line
@@ -47,8 +48,14 @@ Indentation as used on talk pages:
 #### Sub-sub-sub-item
 ## Sub-item 2
 # Item5
+```
 
+```Example from <a href='https://riju.codes/mediawiki'>Riju</a>:
 Hello, world!
+
+```
+
+```Example from <a href='https://github.com/textmate/mediawiki.tmbundle'>Linguist</a>:
 
 = Overview =
 
@@ -140,6 +147,9 @@ The trace can also be navigated from the &#39;&#39;&#39;Trace Control&#39;&#39;&
 
 This document is maintained in a collaborative wiki.  If you wish to update or modify this document please visit [http://wiki.eclipse.org/index.php/Linux_Tools_Project/GDB_Tracepoint_Analysis/User_Guide http://wiki.eclipse.org/Linux_Tools_Project/GDB_Tracepoint_Analysis/User_Guide]
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/MediaWiki'>Wikipedia</a>:
 &lt;h4&gt;&lt;span class=&quot;mw-headline&quot; id=&quot;A_dialogue&quot;&gt;A dialogue&lt;/span&gt;&lt;/h4&gt;
 
 &lt;p&gt;&quot;Take some more &lt;a href=&quot;/wiki/Tea&quot; title=&quot;Tea&quot;&gt;tea&lt;/a&gt;,&quot; the March Hare said to Alice, very earnestly.&lt;/p&gt;
@@ -147,5 +157,6 @@ This document is maintained in a collaborative wiki.  If you wish to update or m
 &lt;p&gt;&quot;I&#39;ve had nothing yet,&quot; Alice replied in an offended tone: &quot;so I can&#39;t take more.&quot;&lt;/p&gt;
 
 &lt;p&gt;&quot;You mean you can&#39;t take &lt;i&gt;less&lt;/i&gt;,&quot; said the Hatter: &quot;it&#39;s &lt;b&gt;very&lt;/b&gt; easy to take &lt;i&gt;more&lt;/i&gt; than nothing.&quot;&lt;/p&gt;
+```
 
-View source
+Built with Scroll v178.2.3

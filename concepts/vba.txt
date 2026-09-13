@@ -1,41 +1,41 @@
 VBA
 ===
 
-VBA, aka Visual Basic for Applications, is a programming language created in 1993.
+VBA, aka Visual Basic for Applications, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1993.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221993%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1993
 
-#261 on PLDB
-31 Years Old
-29k Repos
+#278 on PLDB
+33 Years Old
+29k <span title="VBA repos on GitHub.">Repos</span>
 
 Visual Basic for Applications (VBA) is an implementation of Microsoft's event-driven programming language Visual Basic 6, which was discontinued in 2008, and its associated integrated development environment (IDE). Although Visual Basic is no longer supported or updated by Microsoft, VBA itself got upgraded in 2010 with the introduction of Visual Basic for Applications 7 in Microsoft Office applications. Visual Basic for Applications enables building user-defined functions (UDFs), automating processes and accessing Windows API and other low-level functionality through dynamic-link libraries (DLLs). Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Visual_Basic_for_Applications Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 28,503 VBA repos on GitHub
-- Early development of VBA happened in Microsoft
-- The  Google BigQuery Public Dataset GitHub snapshot shows 194 users using VBA in 200 repos on GitHub
-- In the 2021 StackOverflow developer survey VBA programmers reported a median salary of $53,825. 5% of respondents reported using VBA. 3,847 programmers reported using VBA, and 1,069 said they wanted to use it
-- Explore VBA snippets on Rosetta Code
-- ANTLR grammar for VBA
-- Indeed.com has 511 matches for "vba engineer".
-- See also: (11 related languages) QuickBASIC, Visual Basic, Microsoft Excel, AUTOCAD, BASIC, Microsoft BASIC, Visual Basic .NET, VBScript, JScript, C#, Visual Studio
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 28,503 VBA repos on <a href="https://github.com/search?q=language:VBA">GitHub</a>
+- Early development of VBA happened in <a href="../lists/labs.html#q=Microsoft">Microsoft</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 194 users using VBA in 200 repos on <a href="https://api.github.com/search/repositories?q=language:VBA">GitHub</a>
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> VBA programmers reported a median salary of $53,825. 5% of respondents reported using VBA. 3,847 programmers reported using VBA, and 1,069 said they wanted to use it
+- Explore VBA snippets on <a href="http://www.rosettacode.org/wiki/Category:VBA">Rosetta Code</a>
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/vba">grammar</a> for VBA
+- Indeed.com has 511 matches for <a href="https://www.indeed.com/jobs?q=vba engineer">"vba engineer"</a>.
+- See also: (11 related languages) <a href="quickbasic.html">QuickBASIC</a>, <a href="visual-basic.html">Visual Basic</a>, <a href="excel-app.html">Microsoft Excel</a>, <a href="autocad-app.html">AutoCAD</a>, <a href="basic.html">BASIC</a>, <a href="microsoft-basic.html">Microsoft BASIC</a>, <a href="visual-basic.net.html">Visual Basic .NET</a>, <a href="vbscript.html">VBScript</a>, <a href="jscript.html">JScript</a>, <a href="csharp.html">C#</a>, <a href="visual-studio-editor.html">Visual Studio</a>
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ' A comment
  Token '
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

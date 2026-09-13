@@ -1,30 +1,34 @@
 mustache
 ========
 
-mustache is an open source template language created in 2009 by Chris Wanstrath.
+mustache is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22template%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">template language</a> created in 2009 by Chris Wanstrath.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2009
  https://pldb.io/concepts/../lists/creators.html#q=Chris%20Wanstrath Chris Wanstrath
 
-#168 on PLDB
-15 Years Old
-6k Repos
+#172 on PLDB
+17 Years Old
+6k <span title="mustache repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/mustache/mustache
+```
 
 Logic-less Ruby templates.
 
-- Tags: template language
-- mustache is developed on GitHub and has 3,027 stars
-- There are at least 6,085 mustache repos on GitHub
-- Early development of mustache happened in https://github.com/mustache
-- mustache is written in Ruby, mustache, YAML, Markdown, HTML
-- The  Google BigQuery Public Dataset GitHub snapshot shows 535 users using mustache in 616 repos on GitHub
-- 8 PLDB concepts link to mustache: Ballerina, cloc, codecept, HHVM, Ligo, mustache, NetLogo, Obsidian
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"template"%5D%7D%5D%2C"logic"%3A"AND"%7D'>template language</a>
+- mustache is developed on <a href="https://github.com/mustache/mustache">GitHub</a> and has 3,027 stars
+- There are at least 6,085 mustache repos on <a href="https://github.com/search?q=language:Mustache">GitHub</a>
+- Early development of mustache happened in <a href="../lists/labs.html#q=https://github.com/mustache">https://github.com/mustache</a>
+- mustache is written in <a href="ruby.html">Ruby</a>, <a href="mustache.html">mustache</a>, <a href="yaml.html">YAML</a>, <a href="markdown.html">Markdown</a>, <a href="html.html">HTML</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 535 users using mustache in 616 repos on <a href="https://api.github.com/search/repositories?q=language:Mustache">GitHub</a>
+- 9 PLDB concepts link to mustache: <a href="ballerina.html">Ballerina</a>, <a href="cloc.html">cloc</a>, <a href="codecept.html">codecept</a>, <a href="codeql.html">CodeQL</a>, <a href="hhvm.html">HHVM</a>, <a href="ligo.html">Ligo</a>, <a href="mustache.html">mustache</a>, <a href="netlogo.html">NetLogo</a>, <a href="obsidian-lang.html">Obsidian</a>
 
+```Example from the web:
 Hello {{name}}
 You have just won {{value}} dollars!
 {{#in_ca}}
 Well, {{taxed_value}} dollars, after taxes.
 {{/in_ca}}
+```
 
-View source
+Built with Scroll v178.2.3

@@ -1,0 +1,29 @@
+STL Format
+==========
+
+STL Format, aka Stereolithography Format, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 1987 by Chuck Hull.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221987%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1987
+ https://pldb.io/concepts/../lists/creators.html#q=Chuck%20Hull Chuck Hull
+
+#1961 on PLDB
+39 Years Old
+
+STL (Stereolithography) is a file format native to the stereolithography CAD software created by 3D Systems. It describes the surface geometry of a 3D object using triangular meshes, widely used in 3D printing, rapid prototyping, and computer-aided manufacturing. STL files can be stored in ASCII or binary formats.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"3d"%5D%7D%5D%2C"logic"%3A"AND"%7D'>3d</a>
+- Early development of STL Format happened in <a href="../lists/labs.html#q=3D Systems">3D Systems</a>
+- 1 PLDB concepts link to STL Format: <a href="sif.html">SIF</a>
+
+```Example from the web:
+solid HelloWorld
+  facet normal 0.0 0.0 1.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 1.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+    endloop
+  endfacet
+endsolid HelloWorld
+```
+
+Built with Scroll v178.2.3

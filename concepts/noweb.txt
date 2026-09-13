@@ -1,23 +1,26 @@
 Noweb
 =====
 
-Noweb is a text markup language created in 1989 by Norman Ramsey.
+Noweb is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 1989 by Norman Ramsey.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221989%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1989
  https://pldb.io/concepts/../lists/creators.html#q=Norman%20Ramsey Norman Ramsey
 
-#1053 on PLDB
-35 Years Old
+#1090 on PLDB
+37 Years Old
 
+```Download source code:
 git clone https://github.com/nrnrnr/noweb
+```
 
 The noweb tool for literate programming
 
-- Tags: text markup language
-- Noweb is developed on GitHub and has 247 stars
-- Early development of Noweb happened in Tufts University
-- Noweb is written in Bourne shell, Make, Tex, C, Perl, awk, Korn shell, C shell, Lisp, HTML
-- See also: (1 related languages) CWEB
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- Noweb is developed on <a href="https://github.com/nrnrnr/noweb">GitHub</a> and has 247 stars
+- Early development of Noweb happened in <a href="../lists/labs.html#q=Tufts University">Tufts University</a>
+- Noweb is written in <a href="bourne-shell.html">Bourne shell</a>, <a href="make.html">Make</a>, <a href="tex.html">Tex</a>, <a href="c.html">C</a>, <a href="perl.html">Perl</a>, <a href="awk.html">awk</a>, <a href="korn-shell.html">Korn shell</a>, <a href="c-shell.html">C shell</a>, <a href="lisp.html">Lisp</a>, <a href="html.html">HTML</a>
+- See also: (1 related languages) <a href="cweb.html">CWEB</a>
 
+```Example from the web:
 \section{Hello world}
 
 Today I awoke and decided to write
@@ -50,5 +53,6 @@ So, here it is:
 
 &lt;&lt;license&gt;&gt;=
 This work is placed in the public domain.
+```
 
-View source
+Built with Scroll v178.2.3

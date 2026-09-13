@@ -1,24 +1,27 @@
 SQF
 ===
 
-SQF is a programming language created in 2002.
+SQF is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2002.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222002%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2002
 
-#1274 on PLDB
-22 Years Old
-6k Repos
+#1320 on PLDB
+24 Years Old
+6k <span title="SQF repos on GitHub.">Repos</span>
 
-- Tags: programming language
-- There are at least 5,963 SQF repos on GitHub
-- Early development of SQF happened in Bohemia Interactive a.s
-- The  Google BigQuery Public Dataset GitHub snapshot shows 405 users using SQF in 609 repos on GitHub
-- GitHub supports syntax highlighting for SQF
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 5,963 SQF repos on <a href="https://github.com/search?q=language:SQF">GitHub</a>
+- Early development of SQF happened in <a href="../lists/labs.html#q=Bohemia Interactive a.s">Bohemia Interactive a.s</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 405 users using SQF in 609 repos on <a href="https://api.github.com/search/repositories?q=language:SQF">GitHub</a>
+- GitHub supports <a href="https://github.com/JonBons/Sublime-SQF-Language" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for SQF
 - Read more about SQF on the web: 1.
  https://community.bistudio.com/wiki/SQF_syntax 1.
 
+```Example from the web:
 _num = 10;
 _num = _num + 20; systemChat str _num;
+```
 
+```Example from <a href='https://github.com/JonBons/Sublime-SQF-Language'>Linguist</a>:
 #include &lt;version.hqf&gt;
 
 #define SET(VAR,VALUE) private #VAR; VAR = VALUE;
@@ -38,5 +41,6 @@ _num = _num + 20; systemChat str _num;
   &quot;HitAvionics&quot;, &quot;HitHRotor&quot;, &quot;HitVRotor&quot;, \
   &quot;HitRGlass&quot;, &quot;HitLGlass&quot;, &quot;HitGlass1&quot;, &quot;HitGlass2&quot;, &quot;HitGlass3&quot;, &quot;HitGlass4&quot;, &quot;HitGlass5&quot;, &quot;HitGlass6&quot; \
 ]
+```
 
-View source
+Built with Scroll v178.2.3

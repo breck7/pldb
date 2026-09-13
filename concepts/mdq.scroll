@@ -1,0 +1,33 @@
+../code/conceptPage.scroll
+
+id mdq
+name mdq
+appeared 2024
+creators Yuval Shavit
+tags queryLanguage
+standsFor Markdown Query
+description Provide an easy way to zero in on specific parts of a Markdown document.
+writtenIn rust toml yaml bash markdown dockerfile bourne-shell
+
+related markdown
+influencedBy jq
+repoStats
+ firstCommit 2024
+ newestCommit 2025
+ commits 156
+ mb 1
+ committers 5
+ files 71
+ linesOfCode 15040
+
+example
+ cat example.md | mdq '# usage | -'
+
+githubRepo https://github.com/yshavit/mdq
+ stars 1419
+ forks 13
+ subscribers 8
+ created 2024
+ updated 2025
+ description like jq but for Markdown: find specific elements in a md doc
+ issues 16

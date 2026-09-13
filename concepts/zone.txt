@@ -1,21 +1,22 @@
 DNS Zone
 ========
 
-DNS Zone is an application created in 2001.
+DNS Zone is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 2001.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2001
 
-#1515 on PLDB
-23 Years Old
-30k Repos
+#1581 on PLDB
+25 Years Old
+30k <span title="DNS Zone repos on GitHub.">Repos</span>
 
 A Domain Name System (DNS) zone file is a text file that describes a DNS zone. A DNS zone is a subset, often a single domain, of the hierarchical domain name structure of the DNS. The zone file contains mappings between domain names and IP addresses and other resources, organized in the form of text representations of resource records (RR). Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Zone_file Read more on Wikipedia...
 
-- Tags: application
-- There are at least 29,634 DNS Zone repos on GitHub
-- GitHub supports syntax highlighting for DNS Zone
-- See also: (1 related languages) SMTP
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>
+- There are at least 29,634 DNS Zone repos on <a href="https://github.com/search?q=language:DNS Zone">GitHub</a>
+- GitHub supports <a href="https://github.com/sixty4k/st2-zonefile" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for DNS Zone
+- See also: (1 related languages) <a href="smtp.html">SMTP</a>
 
+```Example from <a href='https://github.com/sixty4k/st2-zonefile'>Linguist</a>:
 $ORIGIN 0.0.0.c.2.1.0.3.0.0.2.1.e.f.f.3.ip6.arpa.
 $TTL     60
 @ 	 IN SOA ns root (
@@ -30,6 +31,10 @@ $TTL     60
 
 c.a.7.e.d.7.e.f.f.f.0.2.8.0.a.0 PTR  sip01.example.com.
 
-zone &quot;0.0.127.in-addr.arpa&quot;  IN { type master; file &quot;r.local&quot;; };
+```
 
-View source
+```Example from <a href='https://en.wikipedia.org/wiki/Zone_file'>Wikipedia</a>:
+zone &quot;0.0.127.in-addr.arpa&quot;  IN { type master; file &quot;r.local&quot;; };
+```
+
+Built with Scroll v178.2.3

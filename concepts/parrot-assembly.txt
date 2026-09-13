@@ -1,25 +1,27 @@
 Parrot Assembly
 ===============
 
-Parrot Assembly is an assembly language created in 2003.
+Parrot Assembly is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22assembly%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">assembly language</a> created in 2003.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2003
 
-#2304 on PLDB
-21 Years Old
-1 Repos
+#2393 on PLDB
+23 Years Old
+1 <span title="Parrot Assembly repos on GitHub.">Repos</span>
 
 The Parrot assembly language (PASM) is the basic assembly language used by the Parrot virtual machine. PASM is the lowest level assembly language in the Parrot stack. The Parrot intermediate representation (PIR) is PASM extended to simplify development of compilers. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Parrot_assembly_language Read more on Wikipedia...
 
-- Tags: assembly language
-- There are at least 1 Parrot Assembly repos on GitHub
-- Early development of Parrot Assembly happened in https://www.perl.org
-- See also: (3 related languages) Assembly language, Parrot, PIR
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"assembly"%5D%7D%5D%2C"logic"%3A"AND"%7D'>assembly language</a>
+- There are at least 1 Parrot Assembly repos on <a href="https://github.com/search?q=language:Parrot Assembly">GitHub</a>
+- Early development of Parrot Assembly happened in <a href="../lists/labs.html#q=https://www.perl.org">https://www.perl.org</a>
+- See also: (3 related languages) <a href="assembly-language.html">Assembly language</a>, <a href="parrot-vm.html">Parrot</a>, <a href="parrot-internal-representation.html">PIR</a>
 
+```Example from the web:
 #!/usr/bin/env parrot
 
 .pcc_sub :main main:
     say &quot;Hello!&quot;
     end
+```
 
-View source
+Built with Scroll v178.2.3

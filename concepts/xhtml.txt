@@ -1,18 +1,19 @@
 XHTML
 =====
 
-XHTML is a data notation created in 2000.
+XHTML is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 2000.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2000
 
-#2189 on PLDB
-24 Years Old
+#2236 on PLDB
+26 Years Old
 
 eXtensible HyperText Markup Language (XHTML) is part of the family of XML markup languages. It mirrors or extends versions of the widely used HyperText Markup Language (HTML), the language in which Web pages are formulated. While HTML, prior to HTML5, was defined as an application of Standard Generalized Markup Language (SGML), a flexible markup language framework, XHTML is an application of XML, a more restrictive subset of SGML. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/XHTML Read more on Wikipedia...
 
-- Tags: dataNotation
-- 10 PLDB concepts link to XHTML: Eiffel, Felix, Frundis, FutureScript, HAML, Jekyll, Node.js, pegdown, Pygments, tibet
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- 12 PLDB concepts link to XHTML: <a href="codeql.html">CodeQL</a>, <a href="eiffel.html">Eiffel</a>, <a href="felix.html">Felix</a>, <a href="frundis.html">Frundis</a>, <a href="futurescript.html">FutureScript</a>, <a href="haml.html">HAML</a>, <a href="jekyll.html">Jekyll</a>, <a href="netbeans-editor.html">netbeans-editor</a>, <a href="nodejs.html">Node.js</a>, <a href="pegdown.html">pegdown</a>, <a href="pygments.html">Pygments</a>, <a href="tibet.html">tibet</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/x/XHTML.xhtml'>hello-world</a>:
 &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
   &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
 &lt;html xmlns=&quot;http://www.w3.org/TR/xhtml1&quot; xml:lang=&quot;en&quot; lang=&quot;en&quot;&gt;
@@ -24,5 +25,6 @@ eXtensible HyperText Markup Language (XHTML) is part of the family of XML markup
     &lt;p&gt;Hello World&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;
+```
 
-View source
+Built with Scroll v178.2.3

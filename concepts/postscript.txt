@@ -1,7 +1,7 @@
 PostScript
 ==========
 
-PostScript is a text markup language created in 1982 by John Warnock and Chuck Geschke and Doug Brotz and Ed Taft and Bill Paxton.
+PostScript is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 1982 by John Warnock and Chuck Geschke and Doug Brotz and Ed Taft and Bill Paxton.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221982%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1982
  https://pldb.io/concepts/../lists/creators.html#q=John%20Warnock John Warnock
  https://pldb.io/concepts/../lists/creators.html#q=Chuck%20Geschke Chuck Geschke
@@ -9,34 +9,40 @@ PostScript is a text markup language created in 1982 by John Warnock and Chuck G
  https://pldb.io/concepts/../lists/creators.html#q=Ed%20Taft Ed Taft
  https://pldb.io/concepts/../lists/creators.html#q=Bill%20Paxton Bill Paxton
 
-#160 on PLDB
-42 Years Old
-8k Repos
+#159 on PLDB
+44 Years Old
+8k <span title="PostScript repos on GitHub.">Repos</span>
 
 PostScript (PS) is a page description language in the electronic publishing and desktop publishing business. It is a dynamically typed, concatenative programming language and was created at Adobe Systems by John Warnock, Charles Geschke, Doug Brotz, Ed Taft and Bill Paxton from 1982 to 1984.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/PostScript Read more on Wikipedia...
 
-- Tags: text markup language
-- There are at least 8,053 PostScript repos on GitHub
-- Early development of PostScript happened in Adobe
-- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using PostScript in 4k repos on GitHub
-- Explore PostScript snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- There are at least 8,053 PostScript repos on <a href="https://github.com/search?q=language:PostScript">GitHub</a>
+- Early development of PostScript happened in <a href="../lists/labs.html#q=Adobe">Adobe</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using PostScript in 4k repos on <a href="https://api.github.com/search/repositories?q=language:PostScript">GitHub</a>
+- Explore PostScript snippets on <a href="http://www.rosettacode.org/wiki/Category:PostScript">Rosetta Code</a>
 - PostScript on HOPL
  https://hopl.info/showlanguage.prx?exp=1010 PostScript on HOPL
-- PostScript appears in the TIOBE Index
+- PostScript appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - PostScript Ubuntu package
  https://packages.ubuntu.com/jammy/ghostscript PostScript Ubuntu package
-- Pygments supports syntax highlighting for PostScript
-- GitHub supports syntax highlighting for PostScript
-- PostScript appears in the Quine Relay project
-- See also: (8 related languages) Ghostscript, Lisp, PDF, ASCII, Tex, Forth, Reverse Polish notation, LaTeX
-- 1 PLDB concepts link to PostScript: Interpress
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/graphics.py">syntax highlighting</a> for PostScript
+- GitHub supports <a href="https://github.com/textmate/postscript.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for PostScript
+- PostScript appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- See also: (8 related languages) <a href="ghostscript.html">Ghostscript</a>, <a href="lisp.html">Lisp</a>, <a href="pdf.html">PDF</a>, <a href="ascii.html">ASCII</a>, <a href="tex.html">Tex</a>, <a href="forth.html">Forth</a>, <a href="reverse-polish-notation.html">Reverse Polish notation</a>, <a href="latex.html">LaTeX</a>
+- 1 PLDB concepts link to PostScript: <a href="interpress.html">Interpress</a>
 
+```Example from <a href='https://riju.codes/postscript'>Riju</a>:
 (Hello, world!) =
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/p/PostScript.ps'>hello-world</a>:
 % run&gt; gs -q -sDEVICE=nullpage postscript.ps
 (Hello World\n) print quit
+```
 
+```Example from <a href='http://helloworldcollection.de/#PostScript'>the Hello World Collection</a>:
 % Hello World in Postscript
 %!PS
 /Palatino-Roman findfont
@@ -46,6 +52,9 @@ setfont
 (Hello World!) show
 showpage
 
+```
+
+```Example from <a href='https://github.com/textmate/postscript.tmbundle'>Linguist</a>:
 %!PS-Adobe-3.0
 %%Creator: Aaron Puchert
 %%Title: The Sierpinski triangle
@@ -88,77 +97,81 @@ pageset
 showpage
 %%EOF
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/PostScript'>Wikipedia</a>:
 /mm {360 mul 127 div} def
  0 0 moveto
  0 40 mm lineto stroke
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
-  % (\-|\+)?[0-9]+(?=[()\[\]{}/%\s])
+  % (\-|\+)?[0-9]+(?=[()<>\[\]{}/%\s])
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
-  % (\-|\+)?([0-9]+\.?|[0-9]*\.[0-9]+|[0-9]+\.[0-9]*)((e|E)[0-9]+)?(?=[()\[\]{}/%\s])
+  % (\-|\+)?([0-9]+\.?|[0-9]*\.[0-9]+|[0-9]+\.[0-9]*)((e|E)[0-9]+)?(?=[()<>\[\]{}/%\s])
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
-  % (?=[()\[\]{}/%\s])
+  % <[0-9A-Fa-f]+>(?=[()<>\[\]{}/%\s])
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
-  % [0-9]+\#(\-|\+)?([0-9]+\.?|[0-9]*\.[0-9]+|[0-9]+\.[0-9]*)((e|E)[0-9]+)?(?=[()\[\]{}/%\s])
+  % [0-9]+\#(\-|\+)?([0-9]+\.?|[0-9]*\.[0-9]+|[0-9]+\.[0-9]*)((e|E)[0-9]+)?(?=[()<>\[\]{}/%\s])
  Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % A comment
  Token %
 row
  Feature Postfix Notation
  FeatureLink ../features/hasPostfixNotation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

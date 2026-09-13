@@ -1,36 +1,43 @@
 GEL Genius
 ==========
 
-GEL Genius is an open source programming language created in 1997.
+GEL Genius is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1997.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1997
 
-#1313 on PLDB
-27 Years Old
+#1345 on PLDB
+29 Years Old
 
 Genius  (also known as the Genius Math Tool) is a free open-source numerical computing environment and programming language, similar in some aspects to MATLAB, GNU Octave, Mathematica and Maple.  Genius is aimed at mathematical experimentation rather than computationally intensive tasks.  It is also very useful as just a calculator. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Genius_(mathematics_software) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of GEL Genius happened in GNOME Foundation
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of GEL Genius happened in <a href="../lists/labs.html#q=GNOME Foundation">GNOME Foundation</a>
 - GEL Genius Ubuntu package
  https://packages.ubuntu.com/jammy/genius GEL Genius Ubuntu package
-- GEL Genius appears in the Quine Relay project
-- See also: (18 related languages) Linux, MATLAB, GNU Octave, Mathematica, Maple, Chapel, Fortress, Julia, Maxima, R, Sage, Scilab, X10, LabVIEW G, Mathcad, Wolfram Mathematica, Speakeasy, VisSim
+- GEL Genius appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- See also: (18 related languages) <a href="linux.html">Linux</a>, <a href="matlab.html">MATLAB</a>, <a href="octave.html">GNU Octave</a>, <a href="mathematica.html">Mathematica</a>, <a href="maple.html">Maple</a>, <a href="chapel.html">Chapel</a>, <a href="fortress.html">Fortress</a>, <a href="julia.html">Julia</a>, <a href="maxima.html">Maxima</a>, <a href="r.html">R</a>, <a href="sagemath.html">Sage</a>, <a href="scilab.html">Scilab</a>, <a href="x10.html">X10</a>, <a href="labview.html">LabVIEW G</a>, <a href="mathcad.html">Mathcad</a>, <a href="mathematica-editor.html">Wolfram Mathematica</a>, <a href="speakeasy.html">Speakeasy</a>, <a href="vissim.html">VisSim</a>
 
+```Example from the web:
 function f(x) = (
  if x &lt;= 1 then
    1
  else
    (f(x-1)*x)
 )
+```
 
+```Example from <a href='https://riju.codes/gel'>Riju</a>:
 print(&quot;Hello, world!&quot;)
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Genius_(mathematics_software)'>Wikipedia</a>:
 function f(x) = (
   if x &lt;= 1 then
     1
   else
     (f(x-1)*x)
 )
+```
 
-View source
+Built with Scroll v178.2.3

@@ -1,19 +1,20 @@
 MVEL
 ====
 
-MVEL is an open source programming language created in 2003.
+MVEL is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2003.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2003
 
-#1339 on PLDB
-21 Years Old
+#1400 on PLDB
+23 Years Old
 
 MVFLEX Expression Language (MVEL) is a hybrid dynamic/statically typed, embeddable Expression Language and runtime for the Java Platform.  Originally started as a utility language for an application framework, the project is now developed completely independently. MVEL is typically used for exposing basic logic to end-users and programmers through configuration such as XML files or annotations. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/MVEL Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of MVEL happened in https://github.com/mvel
-- See also: (4 related languages) Java, XML, Lisp, OGNL
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of MVEL happened in <a href="../lists/labs.html#q=https://github.com/mvel">https://github.com/mvel</a>
+- See also: (4 related languages) <a href="java.html">Java</a>, <a href="xml.html">XML</a>, <a href="lisp.html">Lisp</a>, <a href="ognl.html">OGNL</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/MVEL'>Wikipedia</a>:
 import java.util.*;
 
 // the main quicksort algorithm
@@ -40,29 +41,30 @@ list = [5,2,4,1,18,10,15,1,0];
 
 // sort it!
 quicksort(list);
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -4,7 +4,7 @@ id coq
 name Coq
 appeared 1989
 creators Thierry Coquand
-tags pl
+tags pl mathematics
 website https://coq.inria.fr/
 latestVersion 8.19.1
 webRepl https://coq.vercel.app/
@@ -13,6 +13,7 @@ lab Inria
 writtenIn coq ocaml bourne-shell restructuredtext markdown nix python tex css yaml make html c xml javascript bash dockerfile csv lisp diff
 
 isOpenSource true
+related lean metamath
 clocExtensions v
 fileType text
 docs https://coq.inria.fr/documentation
@@ -20,10 +21,12 @@ devDocs https://github.com/coq/coq/blob/master/CONTRIBUTING.md
 rosettaCode http://www.rosettacode.org/wiki/Category:Coq
 repoStats
  firstCommit 1999
- commits 52117
- committers 304
- files 5835
- newestCommit 2024
+ commits 54632
+ committers 328
+ files 5150
+ newestCommit 2025
+ mb 209
+ linesOfCode 609049
 country France
 
 discourse https://coq.discourse.group/
@@ -50,6 +53,7 @@ hasMultiLineComments true
  (* a comment *)
 hasDependentTypes true
  (* http://www-sop.inria.fr/members/Yves.Bertot/tsinghua/tsinghua-1.pdf *)
+hasTypeClasses true
 hasOctals true
 hasHexadecimals true
 hasFloats true

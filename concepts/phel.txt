@@ -1,26 +1,30 @@
 Phel
 ====
 
-Phel is a programming language created in 2020 by Jens Haase.
+Phel is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2020 by Jens Haase.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
  https://pldb.io/concepts/../lists/creators.html#q=Jens%20Haase Jens Haase
 
-#765 on PLDB
-4 Years Old
+#795 on PLDB
+6 Years Old
 
+```Download source code:
 git clone https://github.com/phel-lang/phel-lang
+```
 
 Phel is a functional programming language that transpiles to PHP. A Lisp dialect inspired by Clojure and Janet.
 
-- Tags: programming language
-- Phel is developed on GitHub and has 413 stars
-- Early development of Phel happened in https://github.com/phel-lang
-- Phel compiles to PHP
-- Phel is written in PHP, Markdown, JSON, YAML, SVG, XML, Bourne shell, Dockerfile
-- phel-lang.org was registered in 2020
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"lisp"%5D%7D%5D%2C"logic"%3A"AND"%7D'>lisp</a>
+- Phel is developed on <a href="https://github.com/phel-lang/phel-lang">GitHub</a> and has 413 stars
+- Early development of Phel happened in <a href="../lists/labs.html#q=https://github.com/phel-lang">https://github.com/phel-lang</a>
+- Phel compiles to <a href="php.html">PHP</a>
+- Phel is written in <a href="php.html">PHP</a>, <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>, <a href="yaml.html">YAML</a>, <a href="svg.html">SVG</a>, <a href="xml.html">XML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="dockerfile.html">Dockerfile</a>
+- <a href="https://phel-lang.org/">phel-lang.org</a> was registered in 2020
 
+```Example from the web:
  (ns hello-world\boot)
 
  (println &quot;Hello, World!&quot;)
+```
 
-View source
+Built with Scroll v178.2.3

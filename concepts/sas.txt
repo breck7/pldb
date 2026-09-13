@@ -1,41 +1,45 @@
 SAS
 ===
 
-SAS, aka Statistical Analysis System, is a programming language created in 1976 by Anthony James Barr.
+SAS, aka Statistical Analysis System, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1976 by Anthony James Barr.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221976%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1976
  https://pldb.io/concepts/../lists/creators.html#q=Anthony%20James%20Barr Anthony James Barr
 
-#31 on PLDB
-48 Years Old
-8k Repos
+#33 on PLDB
+50 Years Old
+8k <span title="SAS repos on GitHub.">Repos</span>
 
 The SAS language is a computer programming language used for statistical analysis, created by Anthony James Barr at North Carolina State University. It can read in data from common spreadsheets and databases and output the results of statistical analyses in tables, graphs, and as RTF, HTML and PDF documents. The SAS language runs under compilers that can be used on Microsoft Windows, Linux, and various other UNIX and  mainframe computers. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/SAS_language Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 8,407 SAS repos on GitHub
-- Early development of SAS happened in North Carolina State University
-- The  Google BigQuery Public Dataset GitHub snapshot shows 1k users using SAS in 1k repos on GitHub
-- There are 7,963 members in the SAS subreddit
-- There are 54 Project Euler users using SAS
-- Explore SAS snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 8,407 SAS repos on <a href="https://github.com/search?q=language:SAS">GitHub</a>
+- Early development of SAS happened in <a href="../lists/labs.html#q=North Carolina State University">North Carolina State University</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 1k users using SAS in 1k repos on <a href="https://api.github.com/search/repositories?q=language:SAS">GitHub</a>
+- There are 7,963 members in the <a href="https://reddit.com/r/sas">SAS subreddit</a>
+- There are 54 <a href="https://projecteuler.net/language=SAS">Project Euler</a> users using SAS
+- Explore SAS snippets on <a href="http://www.rosettacode.org/wiki/Category:SAS">Rosetta Code</a>
 - SAS on HOPL
  https://hopl.info/showlanguage.prx?exp=733 SAS on HOPL
-- SAS ranks #21 in the TIOBE Index
-- Pygments supports syntax highlighting for SAS
-- GitHub supports syntax highlighting for SAS
-- There is 1 Jupyter Kernel for SAS
-- Indeed.com has 1,160 matches for "sas programmer".
-- sas.com was registered in 1990
-- See also: (2 related languages) HTML, Linux
-- 10 PLDB concepts link to SAS: Bazel, beef-lang, Eiffel, Flow9, GAP, HHVM, JSL, POV-Ray SDL, Racket, Tea
+- SAS ranks #21 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/sas.py">syntax highlighting</a> for SAS
+- GitHub supports <a href="https://github.com/rpardee/sas.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for SAS
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/sassoftware/sas_kernel">Kernel</a> for SAS
+- Indeed.com has 1,160 matches for <a href="https://www.indeed.com/jobs?q=sas programmer">"sas programmer"</a>.
+- <a href="https://www.sas.com">sas.com</a> was registered in 1990
+- See also: (2 related languages) <a href="html.html">HTML</a>, <a href="linux.html">Linux</a>
+- 10 PLDB concepts link to SAS: <a href="bazel.html">Bazel</a>, <a href="beef.html">beef-lang</a>, <a href="eiffel.html">Eiffel</a>, <a href="flow9.html">Flow9</a>, <a href="gap.html">GAP</a>, <a href="hhvm.html">HHVM</a>, <a href="jsl.html">JSL</a>, <a href="pov-ray-sdl.html">POV-Ray SDL</a>, <a href="racket.html">Racket</a>, <a href="tea-pl.html">Tea</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/s/Sas.sas'>hello-world</a>:
 %macro putit( string= );
      %put &amp;string;
      %mend;
 
 %putit(string=Hello World)
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Statistical'>the Hello World Collection</a>:
 /* Hello world in SAS */
 
 * Writes as output title;
@@ -44,7 +48,9 @@ TITLE &quot;Hello World!&quot;;
 data _null_;
     PUT &quot;Hello world!&quot;;
 run;
+```
 
+```Example from <a href='https://github.com/rpardee/sas.tmbundle'>Linguist</a>:
 /* Example DATA step code for linguist */
 
 libname source &#39;C:\path\to\file&#39;
@@ -62,27 +68,28 @@ data work.working_copy;
 	set work.working_copy;
 	if ImportantVariable = . then MissingFlag = 1;
 run;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   * A comment
  Token *
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -90,14 +97,14 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

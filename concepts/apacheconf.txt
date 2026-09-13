@@ -1,20 +1,21 @@
 ApacheConf
 ==========
 
-ApacheConf is an application created in 1995.
+ApacheConf is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 1995.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221995%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1995
 
-#1170 on PLDB
-29 Years Old
+#1214 on PLDB
+31 Years Old
 
-- Tags: application
-- Early development of ApacheConf happened in Apache Software Foundation
-- The  Google BigQuery Public Dataset GitHub snapshot shows 55k users using ApacheConf in 69k repos on GitHub
-- Pygments supports syntax highlighting for ApacheConf
-- GitHub supports syntax highlighting for ApacheConf
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>
+- Early development of ApacheConf happened in <a href="../lists/labs.html#q=Apache Software Foundation">Apache Software Foundation</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 55k users using ApacheConf in 69k repos on <a href="https://api.github.com/search/repositories?q=language:ApacheConf">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/configs.py">syntax highlighting</a> for ApacheConf
+- GitHub supports <a href="https://github.com/textmate/apache.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for ApacheConf
 - Read more about ApacheConf on the web: 1.
  https://en.wikipedia.org/wiki/Apache_HTTP_Server 1.
 
+```Example from <a href='https://github.com/textmate/apache.tmbundle'>Linguist</a>:
 #######################
 # HOSTNAME
 ######################
@@ -33,4 +34,6 @@ ApacheConf is an application created in 1995.
    &lt;/Directory&gt;
 &lt;/VirtualHost&gt;
 
-View source
+```
+
+Built with Scroll v178.2.3

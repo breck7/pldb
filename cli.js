@@ -5,10 +5,10 @@ const path = require("path")
 const { Particle } = require("scrollsdk/products/Particle.js")
 const { Utils } = require("scrollsdk/products/Utils.js")
 const { Disk } = require("scrollsdk/products/Disk.node.js")
-const { ScrollFile, ScrollFileSystem, ScrollCli } = require("scroll-cli")
 const { ScrollSetCLI } = require("scroll-cli/ScrollSetCLI.js")
 const { execSync } = require("child_process")
 const semver = require("semver")
+const lodash = require("lodash")
 
 const baseFolder = path.join(__dirname)
 const ignoreFolder = path.join(baseFolder, "ignore")
@@ -65,6 +65,15 @@ class PLDBCli extends ScrollSetCLI {
     await importer.writeAllRepoDataCommand()
   }
 
+  async crawlWikipediaCommand() {
+    // Todo: figuring out best repo orgnization for crawlers.
+    // Note: this currently assumes you have crawlers project installed separateely.
+    const { WikipediaImporter } = require("../crawlers/wikipedia.org/Wikipedia.js")
+    const importer = new WikipediaImporter(this)
+    // await importer.fetchAllCommand()
+    await importer.writeToDatabaseCommand()
+  }
+
   async crawlRedditPLCommand() {
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have crawlers project installed separateely.
@@ -74,19 +83,27 @@ class PLDBCli extends ScrollSetCLI {
     await importer.createFromAnnouncementsCommand()
   }
 
+  async allCommand(lang) {
+    await this.crawlGitsCommand(lang)
+    await this.crawlGitHubCommand(lang)
+    await this.addWrittenInCommand(lang)
+  }
+
   async crawlGitsCommand(lang) {
     const { GitStats } = require("./code/gitStats.js")
     // Todo: figuring out best repo orgnization for crawlers.
     // Note: this currently assumes you have crawlers project installed separateely.
-    this.concepts.forEach(async file => {
-      if (lang && lang !== file.id) return
+    const shuffled = lodash.shuffle(this.concepts)
+
+    for (let file of shuffled) {
+      if (lang && lang !== file.id) continue
       if (lang) console.log(`processing ${lang}`)
       const { mainRepo } = file
-      if (!mainRepo) return
+      if (!mainRepo) continue
       const targetFolder = path.join(this.gitsFolder, file.id)
-      //if (Disk.exists(targetFolder)) return
-      if (file.repoStats_files) return
-      //if (file.isFinished) return
+      // if (Disk.exists(targetFolder)) continue
+      //if (file.repoStats_files) continue
+      //if (file.isFinished) continue
       try {
         const gitStats = new GitStats(mainRepo, targetFolder)
         if (!Disk.exists(targetFolder)) gitStats.clone()
@@ -94,11 +111,11 @@ class PLDBCli extends ScrollSetCLI {
         const particle = this.getParticle(file)
         particle.touchParticle("repoStats").setProperties(gitStats.summary)
         if (!particle.has("appeared")) particle.set("appeared", gitStats.firstCommit.toString())
-        this.formatAndSave(file, particle)
+        await this.formatAndSave(file, particle)
       } catch (err) {
         console.error(err, file.id)
       }
-    })
+    }
   }
 
   async addWrittenInCommand(lang) {
@@ -107,29 +124,6 @@ class PLDBCli extends ScrollSetCLI {
     files.forEach(file => {
       if (file.mainRepo && !file.writtenIn) addWrittenIn(file.id, this)
     })
-  }
-
-  async formatCommand(lang) {
-    // Todo: figuring out best repo orgnization for crawlers.
-    // Note: this currently assumes you have crawlers project installed separateely.
-    if (!lang) return
-    const file = this.concepts.filter(file => lang === file.id)[0]
-    if (file) this.formatAndSave(file)
-  }
-
-  async testCommand(lang) {
-    if (!lang) return ""
-    const file = new ScrollFile(undefined, path.join(this.conceptsFolder, lang + ".scroll"), new ScrollFileSystem())
-    const errors = file.scrollProgram.getAllErrors().map(obj => obj.toObject())
-    console.log(errors.length + " errors")
-    if (errors.length) console.log(errors)
-  }
-
-  async buildCommand(lang) {
-    if (!lang) return ""
-    const sfs = new ScrollFileSystem()
-    const file = new ScrollFile(undefined, path.join(this.conceptsFolder, lang + ".scroll"), sfs)
-    new ScrollCli().buildFiles(sfs, [file], this.conceptsFolder)
   }
 
   gitsFolder = path.join(ignoreFolder, "node_modules", "gits") // toss in a fake "node_modules" folder to avoid a "scroll list" scan. hacky i know.

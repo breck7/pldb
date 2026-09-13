@@ -1,17 +1,19 @@
 ana
 ===
 
-ana is a programming language created in 2018.
+ana is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2018.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2018
 
-#2147 on PLDB
-6 Years Old
+#2228 on PLDB
+8 Years Old
 
+```Download source code:
 git clone https://github.com/analang/ana
+```
 
-- Tags: programming language
-- ana is developed on GitHub and has 138 stars
-- ana is written in C, Python, Bourne shell, Make, JSON, YAML, Yacc, Markdown, Lex, Vim script
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- ana is developed on <a href="https://github.com/analang/ana">GitHub</a> and has 138 stars
+- ana is written in <a href="c.html">C</a>, <a href="python.html">Python</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="make.html">Make</a>, <a href="json.html">JSON</a>, <a href="yaml.html">YAML</a>, <a href="yacc.html">Yacc</a>, <a href="markdown.html">Markdown</a>, <a href="lex.html">Lex</a>, <a href="vim-script.html">Vim script</a>
 
 HackerNews discussions of ana
 =============================
@@ -19,4 +21,4 @@ HackerNews discussions of ana
 title|titleLink|date|score|comments
 Show HN: Ana-lang: C, PHP, Python inspired scripting language|https://news.ycombinator.com/item?id=17791287|08/18/2018|3|0
 
-View source
+Built with Scroll v178.2.3

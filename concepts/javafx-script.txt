@@ -1,21 +1,22 @@
 JavaFX Script
 =============
 
-JavaFX Script is an open source programming language created in 2005.
+JavaFX Script is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2005.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2005
 
-#1631 on PLDB
-19 Years Old
+#1705 on PLDB
+21 Years Old
 
 JavaFX Script is a scripting language designed by Sun Microsystems, forming part of the JavaFX family of technologies on the Java Platform. JavaFX targets the Rich Internet Application domain (competing with Adobe Flex and Microsoft Silverlight), specializing in rapid development of visually rich applications for the desktop and mobile markets. JavaFX Script works with integrated development environments such as NetBeans, Eclipse and IntelliJ IDEA. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/JavaFX_Script Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of JavaFX Script happened in Oracle
-- JavaFX Script appears in the TIOBE Index
-- javafx.com was registered in 1997
-- See also: (3 related languages) Eclipse, Java, Curl
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of JavaFX Script happened in <a href="../lists/labs.html#q=Oracle">Oracle</a>
+- JavaFX Script appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="http://javafx.com/">javafx.com</a> was registered in 1997
+- See also: (3 related languages) <a href="eclipse-editor.html">Eclipse</a>, <a href="java.html">Java</a>, <a href="curl.html">Curl</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/JavaFX_Script'>Wikipedia</a>:
 import javafx.ext.swing.*;
  
  var myFrame:SwingFrame = new SwingFrame();
@@ -26,5 +27,6 @@ import javafx.ext.swing.*;
  myFrame.height = 50;
  myFrame.visible = true;
  myFrame.content = myLabel;
+```
 
-View source
+Built with Scroll v178.2.3

@@ -183,12 +183,10 @@ linguistGrammarRepo https://github.com/telnet23/language-basic
               
             Case Main_Window\TrackBar[1]
               Amplitude = GetGadgetState(Main_Window\TrackBar[1]) / 1000
-              
           EndSelect
           
         Case #PB_Event_CloseWindow
           Main\Quit = #True
-          
         Case 0
           Break
       EndSelect

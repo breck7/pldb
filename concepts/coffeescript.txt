@@ -1,147 +1,164 @@
 CoffeeScript
 ============
 
-CoffeeScript is an open source programming language created in 2009 by Jeremy Ashkenas.
+CoffeeScript is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2009 by Jeremy Ashkenas.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2009
  https://pldb.io/concepts/../lists/creators.html#q=Jeremy%20Ashkenas Jeremy Ashkenas
 
 #28 on PLDB
-15 Years Old
-65k Repos
+17 Years Old
+65k <span title="CoffeeScript repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/jashkenas/coffeescript/
+```
 
 CoffeeScript is a programming language that transcompiles to JavaScript. It adds syntactic sugar inspired by Ruby, Python and Haskell in an effort to enhance JavaScript's brevity and readability. Specific additional features include list comprehension and pattern matching. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/CoffeeScript Read more on Wikipedia...
 
-- Tags: programming language
-- CoffeeScript is developed on GitHub and has 16,466 stars
-- There are at least 64,590 CoffeeScript repos on GitHub
-- Early development of CoffeeScript happened in https://github.com/jashkenas
-- CoffeeScript compiles to JavaScript
-- CoffeeScript is written in Markdown, CoffeeScript, HTML, JavaScript, CSS, JSON, SVG, YAML, XML
-- The  Google BigQuery Public Dataset GitHub snapshot shows 45k users using CoffeeScript in 69k repos on GitHub
-- Explore CoffeeScript snippets on Rosetta Code
-- CoffeeScript appears in the TIOBE Index
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- CoffeeScript is developed on <a href="https://github.com/jashkenas/coffeescript/">GitHub</a> and has 16,466 stars
+- There are at least 64,590 CoffeeScript repos on <a href="https://github.com/search?q=language:CoffeeScript">GitHub</a>
+- Early development of CoffeeScript happened in <a href="../lists/labs.html#q=https://github.com/jashkenas">https://github.com/jashkenas</a>
+- CoffeeScript compiles to <a href="javascript.html">JavaScript</a>
+- CoffeeScript is written in <a href="markdown.html">Markdown</a>, <a href="coffeescript.html">CoffeeScript</a>, <a href="html.html">HTML</a>, <a href="javascript.html">JavaScript</a>, <a href="css.html">CSS</a>, <a href="json.html">JSON</a>, <a href="svg.html">SVG</a>, <a href="yaml.html">YAML</a>, <a href="xml.html">XML</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 45k users using CoffeeScript in 69k repos on <a href="https://api.github.com/search/repositories?q=language:CoffeeScript">GitHub</a>
+- Explore CoffeeScript snippets on <a href="http://www.rosettacode.org/wiki/Category:CoffeeScript">Rosetta Code</a>
+- CoffeeScript appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - CoffeeScript Ubuntu package
  https://packages.ubuntu.com/jammy/coffeescript CoffeeScript Ubuntu package
-- CodeMirror package for syntax highlighting CoffeeScript
-- Monaco package for syntax highlighting CoffeeScript
-- Pygments supports syntax highlighting for CoffeeScript
-- GitHub supports syntax highlighting for CoffeeScript
-- CoffeeScript appears in the Quine Relay project
-- Learn CoffeeScript on exercism.
-- There is 1 Jupyter Kernel for CoffeeScript
-- coffeescript.org was registered in 2009
-- See also: (17 related languages) Haskell, JavaScript, Perl, Python, Ruby, YAML, LiveScript, Ruby on Rails, JQuery, Apache Maven, Java, Markdown, Elm, Haxe, Dart, Opa, TypeScript
-- 33 PLDB concepts link to CoffeeScript: Ace Editor, BlackCoffee, Civet, CoffeeKup, CoffeeScript, contracts.coffee, CSON, daonode, dexvis, Eiffel, EmberScript, fjs, Fold, grid-notation, Hera, HHVM, IcedCoffeeScript, Jedi, Jekyll, kode, lispyscript, Literate CoffeeScript, mal, mochajs, Node.js, Pug, Pygments, Statsplorer, Taijilang, taxa, TestML, ToffeeScript, U
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/coffeescript">package</a> for syntax highlighting CoffeeScript
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/coffee">package</a> for syntax highlighting CoffeeScript
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/javascript.py">syntax highlighting</a> for CoffeeScript
+- GitHub supports <a href="https://github.com/atom/language-coffee-script" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for CoffeeScript
+- CoffeeScript appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Learn <a href="https://exercism.org/tracks/coffeescript">CoffeeScript on exercism.</a>
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/n-riesco/jp-coffeescript">Kernel</a> for CoffeeScript
+- <a href="http://coffeescript.org">coffeescript.org</a> was registered in 2009
+- See also: (17 related languages) <a href="haskell.html">Haskell</a>, <a href="javascript.html">JavaScript</a>, <a href="perl.html">Perl</a>, <a href="python.html">Python</a>, <a href="ruby.html">Ruby</a>, <a href="yaml.html">YAML</a>, <a href="livescript.html">LiveScript</a>, <a href="rails.html">Ruby on Rails</a>, <a href="jquery.html">JQuery</a>, <a href="maven-pom.html">Apache Maven</a>, <a href="java.html">Java</a>, <a href="markdown.html">Markdown</a>, <a href="elm.html">Elm</a>, <a href="haxe.html">Haxe</a>, <a href="dart.html">Dart</a>, <a href="opa.html">Opa</a>, <a href="typescript.html">TypeScript</a>
+- 36 PLDB concepts link to CoffeeScript: <a href="ace.html">Ace Editor</a>, <a href="blackcoffee.html">BlackCoffee</a>, <a href="caffeine.html">Caffeine</a>, <a href="civet.html">Civet</a>, <a href="coffeekup.html">CoffeeKup</a>, <a href="coffeescript.html">CoffeeScript</a>, <a href="contracts.coffee.html">contracts.coffee</a>, <a href="cson.html">CSON</a>, <a href="daonode.html">daonode</a>, <a href="dexvis.html">dexvis</a>, <a href="eiffel.html">Eiffel</a>, <a href="emberscript.html">EmberScript</a>, <a href="fjs.html">fjs</a>, <a href="fold.html">Fold</a>, <a href="grid-notation.html">grid-notation</a>, <a href="heap.coffee.html">heap.coffee</a>, <a href="hera.html">Hera</a>, <a href="hhvm.html">HHVM</a>, <a href="icedcoffeescript.html">IcedCoffeeScript</a>, <a href="jedi.html">Jedi</a>, <a href="jekyll.html">Jekyll</a>, <a href="kode.html">kode</a>, <a href="lispyscript.html">lispyscript</a>, <a href="literate-coffeescript.html">Literate CoffeeScript</a>, <a href="mal.html">mal</a>, <a href="mochajs.html">mochajs</a>, <a href="nodejs.html">Node.js</a>, <a href="pug.html">Pug</a>, <a href="pygments.html">Pygments</a>, <a href="reactjs.html">ReactJS</a>, <a href="statsplorer.html">Statsplorer</a>, <a href="taijilang.html">Taijilang</a>, <a href="taxa.html">taxa</a>, <a href="testml.html">TestML</a>, <a href="toffeescript.html">ToffeeScript</a>, <a href="u.html">U</a>
 
+```Example from <a href='https://riju.codes/coffeescript'>Riju</a>:
 console.log &quot;Hello, world!&quot;
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/c/CoffeeScript.coffee'>hello-world</a>:
 alert &quot;Hello World&quot;
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#CoffeeScript'>the Hello World Collection</a>:
 // Hello world in CoffeeScript
 
 alert &quot;Hello, World!&quot;
+```
 
+```Example from <a href='https://github.com/atom/language-coffee-script'>Linguist</a>:
 console.log &quot;Hello, World!&quot;
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/CoffeeScript'>Wikipedia</a>:
 author = &quot;Wittgenstein&quot;
 quote  = &quot;A picture is a fact. -- #{ author }&quot;
 
 sentence = &quot;#{ 22 / 7 } is a decent approximation of π&quot;
+```
 
+```CoffeeScript <a href="../lists/keywords.html#q=coffeescript">Keywords</a>
 and or is isnt not on yes @ no off true false null this new delete typeof in instanceof return throw break continue debugger if else switch for while do try catch finally class extends super undefined then unless until loop of by when
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Standard Library
  FeatureLink ../features/hasStandardLibrary.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   console.log "Hello, World!"
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # [0-9]+
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # 0x[0-9a-fA-F]+
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Inheritance
  FeatureLink ../features/hasInheritance.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature Regular Expression Syntax Sugar
  FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token "
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ### A comment
   ###
@@ -149,39 +166,39 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token console.log
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Variable Substitution Syntax
  FeatureLink ../features/hasVariableSubstitutionSyntax.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

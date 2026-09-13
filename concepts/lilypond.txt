@@ -1,62 +1,67 @@
 LilyPond
 ========
 
-LilyPond is an open source programming language created in 1996.
+LilyPond is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1996.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1996
 
-#544 on PLDB
-28 Years Old
-2k Repos
+#562 on PLDB
+30 Years Old
+2k <span title="LilyPond repos on GitHub.">Repos</span>
 
 LilyPond is a computer program and file format for music engraving. One of LilyPond's major goals is to produce scores that are engraved with traditional layout rules, reflecting the era when scores were engraved by hand. LilyPond is cross-platform, and is available for several common operating systems; released under the terms of the GNU General Public License, LilyPond is free software.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/LilyPond Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 2,059 LilyPond repos on GitHub
-- Early development of LilyPond happened in https://gitlab.com/lilypond
-- The  Google BigQuery Public Dataset GitHub snapshot shows 263 users using LilyPond in 298 repos on GitHub
-- Explore LilyPond snippets on Rosetta Code
-- Pygments supports syntax highlighting for LilyPond
-- GitHub supports syntax highlighting for LilyPond
-- lilypond.org was registered in 1998
-- See also: (17 related languages) Scheme, METAFONT, PostScript, Python, Linux, FreeBSD, MusicXML, PDF, SVG, Guile, LaTeX, Tex, UTF-8, Emacs, Org, MediaWiki, Sibelius
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 2,059 LilyPond repos on <a href="https://github.com/search?q=language:LilyPond">GitHub</a>
+- Early development of LilyPond happened in <a href="../lists/labs.html#q=https://gitlab.com/lilypond">https://gitlab.com/lilypond</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 263 users using LilyPond in 298 repos on <a href="https://api.github.com/search/repositories?q=language:LilyPond">GitHub</a>
+- Explore LilyPond snippets on <a href="http://www.rosettacode.org/wiki/Category:Lilypond">Rosetta Code</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/lilypond.py">syntax highlighting</a> for LilyPond
+- GitHub supports <a href="https://github.com/textmate/lilypond.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for LilyPond
+- <a href="http://lilypond.org">lilypond.org</a> was registered in 1998
+- See also: (17 related languages) <a href="scheme.html">Scheme</a>, <a href="metafont.html">METAFONT</a>, <a href="postscript.html">PostScript</a>, <a href="python.html">Python</a>, <a href="linux.html">Linux</a>, <a href="freebsd.html">FreeBSD</a>, <a href="musicxml.html">MusicXML</a>, <a href="pdf.html">PDF</a>, <a href="svg.html">SVG</a>, <a href="guile.html">Guile</a>, <a href="latex.html">LaTeX</a>, <a href="tex.html">Tex</a>, <a href="utf-8.html">UTF-8</a>, <a href="emacs-editor.html">Emacs</a>, <a href="org.html">Org Mode</a>, <a href="mediawiki.html">MediaWiki</a>, <a href="sibelius-software.html">Sibelius</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/l/LilyPond.ly'>hello-world</a>:
 \markup { Hello World }
 
-&lt;score vorbis=&quot;1&quot;&gt;\relative c&#39; { f d f a d f e d cis a cis e a g f e }&lt;/score&gt;
+```
 
-Language features
+```Example from <a href='https://en.wikipedia.org/wiki/LilyPond'>Wikipedia</a>:
+&lt;score vorbis=&quot;1&quot;&gt;\relative c&#39; { f d f a d f e d cis a cis e a g f e }&lt;/score&gt;
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

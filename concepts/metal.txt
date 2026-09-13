@@ -1,24 +1,25 @@
 Metal
 =====
 
-Metal is a library created in 2014.
+Metal is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22library%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">library</a> created in 2014.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
 
-#520 on PLDB
-10 Years Old
-79 Repos
+#528 on PLDB
+12 Years Old
+79 <span title="Metal repos on GitHub.">Repos</span>
 
 Metal is a low-level, low-overhead hardware-accelerated 3D graphic and compute shader application programming interface (API) developed by Apple Inc., and which debuted in iOS 8. Metal combines functions similar to OpenGL and OpenCL under one API. It is intended to bring to iOS, macOS, and tvOS apps some of the performance benefits of similar APIs on other platforms, such as Vulkan (which debuted in mid-February 2016) and DirectX 12. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Metal_(API) Read more on Wikipedia...
 
-- Tags: library
-- There are at least 79 Metal repos on GitHub
-- Early development of Metal happened in Apple
-- The  Google BigQuery Public Dataset GitHub snapshot shows 232 users using Metal in 256 repos on GitHub
-- GitHub supports syntax highlighting for Metal
-- See also: (7 related languages) iOS, OpenGL, OpenCL, Swift, Objective-C, LLVM IR, Unity
-- 6 PLDB concepts link to Metal: cloc, FFmpeg, Iterm2, Java, lobster, Wonkey
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"library"%5D%7D%5D%2C"logic"%3A"AND"%7D'>library</a>
+- There are at least 79 Metal repos on <a href="https://github.com/search?q=language:Metal">GitHub</a>
+- Early development of Metal happened in <a href="../lists/labs.html#q=Apple">Apple</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 232 users using Metal in 256 repos on <a href="https://api.github.com/search/repositories?q=language:Metal">GitHub</a>
+- GitHub supports <a href="https://github.com/textmate/c.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Metal
+- See also: (7 related languages) <a href="ios.html">iOS</a>, <a href="opengl.html">OpenGL</a>, <a href="opencl.html">OpenCL</a>, <a href="swift.html">Swift</a>, <a href="objective-c.html">Objective-C</a>, <a href="llvmir.html">LLVM IR</a>, <a href="unity-engine.html">Unity</a>
+- 7 PLDB concepts link to Metal: <a href="blender-app.html">Blender</a>, <a href="cloc.html">cloc</a>, <a href="ffmpeg.html">FFmpeg</a>, <a href="iterm2.html">Iterm2</a>, <a href="java.html">Java</a>, <a href="lobster.html">lobster</a>, <a href="wonkey.html">Wonkey</a>
 
+```Example from <a href='https://github.com/textmate/c.tmbundle'>Linguist</a>:
 // Copyright 2014 Isis Innovation Limited and the authors of InfiniTAM
 
 #include &lt;metal_stdlib&gt;
@@ -118,5 +119,6 @@ kernel void forwardProject_device(DEVICEPTR(Vector4f) *forwardProjection        
     int locId_new = forwardProjectPixel(pixel * params-&gt;voxelSizes.x, params-&gt;M, params-&gt;projParams, params-&gt;imgSize.xy);
     if (locId_new &gt;= 0) forwardProjection[locId_new] = pixel;
 }
+```
 
-View source
+Built with Scroll v178.2.3

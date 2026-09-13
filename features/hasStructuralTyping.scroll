@@ -1,0 +1,130 @@
+header.scroll
+
+title Structural Typing - language feature
+tags Feature
+printTitle Structural Typing
+
+<a class="trueBaseThemePreviousItem" href="hasStructs.html">&lt;</a>
+<a class="trueBaseThemeNextItem" href="hasSwitch.html">&gt;</a>
+
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+
+container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/python.html">Python</a>
+ # Python&#39;s optional static type system features 2 kinds of structural types:
+ from typing import Protocol
+ 
+ class Clearable(Protocol):
+   def clear(self): ...
+ 
+ def print_and_clear(x: Clearable):
+   print(x)
+   x.clear()
+ 
+ print_and_clear([1, 2, 3])  # OK because lists have a clear() method
+ print_and_clear({1, 2, 3})  # OK because sets have a clear() method
+ print_and_clear(1)          # not OK because ints don&#39;t have a clear() method
+ 
+ from typing import TypedDict
+ 
+ class NameDict(TypedDict):
+   first_name: str
+   last_name: str
+ 
+ class EmployeeDict(TypedDict):
+   employee_id: int
+   first_name: str
+   last_name: str
+ 
+ def greet(name: NameDict):
+   print(f&quot;Hello {name[&#39;first_name&#39;]} {name[&#39;last_name&#39;]}!&quot;)
+ 
+ john: EmployeeDict = {
+   &quot;first_name&quot;: &quot;John&quot;, &quot;last_name&quot;: &quot;Smith&quot;, &quot;employee_id&quot;: 123
+ }
+ 
+ # EmployeeDict is a (structural) subtype of NameDict even though there is no
+ # explicit relation between them, so this passes type checking:
+ greet(john)
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/cpp.html">C++</a>
+ // concepts use structural typing:
+ #include &lt;iostream&gt;
+ #include &lt;string&gt;
+ 
+ using namespace std;
+ 
+ // NOTE that concept implementations MUST be defined BEFORE the concept itself
+ string toTypedJson(int x) {
+   return &quot;{\&quot;type\&quot;: \&quot;int\&quot;, \&quot;value\&quot;: &quot; + to_string(x) + &quot;}&quot;;
+ }
+ 
+ template &lt;typename T&gt;
+ concept ToTypedJson = requires (T a) {
+   {toTypedJson(a)} -&gt; convertible_to&lt;string&gt;;
+ };
+ 
+ template &lt;ToTypedJson T&gt;
+ void printAsTypedJson(T x) {
+   cout &lt;&lt; toTypedJson(x) &lt;&lt; endl;
+ }
+ 
+ int main() {
+   printAsTypedJson(123);
+ }
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/typescript.html">TypeScript</a>
+ // https://www.typescriptlang.org/docs/handbook/type-compatibility.html
+ // Subtype relations are structural for both interfaces and classes.
+ // Interface example:
+ interface CanCheckIncludes&lt;T&gt; {
+     includes(x: T): boolean;
+ }
+ 
+ function logIfIncludes&lt;T&gt;(includer: CanCheckIncludes&lt;T&gt;, includee: T) {
+     if (includer.includes(includee)) {
+         console.log(includer);
+     }
+ }
+ 
+ logIfIncludes(&quot;abc&quot;, &quot;b&quot;);
+ logIfIncludes([1, 2, 3], 4);
+ logIfIncludes(1, 1);  // Fails typechecking, as numbers don&#39;t have includes()
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/scala.html">Scala</a>
+ // https://docs.scala-lang.org/scala3/reference/changed-features/structural-types.html#using-java-reflection-1
+ import scala.reflect.Selectable.reflectiveSelectable
+ 
+ type Reversable[T] = { def reverse: T }
+ 
+ def printReversed[T](x: Reversable[T]): Unit = {
+   println(x.reverse)
+ }
+ 
+ printReversed(&quot;abc&quot;)
+ printReversed(Array(1, 2, 3))
+ printReversed(1)  // Doesn&#39;t compile because integers don&#39;t have a reverse method
+
+***
+
+* Languages *with* Structural Typing include <a href="../concepts/python.html">Python</a>, <a href="../concepts/cpp.html">C++</a>, <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/scala.html">Scala</a>, <a href="../concepts/ocaml.html">OCaml</a>
+
+***
+
+* Languages *without* Structural Typing include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/bash.html">Bash</a>, <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/kotlin.html">Kotlin</a>
+
+***
+
+View all concepts with or missing a *hasStructuralTyping* measurement
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasStructuralTyping&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22hasStructuralTyping%22%2C%22origData%22%3A%22hasStructuralTyping%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
+ link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~hasStructuralTyping&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22hasStructuralTyping%22%2C%22origData%22%3A%22hasStructuralTyping%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
+
+***
+
+* Read more about Structural Typing on the web: 1.
+ https://en.wikipedia.org/wiki/Structural_type_system 1.
+
+keyboardNav hasStructs.html hasSwitch.html
+
+../footer.scroll

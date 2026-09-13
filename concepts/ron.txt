@@ -1,22 +1,25 @@
 Ron
 ===
 
-Ron, aka Rusty Object Notation, is a data notation created in 2015 by Juniper Tyree.
+Ron, aka Rusty Object Notation, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 2015 by Juniper Tyree.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
  https://pldb.io/concepts/../lists/creators.html#q=Juniper%20Tyree Juniper Tyree
 
-#308 on PLDB
-9 Years Old
+#315 on PLDB
+11 Years Old
 
+```Download source code:
 git clone https://github.com/ron-rs/ron
+```
 
 RON is a simple readable data serialization format that looks similar to Rust syntax. It's designed to support all of Serde's data model, so structs, enums, tuples, arrays, generic maps, and primitive values.
 
-- Tags: dataNotation
-- Ron is developed on GitHub and has 3,238 stars
-- Early development of Ron happened in https://github.com/ron-rs
-- Ron is written in Rust, Markdown, YAML, TOML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- Ron is developed on <a href="https://github.com/ron-rs/ron">GitHub</a> and has 3,238 stars
+- Early development of Ron happened in <a href="../lists/labs.html#q=https://github.com/ron-rs">https://github.com/ron-rs</a>
+- Ron is written in <a href="rust.html">Rust</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="toml.html">TOML</a>
 
+```Example from the web:
 GameConfig( // optional struct name
     window_size: (800, 600),
     window_title: &quot;PAC-MAN&quot;,
@@ -43,14 +46,15 @@ GameConfig( // optional struct name
         adaptive: false,
     ),
 )
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -58,22 +62,22 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

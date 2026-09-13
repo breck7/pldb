@@ -7,9 +7,12 @@ printTitle hasTryCatch
 <a class="trueBaseThemePreviousItem" href="hasTriples.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasTypeAliases.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/chapel.html">Chapel</a>
+ try catch
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/bog.html">bog</a>
  let foo = fn(arg)
@@ -23,7 +26,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/bog.html">b
 
 ***
 
-* Languages *with* hasTryCatch include <a href="../concepts/bog.html">bog</a>
+* Languages *with* hasTryCatch include <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/bog.html">bog</a>
 
 ***
 

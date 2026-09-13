@@ -1,21 +1,22 @@
 S3
 ==
 
-S3 is a programming language created in 1986.
+S3 is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1986.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1986
 
-#1747 on PLDB
-38 Years Old
+#1819 on PLDB
+40 Years Old
 
 S3 is a structured, imperative high-level computer programming language.  It was developed by the UK company International Computers Limited (ICL) for its 2900 Series mainframes. It is a system programming language with syntax influenced by ALGOL 68 but with data types and operators aligned to those offered by the 2900 Series. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/S3_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of S3 happened in International Computers Limited
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of S3 happened in <a href="../lists/labs.html#q=International Computers Limited">International Computers Limited</a>
 - S3 on HOPL
  https://hopl.info/showlanguage.prx?exp=2462 S3 on HOPL
-- See also: (1 related languages) ALGOL 68
+- See also: (1 related languages) <a href="algol-68.html">ALGOL 68</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/S3_(programming_language)'>Wikipedia</a>:
 GLOBAL STATIC (&lt;STATUS 5;PSPACE 10001; TEMPLATE&gt;) PROC KERMIT_THE_FROG IS
        ((&lt;LIT &quot;COMMAND&quot;&gt;)             REF()BYTE OPTION,
         (&lt;LIT &quot;&quot;       &gt;)             REF()BYTE VME_FILE,
@@ -66,159 +67,23 @@ GLOBAL STATIC (&lt;STATUS 5;PSPACE 10001; TEMPLATE&gt;) PROC KERMIT_THE_FROG IS
        FI
   
     END
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   @ a comment @
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
-
-S3
-==
-
-S3 is a programming language created in 1986.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1986
-
-#1747 on PLDB
-38 Years Old
-
-S3 is a structured, imperative high-level computer programming language.  It was developed by the UK company International Computers Limited (ICL) for its 2900 Series mainframes. It is a system programming language with syntax influenced by ALGOL 68 but with data types and operators aligned to those offered by the 2900 Series. Read more on Wikipedia...
- https://en.wikipedia.org/wiki/S3_(programming_language) Read more on Wikipedia...
-
-- Tags: programming language
-- Early development of S3 happened in International Computers Limited
-- S3 on HOPL
- https://hopl.info/showlanguage.prx?exp=2462 S3 on HOPL
-- See also: (1 related languages) ALGOL 68
-
-GLOBAL STATIC (&lt;STATUS 5;PSPACE 10001; TEMPLATE&gt;) PROC KERMIT_THE_FROG IS
-       ((&lt;LIT &quot;COMMAND&quot;&gt;)             REF()BYTE OPTION,
-        (&lt;LIT &quot;&quot;       &gt;)             REF()BYTE VME_FILE,
-        (&lt;LIT &quot;&quot;       &gt;)             REF()BYTE REM_FILE,
-        (&lt;KEY RESPONSE;DEF N&#39;RESULT&gt;) RESPONSE RESULT):
-  
-    BEGIN
-  
-       ()BYTE JSV_NAME := &quot;ASG&quot;;              @ obtain value for ASG_ROUTE bool @
-       CTM_JS_READ(JSV_NAME,NIL,NIL,ASG_ROUTE,RC_IGNORED);
-       IF RC_IGNORED NE 0 THEN ASG_ROUTE := FALSE FI;
-  
-       @ verify parameter references (parameter values validated later):        @
-       @    OPTION   must be of mode REF () BYTE, may not be ZLR or NIL         @
-       @    VME_FILE must be of mode REF () BYTE, may be ZLR, must not be NIL   @
-       @    REM_FILE must be of mode REF () BYTE, may be ZLR, must not be NIL   @
-  
-       UNLESS (VERIFY OPTION AND VALIDR OPTION)
-       AND    (VERIFY VME_FILE AND (VALIDR VME_FILE OR NOT(VME_FILE IS NIL)))
-       AND    (VERIFY REM_FILE AND (VALIDR REM_FILE OR NOT(REM_FILE IS NIL)))
-       THEN                                       @ invalid parameter reference @
-          RESULT := 10002 @ ARCH_INACCESSIBLE_PARAMETER @
-  
-       ELSF                                             @ create resource block @
-          CTM_JS_BEGIN(RESULT);
-          RESULT &lt;= 0
-       THEN                                            @ resource block created @
-          LONG LONG WORD KERMIT_RESULT;
-          ANY((3)LONG WORD AS_LW,(6) WORD AS_W) PARAMS;
-          PARAMS.AS_LW := (BDESC OPTION,BDESC VME_FILE,BDESC REM_FILE);
-  
-                                                 @ set up program error handler @
-          IF  KMT_EH_INFORM_PE_CONTINGENCY(RESULT);
-               RESULT &gt; 0
-          THEN                                    @ failed to set error handler @
-             SKIP
-          ELSF CTM_JS_CALL(NIL,PDESC KERMIT_SUPPORT,PARAMS.AS_W,KERMIT_RESULT,
-                           RESULT);                           @ create firewall @
-               RESULT &lt;= 0
-          THEN                         @ either exited normally or via CTM_STOP @
-             RESULT := IF (S&#39;S&#39;KERMIT_RESULT) &lt;= 0
-                       THEN 0                                 @ ignore warnings @
-                       ELSE 52000              @ error return common resultcode @
-                       FI
-          FI;
-  
-          CTM_JS_END(RC_IGNORED)                           @ end resource block @
-       FI
-  
-    END
-
-Language features
-======================================================
-
-row
- Feature Comments
- FeatureLink ../features/hasComments.html
- Supported ✓
- Example
-  @ a comment @
- Token 
-row
- Feature Semantic Indentation
- FeatureLink ../features/hasSemanticIndentation.html
- Supported X
- Example
- Token
-
->) PROC KERMIT_THE_FROG IS
-         (()             REF()BYTE OPTION,
-          ()             REF()BYTE VME_FILE,
-          ()             REF()BYTE REM_FILE,
-          () RESPONSE RESULT):
-    
-      BEGIN
-    
-         ()BYTE JSV_NAME := "ASG";              @ obtain value for ASG_ROUTE bool @
-         CTM_JS_READ(JSV_NAME,NIL,NIL,ASG_ROUTE,RC_IGNORED);
-         IF RC_IGNORED NE 0 THEN ASG_ROUTE := FALSE FI;
-    
-         @ verify parameter references (parameter values validated later):        @
-         @    OPTION   must be of mode REF () BYTE, may not be ZLR or NIL         @
-         @    VME_FILE must be of mode REF () BYTE, may be ZLR, must not be NIL   @
-         @    REM_FILE must be of mode REF () BYTE, may be ZLR, must not be NIL   @
-    
-         UNLESS (VERIFY OPTION AND VALIDR OPTION)
-         AND    (VERIFY VME_FILE AND (VALIDR VME_FILE OR NOT(VME_FILE IS NIL)))
-         AND    (VERIFY REM_FILE AND (VALIDR REM_FILE OR NOT(REM_FILE IS NIL)))
-         THEN                                       @ invalid parameter reference @
-            RESULT := 10002 @ ARCH_INACCESSIBLE_PARAMETER @
-    
-         ELSF                                             @ create resource block @
-            CTM_JS_BEGIN(RESULT);
-            RESULT  0
-            THEN                                    @ failed to set error handler @
-               SKIP
-            ELSF CTM_JS_CALL(NIL,PDESC KERMIT_SUPPORT,PARAMS.AS_W,KERMIT_RESULT,
-                             RESULT);                           @ create firewall @
-                 RESULT <= 0
-            THEN                         @ either exited normally or via CTM_STOP @
-               RESULT := IF (S'S'KERMIT_RESULT) <= 0
-                         THEN 0                                 @ ignore warnings @
-                         ELSE 52000              @ error return common resultcode @
-                         FI
-            FI;
-    
-            CTM_JS_END(RC_IGNORED)                           @ end resource block @
-         FI
-    
-      END
- related algol-68
- summary S3 is a structured, imperative high-level computer programming language.  It was developed by the UK company International Computers Limited (ICL) for its 2900 Series mainframes. It is a system programming language with syntax influenced by ALGOL 68 but with data types and operators aligned to those offered by the 2900 Series.  It was the implementation language of the operating system VME.
- pageId 11484588
- created 2007
- backlinksCount 33
- revisionCount 30
- dailyPageViews 8
- appeared 1986
+Built with Scroll v178.2.3

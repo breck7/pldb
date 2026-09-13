@@ -1,25 +1,28 @@
 Mojo
 ====
 
-Mojo is an open source programming language created in 2022 by Chris Lattner.
+Mojo is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2022 by Chris Lattner.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2022
  https://pldb.io/concepts/../lists/creators.html#q=Chris%20Lattner Chris Lattner
 
-#115 on PLDB
-2 Years Old
+#117 on PLDB
+4 Years Old
 
+```Download source code:
 git clone https://github.com/modularml/mojo
+```
 
 Mojo combines the usability of Python with the performance of C, unlocking unparalleled programmability of AI hardware and extensibility of AI models.
 
-- Tags: programming language
-- Mojo is developed on GitHub and has 22,444 stars
-- Mojo is a superset of Python
-- Early development of Mojo happened in Modular Inc
-- Python and C and mlir influenced the design of Mojo
-- Mojo is written in Markdown, Jupyter Notebook, YAML, Python, Bourne shell, CMake, Dockerfile
-- 1 PLDB concepts link to Mojo: cloc
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Mojo is developed on <a href="https://github.com/modularml/mojo">GitHub</a> and has 22,444 stars
+- Mojo is a <a href="../lists/explorer.html#columns=rank~id~appeared~tags~creators~supersetOf&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22supersetOf%22%2C%22origData%22%3A%22supersetOf%22%2C%22tags%22%3A%22html%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">superset</a> of <a href="python.html">Python</a>
+- Early development of Mojo happened in <a href="../lists/labs.html#q=Modular Inc">Modular Inc</a>
+- <a href="python.html">Python</a> and <a href="c.html">C</a> and <a href="mlir.html">MLIR</a> and <a href="zig.html">Zig</a> and <a href="swift.html">Swift</a> and <a href="llvmir.html">LLVM IR</a> influenced the design of Mojo
+- Mojo is written in <a href="markdown.html">Markdown</a>, <a href="jupyter-notebook.html">Jupyter Notebook</a>, <a href="yaml.html">YAML</a>, <a href="python.html">Python</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="cmake.html">CMake</a>, <a href="dockerfile.html">Dockerfile</a>
+- 1 PLDB concepts link to Mojo: <a href="cloc.html">cloc</a>
 
+```Example from the web:
 def softmax(lst):
   norm = np.exp(lst - np.max(lst))
   return norm / norm.sum()
@@ -31,16 +34,17 @@ struct NDArray:
 struct SIMD[type: DType, width: Int]:
   def max(self, rhs: Self) -&gt; Self:
     return (self &gt;= rhs).select(self, rhs)
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature hasGradualTypes
  FeatureLink ../features/hasGradualTypes.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   v: ArraySlice[Int]
  Token
 
-View source
+Built with Scroll v178.2.3

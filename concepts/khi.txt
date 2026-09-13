@@ -1,22 +1,25 @@
 Khi
 ===
 
-Khi is a data notation created in 2023.
+Khi is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 2023.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222023%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2023
 
-#2969 on PLDB
-1 Years Old
+#3094 on PLDB
+3 Years Old
 
+```Download source code:
 git clone https://github.com/khilang/khi
+```
 
 The Khi data format
 
-- Tags: dataNotation
-- Khi is developed on GitHub and has 6 stars
-- Khi is written in Markdown
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- Khi is developed on <a href="https://github.com/khilang/khi">GitHub</a> and has 6 stars
+- Khi is written in <a href="markdown.html">Markdown</a>
 - Read more about Khi on the web: 1.
  https://www.reddit.com/r/ProgrammingLanguages/comments/1agpct9/khi_universal_data_format_for_configuration_and/ 1.
 
+```Example from the web:
 # Encyclopedia article about aluminium
 
 &gt; uuid: 0c5aacfe-d828-43c7-a530-12a802af1df4
@@ -64,12 +67,13 @@ The Khi data format
   &lt;@&gt;:aloxide:{aluminium oxide} forms on its surface, keeping it
   highly &lt;@&gt;:stab:stable~.
 
-  &lt;p&gt; In nature, it occurs as the &lt;@&gt;:ion:ion &lt;TEMPLATEgt;:{&lt;Al&gt;^{3+}}.
-  It constitutes &lt;TEMPLATEgt;:8.2% of the earth&#39;s crust, making it the
+  &lt;p&gt; In nature, it occurs as the &lt;@&gt;:ion:ion &lt;$&gt;:{&lt;Al&gt;^{3+}}.
+  It constitutes &lt;$&gt;:8.2% of the earth&#39;s crust, making it the
   most common &lt;@&gt;:metal:metal found there.
 
   ...
 
 }
+```
 
-View source
+Built with Scroll v178.2.3

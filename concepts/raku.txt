@@ -1,26 +1,27 @@
 Raku
 ====
 
-Raku is a programming language created in 2015 by Larry Wall.
+Raku is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2015 by Larry Wall.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
  https://pldb.io/concepts/../lists/creators.html#q=Larry%20Wall Larry Wall
 
-#429 on PLDB
-9 Years Old
-3k Repos
+#431 on PLDB
+11 Years Old
+3k <span title="Raku repos on GitHub.">Repos</span>
 
 Raku is a member of the Perl family of programming languages. Formerly known as Perl 6, it was renamed in October 2019.While historically several interpreter and compiler implementations were being written, today only the Rakudo implementation is in active development. Raku introduces elements of many modern and historical languages. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Raku_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 2,521 Raku repos on GitHub
-- Early development of Raku happened in https://www.raku.org/community
-- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Raku in 2k repos on GitHub
-- GitHub supports syntax highlighting for Raku
-- Learn Raku on exercism.
-- raku.org was registered in 1999
-- 8 PLDB concepts link to Raku: Ace Editor, Alma, cloc, Muldis, Pygments, Rakudo, Star, TestML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 2,521 Raku repos on <a href="https://github.com/search?q=language:Raku">GitHub</a>
+- Early development of Raku happened in <a href="../lists/labs.html#q=https://www.raku.org/community">https://www.raku.org/community</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Raku in 2k repos on <a href="https://api.github.com/search/repositories?q=language:Perl 6">GitHub</a>
+- GitHub supports <a href="https://github.com/perl6/atom-language-perl6" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Raku
+- Learn <a href="https://exercism.org/tracks/raku">Raku on exercism.</a>
+- <a href="https://www.raku.org/">raku.org</a> was registered in 1999
+- 8 PLDB concepts link to Raku: <a href="ace.html">Ace Editor</a>, <a href="alma-007.html">Alma</a>, <a href="cloc.html">cloc</a>, <a href="muldis.html">Muldis</a>, <a href="pygments.html">Pygments</a>, <a href="rakudo.html">Rakudo</a>, <a href="star.html">Star</a>, <a href="testml.html">TestML</a>
 
+```Example from the web:
 grammar Parser {
     rule  TOP  { I &lt;love&gt; &lt;lang&gt; }
     token love { &#39;♥&#39; | love }
@@ -47,9 +48,14 @@ grammar Parser {
  
  # Lazily read words from a file
  .say for &#39;50TB.file.txt&#39;.IO.words;
+```
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/r/Raku.raku'>hello-world</a>:
 say &quot;Hello World&quot;;
 
+```
+
+```Example from <a href='https://github.com/perl6/atom-language-perl6'>Linguist</a>:
 # used in t/spec/S11-modules/nested.t
 
 BEGIN { @*INC.push(&#39;t/spec/packages&#39;) };
@@ -59,40 +65,41 @@ module A::A {
 }
 
 # vim: ft=perl6
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Multiple Inheritance
  FeatureLink ../features/hasMultipleInheritance.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
   'Hello world'
@@ -100,54 +107,54 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token say
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Function Composition
  FeatureLink ../features/hasFunctionComposition.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   my &foo = &f ∘ &g;
  Token 
 row
  Feature Refinement Types
  FeatureLink ../features/hasRefinementTypes.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   subset Color of Any where Color | CMYK_Color;
  Token 
 row
  Feature hasGradualTypes
  FeatureLink ../features/hasGradualTypes.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

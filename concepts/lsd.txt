@@ -1,20 +1,22 @@
 lsd
 ===
 
-lsd is a text markup language created in 2016.
+lsd is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2016.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2016
 
-#2403 on PLDB
-8 Years Old
+#2522 on PLDB
+10 Years Old
 
+```Download source code:
 git clone https://github.com/fiatjaf/LSD
+```
 
 Loose Structured Data
 
-- Tags: text markup language
-- lsd is developed on GitHub and has 3 stars
-- Early development of lsd happened in https://github.com/fiatjaf/LSD/issues
-- lsd is written in JavaScript, JSON, YAML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- lsd is developed on <a href="https://github.com/fiatjaf/LSD">GitHub</a> and has 3 stars
+- Early development of lsd happened in <a href="../lists/labs.html#q=https://github.com/fiatjaf/LSD/issues">https://github.com/fiatjaf/LSD/issues</a>
+- lsd is written in <a href="javascript.html">JavaScript</a>, <a href="json.html">JSON</a>, <a href="yaml.html">YAML</a>
 
 HackerNews discussions of lsd
 =============================
@@ -22,4 +24,4 @@ HackerNews discussions of lsd
 title|titleLink|date|score|comments
 Show HN: A very loose JSON-like markup language|https://news.ycombinator.com/item?id=12200000|08/01/2016|1|0
 
-View source
+Built with Scroll v178.2.3

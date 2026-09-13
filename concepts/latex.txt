@@ -1,37 +1,44 @@
 LaTeX
 =====
 
-LaTeX is an open source text markup language created in 1985 by Leslie Lamport.
+LaTeX is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 1985 by Leslie Lamport.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221985%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1985
  https://pldb.io/concepts/../lists/creators.html#q=Leslie%20Lamport Leslie Lamport
 
-#103 on PLDB
-39 Years Old
+#106 on PLDB
+41 Years Old
 
 LaTeX (IPA: , LAH-tekh, also pronounced as , LAY-tekh, a shortening of Lamport TeX) is a document preparation system. When writing, the writer uses plain text as opposed to the formatted text found in WYSIWYG word processors like Microsoft Word, LibreOffice Writer and Apple Pages. The writer uses markup tagging conventions to define the general structure of a document (such as article, book, and letter), to stylise text throughout a document (such as bold and italics), and to add citations and cross-references. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/LaTeX Read more on Wikipedia...
 
-- Tags: text markup language
-- Early development of LaTeX happened in https://www.latex-project.org/about/team/
-- Explore LaTeX snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- Early development of LaTeX happened in <a href="../lists/labs.html#q=https://www.latex-project.org/about/team/">https://www.latex-project.org/about/team/</a>
+- Explore LaTeX snippets on <a href="http://www.rosettacode.org/wiki/Category:LaTeX">Rosetta Code</a>
 - LaTeX on HOPL
  https://hopl.info/showlanguage.prx?exp=2157 LaTeX on HOPL
-- LaTeX LSP implementation
-- latex-project.org was registered in 1998
-- See also: (14 related languages) Tex, PDF, XML, CSS, HTML, XeTeX, Solaris, FreeBSD, Linux, PostScript, LyX, Perl, Unix, BibTeX
-- 9 PLDB concepts link to LaTeX: AsciiMath, Desmos, eqn, Frundis, Knitr, MathJax, sile, Sweave, Typst
+- LaTeX <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/efoerster/texlab">implementation</a>
+- <a href="http://latex-project.org/">latex-project.org</a> was registered in 1998
+- See also: (14 related languages) <a href="tex.html">Tex</a>, <a href="pdf.html">PDF</a>, <a href="xml.html">XML</a>, <a href="css.html">CSS</a>, <a href="html.html">HTML</a>, <a href="xetex.html">XeTeX</a>, <a href="solaris.html">Solaris</a>, <a href="freebsd.html">FreeBSD</a>, <a href="linux.html">Linux</a>, <a href="postscript.html">PostScript</a>, <a href="lyx-editor.html">LyX</a>, <a href="perl.html">Perl</a>, <a href="unix.html">Unix</a>, <a href="bibtex.html">BibTeX</a>
+- 9 PLDB concepts link to LaTeX: <a href="asciimath.html">AsciiMath</a>, <a href="desmos.html">Desmos</a>, <a href="eqn.html">eqn</a>, <a href="frundis.html">Frundis</a>, <a href="knitr.html">Knitr</a>, <a href="mathjson.html">MathJSON</a>, <a href="sile.html">sile</a>, <a href="sweave.html">Sweave</a>, <a href="typst.html">Typst</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/l/LaTeX.tex'>hello-world</a>:
 \documentclass{article}
 \begin{document}
 Hello World
 \end{document}
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#LaTeX'>the Hello World Collection</a>:
 % Hello World! in LaTeX
 \documentclass{article}
 \begin{document}
 Hello World!
 \end{document}
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/LaTeX'>Wikipedia</a>:
 \documentclass{article}
 \usepackage{amsmath}
 \title{\LaTeX}
@@ -58,40 +65,41 @@ Hello World!
     E &amp;= \frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}
   \end{align}
 \end{document}
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % A comment
  Token %
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

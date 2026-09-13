@@ -1,25 +1,28 @@
 Recfiles
 ========
 
-Recfiles is a data notation created in 2009 by Jose E. Marchesi.
+Recfiles is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 2009 by Jose E. Marchesi.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2009
  https://pldb.io/concepts/../lists/creators.html#q=Jose%20E.%20Marchesi Jose E. Marchesi
 
-#1247 on PLDB
-15 Years Old
+#1261 on PLDB
+17 Years Old
 
+```Download source code:
 git clone https://git.savannah.gnu.org/git/recutils.git
+```
 
 recfiles is a file format for human-editable, plain text databases. Databases using this file format can be edited using any text editor. recfiles allow for basic relational database operations, typing, auto-incrementing, as well as a simple join operation. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Recfiles Read more on Wikipedia...
 
-- Tags: dataNotation
-- Early development of Recfiles happened in Free Software Foundation
-- Recfiles is written in C, Bourne shell, Make, sed, Tex, CSS, Lex, M4, Yacc, Python
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- Early development of Recfiles happened in <a href="../lists/labs.html#q=Free Software Foundation">Free Software Foundation</a>
+- Recfiles is written in <a href="c.html">C</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="make.html">Make</a>, <a href="sed.html">sed</a>, <a href="tex.html">Tex</a>, <a href="css.html">CSS</a>, <a href="lex.html">Lex</a>, <a href="m4.html">M4</a>, <a href="yacc.html">Yacc</a>, <a href="python.html">Python</a>
 - Read more about Recfiles on the web: 1.
  https://www.gnu.org/software/recutils/ 1.
-- 1 PLDB concepts link to Recfiles: SUSN
+- 1 PLDB concepts link to Recfiles: <a href="susn.html">SUSN</a>
 
+```Example from the web:
 %rec: Book
 %mandatory: Title
 %type: Location enum loaned home unknown
@@ -46,21 +49,22 @@ Location: unknown
 
 Title: Yeelong User Manual
 Location: home
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # Blah blah…
   # Unlike some file formats, comments in recfiles must be complete lines. You cannot start a comment in the middle of a line.
@@ -68,8 +72,8 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

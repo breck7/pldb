@@ -1,25 +1,26 @@
 QML
 ===
 
-QML, aka Qt Modeling Language, is a programming language created in 2009.
+QML, aka Qt Modeling Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2009.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2009
 
-#224 on PLDB
-15 Years Old
-15k Repos
+#226 on PLDB
+17 Years Old
+15k <span title="QML repos on GitHub.">Repos</span>
 
 QML (Qt Modeling Language) is a user interface markup language. It is a declarative language (similar to CSS and JSON) for designing user interface–centric applications. Inline JavaScript code handles imperative aspects. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/QML Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 14,755 QML repos on GitHub
-- Early development of QML happened in Qt Group plc
-- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using QML in 5k repos on GitHub
-- Pygments supports syntax highlighting for QML
-- GitHub supports syntax highlighting for QML
-- See also: (3 related languages) JSON, JavaScript, Ring
-- 7 PLDB concepts link to QML: Ace Editor, kumir, leo-editor, Opa, Pygments, score, VLC
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 14,755 QML repos on <a href="https://github.com/search?q=language:QML">GitHub</a>
+- Early development of QML happened in <a href="../lists/labs.html#q=Qt Group plc">Qt Group plc</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using QML in 5k repos on <a href="https://api.github.com/search/repositories?q=language:QML">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/webmisc.py">syntax highlighting</a> for QML
+- GitHub supports <a href="https://github.com/skozlovf/Sublime-QML" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for QML
+- See also: (3 related languages) <a href="json.html">JSON</a>, <a href="javascript.html">JavaScript</a>, <a href="ring.html">Ring</a>
+- 7 PLDB concepts link to QML: <a href="ace.html">Ace Editor</a>, <a href="kumir.html">kumir</a>, <a href="leo-editor.html">leo-editor</a>, <a href="opa.html">Opa</a>, <a href="pygments.html">Pygments</a>, <a href="score.html">score</a>, <a href="vlc.html">VLC</a>
 
+```Example from the web:
 Item {
     Rectangle {
         id: myRect
@@ -31,7 +32,9 @@ Item {
         height: 200
     }
 }
+```
 
+```Example from <a href='https://github.com/skozlovf/Sublime-QML'>Linguist</a>:
 /****************************************************************************
 **
 ** Copyright (C) 2015 The Qt Company Ltd.
@@ -188,38 +191,42 @@ Module {
     readonly property int versionPatch: undefined // set internally
 }
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/QML'>Wikipedia</a>:
 MouseArea {
      onPressed: console.log(&quot;mouse button pressed&quot;)
  }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // [0-9]+
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // [0-9][0-9]*\.[0-9]+([eE][0-9]+)?[fd]?
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // 0x[0-9a-fA-F]+
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -227,22 +234,22 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

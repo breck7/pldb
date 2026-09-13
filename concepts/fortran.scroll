@@ -94,13 +94,13 @@ hasPrintDebugging true
    100 FORMAT (' Hello World! ' /)
        END
 hasZeroBasedNumbering false
+hasSinglePassParser true
 hasModules true
  module constants
  implicit none
  
     real, parameter :: pi = 3.1415926536
     real, parameter :: e = 2.7182818285
-    
  contains
     subroutine show_consts()
        print*, "Pi = ", pi

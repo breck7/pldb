@@ -1,24 +1,28 @@
 Jule
 ====
 
-Jule is an open source programming language created in 2021 by Mertcan Davulcu.
+Jule is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2021 by Mertcan Davulcu.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2021
  https://pldb.io/concepts/../lists/creators.html#q=Mertcan%20Davulcu Mertcan Davulcu
 
-#715 on PLDB
-3 Years Old
+#586 on PLDB
+5 Years Old
 
+```Download source code:
 git clone https://github.com/julelang/jule
+```
 
 Jule is the simple, efficient, statically typed and compiled system programming language.
 
-- Tags: programming language, lisp
-- Jule is developed on GitHub and has 127 stars
-- Early development of Jule happened in https://github.com/julelang
-- C and C++ and Rust and Go influenced the design of Jule
-- Jule is written in YAML, Markdown, Bourne shell, Dockerfile
-- jule.dev was registered in 2022
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"lisp"%5D%7D%5D%2C"logic"%3A"AND"%7D'>lisp</a>
+- Jule is developed on <a href="https://github.com/julelang/jule">GitHub</a> and has 127 stars
+- Early development of Jule happened in <a href="../lists/labs.html#q=https://github.com/julelang">https://github.com/julelang</a>
+- <a href="c.html">C</a> and <a href="cpp.html">C++</a> and <a href="rust.html">Rust</a> and <a href="go.html">Go</a> influenced the design of Jule
+- Jule is written in <a href="jule.html">Jule</a>, <a href="cpp.html">C++</a>
+- <a href="https://jule.dev">jule.dev</a> was registered in 2022
+- 1 PLDB concepts link to Jule: <a href="jule.html">Jule</a>
 
+```Example from the web:
  fn quicksort(mut s: []int) {
      if s.len &lt;= 1 {
          ret
@@ -45,11 +49,15 @@ Jule is the simple, efficient, statically typed and compiled system programming 
      quicksort(my_slice)
      outln(my_slice)
  }
+```
 
+```Example from the web:
 fn main() {
     outln(&quot;Hello World&quot;)
 }
+```
 
+```Example from the web:
 use std::math::{PI}
 
 trait Shape {
@@ -83,29 +91,32 @@ fn main() {
     outln(rect.area())
     outln(circ.area())
 }
+```
 
-fn pub struct enum unsafe const let mut self match if else for in impl trait break continue goto cpp i8 i16 i32 i64 u8 u16 u32 u64 f32 f64 str int uint type any true false bool ret fall nil uintptr co
+```Jule <a href="../lists/keywords.html#q=jule">Keywords</a>
+fn struct enum unsafe const let mut self match if else for in impl trait break continue goto cpp i8 i16 i32 i64 u8 u16 u32 u64 f32 f64 str int uint type any true false bool ret fall nil uintptr co defer select chan map
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature hasReservedWords
  FeatureLink ../features/hasReservedWords.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature hasSelfOrThisWord
  FeatureLink ../features/hasSelfOrThisWord.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   self
  Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   use std::fs
   use std::sys::{self, open, O_RDWR}
@@ -114,7 +125,7 @@ row
 row
  Feature Multiline Strings
  FeatureLink ../features/hasMultilineStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   `Multiline strings
   is available in Jule
@@ -123,14 +134,14 @@ row
 row
  Feature hasStringConcatOperator
  FeatureLink ../features/hasStringConcatOperator.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   +
  Token 
 row
  Feature Disk Output
  FeatureLink ../features/canWriteToDisk.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   use std::fs::{open, O_WRONLY}
   
@@ -144,13 +155,13 @@ row
 row
  Feature Static Typing
  FeatureLink ../features/hasStaticTyping.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Increment and decrement operators
  FeatureLink ../features/hasIncrementAndDecrementOperators.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ++
   --
@@ -158,7 +169,7 @@ row
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   if BOOLEAN_EXPRESSION {
       outln(""Condition is true)
@@ -167,7 +178,7 @@ row
 row
  Feature Manual Memory Management
  FeatureLink ../features/hasManualMemoryManagement.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   use std::mem::c::{malloc, free}
   
@@ -180,21 +191,21 @@ row
 row
  Feature Type Casting
  FeatureLink ../features/hasExplicitTypeCasting.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   let x = (int)(3.14)
  Token 
 row
  Feature hasArraySlicingSyntax
  FeatureLink ../features/hasArraySlicingSyntax.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   sliceable_expression[start_index:to_index]
  Token 
 row
  Feature Duck Typing
  FeatureLink ../features/hasDuckTyping.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   fn lock_object[T](obj: T) {
       obj.lock()
@@ -203,7 +214,7 @@ row
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   match X {
   | Y:         outln("X is Y")
@@ -215,27 +226,27 @@ row
 row
  Feature hasMemberVariables
  FeatureLink ../features/hasMemberVariables.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   pub
  Token 
 row
  Feature Type Annotations
  FeatureLink ../features/hasTypeAnnotations.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   let x: f64 = 89
  Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   let mut x = 0
   x = 20
@@ -243,7 +254,7 @@ row
 row
  Feature Threads
  FeatureLink ../features/hasThreads.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   fn my_thread() {
       outln("Hello from thread")
@@ -256,48 +267,48 @@ row
 row
  Feature Statements
  FeatureLink ../features/hasStatements.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature hasStatementTerminatorCharacter
  FeatureLink ../features/hasStatementTerminatorCharacter.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ;
  Token 
 row
  Feature hasBoundedCheckedArrays
  FeatureLink ../features/hasBoundedCheckedArrays.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   let arr: [5]byte = ['a', 'b', 'c', 'd', 'e']
  Token 
 row
  Feature hasRequiredMainFunction
  FeatureLink ../features/hasRequiredMainFunction.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   fn main() {}
  Token 
 row
  Feature Gotos
  FeatureLink ../features/hasGotos.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   goto a_label
  Token 
 row
  Feature Labels
  FeatureLink ../features/hasLabels.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   a_label:
  Token 
 row
  Feature hasDynamicSizedArrays
  FeatureLink ../features/hasDynamicSizedArrays.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   let mut a_slice = [1, 2, 3, 4, 5, 6]
   a_slice = append(a_slice, 7, 8, 9, 10)
@@ -305,19 +316,19 @@ row
 row
  Feature hasIfElses
  FeatureLink ../features/hasIfElses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature hasIfs
  FeatureLink ../features/hasIfs.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Doc comments
  FeatureLink ../features/hasDocComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // Documentation comment for a_function
   fn a_function() {}
@@ -325,7 +336,7 @@ row
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   for my_condition {
       // ...
@@ -334,11 +345,18 @@ row
 row
  Feature hasForLoops
  FeatureLink ../features/hasForLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // Jule has for loops with while-next iterations
   let mut i = 0
-  for i ✓
+  for i < 10; i++ {
+      // ...
+  }
+ Token 
+row
+ Feature hasForEachLoops
+ FeatureLink ../features/hasForEachLoops.html
+ Supported <span class="hasFeature">✓</span>
  Example
   for x, y in my_enumerable {
       // ...
@@ -347,7 +365,7 @@ row
 row
  Feature canReadCommandLineArgs
  FeatureLink ../features/canReadCommandLineArgs.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   use std::os::{ARGS}
   
@@ -358,33 +376,33 @@ row
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature hasFnArguments
  FeatureLink ../features/hasFnArguments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Dependent types
  FeatureLink ../features/hasDependentTypes.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   int uint uintptr
  Token 
 row
  Feature Unary Operators
  FeatureLink ../features/hasUnaryOperators.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   * & - + ^ !
  Token 
 row
  Feature Variadic Functions
  FeatureLink ../features/hasVariadicFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   fn average(x: ...f64): f64 {
       // ...
@@ -393,7 +411,7 @@ row
 row
  Feature Assert Statements
  FeatureLink ../features/hasAssertStatements.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   use std::debug
   use std::debug::assert::{assert}
@@ -401,20 +419,26 @@ row
   fn main() {
       std::debug::ENABLE = true
       let x = 200
-      assert(x ✓
+      assert(x < 200)
+  }
+ Token 
+row
+ Feature Bitwise Operators
+ FeatureLink ../features/hasBitWiseOperators.html
+ Supported <span class="hasFeature">✓</span>
  Example
-  & | ^ >
+  & | ^ << >>
  Token 
 row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature hasValueReturnedFunctions
  FeatureLink ../features/hasValueReturnedFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   fn get_pi(): f64 {
       ret 3.14159265359
@@ -423,13 +447,13 @@ row
 row
  Feature hasGlobalScope
  FeatureLink ../features/hasGlobalScope.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Scientific Notation
  FeatureLink ../features/hasScientificNotation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   1E2
   .12345E+6
@@ -444,7 +468,7 @@ row
 row
  Feature hasVoidFunctions
  FeatureLink ../features/hasVoidFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   fn a_void_function() {
       // ...
@@ -453,35 +477,35 @@ row
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   0b0001010101
  Token 
 row
  Feature Decimals
  FeatureLink ../features/hasDecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   12345
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   0455
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   0xDFF90
  Token 
 row
  Feature Structs
  FeatureLink ../features/hasStructs.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   struct Employee {
       first_name: str
@@ -492,7 +516,7 @@ row
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   12345
   0b0001010101
@@ -502,7 +526,7 @@ row
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   3.14
   32.60
@@ -522,7 +546,7 @@ row
 row
  Feature Enums
  FeatureLink ../features/hasEnums.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   enum ExitCode {
       Success = 0,
@@ -532,7 +556,7 @@ row
 row
  Feature hasContinue
  FeatureLink ../features/hasContinue.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   continue
   continue a_label
@@ -540,7 +564,7 @@ row
 row
  Feature hasBreak
  FeatureLink ../features/hasBreak.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   break
   break a_label
@@ -548,7 +572,7 @@ row
 row
  Feature Anonymous Functions
  FeatureLink ../features/hasAnonymousFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   let anonymous = fn() {
       outln("Anonymous Function")
@@ -558,28 +582,28 @@ row
 row
  Feature Null
  FeatureLink ../features/hasNull.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   nil
  Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   const PI = 3.14159265359
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   true false
  Token true false
 row
  Feature Generics
  FeatureLink ../features/hasGenerics.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   fn generic_function[T](s: []T) {
       // ...
@@ -588,7 +612,7 @@ row
 row
  Feature Traits
  FeatureLink ../features/hasTraits.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   trait Person {
       fn get_full_name(self): str
@@ -598,7 +622,7 @@ row
 row
  Feature Maps
  FeatureLink ../features/hasMaps.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   let my_map: [int:str] = {
       0: "Key 0",
@@ -609,7 +633,7 @@ row
 row
  Feature Methods
  FeatureLink ../features/hasMethods.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   impl MyStruct {
       fn my_method(self) {}
@@ -618,7 +642,7 @@ row
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   fn a_function() {
       // ...
@@ -627,20 +651,20 @@ row
 row
  Feature Pointers
  FeatureLink ../features/hasPointers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   let ptr: *int = nil
  Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
- Token outln
+ Token println
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /*
     A multi line comment
@@ -649,7 +673,7 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
   /* A comment */
@@ -657,14 +681,14 @@ row
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Jule String Literal"
   `Jule Raw String Literal`
@@ -672,74 +696,74 @@ row
 row
  Feature Regular Expression Syntax Sugar
  FeatureLink ../features/hasRegularExpressionsSyntaxSugar.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature hasTryCatch
  FeatureLink ../features/hasTryCatch.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Async Await
  FeatureLink ../features/hasAsyncAwait.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature canUseQuestionMarksAsPartOfIdentifier
  FeatureLink ../features/canUseQuestionMarksAsPartOfIdentifier.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Ternary operators
  FeatureLink ../features/hasTernaryOperators.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature hasUserDefinedOperators
  FeatureLink ../features/hasUserDefinedOperators.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Polymorphism
  FeatureLink ../features/hasPolymorphism.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Garbage Collection
  FeatureLink ../features/hasGarbageCollection.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature hasMethodOverloading
  FeatureLink ../features/hasMethodOverloading.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Function Overloading
  FeatureLink ../features/hasFunctionOverloading.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

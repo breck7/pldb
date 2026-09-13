@@ -1,20 +1,22 @@
 Iterm2
 ======
 
-Iterm2 is an application created in 1996.
+Iterm2 is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 1996.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1996
 
-#447 on PLDB
-28 Years Old
+#467 on PLDB
+30 Years Old
 
+```Download source code:
 git clone https://github.com/gnachman/iTerm2
+```
 
 iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with macOS 10.14 or newer. iTerm2 brings the terminal into the modern age with features you never knew you always wanted.
 
-- Tags: application
-- Iterm2 is developed on GitHub and has 14,991 stars
-- Early development of Iterm2 happened in https://github.com/gnachman/iTerm2
-- Iterm2 is written in Objective-C, Swift, Python, XML, reStructuredText, CSS, Bourne shell, Metal, C, JSON, Markdown, Visual Basic, Objective C++, Bash, HTML, Make, YAML, C++, Ruby, JavaScript, C shell, Protocol Buffers, Perl, DTrace, Tex, Z shell, MATLAB, SVG
-- See also: (3 related languages) Git, Magit, Sourcetree
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>
+- Iterm2 is developed on <a href="https://github.com/gnachman/iTerm2">GitHub</a> and has 14,991 stars
+- Early development of Iterm2 happened in <a href="../lists/labs.html#q=https://github.com/gnachman/iTerm2">https://github.com/gnachman/iTerm2</a>
+- Iterm2 is written in <a href="objective-c.html">Objective-C</a>, <a href="swift.html">Swift</a>, <a href="python.html">Python</a>, <a href="xml.html">XML</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="css.html">CSS</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="metal.html">Metal</a>, <a href="c.html">C</a>, <a href="json.html">JSON</a>, <a href="markdown.html">Markdown</a>, <a href="visual-basic.html">Visual Basic</a>, <a href="objective-cpp.html">Objective C++</a>, <a href="bash.html">Bash</a>, <a href="html.html">HTML</a>, <a href="make.html">Make</a>, <a href="yaml.html">YAML</a>, <a href="cpp.html">C++</a>, <a href="ruby.html">Ruby</a>, <a href="javascript.html">JavaScript</a>, <a href="c-shell.html">C shell</a>, <a href="protobuf.html">Protocol Buffers</a>, <a href="perl.html">Perl</a>, <a href="dtrace.html">DTrace</a>, <a href="tex.html">Tex</a>, <a href="z-shell.html">Z shell</a>, <a href="matlab.html">MATLAB</a>, <a href="svg.html">SVG</a>
+- See also: (3 related languages) <a href="git.html">Git</a>, <a href="magit.html">Magit</a>, <a href="sourcetree.html">Sourcetree</a>
 
-View source
+Built with Scroll v178.2.3

@@ -4,7 +4,7 @@ id clojurescript
 name ClojureScript
 appeared 2011
 creators Rich Hickey
-tags pl
+tags pl lisp
 website https://clojurescript.org/
 latestVersion 1.11.132
 webRepl https://clojurescript.io/
@@ -19,10 +19,12 @@ clocExtensions cljs
 fileType text
 repoStats
  firstCommit 2011
- commits 6216
+ commits 6274
  committers 249
- files 391
- newestCommit 2024
+ files 394
+ newestCommit 2025
+ mb 20
+ linesOfCode 82962
 country Various
 
 pygmentsHighlighter ClojureScript
@@ -58,6 +60,8 @@ hasFloats true
 hasIntegers true
 hasLineComments true
 hasComments true
+hasDynamicTyping true
+hasGarbageCollection true
 
 domainName clojurescript.org
  registered 2011

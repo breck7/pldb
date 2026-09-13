@@ -1,24 +1,25 @@
 Sather
 ======
 
-Sather is a programming language created in 1990 by Steve Omohundro.
+Sather is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1990 by Steve Omohundro.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1990
  https://pldb.io/concepts/../lists/creators.html#q=Steve%20Omohundro Steve Omohundro
 
-#965 on PLDB
-34 Years Old
+#997 on PLDB
+36 Years Old
 
 Sather is an object-oriented programming language. It originated circa 1990 at the International Computer Science Institute (ICSI) at the University of California Berkeley, developed by an international team led by Steve Omohundro. It supports garbage collection and generics by subtypes. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Sather Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Sather happened in University of California Berkeley and University of Waikato and GNU project
-- Explore Sather snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Sather happened in <a href="../lists/labs.html#q=University of California Berkeley">University of California Berkeley</a> and <a href="../lists/labs.html#q=University of Waikato">University of Waikato</a> and <a href="../lists/labs.html#q=GNU project">GNU project</a>
+- Explore Sather snippets on <a href="http://www.rosettacode.org/wiki/Category:Sather">Rosetta Code</a>
 - Sather on HOPL
  https://hopl.info/showlanguage.prx?exp=1659 Sather on HOPL
-- Sather appears in the TIOBE Index
-- See also: (7 related languages) Eiffel, CLU, Common Lisp, Scheme, Classroom Object Oriented Language, Rust, C
+- Sather appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- See also: (7 related languages) <a href="eiffel.html">Eiffel</a>, <a href="clu.html">CLU</a>, <a href="common-lisp.html">Common Lisp</a>, <a href="scheme.html">Scheme</a>, <a href="cool.html">Classroom Object Oriented Language</a>, <a href="rust.html">Rust</a>, <a href="c.html">C</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/s/Sather.sa'>hello-world</a>:
 class MAIN is
    main is
       loop
@@ -27,12 +28,18 @@ class MAIN is
    end
 end
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Sather'>the Hello World Collection</a>:
 -- Hello World in Sather
 
     class HELLO is
        main is #OUT + &quot;Hello World!\n&quot; end
     end
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Sather'>Wikipedia</a>:
 upto!(once m:INT):SAME is
     i: INT := self; -- initialise i to the value of self,
                     -- that is the integer of which this method is called
@@ -44,34 +51,35 @@ upto!(once m:INT):SAME is
       i := i + 1; -- and increment
     end;
   end;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token #OUT
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token --
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

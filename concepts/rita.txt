@@ -1,37 +1,39 @@
 Rita
 ====
 
-Rita is a programming language created in 2019 by Šarūnas Navickas.
+Rita is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2019 by Šarūnas Navickas.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2019
  https://pldb.io/concepts/../lists/creators.html#q=%C5%A0ar%C5%ABnas%20Navickas Šarūnas Navickas
 
-#1419 on PLDB
-5 Years Old
+#1462 on PLDB
+7 Years Old
 
+```Download source code:
 git clone https://github.com/zaibacu/rita-dsl
+```
 
 A Domain Specific Language (DSL) for building language patterns. These can be later compiled into spaCy patterns, pure regex, or any other format
 
-- Tags: programming language
-- Rita is developed on GitHub and has 65 stars
-- Early development of Rita happened in https://github.com/zaibacu/rita-dsl/issues
-- Rita is written in Python, Markdown, YAML, reStructuredText, Ini, SVG, TOML, Make
-- Pygments supports syntax highlighting for Rita
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Rita is developed on <a href="https://github.com/zaibacu/rita-dsl">GitHub</a> and has 65 stars
+- Early development of Rita happened in <a href="../lists/labs.html#q=https://github.com/zaibacu/rita-dsl/issues">https://github.com/zaibacu/rita-dsl/issues</a>
+- Rita is written in <a href="python.html">Python</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="ini.html">Ini</a>, <a href="svg.html">SVG</a>, <a href="toml.html">TOML</a>, <a href="make.html">Make</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/rita.py">syntax highlighting</a> for Rita
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

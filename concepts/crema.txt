@@ -1,23 +1,26 @@
 Crema
 =====
 
-Crema is a programming language created in 2014 by Jacob Torrey and Jared Wright.
+Crema is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2014 by Jacob Torrey and Jared Wright.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
  https://pldb.io/concepts/../lists/creators.html#q=Jacob%20Torrey Jacob Torrey
  https://pldb.io/concepts/../lists/creators.html#q=Jared%20Wright Jared Wright
 
-#1351 on PLDB
-10 Years Old
+#1394 on PLDB
+12 Years Old
 
+```Download source code:
 git clone https://github.com/ainfosec/crema
+```
 
 Crema is a LLVM front-end that aims to specifically execute in sub-Turing Complete space. Designed to be simple to learn, and practical for the majority of programming tasks needed, Crema can restrict the computational complexity of the program to the minimum needed to improve security.
 
-- Tags: programming language
-- Crema is developed on GitHub and has 64 stars
-- Early development of Crema happened in Assured Information Security, Inc.
-- Crema is written in C++, Bourne shell, C, Yacc, Lex, Make, Markdown
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Crema is developed on <a href="https://github.com/ainfosec/crema">GitHub</a> and has 64 stars
+- Early development of Crema happened in <a href="../lists/labs.html#q=Assured Information Security, Inc.">Assured Information Security, Inc.</a>
+- Crema is written in <a href="cpp.html">C++</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="c.html">C</a>, <a href="yacc.html">Yacc</a>, <a href="lex.html">Lex</a>, <a href="make.html">Make</a>, <a href="markdown.html">Markdown</a>
 
+```Example from the web:
 def int binarySearch(int values[], int searchTarget){
     int upperBound = list_length(values) - 1    # Upper index of seach region
     int lowerBound = 0                       # Lower index of seach region
@@ -45,7 +48,10 @@ def int binarySearch(int values[], int searchTarget){
     }
     return foundIndex
 }
+```
 
+```Crema <a href="../lists/keywords.html#q=crema">Keywords</a>
 as bool break char def double else eq extern false foreach ge gt if int le lt neq return sdef string struct true uint void
+```
 
-View source
+Built with Scroll v178.2.3

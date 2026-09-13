@@ -3,17 +3,31 @@
 id openscad
 name OpenSCAD
 appeared 2010
-tags pl cad
+creators Marius Kintel and Clifford Wolf
+tags pl cad 3d
+website http://www.openscad.org
 description OpenSCAD is a 2D/3D and solid modeling program which is based on a Functional programming language used to create models that are previewed on the screen, and rendered into 3D mesh which allows the model to be exported in a variety of 2D/3D file formats. A script in the OpenSCAD language is used to create 2D or 3D models. This script is a free format list of action statements.
 lab https://opencollective.com/openscad
+fileExtensions scad
+writtenIn cpp svg bourne-shell json xml qt cmake markdown python yaml diff c javascript html css objective-cpp glsl yacc lex make nix bash dockerfile
 
 isOpenSource true
+irc https://web.libera.chat/?channel=#openscad
 clocExtensions scad
 fileType text
 rosettaCode http://www.rosettacode.org/wiki/Category:Openscad
+repoStats
+ firstCommit 2009
+ newestCommit 2025
+ commits 12480
+ mb 80
+ committers 312
+ files 3508
+ linesOfCode 505908
 country Norway
 reference https://en.wikipedia.org/wiki/OpenSCAD
 
+mastodon https://floss.social/@OpenSCAD
 rijuRepl https://riju.codes/openscad
  example
   echo("Hello, world!");
@@ -25,6 +39,8 @@ example
   translate([10,5]) { circle(5); square(4); }
   rotate(60) color("red") { circle(5); square(4); }
   color("blue") { translate([5,3,0]) sphere(5); rotate([45,0,45]) { cylinder(10); cube([5,6,7]); } }
+
+githubRepo https://github.com/openscad/openscad
 
 lineCommentToken //
 

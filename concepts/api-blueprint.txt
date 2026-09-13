@@ -1,26 +1,29 @@
 API Blueprint
 =============
 
-API Blueprint is an open source programming language created in 2013.
+API Blueprint is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2013.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2013
 
-#186 on PLDB
-11 Years Old
-14k Repos
+#196 on PLDB
+13 Years Old
+14k <span title="API Blueprint repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/apiaryio/api-blueprint
+```
 
 API Blueprint
 
-- Tags: programming language
-- API Blueprint is developed on GitHub and has 8,631 stars
-- There are at least 14,496 API Blueprint repos on GitHub
-- Early development of API Blueprint happened in API Blueprint
-- API Blueprint is written in Markdown
-- The  Google BigQuery Public Dataset GitHub snapshot shows 698 users using API Blueprint in 810 repos on GitHub
-- GitHub supports syntax highlighting for API Blueprint
-- apiblueprint.org was registered in 2013
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- API Blueprint is developed on <a href="https://github.com/apiaryio/api-blueprint">GitHub</a> and has 8,631 stars
+- There are at least 14,496 API Blueprint repos on <a href="https://github.com/search?q=language:API Blueprint">GitHub</a>
+- Early development of API Blueprint happened in <a href="../lists/labs.html#q=API Blueprint">API Blueprint</a>
+- API Blueprint is written in <a href="markdown.html">Markdown</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 698 users using API Blueprint in 810 repos on <a href="https://api.github.com/search/repositories?q=language:API Blueprint">GitHub</a>
+- GitHub supports <a href="https://github.com/apiaryio/api-blueprint-sublime-plugin" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for API Blueprint
+- <a href="https://apiblueprint.org">apiblueprint.org</a> was registered in 2013
 
+```Example from <a href='https://github.com/apiaryio/api-blueprint-sublime-plugin'>Linguist</a>:
 FORMAT: 1A
 
 # The Simplest API
@@ -39,29 +42,30 @@ Also please keep in mind that every single example in this course is a **real AP
 + Response 200 (text/plain)
 
         Hello World!
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

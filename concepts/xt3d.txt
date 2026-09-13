@@ -1,22 +1,23 @@
 xt3d
 ====
 
-xt3d is a grammar language created in 2000 by Shriram Krishnamurthi and Kathryn E. Gray and Paul T. Graunke.
+xt3d is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22grammarLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">grammar language</a> created in 2000 by Shriram Krishnamurthi and Kathryn E. Gray and Paul T. Graunke.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2000
  https://pldb.io/concepts/../lists/creators.html#q=Shriram%20Krishnamurthi Shriram Krishnamurthi
  https://pldb.io/concepts/../lists/creators.html#q=Kathryn%20E.%20Gray Kathryn E. Gray
  https://pldb.io/concepts/../lists/creators.html#q=Paul%20T.%20Graunke Paul T. Graunke
 
-#3612 on PLDB
-24 Years Old
+#3751 on PLDB
+26 Years Old
 
 We have designed and implemented xt3d, a highly declarative xml specification language. It demands little more from users than a knowledge of the expected input and desired output. We illustrate the power of xt3d with several examples, including one reminiscent of polytypic programming that greatly simplifies the import of xml values into general-purpose languages. . xt3d is itself an xml language, so users do not need to learn a new surface syntax.  The principal advantage of xt3d over xslt is that it provides an extremely simple, declarative language for describing transformations over xml elements.
 
-- Tags: grammarLanguage
-- See also: (1 related languages) XSLT
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"grammarLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>grammarLanguage</a>
+- See also: (1 related languages) <a href="xslt.html">XSLT</a>
 - Read more about xt3d on the web: 1.
  http://cs.brown.edu/people/sk/Publications/Papers/Published/kgg-xt3d/paper.pdf 1.
 
+```Example from the web:
 &lt;xt3d-output&gt;
  &lt;ul&gt;
   &lt;li&gt;&lt;xt3d-use name=&quot;name&quot;/&gt;&lt;/li&gt;
@@ -24,5 +25,6 @@ We have designed and implemented xt3d, a highly declarative xml specification la
   &lt;li&gt;&lt;i&gt;&lt;xt3d-use name=&quot;fmt&quot;/&gt;&lt;/i&gt; &lt;xt3d-.../&gt;&lt;/li&gt;
  &lt;/ul&gt;
 &lt;/xt3d-output&gt;
+```
 
-View source
+Built with Scroll v178.2.3

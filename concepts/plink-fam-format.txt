@@ -1,17 +1,17 @@
 plink-fam-format
 ================
 
-plink-fam-format is a text data format created in 2007.
+plink-fam-format is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textDataFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text data format</a> created in 2007.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2007
 
-#2491 on PLDB
-17 Years Old
+#2609 on PLDB
+19 Years Old
 
 Sample information file accompanying a .bed binary genotype table. The FAM file is just the first six columns of the PED file.
 
-- Tags: textDataFormat
-- Early development of plink-fam-format happened in Harvard University
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textDataFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>textDataFormat</a>
+- Early development of plink-fam-format happened in <a href="../lists/labs.html#q=Harvard University">Harvard University</a>
 - Read more about plink-fam-format on the web: 1.
  https://www.sciencedirect.com/science/article/pii/S0002929707613524 1.
 
-View source
+Built with Scroll v178.2.3

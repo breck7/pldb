@@ -1,32 +1,33 @@
 Brainfuck
 =========
 
-Brainfuck is an esoteric programming language created in 1993 by Urban Müller.
+Brainfuck is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22esolang%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">esoteric programming language</a> created in 1993 by Urban Müller.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221993%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1993
  https://pldb.io/concepts/../lists/creators.html#q=Urban%20M%C3%BCller Urban Müller
 
-#92 on PLDB
-31 Years Old
-2k Repos
+#97 on PLDB
+33 Years Old
+2k <span title="Brainfuck repos on GitHub.">Repos</span>
 
 Brainfuck is an esoteric programming language created in 1993 by Urban Müller, and notable for its extreme minimalism. The language consists of only eight simple commands and an instruction pointer. While it is fully Turing-complete, it is not intended for practical use, but to challenge and amuse programmers. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Brainfuck Read more on Wikipedia...
 
-- Tags: esoteric programming language
-- There are at least 1,631 Brainfuck repos on GitHub
-- Early development of Brainfuck happened in Sentience Politics
-- The  Google BigQuery Public Dataset GitHub snapshot shows 790 users using Brainfuck in 832 repos on GitHub
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"esolang"%5D%7D%5D%2C"logic"%3A"AND"%7D'>esoteric programming language</a>
+- There are at least 1,631 Brainfuck repos on <a href="https://github.com/search?q=language:Brainfuck">GitHub</a>
+- Early development of Brainfuck happened in <a href="../lists/labs.html#q=Sentience Politics">Sentience Politics</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 790 users using Brainfuck in 832 repos on <a href="https://api.github.com/search/repositories?q=language:Brainfuck">GitHub</a>
 - Brainfuck Ubuntu package
  https://packages.ubuntu.com/jammy/bf Brainfuck Ubuntu package
-- ANTLR grammar for Brainfuck
-- CodeMirror package for syntax highlighting Brainfuck
-- Pygments supports syntax highlighting for Brainfuck
-- GitHub supports syntax highlighting for Brainfuck
-- Brainfuck appears in the Quine Relay project
-- There is 1 Jupyter Kernel for Brainfuck
-- See also: (2 related languages) ASCII, C
-- 9 PLDB concepts link to Brainfuck: beef-lang, cloc, CSpydr, DDP, HyPhy, Nit, Porffor, Pygments, semicolon
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/brainfuck">grammar</a> for Brainfuck
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/brainfuck">package</a> for syntax highlighting Brainfuck
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/esoteric.py">syntax highlighting</a> for Brainfuck
+- GitHub supports <a href="https://github.com/Drako/SublimeBrainfuck" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Brainfuck
+- Brainfuck appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/robbielynch/ibrainfuck">Kernel</a> for Brainfuck
+- See also: (2 related languages) <a href="ascii.html">ASCII</a>, <a href="c.html">C</a>
+- 9 PLDB concepts link to Brainfuck: <a href="beef.html">beef-lang</a>, <a href="cloc.html">cloc</a>, <a href="cspydr.html">CSpydr</a>, <a href="ddp.html">DDP</a>, <a href="hyphy.html">HyPhy</a>, <a href="nit.html">Nit</a>, <a href="porffor.html">Porffor</a>, <a href="pygments.html">Pygments</a>, <a href="semicolon.html">semicolon</a>
 
+```Example from <a href='https://riju.codes/brainf'>Riju</a>:
 ++++++++
 [
     &gt;++++
@@ -56,17 +57,26 @@ Brainfuck is an esoteric programming language created in 1993 by Urban Müller, 
 &gt;&gt;+.
 &gt;++.
 
--[-------&gt;+&lt;]&gt;-.-[-&gt;+++++&lt;]&gt;++.+++++++..+++.[---&gt;+&lt;]&gt;-----.---[-&gt;+++&lt;]&gt;.-[---&gt;+&lt;]&gt;---.+++.------.--------.
+```
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/b/Brainfuck.bf'>hello-world</a>:
+-[-------&gt;+&lt;]&gt;-.-[-&gt;+++++&lt;]&gt;++.+++++++..+++.[---&gt;+&lt;]&gt;-----.---[-&gt;+++&lt;]&gt;.-[---&gt;+&lt;]&gt;---.+++.------.--------.
+```
+
+```Example from <a href='http://helloworldcollection.de/#Brainfuck'>the Hello World Collection</a>:
 Hello World in Brainfuck
 
 ++++++++++[&gt;+++++++&gt;++++++++++&gt;+++&lt;&lt;&lt;-]&gt;++.&gt;+.+++++++
 ..+++.&gt;++.&lt;&lt;+++++++++++++++.&gt;.+++.------.--------.&gt;+.
+```
 
+```Example from <a href='https://github.com/Drako/SublimeBrainfuck'>Linguist</a>:
 // Hello World
 
 ++++++++[&gt;++++[&gt;++&gt;+++&gt;+++&gt;+&lt;&lt;&lt;&lt;-]&gt;+&gt;+&gt;-&gt;&gt;+[&lt;]&lt;-]&gt;&gt;.&gt;---.+++++++..+++.&gt;&gt;.&lt;-.&lt;.+++.------.--------.&gt;&gt;+.&gt;++.
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Brainfuck'>Wikipedia</a>:
 -,+[                         Read first character and start outer character reading loop
     -[                       Skip forward if character is 0
         &gt;&gt;++++[&gt;++++++++&lt;-]  Set up divisor (32) for division loop
@@ -95,5 +105,6 @@ Hello World in Brainfuck
     &lt;.[-]                    Output ROT13ed character from copy and clear it
     &lt;-,+                     Read next character
 ]                            End character reading loop
+```
 
-View source
+Built with Scroll v178.2.3

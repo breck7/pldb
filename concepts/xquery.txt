@@ -1,36 +1,43 @@
 XQuery
 ======
 
-XQuery is a programming language created in 2007.
+XQuery is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2007.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2007
 
-#165 on PLDB
-17 Years Old
-2k Repos
+#169 on PLDB
+19 Years Old
+2k <span title="XQuery repos on GitHub.">Repos</span>
 
 XQuery (XML Query) is a query and functional programming language that queries and transforms collections of structured and unstructured data, usually in the form of XML, text and with vendor-specific extensions for other data formats (JSON, binary, etc.). The language is developed by the XML Query working group of the W3C. The work is closely coordinated with the development of XSLT by the XSL Working Group; the two groups share responsibility for XPath, which is a subset of XQuery. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/XQuery Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 1,753 XQuery repos on GitHub
-- Early development of XQuery happened in W3C
-- The  Google BigQuery Public Dataset GitHub snapshot shows 983 users using XQuery in 1k repos on GitHub
-- Explore XQuery snippets on Rosetta Code
-- XQuery appears in the TIOBE Index
-- CodeMirror package for syntax highlighting XQuery
-- Pygments supports syntax highlighting for XQuery
-- GitHub supports syntax highlighting for XQuery
-- Indeed.com has 125 matches for "XQuery developer".
-- See also: (10 related languages) XPath, SQL, Lisp, Prolog, XML, Java, C#, JSONiq, JSON, ISBN
-- 4 PLDB concepts link to XQuery: Ace Editor, cloc, Invisible XML, Pygments
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 1,753 XQuery repos on <a href="https://github.com/search?q=language:XQuery">GitHub</a>
+- Early development of XQuery happened in <a href="../lists/labs.html#q=W3C">W3C</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 983 users using XQuery in 1k repos on <a href="https://api.github.com/search/repositories?q=language:XQuery">GitHub</a>
+- Explore XQuery snippets on <a href="http://www.rosettacode.org/wiki/Category:XQuery">Rosetta Code</a>
+- XQuery appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/xquery">package</a> for syntax highlighting XQuery
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/webmisc.py">syntax highlighting</a> for XQuery
+- GitHub supports <a href="https://github.com/wcandillon/language-jsoniq" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for XQuery
+- Indeed.com has 125 matches for <a href="https://www.indeed.com/jobs?q=XQuery developer">"XQuery developer"</a>.
+- See also: (10 related languages) <a href="xpath.html">XPath</a>, <a href="sql.html">SQL</a>, <a href="lisp.html">Lisp</a>, <a href="prolog.html">Prolog</a>, <a href="xml.html">XML</a>, <a href="java.html">Java</a>, <a href="csharp.html">C#</a>, <a href="jsoniq.html">JSONiq</a>, <a href="json.html">JSON</a>, <a href="isbn.html">ISBN</a>
+- 4 PLDB concepts link to XQuery: <a href="ace.html">Ace Editor</a>, <a href="cloc.html">cloc</a>, <a href="ixml.html">Invisible XML</a>, <a href="pygments.html">Pygments</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/x/XQuery.xq'>hello-world</a>:
 let $hello := &quot;Hello World&quot;
 return $hello
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#XQuery'>the Hello World Collection</a>:
 (: Hello World with XQuery :)
 let $i := &quot;Hello World&quot;
 return $i
 
+```
+
+```Example from <a href='https://github.com/wcandillon/language-jsoniq'>Linguist</a>:
 (: -------------------------------------------------------------------------------------
 
     xproc.xqm - core xqm contains entry points, primary eval-step function and
@@ -100,6 +107,9 @@ module namespace xproc = &quot;http://xproc.net/xproc&quot;;
    $serialized_result
  };
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/XQuery'>Wikipedia</a>:
 &lt;html&gt;&lt;body&gt;
  {
    for $act in doc(&quot;hamlet.xml&quot;)//ACT
@@ -116,53 +126,54 @@ module namespace xproc = &quot;http://xproc.net/xproc&quot;;
      &lt;/div&gt;
  }
  &lt;/body&gt;&lt;/html&gt;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (: Hello World with XQuery :)
  Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

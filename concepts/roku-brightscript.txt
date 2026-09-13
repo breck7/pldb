@@ -1,21 +1,22 @@
 Brightscript
 ============
 
-Brightscript is a programming language created in 2010.
+Brightscript is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2010.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2010
 
-#1079 on PLDB
-14 Years Old
-832 Repos
+#1106 on PLDB
+16 Years Old
+832 <span title="Brightscript repos on GitHub.">Repos</span>
 
-- Tags: programming language
-- There are at least 832 Brightscript repos on GitHub
-- The  Google BigQuery Public Dataset GitHub snapshot shows 86 users using Brightscript in 98 repos on GitHub
-- GitHub supports syntax highlighting for Brightscript
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 832 Brightscript repos on <a href="https://github.com/search?q=language:Brightscript">GitHub</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 86 users using Brightscript in 98 repos on <a href="https://api.github.com/search/repositories?q=language:Brightscript">GitHub</a>
+- GitHub supports <a href="https://github.com/cmink/BrightScript.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Brightscript
 - Read more about Brightscript on the web: 1.
  https://medium.com/float-left-insights/what-makes-roku-brightscript-a-powerful-scripting-language-5f46532f496d 1.
-- 1 PLDB concepts link to Brightscript: cloc
+- 1 PLDB concepts link to Brightscript: <a href="cloc.html">cloc</a>
 
+```Example from <a href='https://github.com/cmink/BrightScript.tmbundle'>Linguist</a>:
 &#39; *********************************************************
 &#39; **  Simple Grid Screen Demonstration App
 &#39; **  Jun 2010
@@ -74,29 +75,30 @@ Function CreateDefaultTheme() as Object
     &#39; Color values work here
     theme.GridScreenDescriptionTitleColor    = &quot;#001090&quot;
     theme.GridScreenDescriptionDateColor     = &quot;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ' A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ' A comment
  Token '
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

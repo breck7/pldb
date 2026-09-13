@@ -1,12 +1,13 @@
 ../code/conceptPage.scroll
 
 id ipfs
-name InterPlanetary File System
+name IPFS
 appeared 2015
 creators Juan Benet
-tags protocol
+tags protocol cryptoProtocol
 website https://ipfs.tech/
 spec https://github.com/ipfs/specs
+standsFor InterPlanetary File System
 aka IPFS
 paper https://github.com/ipfs/papers/raw/master/ipfs-cap2pfs/ipfs-p2p-file-system.pdf
 description IPFS is an open system to manage data without a central server.
@@ -19,9 +20,13 @@ repoStats
  commits 410
  committers 97
  files 7
+ mb 3
+ linesOfCode 135
 country United States
 
 subreddit https://www.reddit.com/r/ipfs/
+ memberCount
+  2024 16000
 
 githubRepo https://github.com/ipfs/ipfs
  stars 22610

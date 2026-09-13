@@ -3,8 +3,11 @@
 id relationlog
 name Relationlog
 appeared 2001
-tags pl
+creators Mengchi Liu
+tags queryLanguage database
 lab University of Regina
+paper https://doi.org/10.1002/spe.378
+description The Relationlog system is a novel persistent deductive database system for advanced data and knowledge-based applications. It directly supports the storage and inference of data with complex structures, especially data supported in nested relational and complex-object models. The Relationlog system supports the Relationlog query language, which is a typed extension of Datalog with tuples and sets and stands in the same relationship to the nested relational and complex-object models as Datalog stands to the relational model. It also supports an SQL-like data definition language and a declarative data manipulation language.
 
 country Canada
 reference https://semanticscholar.org/paper/f116f44111bc612531792a2ab4267adb7e2c21b8

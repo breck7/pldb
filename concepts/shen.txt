@@ -1,35 +1,43 @@
 Shen
 ====
 
-Shen is a programming language created in 2011 by Mark Tarver.
+Shen is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2011 by Mark Tarver.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2011
  https://pldb.io/concepts/../lists/creators.html#q=Mark%20Tarver Mark Tarver
 
-#457 on PLDB
-13 Years Old
-50 Repos
+#477 on PLDB
+15 Years Old
+50 <span title="Shen repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/Shen-Language/shen-sources
+```
 
 Shen language kernel sources for porters
 
-- Tags: programming language
-- Shen is developed on GitHub and has 348 stars
-- There are at least 50 Shen repos on GitHub
-- Early development of Shen happened in https://github.com/Shen-Language
-- Shen is written in Markdown, SVG, Make
-- The  Google BigQuery Public Dataset GitHub snapshot shows 14 users using Shen in 16 repos on GitHub
-- Explore Shen snippets on Rosetta Code
-- Pygments supports syntax highlighting for Shen
-- GitHub supports syntax highlighting for Shen
-- shenlanguage.org was registered in 2011
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Shen is developed on <a href="https://github.com/Shen-Language/shen-sources">GitHub</a> and has 348 stars
+- There are at least 50 Shen repos on <a href="https://github.com/search?q=language:Shen">GitHub</a>
+- Early development of Shen happened in <a href="../lists/labs.html#q=https://github.com/Shen-Language">https://github.com/Shen-Language</a>
+- Shen is written in <a href="markdown.html">Markdown</a>, <a href="svg.html">SVG</a>, <a href="make.html">Make</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 14 users using Shen in 16 repos on <a href="https://api.github.com/search/repositories?q=language:Shen">GitHub</a>
+- Explore Shen snippets on <a href="http://www.rosettacode.org/wiki/Category:Shen">Rosetta Code</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/lisp.py">syntax highlighting</a> for Shen
+- GitHub supports <a href="https://github.com/rkoeninger/sublime-shen" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Shen
+- <a href="http://shenlanguage.org/">shenlanguage.org</a> was registered in 2011
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/s/Shen.shen'>hello-world</a>:
 (pr &quot;Hello World&quot;)
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Shen'>the Hello World Collection</a>:
 \\ Hello world in Shen
 
 (0-) (pr &quot;hello world&quot;)
+```
 
+```Example from <a href='https://github.com/rkoeninger/sublime-shen'>Linguist</a>:
 (load &quot;grammar.shen&quot;)
 
 \*
@@ -69,52 +77,53 @@ JSON Lexer
   JSONString -&gt;
   (let CharList (explode JSONString)
        CharList))
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token pr
 
-View source
+Built with Scroll v178.2.3

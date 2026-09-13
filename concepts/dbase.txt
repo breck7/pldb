@@ -1,25 +1,30 @@
 DBase
 =====
 
-DBase is an open source application created in 1979.
+DBase is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 1979.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221979%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1979
 
-#820 on PLDB
-45 Years Old
+#843 on PLDB
+47 Years Old
 
 dBase (also stylized dBASE) was one of the first database management systems for microcomputers, and the most successful in its day. The dBase system includes the core database engine, a query system, a forms engine, and a programming language that ties all of these components together. dBase's underlying file format, the .dbf file, is widely used in applications needing a simple format to store structured data. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/DBase Read more on Wikipedia...
 
-- Tags: application
-- Early development of DBase happened in dBase, LLC
-- dbase.com was registered in 1995
-- See also: (11 related languages) C, Clipper, FoxPRO, xBase, SQL, Jet Propulsion Laboratory Display Information System, Assembly language, Shapefile, Microsoft Excel, Emacs, Visual FoxPro
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>
+- Early development of DBase happened in <a href="../lists/labs.html#q=dBase, LLC">dBase, LLC</a>
+- <a href="http://www.dbase.com/">dbase.com</a> was registered in 1995
+- See also: (11 related languages) <a href="c.html">C</a>, <a href="clipper.html">Clipper</a>, <a href="foxpro.html">FoxPRO</a>, <a href="xbase.html">xBase</a>, <a href="sql.html">SQL</a>, <a href="jet-propulsion-laboratory-display-information-system.html">Jet Propulsion Laboratory Display Information System</a>, <a href="assembly-language.html">Assembly language</a>, <a href="shapefile.html">Shapefile</a>, <a href="excel-app.html">Microsoft Excel</a>, <a href="emacs-editor.html">Emacs</a>, <a href="visual-foxpro.html">Visual FoxPro</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/d/dBase.dbf'>hello-world</a>:
 ? &quot;Hello World&quot;
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/DBase'>Wikipedia</a>:
 i = 2
  myMacro = &quot;i + 10&quot;
  i = &amp;myMacro
  * comment: i now has the value 12
+```
 
-View source
+Built with Scroll v178.2.3

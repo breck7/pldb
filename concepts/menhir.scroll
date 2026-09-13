@@ -1,0 +1,24 @@
+../code/conceptPage.scroll
+
+id menhir
+name Menhir
+appeared 2017
+creators Francois Pottier and Yann Regis-Gianas
+tags grammarLanguage
+website https://gallium.inria.fr/~fpottier/menhir/
+description Menhir is a LR(1) parser generator for the OCaml programming language.
+writtenIn expect ocaml markdown html make coq tex bourne-shell diff css r lisp
+
+influencedBy yacc
+docs https://gallium.inria.fr/~fpottier/menhir/manual.html
+emailList https://sympa.inria.fr/sympa/info/menhir
+repoStats
+ firstCommit 2013
+ newestCommit 2025
+ commits 3901
+ mb 104
+ committers 24
+ files 4871
+ linesOfCode 10950036
+
+gitRepo https://gitlab.inria.fr/fpottier/menhir

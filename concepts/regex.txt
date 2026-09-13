@@ -1,49 +1,54 @@
 Regular Expressions
 ===================
 
-Regular Expressions is a query language created in 1951 by Stephen Kleene.
+Regular Expressions is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22queryLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">query language</a> created in 1951 by Stephen Kleene.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221951%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1951
  https://pldb.io/concepts/../lists/creators.html#q=Stephen%20Kleene Stephen Kleene
 
-#267 on PLDB
-73 Years Old
-59k Repos
+#280 on PLDB
+75 Years Old
+59k <span title="Regular Expressions repos on GitHub.">Repos</span>
 
 A regular expression, regex or regexp (sometimes called a rational expression) is, in theoretical computer science and formal language theory, a sequence of characters that define a search pattern. Usually this pattern is then used by string searching algorithms for "find" or "find and replace" operations on strings. The concept arose in the 1950s when the American mathematician Stephen Cole Kleene formalized the description of a regular language. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Regular_expression Read more on Wikipedia...
 
-- Tags: queryLanguage
-- There are at least 58,614 Regular Expressions repos on GitHub
-- Early development of Regular Expressions happened in University of Wisconsin-Madison
-- There are 5,278 members in the Regular Expressions subreddit
-- GitHub supports syntax highlighting for Regular Expressions
-- See also: (27 related languages) Unix, Perl, sed, awk, ASCII, SNOBOL, grep, vi, Emacs, Tcl, PostgreSQL, Unicode, Raku, PEG, SGML, PCRE, PHP, Java, Python, Linux, Vim, JavaScript, Ruby, C, Lisp, UTF-8, ISBN
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"queryLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>queryLanguage</a>
+- There are at least 58,614 Regular Expressions repos on <a href="https://github.com/search?q=language:Regular Expression">GitHub</a>
+- Early development of Regular Expressions happened in <a href="../lists/labs.html#q=University of Wisconsin-Madison">University of Wisconsin-Madison</a>
+- There are 5,278 members in the <a href="https://reddit.com/r/regex">Regular Expressions subreddit</a>
+- GitHub supports <a href="https://github.com/Alhadis/language-regexp" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Regular Expressions
+- See also: (27 related languages) <a href="unix.html">Unix</a>, <a href="perl.html">Perl</a>, <a href="sed.html">sed</a>, <a href="awk.html">awk</a>, <a href="ascii.html">ASCII</a>, <a href="snobol.html">SNOBOL</a>, <a href="grep.html">grep</a>, <a href="vi.html">vi</a>, <a href="emacs-editor.html">Emacs</a>, <a href="tcl.html">Tcl</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="unicode.html">Unicode</a>, <a href="raku.html">Raku</a>, <a href="peg.html">PEG</a>, <a href="sgml.html">SGML</a>, <a href="pcre.html">PCRE</a>, <a href="php.html">PHP</a>, <a href="java.html">Java</a>, <a href="python.html">Python</a>, <a href="linux.html">Linux</a>, <a href="vim.html">Vim</a>, <a href="javascript.html">JavaScript</a>, <a href="ruby.html">Ruby</a>, <a href="c.html">C</a>, <a href="lisp.html">Lisp</a>, <a href="utf-8.html">UTF-8</a>, <a href="isbn.html">ISBN</a>
 
+```Example from <a href='https://github.com/Alhadis/language-regexp'>Linguist</a>:
 \b(\d*1[1-3]th|\d*0th|(?:(?!11st)\d)*1st|\d*2nd|(?:(?!13rd)\d*)3rd|\d*[4-9]th)\b
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Regular_expression'>Wikipedia</a>:
 Hello World
  contains a character other than a, b, and c.
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

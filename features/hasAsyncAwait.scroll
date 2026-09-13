@@ -7,7 +7,7 @@ printTitle Async Await
 <a class="trueBaseThemePreviousItem" href="hasAssignment.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasBinaryNumbers.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -20,6 +20,9 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/csharp.html
      byte[] data = await new WebClient().DownloadDataTaskAsync(uri);
      return data.Length;
  }
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/chapel.html">Chapel</a>
+ begin sync
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/bog.html">bog</a>
  let {print} = import &quot;std.io&quot;
@@ -45,7 +48,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/bog.html">b
 
 ***
 
-* Languages *with* Async Await include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/dart.html">Dart</a>, <a href="../concepts/x10.html">X10</a>, <a href="../concepts/bog.html">bog</a>
+* Languages *with* Async Await include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/dart.html">Dart</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/x10.html">X10</a>, <a href="../concepts/bog.html">bog</a>
 
 ***
 

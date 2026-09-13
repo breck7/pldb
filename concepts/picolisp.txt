@@ -1,26 +1,27 @@
 PicoLisp
 ========
 
-PicoLisp is a programming language created in 1988 by Alexander Burger.
+PicoLisp is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1988 by Alexander Burger.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221988%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1988
  https://pldb.io/concepts/../lists/creators.html#q=Alexander%20Burger Alexander Burger
 
-#732 on PLDB
-36 Years Old
-114 Repos
+#758 on PLDB
+38 Years Old
+114 <span title="PicoLisp repos on GitHub.">Repos</span>
 
 PicoLisp is an open source Lisp dialect. It runs on Linux and other POSIX-compliant systems.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/PicoLisp Read more on Wikipedia...
 
-- Tags: programming language, lisp
-- There are at least 114 PicoLisp repos on GitHub
-- Early development of PicoLisp happened in https://www.mail-archive.com/picolisp@software-lab.de
-- The  Google BigQuery Public Dataset GitHub snapshot shows 85 users using PicoLisp in 99 repos on GitHub
-- Explore PicoLisp snippets on Rosetta Code
-- GitHub supports syntax highlighting for PicoLisp
-- picolisp.com was registered in 2007
-- See also: (9 related languages) Lisp, Linux, S-expressions, Common Lisp, Emacs Lisp, Prolog, C, Assembly language, Java
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"lisp"%5D%7D%5D%2C"logic"%3A"AND"%7D'>lisp</a>
+- There are at least 114 PicoLisp repos on <a href="https://github.com/search?q=language:PicoLisp">GitHub</a>
+- Early development of PicoLisp happened in <a href="../lists/labs.html#q=https://www.mail-archive.com/picolisp@software-lab.de">https://www.mail-archive.com/picolisp@software-lab.de</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 85 users using PicoLisp in 99 repos on <a href="https://api.github.com/search/repositories?q=language:PicoLisp">GitHub</a>
+- Explore PicoLisp snippets on <a href="http://www.rosettacode.org/wiki/Category:PicoLisp">Rosetta Code</a>
+- GitHub supports <a href="https://github.com/textmate/lisp.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for PicoLisp
+- <a href="https://picolisp.com/">picolisp.com</a> was registered in 2007
+- See also: (9 related languages) <a href="lisp.html">Lisp</a>, <a href="linux.html">Linux</a>, <a href="s-expressions.html">S-expressions</a>, <a href="common-lisp.html">Common Lisp</a>, <a href="emacs-lisp.html">Emacs Lisp</a>, <a href="prolog.html">Prolog</a>, <a href="c.html">C</a>, <a href="assembly-language.html">Assembly language</a>, <a href="java.html">Java</a>
 
+```Example from <a href='https://github.com/textmate/lisp.tmbundle'>Linguist</a>:
 # 11dec13abu
 # (c) Software Lab. Alexander Burger
 
@@ -184,27 +185,29 @@ PicoLisp is an open source Lisp dialect. It runs on Linux and other POSIX-compli
          (prin (if (and (nT &quot;How&quot;) (Dir (car L))) &quot;   +&quot; &quot;---+&quot;)) )
       (prinl) ) )
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

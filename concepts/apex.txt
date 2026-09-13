@@ -1,35 +1,38 @@
 Apex
 ====
 
-Apex is a programming language created in 2007.
+Apex is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2007.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2007
 
-#690 on PLDB
-17 Years Old
-23k Repos
+#707 on PLDB
+19 Years Old
+23k <span title="Apex repos on GitHub.">Repos</span>
 
 Apex is a proprietary programming language provided by the Force.com platform to developers similar to Java and C#. It is a strongly typed, object-oriented, case-insensitive programming language, following a dot-notation and curly-brackets syntax. Apex can be used to execute programmed functions during most processes on the Force.com platform including custom buttons and links, event handlers on record insertion, update, or deletion, via scheduling, or via the custom controllers of Visualforce pages. Due to the multitenant nature of the platform, the language has strictly imposed governor limitations[61] to guard against any code monopolizing shared resources. Salesforce provides a series of asynchronous processing methods for Apex to allow developers to produce longer running and more complex Apex code.
 
-- Tags: programming language
-- There are at least 22,719 Apex repos on GitHub
-- Early development of Apex happened in Salesforce
-- The  Google BigQuery Public Dataset GitHub snapshot shows 537 users using Apex in 778 repos on GitHub
-- First announcement of Apex
-- Explore Apex snippets on Rosetta Code
-- Apex ranks #43 in the TIOBE Index
-- ANTLR grammar for Apex
-- Apex LSP implementation
-- Monaco package for syntax highlighting Apex
-- GitHub supports syntax highlighting for Apex
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 22,719 Apex repos on <a href="https://github.com/search?q=language:Apex">GitHub</a>
+- Early development of Apex happened in <a href="../lists/labs.html#q=Salesforce">Salesforce</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 537 users using Apex in 778 repos on <a href="https://api.github.com/search/repositories?q=language:Apex">GitHub</a>
+- <a href="http://www.zdnet.com/article/inside-the-salesforce-apex-language/">First announcement of</a> Apex
+- Explore Apex snippets on <a href="http://www.rosettacode.org/wiki/Category:Apex">Rosetta Code</a>
+- Apex ranks #43 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/apex">grammar</a> for Apex
+- Apex <a href="language-server-protocol.html">LSP</a> <a href="https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode-apex">implementation</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/apex">package</a> for syntax highlighting Apex
+- GitHub supports <a href="https://github.com/textmate/java.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Apex
 - Read more about Apex on the web: 1.
  https://en.wikipedia.org/wiki/Salesforce.com#Apex 1.
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/a/Apex.cls'>hello-world</a>:
 global with sharing class HelloWorld {
   global static void main() {
     System.debug(&#39;Hello World&#39;);
   }
 }
+```
 
+```Example from <a href='https://github.com/textmate/java.tmbundle'>Linguist</a>:
 public class GeoUtils {
 	// generate a KML string given a page reference, call getContent()
 	// then cleanup the output.
@@ -82,73 +85,75 @@ public class GeoUtils {
          billingpostalcode=&#39;9&#39;,billingcountry=&#39;us&#39;);
         insert a;
         system.assertEquals( &#39;main,springfield,il,9,us&#39;,accountAddressString( a) );
-       
 	}
 }
+```
 
+```Apex <a href="../lists/keywords.html#q=apex">Keywords</a>
 abstract ABSTRACT Abstract activate ACTIVATE Activate and AND And any ANY Any array ARRAY Array as AS As asc ASC Asc assert ASSERT Assert autonomous AUTONOMOUS Autonomous begin BEGIN Begin bigdecimal BIGDECIMAL Bigdecimal blob BLOB Blob boolean BOOLEAN Boolean break BREAK Break bulk BULK Bulk by BY By case CASE Case cast CAST Cast catch CATCH Catch char CHAR Char class CLASS Class collect COLLECT Collect commit COMMIT Commit const CONST Const continue CONTINUE Continue convertcurrency CONVERTCURRENCY Convertcurrency decimal DECIMAL Decimal default DEFAULT Default delete DELETE Delete desc DESC Desc do DO Do double DOUBLE Double else ELSE Else end END End enum ENUM Enum exception EXCEPTION Exception exit EXIT Exit export EXPORT Export extends EXTENDS Extends false FALSE False final FINAL Final finally FINALLY Finally float FLOAT Float for FOR For from FROM From future FUTURE Future get GET Get global GLOBAL Global goto GOTO Goto group GROUP Group having HAVING Having hint HINT Hint if IF If implements IMPLEMENTS Implements import IMPORT Import in IN In inner INNER Inner insert INSERT Insert instanceof INSTANCEOF Instanceof int INT Int interface INTERFACE Interface into INTO Into join JOIN Join last_90_days LAST_90_DAYS Last_90_days last_month LAST_MONTH Last_month last_n_days LAST_N_DAYS Last_n_days last_week LAST_WEEK Last_week like LIKE Like limit LIMIT Limit list LIST List long LONG Long loop LOOP Loop map MAP Map merge MERGE Merge native NATIVE Native new NEW New next_90_days NEXT_90_DAYS Next_90_days next_month NEXT_MONTH Next_month next_n_days NEXT_N_DAYS Next_n_days next_week NEXT_WEEK Next_week not NOT Not null NULL Null nulls NULLS Nulls number NUMBER Number object OBJECT Object of OF Of on ON On or OR Or outer OUTER Outer override OVERRIDE Override package PACKAGE Package parallel PARALLEL Parallel pragma PRAGMA Pragma private PRIVATE Private protected PROTECTED Protected public PUBLIC Public retrieve RETRIEVE Retrieve return RETURN Return returning RETURNING Returning rollback ROLLBACK Rollback savepoint SAVEPOINT Savepoint search SEARCH Search select SELECT Select set SET Set short SHORT Short sort SORT Sort stat STAT Stat static STATIC Static strictfp STRICTFP Strictfp super SUPER Super switch SWITCH Switch synchronized SYNCHRONIZED Synchronized system SYSTEM System testmethod TESTMETHOD Testmethod then THEN Then this THIS This this_month THIS_MONTH This_month this_week THIS_WEEK This_week throw THROW Throw throws THROWS Throws today TODAY Today tolabel TOLABEL Tolabel tomorrow TOMORROW Tomorrow transaction TRANSACTION Transaction transient TRANSIENT Transient trigger TRIGGER Trigger true TRUE True try TRY Try type TYPE Type undelete UNDELETE Undelete update UPDATE Update upsert UPSERT Upsert using USING Using virtual VIRTUAL Virtual void VOID Void volatile VOLATILE Volatile webservice WEBSERVICE Webservice when WHEN When where WHERE Where while WHILE While yesterday YESTERDAY Yesterday
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Inheritance
  FeatureLink ../features/hasInheritance.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -156,27 +161,27 @@ row
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token '
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

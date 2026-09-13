@@ -1,20 +1,21 @@
 ELLA
 ====
 
-ELLA is a programming language created in 1979.
+ELLA is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1979.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221979%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1979
 
-#2916 on PLDB
-45 Years Old
+#3028 on PLDB
+47 Years Old
 
 ELLA is a Hardware description language and support toolset. Developed by the Royal Signals and Radar Establishment during the 1980s and 1990s. Includes tools to perform:  design transformation symbolic simulations formal verificationELLA is a winner of the 1989 Queen's Award for Technological Achievement.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/ELLA_%28programming_language%29 Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of ELLA happened in Royal Signals and Radar Establishment
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of ELLA happened in <a href="../lists/labs.html#q=Royal Signals">Royal Signals</a> and <a href="../lists/labs.html#q=Radar Establishment">Radar Establishment</a>
 - ELLA on HOPL
  https://hopl.info/showlanguage.prx?exp=847 ELLA on HOPL
 
+```Example from <a href='https://en.wikipedia.org/wiki/ELLA_%28programming_language%29'>Wikipedia</a>:
 MAC ZIP = ([INT n]TYPE t: vector1 vector2) -&gt; [n][2]t:
   [INT k = 1..n](vector1[k], vector2[k]).
      
@@ -59,5 +60,6 @@ FN TEST = () -&gt; [2][4]product:
 ).
 
 COM test: just displaysignal MOC
+```
 
-View source
+Built with Scroll v178.2.3

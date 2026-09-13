@@ -1,97 +1,104 @@
 Unicon
 ======
 
-Unicon is an open source programming language created in 2008 by Clint Jeffery.
+Unicon is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2008 by Clint Jeffery.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
  https://pldb.io/concepts/../lists/creators.html#q=Clint%20Jeffery Clint Jeffery
 
-#930 on PLDB
-16 Years Old
+#957 on PLDB
+18 Years Old
 
 Unicon is a programming language designed by American computer scientist Clint Jeffery with collaborators including Shamim Mohamed, Jafar Al Gharaibeh, Robert Parlett and others. Unicon descended from Icon and a preprocessor for Icon called IDOL. Compared with Icon, Unicon offers better access to the operating system as well as support for object-oriented programming. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Unicon_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are 20 Project Euler users using Unicon
-- Explore Unicon snippets on Rosetta Code
-- Pygments supports syntax highlighting for Unicon
-- unicon.org was registered in 2004
-- See also: (6 related languages) Unix, UML, Unicode, REBOL, Curl, Icon
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are 20 <a href="https://projecteuler.net/language=Unicon">Project Euler</a> users using Unicon
+- Explore Unicon snippets on <a href="http://www.rosettacode.org/wiki/Category:Unicon">Rosetta Code</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/unicon.py">syntax highlighting</a> for Unicon
+- <a href="http://www.unicon.org/">unicon.org</a> was registered in 2004
+- See also: (6 related languages) <a href="unix.html">Unix</a>, <a href="uml.html">UML</a>, <a href="unicode.html">Unicode</a>, <a href="rebol.html">REBOL</a>, <a href="curl.html">Curl</a>, <a href="icon.html">Icon</a>
 
+```Example from the web:
 procedure main()
  w := open(&quot;test UNICON window&quot;, &quot;g&quot;)
  write(w, &quot;Hello, World!&quot;)
  read(w)
  close(w)
 end
+```
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/u/Unicon.icn'>hello-world</a>:
 procedure main()
     write(&quot;Hello World&quot;)
 end
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Unicon_(programming_language)'>Wikipedia</a>:
 procedure main()
 	w := open(&quot;test UNICON window&quot;, &quot;g&quot;)
 	write(w, &quot;Hello, World!&quot;)
 	read(w)
 	close(w)
 end
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # \b([+-]?[0-9]+[KMGTPkmgtp]?)\b
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # [+-]?[0-9]*\.([0-9]*)([Ee][+-]?[0-9]*)?
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # \b([+-]?([2-9]|[12][0-9]|3[0-6])[rR][0-9a-zA-Z]+)\b
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token write
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

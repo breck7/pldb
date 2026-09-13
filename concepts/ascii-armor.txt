@@ -1,20 +1,21 @@
 ASCII Armor
 ===========
 
-ASCII Armor is a text encoding format created in 2007.
+ASCII Armor is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textEncodingFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text encoding format</a> created in 2007.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2007
 
-#3321 on PLDB
-17 Years Old
+#3459 on PLDB
+19 Years Old
 
 OpenPGP provides the service of converting the raw 8-bit binary octet stream to a stream of printable ASCII characters, called Radix-64 encoding or ASCII Armor.
 
-- Tags: textEncodingFormat
-- Pygments supports syntax highlighting for ASCII Armor
-- See also: (1 related languages) Base64
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textEncodingFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>textEncodingFormat</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/asc.py">syntax highlighting</a> for ASCII Armor
+- See also: (1 related languages) <a href="base64.html">Base64</a>
 - Read more about ASCII Armor on the web: 1.
  https://datatracker.ietf.org/doc/html/rfc4880#page-54 1.
 
+```Example from the web:
   -----BEGIN PGP MESSAGE-----
   Version: OpenPrivacy 0.99
   
@@ -22,5 +23,6 @@ OpenPGP provides the service of converting the raw 8-bit binary octet stream to 
   vBSFjNSiVHsuAA==
   =njUN
   -----END PGP MESSAGE-----
+```
 
-View source
+Built with Scroll v178.2.3

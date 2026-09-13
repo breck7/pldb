@@ -1,23 +1,24 @@
 XPages
 ======
 
-XPages is an application created in 2008.
+XPages is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 2008.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
 
-#1267 on PLDB
-16 Years Old
-22 Repos
+#1325 on PLDB
+18 Years Old
+22 <span title="XPages repos on GitHub.">Repos</span>
 
 XPages is an IBM extension of Java Server Faces with a server side JavaScript runtime and the built-in NoSQL database IBM Domino. It allows data from IBM Notes and Relational Databases to be displayed to browser clients on all platforms. The programming model is based on web development languages and standards including JavaScript, Ajax, Java, the Dojo Toolkit, Server-side JavaScript and JavaServer Faces. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/XPages Read more on Wikipedia...
 
-- Tags: application
-- There are at least 22 XPages repos on GitHub
-- The  Google BigQuery Public Dataset GitHub snapshot shows 22 users using XPages in 33 repos on GitHub
-- GitHub supports syntax highlighting for XPages
-- xpages.info was registered in 2010
-- See also: (3 related languages) JavaScript, HTML, Java
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>
+- There are at least 22 XPages repos on <a href="https://github.com/search?q=language:XPages">GitHub</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 22 users using XPages in 33 repos on <a href="https://api.github.com/search/repositories?q=language:XPages">GitHub</a>
+- GitHub supports <a href="https://github.com/textmate/xml.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for XPages
+- <a href="http://xpages.info/">xpages.info</a> was registered in 2010
+- See also: (3 related languages) <a href="javascript.html">JavaScript</a>, <a href="html.html">HTML</a>, <a href="java.html">Java</a>
 
+```Example from <a href='https://github.com/textmate/xml.tmbundle'>Linguist</a>:
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;faces-config&gt;
   &lt;faces-config-extension&gt;
@@ -36,4 +37,6 @@ XPages is an IBM extension of Java Server Faces with a server side JavaScript ru
   &lt;/composite-component&gt;
 &lt;/faces-config&gt;
 
-View source
+```
+
+Built with Scroll v178.2.3

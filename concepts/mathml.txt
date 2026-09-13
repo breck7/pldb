@@ -1,16 +1,17 @@
 MathML
 ======
 
-MathML is a xml format created in 1998.
+MathML is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22xmlFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">xml format</a> created in 1998.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221998%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1998
 
-#2821 on PLDB
-26 Years Old
+#2937 on PLDB
+28 Years Old
 
-- Tags: xmlFormat
-- Early development of MathML happened in W3C
-- See also: (1 related languages) MathJax
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"xmlFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>xmlFormat</a>
+- Early development of MathML happened in <a href="../lists/labs.html#q=W3C">W3C</a>
+- See also: (1 related languages) <a href="mathjax.html">MathJax</a>
 
+```Example from the web:
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE math PUBLIC &quot;-//W3C//DTD MathML 2.0//EN&quot;
          &quot;http://www.w3.org/Math/DTD/mathml2/mathml2.dtd&quot;&gt;
@@ -21,5 +22,6 @@ MathML is a xml format created in 1998.
     &lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;c&lt;/mi&gt;
   &lt;/mrow&gt;
 &lt;/math&gt;
+```
 
-View source
+Built with Scroll v178.2.3

@@ -1,22 +1,25 @@
 Topaz
 =====
 
-Topaz is a programming language created in 2021 by m-schm.
+Topaz is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2021 by m-schm.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2021
  https://pldb.io/concepts/../lists/creators.html#q=m-schm m-schm
 
-#2194 on PLDB
-3 Years Old
+#2294 on PLDB
+5 Years Old
 
+```Download source code:
 git clone https://github.com/m-schm/topaz
+```
 
 Dependently typed language that compiles to JavaScript
 
-- Tags: programming language
-- Topaz is developed on GitHub and has 1 stars
-- Topaz compiles to JavaScript
-- Topaz is written in Haskell, YAML, Markdown
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Topaz is developed on <a href="https://github.com/m-schm/topaz">GitHub</a> and has 1 stars
+- Topaz compiles to <a href="javascript.html">JavaScript</a>
+- Topaz is written in <a href="haskell.html">Haskell</a>, <a href="yaml.html">YAML</a>, <a href="markdown.html">Markdown</a>
 
+```Example from the web:
 ;; A comment
 ;; `Ven n a` represents lists that are `n` long, that contain `a`s
 ;; A Vec is either:
@@ -35,5 +38,6 @@ let zip {n a b} (left: Vec n a) (right: Vec n b): Vec n (a, b) =
     ;; or they both contain at least one item.
     x :: xs, y :: ys =&gt; (x, y) :: zip xs ys
     ;; No other cases are needed, because the lists are the same length!
+```
 
-View source
+Built with Scroll v178.2.3

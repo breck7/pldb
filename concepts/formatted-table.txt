@@ -1,18 +1,19 @@
 Formatted Table
 ===============
 
-Formatted Table is a data notation created in 1990.
+Formatted Table is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 1990.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1990
 
-#3392 on PLDB
-34 Years Old
-0 Repos
+#3531 on PLDB
+36 Years Old
+0 <span title="Formatted Table repos on GitHub.">Repos</span>
 
 A simple plain text format for storing tabular data.
 
-- Tags: dataNotation
-- There are at least 0 Formatted Table repos on GitHub
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- There are at least 0 Formatted Table repos on <a href="https://github.com/search?q=language:Formatted">GitHub</a>
 
+```Example from the web:
 Weekly SST data starts week centered on 3Jan1990
 
                Nino1+2      Nino3        Nino34        Nino4
@@ -21,7 +22,9 @@ Week          SST SSTA     SST SSTA     SST SSTA     SST SSTA
 10JAN1990     23.4-0.8     25.2-0.3     26.6 0.1     28.6 0.3
 17JAN1990     24.2-0.3     25.3-0.3     26.5-0.1     28.6 0.3
 24JAN1990     24.4-0.5     25.5-0.4     26.5-0.1     28.4 0.2
+```
 
+```Example from the web:
 ACCEPTABLE LEFT PRIMERS
                                   1-based     #                self   self hair-  qual-
    # sequence                       start ln  N   GC%     Tm any_th end_th   pin   lity
@@ -46,5 +49,6 @@ ACCEPTABLE LEFT PRIMERS
   18 atgctagctaggcgatgcta             410 20  0 50.00 59.375 10.59  8.91  0.00  0.625
   19 ctatcatctctgcgcgatcg             360 20  0 55.00 59.347 12.19 12.19 39.07  0.653
   20 gatgctagctaggcgatgct             409 20  0 55.00 60.668  7.01  7.53  0.00
+```
 
-View source
+Built with Scroll v178.2.3

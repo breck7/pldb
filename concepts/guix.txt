@@ -1,16 +1,16 @@
 GNU Guix
 ========
 
-GNU Guix is a distribution created in 2013.
+GNU Guix is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22distribution%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">distribution</a> created in 2013.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2013
 
-#2977 on PLDB
-11 Years Old
+#3087 on PLDB
+13 Years Old
 
 GNU Guix () is a cross-platform package manager and a tool to instantiate and manage Unix-like operating systems, based on the Nix package manager with Guile Scheme APIs and specializes in providing exclusively free software. Differing from traditional package managers, Guix (like Nix) utilizes a purely functional deployment model where software is installed into unique directories generated through cryptographic hashes. Dependencies from each software are included within each hash, solving the problem of dependency hell. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/GNU_Guix Read more on Wikipedia...
 
-- Tags: distribution
-- Early development of GNU Guix happened in GNU Project
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"distribution"%5D%7D%5D%2C"logic"%3A"AND"%7D'>distribution</a>
+- Early development of GNU Guix happened in <a href="../lists/labs.html#q=GNU Project">GNU Project</a>
 
-View source
+Built with Scroll v178.2.3

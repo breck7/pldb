@@ -1,25 +1,27 @@
 hilvl
 =====
 
-hilvl is a programming language created in 2015 by Holger Ludvigsen.
+hilvl is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2015 by Holger Ludvigsen.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
  https://pldb.io/concepts/../lists/creators.html#q=Holger%20Ludvigsen Holger Ludvigsen
 
-#1759 on PLDB
-9 Years Old
+#1830 on PLDB
+11 Years Old
 
+```Download source code:
 git clone https://github.com/holgerl/hilvl
+```
 
 Hilvl is a programming language that is versatile but with a very small syntax. All code in hilvl are single-argument invocations of actions that belong to services. Services are the fundamental building blocks of a hilvl program. And the name hilvl reflects how this is a higher level of abstraction than objects and functions.
 
-- Tags: programming language
-- hilvl is developed on GitHub and has 7 stars
-- Early development of hilvl happened in https://github.com/holgerl/hilvl/issues
-- hilvl is written in JavaScript, Markdown, HTML, XML, YAML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- hilvl is developed on <a href="https://github.com/holgerl/hilvl">GitHub</a> and has 7 stars
+- Early development of hilvl happened in <a href="../lists/labs.html#q=https://github.com/holgerl/hilvl/issues">https://github.com/holgerl/hilvl/issues</a>
+- hilvl is written in <a href="javascript.html">JavaScript</a>, <a href="markdown.html">Markdown</a>, <a href="html.html">HTML</a>, <a href="xml.html">XML</a>, <a href="yaml.html">YAML</a>
 
+```Example from the web:
 @ var foo = 42
 @ var bar = (2 + 40)
- 
 @ . foo == (@ . bar) then
  @ set foo = 0
  
@@ -39,31 +41,31 @@ Hilvl is a programming language that is versatile but with a very small syntax. 
 @ var MyService :=
  @ var myAction :
    @ . argument + 10
-   
 MyService myAction (@ . foo) // foo is now 6, and this returns 16
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

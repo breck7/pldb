@@ -1,37 +1,40 @@
 Oberon-2
 ========
 
-Oberon-2 is a programming language created in 1991 by Niklaus Wirth and Hanspeter Mössenböck.
+Oberon-2 is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1991 by Niklaus Wirth and Hanspeter Mössenböck.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221991%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1991
  https://pldb.io/concepts/../lists/creators.html#q=Niklaus%20Wirth Niklaus Wirth
  https://pldb.io/concepts/../lists/creators.html#q=Hanspeter%20M%C3%B6ssenb%C3%B6ck Hanspeter Mössenböck
 
-#885 on PLDB
-33 Years Old
+#893 on PLDB
+35 Years Old
 
 Oberon-2 is an extension of the original Oberon programming language that adds limited reflection and object-oriented programming facilities, open arrays as pointer base types, read-only field export and reintroduces the FOR loop from Modula-2. It was developed in 1991 at ETH Zurich by Niklaus Wirth and Hanspeter Mössenböck, who is now at Institut für Systemsoftware (SSW) of the University of Linz, Austria.  Oberon-2 is a superset of Oberon, and is fully compatible with it. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Oberon-2 Read more on Wikipedia...
 
-- Tags: programming language
-- Oberon-2 is a superset of Oberon
-- Early development of Oberon-2 happened in Eidgenössische Technische Hochschule Zürich
-- Explore Oberon-2 snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Oberon-2 is a <a href="../lists/explorer.html#columns=rank~id~appeared~tags~creators~supersetOf&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22supersetOf%22%2C%22origData%22%3A%22supersetOf%22%2C%22tags%22%3A%22html%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">superset</a> of <a href="oberon.html">Oberon</a>
+- Early development of Oberon-2 happened in <a href="../lists/labs.html#q=Eidgenössische Technische Hochschule Zürich">Eidgenössische Technische Hochschule Zürich</a>
+- Explore Oberon-2 snippets on <a href="http://www.rosettacode.org/wiki/Category:Oberon-2">Rosetta Code</a>
 - Oberon-2 on HOPL
  https://hopl.info/showlanguage.prx?exp=1647 Oberon-2 on HOPL
-- See also: (12 related languages) Oberon, Modula-2, Pascal, Go, Object Oberon, Smalltalk, Python, Java, Algol, Yacc, JavaScript, PowerPC
+- See also: (12 related languages) <a href="oberon.html">Oberon</a>, <a href="modula-2.html">Modula-2</a>, <a href="pascal.html">Pascal</a>, <a href="go.html">Go</a>, <a href="object-oberon.html">Object Oberon</a>, <a href="smalltalk.html">Smalltalk</a>, <a href="python.html">Python</a>, <a href="java.html">Java</a>, <a href="algol.html">Algol</a>, <a href="yacc.html">Yacc</a>, <a href="javascript.html">JavaScript</a>, <a href="powerpc.html">PowerPC</a>
 - Read more about Oberon-2 on Semantic Scholar: 1.
  https://semanticscholar.org/paper/0279ae521a3f0c16e53259cf62f83739931fbc50 1.
 - Read more about Oberon-2 on the web: 1.
  https://dl.acm.org/doi/pdf/10.1145/157352.157355 1.
-- 1 PLDB concepts link to Oberon-2: COMPONENT PASCAL
+- 1 PLDB concepts link to Oberon-2: <a href="component-pascal.html">COMPONENT PASCAL</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/o/Oberon 2.obn'>hello-world</a>:
 MODULE HelloWorld;
 IMPORT Out;
 BEGIN
   Out.String( &quot;Hello World&quot; );
   Out.Ln;
 END HelloWorld.
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Oberon-2'>Wikipedia</a>:
 Module        = MODULE ident &quot;;&quot; [ImportList] DeclSeq [BEGIN StatementSeq] END ident &quot;.&quot;.
 ImportList    = IMPORT [ident &quot;:=&quot;] ident {&quot;,&quot; [ident &quot;:=&quot;] ident} &quot;;&quot;.
 DeclSeq       = { CONST {ConstDecl &quot;;&quot; } | TYPE {TypeDecl &quot;;&quot;} | VAR {VarDecl &quot;;&quot;}} {ProcDecl &quot;;&quot; | ForwardDecl &quot;;&quot;}.
@@ -80,34 +83,35 @@ ExprList      = Expr {&quot;,&quot; Expr}.
 IdentList     = IdentDef {&quot;,&quot; IdentDef}.
 Qualident     = [ident &quot;.&quot;] ident.
 IdentDef      = ident [&quot; * &quot; | &quot; - &quot;].
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token Out.String
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

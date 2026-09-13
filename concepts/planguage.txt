@@ -1,19 +1,20 @@
 Planguage
 =========
 
-Planguage is a data notation created in 2001.
+Planguage is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 2001.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2001
 
-#2757 on PLDB
-23 Years Old
+#2877 on PLDB
+25 Years Old
 
 Planguage is a keyword-driven language whose name is derived from a contraction of the words planning and language1. Planguage can be used in requirements specifications, design documents, plans, and other places where qualitative statements are common. Its primary benefits are quantifying the qualitative and improving communication about complex ideas
 
-- Tags: dataNotation
-- Early development of Planguage happened in Gilb International
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- Early development of Planguage happened in <a href="../lists/labs.html#q=Gilb International">Gilb International</a>
 - Read more about Planguage on the web: 1.
  http://concepts.gilb.com/dl44 1.
 
+```Example from the web:
 PLAN [01-Sep 2012]: Full product release
 GIST : Develop XYZ product ready for product release
 STAKEHOLDER [planning, final signoff]: Product Quality Manager
@@ -21,5 +22,6 @@ AUTHORITY [final signoff]: Marketing Manager
 METER [Product]: Signed off acceptance by &lt;those with final signoff&gt;
 MUST [01-Sep 2012]: Partial product release
 WISH [01-Aug 2012]: Full product release
+```
 
-View source
+Built with Scroll v178.2.3

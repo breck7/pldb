@@ -10,6 +10,7 @@ blog https://clojure.org/news/news
 releaseNotes https://clojure.org/releases/devchangelog
 download https://clojure.org/releases/downloads
 latestVersion 1.12.0
+webRepl https://tryclojure.org/
 lab Cognitect
 fileExtensions clj cljs cljc edn
 writtenIn java clojure markdown yaml html xml bourne-shell
@@ -34,10 +35,12 @@ packageRepository https://clojars.org/
 ubuntuPackage clojure
 repoStats
  firstCommit 2006
- commits 4370
- committers 218
- files 346
+ commits 4459
+ committers 219
+ files 347
  newestCommit 2024
+ mb 20
+ linesOfCode 45852
 country United States
 projectEuler Clojure
  memberCount
@@ -133,12 +136,17 @@ hasOperatorOverloading true
 hasLineComments true
  ; A comment
 hasHomoiconicity true
+hasDynamicTyping true
+hasGarbageCollection true
 hasPrintDebugging true
 hasMultiLineComments true
  (comment A comment
  )
 hasSemanticIndentation false
 hasCaseInsensitiveIdentifiers false
+hasSinglePassParser false
+ ; FWIW, Clojure's compiler is two-pass, but the units are tiny (top-level forms).
+ https://news.ycombinator.com/item?id=2467359
 hasHexadecimals true
  ; 0x-?[abcdef\d]+
 hasFloats true

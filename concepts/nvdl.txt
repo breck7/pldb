@@ -1,18 +1,19 @@
 Namespace-based Validation Dispatching Language
 ===============================================
 
-Namespace-based Validation Dispatching Language, aka Namespace-based Validation Dispatching Language, is a xml format created in 2006.
+Namespace-based Validation Dispatching Language, aka Namespace-based Validation Dispatching Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22xmlFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">xml format</a> created in 2006.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
 
-#2613 on PLDB
-18 Years Old
+#2708 on PLDB
+20 Years Old
 
 Namespace-based Validation Dispatching Language (NVDL) is an XML schema language for validating XML documents that integrate with multiple namespaces. It is an ISO/IEC standard, and it is Part 4 of the DSDL schema specification. Much of the work on NVDL is based on the older Namespace Routing Language.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Namespace-based_Validation_Dispatching_Language Read more on Wikipedia...
 
-- Tags: xmlFormat
-- Early development of Namespace-based Validation Dispatching Language happened in National Security Complex and Crane Softwrights Ltd
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"xmlFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>xmlFormat</a>
+- Early development of Namespace-based Validation Dispatching Language happened in <a href="../lists/labs.html#q=National Security Complex">National Security Complex</a> and <a href="../lists/labs.html#q=Crane Softwrights Ltd">Crane Softwrights Ltd</a>
 
+```Example from the web:
 &lt;rules xmlns=&quot;http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0&quot;&gt;
  &lt;namespace ns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
    &lt;validate schema=&quot;xhtml.rng&quot;/&gt;
@@ -24,5 +25,6 @@ Namespace-based Validation Dispatching Language (NVDL) is an XML schema language
    &lt;reject/&gt;
  &lt;/anyNamespace&gt;
 &lt;/rules&gt;
+```
 
-View source
+Built with Scroll v178.2.3

@@ -1,27 +1,28 @@
 HLSL
 ====
 
-HLSL is a shading language created in 2002.
+HLSL is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22shadingLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">shading language</a> created in 2002.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222002%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2002
 
 #322 on PLDB
-22 Years Old
-2k Repos
+24 Years Old
+2k <span title="HLSL repos on GitHub.">Repos</span>
 
 The High-Level Shader Language or High-Level Shading Language (HLSL) is a proprietary shading language developed by Microsoft for the Direct3D 9 API to augment the shader assembly language, and went on to become the required shading language for the unified shader model of Direct3D 10 and higher. HLSL is analogous to the GLSL shading language used with the OpenGL standard. It is very similar to the Nvidia Cg shading language, as it was developed alongside it. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/High-Level_Shading_Language Read more on Wikipedia...
 
-- Tags: shadingLanguage
-- There are at least 2,093 HLSL repos on GitHub
-- Early development of HLSL happened in Microsoft
-- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using HLSL in 2k repos on GitHub
-- Pygments supports syntax highlighting for HLSL
-- GitHub supports syntax highlighting for HLSL
-- See also: (2 related languages) OpenGL, Cg
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"shadingLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>shadingLanguage</a>
+- There are at least 2,093 HLSL repos on <a href="https://github.com/search?q=language:HLSL">GitHub</a>
+- Early development of HLSL happened in <a href="../lists/labs.html#q=Microsoft">Microsoft</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using HLSL in 2k repos on <a href="https://api.github.com/search/repositories?q=language:HLSL">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/graphics.py">syntax highlighting</a> for HLSL
+- GitHub supports <a href="https://github.com/tgjones/shaders-tmLanguage" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for HLSL
+- See also: (2 related languages) <a href="opengl.html">OpenGL</a>, <a href="cg.html">Cg</a>
 - Read more about HLSL on the web: 1.
  https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl 1.
-- 7 PLDB concepts link to HLSL: ELENA, Emscripten, lobster, MonkeyX, OpenCV, Pygments, SpiderBasic
+- 9 PLDB concepts link to HLSL: <a href="cmake.html">CMake</a>, <a href="dynamo-visual-language.html">Dynamo</a>, <a href="elena.html">ELENA</a>, <a href="emscripten.html">Emscripten</a>, <a href="lobster.html">lobster</a>, <a href="monkeyx.html">MonkeyX</a>, <a href="opencv.html">OpenCV</a>, <a href="pygments.html">Pygments</a>, <a href="spiderbasic.html">SpiderBasic</a>
 
+```Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
 // The entry point and target profile are needed to compile this example:
 // -T ps_6_6 -E PSMain
 
@@ -36,6 +37,9 @@ float4 PSMain(PSInput input) : SV_Target0
     return input.color * input.color;
 }
 
+```
+
+```Example from <a href='https://github.com/tgjones/shaders-tmLanguage'>Linguist</a>:
 float alpha = 1.f;
 
 texture tex;
@@ -78,50 +82,52 @@ technique blur_ps_vs_2_0
 	}
 }
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

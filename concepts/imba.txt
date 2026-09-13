@@ -1,24 +1,27 @@
 Imba
 ====
 
-Imba is a programming language created in 2014.
+Imba is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2014.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
 
-#227 on PLDB
-10 Years Old
+#230 on PLDB
+12 Years Old
 
+```Download source code:
 git clone https://github.com/imba/imba
+```
 
 Imba is a Web programming language that's fast in two ways: Imba's time-saving syntax with built-in tags and styles results in less typing and switching files so you can build things fast. Imba's groundbreaking memoized DOM is an order of magnitude faster than virtual DOM libraries, so you can build fast things.
 
-- Tags: programming language
-- Imba is developed on GitHub and has 6,276 stars
-- Early development of Imba happened in https://github.com/imba/
-- Imba compiles to JavaScript
-- Imba is written in Imba, JavaScript, JSON, TypeScript, Markdown, HTML, CSS, YAML, SVG, XML, Bourne shell
-- imba.io was registered in 2013
-- 2 PLDB concepts link to Imba: cloc, Imba
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Imba is developed on <a href="https://github.com/imba/imba">GitHub</a> and has 6,276 stars
+- Early development of Imba happened in <a href="../lists/labs.html#q=https://github.com/imba/">https://github.com/imba/</a>
+- Imba compiles to <a href="javascript.html">JavaScript</a>
+- Imba is written in <a href="imba.html">Imba</a>, <a href="javascript.html">JavaScript</a>, <a href="json.html">JSON</a>, <a href="typescript.html">TypeScript</a>, <a href="markdown.html">Markdown</a>, <a href="html.html">HTML</a>, <a href="css.html">CSS</a>, <a href="yaml.html">YAML</a>, <a href="svg.html">SVG</a>, <a href="xml.html">XML</a>, <a href="bourne-shell.html">Bourne shell</a>
+- <a href="https://imba.io/">imba.io</a> was registered in 2013
+- 2 PLDB concepts link to Imba: <a href="cloc.html">cloc</a>, <a href="imba.html">Imba</a>
 
+```Example from the web:
 tag app-canvas
 	prop dpr = window.devicePixelRatio
 	prop state = {}
@@ -37,15 +40,16 @@ tag app-canvas
 
 	&lt;self @resize=resized @touch.prevent.moved.fit(self)=draw&gt;
 		&lt;canvas$canvas[pos:abs w:100% h:100%]&gt;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

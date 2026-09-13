@@ -1,49 +1,60 @@
 OCaml
 =====
 
-OCaml is an open source programming language created in 1996 by Xavier Leroy.
+OCaml is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1996 by Xavier Leroy.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1996
  https://pldb.io/concepts/../lists/creators.html#q=Xavier%20Leroy Xavier Leroy
 
-#69 on PLDB
-28 Years Old
-27k Repos
+#68 on PLDB
+30 Years Old
+27k <span title="OCaml repos on GitHub.">Repos</span>
 
 OCaml ( oh-KAM-əl), originally named Objective Caml, is the main implementation of the programming language Caml, created by Xavier Leroy, Jérôme Vouillon, Damien Doligez, Didier Rémy, Ascánder Suárez and others in 1996. A member of the ML language family, OCaml extends the core Caml language with object-oriented programming constructs. OCaml's toolset includes an interactive top-level interpreter, a bytecode compiler, a reversible debugger, a package manager (OPAM), and an optimizing native code compiler. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/OCaml Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 27,376 OCaml repos on GitHub
-- Early development of OCaml happened in Inria
-- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using OCaml in 6k repos on GitHub
-- Check out the 87 OCaml meetup groups on Meetup.com.
-- There are 219 Project Euler users using OCaml
-- Explore OCaml snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 27,376 OCaml repos on <a href="https://github.com/search?q=language:OCaml">GitHub</a>
+- Early development of OCaml happened in <a href="../lists/labs.html#q=Inria">Inria</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using OCaml in 6k repos on <a href="https://api.github.com/search/repositories?q=language:OCaml">GitHub</a>
+- Check out the 87 <a href="https://www.meetup.com/topics/ocaml-programming/">OCaml meetup groups</a> on Meetup.com.
+- There are 219 <a href="https://projecteuler.net/language=OCaml">Project Euler</a> users using OCaml
+- Explore OCaml snippets on <a href="http://www.rosettacode.org/wiki/Category:OCaml">Rosetta Code</a>
 - OCaml on HOPL
  https://hopl.info/showlanguage.prx?exp=2294 OCaml on HOPL
-- OCaml appears in the TIOBE Index
+- OCaml appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - OCaml Ubuntu package
  https://packages.ubuntu.com/jammy/ocaml OCaml Ubuntu package
-- Pygments supports syntax highlighting for OCaml
-- GitHub supports syntax highlighting for OCaml
-- OCaml appears in the Quine Relay project
-- Learn OCaml on exercism.
-- PLDB has 2 Jupyter Kernels for OCaml: github.com, github.com
-- There is a central package repository for OCaml
-- ocaml.org was registered in 2000
-- See also: (36 related languages) Occam, C, IA-32, SPARC, ARM, Unix, F#, Caml, Classroom Object Oriented Language, Standard ML, ATS, Elm, F*, Haxe, Opa, Rust, Scala, ML, Python, Perl, Java, C#, Fortran, JavaScript, JVM, PIC microcontroller, Emacs, Vim, OpenGL, Hack, PHP, iOS, Android, Coq, WebAssembly, Haskell
-- 50 PLDB concepts link to OCaml: Ace Editor, atomspace, Austral, bamboo, Bucklescript, Caml, Caramel, Catala, Chapel, cloc, comby, Coq, datafun, dedukti, eff, Elpi, FaCT, Felix, Flow, Flow9, F*, gintonic, Haxe, Hazel, HHVM, IPL, juvix, Koka, Ligo, LinearML, Links, mal, Neko, Not Quite C, Opa, opam-pm, psyche, Pygments, Ragel, ramen, Reason, SATySFi, silk, sill, skip, Slick, Semantic Patch Language, Umka, Vale, xs
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/ml.py">syntax highlighting</a> for OCaml
+- GitHub supports <a href="https://github.com/textmate/ocaml.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for OCaml
+- OCaml appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Learn <a href="https://exercism.org/tracks/ocaml">OCaml on exercism.</a>
+- PLDB has 2 <a href="jupyter-notebook.html">Jupyter</a> Kernels for OCaml: <a href="https://github.com/andrewray/iocaml">github.com</a>, <a href="https://github.com/akabe/ocaml-jupyter">github.com</a>
+- There is a <a href="https://opam.ocaml.org/">central package repository</a> for OCaml
+- <a href="http://ocaml.org">ocaml.org</a> was registered in 2000
+- See also: (36 related languages) <a href="occam.html">Occam</a>, <a href="c.html">C</a>, <a href="ia-32.html">IA-32</a>, <a href="sparc.html">SPARC</a>, <a href="arm.html">ARM</a>, <a href="unix.html">Unix</a>, <a href="f-sharp.html">F#</a>, <a href="caml.html">Caml</a>, <a href="cool.html">Classroom Object Oriented Language</a>, <a href="standard-ml.html">Standard ML</a>, <a href="ats.html">ATS</a>, <a href="elm.html">Elm</a>, <a href="fstar.html">F*</a>, <a href="haxe.html">Haxe</a>, <a href="opa.html">Opa</a>, <a href="rust.html">Rust</a>, <a href="scala.html">Scala</a>, <a href="ml.html">ML</a>, <a href="python.html">Python</a>, <a href="perl.html">Perl</a>, <a href="java.html">Java</a>, <a href="csharp.html">C#</a>, <a href="fortran.html">Fortran</a>, <a href="javascript.html">JavaScript</a>, <a href="jvm.html">JVM</a>, <a href="pic-microcontroller.html">PIC microcontroller</a>, <a href="emacs-editor.html">Emacs</a>, <a href="vim.html">Vim</a>, <a href="opengl.html">OpenGL</a>, <a href="hack.html">Hack</a>, <a href="php.html">PHP</a>, <a href="ios.html">iOS</a>, <a href="android.html">Android</a>, <a href="coq.html">Coq</a>, <a href="wasm.html">WebAssembly</a>, <a href="haskell.html">Haskell</a>
+- 55 PLDB concepts link to OCaml: <a href="ace.html">Ace Editor</a>, <a href="atomspace.html">atomspace</a>, <a href="austral.html">Austral</a>, <a href="bamboo.html">bamboo</a>, <a href="bucklescript.html">Bucklescript</a>, <a href="caml.html">Caml</a>, <a href="caramel.html">Caramel</a>, <a href="catala.html">Catala</a>, <a href="ccl.html">CCL</a>, <a href="cir.html">CIR</a>, <a href="cloc.html">cloc</a>, <a href="comby.html">comby</a>, <a href="coq.html">Coq</a>, <a href="datafun.html">datafun</a>, <a href="dedukti.html">dedukti</a>, <a href="eff.html">eff</a>, <a href="elpi.html">Elpi</a>, <a href="fact-lang.html">FaCT</a>, <a href="felix.html">Felix</a>, <a href="flow.html">Flow</a>, <a href="flow9.html">Flow9</a>, <a href="fstar.html">F*</a>, <a href="gintonic.html">gintonic</a>, <a href="haxe.html">Haxe</a>, <a href="hazel.html">Hazel</a>, <a href="hhvm.html">HHVM</a>, <a href="intuitionistic.html">IPL</a>, <a href="juvix.html">juvix</a>, <a href="koka.html">Koka</a>, <a href="ligo.html">Ligo</a>, <a href="linearml.html">LinearML</a>, <a href="links-programming-language.html">Links</a>, <a href="mal.html">mal</a>, <a href="menhir.html">Menhir</a>, <a href="michelson.html">michelson</a>, <a href="mlscript.html">MLscript</a>, <a href="neko.html">Neko</a>, <a href="nqc.html">Not Quite C</a>, <a href="opa.html">Opa</a>, <a href="opam-pm.html">opam-pm</a>, <a href="psyche.html">psyche</a>, <a href="pygments.html">Pygments</a>, <a href="ragel.html">Ragel</a>, <a href="ramen.html">ramen</a>, <a href="reason.html">Reason</a>, <a href="reko-decompiler.html">Reko</a>, <a href="rescript.html">Rescript</a>, <a href="satysfi.html">SATySFi</a>, <a href="silk.html">silk</a>, <a href="sill.html">sill</a>, <a href="skip.html">skip</a>, <a href="slick.html">Slick</a>, <a href="smpl.html">Semantic Patch Language</a>, <a href="vale-assembly.html">Vale</a>, <a href="xs-lang.html">xs</a>
 
+```Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
 let square x = x * x
 
+```
+
+```Example from <a href='https://riju.codes/ocaml'>Riju</a>:
 ;;
 print_string &quot;Hello, world!\n&quot;
 
-print_string &quot;Hello World\n&quot;
+```
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/o/OCaml.ml'>hello-world</a>:
+print_string &quot;Hello World\n&quot;
+```
+
+```Example from <a href='http://helloworldcollection.de/#OCaml'>the Hello World Collection</a>:
 (* Hello World in OCaml *)
 print_string &quot;Hello World!\n&quot;;;
+```
 
+```Example from <a href='https://github.com/textmate/ocaml.tmbundle'>Linguist</a>:
 (*
  * Copyright (c) 2013 Jeremy Yallop.
  *
@@ -57,88 +68,93 @@ let string_of format v =
     Format.pp_print_flush fmt ();
     Buffer.contents buf
   end
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/OCaml'>Wikipedia</a>:
 fun x_1 -&gt; (x_1 *
      let y_3 =
          let y_2 = (x_1 * 1)
          in (y_2 * y_2)
      in (y_3 * y_3))
+```
 
+```OCaml <a href="../lists/keywords.html#q=ocaml">Keywords</a>
 as assert begin class constraint do done downto else end exception external false for fun function functor if in include inherit initializer lazy let match method module mutable new object of open private raise rec sig struct then to true try type value val virtual when while with
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print_string
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (* A comment
   *)
@@ -146,7 +162,7 @@ row
 row
  Feature Module Pattern
  FeatureLink ../features/hasModules.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (* In OCaml, every piece of code is wrapped into a module. *)
   (* amodule.ml *)
@@ -157,19 +173,31 @@ row
 row
  Feature Type Inference
  FeatureLink ../features/hasTypeInference.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Structural Typing
+ FeatureLink ../features/hasStructuralTyping.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Static Typing
+ FeatureLink ../features/hasStaticTyping.html
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Multiple Inheritance
  FeatureLink ../features/hasMultipleInheritance.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (* This is a single-line comment. *)
   (* This is a
@@ -180,20 +208,27 @@ row
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
+ Token 
+row
+ Feature Type Classes
+ FeatureLink ../features/hasTypeClasses.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+  supposedly modules offer similar functionality: https://accu.org/journals/overload/25/142/fletcher_2445/
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

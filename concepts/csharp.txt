@@ -1,53 +1,62 @@
 C#
 ==
 
-C# is an open source programming language created in 2000 by Anders Hejlsberg.
+C# is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2000 by Anders Hejlsberg.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2000
  https://pldb.io/concepts/../lists/creators.html#q=Anders%20Hejlsberg Anders Hejlsberg
 
 #16 on PLDB
-24 Years Old
-2m Repos
+26 Years Old
+2m <span title="C# repos on GitHub.">Repos</span>
 
 C# (pronounced as see sharp) is a multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines. It was developed by Microsoft within its .NET initiative and later approved as a standard by Ecma (ECMA-334) and ISO (ISO/IEC 23270:2006). C# is one of the programming languages designed for the Common Language Infrastructure. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/C_Sharp_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 2,161,625 C# repos on GitHub
-- Early development of C# happened in Microsoft
-- The  Google BigQuery Public Dataset GitHub snapshot shows 83k users using C# in 133k repos on GitHub
-- Check out the 802 C# meetup groups on Meetup.com.
-- There are 202,070 members in the C# subreddit
-- There are 14,113 Project Euler users using C#
-- In the 2021 StackOverflow developer survey C# programmers reported a median salary of $58,368. 28% of respondents reported using C#. 22,984 programmers reported using C#, and 17,999 said they wanted to use it
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 2,161,625 C# repos on <a href="https://github.com/search?q=language:C#">GitHub</a>
+- Early development of C# happened in <a href="../lists/labs.html#q=Microsoft">Microsoft</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 83k users using C# in 133k repos on <a href="https://api.github.com/search/repositories?q=language:C#">GitHub</a>
+- Check out the 802 <a href="https://www.meetup.com/topics/csharp/">C# meetup groups</a> on Meetup.com.
+- There are 202,070 members in the <a href="https://reddit.com/r/csharp">C# subreddit</a>
+- There are 14,113 <a href="https://projecteuler.net/language=C#">Project Euler</a> users using C#
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> C# programmers reported a median salary of $58,368. 28% of respondents reported using C#. 22,984 programmers reported using C#, and 17,999 said they wanted to use it
 - C# on HOPL
  https://hopl.info/showlanguage.prx?exp=3445 C# on HOPL
-- C# ranks #5 in the TIOBE Index
-- ANTLR grammar for C#
-- C# LSP implementation
-- Monaco package for syntax highlighting C#
-- Pygments supports syntax highlighting for C#
-- GitHub supports syntax highlighting for C#
-- Learn C# on exercism.
-- There is 1 Jupyter Kernel for C#
-- There is a central package repository for C#
-- Indeed.com has 19,747 matches for "c# developer".
-- See also: (34 related languages) Spec Sharp, Eiffel, Java, Modula-3, Object Pascal, ML, Visual Basic, Icon, Haskell, Rust, J#, F#, Chapel, Crystal, D, Dart, Hack, Kotlin, Monkey, Nemerle, Oxygene, Swift, Vala, Unity, C, Turbo Pascal, Smalltalk, LINQ, A#, Ada, CIL, Fortran, Visual Studio, Morfik
-- 66 PLDB concepts link to C#: Ace Editor, adamant, Apache Arrow, Bazel, beef-lang, Bicep, cat, Chapel, Ć, clike, cloc, Dafny, Deno, DRAKON, ecsharp, Eiffel, flame-ir, FlatBuffers, Flow9, GAP, groff, HHVM, ImHex, ink, invokator, Ioke, jinx, Jison, jsil-compiler, Koka, mages, mal, manhood, MarkovJunior, Mond, MonkeyX, moya, muon, Nemerle, Node.js, OpenCV, P, Particles, plang, Pomsky, POV-Ray SDL, PowerShell, PRQL, Pygments, Racket, rant, Ripple, Roslyn compiler, Scoop, Simple Binary Encoding, Snowball, SourcePawn, Script.NET, TensorFlow, typecobol, Uno, V, Vale, Violent ES, Wax, Wonkey
+- C# ranks #5 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/csharp">grammar</a> for C#
+- C# <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/OmniSharp/csharp-language-server-protocol">implementation</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/csharp">package</a> for syntax highlighting C#
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/dotnet.py">syntax highlighting</a> for C#
+- GitHub supports <a href="https://github.com/atom/language-csharp" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for C#
+- Learn <a href="https://exercism.org/tracks/csharp">C# on exercism.</a>
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/zabirauf/icsharp">Kernel</a> for C#
+- There is a <a href="https://www.nuget.org/">central package repository</a> for C#
+- Indeed.com has 19,747 matches for <a href="https://www.indeed.com/jobs?q=c# developer">"c# developer"</a>.
+- See also: (34 related languages) <a href="spec-sharp.html">Spec Sharp</a>, <a href="eiffel.html">Eiffel</a>, <a href="java.html">Java</a>, <a href="modula-3.html">Modula-3</a>, <a href="object-pascal.html">Object Pascal</a>, <a href="ml.html">ML</a>, <a href="visual-basic.html">Visual Basic</a>, <a href="icon.html">Icon</a>, <a href="haskell.html">Haskell</a>, <a href="rust.html">Rust</a>, <a href="jsharp.html">J#</a>, <a href="f-sharp.html">F#</a>, <a href="chapel.html">Chapel</a>, <a href="crystal.html">Crystal</a>, <a href="d.html">D</a>, <a href="dart.html">Dart</a>, <a href="hack.html">Hack</a>, <a href="kotlin.html">Kotlin</a>, <a href="monkey.html">Monkey</a>, <a href="nemerle.html">Nemerle</a>, <a href="oxygene.html">Oxygene</a>, <a href="swift.html">Swift</a>, <a href="vala.html">Vala</a>, <a href="unity-engine.html">Unity</a>, <a href="c.html">C</a>, <a href="turbo-pascal.html">Turbo Pascal</a>, <a href="smalltalk.html">Smalltalk</a>, <a href="linq.html">LINQ</a>, <a href="a-sharp.html">A#</a>, <a href="ada.html">Ada</a>, <a href="cil.html">CIL</a>, <a href="fortran.html">Fortran</a>, <a href="visual-studio-editor.html">Visual Studio</a>, <a href="morfik.html">Morfik</a>
+- 77 PLDB concepts link to C#: <a href="ace.html">Ace Editor</a>, <a href="adamant.html">adamant</a>, <a href="arrow-format.html">Apache Arrow</a>, <a href="bazel.html">Bazel</a>, <a href="beef.html">beef-lang</a>, <a href="bicep.html">Bicep</a>, <a href="broccoli-2.html">Broccoli</a>, <a href="cat.html">cat</a>, <a href="chapel.html">Chapel</a>, <a href="cir.html">CIR</a>, <a href="cito.html">Ć</a>, <a href="clike.html">clike</a>, <a href="cloc.html">cloc</a>, <a href="cmake.html">CMake</a>, <a href="codeql.html">CodeQL</a>, <a href="dafny.html">Dafny</a>, <a href="deno.html">Deno</a>, <a href="drakon.html">DRAKON</a>, <a href="dynamo-visual-language.html">Dynamo</a>, <a href="ecsharp.html">ecsharp</a>, <a href="eiffel.html">Eiffel</a>, <a href="flame-ir.html">flame-ir</a>, <a href="flatbuffers.html">FlatBuffers</a>, <a href="flow9.html">Flow9</a>, <a href="gap.html">GAP</a>, <a href="groff.html">groff</a>, <a href="hedy.html">Hedy</a>, <a href="hhvm.html">HHVM</a>, <a href="imhex.html">ImHex</a>, <a href="ink.html">ink</a>, <a href="invokator.html">invokator</a>, <a href="ioke.html">Ioke</a>, <a href="jinx.html">jinx</a>, <a href="jison.html">Jison</a>, <a href="jsil-compiler.html">jsil-compiler</a>, <a href="koka.html">Koka</a>, <a href="mages.html">mages</a>, <a href="mal.html">mal</a>, <a href="manhood.html">manhood</a>, <a href="markovjunior.html">MarkovJunior</a>, <a href="mond.html">Mond</a>, <a href="monkeyx.html">MonkeyX</a>, <a href="moya.html">moya</a>, <a href="muon.html">muon</a>, <a href="nemerle.html">Nemerle</a>, <a href="nodejs.html">Node.js</a>, <a href="opencv.html">OpenCV</a>, <a href="p.html">P</a>, <a href="particles.html">Particles</a>, <a href="plang.html">plang</a>, <a href="pomsky.html">Pomsky</a>, <a href="pov-ray-sdl.html">POV-Ray SDL</a>, <a href="powershell.html">PowerShell</a>, <a href="prql.html">PRQL</a>, <a href="pygments.html">Pygments</a>, <a href="racket.html">Racket</a>, <a href="rant.html">rant</a>, <a href="reach.html">Reach</a>, <a href="reko-decompiler.html">Reko</a>, <a href="ripple.html">Ripple</a>, <a href="roslyn-compiler.html">Roslyn compiler</a>, <a href="saltstack.html">SaltStack</a>, <a href="scoop-pm.html">Scoop</a>, <a href="sdlang.html">SDLang</a>, <a href="simple-binary-encoding.html">Simple Binary Encoding</a>, <a href="snowball-programming-language.html">Snowball</a>, <a href="sourcepawn.html">SourcePawn</a>, <a href="sqlite.html">SQLite</a>, <a href="ssharp.html">Script.NET</a>, <a href="tensorflow.html">TensorFlow</a>, <a href="typecobol.html">typecobol</a>, <a href="uno.html">Uno</a>, <a href="v.html">V</a>, <a href="vale-assembly.html">Vale</a>, <a href="violent-es.html">Violent ES</a>, <a href="wax.html">Wax</a>, <a href="wonkey.html">Wonkey</a>
 
+```Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
 class Program
 {
     static int Square(int num) =&gt; num * num;
 }
 
+```
+
+```Example from <a href='https://riju.codes/csharp'>Riju</a>:
 class main {
     static void Main(string[] args) {
         System.Console.WriteLine(&quot;Hello, world!&quot;);
     }
 }
+```
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/c/CSharp.cs'>hello-world</a>:
 System.Console.WriteLine(&quot;Hello World&quot;);
 
+```
+
+```Example from <a href='https://github.com/atom/language-csharp'>Linguist</a>:
 ﻿using System;
 
 namespace MongoDB.Serialization.Descriptors
@@ -68,7 +77,9 @@ namespace MongoDB.Serialization.Descriptors
         }
     }
 }
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/C_Sharp_(programming_language)'>Wikipedia</a>:
 using System.Windows.Forms;
 
 class Program
@@ -79,98 +90,101 @@ class Program
         System.Console.WriteLine(&quot;Is almost the same argument!&quot;);
     }
 }
+```
 
+```C# <a href="../lists/keywords.html#q=csharp">Keywords</a>
 abstract add alias as ascending async await base bool break byte case catch char checked class const continue decimal default delegate descending do double dynamic else enum event explicit extern false finally fixed float for foreach from get global goto group if implicit in int interface internal into is join let lock long namespace new null object operator orderby out override params partial private protected public readonly record ref remove return sbyte sealed select set short sizeof stackalloc static string struct switch this throw true try typeof uint ulong unchecked unsafe ushort using value var virtual void volatile where while yield
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Standard Library
  FeatureLink ../features/hasStandardLibrary.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   Console.WriteLine("Hello, World!");
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Function Composition
  FeatureLink ../features/hasFunctionComposition.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // Call example:
   //   var c = Compose(f, g);
   //
-  //   Func g = _ =>  ...
-  //   Func f = _ => ...
+  //   Func<int, bool> g = _ =>  ...
+  //   Func<bool, string> f = _ => ...
   
-  Func Compose(Func f, Func g) => _ => f(g(_));
+  Func<TIn, TOut> Compose<TIn, TMid, TOut>(Func<TMid, TOut> f, Func<TIn, TMid> g) => _ => f(g(_));
  Token 
 row
  Feature Default Parameters Pattern
  FeatureLink ../features/hasDefaultParameters.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   public void ExampleMethod(string optionalstr = "default string") {}
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Dispose Blocks Pattern
  FeatureLink ../features/hasDisposeBlocks.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   using (Resource resource = GetResource())
   {
@@ -181,7 +195,7 @@ row
 row
  Feature Module Pattern
  FeatureLink ../features/hasModules.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // In C#, namespaces are the semi-equivalent of Java's packages.
   namespace com.test
@@ -192,13 +206,13 @@ row
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Namespaces
  FeatureLink ../features/hasNamespaces.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   namespace MyNamespace;
   class MyClass
@@ -212,7 +226,7 @@ row
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   using static System.Console;
   using static System.Math;
@@ -227,7 +241,7 @@ row
 row
  Feature Type Casting
  FeatureLink ../features/hasExplicitTypeCasting.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   Animal animal = new Cat();
   
@@ -240,7 +254,7 @@ row
 row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   #define MAX_CLIENTS 200
   int array[MAX_CLIENTS];
@@ -256,11 +270,11 @@ row
 row
  Feature Generators
  FeatureLink ../features/hasGenerators.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // Method that takes an iterable input (possibly an array)
   // and returns all even numbers.
-  public static IEnumerable GetEven(IEnumerable numbers) {
+  public static IEnumerable<int> GetEven(IEnumerable<int> numbers) {
       foreach (int i in numbers) {
           if ((i % 2) == 0) {
               yield return i;
@@ -271,7 +285,7 @@ row
 row
  Feature Constructors
  FeatureLink ../features/hasConstructors.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   public class MyClass
   {
@@ -297,10 +311,10 @@ row
 row
  Feature Generics
  FeatureLink ../features/hasGenerics.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // Declare the generic class.
-  public class GenericList
+  public class GenericList<T>
   {
       public void Add(T input) { }
   }
@@ -310,15 +324,15 @@ row
       static void Main()
       {
           // Declare a list of type int.
-          GenericList list1 = new GenericList();
+          GenericList<int> list1 = new GenericList<int>();
           list1.Add(1);
   
           // Declare a list of type string.
-          GenericList list2 = new GenericList();
+          GenericList<string> list2 = new GenericList<string>();
           list2.Add("");
   
           // Declare a list of type ExampleClass.
-          GenericList list3 = new GenericList();
+          GenericList<ExampleClass> list3 = new GenericList<ExampleClass>();
           list3.Add(new ExampleClass());
       }
   }
@@ -326,7 +340,7 @@ row
 row
  Feature Pointers
  FeatureLink ../features/hasPointers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // Pointers supported only under certain conditions.
   // Get 16 bytes of memory from the process's unmanaged memory
@@ -335,9 +349,9 @@ row
 row
  Feature Async Await
  FeatureLink ../features/hasAsyncAwait.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
-  public async Task FindPageSize(Uri uri)
+  public async Task<int> FindPageSize(Uri uri)
   {
       byte[] data = await new WebClient().DownloadDataTaskAsync(uri);
       return data.Length;
@@ -346,7 +360,7 @@ row
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -354,49 +368,49 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   Console.WriteLine("This is C#");
  Token Console.WriteLine
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   int pldb = 80766866;
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   int pldb = 80766866;
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "hello world"
  Token "
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

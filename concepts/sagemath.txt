@@ -1,28 +1,33 @@
 Sage
 ====
 
-Sage is an open source programming language created in 2005.
+Sage is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2005.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2005
 
-#368 on PLDB
-19 Years Old
-499 Repos
+#282 on PLDB
+21 Years Old
+499 <span title="Sage repos on GitHub.">Repos</span>
 
 SageMath (previously Sage or SAGE, "System for Algebra and Geometry Experimentation") is a mathematical software with features covering many aspects of mathematics, including algebra, combinatorics, numerical mathematics, number theory, and calculus. The first version of SageMath was released on 24 February 2005 as free and open-source software under the terms of the GNU General Public License version 2, with the initial goals of creating an "open source alternative to Magma, Maple, Mathematica, and MATLAB". The originator and leader of the SageMath project, William Stein, is a mathematician at the University of Washington. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/SageMath Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 499 Sage repos on GitHub
-- Early development of Sage happened in University of Washington
-- The  Google BigQuery Public Dataset GitHub snapshot shows 83 users using Sage in 84 repos on GitHub
-- There are 312 Project Euler users using Sage
-- GitHub supports syntax highlighting for Sage
-- There is 1 Jupyter Kernel for Sage
-- sagemath.org was registered in 2007
-- See also: (24 related languages) Python, Cython, Linux, Solaris, Android, iOS, IA-32, ARM, SPARC, Maple, Mathematica, MATLAB, Maxima, SciPy, NumPy, R, LaTeX, SQL, Fortran, C, Common Lisp, PARI/GP, SQLite, Matplotlib
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 499 Sage repos on <a href="https://github.com/search?q=language:Sage">GitHub</a>
+- Early development of Sage happened in <a href="../lists/labs.html#q=University of Washington">University of Washington</a>
+- Sage is written in <a href="html.html">HTML</a>, <a href="rust.html">Rust</a>, <a href="javascript.html">JavaScript</a>, <a href="markdown.html">Markdown</a>, <a href="svg.html">SVG</a>, <a href="yaml.html">YAML</a>, <a href="css.html">CSS</a>, <a href="toml.html">TOML</a>, <a href="typescript.html">TypeScript</a>, <a href="json.html">JSON</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 83 users using Sage in 84 repos on <a href="https://api.github.com/search/repositories?q=language:Sage">GitHub</a>
+- There are 312 <a href="https://projecteuler.net/language=Sage">Project Euler</a> users using Sage
+- GitHub supports <a href="https://github.com/MagicStack/MagicPython" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Sage
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="http://www.sagemath.org/">Kernel</a> for Sage
+- <a href="http://www.sagemath.org/">sagemath.org</a> was registered in 2007
+- See also: (24 related languages) <a href="python.html">Python</a>, <a href="cython.html">Cython</a>, <a href="linux.html">Linux</a>, <a href="solaris.html">Solaris</a>, <a href="android.html">Android</a>, <a href="ios.html">iOS</a>, <a href="ia-32.html">IA-32</a>, <a href="arm.html">ARM</a>, <a href="sparc.html">SPARC</a>, <a href="maple.html">Maple</a>, <a href="mathematica.html">Mathematica</a>, <a href="matlab.html">MATLAB</a>, <a href="maxima.html">Maxima</a>, <a href="scipy.html">SciPy</a>, <a href="numpy.html">NumPy</a>, <a href="r.html">R</a>, <a href="latex.html">LaTeX</a>, <a href="sql.html">SQL</a>, <a href="fortran.html">Fortran</a>, <a href="c.html">C</a>, <a href="common-lisp.html">Common Lisp</a>, <a href="pari-gp.html">PARI/GP</a>, <a href="sqlite.html">SQLite</a>, <a href="matplotlib.html">Matplotlib</a>
+- 1 PLDB concepts link to Sage: <a href="sympy.html">SymPy</a>
 
+```Example from <a href='https://riju.codes/sagemath'>Riju</a>:
 print(&quot;Hello, world!&quot;)
+```
 
+```Example from <a href='https://github.com/MagicStack/MagicPython'>Linguist</a>:
 # -*- coding: utf-8 -*-
 #
 #   Funciones en Python/Sage para el trabajo con polinomios con una
@@ -160,6 +165,9 @@ def completar2 (p=0):
         p(x) = cs[0]*(x+(cs[1]/(2*cs[0])))^2+(4*cs[0]*cs[2]-cs[1]^2)/(4*cs[0])
     return p(x)
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/SageMath'>Wikipedia</a>:
 sage: E2 = EllipticCurve(CC, [0,0,-2,1,1])
 sage: E2
 Elliptic Curve defined by y^2 + (-2.00000000000000)*y =
@@ -167,35 +175,36 @@ Elliptic Curve defined by y^2 + (-2.00000000000000)*y =
          Complex Field with 53 bits of precision
 sage: E2.j_invariant()
 61.7142857142857
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

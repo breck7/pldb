@@ -1,24 +1,25 @@
 P4
 ==
 
-P4 is an open source programming language created in 2014.
+P4 is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2014.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
 
-#556 on PLDB
-10 Years Old
-574 Repos
+#577 on PLDB
+12 Years Old
+574 <span title="P4 repos on GitHub.">Repos</span>
 
 P4 is a programming language designed to allow programming of packet forwarding planes. In contrast to a general purpose language such as C or Python, P4 is a domain-specific language with a number of constructs optimized around network data forwarding.  P4 is an open-source, permissively licensed language and is maintained by a non-profit organization called the P4 Language Consortium. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/P4_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 574 P4 repos on GitHub
-- Early development of P4 happened in Barefoot Networks and Intel and Stanford University and Princeton University and Google and Microsoft
-- The  Google BigQuery Public Dataset GitHub snapshot shows 29 users using P4 in 38 repos on GitHub
-- GitHub supports syntax highlighting for P4
-- p4.org was registered in 2002
-- See also: (2 related languages) C, Python
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 574 P4 repos on <a href="https://github.com/search?q=language:P4">GitHub</a>
+- Early development of P4 happened in <a href="../lists/labs.html#q=Barefoot Networks">Barefoot Networks</a> and <a href="../lists/labs.html#q=Intel">Intel</a> and <a href="../lists/labs.html#q=Stanford University">Stanford University</a> and <a href="../lists/labs.html#q=Princeton University">Princeton University</a> and <a href="../lists/labs.html#q=Google">Google</a> and <a href="../lists/labs.html#q=Microsoft">Microsoft</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 29 users using P4 in 38 repos on <a href="https://api.github.com/search/repositories?q=language:P4">GitHub</a>
+- GitHub supports <a href="https://github.com/TakeshiTseng/atom-language-p4" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for P4
+- <a href="http://p4.org">p4.org</a> was registered in 2002
+- See also: (2 related languages) <a href="c.html">C</a>, <a href="python.html">Python</a>
 
+```Example from <a href='https://github.com/TakeshiTseng/atom-language-p4'>Linguist</a>:
 // Copyright 2015, Barefoot Networks, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
@@ -59,13 +60,15 @@ table mirror_acl {
     size : INGRESS_MIRROR_ACL_TABLE_SIZE;
 }
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -73,22 +76,22 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

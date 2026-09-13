@@ -1,83 +1,85 @@
 Pawn
 ====
 
-Pawn is a programming language created in 1998.
+Pawn is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1998.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221998%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1998
 
-#1512 on PLDB
-26 Years Old
-3k Repos
+#1559 on PLDB
+28 Years Old
+3k <span title="Pawn repos on GitHub.">Repos</span>
 
-- Tags: programming language
-- There are at least 3,270 Pawn repos on GitHub
-- Early development of Pawn happened in Informatie-Technologisch Bureau CompuPhase
-- Pawn is written in Pascal, C, Assembly language, Tex, CMake, Rexx, XSLT, CSS, Markdown, C++
-- The  Google BigQuery Public Dataset GitHub snapshot shows 304 users using Pawn in 330 repos on GitHub
-- Pygments supports syntax highlighting for Pawn
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 3,270 Pawn repos on <a href="https://github.com/search?q=language:Pawn">GitHub</a>
+- Early development of Pawn happened in <a href="../lists/labs.html#q=Informatie-Technologisch Bureau CompuPhase">Informatie-Technologisch Bureau CompuPhase</a>
+- Pawn is written in <a href="pascal.html">Pascal</a>, <a href="c.html">C</a>, <a href="assembly-language.html">Assembly language</a>, <a href="tex.html">Tex</a>, <a href="cmake.html">CMake</a>, <a href="rexx.html">Rexx</a>, <a href="xslt.html">XSLT</a>, <a href="css.html">CSS</a>, <a href="markdown.html">Markdown</a>, <a href="cpp.html">C++</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 304 users using Pawn in 330 repos on <a href="https://api.github.com/search/repositories?q=language:Pawn">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/pawn.py">syntax highlighting</a> for Pawn
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/p/Pawn.p'>hello-world</a>:
 #include &lt;core&gt;
- 
 main(){
     print(&quot;Hello World&quot;);
 }
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print
 
-View source
+Built with Scroll v178.2.3

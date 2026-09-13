@@ -1,20 +1,21 @@
 LoomScript
 ==========
 
-LoomScript is a programming language created in 2013.
+LoomScript is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2013.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2013
 
-#959 on PLDB
-11 Years Old
-16 Repos
+#991 on PLDB
+13 Years Old
+16 <span title="LoomScript repos on GitHub.">Repos</span>
 
-- Tags: programming language
-- There are at least 16 LoomScript repos on GitHub
-- Early development of LoomScript happened in https://theengine.co/
-- The  Google BigQuery Public Dataset GitHub snapshot shows 4 users using LoomScript in 7 repos on GitHub
-- GitHub supports syntax highlighting for LoomScript
-- loomsdk.com was registered in 2013
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 16 LoomScript repos on <a href="https://github.com/search?q=language:LoomScript">GitHub</a>
+- Early development of LoomScript happened in <a href="../lists/labs.html#q=https://theengine.co/">https://theengine.co/</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4 users using LoomScript in 7 repos on <a href="https://api.github.com/search/repositories?q=language:LoomScript">GitHub</a>
+- GitHub supports <a href="https://github.com/ambethia/Sublime-Loom" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for LoomScript
+- <a href="http://loomsdk.com/">loomsdk.com</a> was registered in 2013
 
+```Example from <a href='https://github.com/ambethia/Sublime-Loom'>Linguist</a>:
 package
 {
     import loom.Application;
@@ -53,14 +54,15 @@ package
 
     }
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -68,22 +70,22 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

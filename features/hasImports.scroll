@@ -7,7 +7,7 @@ printTitle File Imports
 <a class="trueBaseThemePreviousItem" href="hasImplicitTypeConversions.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasIncrementAndDecrementOperators.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -187,6 +187,9 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/pug.html">P
      p Welcome to my super lame site.
      include includes/foot.pug
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/chapel.html">Chapel</a>
+ import use
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/f-sharp.html">F#</a>
  open module-or-namespace-name
  open System.IO
@@ -201,12 +204,26 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/gleam.html"
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/nodejs.html">Node.js</a>
  const fs = require(&quot;fs&quot;)
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3</a>
+ import std::io;
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ballerina.html">Ballerina</a>
  import ballerina/http;
  import ballerina/io;
 
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3</a>
- import std::io;
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/wa.html">Wa-lang</a>
+ import (
+    &quot;math&quot;
+    &quot;strings&quot;
+ )
+ import &quot;strings&quot; =&gt; .
+ import &quot;io&quot; =&gt; _
+ import &quot;math&quot; =&gt; m
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/toit.html">Toit</a>
+ import .library
+ import library
+ import library show *
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/slope.html">Slope</a>
  (load-mod my-module)
@@ -217,6 +234,9 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/scroll.html
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/nomnoml.html">nomnoml</a>
  #import: filename
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/x10.html">X10</a>
+ import x10.io.Console;
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/flow9.html">Flow9</a>
  import runtime;
@@ -245,16 +265,13 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/xtext.html"
  import &quot;http://www.xtext.org/example/Domainmodel&quot;
  import &quot;http://www.xtext.org/example/Domainmodel&quot; as dmodel
 
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/x10.html">X10</a>
- import x10.io.Console;
-
-codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/bog.html">bog</a>
- let {print} = import &quot;std.io&quot;
-
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">Jule</a>
  use std::fs
  use std::sys::{self, open, O_RDWR}
  use std::math::*
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/bog.html">bog</a>
+ let {print} = import &quot;std.io&quot;
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/cwerg.html">Cwerg</a>
  import fmt
@@ -264,11 +281,11 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.htm
 
 ***
 
-* Languages *with* File Imports include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/css.html">CSS</a>, <a href="../concepts/perl.html">Perl</a>, <a href="../concepts/ruby.html">Ruby</a>, <a href="../concepts/php.html">PHP</a>, <a href="../concepts/go.html">Go</a>, <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/r.html">R</a>, <a href="../concepts/bash.html">Bash</a>, <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/swift.html">Swift</a>, <a href="../concepts/matlab.html">MATLAB</a>, <a href="../concepts/kotlin.html">Kotlin</a>, <a href="../concepts/haskell.html">Haskell</a>, <a href="../concepts/clojure.html">Clojure</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/erlang.html">Erlang</a>, <a href="../concepts/objective-c.html">Objective-C</a>, <a href="../concepts/julia.html">Julia</a>, <a href="../concepts/dart.html">Dart</a>, <a href="../concepts/racket.html">Racket</a>, <a href="../concepts/crystal.html">Crystal</a>, <a href="../concepts/pug.html">Pug</a>, <a href="../concepts/f-sharp.html">F#</a>, <a href="../concepts/gleam.html">Gleam</a>, <a href="../concepts/nodejs.html">Node.js</a>, <a href="../concepts/ballerina.html">Ballerina</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/slope.html">Slope</a>, <a href="../concepts/scroll.html">Scroll</a>, <a href="../concepts/nomnoml.html">nomnoml</a>, <a href="../concepts/flow9.html">Flow9</a>, <a href="../concepts/arkscript.html">ArkScript</a>, <a href="../concepts/veryl.html">Veryl</a>, <a href="../concepts/cyber.html">Cyber</a>, <a href="../concepts/dale.html">Dale</a>, <a href="../concepts/xtext.html">Xtext</a>, <a href="../concepts/x10.html">X10</a>, <a href="../concepts/bog.html">bog</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/cwerg.html">Cwerg</a>, <a href="../concepts/sako.html">SAKO</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/aardvark.html">Aardvark</a>
+* Languages *with* File Imports include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/css.html">CSS</a>, <a href="../concepts/perl.html">Perl</a>, <a href="../concepts/ruby.html">Ruby</a>, <a href="../concepts/php.html">PHP</a>, <a href="../concepts/go.html">Go</a>, <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/r.html">R</a>, <a href="../concepts/bash.html">Bash</a>, <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/swift.html">Swift</a>, <a href="../concepts/matlab.html">MATLAB</a>, <a href="../concepts/kotlin.html">Kotlin</a>, <a href="../concepts/haskell.html">Haskell</a>, <a href="../concepts/clojure.html">Clojure</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/erlang.html">Erlang</a>, <a href="../concepts/objective-c.html">Objective-C</a>, <a href="../concepts/julia.html">Julia</a>, <a href="../concepts/dart.html">Dart</a>, <a href="../concepts/racket.html">Racket</a>, <a href="../concepts/crystal.html">Crystal</a>, <a href="../concepts/pug.html">Pug</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/f-sharp.html">F#</a>, <a href="../concepts/gleam.html">Gleam</a>, <a href="../concepts/nodejs.html">Node.js</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/ballerina.html">Ballerina</a>, <a href="../concepts/wa.html">Wa-lang</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/toit.html">Toit</a>, <a href="../concepts/slope.html">Slope</a>, <a href="../concepts/scroll.html">Scroll</a>, <a href="../concepts/nomnoml.html">nomnoml</a>, <a href="../concepts/x10.html">X10</a>, <a href="../concepts/flow9.html">Flow9</a>, <a href="../concepts/arkscript.html">ArkScript</a>, <a href="../concepts/veryl.html">Veryl</a>, <a href="../concepts/cyber.html">Cyber</a>, <a href="../concepts/dale.html">Dale</a>, <a href="../concepts/xtext.html">Xtext</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/bog.html">bog</a>, <a href="../concepts/cwerg.html">Cwerg</a>, <a href="../concepts/sako.html">SAKO</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/lone.html">Lone</a>
 
 ***
 
-* Languages *without* File Imports include <a href="../concepts/html.html">HTML</a>, <a href="../concepts/json.html">JSON</a>
+* Languages *without* File Imports include <a href="../concepts/html.html">HTML</a>, <a href="../concepts/json.html">JSON</a>, <a href="../concepts/mmcif.html">mmCIF</a>
 
 ***
 

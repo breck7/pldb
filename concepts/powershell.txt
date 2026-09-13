@@ -1,49 +1,61 @@
 PowerShell
 ==========
 
-PowerShell is an open source programming language created in 2006 by Jeffrey Snover.
+PowerShell is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2006 by Jeffrey Snover.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
  https://pldb.io/concepts/../lists/creators.html#q=Jeffrey%20Snover Jeffrey Snover
 
 #18 on PLDB
-18 Years Old
-161k Repos
+20 Years Old
+161k <span title="PowerShell repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/PowerShell/PowerShell
+```
 
 PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language. Initially a Windows component only, known as Windows PowerShell, it was made open-source and cross-platform on 18 August 2016 with the introduction of PowerShell Core. The former is built on .NET Framework while the latter on .NET Core. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/PowerShell Read more on Wikipedia...
 
-- Tags: programming language
-- PowerShell is developed on GitHub and has 44,220 stars
-- There are at least 161,144 PowerShell repos on GitHub
-- Early development of PowerShell happened in Microsoft
-- PowerShell is written in C#, PowerShell, XML, YAML, Markdown, XSD, JSON, XAML, Bourne shell, SVG, CSV, Razor, Dockerfile, XSLT, plantuml, Python
-- The  Google BigQuery Public Dataset GitHub snapshot shows 25k users using PowerShell in 33k repos on GitHub
-- There are 201,622 members in the PowerShell subreddit
-- There are 159 Project Euler users using PowerShell
-- In the 2021 StackOverflow developer survey PowerShell programmers reported a median salary of $68,824. 11% of respondents reported using PowerShell. 8,871 programmers reported using PowerShell, and 4,896 said they wanted to use it
-- Explore PowerShell snippets on Rosetta Code
-- PowerShell appears in the TIOBE Index
-- PowerShell LSP implementation
-- Monaco package for syntax highlighting PowerShell
-- Pygments supports syntax highlighting for PowerShell
-- GitHub supports syntax highlighting for PowerShell
-- Learn PowerShell on exercism.
-- There is 1 Jupyter Kernel for PowerShell
-- There is a central package repository for PowerShell
-- Indeed.com has 19,576 matches for "powershell developer".
-- See also: (17 related languages) Perl, C#, DIGITAL Command Language, SQL, Tcl, Puppet, JScript, VBScript, Linux, ASCII, awk, grep, sed, XML, Assembly CLI, Office Open XML, Bash
-- 67 PLDB concepts link to PowerShell: Aardvark, Ace Editor, AL, Argdown, AviSynth, Bazel, Bicep, Blacklight, Boomerang Decompiler, carp, chrysaLisp, clash, ClojureScript, CouchDB, crush, Cryptol, Crystal, curv, Deno, Embedded Crystal, Elixir, Emscripten, Enso, Flow, Gleam, huginn, hurl, ink, Kubernetes, latino, lift, Linotte, Luna, mages, mal, MongoDB, Neko, Node.js, Nushell, onnx, OpenCV, P, Pony, POV-Ray SDL, PowerShell, Pygments, Python, PyTorch, Racket, Rakudo, Roslyn compiler, Rust, Scoop, score, Solidity, spiral, Star, Swift, Taichi, tiledb, typecobol, Vale, Vcpkg, Wasp, Xgboost, XGBoost, Zig
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- PowerShell is developed on <a href="https://github.com/PowerShell/PowerShell">GitHub</a> and has 44,220 stars
+- There are at least 161,144 PowerShell repos on <a href="https://github.com/search?q=language:PowerShell">GitHub</a>
+- Early development of PowerShell happened in <a href="../lists/labs.html#q=Microsoft">Microsoft</a>
+- PowerShell is written in <a href="csharp.html">C#</a>, <a href="powershell.html">PowerShell</a>, <a href="xml.html">XML</a>, <a href="yaml.html">YAML</a>, <a href="markdown.html">Markdown</a>, <a href="xsd.html">XSD</a>, <a href="json.html">JSON</a>, <a href="xaml.html">XAML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="svg.html">SVG</a>, <a href="csv.html">CSV</a>, <a href="razor.html">Razor</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="xslt.html">XSLT</a>, <a href="plantuml.html">plantuml</a>, <a href="python.html">Python</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 25k users using PowerShell in 33k repos on <a href="https://api.github.com/search/repositories?q=language:PowerShell">GitHub</a>
+- There are 201,622 members in the <a href="https://reddit.com/r/PowerShell">PowerShell subreddit</a>
+- There are 159 <a href="https://projecteuler.net/language=PowerShell">Project Euler</a> users using PowerShell
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> PowerShell programmers reported a median salary of $68,824. 11% of respondents reported using PowerShell. 8,871 programmers reported using PowerShell, and 4,896 said they wanted to use it
+- Explore PowerShell snippets on <a href="http://www.rosettacode.org/wiki/Category:PowerShell">Rosetta Code</a>
+- PowerShell appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- PowerShell <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/PowerShell/PowerShellEditorServices">implementation</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/powershell">package</a> for syntax highlighting PowerShell
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/shell.py">syntax highlighting</a> for PowerShell
+- GitHub supports <a href="https://github.com/PowerShell/EditorSyntax" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for PowerShell
+- Learn <a href="https://exercism.org/tracks/powershell">PowerShell on exercism.</a>
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/vors/jupyter-powershell">Kernel</a> for PowerShell
+- There is a <a href="https://www.powershellgallery.com/">central package repository</a> for PowerShell
+- Indeed.com has 19,576 matches for <a href="https://www.indeed.com/jobs?q=powershell developer">"powershell developer"</a>.
+- See also: (17 related languages) <a href="perl.html">Perl</a>, <a href="csharp.html">C#</a>, <a href="digital-command-language.html">DIGITAL Command Language</a>, <a href="sql.html">SQL</a>, <a href="tcl.html">Tcl</a>, <a href="puppet.html">Puppet</a>, <a href="jscript.html">JScript</a>, <a href="vbscript.html">VBScript</a>, <a href="linux.html">Linux</a>, <a href="ascii.html">ASCII</a>, <a href="awk.html">awk</a>, <a href="grep.html">grep</a>, <a href="sed.html">sed</a>, <a href="xml.html">XML</a>, <a href="cli-assembly.html">Assembly CLI</a>, <a href="ooxml.html">Office Open XML</a>, <a href="bash.html">Bash</a>
+- 76 PLDB concepts link to PowerShell: <a href="aardvark.html">Aardvark</a>, <a href="ace.html">Ace Editor</a>, <a href="al.html">AL</a>, <a href="argdown.html">Argdown</a>, <a href="avi-synth.html">AviSynth</a>, <a href="bazel.html">Bazel</a>, <a href="bicep.html">Bicep</a>, <a href="blacklight.html">Blacklight</a>, <a href="boomerang-decompiler.html">Boomerang Decompiler</a>, <a href="carp.html">carp</a>, <a href="chrysalisp.html">chrysaLisp</a>, <a href="clash.html">clash</a>, <a href="clojurescript.html">ClojureScript</a>, <a href="cmake.html">CMake</a>, <a href="codeql.html">CodeQL</a>, <a href="couchdb.html">CouchDB</a>, <a href="crush.html">crush</a>, <a href="cryptol.html">Cryptol</a>, <a href="crystal.html">Crystal</a>, <a href="curv.html">curv</a>, <a href="deno.html">Deno</a>, <a href="dynamo-visual-language.html">Dynamo</a>, <a href="ecr.html">Embedded Crystal</a>, <a href="elixir.html">Elixir</a>, <a href="emscripten.html">Emscripten</a>, <a href="enso.html">Enso</a>, <a href="flow.html">Flow</a>, <a href="flutter.html">Flutter</a>, <a href="gleam.html">Gleam</a>, <a href="huginn.html">huginn</a>, <a href="hurl.html">hurl</a>, <a href="ink.html">ink</a>, <a href="kubernetes.html">Kubernetes</a>, <a href="latino.html">latino</a>, <a href="lift.html">lift</a>, <a href="linotte.html">Linotte</a>, <a href="luna.html">Luna</a>, <a href="mages.html">mages</a>, <a href="mal.html">mal</a>, <a href="mongodb.html">MongoDB</a>, <a href="neko.html">Neko</a>, <a href="nodejs.html">Node.js</a>, <a href="nushell.html">Nushell</a>, <a href="onnx.html">onnx</a>, <a href="opencv.html">OpenCV</a>, <a href="p.html">P</a>, <a href="paraview.html">ParaView</a>, <a href="pony.html">Pony</a>, <a href="pov-ray-sdl.html">POV-Ray SDL</a>, <a href="powershell.html">PowerShell</a>, <a href="pygments.html">Pygments</a>, <a href="python.html">Python</a>, <a href="pytorch.html">PyTorch</a>, <a href="racket.html">Racket</a>, <a href="rakudo.html">Rakudo</a>, <a href="rocksdb.html">RocksDB</a>, <a href="roslyn-compiler.html">Roslyn compiler</a>, <a href="rust.html">Rust</a>, <a href="saltstack.html">SaltStack</a>, <a href="scoop-pm.html">Scoop</a>, <a href="score.html">score</a>, <a href="solidity.html">Solidity</a>, <a href="spiral.html">spiral</a>, <a href="srt.html">SRT</a>, <a href="star.html">Star</a>, <a href="swift.html">Swift</a>, <a href="taichi.html">Taichi</a>, <a href="tiledb.html">tiledb</a>, <a href="typecobol.html">typecobol</a>, <a href="vale-assembly.html">Vale</a>, <a href="vcpkg-pm.html">Vcpkg</a>, <a href="wasp-lang.html">Wasp</a>, <a href="wiredtiger.html">WiredTiger</a>, <a href="xgboost-model.html">Xgboost</a>, <a href="xgboost.html">XGBoost</a>, <a href="zig.html">Zig</a>
 
+```Example from <a href='https://riju.codes/powershell'>Riju</a>:
 Write-Host &quot;Hello, world!&quot;
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/p/PowerShell.ps1'>hello-world</a>:
 &#39;Hello World&#39;
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#PowerShell'>the Hello World Collection</a>:
 # Hello World in Microsoft Powershell
 
 &#39;Hello World!&#39;
 
+```
+
+```Example from <a href='https://github.com/PowerShell/EditorSyntax'>Linguist</a>:
 #!/usr/bin/env pwsh
 
 # source:  https://github.com/PowerShell/PowerShellStandard/blob/3436bfc162d6804dd11d1d76c4faff486b4b405d/build.ps1
@@ -66,100 +78,107 @@ if ( $Test ) {
     Invoke-Test
 }
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/PowerShell'>Wikipedia</a>:
 name value1 value2
 name -Param1 value1 -Param2 value2
+```
 
+```PowerShell <a href="../lists/keywords.html#q=powershell">Keywords</a>
 begin break catch class continue data define do dynamicparam else elseif end exit filter finally for foreach from function if in param process return switch throw trap try until using var while workflow parallel sequence inlinescript configuration
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Standard Library
  FeatureLink ../features/hasStandardLibrary.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   Write-Host "Hello, World!"
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
-  
- Token 
+  <# A comment
+  #>
+ Token <# #>
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token '
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token =
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token echo
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

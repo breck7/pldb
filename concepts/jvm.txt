@@ -1,18 +1,18 @@
 JVM
 ===
 
-JVM, aka Java Virtual Machine, is a virtual machine created in 1994.
+JVM, aka Java Virtual Machine, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22vm%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">virtual machine</a> created in 1994.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221994%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1994
 
-#1552 on PLDB
-30 Years Old
+#1607 on PLDB
+32 Years Old
 
 A Java virtual machine (JVM) is a virtual machine that enables a computer to run Java programs as well as programs written in other languages and compiled to Java bytecode.  The JVM is detailed by a specification that formally describes what is required of a JVM implementation.  Having a specification ensures interoperability of Java programs across different implementations so that program authors using the Java Development Kit (JDK) need not worry about idiosyncrasies of the underlying hardware platform. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Java_virtual_machine Read more on Wikipedia...
 
-- Tags: virtual machine
-- Early development of JVM happened in Sun Microsystems
-- See also: (10 related languages) Java Bytecode, JRuby, Jython, Ruby, Python, Clojure, Groovy, Scala, Kotlin, Android
-- 9 PLDB concepts link to JVM: Ceylon, Clojure, Fantom, Groovy, Ioke, Kotlin, Scala, X10, Xtend
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"vm"%5D%7D%5D%2C"logic"%3A"AND"%7D'>virtual machine</a>
+- Early development of JVM happened in <a href="../lists/labs.html#q=Sun Microsystems">Sun Microsystems</a>
+- See also: (10 related languages) <a href="java-bytecode.html">Java Bytecode</a>, <a href="jruby.html">JRuby</a>, <a href="jython.html">Jython</a>, <a href="ruby.html">Ruby</a>, <a href="python.html">Python</a>, <a href="clojure.html">Clojure</a>, <a href="groovy.html">Groovy</a>, <a href="scala.html">Scala</a>, <a href="kotlin.html">Kotlin</a>, <a href="android.html">Android</a>
+- 9 PLDB concepts link to JVM: <a href="ceylon.html">Ceylon</a>, <a href="clojure.html">Clojure</a>, <a href="fantom.html">Fantom</a>, <a href="groovy.html">Groovy</a>, <a href="ioke.html">Ioke</a>, <a href="kotlin.html">Kotlin</a>, <a href="scala.html">Scala</a>, <a href="x10.html">X10</a>, <a href="xtend.html">Xtend</a>
 
-View source
+Built with Scroll v178.2.3

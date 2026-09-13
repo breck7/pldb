@@ -1,23 +1,26 @@
 X Font Directory Index
 ======================
 
-X Font Directory Index is an application created in 1991.
+X Font Directory Index is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 1991.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221991%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1991
 
-#2047 on PLDB
-33 Years Old
-14 Repos
+#2134 on PLDB
+35 Years Old
+14 <span title="X Font Directory Index repos on GitHub.">Repos</span>
 
-- Tags: application
-- There are at least 14 X Font Directory Index repos on GitHub
-- GitHub supports syntax highlighting for X Font Directory Index
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>
+- There are at least 14 X Font Directory Index repos on <a href="https://github.com/search?q=language:X Font Directory Index">GitHub</a>
+- GitHub supports <a href="https://github.com/Alhadis/language-fontforge" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for X Font Directory Index
 - Read more about X Font Directory Index on the web: 1.
  https://groups.google.com/forum/#!search/mkfontdir/comp.windows.x/zYxw3Vkaht4/KUSt85opBwoJ 1.
 
+```Example from the web:
 2
 sutonnymj.pfa -altsys-SutonnyMJ-medium-r-normal--0-0-0-0-p-0-adobe-fontspecific
 rinkymj.pfa -altsys-RinkyMJ-medium-r-normal--0-0-0-0-p-0-adobe-fontspecific
+```
 
+```Example from <a href='https://github.com/Alhadis/language-fontforge'>Linguist</a>:
 ! This is Alhadis&#39;s `fonts.alias&#39; file, taken from his OpenBSD
 ! install&#39;s `/usr/X11R6/lib/X11/fonts/100dpi/&#39; directory.
 FONT_NAME_ALIASES
@@ -57,5 +60,6 @@ lucidasanstypewriter-12 -b&amp;h-lucidatypewriter-medium-r-normal-sans-17-120-10
 lucidasanstypewriter-14 -b&amp;h-lucidatypewriter-medium-r-normal-sans-20-140-100-100-m-120-iso8859-1
 lucidasanstypewriter-18 -b&amp;h-lucidatypewriter-medium-r-normal-sans-25-180-100-100-m-150-iso8859-1
 lucidasanstypewriter-24 -b&amp;h-lucidatypewriter-medium-r-normal-sans-34-240-100-100-m-200-iso8859-1
+```
 
-View source
+Built with Scroll v178.2.3

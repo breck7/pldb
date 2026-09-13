@@ -1,20 +1,21 @@
 Extensible Embeddable Language
 ==============================
 
-Extensible Embeddable Language is an open source programming language created in 2005 by David Olofson.
+Extensible Embeddable Language is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2005 by David Olofson.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2005
  https://pldb.io/concepts/../lists/creators.html#q=David%20Olofson David Olofson
 
-#2606 on PLDB
-19 Years Old
+#2701 on PLDB
+21 Years Old
 
 The Extensible Embeddable Language (EEL) is a scripting and programming language in development by David Olofson. EEL is intended for scripting in realtime systems with cycle rates in the kHz range, such as musical synthesizers and industrial control systems, but also aspires to be usable as a platform independent general purpose programming language.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Extensible_Embeddable_Language Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Extensible Embeddable Language happened in https://github.com/olofson
-- See also: (3 related languages) Lua, C, Pascal
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Extensible Embeddable Language happened in <a href="../lists/labs.html#q=https://github.com/olofson">https://github.com/olofson</a>
+- See also: (3 related languages) <a href="lua.html">Lua</a>, <a href="c.html">C</a>, <a href="pascal.html">Pascal</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Extensible_Embeddable_Language'>Wikipedia</a>:
 export function main&lt;args&gt;
 {
     print(&quot;Recursion test 1:\n&quot;);
@@ -65,5 +66,6 @@ export function main&lt;args&gt;
     print(Recursion tests done.\n);
     return 0;
 }
+```
 
-View source
+Built with Scroll v178.2.3

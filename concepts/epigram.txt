@@ -1,40 +1,42 @@
 Epigram
 =======
 
-Epigram is an open source programming language created in 2004 by Conor McBride.
+Epigram is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2004 by Conor McBride.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2004
  https://pldb.io/concepts/../lists/creators.html#q=Conor%20McBride Conor McBride
 
-#1154 on PLDB
-20 Years Old
+#1198 on PLDB
+22 Years Old
 
 Epigram is a functional programming language with dependent types. Epigram also refers to the IDE usually packaged with the language. Epigram's type system is strong enough to express program specifications. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Epigram_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Epigram happened in University of London
-- Explore Epigram snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Epigram happened in <a href="../lists/labs.html#q=University of London">University of London</a>
+- Explore Epigram snippets on <a href="http://www.rosettacode.org/wiki/Category:Epigram">Rosetta Code</a>
 - Epigram on HOPL
  https://hopl.info/showlanguage.prx?exp=8173 Epigram on HOPL
-- See also: (6 related languages) Linux, Agda, Idris, Coq, Haskell, DML
+- See also: (6 related languages) <a href="linux.html">Linux</a>, <a href="agda.html">Agda</a>, <a href="idris.html">Idris</a>, <a href="coq.html">Coq</a>, <a href="haskell.html">Haskell</a>, <a href="dependent-ml.html">DML</a>
 - Read more about Epigram on the web: 1.
  http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.115.9718&rep=rep1&type=pdf 1.
 
+```Example from <a href='https://en.wikipedia.org/wiki/Epigram_(programming_language)'>Wikipedia</a>:
 plus x y &lt;= rec x {
   plus x y &lt;= case x {
     plus zero y =&gt; y
     plus (suc x) y =&gt; suc (plus x y)
   }
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Dependent types
  FeatureLink ../features/hasDependentTypes.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

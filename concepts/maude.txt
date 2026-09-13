@@ -1,23 +1,24 @@
 Maude
 =====
 
-Maude is a programming language created in 1990.
+Maude is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1990.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1990
 
-#2416 on PLDB
-34 Years Old
+#2509 on PLDB
+36 Years Old
 
 Maude is a high-level language and high-performance system supporting both equational and rewriting logic computation for a wide range of applications.
 
-- Tags: programming language
-- Early development of Maude happened in Universidad de Navarra and Universidad de Málaga and Universidad Complutense and Centro Informático Científico de Andalucía and SRI
-- OBJ influenced the design of Maude
-- Explore Maude snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Maude happened in <a href="../lists/labs.html#q=Universidad de Navarra">Universidad de Navarra</a> and <a href="../lists/labs.html#q=Universidad de Málaga">Universidad de Málaga</a> and <a href="../lists/labs.html#q=Universidad Complutense">Universidad Complutense</a> and <a href="../lists/labs.html#q=Centro Informático Científico de Andalucía">Centro Informático Científico de Andalucía</a> and <a href="../lists/labs.html#q=SRI">SRI</a>
+- <a href="obj.html">OBJ</a> influenced the design of Maude
+- Explore Maude snippets on <a href="http://www.rosettacode.org/wiki/Category:Maude">Rosetta Code</a>
 - Maude on HOPL
  https://hopl.info/showlanguage.prx?exp=2937 Maude on HOPL
 - Read more about Maude on Semantic Scholar: 1.
  https://semanticscholar.org/paper/a9c022579be9dcff685682c1876f8a4532ac02cf 1.
 
+```Example from the web:
 fmod FACTORIAL is
 
    protecting INT .
@@ -33,5 +34,6 @@ fmod FACTORIAL is
 endfm
 
 red 11 ! .
+```
 
-View source
+Built with Scroll v178.2.3

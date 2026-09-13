@@ -1,26 +1,27 @@
 Nginx
 =====
 
-Nginx is an open source config format created in 2004.
+Nginx is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22configFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">config format</a> created in 2004.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2004
 
-#218 on PLDB
-20 Years Old
-6k Repos
+#232 on PLDB
+22 Years Old
+6k <span title="Nginx repos on GitHub.">Repos</span>
 
 Nginx (  EN-jin-EKS) (stylized as NGINX, NGiИX or nginx) is a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.  The software was created by Igor Sysoev and first publicly released in 2004. A company of the same name was founded in 2011 to provide support and Nginx plus paid software.Nginx is free and open-source software, released under the terms of a BSD-like license. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Nginx Read more on Wikipedia...
 
-- Tags: configFormat
-- There are at least 5,905 Nginx repos on GitHub
-- Early development of Nginx happened in F5, Inc
-- The  Google BigQuery Public Dataset GitHub snapshot shows 8k users using Nginx in 9k repos on GitHub
-- CodeMirror package for syntax highlighting Nginx
-- Pygments supports syntax highlighting for Nginx
-- GitHub supports syntax highlighting for Nginx
-- Indeed.com has 2,884 matches for "nginx engineer".
-- See also: (5 related languages) C, Linux, Solaris, TLS, WordPress
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"configFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>configFormat</a>
+- There are at least 5,905 Nginx repos on <a href="https://github.com/search?q=language:Nginx">GitHub</a>
+- Early development of Nginx happened in <a href="../lists/labs.html#q=F5, Inc">F5, Inc</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 8k users using Nginx in 9k repos on <a href="https://api.github.com/search/repositories?q=language:Nginx">GitHub</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/nginx">package</a> for syntax highlighting Nginx
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/configs.py">syntax highlighting</a> for Nginx
+- GitHub supports <a href="https://github.com/brandonwamboldt/sublime-nginx" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Nginx
+- Indeed.com has 2,884 matches for <a href="https://www.indeed.com/jobs?q=nginx engineer">"nginx engineer"</a>.
+- See also: (5 related languages) <a href="c.html">C</a>, <a href="linux.html">Linux</a>, <a href="solaris.html">Solaris</a>, <a href="tls.html">TLS</a>, <a href="wordpress.html">WordPress</a>
 
+```Example from the web:
 #user  nobody;
 worker_processes  1;
 
@@ -52,7 +53,9 @@ server {
         include /etc/nginx/sites-enabled/*;
         }
 }
+```
 
+```Example from <a href='https://github.com/brandonwamboldt/sublime-nginx'>Linguist</a>:
 # Move the www people to no-www
 server {
   listen 80;
@@ -295,35 +298,36 @@ server {
   # End PHPMyAdmin block
 
 } # End of server block.
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

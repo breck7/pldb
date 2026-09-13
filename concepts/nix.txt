@@ -1,22 +1,23 @@
 Nix
 ===
 
-Nix is an open source package manager created in 2003.
+Nix is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22packageManager%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">package manager</a> created in 2003.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2003
 
-#553 on PLDB
-21 Years Old
+#552 on PLDB
+23 Years Old
 
-- Tags: packageManager
-- Early development of Nix happened in NixOS Foundation
-- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Nix in 3k repos on GitHub
-- Explore Nix snippets on Rosetta Code
-- Pygments supports syntax highlighting for Nix
-- GitHub supports syntax highlighting for Nix
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"packageManager"%5D%7D%5D%2C"logic"%3A"AND"%7D'>packageManager</a>
+- Early development of Nix happened in <a href="../lists/labs.html#q=NixOS Foundation">NixOS Foundation</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Nix in 3k repos on <a href="https://api.github.com/search/repositories?q=language:Nix">GitHub</a>
+- Explore Nix snippets on <a href="http://www.rosettacode.org/wiki/Category:Nix">Rosetta Code</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/nix.py">syntax highlighting</a> for Nix
+- GitHub supports <a href="https://github.com/wmertens/sublime-nix" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Nix
 - Read more about Nix on the web: 1.
  https://nixos.org/ 1.
-- 74 PLDB concepts link to Nix: Ace Editor, Ante, AsciiDots, asterius-compiler, Austral, Candy, carp, Catala, Chapel, chisel, clash, cloc, Coq, Crystal, dex, Dhall, Differential Datalog, Embedded Crystal, Emscripten, Enso, erg, expresso, Factor, Fardlang, Felix, forest-lang, fp, F*, Futhark, GHC, Gwion, HHVM, hobbes, Ibis, Idris, Jakt, Jank, k-framework, Ladybird, lamdu-editor, Lamdu, Lawvere, Ligo, Lil, Luna, Megaparsec, MiniZinc, monte, odin, oil, Pact, GNU Poke, popr, PRQL, Pygments, Quint, ramen, raptorjit, Reason, reflex-framework, Rholang, Roc, Savi, sile, Simplicity, Slab, Slick, Terra, UCG, Uiua, UrWeb, Vcpkg, wasmer, Worst
+- 84 PLDB concepts link to Nix: <a href="ace.html">Ace Editor</a>, <a href="ante.html">Ante</a>, <a href="asciidots.html">AsciiDots</a>, <a href="asterius-compiler.html">asterius-compiler</a>, <a href="austral.html">Austral</a>, <a href="borgo.html">Borgo</a>, <a href="candy.html">Candy</a>, <a href="carp.html">carp</a>, <a href="catala.html">Catala</a>, <a href="chisel.html">chisel</a>, <a href="clash.html">clash</a>, <a href="cloc.html">cloc</a>, <a href="coq.html">Coq</a>, <a href="crystal.html">Crystal</a>, <a href="dex.html">dex</a>, <a href="dhall.html">Dhall</a>, <a href="differential-datalog.html">Differential Datalog</a>, <a href="ecr.html">Embedded Crystal</a>, <a href="emscripten.html">Emscripten</a>, <a href="enso.html">Enso</a>, <a href="erg.html">erg</a>, <a href="expresso.html">expresso</a>, <a href="factor.html">Factor</a>, <a href="fardlang.html">Fardlang</a>, <a href="felix.html">Felix</a>, <a href="forest-lang.html">forest-lang</a>, <a href="fp3.html">fp</a>, <a href="fstar.html">F*</a>, <a href="futhark.html">Futhark</a>, <a href="ghc.html">GHC</a>, <a href="gwion.html">Gwion</a>, <a href="hhvm.html">HHVM</a>, <a href="hobbes.html">hobbes</a>, <a href="ibis.html">Ibis</a>, <a href="idris.html">Idris</a>, <a href="imp-lang.html">imp</a>, <a href="jakt.html">Jakt</a>, <a href="jank.html">Jank</a>, <a href="k-framework.html">k-framework</a>, <a href="ladybird.html">Ladybird</a>, <a href="lamdu-editor.html">lamdu-editor</a>, <a href="lamdu.html">Lamdu</a>, <a href="lawvere.html">Lawvere</a>, <a href="lfortran.html">LFortran</a>, <a href="ligo.html">Ligo</a>, <a href="lil.html">Lil</a>, <a href="luna.html">Luna</a>, <a href="megaparsec.html">Megaparsec</a>, <a href="michelson.html">michelson</a>, <a href="minizinc.html">MiniZinc</a>, <a href="mlscript.html">MLscript</a>, <a href="mobl-lang.html">Mobl</a>, <a href="monte.html">monte</a>, <a href="mushroom.html">Mushroom</a>, <a href="odin.html">Odin</a>, <a href="oil.html">oil</a>, <a href="openscad.html">OpenSCAD</a>, <a href="pact.html">Pact</a>, <a href="poke.html">GNU Poke</a>, <a href="popr.html">popr</a>, <a href="prql.html">PRQL</a>, <a href="pygments.html">Pygments</a>, <a href="quint.html">Quint</a>, <a href="ramen.html">ramen</a>, <a href="raptorjit.html">raptorjit</a>, <a href="reason.html">Reason</a>, <a href="reflex-framework.html">reflex-framework</a>, <a href="rholang.html">Rholang</a>, <a href="roc.html">Roc</a>, <a href="savi.html">Savi</a>, <a href="sile.html">sile</a>, <a href="simplictiy.html">Simplicity</a>, <a href="slab.html">Slab</a>, <a href="slick.html">Slick</a>, <a href="surrealdb.html">SurrealDB</a>, <a href="terra.html">Terra</a>, <a href="ucg.html">UCG</a>, <a href="uiua.html">Uiua</a>, <a href="unison.html">unison</a>, <a href="urweb.html">UrWeb</a>, <a href="vcpkg-pm.html">Vcpkg</a>, <a href="wasmer.html">wasmer</a>, <a href="worst.html">Worst</a>, <a href="zest.html">Zest</a>
 
+```Example from the web:
 {
  boot.loader.grub.device = &quot;/dev/sda&quot;;
 
@@ -24,7 +25,9 @@ Nix is an open source package manager created in 2003.
 
  services.sshd.enable = true;
 }
+```
 
+```Example from <a href='https://github.com/wmertens/sublime-nix'>Linguist</a>:
 { stdenv, fetchurl, fetchgit, openssl, zlib, pcre, libxml2, libxslt, expat
 , rtmp ? false
 , fullWebDAV ? false
@@ -105,29 +108,32 @@ stdenv.mkDerivation rec {
     inherit version;
   };
 }
+```
 
+```Nix <a href="../lists/keywords.html#q=nix">Keywords</a>
 rec with let in inherit assert if else then ...
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

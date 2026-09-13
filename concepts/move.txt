@@ -1,0 +1,28 @@
+Move
+====
+
+Move is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22contractLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">contract language</a> created in 2022 by Sam Blackshear.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2022
+ https://pldb.io/concepts/../lists/creators.html#q=Sam%20Blackshear Sam Blackshear
+
+#2593 on PLDB
+4 Years Old
+
+A blockchain-agnostic language offering significant advancements in security and productivity. Move drastically reduces the Web3 learning curve and enables a developer experience of unprecedented ease. On a computer, everything is just bits and bytes and can be freely copied. You want a language that gives you the necessary abstractions around ownership and scarcity, just like in the physical world. You want those basic safety guarantees. That's what Move does and why we created a new language. These things are hard to recreate in other languages, including existing smart contract languages, and we wanted to design the entire language around providing these primitives so programmers can write code safely and efficiently and not have to reinvent the wheel every time they want to write some code.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"contractLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>contractLanguage</a>
+- Early development of Move happened in <a href="../lists/labs.html#q=Mysten Labs">Mysten Labs</a>
+
+```Example from the web:
+module satoshi_flip::house_data {
+ use sui::balance::{Self, Balance};
+ use sui::sui::SUI;
+ use sui::coin::{Self, Coin};
+ use sui::package::{Self};
+ // Error codes
+ const ECallerNotHouse: u64 = 0;
+ const EInsufficientBalance: u64 = 1;
+}
+```
+
+Built with Scroll v178.2.3

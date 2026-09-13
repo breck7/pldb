@@ -1,31 +1,32 @@
 Smarty
 ======
 
-Smarty is an open source template language created in 2006 by Monte Ohrt and Messju Mohr and Uwe Tews.
+Smarty is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22template%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">template language</a> created in 2006 by Monte Ohrt and Messju Mohr and Uwe Tews.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
  https://pldb.io/concepts/../lists/creators.html#q=Monte%20Ohrt Monte Ohrt
  https://pldb.io/concepts/../lists/creators.html#q=Messju%20Mohr Messju Mohr
  https://pldb.io/concepts/../lists/creators.html#q=Uwe%20Tews Uwe Tews
 
-#409 on PLDB
-18 Years Old
-31k Repos
+#405 on PLDB
+20 Years Old
+31k <span title="Smarty repos on GitHub.">Repos</span>
 
 Smarty is a web template system written in PHP. Smarty is primarily promoted as a tool for separation of concerns. Smarty is intended to simplify compartmentalization, allowing the front-end of a web page to change separately from its back-end. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Smarty_(template_engine) Read more on Wikipedia...
 
-- Tags: template language
-- There are at least 31,402 Smarty repos on GitHub
-- Early development of Smarty happened in http://groups.google.com/group/smarty-developers
-- The  Google BigQuery Public Dataset GitHub snapshot shows 14k users using Smarty in 17k repos on GitHub
-- Smarty appears in the TIOBE Index
-- CodeMirror package for syntax highlighting Smarty
-- Pygments supports syntax highlighting for Smarty
-- GitHub supports syntax highlighting for Smarty
-- smarty.net was registered in 2002
-- See also: (3 related languages) PHP, ISBN, Twig
-- 4 PLDB concepts link to Smarty: Ace Editor, cloc, Eiffel, mgmt
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"template"%5D%7D%5D%2C"logic"%3A"AND"%7D'>template language</a>
+- There are at least 31,402 Smarty repos on <a href="https://github.com/search?q=language:Smarty">GitHub</a>
+- Early development of Smarty happened in <a href="../lists/labs.html#q=http://groups.google.com/group/smarty-developers">http://groups.google.com/group/smarty-developers</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 14k users using Smarty in 17k repos on <a href="https://api.github.com/search/repositories?q=language:Smarty">GitHub</a>
+- Smarty appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/smarty">package</a> for syntax highlighting Smarty
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/templates.py">syntax highlighting</a> for Smarty
+- GitHub supports <a href="https://github.com/textmate/php-smarty.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Smarty
+- <a href="http://www.smarty.net">smarty.net</a> was registered in 2002
+- See also: (3 related languages) <a href="php.html">PHP</a>, <a href="isbn.html">ISBN</a>, <a href="twig.html">Twig</a>
+- 5 PLDB concepts link to Smarty: <a href="ace.html">Ace Editor</a>, <a href="cloc.html">cloc</a>, <a href="eiffel.html">Eiffel</a>, <a href="mgmt.html">mgmt</a>, <a href="netbeans-editor.html">netbeans-editor</a>
 
+```Example from the web:
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -37,7 +38,9 @@ Smarty is a web template system written in PHP. Smarty is primarily promoted as 
 {$body_html}
 &lt;/body&gt; &lt;!-- this is a little comment that will be seen in the HTML source --&gt;
 &lt;/html&gt;
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Smarty_(template_engine)'>Wikipedia</a>:
 define(&#39;SMARTY_DIR&#39;, &#39;smarty-2.6.22/&#39;);
 require_once(SMARTY_DIR . &#39;Smarty.class.php&#39;);
 
@@ -49,5 +52,6 @@ $smarty-&gt;assign(&#39;title_text&#39;, &#39;TITLE: This is the Smarty basic ex
 $smarty-&gt;assign(&#39;body_html&#39;, &#39;&lt;p&gt;BODY: This is the message set using assign()&lt;/p&gt;&#39;);
 
 $smarty-&gt;display(&#39;index.tpl&#39;);
+```
 
-View source
+Built with Scroll v178.2.3

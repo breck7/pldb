@@ -27,16 +27,17 @@ Conclusion
 ==========
 
 TypeScript, Go, JSON, and Clojure are a handful of very popular Top 100 languages that were created by people after age 40.
- https://pldb.io/blog/../concepts/typescript.html TypeScript
- https://pldb.io/blog/../concepts/go.html Go
- https://pldb.io/blog/../concepts/json.html JSON
- https://pldb.io/blog/../concepts/clojure.html Clojure
+ https://pldb.io/../concepts/typescript.html TypeScript
+ https://pldb.io/../concepts/go.html Go
+ https://pldb.io/../concepts/json.html JSON
+ https://pldb.io/../concepts/clojure.html Clojure
 
 If you are under 55, it is not unprecedented to create a popular programming language.
 
 Download the data
- https://pldb.io/blog/age.tsv Download the data
+ https://pldb.io/age.tsv Download the data
 
+```
 html.h1 Am I too old to create a popular programming language?
 web.get https://pldb.io/blog/age.tsv
  vega.histogram
@@ -53,7 +54,8 @@ web.get https://pldb.io/blog/age.tsv
  vega.scatter
   xColumn ageAtCreation
   yColumn pldbScore
+```
 
 ⁂
 
-View source
+Built with Scroll v178.2.3

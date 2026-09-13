@@ -1,21 +1,22 @@
 DTD
 ===
 
-DTD, aka document type definition, is a grammar language created in 1996.
+DTD, aka document type definition, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22grammarLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">grammar language</a> created in 1996.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1996
 
-#581 on PLDB
-28 Years Old
+#594 on PLDB
+30 Years Old
 
 A document type definition (DTD) is a set of markup declarations that define a document type for an SGML-family markup language (SGML, XML, HTML). A Document Type Definition (DTD) defines the legal building blocks of an XML document. It defines the document structure with a list of legal elements and attributes. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Document_type_definition Read more on Wikipedia...
 
-- Tags: grammarLanguage
-- Early development of DTD happened in ISO
-- Pygments supports syntax highlighting for DTD
-- See also: (2 related languages) XML, HTML
-- 23 PLDB concepts link to DTD: Ballerina, Ceylon, Chapel, Click, commonmark, Eiffel, Emscripten, Erlang, Factor, Gradle, HHVM, Java, mythryl, NetLogo, OpenNN, PHP, Pygments, Python, relax, SmallBASIC, Trex, VLC, xduce
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"grammarLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>grammarLanguage</a>
+- Early development of DTD happened in <a href="../lists/labs.html#q=ISO">ISO</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/html.py">syntax highlighting</a> for DTD
+- See also: (2 related languages) <a href="xml.html">XML</a>, <a href="html.html">HTML</a>
+- 24 PLDB concepts link to DTD: <a href="ballerina.html">Ballerina</a>, <a href="ceylon.html">Ceylon</a>, <a href="click.html">Click</a>, <a href="commonmark.html">commonmark</a>, <a href="eiffel.html">Eiffel</a>, <a href="emscripten.html">Emscripten</a>, <a href="erlang.html">Erlang</a>, <a href="factor.html">Factor</a>, <a href="gradle.html">Gradle</a>, <a href="hhvm.html">HHVM</a>, <a href="java.html">Java</a>, <a href="mythryl.html">mythryl</a>, <a href="netbeans-editor.html">netbeans-editor</a>, <a href="netlogo.html">NetLogo</a>, <a href="open-nn.html">OpenNN</a>, <a href="php.html">PHP</a>, <a href="pkl.html">Pkl</a>, <a href="pygments.html">Pygments</a>, <a href="python.html">Python</a>, <a href="relax.html">relax</a>, <a href="smallbasic.html">SmallBASIC</a>, <a href="trex.html">Trex</a>, <a href="vlc.html">VLC</a>, <a href="xduce.html">xduce</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Document_type_definition'>Wikipedia</a>:
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
 &lt;!DOCTYPE people_list [
   &lt;!ELEMENT people_list (person*)&gt;
@@ -32,5 +33,6 @@ A document type definition (DTD) is a set of markup declarations that define a d
     &lt;gender&gt;Male&lt;/gender&gt;
   &lt;/person&gt;
 &lt;/people_list&gt;
+```
 
-View source
+Built with Scroll v178.2.3

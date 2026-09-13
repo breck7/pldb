@@ -1,24 +1,28 @@
 dlvm
 ====
 
-dlvm is an intermediate representation language created in 2017 by Chris Lattner.
+dlvm is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22ir%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">intermediate representation language</a> created in 2017 by Chris Lattner.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2017
  https://pldb.io/concepts/../lists/creators.html#q=Chris%20Lattner Chris Lattner
 
-#600 on PLDB
-7 Years Old
+#579 on PLDB
+9 Years Old
 
+```Download source code:
 git clone https://github.com/dlvm-team/swift
+```
 
 Modern Compiler Infrastructure for Deep Learning Systems
 
-- Tags: intermediate representation language
-- dlvm is developed on GitHub and has 0 stars
-- Early development of dlvm happened in University of Illinois Urbana-Champaign and Purdue University
-- dlvm.org was registered in 2022
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"ir"%5D%7D%5D%2C"logic"%3A"AND"%7D'>intermediate representation language</a>
+- dlvm is developed on <a href="https://github.com/dlvm-team/swift">GitHub</a> and has 0 stars
+- Early development of dlvm happened in <a href="../lists/labs.html#q=University of Illinois Urbana-Champaign">University of Illinois Urbana-Champaign</a> and <a href="../lists/labs.html#q=Purdue University">Purdue University</a>
+- dlvm is written in <a href="swift.html">Swift</a>, <a href="cpp.html">C++</a>, <a href="cmake.html">CMake</a>, <a href="python.html">Python</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="json.html">JSON</a>, <a href="markdown.html">Markdown</a>, <a href="objective-c.html">Objective-C</a>, <a href="objective-cpp.html">Objective C++</a>, <a href="bash.html">Bash</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="llvmir.html">LLVM IR</a>, <a href="c.html">C</a>, <a href="vim-script.html">Vim script</a>, <a href="lisp.html">Lisp</a>, <a href="xml.html">XML</a>, <a href="make.html">Make</a>, <a href="html.html">HTML</a>, <a href="d.html">D</a>, <a href="yaml.html">YAML</a>, <a href="css.html">CSS</a>, <a href="ini.html">Ini</a>, <a href="javascript.html">JavaScript</a>, <a href="ruby.html">Ruby</a>, <a href="perl.html">Perl</a>, <a href="matlab.html">MATLAB</a>
+- <a href="http://dlvm.org/">dlvm.org</a> was registered in 2022
 - Read more about dlvm on the web: 1.
  https://dlvm-team.github.io/ 1.
 
+```Example from the web:
 // Dimension-erased functions are flexible because input shapes are dynamic.
 // They may be slower and less optimized than their shape-specialized counterparts.
 
@@ -30,29 +34,30 @@ func @f: (&lt;_ x _ x f32&gt;, &lt;_ x _ x f32&gt;, &lt;_ x f32&gt;) -&gt; &lt;_
     %0.2 = add %0.0: &lt;_ x _ x f32&gt;, %0.1: &lt;1 x _ x f32&gt;
     return %0.2: &lt;_ x _ x f32&gt;
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

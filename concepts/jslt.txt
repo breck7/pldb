@@ -1,49 +1,51 @@
 JSLT
 ====
 
-JSLT is a programming language created in 2017 by Lars Marius Garshol.
+JSLT is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2017 by Lars Marius Garshol.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2017
  https://pldb.io/concepts/../lists/creators.html#q=Lars%20Marius%20Garshol Lars Marius Garshol
 
-#662 on PLDB
-7 Years Old
+#697 on PLDB
+9 Years Old
 
+```Download source code:
 git clone https://github.com/schibsted/jslt
+```
 
 JSON query and transformation language
 
-- Tags: programming language
-- JSLT is developed on GitHub and has 620 stars
-- Early development of JSLT happened in https://github.com/schibsted
-- JSLT is written in Java, Markdown, JSON, HTML, YAML, Gradle, Bourne shell, Lisp
-- Pygments supports syntax highlighting for JSLT
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- JSLT is developed on <a href="https://github.com/schibsted/jslt">GitHub</a> and has 620 stars
+- Early development of JSLT happened in <a href="../lists/labs.html#q=https://github.com/schibsted">https://github.com/schibsted</a>
+- JSLT is written in <a href="java.html">Java</a>, <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>, <a href="html.html">HTML</a>, <a href="yaml.html">YAML</a>, <a href="gradle.html">Gradle</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="lisp.html">Lisp</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/jslt.py">syntax highlighting</a> for JSLT
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

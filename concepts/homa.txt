@@ -1,23 +1,25 @@
 Homa
 ====
 
-Homa is an open source protocol created in 2018 by John Ousterhout.
+Homa is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22protocol%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">protocol</a> created in 2018 by John Ousterhout.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2018
  https://pldb.io/concepts/../lists/creators.html#q=John%20Ousterhout John Ousterhout
 
-#772 on PLDB
-6 Years Old
+#799 on PLDB
+8 Years Old
 
+```Download source code:
 git clone https://github.com/PlatformLab/HomaModule
+```
 
 TCP’s problems are too fundamental and interrelated to be fixed; the only way to harness the full performance potential of modern networks is to introduce a new transport protocol into the datacenter.
 
-- Tags: protocol
-- Homa is developed on GitHub and has 171 stars
-- Early development of Homa happened in Stanford University
-- TCP influenced the design of Homa
-- Homa is written in Python, C, C++, Markdown, Bash, Make, Bourne shell, Perl, CMake
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"protocol"%5D%7D%5D%2C"logic"%3A"AND"%7D'>protocol</a>
+- Homa is developed on <a href="https://github.com/PlatformLab/HomaModule">GitHub</a> and has 171 stars
+- Early development of Homa happened in <a href="../lists/labs.html#q=Stanford University">Stanford University</a>
+- <a href="tcp.html">TCP</a> influenced the design of Homa
+- Homa is written in <a href="python.html">Python</a>, <a href="c.html">C</a>, <a href="cpp.html">C++</a>, <a href="markdown.html">Markdown</a>, <a href="bash.html">Bash</a>, <a href="make.html">Make</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="perl.html">Perl</a>, <a href="cmake.html">CMake</a>
 - Read more about Homa on the web: 1.
  https://web.stanford.edu/~ouster/cgi-bin/papers/replaceTcp.pdf 1.
 
-View source
+Built with Scroll v178.2.3

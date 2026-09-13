@@ -1,19 +1,20 @@
 RELAX NG
 ========
 
-RELAX NG is a grammar language created in 2001.
+RELAX NG is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22grammarLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">grammar language</a> created in 2001.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2001
 
-#874 on PLDB
-23 Years Old
+#906 on PLDB
+25 Years Old
 
 In computing, RELAX NG (REgular LAnguage for XML Next Generation) is a schema language for XML - a RELAX NG schema specifies a pattern for the structure and content of an XML document. A RELAX NG schema is itself an XML document but RELAX NG also offers a popular compact, non-XML syntax. Compared to other XML schema languages  RELAX NG is considered relatively simple. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/RELAX_NG Read more on Wikipedia...
 
-- Tags: grammarLanguage
-- Early development of RELAX NG happened in https://relaxng.org
-- relaxng.org was registered in 2001
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"grammarLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>grammarLanguage</a>
+- Early development of RELAX NG happened in <a href="../lists/labs.html#q=https://relaxng.org">https://relaxng.org</a>
+- <a href="https://relaxng.org/">relaxng.org</a> was registered in 2001
 
+```Example from the web:
 # A RELAX NG compact syntax pattern
 # for an address book.
 element addressBook {
@@ -23,29 +24,30 @@ element addressBook {
     element email { text }  # an email address
   }*
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # Comments start with a # and continue to the end of the line:
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

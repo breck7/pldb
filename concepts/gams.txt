@@ -1,23 +1,24 @@
 GAMS
 ====
 
-GAMS is a programming language created in 1988.
+GAMS is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1988.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221988%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1988
 
-#1923 on PLDB
-36 Years Old
+#1997 on PLDB
+38 Years Old
 
 The General Algebraic Modeling System (GAMS) is a high-level modeling system for mathematical programming and optimization. It consists of a language compiler and a stable of integrated high-performance solvers. GAMS is tailored for complex, large scale modeling applications, and allows you to build large maintainable models that can be adapted quickly to new situations. GAMS is specifically designed for modeling linear, nonlinear and mixed integer optimization problems.
 
-- Tags: programming language
-- Early development of GAMS happened in GAMS Development Corp
-- There are 3 Project Euler users using GAMS
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of GAMS happened in <a href="../lists/labs.html#q=GAMS Development Corp">GAMS Development Corp</a>
+- There are 3 <a href="https://projecteuler.net/language=GAMS">Project Euler</a> users using GAMS
 - GAMS on HOPL
  https://hopl.info/showlanguage.prx?exp=4914 GAMS on HOPL
 - Read more about GAMS on Semantic Scholar: 1.
  https://semanticscholar.org/paper/cb3e367dc06962b67e543cf02481ac804e85234e 1.
-- 4 PLDB concepts link to GAMS: mpl, MPS Format, Optimization Programming Language, rason
+- 4 PLDB concepts link to GAMS: <a href="mpl.html">mpl</a>, <a href="mps-format.html">MPS Format</a>, <a href="optimization-programming-language.html">Optimization Programming Language</a>, <a href="rason.html">rason</a>
 
+```Example from the web:
 Sets
        i   canning plants   / Seattle, San-Diego /
        j   markets          / New-York, Chicago, Topeka / ;
@@ -50,5 +51,6 @@ supply(i) ..   sum(j, x(i,j))  =l=  a(i) ;
 demand(j) ..   sum(i, x(i,j))  =g=  b(j) ;
 Model transport /all/ ;
 Solve transport using LP minimizing z ;
+```
 
-View source
+Built with Scroll v178.2.3

@@ -1,41 +1,44 @@
 Caché ObjectScript
 ==================
 
-Caché ObjectScript is a programming language created in 1997.
+Caché ObjectScript is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1997.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1997
 
-#1191 on PLDB
-27 Years Old
+#1237 on PLDB
+29 Years Old
 
 Caché ObjectScript is a part of the Caché database system sold by InterSystems. The language is a functional superset of the ANSI-standard MUMPS programming language. Since Caché is at its core a MUMPS implementation, it can run ANSI MUMPS routines with no change. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Caché_ObjectScript Read more on Wikipedia...
 
-- Tags: programming language
-- Caché ObjectScript is a superset of MUMPS
-- Early development of Caché ObjectScript happened in InterSystems
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Caché ObjectScript is a <a href="../lists/explorer.html#columns=rank~id~appeared~tags~creators~supersetOf&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22supersetOf%22%2C%22origData%22%3A%22supersetOf%22%2C%22tags%22%3A%22html%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">superset</a> of <a href="mumps.html">MUMPS</a>
+- Early development of Caché ObjectScript happened in <a href="../lists/labs.html#q=InterSystems">InterSystems</a>
 - Caché ObjectScript on HOPL
  https://hopl.info/showlanguage.prx?exp=4987 Caché ObjectScript on HOPL
-- See also: (2 related languages) MUMPS, SQL
+- See also: (2 related languages) <a href="mumps.html">MUMPS</a>, <a href="sql.html">SQL</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/c/Cache ObjectScript.mac'>hello-world</a>:
 HelloWorld  ;
   Write &quot;Hello World&quot;
   Quit
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token Write
 
-View source
+Built with Scroll v178.2.3

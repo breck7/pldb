@@ -1,24 +1,28 @@
 mathics
 =======
 
-mathics is an open source programming language created in 2012.
+mathics is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2012.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
 
-#346 on PLDB
-12 Years Old
+#369 on PLDB
+14 Years Old
 
+```Download source code:
 git clone https://github.com/mathics/Mathics
+```
 
 Mathics is a free, general-purpose online computer algebra system featuring Mathematica-compatible syntax and functions. It is backed by highly extensible Python code, relying on SymPy for most mathematical tasks.
 
-- Tags: programming language
-- mathics is developed on GitHub and has 2,075 stars
-- Early development of mathics happened in https://github.com/Mathics3
-- mathics is written in Python, Mathematica, YAML, reStructuredText, SVG, Bourne shell, XML, Make, Tex, Markdown, CSV, MATLAB, HTML, Perl, JSON, Ini
-- There is 1 Jupyter Kernel for mathics
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- mathics is developed on <a href="https://github.com/mathics/Mathics">GitHub</a> and has 2,075 stars
+- Early development of mathics happened in <a href="../lists/labs.html#q=https://github.com/Mathics3">https://github.com/Mathics3</a>
+- mathics is written in <a href="python.html">Python</a>, <a href="mathematica.html">Mathematica</a>, <a href="yaml.html">YAML</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="svg.html">SVG</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="xml.html">XML</a>, <a href="make.html">Make</a>, <a href="tex.html">Tex</a>, <a href="markdown.html">Markdown</a>, <a href="csv.html">CSV</a>, <a href="matlab.html">MATLAB</a>, <a href="html.html">HTML</a>, <a href="perl.html">Perl</a>, <a href="json.html">JSON</a>, <a href="ini.html">Ini</a>
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="http://nbviewer.ipython.org/gist/sn6uv/8381447">Kernel</a> for mathics
 - Read more about mathics on the web: 1.
  https://news.ycombinator.com/item?id=11459186 1.
 
+```Example from the web:
 StringJoin[Riffle[Map[ToString, Table[Fibonacci[i], {i,16}]], &quot;, &quot;]] &lt;&gt; &quot;...&quot;
+```
 
-View source
+Built with Scroll v178.2.3

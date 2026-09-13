@@ -1,26 +1,29 @@
 PEG.js
 ======
 
-PEG.js is an open source grammar language created in 2010 by David Majda.
+PEG.js is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22grammarLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">grammar language</a> created in 2010 by David Majda.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2010
  https://pldb.io/concepts/../lists/creators.html#q=David%20Majda David Majda
 
-#176 on PLDB
-14 Years Old
-72 Repos
+#189 on PLDB
+16 Years Old
+72 <span title="PEG.js repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/pegjs/pegjs
+```
 
 PEG.js is a simple parser generator for JavaScript that produces fast parsers with excellent error reporting. You can use it to process complex data or computer languages and build transformers, interpreters, compilers and other tools easily.
 
-- Tags: grammarLanguage
-- PEG.js is developed on GitHub and has 4,802 stars
-- There are at least 72 PEG.js repos on GitHub
-- Early development of PEG.js happened in https://github.com/pegjs
-- PEG.js compiles to JavaScript
-- PEG.js is written in JavaScript, Markdown, CSS, JSON, TypeScript, HTML, YAML
-- The  Google BigQuery Public Dataset GitHub snapshot shows 63 users using PEG.js in 63 repos on GitHub
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"grammarLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>grammarLanguage</a>
+- PEG.js is developed on <a href="https://github.com/pegjs/pegjs">GitHub</a> and has 4,802 stars
+- There are at least 72 PEG.js repos on <a href="https://github.com/search?q=language:PEG.js">GitHub</a>
+- Early development of PEG.js happened in <a href="../lists/labs.html#q=https://github.com/pegjs">https://github.com/pegjs</a>
+- PEG.js compiles to <a href="javascript.html">JavaScript</a>
+- PEG.js is written in <a href="javascript.html">JavaScript</a>, <a href="markdown.html">Markdown</a>, <a href="css.html">CSS</a>, <a href="json.html">JSON</a>, <a href="typescript.html">TypeScript</a>, <a href="html.html">HTML</a>, <a href="yaml.html">YAML</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 63 users using PEG.js in 63 repos on <a href="https://api.github.com/search/repositories?q=language:PEG.js">GitHub</a>
 
+```Example from the web:
 start
  = additive
 
@@ -38,21 +41,22 @@ primary
 
 integer &quot;integer&quot;
   = digits:[0-9]+ { return parseInt(digits.join(&quot;&quot;), 10); }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -60,15 +64,15 @@ row
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

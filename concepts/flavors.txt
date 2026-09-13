@@ -1,19 +1,19 @@
 Flavors
 =======
 
-Flavors is a programming language created in 1980.
+Flavors is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1980.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221980%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1980
 
-#2150 on PLDB
-44 Years Old
+#2233 on PLDB
+46 Years Old
 
 Flavors, an early object-oriented extension to Lisp developed by Howard Cannon at the MIT Artificial Intelligence Laboratory for the Lisp machine and its programming language Lisp Machine Lisp, was the first programming language to include mixins. Symbolics used it for its Lisp machines, and eventually developed it into New Flavors; both the original and new Flavors were message passing OO models. It was hugely influential in the development of the Common Lisp Object System (CLOS).Implementations of Flavors are also available for Common Lisp.New Flavors replaced message sending with calling generic functions. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Flavors_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Flavors happened in MIT
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Flavors happened in <a href="../lists/labs.html#q=MIT">MIT</a>
 - Flavors on HOPL
  https://hopl.info/showlanguage.prx?exp=898 Flavors on HOPL
-- See also: (2 related languages) Lisp Machine Lisp, Common Lisp
+- See also: (2 related languages) <a href="lisp-machine-lisp.html">Lisp Machine Lisp</a>, <a href="common-lisp.html">Common Lisp</a>
 
-View source
+Built with Scroll v178.2.3

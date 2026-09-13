@@ -1,0 +1,17 @@
+../code/conceptPage.scroll
+
+id begriffsschrift
+name Begriffsschrift
+appeared 1879
+creators Gottlob Frege
+tags notation
+description A formula language, modeled on that of arithmetic, for pure thought.
+
+influencedBy binary-notation
+country Germany
+
+example
+ ⊢ (a → b) → (¬b → ¬a)
+ # Represents the logical implication: if a implies b, then not b implies not a.
+
+wikipedia https://en.wikipedia.org/wiki/Begriffsschrift

@@ -1,41 +1,48 @@
 IDL
 ===
 
-IDL, aka Interactive Data Language, is a programming language created in 1977 by David Stern.
+IDL, aka Interactive Data Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1977 by David Stern.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221977%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1977
  https://pldb.io/concepts/../lists/creators.html#q=David%20Stern David Stern
 
-#128 on PLDB
-47 Years Old
-2k Repos
+#132 on PLDB
+49 Years Old
+2k <span title="IDL repos on GitHub.">Repos</span>
 
 IDL, short for Interactive Data Language, is a programming language used for data analysis. It is popular in particular areas of science, such as astronomy, atmospheric physics and medical imaging. IDL shares a common syntax with PV-Wave and originated from the same codebase, though the languages have subsequently diverged in detail. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/IDL_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 2,337 IDL repos on GitHub
-- Early development of IDL happened in L3Harris Geospatial Solutions, Inc
-- The  Google BigQuery Public Dataset GitHub snapshot shows 5k users using IDL in 5k repos on GitHub
-- Explore IDL snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 2,337 IDL repos on <a href="https://github.com/search?q=language:IDL">GitHub</a>
+- Early development of IDL happened in <a href="../lists/labs.html#q=L3Harris Geospatial Solutions, Inc">L3Harris Geospatial Solutions, Inc</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 5k users using IDL in 5k repos on <a href="https://api.github.com/search/repositories?q=language:IDL">GitHub</a>
+- Explore IDL snippets on <a href="http://www.rosettacode.org/wiki/Category:IDL">Rosetta Code</a>
 - IDL on HOPL
  https://hopl.info/showlanguage.prx?exp=760 IDL on HOPL
-- IDL appears in the TIOBE Index
-- ANTLR grammar for IDL
-- CodeMirror package for syntax highlighting IDL
-- Pygments supports syntax highlighting for IDL
-- GitHub supports syntax highlighting for IDL
-- There is 1 Jupyter Kernel for IDL
-- See also: (11 related languages) GNU Data Language, PV-Wave, Fortran, C, Unix, Smalltalk, MATLAB, NumPy, Python, Perl Data Language, Perl
+- IDL appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/idl">grammar</a> for IDL
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/idl">package</a> for syntax highlighting IDL
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/idl.py">syntax highlighting</a> for IDL
+- GitHub supports <a href="https://github.com/mgalloy/idl.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for IDL
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/lstagner/idl_kernel">Kernel</a> for IDL
+- See also: (11 related languages) <a href="gdl.html">GNU Data Language</a>, <a href="pv-wave.html">PV-Wave</a>, <a href="fortran.html">Fortran</a>, <a href="c.html">C</a>, <a href="unix.html">Unix</a>, <a href="smalltalk.html">Smalltalk</a>, <a href="matlab.html">MATLAB</a>, <a href="numpy.html">NumPy</a>, <a href="python.html">Python</a>, <a href="perl-data-language.html">Perl Data Language</a>, <a href="perl.html">Perl</a>
 - Read more about IDL on the web: 1.
  https://www.harrisgeospatial.com/Software-Technology/IDL 1.
-- 21 PLDB concepts link to IDL: cloc, Deno, Eiffel, Emscripten, FLEX, Gradle, Halide, HHVM, idyll, J, JSON-LD, Kotlin, Ladybird, MongoDB, Node.js, OpenCV, PostgreSQL, Pygments, Python, Racket, Ruby
+- 23 PLDB concepts link to IDL: <a href="cloc.html">cloc</a>, <a href="cmake.html">CMake</a>, <a href="deno.html">Deno</a>, <a href="eiffel.html">Eiffel</a>, <a href="emscripten.html">Emscripten</a>, <a href="flex.html">FLEX</a>, <a href="gradle.html">Gradle</a>, <a href="halide.html">Halide</a>, <a href="hhvm.html">HHVM</a>, <a href="idyll.html">idyll</a>, <a href="j.html">J</a>, <a href="json-ld.html">JSON-LD</a>, <a href="kotlin.html">Kotlin</a>, <a href="ladybird.html">Ladybird</a>, <a href="mongodb.html">MongoDB</a>, <a href="nodejs.html">Node.js</a>, <a href="opencv.html">OpenCV</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="pygments.html">Pygments</a>, <a href="python.html">Python</a>, <a href="racket.html">Racket</a>, <a href="ruby.html">Ruby</a>, <a href="tiscript.html">TIScript</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/i/IDL'>hello-world</a>:
 print, &quot;Hello World&quot;
 end
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Interactive'>the Hello World Collection</a>:
 IDL&gt; ; Hello World in IDL (Interactive Data Language)
 IDL&gt; print, &quot;Hello World&quot;
 
+```
+
+```Example from <a href='https://github.com/mgalloy/idl.tmbundle'>Linguist</a>:
 MODULE mg_analysis
 DESCRIPTION Tools for analysis
 VERSION 1.0
@@ -45,57 +52,59 @@ BUILD_DATE January 18, 2011
 FUNCTION MG_ARRAY_EQUAL      2 2 KEYWORDS
 FUNCTION MG_TOTAL            1 1
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

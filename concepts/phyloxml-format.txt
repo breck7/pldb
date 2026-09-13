@@ -1,20 +1,21 @@
 PhyloXML
 ========
 
-PhyloXML is a xml format created in 2009.
+PhyloXML is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22xmlFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">xml format</a> created in 2009.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2009
 
-#1801 on PLDB
-15 Years Old
+#1870 on PLDB
+17 Years Old
 
 PhyloXML is an XML language for the analysis, exchange, and storage of phylogenetic trees (or networks) and associated data. The structure of phyloXML is described by XML Schema Definition (XSD) language. A shortcoming of current formats for describing phylogenetic trees (such as Nexus and Newick/New Hampshire) is a lack of a standardized means to annotate tree nodes and branches with distinct data fields (which in the case of a basic species tree might be: species names, branch lengths, and possibly multiple support values). Read more on Wikipedia...
  https://en.wikipedia.org/wiki/PhyloXML Read more on Wikipedia...
 
-- Tags: xmlFormat
-- Early development of PhyloXML happened in W3C
-- phyloxml.org was registered in 2005
-- See also: (3 related languages) XML, Nexus file, Newick format
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"xmlFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>xmlFormat</a>
+- Early development of PhyloXML happened in <a href="../lists/labs.html#q=W3C">W3C</a>
+- <a href="http://www.phyloxml.org/">phyloxml.org</a> was registered in 2005
+- See also: (3 related languages) <a href="xml.html">XML</a>, <a href="nexus-format.html">Nexus file</a>, <a href="newick-format.html">Newick format</a>
 
+```Example from the web:
  &lt;phyloxml xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
   xsi:schemaLocation=&quot;http://www.phyloxml.org http://www.phyloxml.org/1.10/phyloxml.xsd&quot;
   xmlns=&quot;http://www.phyloxml.org&quot;&gt;
@@ -37,7 +38,9 @@ PhyloXML is an XML language for the analysis, exchange, and storage of phylogene
      &lt;/clade&gt;
   &lt;/phylogeny&gt;
 &lt;/phyloxml&gt;
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/PhyloXML'>Wikipedia</a>:
 &lt;phyloxml xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
    xsi:schemaLocation=&quot;http://www.phyloxml.org http://www.phyloxml.org/1.10/phyloxml.xsd&quot;
    xmlns=&quot;http://www.phyloxml.org&quot;&gt;
@@ -60,5 +63,6 @@ PhyloXML is an XML language for the analysis, exchange, and storage of phylogene
       &lt;/clade&gt;
    &lt;/phylogeny&gt;
  &lt;/phyloxml&gt;
+```
 
-View source
+Built with Scroll v178.2.3

@@ -1,24 +1,27 @@
 Jesth
 =====
 
-Jesth, aka Just Extract Sections Then Hack !, is a data notation created in 2022.
+Jesth, aka Just Extract Sections Then Hack !, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 2022.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2022
 
-#1168 on PLDB
-2 Years Old
+#1207 on PLDB
+4 Years Old
 
+```Download source code:
 git clone https://github.com/pyrustic/jesth
+```
 
 Human-readable versatile data format
 
-- Tags: dataNotation
-- Jesth is developed on GitHub and has 193 stars
-- Early development of Jesth happened in https://github.com/pyrustic
-- Jesth is written in Markdown, Python, TOML, JSON
-- See also: (3 related languages) TOML, JSON, YAML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- Jesth is developed on <a href="https://github.com/pyrustic/jesth">GitHub</a> and has 193 stars
+- Early development of Jesth happened in <a href="../lists/labs.html#q=https://github.com/pyrustic">https://github.com/pyrustic</a>
+- Jesth is written in <a href="markdown.html">Markdown</a>, <a href="python.html">Python</a>, <a href="toml.html">TOML</a>, <a href="json.html">JSON</a>
+- See also: (3 related languages) <a href="toml.html">TOML</a>, <a href="json.html">JSON</a>, <a href="yaml.html">YAML</a>
 - Read more about Jesth on the web: 1.
  https://news.ycombinator.com/item?id=35991018 1.
 
+```Example from the web:
 This text actually belongs to an anonymous section,
 which happens to also be the first section of this document
 
@@ -27,5 +30,6 @@ This text actually belongs to the second anonymous section
 of this document.
 If the very first section of a document is anonymous, it can
 ignore to define its header.
+```
 
-View source
+Built with Scroll v178.2.3

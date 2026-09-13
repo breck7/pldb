@@ -1,42 +1,50 @@
 Red
 ===
 
-Red is an open source programming language created in 2011 by Nenad Rakocevic.
+Red is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2011 by Nenad Rakocevic.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2011
  https://pldb.io/concepts/../lists/creators.html#q=Nenad%20Rakocevic Nenad Rakocevic
 
-#106 on PLDB
-13 Years Old
-453 Repos
+#109 on PLDB
+15 Years Old
+453 <span title="Red repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/red/red
+```
 
 Red is a computer programming language. Red was made to overcome the limitations of the programming language Rebol. Introduced in 2011 by Nenad Rakocevic, Red is both an imperative and functional programming language. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Red_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Red is developed on GitHub and has 5,479 stars
-- There are at least 453 Red repos on GitHub
-- Early development of Red happened in https://github.com/red
-- Red is written in R, Java, Markdown, XML, YAML, C, HTML, Bourne shell, CSS, Dockerfile, Visual Basic, CSV
-- The  Google BigQuery Public Dataset GitHub snapshot shows 92 users using Red in 98 repos on GitHub
-- Explore Red snippets on Rosetta Code
-- Red appears in the TIOBE Index
-- Red LSP implementation
-- Pygments supports syntax highlighting for Red
-- GitHub supports syntax highlighting for Red
-- Learn Red on exercism.
-- red-lang.org was registered in 2010
-- See also: (7 related languages) Linux, Scala, Lua, X86, ARM, FreeBSD, Android
-- 1 PLDB concepts link to Red: Particles
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Red is developed on <a href="https://github.com/red/red">GitHub</a> and has 5,479 stars
+- There are at least 453 Red repos on <a href="https://github.com/search?q=language:Red">GitHub</a>
+- Early development of Red happened in <a href="../lists/labs.html#q=https://github.com/red">https://github.com/red</a>
+- Red is written in <a href="r.html">R</a>, <a href="java.html">Java</a>, <a href="markdown.html">Markdown</a>, <a href="xml.html">XML</a>, <a href="yaml.html">YAML</a>, <a href="c.html">C</a>, <a href="html.html">HTML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="css.html">CSS</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="visual-basic.html">Visual Basic</a>, <a href="csv.html">CSV</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 92 users using Red in 98 repos on <a href="https://api.github.com/search/repositories?q=language:Red">GitHub</a>
+- Explore Red snippets on <a href="http://www.rosettacode.org/wiki/Category:Red">Rosetta Code</a>
+- Red appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- Red <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/bitbegin/redlangserver">implementation</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/rebol.py">syntax highlighting</a> for Red
+- GitHub supports <a href="https://github.com/Oldes/Sublime-Red" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Red
+- Learn <a href="https://exercism.org/tracks/red">Red on exercism.</a>
+- <a href="http://www.red-lang.org/">red-lang.org</a> was registered in 2010
+- See also: (7 related languages) <a href="linux.html">Linux</a>, <a href="scala.html">Scala</a>, <a href="lua.html">Lua</a>, <a href="x86-isa.html">X86</a>, <a href="arm.html">ARM</a>, <a href="freebsd.html">FreeBSD</a>, <a href="android.html">Android</a>
+- 1 PLDB concepts link to Red: <a href="particles.html">Particles</a>
 
+```Example from <a href='https://riju.codes/red'>Riju</a>:
 Red [Title: &quot;Main&quot;]
 
 print &quot;Hello, world!&quot;
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/r/Red.red'>hello-world</a>:
 Red [Needs: &#39;View]
 view [text &quot;Hello World&quot;]
+```
 
+```Example from <a href='https://github.com/Oldes/Sublime-Red'>Linguist</a>:
 Red/System [
     Title:      &quot;Red/System example file&quot;
     Purpose:    &quot;Just some code for testing Pygments colorizer&quot;
@@ -143,7 +151,6 @@ foo char
 
 ;get-word
 :foo
- 
 ;lit-word:
 &#39;foo &#39;foo
 
@@ -160,7 +167,9 @@ call/output reform [&#39;which interpreter] path: copy &quot;&quot;
 ]
 push CATCH_ALL                              ;-- exceptions root barrier
 push 0                                      ;-- keep stack aligned on 64-bit
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Red_(programming_language)'>Wikipedia</a>:
 Red/System [Title: &quot;A factorial script&quot;]
 
 factorial: func [
@@ -169,36 +178,37 @@ factorial: func [
 ][
 	either x = 0 [1][x * factorial x - 1]
 ]
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token ;
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

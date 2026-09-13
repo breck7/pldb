@@ -1,25 +1,28 @@
 Lily
 ====
 
-Lily is an open source programming language created in 2011.
+Lily is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2011.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2011
 
-#437 on PLDB
-13 Years Old
+#457 on PLDB
+15 Years Old
 
+```Download source code:
 git clone https://github.com/FascinatedBox/lily
+```
 
 An interpreted language with a focus on expressiveness and type safety
 
-- Tags: programming language
-- Lily is developed on GitHub and has 1,082 stars
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Lily is developed on <a href="https://github.com/FascinatedBox/lily">GitHub</a> and has 1,082 stars
 - Lily on GitLab
  https://gitlab.com/FascinatedBox/lily Lily on GitLab
-- Early development of Lily happened in https://gitlab.com/FascinatedBox/lily/-/issues
-- Lily is written in C, Lua, Ruby, Python, CMake, Markdown, YAML
-- Explore Lily snippets on Rosetta Code
-- lily-lang.org was registered in 2016
+- Early development of Lily happened in <a href="../lists/labs.html#q=https://gitlab.com/FascinatedBox/lily/-/issues">https://gitlab.com/FascinatedBox/lily/-/issues</a>
+- Lily is written in <a href="c.html">C</a>, <a href="lua.html">Lua</a>, <a href="ruby.html">Ruby</a>, <a href="python.html">Python</a>, <a href="cmake.html">CMake</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>
+- Explore Lily snippets on <a href="http://www.rosettacode.org/wiki/Category:Lily">Rosetta Code</a>
+- <a href="http://lily-lang.org">lily-lang.org</a> was registered in 2016
 
+```Example from the web:
 scoped enum Color { Black, Blue, Cyan, Green, Magenta, Red, White, Yellow }
 
 class Terminal(public var @foreground: Color, width_str: String)
@@ -35,21 +38,22 @@ var terms = [Terminal(Color.White, &quot;A&quot;), Terminal(Color.Red, &quot;40&
 
 terms.each(|e| e.width += 20 )
      |&gt; print
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

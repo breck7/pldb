@@ -1,22 +1,25 @@
 GN
 ==
 
-GN is an open source application created in 2015.
+GN is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 2015.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
 
-#920 on PLDB
-9 Years Old
+#956 on PLDB
+11 Years Old
 
+```Download source code:
 git clone https://github.com/o-lim/generate-ninja
+```
 
 GN, a meta-build system that generates Ninja build files
 
-- Tags: application
-- GN is developed on GitHub and has 77 stars
-- Early development of GN happened in https://github.com/o-lim/generate-ninja/issues
-- GN is written in C++, Python, Markdown, JSON, XML, Bourne shell, Vim script, YAML, Lisp, Make, Objective C++
-- GitHub supports syntax highlighting for GN
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>
+- GN is developed on <a href="https://github.com/o-lim/generate-ninja">GitHub</a> and has 77 stars
+- Early development of GN happened in <a href="../lists/labs.html#q=https://github.com/o-lim/generate-ninja/issues">https://github.com/o-lim/generate-ninja/issues</a>
+- GN is written in <a href="cpp.html">C++</a>, <a href="python.html">Python</a>, <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>, <a href="xml.html">XML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="vim-script.html">Vim script</a>, <a href="yaml.html">YAML</a>, <a href="lisp.html">Lisp</a>, <a href="make.html">Make</a>, <a href="objective-cpp.html">Objective C++</a>
+- GitHub supports <a href="https://github.com/devoncarew/language-gn" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for GN
 
+```Example from <a href='https://github.com/devoncarew/language-gn'>Linguist</a>:
 # Copyright 2014 The Chromium Authors. All rights reserved.
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
@@ -31,4 +34,6 @@ declare_args() {
   clang_base_path = &quot;//third_party/llvm-build/Release+Asserts&quot;
 }
 
-View source
+```
+
+Built with Scroll v178.2.3

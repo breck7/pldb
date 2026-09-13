@@ -1,19 +1,20 @@
 Sawzall
 =======
 
-Sawzall is a programming language created in 2003.
+Sawzall is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2003.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2003
 
-#2791 on PLDB
-21 Years Old
+#2805 on PLDB
+23 Years Old
 
 Sawzall is a procedural domain-specific programming language, used by Google to process large numbers of individual log records. Sawzall was first described in 2003, and the szl runtime was open-sourced in August 2010. However, since the MapReduce table aggregators have not been released, the open-sourced runtime is not useful for large-scale data analysis of multiple log files off the shelf. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Sawzall_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Sawzall happened in Google
-- See also: (4 related languages) Go, Protocol Buffers, Google File System, X86
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Sawzall happened in <a href="../lists/labs.html#q=Google">Google</a>
+- See also: (4 related languages) <a href="go.html">Go</a>, <a href="protobuf.html">Protocol Buffers</a>, <a href="gfs.html">Google File System</a>, <a href="x86-isa.html">X86</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Sawzall_(programming_language)'>Wikipedia</a>:
 count: table sum of int;
 total: table sum of float;
 sum_of_squares: table sum of float;
@@ -21,5 +22,6 @@ x: float = input;
 emit count &lt;- 1;
 emit total &lt;- x;
 emit sum_of_squares &lt;- x * x;
+```
 
-View source
+Built with Scroll v178.2.3

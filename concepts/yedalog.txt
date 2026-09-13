@@ -1,7 +1,7 @@
 Yedalog
 =======
 
-Yedalog is a query language created in 2015 by Brian Chin and Daniel von Dincklage and Vuk Ercegovac and Peter Hawkins and Mark S. Miller and Franz Och and Chris Olston and Fernando Pereira.
+Yedalog is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22queryLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">query language</a> created in 2015 by Brian Chin and Daniel von Dincklage and Vuk Ercegovac and Peter Hawkins and Mark S. Miller and Franz Och and Chris Olston and Fernando Pereira.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
  https://pldb.io/concepts/../lists/creators.html#q=Brian%20Chin Brian Chin
  https://pldb.io/concepts/../lists/creators.html#q=Daniel%20von%20Dincklage Daniel von Dincklage
@@ -12,17 +12,18 @@ Yedalog is a query language created in 2015 by Brian Chin and Daniel von Dinckla
  https://pldb.io/concepts/../lists/creators.html#q=Chris%20Olston Chris Olston
  https://pldb.io/concepts/../lists/creators.html#q=Fernando%20Pereira Fernando Pereira
 
-#2311 on PLDB
-9 Years Old
+#2403 on PLDB
+11 Years Old
 
  We introduce Yedalog, a declarative programming language that allows programmers to mix data-parallel pipelines and computation seamlessly in a single language. By contrast, most existing tools for data-parallel computation embed a sublanguage of data-parallel pipelines in a general-purpose language, or vice versa. Yedalog extends Datalog, incorporating not only computational features from logic programming, but also features for working with data structured as nested records. Yedalog programs can run both on a single machine, and distributed across a cluster in batch and interactive modes, allowing programmers to mix different modes of execution easily.
 
-- Tags: queryLanguage
-- Early development of Yedalog happened in Google
-- See also: (1 related languages) Datalog
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"queryLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>queryLanguage</a>
+- Early development of Yedalog happened in <a href="../lists/labs.html#q=Google">Google</a>
+- See also: (1 related languages) <a href="datalog.html">Datalog</a>
 - Read more about Yedalog on the web: 1.
  https://research.google/pubs/pub43462/ 1.
 
+```Example from the web:
 Documents = Load{path: &quot;document-parse-trees&quot;};
 
 # Code to execute for each document:
@@ -45,29 +46,30 @@ PerDocument{tokens}.Influence{mid} == count;
 
 # Persists Influential as protocol buffer data
 ? Store{data: Influential, path: &quot;influential-entities&quot;};
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

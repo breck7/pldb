@@ -1,28 +1,32 @@
 Linotte
 =======
 
-Linotte is an open source programming language created in 2005 by cpc6128.
+Linotte is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2005 by cpc6128.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2005
  https://pldb.io/concepts/../lists/creators.html#q=cpc6128 cpc6128
 
-#586 on PLDB
-19 Years Old
+#615 on PLDB
+21 Years Old
 
+```Download source code:
 git clone https://github.com/cpc6128/LangageLinotte
+```
 
 Linotte is an interpreted 4th generation programming language. Linotte's syntax is in French. The language's goal is to allow French-speaking children and other francophones with little computer science experience to easily learn programming, with the slogan (in French) "you know how to read a book, so you can write a computer program".. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Linotte Read more on Wikipedia...
 
-- Tags: programming language
-- Linotte is developed on GitHub and has 37 stars
-- Early development of Linotte happened in https://github.com/cpc6128/LangageLinotte/issues
-- Linotte is written in Java, XML, YAML, PowerShell, Visual Basic, Markdown
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Linotte is developed on <a href="https://github.com/cpc6128/LangageLinotte">GitHub</a> and has 37 stars
+- Early development of Linotte happened in <a href="../lists/labs.html#q=https://github.com/cpc6128/LangageLinotte/issues">https://github.com/cpc6128/LangageLinotte/issues</a>
+- Linotte is written in <a href="java.html">Java</a>, <a href="xml.html">XML</a>, <a href="yaml.html">YAML</a>, <a href="powershell.html">PowerShell</a>, <a href="visual-basic.html">Visual Basic</a>, <a href="markdown.html">Markdown</a>
 - Linotte is written with the native language of French
-- There is a central package repository for Linotte
-- See also: (2 related languages) PHP, JSP
+- There is a <a href="https://bitbucket.org/metalm/langagelinotte/downloads/">central package repository</a> for Linotte
+- See also: (2 related languages) <a href="php.html">PHP</a>, <a href="java-server-pages.html">JSP</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Linotte'>Wikipedia</a>:
 BonjourLeMonde:
    début
      affiche &quot;Bonjour le monde !&quot;
+```
 
-View source
+Built with Scroll v178.2.3

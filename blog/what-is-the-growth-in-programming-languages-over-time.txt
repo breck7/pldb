@@ -303,6 +303,7 @@ Reproducibility Notes
 
 The data in this post comes from the PLDB database. It is possible to build a continually updating version of this article that updates as more data comes in.
 
+```
 html.h1 What is the growth in programming languages over time?
 web.get https://pldb.io/pldb.csv
  filter.where appeared > 1940
@@ -316,5 +317,6 @@ web.get https://pldb.io/pldb.csv
       vega.line Cumulative Number of Languages
        xColumn appeared
        yColumn total
+```
 
-View source
+Built with Scroll v178.2.3

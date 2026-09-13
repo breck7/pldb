@@ -1,22 +1,24 @@
 Slony
 =====
 
-Slony is an open source application created in 2004 by Steve Singer.
+Slony is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 2004 by Steve Singer.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2004
  https://pldb.io/concepts/../lists/creators.html#q=Steve%20Singer Steve Singer
 
-#1131 on PLDB
-20 Years Old
+#1171 on PLDB
+22 Years Old
 
+```Download source code:
 git clone https://github.com/ssinger/slony1-engine
+```
 
 Slony-I is an asynchronous master-slave replication system for the PostgreSQL DBMS, providing support for cascading and failover. Asynchronous means that when a database transaction has been committed to the master server, it is not yet guaranteed to be available in slaves. Cascading means that replicas can be created (and updated) via other replicas, i.e. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Slony-I Read more on Wikipedia...
 
-- Tags: application
-- Slony is developed on GitHub and has 38 stars
-- Early development of Slony happened in https://github.com/ssinger/slony1-engine
-- Slony is written in Bourne shell, SQL, JavaScript, Perl, C, Diff, Make, M4, Lex, HTML, Yacc, XSLT, Bash, SVG, CSS, awk, Lisp, Markdown
-- See also: (8 related languages) C, PostgreSQL, Linux, SQL, PL/pgSQL, PL/SQL, Perl, JavaScript
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>
+- Slony is developed on <a href="https://github.com/ssinger/slony1-engine">GitHub</a> and has 38 stars
+- Early development of Slony happened in <a href="../lists/labs.html#q=https://github.com/ssinger/slony1-engine">https://github.com/ssinger/slony1-engine</a>
+- Slony is written in <a href="bourne-shell.html">Bourne shell</a>, <a href="sql.html">SQL</a>, <a href="javascript.html">JavaScript</a>, <a href="perl.html">Perl</a>, <a href="c.html">C</a>, <a href="diff.html">Diff</a>, <a href="make.html">Make</a>, <a href="m4.html">M4</a>, <a href="lex.html">Lex</a>, <a href="html.html">HTML</a>, <a href="yacc.html">Yacc</a>, <a href="xslt.html">XSLT</a>, <a href="bash.html">Bash</a>, <a href="svg.html">SVG</a>, <a href="css.html">CSS</a>, <a href="awk.html">awk</a>, <a href="lisp.html">Lisp</a>, <a href="markdown.html">Markdown</a>
+- See also: (8 related languages) <a href="c.html">C</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="linux.html">Linux</a>, <a href="sql.html">SQL</a>, <a href="plpgsql.html">PL/pgSQL</a>, <a href="pl-sql.html">PL/SQL</a>, <a href="perl.html">Perl</a>, <a href="javascript.html">JavaScript</a>
 
-View source
+Built with Scroll v178.2.3

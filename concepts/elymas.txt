@@ -1,20 +1,22 @@
 elymas
 ======
 
-elymas is a programming language created in 2012.
+elymas is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2012.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
 
-#1707 on PLDB
-12 Years Old
+#1788 on PLDB
+14 Years Old
 
+```Download source code:
 git clone https://github.com/Drahflow/Elymas
+```
 
 A programming language I can like. Unholy and full of magic.
 
-- Tags: programming language
-- elymas is developed on GitHub and has 193 stars
-- Early development of elymas happened in quuxLogic Solutions GmbH
-- elymas is written in Markdown, Perl, Make, XML, Vim script, YAML, Bourne shell, SVG
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- elymas is developed on <a href="https://github.com/Drahflow/Elymas">GitHub</a> and has 193 stars
+- Early development of elymas happened in <a href="../lists/labs.html#q=quuxLogic Solutions GmbH">quuxLogic Solutions GmbH</a>
+- elymas is written in <a href="markdown.html">Markdown</a>, <a href="perl.html">Perl</a>, <a href="make.html">Make</a>, <a href="xml.html">XML</a>, <a href="vim-script.html">Vim script</a>, <a href="yaml.html">YAML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="svg.html">SVG</a>
 
 HackerNews discussions of elymas
 ================================
@@ -22,4 +24,4 @@ HackerNews discussions of elymas
 title|titleLink|date|score|comments
 Show HN: Self-hosted stack-based programming language|https://news.ycombinator.com/item?id=9795314|06/28/2015|86|23
 
-View source
+Built with Scroll v178.2.3

@@ -1,22 +1,23 @@
 Cycript
 =======
 
-Cycript is a programming language created in 2008.
+Cycript is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2008.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
 
-#925 on PLDB
-16 Years Old
-70 Repos
+#959 on PLDB
+18 Years Old
+70 <span title="Cycript repos on GitHub.">Repos</span>
 
-- Tags: programming language
-- There are at least 70 Cycript repos on GitHub
-- Early development of Cycript happened in SaurikIT, LLC
-- The  Google BigQuery Public Dataset GitHub snapshot shows 49 users using Cycript in 66 repos on GitHub
-- GitHub supports syntax highlighting for Cycript
-- cycript.org was registered in 2009
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 70 Cycript repos on <a href="https://github.com/search?q=language:Cycript">GitHub</a>
+- Early development of Cycript happened in <a href="../lists/labs.html#q=SaurikIT, LLC">SaurikIT, LLC</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 49 users using Cycript in 66 repos on <a href="https://api.github.com/search/repositories?q=language:Cycript">GitHub</a>
+- GitHub supports <a href="https://github.com/atom/language-javascript" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Cycript
+- <a href="http://www.cycript.org/">cycript.org</a> was registered in 2009
 - Read more about Cycript on the web: 1.
  https://git.saurik.com/cycript.git 1.
 
+```Example from <a href='https://github.com/atom/language-javascript'>Linguist</a>:
 (function(utils) {
 	// Load C functions declared in utils.loadFuncs
 	var shouldLoadCFuncs = true;
@@ -60,14 +61,15 @@ Cycript is a programming language created in 2008.
 	utils.exec = function(str) {
 		var mkdir = @encode(int (const char *, int))(dlsym(RTLD_DEFAULT, &quot;mkdir&quot;));
 		var tempnam = @encode(char *(const char *, const char *))(dlsym(R
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -75,22 +77,22 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

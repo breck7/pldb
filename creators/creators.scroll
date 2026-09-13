@@ -2,55 +2,99 @@ buildConcepts creators.json creators.tsv creators.csv
 
 // A ScrollSet with information on programming language creators
 
-nameParser
- extends abstractIdParser
-homepageParser
- extends abstractUrlMeasureParser
- float sortIndex 1.1
-gitsParser
- description A link to their GitHub or GitLab or other Git portfolio.
- extends abstractUrlMeasureParser
- float sortIndex 1.2
-pldbInterviewParser
- description A link to their PLDB interview.
- extends abstractUrlMeasureParser
- float sortIndex 1.21
-twitterParser
- extends abstractUrlMeasureParser
- float sortIndex 1.3
-bornParser
- atoms measureNameAtom yearAtom
- extends abstractIntegerMeasureParser
- float sortIndex 1.4
-diedParser
- atoms measureNameAtom yearAtom
- description Thank you for your gifts.
- extends abstractIntegerMeasureParser
- float sortIndex 1.41
-wikipediaParser
- extends abstractUrlMeasureParser
- float sortIndex 1.6
-countryParser
- extends abstractStringMeasureParser
- float sortIndex 1.6
-primaryLinkParser
- boolean isComputed true
- extends abstractUrlMeasureParser
- description What is a good primary link?
- float sortIndex 1.7
- javascript
-  computeValue(concept) {
-    return concept.getOneOf("homepage gits twitter wikipedia pldbInterview".split(" ")) || ""
-  }
+creators.parsers
 
 name Aaron Swartz
+homepage http://aaronsw.com
+gits https://github.com/aaronsw
+twitter https://x.com/aaronsw
 born 1986
+died 2013
 wikipedia https://en.wikipedia.org/wiki/Aaron_Swartz
 country United States
+
+name Walter Fontana
+homepage https://www.walterfontana.zone/
+
+name Bill Hall
+homepage https://www.gingerbill.org
+gits https://github.com/gingerBill
+twitter https://x.com/thegingerbill
+
+name Diego Marcos
+gits https://github.com/dmarcos
+twitter https://x.com/dmarcos
+
+name Don McCurdy
+homepage https://www.donmccurdy.com
+gits https://github.com/donmccurdy
+
+name Kevin Ngo
+gits https://github.com/ngokevin
+twitter https://twitter.com/kevopuff
+
+name Carlo H. Séquin
+homepage https://people.eecs.berkeley.edu/~sequin/
+born 1941
+wikipedia https://en.wikipedia.org/wiki/Carlo_H._S%C3%A9quin
+country Switzerland
+
+name Andrzej Trybulec
+born 1941
+died 2013
+wikipedia https://en.wikipedia.org/wiki/Andrzej_Trybulec
+country Poland
+
+name Florian Loitsch
+homepage http://florian.loitsch.com/
+gits https://github.com/floitsch
+
+name Hailey Somerville
+homepage https://hails.org/
+gits https://github.com/haileys
+country Australia
+
+name Nicolaas Govert de Bruijn
+born 1918
+died 2012
+wikipedia https://en.wikipedia.org/wiki/Nicolaas_Govert_de_Bruijn
+country Netherlands
+
+name Alonzo Church
+born 1903
+died 1995
+wikipedia https://en.wikipedia.org/wiki/Alonzo_Church
+country United States
+
+name Mikkel Damsgaard
+gits https://github.com/mikkeldamsgaard
+
+name Fernando Borretti
+homepage https://borretti.me/
+gits https://github.com/eudoxia0
+twitter https://x.com/zetalyrae
+
+name Neil Conway
+homepage https://www.neilconway.org
+gits https://github.com/neilconway
+twitter https://x.com/neil_conway
+
+name Jamie Brandon
+homepage https://www.scattered-thoughts.net/
+gits https://github.com/jamii
 
 name Mark Sibly
 gits https://github.com/blitz-research
 country Australia
+
+name David Turner
+born 1946
+died 2023
+country United Kingdom
+
+name Paul Fitzpatrick
+gits https://github.com/paulfitz
+twitter https://x.com/fitzyfitzyfitzy
 
 name Adele Goldberg
 born 1945
@@ -106,6 +150,24 @@ born 1922
 wikipedia https://en.wikipedia.org/wiki/Alan_Perlis
 country United States
 
+name Ross Boucher
+homepage https://rossboucher.com
+born 1985
+
+name Francisco Tolmasky
+homepage https://tolmasky.com
+
+name Edgar F. Codd
+born 1923
+died 2003
+country United Kingdom
+wikipedia https://en.wikipedia.org/wiki/Edgar_F._Codd
+
+name Tom Robinson
+homepage https://tlrobinson.net
+gits http://github.com/tlrobinson
+twitter http://twitter.com/tlrobinson
+
 name Mitchel Resnick
 born 1956
 wikipedia https://en.wikipedia.org/wiki/Mitchel_Resnick
@@ -134,6 +196,12 @@ name Alfred Aho
 born 1941
 wikipedia https://en.wikipedia.org/wiki/Alfred_Aho
 country Canada
+
+name Linas Vepstas
+homepage https://linas.org
+gits https://github.com/linas
+twitter https://x.com/linasvepstas
+country United States
 
 name Jeffrey Heer
 homepage https://homes.cs.washington.edu/~jheer/
@@ -189,6 +257,10 @@ twitter https://x.com/LingdongH
 born 1997
 country China
 
+name Kurt Normack
+homepage https://homes.cs.aau.dk/~normark/
+country Denmark
+
 name Charlie Bass
 born 1942
 wikipedia https://en.wikipedia.org/wiki/Charlie_Bass_(engineer)
@@ -200,15 +272,19 @@ wikipedia https://en.wikipedia.org/wiki/Bill_Paxton_(computer_scientist)
 country United States
 
 name Jose E. Marchesi
-homepage https://www.jemarch.net/
+homepage https://www.jemarch.net
 born 1980
 country Spain
 
 name Bjarne Stroustrup
-homepage https://www.stroustrup.com/
+homepage https://www.stroustrup.com
 born 1950
 wikipedia https://en.wikipedia.org/wiki/Bjarne_Stroustrup
 country Denmark
+
+name Ondrej Certik
+homepage https://ondrejcertik.com
+twitter https://x.com/OndrejCertik
 
 name Brad Cox
 born 1944
@@ -216,7 +292,7 @@ wikipedia https://en.wikipedia.org/wiki/Brad_Cox
 country United States
 
 name Brendan Eich
-homepage https://brendaneich.com/
+homepage https://brendaneich.com
 twitter https://x.com/BrendanEich
 born 1961
 wikipedia https://en.wikipedia.org/wiki/Brendan_Eich
@@ -235,6 +311,9 @@ wikipedia https://en.wikipedia.org/wiki/Brian_Kernighan
 country Canada
 
 name Carl Sassenrath
+homepage https://sassenrath.com
+gits https://github.com/carls
+twitter https://x.com/CarlSassenrath
 born 1957
 wikipedia https://en.wikipedia.org/wiki/Carl_Sassenrath
 country United States
@@ -262,6 +341,16 @@ country United States
 name Michael Sperberg-McQueen
 homepage http://cmsmcq.com/
 wikipedia https://en.wikipedia.org/wiki/Michael_Sperberg-McQueen
+country United States
+
+name Corey Montella
+homepage https://engineering.lehigh.edu/faculty/corey-montella
+gits https://github.com/cmontella
+country United States
+
+name Chris Granger
+homepage https://chris-granger.com/
+gits https://github.com/ibdknox
 country United States
 
 name John W. Cowan
@@ -484,6 +573,10 @@ country United States
 name Nils M Holm
 homepage https://www.t3x.org/
 country Germany
+
+name Oleg Kiselyov
+homepage https://okmij.org/ftp/
+country Russia
 
 name Erik Arvidsson
 gits https://github.com/arv
@@ -714,6 +807,7 @@ country United States
 
 name Clark Evans
 homepage https://clarkevans.com/
+twitter https://github.com/clarkevans
 country United States
 
 name Terence Parr
@@ -917,7 +1011,6 @@ wikipedia https://en.wikipedia.org/wiki/Konrad_Zuse
 country Germany
 
 name Larry Wall
-homepage http://www.wall.org/~larry/
 homepage http://www.wall.org/~larry/
 born 1954
 wikipedia https://en.wikipedia.org/wiki/Larry_Wall
@@ -1420,7 +1513,8 @@ name Andreas Kling
 homepage https://www.youtube.com/@awesomekling
 gits https://github.com/awesomekling
 twitter https://x.com/awesomekling
-country Germany
+born 1985
+country Sweden
 
 name Arno Gourdol
 homepage https://www.arno.org/
@@ -1787,3 +1881,179 @@ homepage https://marknadal.com/
 gits https://github.com/amark/gun
 twitter https://x.com/marknadal
 country United States
+
+name David Vorick
+gits https://github.com/davidvorick
+twitter https://x.com/davidvorick
+born 1992
+country United States
+
+name Luke Champine
+homepage https://lukechampine.com/
+gits https://github.com/lukechampine
+twitter https://x.com/lukechampine
+country United States
+
+name Gavin Wood
+homepage https://gavwood.com
+gits https://github.com/gavofyork
+twitter https://x.com/gavofyork
+born 1980
+wikipedia https://en.wikipedia.org/wiki/Gavin_Wood
+country United Kingdom
+
+name Evan Cheng
+twitter https://x.com/evanweb3
+born 1970
+
+name Hongbo Zhang
+gits https://github.com/bobzhang
+twitter https://x.com/bobzhang1988
+born 1988
+country China
+
+name Terry A. Davis
+homepage https://templeos.org
+born 1969
+died 2018
+wikipedia https://en.wikipedia.org/wiki/Terry_A._Davis
+
+name Eric Seidel
+homepage https://eseidel.com/
+gits https://github.com/eseidel
+twitter https://x.com/_eseidel
+born 1980
+
+name Dries Buytaert
+homepage https://dri.es
+gits https://github.com/dbuytaert
+born 1978
+wikipedia https://en.wikipedia.org/wiki/Dries_Buytaert
+country Belgium
+
+name Yosbel Marin
+gits https://github.com/yosbelms
+
+name Avik Chaudhuri
+homepage https://avikchaudhuri.github.io/
+twitter https://twitter.com/__avik
+
+name Émile Baudot
+born 1845
+wikipedia https://en.wikipedia.org/wiki/%C3%89mile_Baudot
+country France
+
+name Adam McDaniel
+homepage https://adam-mcdaniel.net/
+gits https://github.com/adam-mcdaniel
+born 2002
+country United States
+
+name Ricardo Cabello
+homepage https://ricardocabello.com
+gits https://github.com/mrdoob
+twitter https://x.com/mrdoob
+
+name Jarkko Oikarinen
+born 1967
+country Finland
+
+name Tobie Morgan Hitchcock
+twitter https://x.com/tobiemh
+country United Kingdom
+
+name Jeff Dean
+twitter https://x.com/JeffDean
+born 1968
+country United States
+wikipedia https://en.wikipedia.org/wiki/Jeff_Dean
+
+name Sanjay Ghemawat
+born 1966
+wikipedia https://en.wikipedia.org/wiki/Sanjay_Ghemawat
+country United States
+
+name Ernan Ding
+gits https://github.com/3dgen
+born 1981
+country China
+
+name Shushan Chai
+gits https://github.com/chai2010
+twitter https://x.com/chaishushan
+born 1983
+country China
+
+name Jesse Grosjean
+gits https://github.com/jessegrosjean
+twitter https://x.com/jessegrosjean
+
+name Margo Seltzer
+born 1962
+wikipedia https://en.wikipedia.org/wiki/Margo_Seltzer
+country United States
+
+name Keith Bostic
+homepage http://bostic.com
+gits https://github.com/keithbostic
+born 1959
+wikipedia https://en.wikipedia.org/wiki/Keith_Bostic_(software_engineer)
+country United States
+
+name Michael Cahill
+gits https://github.com/michaelcahill
+
+name Kat Marchán
+homepage https://zkat.tech
+gits https://github.com/zkat
+born 1986
+
+name Marco Sampellegrini
+homepage https://marcosampellegrini.com
+gits https://github.com/alpacaaa
+twitter https://x.com/_alpacaaa
+
+name Jon Anderson
+homepage https://jander.land
+gits https://github.com/janderland
+country United States
+
+name Ivan Sutherland
+born 1938
+country United States
+
+name John Walker
+homepage https://fourmilab.ch/
+gits https://github.com/Fourmilab
+born 1949
+died 2024
+wikipedia https://en.wikipedia.org/wiki/John_Walker_(programmer)
+country United States
+
+name Sam Williams
+homepage https://sam.arweave.dev
+gits https://github.com/samcamwilliams
+twitter https://x.com/samecwilliams
+
+name Walter F. Tichy
+homepage https://ps.ipd.kit.edu/english/176_376.php
+twitter https://x.com/wtichy
+born 1952
+country Germany
+wikipedia https://en.wikipedia.org/wiki/Walter_F._Tichy
+
+name Marc J. Rochkind
+born 1948
+wikipedia https://en.wikipedia.org/wiki/Marc_Rochkind
+
+name Dick Grune
+homepage https://dickgrune.com/index.html
+born 1939
+wikipedia https://en.wikipedia.org/wiki/Dick_Grune
+country Netherlands
+
+name Matheus Afonso Martins Moreira
+born 1994
+country Brazil
+homepage https://www.matheusmoreira.com/
+gits https://github.com/matheusmoreira

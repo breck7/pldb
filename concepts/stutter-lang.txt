@@ -1,21 +1,24 @@
 Stutter
 =======
 
-Stutter is an esoteric programming language created in 2018.
+Stutter is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22esolang%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">esoteric programming language</a> created in 2018.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2018
 
-#2967 on PLDB
-6 Years Old
+#3092 on PLDB
+8 Years Old
 
+```Download source code:
 git clone https://github.com/stutter-lang/stutter
+```
 
 The design goals of the Stutter Programming Language focus on the underlying idea that Stutter Code is a speakable language that contains no special syntax characters that are unpronounciable.
 
-- Tags: esoteric programming language
-- Stutter is developed on GitHub and has 6 stars
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"esolang"%5D%7D%5D%2C"logic"%3A"AND"%7D'>esoteric programming language</a>
+- Stutter is developed on <a href="https://github.com/stutter-lang/stutter">GitHub</a> and has 6 stars
 - Read more about Stutter on the web: 1.
  https://web.archive.org/web/20210708104617/https://github.com/cookiengineer/stutter 1.
 
+```Example from the web:
 let ratio be a Number and set it to 0.37
 let variable be a Number
 set variable to 5
@@ -71,5 +74,6 @@ for each examples as key and value do
  end
 
 end
+```
 
-View source
+Built with Scroll v178.2.3

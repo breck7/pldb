@@ -15,11 +15,9 @@ example
  REM The game of Snake
  REM demonstrates BrightScript programming concepts
  REM June 22, 2008
-  
  REM
  REM Every BrightScript program must have a single Main()
  REM
-  
  Sub Main()
   
      game_board=newGameBoard()

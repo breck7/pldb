@@ -1,31 +1,37 @@
 Angelscript
 ===========
 
-Angelscript is a programming language created in 2003 by Andreas Jönsson.
+Angelscript is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2003 by Andreas Jönsson.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2003
  https://pldb.io/concepts/../lists/creators.html#q=Andreas%20J%C3%B6nsson Andreas Jönsson
 
-#592 on PLDB
-21 Years Old
-1k Repos
+#605 on PLDB
+23 Years Old
+1k <span title="Angelscript repos on GitHub.">Repos</span>
 
 AngelScript is a game-oriented interpreted compiled scripting language. AngelScript features static typing, object handles (similar to C++ pointers but garbage collected via reference counting), object-orientation, single inheritance, multiple inheritance with interfaces. Allows operators to be registered and overloaded. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/AngelScript Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 1,140 Angelscript repos on GitHub
-- The  Google BigQuery Public Dataset GitHub snapshot shows 275 users using Angelscript in 286 repos on GitHub
-- Explore Angelscript snippets on Rosetta Code
-- Angelscript appears in the TIOBE Index
-- GitHub supports syntax highlighting for Angelscript
-- See also: (1 related languages) Eclipse
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 1,140 Angelscript repos on <a href="https://github.com/search?q=language:AngelScript">GitHub</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 275 users using Angelscript in 286 repos on <a href="https://api.github.com/search/repositories?q=language:AngelScript">GitHub</a>
+- Explore Angelscript snippets on <a href="http://www.rosettacode.org/wiki/Category:AngelScript">Rosetta Code</a>
+- Angelscript appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- GitHub supports <a href="https://github.com/wronex/sublime-angelscript" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Angelscript
+- See also: (1 related languages) <a href="eclipse-editor.html">Eclipse</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/a/AngelScript'>hello-world</a>:
 void main() { print(&quot;Hello World\n&quot;); }
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Angelscript'>the Hello World Collection</a>:
 // Hello world in AngelScript
 
 void main() { print(&quot;Hello world\n&quot;); }
+```
 
+```Example from <a href='https://github.com/wronex/sublime-angelscript'>Linguist</a>:
 /*
 *	This is a sample script.
 */
@@ -104,51 +110,55 @@ BotManager::BaseBot@ CreateDumbBot( CBasePlayer@ pPlayer )
 	return @DumbBot( pPlayer );
 }
 
-and abstract* auto bool break case cast class const continue default do double else enum false final* float for from* funcdef get* if import in inout int interface int8 int16 int32 int64 is mixin namespace not null or out override* private protected return set* shared* super* switch this* true typedef uint uint8 uint16 uint32 uint64 void while xor * ** / % + - = > ( ) == != ? : = += -= *= /= %= **= ++ -- & , { } ; | ^ ~ > >>> &= |= ^= >= >>>= . && || ! [ ] ^^ @ !is :: 123456789 123.123e123 123.123e123f 0x1234FEDC 0d123987 0o1276 0b1010 'abc' "abc" """heredoc""" _Abc123 // /* */
+```
 
-Language features
+```Angelscript <a href="../lists/keywords.html#q=angelscript">Keywords</a>
+and abstract* auto bool break case cast class const continue default do double else enum false final* float for from* funcdef get* if import in inout int interface int8 int16 int32 int64 is mixin namespace not null or out override* private protected return set* shared* super* switch this* true typedef uint uint8 uint16 uint32 uint64 void while xor * ** / % + - <= < >= > ( ) == != ? : = += -= *= /= %= **= ++ -- & , { } ; | ^ ~ << >> >>> &= |= ^= <<= >>= >>>= . && || ! [ ] ^^ @ !is :: 123456789 123.123e123 123.123e123f 0x1234FEDC 0d123987 0o1276 0b1010 'abc' "abc" """heredoc""" _Abc123 // /* */
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -156,28 +166,28 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

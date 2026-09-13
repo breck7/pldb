@@ -1,26 +1,27 @@
 OWL
 ===
 
-OWL, aka One World Language, is a xml format created in 2004.
+OWL, aka One World Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22xmlFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">xml format</a> created in 2004.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2004
 
-#304 on PLDB
-20 Years Old
-199 Repos
+#314 on PLDB
+22 Years Old
+199 <span title="OWL repos on GitHub.">Repos</span>
 
 The Web Ontology Language (OWL) is a family of knowledge representation languages for authoring ontologies. Ontologies are a formal way to describe taxonomies and classification networks, essentially defining the structure of knowledge for various domains: the nouns representing classes of objects and the verbs representing relations between the objects. Ontologies resemble class hierarchies in object-oriented programming but there are several critical differences. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Web_Ontology_Language Read more on Wikipedia...
 
-- Tags: xmlFormat
-- There are at least 199 OWL repos on GitHub
-- Early development of OWL happened in W3C
-- The  Google BigQuery Public Dataset GitHub snapshot shows 524 users using OWL in 642 repos on GitHub
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"xmlFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>xmlFormat</a>
+- There are at least 199 OWL repos on <a href="https://github.com/search?q=language:Web Ontology Language">GitHub</a>
+- Early development of OWL happened in <a href="../lists/labs.html#q=W3C">W3C</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 524 users using OWL in 642 repos on <a href="https://api.github.com/search/repositories?q=language:Web Ontology Language">GitHub</a>
 - OWL on HOPL
  https://hopl.info/showlanguage.prx?exp=4934 OWL on HOPL
-- GitHub supports syntax highlighting for OWL
-- See also: (8 related languages) RDF, XML, HTML, AXIOM, Turtle, SQL, Prolog, UML
-- 2 PLDB concepts link to OWL: Bossam Rule Language, OWL DL
+- GitHub supports <a href="https://github.com/textmate/xml.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for OWL
+- See also: (8 related languages) <a href="rdf.html">RDF</a>, <a href="xml.html">XML</a>, <a href="html.html">HTML</a>, <a href="axiom.html">AXIOM</a>, <a href="turtle.html">Turtle</a>, <a href="sql.html">SQL</a>, <a href="prolog.html">Prolog</a>, <a href="uml.html">UML</a>
+- 2 PLDB concepts link to OWL: <a href="bossam.html">Bossam Rule Language</a>, <a href="owl-dl.html">OWL DL</a>
 
+```Example from <a href='https://github.com/textmate/xml.tmbundle'>Linguist</a>:
 &lt;?xml version=&quot;1.0&quot;?&gt;
 
 &lt;!DOCTYPE rdf:RDF [
@@ -66,18 +67,21 @@ The Web Ontology Language (OWL) is a family of knowledge representation language
                 &lt;owl:onProperty rdf:resource=&quot;#hasTopping&quot;/&gt;
                 &lt;owl:someValuesFrom rdf:resource=&quot;#TomatoTopping&quot;/&gt;
             &lt;/owl:Re
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Web_Ontology_Language'>Wikipedia</a>:
 &lt;http://example.org/tea.owl&gt; rdf:type owl:Ontology .
  :Tea  rdf:type            owl:Class .
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

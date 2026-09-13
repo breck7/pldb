@@ -1,36 +1,42 @@
 GAP
 ===
 
-GAP, aka Groups, Algorithms and Programming, is an open source programming language created in 1986 by gap.
+GAP, aka Groups, Algorithms and Programming, is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1986 by gap.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1986
  https://pldb.io/concepts/../lists/creators.html#q=gap gap
 
-#281 on PLDB
-38 Years Old
-4k Repos
+#299 on PLDB
+40 Years Old
+4k <span title="GAP repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/gap-system/gap
+```
 
 GAP (Groups, Algorithms and Programming) is a computer algebra system for computational discrete algebra with particular emphasis on computational group theory.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/GAP_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- GAP is developed on GitHub and has 781 stars
-- There are at least 3,760 GAP repos on GitHub
-- Early development of GAP happened in RWTH Aachen University
-- GAP is written in C, Assembly language, GDScript, XML, Bourne shell, M4, C++, Make, Markdown, Perl, Tex, Ada, C#, YAML, Python, HTML, Pascal, CMake, Vim script, JavaScript, Yacc, Lisp, Lex, SAS, FORTRAN 77, CSS, Ruby, CSV, Ini
-- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using GAP in 4k repos on GitHub
-- There are 33 Project Euler users using GAP
-- Explore GAP snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- GAP is developed on <a href="https://github.com/gap-system/gap">GitHub</a> and has 781 stars
+- There are at least 3,760 GAP repos on <a href="https://github.com/search?q=language:GAP">GitHub</a>
+- Early development of GAP happened in <a href="../lists/labs.html#q=RWTH Aachen University">RWTH Aachen University</a>
+- GAP is written in <a href="c.html">C</a>, <a href="assembly-language.html">Assembly language</a>, <a href="gdscript.html">GDScript</a>, <a href="xml.html">XML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="m4.html">M4</a>, <a href="cpp.html">C++</a>, <a href="make.html">Make</a>, <a href="markdown.html">Markdown</a>, <a href="perl.html">Perl</a>, <a href="tex.html">Tex</a>, <a href="ada.html">Ada</a>, <a href="csharp.html">C#</a>, <a href="yaml.html">YAML</a>, <a href="python.html">Python</a>, <a href="html.html">HTML</a>, <a href="pascal.html">Pascal</a>, <a href="cmake.html">CMake</a>, <a href="vim-script.html">Vim script</a>, <a href="javascript.html">JavaScript</a>, <a href="yacc.html">Yacc</a>, <a href="lisp.html">Lisp</a>, <a href="lex.html">Lex</a>, <a href="sas.html">SAS</a>, <a href="fortran-77.html">FORTRAN 77</a>, <a href="css.html">CSS</a>, <a href="ruby.html">Ruby</a>, <a href="csv.html">CSV</a>, <a href="ini.html">Ini</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using GAP in 4k repos on <a href="https://api.github.com/search/repositories?q=language:GAP">GitHub</a>
+- There are 33 <a href="https://projecteuler.net/language=GAP">Project Euler</a> users using GAP
+- Explore GAP snippets on <a href="http://www.rosettacode.org/wiki/Category:GAP">Rosetta Code</a>
 - GAP on HOPL
  https://hopl.info/showlanguage.prx?exp=2668 GAP on HOPL
-- Pygments supports syntax highlighting for GAP
-- GitHub supports syntax highlighting for GAP
-- gap-system.org was registered in 2000
-- See also: (3 related languages) C, Unix, Sage
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/algebra.py">syntax highlighting</a> for GAP
+- GitHub supports <a href="https://github.com/dhowden/gap-tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for GAP
+- <a href="http://www.gap-system.org/">gap-system.org</a> was registered in 2000
+- See also: (3 related languages) <a href="c.html">C</a>, <a href="unix.html">Unix</a>, <a href="sagemath.html">Sage</a>
 
+```Example from <a href='https://riju.codes/gap'>Riju</a>:
 Print(&quot;Hello, world!\n&quot;);
 
+```
+
+```Example from <a href='https://github.com/dhowden/gap-tmbundle'>Linguist</a>:
 gap&gt; START_TEST(&quot;Test of factor groups and natural homomorphisms&quot;);
 
 gap&gt; G:=HeisenbergPcpGroup(2);
@@ -52,6 +58,9 @@ Pcp-group with orders [ 0 ]
 
 gap&gt; STOP_TEST( &quot;factor.tst&quot;, 10000000);
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/GAP_(programming_language)'>Wikipedia</a>:
 gap&gt; G:=SmallGroup(8,1); # Set G to be a group of order 8.
 &lt;pc group of size 8 with 3 generators&gt;
 gap&gt; i:=IsomorphismPermGroup(G); # Find an isomorphism from G to a group of permutations
@@ -61,28 +70,29 @@ Group([ (1,5,3,7,2,6,4,8), (1,3,2,4)(5,7,6,8), (1,2)(3,4)(5,6)(7,8) ])
 gap&gt; Elements(Image(i,G)); # All the elements of im G.
 [ (), (1,2)(3,4)(5,6)(7,8), (1,3,2,4)(5,7,6,8), (1,4,2,3)(5,8,6,7),
    (1,5,3,7,2,6,4,8), (1,6,3,8,2,5,4,7), (1,7,4,5,2,8,3,6), (1,8,4,6,2,7,3,5) ]
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

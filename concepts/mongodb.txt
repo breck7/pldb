@@ -1,53 +1,60 @@
 MongoDB
 =======
 
-MongoDB is an open source application created in 2009 by Eliot Horowitz and Dwight Merriman.
+MongoDB is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22database%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">database</a> created in 2009 by Eliot Horowitz and Dwight Merriman.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2009
  https://pldb.io/concepts/../lists/creators.html#q=Eliot%20Horowitz Eliot Horowitz
  https://pldb.io/concepts/../lists/creators.html#q=Dwight%20Merriman Dwight Merriman
 
-#105 on PLDB
-15 Years Old
+#82 on PLDB
+17 Years Old
 
+```Download source code:
 git clone https://github.com/mongodb/mongo
+```
 
 MongoDB (from humongous) is a free and open-source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemas. MongoDB is developed by MongoDB Inc., and is published under a combination of the GNU Affero General Public License and the Apache License.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/MongoDB Read more on Wikipedia...
 
-- Tags: application
-- MongoDB is developed on GitHub and has 25,860 stars
-- Early development of MongoDB happened in https://www.mongodb.com/community/forums/
-- MongoDB is written in C++, JavaScript, C, Python, YAML, IDL, Bourne shell, Markdown, Protocol Buffers, JSON, starlark, Assembly language, CMake, Bazel, Make, XML, Bash, Tex, Dockerfile, M4, reStructuredText, HTML, Pascal, Diff, Perl, Ini, Ruby, Meson, Lua, CSS, Tcl, TOML, PHP, Java, Objective C++, Reason, Swift, CSV, Jupyter Notebook, PowerShell, SVG, Rust, awk, R, D, Objective-C
-- There are 17,286 members in the MongoDB subreddit
-- Indeed.com has 1,243 matches for "mongodb developer and dba".
-- mongodb.com was registered in 2008
-- See also: (8 related languages) C, JavaScript, Linux, Solaris, FreeBSD, JSON, Nginx, SQL
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"database"%5D%7D%5D%2C"logic"%3A"AND"%7D'>database</a>
+- MongoDB is developed on <a href="https://github.com/mongodb/mongo">GitHub</a> and has 25,860 stars
+- Early development of MongoDB happened in <a href="../lists/labs.html#q=https://www.mongodb.com/community/forums/">https://www.mongodb.com/community/forums/</a>
+- MongoDB is written in <a href="cpp.html">C++</a>, <a href="javascript.html">JavaScript</a>, <a href="c.html">C</a>, <a href="python.html">Python</a>, <a href="yaml.html">YAML</a>, <a href="idl.html">IDL</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="markdown.html">Markdown</a>, <a href="protobuf.html">Protocol Buffers</a>, <a href="json.html">JSON</a>, <a href="starlark.html">starlark</a>, <a href="assembly-language.html">Assembly language</a>, <a href="cmake.html">CMake</a>, <a href="bazel.html">Bazel</a>, <a href="make.html">Make</a>, <a href="xml.html">XML</a>, <a href="bash.html">Bash</a>, <a href="tex.html">Tex</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="m4.html">M4</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="html.html">HTML</a>, <a href="pascal.html">Pascal</a>, <a href="diff.html">Diff</a>, <a href="perl.html">Perl</a>, <a href="ini.html">Ini</a>, <a href="ruby.html">Ruby</a>, <a href="meson.html">Meson</a>, <a href="lua.html">Lua</a>, <a href="css.html">CSS</a>, <a href="tcl.html">Tcl</a>, <a href="toml.html">TOML</a>, <a href="php.html">PHP</a>, <a href="java.html">Java</a>, <a href="objective-cpp.html">Objective C++</a>, <a href="reason.html">Reason</a>, <a href="swift.html">Swift</a>, <a href="csv.html">CSV</a>, <a href="jupyter-notebook.html">Jupyter Notebook</a>, <a href="powershell.html">PowerShell</a>, <a href="svg.html">SVG</a>, <a href="rust.html">Rust</a>, <a href="awk.html">awk</a>, <a href="r.html">R</a>, <a href="d.html">D</a>, <a href="objective-c.html">Objective-C</a>
+- There are 17,286 members in the <a href="https://www.reddit.com/r/mongodb">MongoDB subreddit</a>
+- Indeed.com has 1,243 matches for <a href="https://www.indeed.com/jobs?q=mongodb developer and dba">"mongodb developer and dba"</a>.
+- <a href="https://www.mongodb.com/">mongodb.com</a> was registered in 2008
+- See also: (8 related languages) <a href="c.html">C</a>, <a href="javascript.html">JavaScript</a>, <a href="linux.html">Linux</a>, <a href="solaris.html">Solaris</a>, <a href="freebsd.html">FreeBSD</a>, <a href="json.html">JSON</a>, <a href="nginx-config.html">Nginx</a>, <a href="sql.html">SQL</a>
+- 1 PLDB concepts link to MongoDB: <a href="wiredtiger.html">WiredTiger</a>
 
+```Example from <a href='https://riju.codes/mongodb'>Riju</a>:
 db.collection.find()
+```
 
+```MongoDB <a href="../lists/keywords.html#q=mongodb">Keywords</a>
 find findOne drop createIndex
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   $comment: "A comment"
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -1,22 +1,24 @@
 Farcaster
 =========
 
-Farcaster is a protocol created in 2021 by Dan Romero and Varun Srinivasan.
+Farcaster is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22protocol%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">protocol</a> created in 2021 by Dan Romero and Varun Srinivasan.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2021
  https://pldb.io/concepts/../lists/creators.html#q=Dan%20Romero Dan Romero
  https://pldb.io/concepts/../lists/creators.html#q=Varun%20Srinivasan Varun Srinivasan
 
-#744 on PLDB
-3 Years Old
+#653 on PLDB
+5 Years Old
 
+```Download source code:
 git clone https://github.com/farcasterxyz/protocol
+```
 
 Farcaster is a decentralized social network built on top of Ethereum. The Layer 1 blockchain manages user identities, while a Layer 2 network propagates updates between users. It offers: Secure, memorable, and human-readable user identifiers like @alice. Real-time settlement and propagation of changes between users. Decentralized access to all data on the network at reasonable costs.
 
-- Tags: protocol, microblogging
-- Farcaster is developed on GitHub and has 1,913 stars
-- Early development of Farcaster happened in https://github.com/farcasterxyz
-- ActivityPub and Secure Scuttlebutt influenced the design of Farcaster
-- Farcaster is written in Markdown, YAML, JSON
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"protocol"%5D%7D%5D%2C"logic"%3A"AND"%7D'>protocol</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"microblogging"%5D%7D%5D%2C"logic"%3A"AND"%7D'>microblogging</a>
+- Farcaster is developed on <a href="https://github.com/farcasterxyz/protocol">GitHub</a> and has 1,913 stars
+- Early development of Farcaster happened in <a href="../lists/labs.html#q=https://github.com/farcasterxyz">https://github.com/farcasterxyz</a>
+- <a href="activity-pub.html">ActivityPub</a> and <a href="ssb.html">Secure Scuttlebutt</a> influenced the design of Farcaster
+- Farcaster is written in <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="json.html">JSON</a>
 
-View source
+Built with Scroll v178.2.3

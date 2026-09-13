@@ -1,19 +1,21 @@
 Haxe Library Manager
 ====================
 
-Haxe Library Manager is a package manager created in 2013.
+Haxe Library Manager is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22packageManager%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">package manager</a> created in 2013.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2013
 
-#985 on PLDB
-11 Years Old
+#1020 on PLDB
+13 Years Old
 
+```Download source code:
 git clone https://github.com/HaxeFoundation/haxelib
+```
 
 The Haxe library manager
 
-- Tags: packageManager
-- Haxe Library Manager is developed on GitHub and has 170 stars
-- Early development of Haxe Library Manager happened in Haxe Foundation
-- Haxe Library Manager is written in Haxe, JSON, HCL, HTML, Markdown, SQL, Bourne shell, YAML, CSS, SVG, XML, CMake, TOML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"packageManager"%5D%7D%5D%2C"logic"%3A"AND"%7D'>packageManager</a>
+- Haxe Library Manager is developed on <a href="https://github.com/HaxeFoundation/haxelib">GitHub</a> and has 170 stars
+- Early development of Haxe Library Manager happened in <a href="../lists/labs.html#q=Haxe Foundation">Haxe Foundation</a>
+- Haxe Library Manager is written in <a href="haxe.html">Haxe</a>, <a href="json.html">JSON</a>, <a href="hcl.html">HCL</a>, <a href="html.html">HTML</a>, <a href="markdown.html">Markdown</a>, <a href="sql.html">SQL</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="yaml.html">YAML</a>, <a href="css.html">CSS</a>, <a href="svg.html">SVG</a>, <a href="xml.html">XML</a>, <a href="cmake.html">CMake</a>, <a href="toml.html">TOML</a>
 
-View source
+Built with Scroll v178.2.3

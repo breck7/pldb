@@ -1,27 +1,29 @@
 CUDA
 ====
 
-CUDA, aka Compute Unified Device Architecture, is a programming language created in 2007.
+CUDA, aka Compute Unified Device Architecture, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2007.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2007
 
-#39 on PLDB
-17 Years Old
-18k Repos
+#38 on PLDB
+19 Years Old
+18k <span title="CUDA repos on GitHub.">Repos</span>
 
 CUDA is a parallel computing platform and application programming interface (API) model created by Nvidia. It allows software developers and software engineers to use a CUDA-enabled graphics processing unit (GPU) for general purpose processing – an approach termed GPGPU (General-Purpose computing on Graphics Processing Units). The CUDA platform is a software layer that gives direct access to the GPU's virtual instruction set and parallel computational elements, for the execution of compute kernels. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/CUDA Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 18,135 CUDA repos on GitHub
-- Early development of CUDA happened in Nvidia
-- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using CUDA in 4k repos on GitHub
-- Check out the 32 CUDA meetup groups on Meetup.com.
-- Pygments supports syntax highlighting for CUDA
-- GitHub supports syntax highlighting for CUDA
-- Indeed.com has 483 matches for "cuda engineer".
-- See also: (18 related languages) Linux, C, Fortran, OpenGL, OpenCL, LLVM IR, Python, Perl, Java, Ruby, Lua, Haskell, R, MATLAB, IDL, Mathematica, Common Lisp, F#
-- 16 PLDB concepts link to CUDA: Chapel, circle-lang, Factor, FFmpeg, Futhark, HVM2, Numba, OpenNN, Open Shading Language, OpenCV, Pygments, PyTorch, spiral, Taichi, Xgboost, XGBoost
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 18,135 CUDA repos on <a href="https://github.com/search?q=language:Cuda">GitHub</a>
+- Early development of CUDA happened in <a href="../lists/labs.html#q=Nvidia">Nvidia</a>
+- CUDA compiles to <a href="ptx.html">PTX</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using CUDA in 4k repos on <a href="https://api.github.com/search/repositories?q=language:Cuda">GitHub</a>
+- Check out the 32 <a href="https://www.meetup.com/topics/cuda/">CUDA meetup groups</a> on Meetup.com.
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/c_like.py">syntax highlighting</a> for CUDA
+- GitHub supports <a href="https://github.com/harrism/sublimetext-cuda-cpp" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for CUDA
+- Indeed.com has 483 matches for <a href="https://www.indeed.com/jobs?q=cuda engineer">"cuda engineer"</a>.
+- See also: (18 related languages) <a href="linux.html">Linux</a>, <a href="c.html">C</a>, <a href="fortran.html">Fortran</a>, <a href="opengl.html">OpenGL</a>, <a href="opencl.html">OpenCL</a>, <a href="llvmir.html">LLVM IR</a>, <a href="python.html">Python</a>, <a href="perl.html">Perl</a>, <a href="java.html">Java</a>, <a href="ruby.html">Ruby</a>, <a href="lua.html">Lua</a>, <a href="haskell.html">Haskell</a>, <a href="r.html">R</a>, <a href="matlab.html">MATLAB</a>, <a href="idl.html">IDL</a>, <a href="mathematica.html">Mathematica</a>, <a href="common-lisp.html">Common Lisp</a>, <a href="f-sharp.html">F#</a>
+- 19 PLDB concepts link to CUDA: <a href="blender-app.html">Blender</a>, <a href="cir.html">CIR</a>, <a href="circle-lang.html">circle-lang</a>, <a href="cmake.html">CMake</a>, <a href="factor.html">Factor</a>, <a href="ffmpeg.html">FFmpeg</a>, <a href="futhark.html">Futhark</a>, <a href="hvm2.html">HVM2</a>, <a href="numba.html">Numba</a>, <a href="open-nn.html">OpenNN</a>, <a href="open-shading-language.html">Open Shading Language</a>, <a href="opencv.html">OpenCV</a>, <a href="paraview.html">ParaView</a>, <a href="pygments.html">Pygments</a>, <a href="pytorch.html">PyTorch</a>, <a href="spiral.html">spiral</a>, <a href="taichi.html">Taichi</a>, <a href="xgboost-model.html">Xgboost</a>, <a href="xgboost.html">XGBoost</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/c/Cuda.cu'>hello-world</a>:
 #include &lt;stdio.h&gt;
 
 __global__ void hello_world(){
@@ -33,31 +35,28 @@ int main() {
     return 0;
 }
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Compute'>the Hello World Collection</a>:
 // Hello world in CUDA
 
 #include &lt;stdio.h&gt;
- 
 const int N = 16;
 const int blocksize = 16;
- 
 __global__
 void hello(char *a, int *b)
 {
 	a[threadIdx.x] += b[threadIdx.x];
 }
- 
 int main()
 {
 	char a[N] = &quot;Hello \0\0\0\0\0\0&quot;;
 	int b[N] = {15, 10, 6, 0, -11, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
- 
 	char *ad;
 	int *bd;
 	const int csize = N*sizeof(char);
 	const int isize = N*sizeof(int);
- 
 	printf(&quot;%s&quot;, a);
- 
 	cudaMalloc( (void**)&amp;ad, csize );
 	cudaMalloc( (void**)&amp;bd, isize );
 	cudaMemcpy( ad, a, csize, cudaMemcpyHostToDevice );
@@ -73,7 +72,9 @@ int main()
 	printf(&quot;%s\n&quot;, a);
 	return EXIT_SUCCESS;
 }
+```
 
+```Example from <a href='https://github.com/harrism/sublimetext-cuda-cpp'>Linguist</a>:
 #include &lt;stdio.h&gt;
 #include &lt;cuda_runtime.h&gt;
 
@@ -120,28 +121,31 @@ main(void)
 
     return 0;
 }
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/CUDA'>Wikipedia</a>:
 import numpy
 from pycublas import CUBLASMatrix
 A = CUBLASMatrix( numpy.mat([[1,2,3]],[[4,5,6]],numpy.float32) )
 B = CUBLASMatrix( numpy.mat([[2,3]],[4,5],[[6,7]],numpy.float32) )
 C = A*B
 print C.np_mat()
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Standard Library
  FeatureLink ../features/hasStandardLibrary.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   printf("Hello, World!\n");
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -149,7 +153,7 @@ row
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -157,20 +161,20 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token printf
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

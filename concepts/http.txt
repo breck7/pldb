@@ -1,27 +1,28 @@
 HTTP
 ====
 
-HTTP is a protocol created in 1989 by Tim Berners-Lee.
+HTTP is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22protocol%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">protocol</a> created in 1989 by Tim Berners-Lee.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221989%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1989
  https://pldb.io/concepts/../lists/creators.html#q=Tim%20Berners-Lee Tim Berners-Lee
 
-#116 on PLDB
-35 Years Old
-0 Repos
+#118 on PLDB
+37 Years Old
+0 <span title="HTTP repos on GitHub.">Repos</span>
 
 The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative, and hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web. Hypertext is structured text that uses logical links (hyperlinks) between nodes containing text. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol Read more on Wikipedia...
 
-- Tags: protocol
-- There are at least 0 HTTP repos on GitHub
-- Early development of HTTP happened in W3C
-- CodeMirror package for syntax highlighting HTTP
-- Pygments supports syntax highlighting for HTTP
-- GitHub supports syntax highlighting for HTTP
-- Indeed.com has 771,996 matches for "http developer".
-- See also: (12 related languages) FTP, SMTP, TLS, TCP, UDP, URL, HTML, CSS, ASCII, Gzip, REST, ISBN
-- 1 PLDB concepts link to HTTP: NCSA Mosaic
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"protocol"%5D%7D%5D%2C"logic"%3A"AND"%7D'>protocol</a>
+- There are at least 0 HTTP repos on <a href="https://github.com/search?q=language:HTTP">GitHub</a>
+- Early development of HTTP happened in <a href="../lists/labs.html#q=W3C">W3C</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/http">package</a> for syntax highlighting HTTP
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/textfmts.py">syntax highlighting</a> for HTTP
+- GitHub supports <a href="https://github.com/samsalisbury/Sublime-HTTP" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for HTTP
+- Indeed.com has 771,996 matches for <a href="https://www.indeed.com/jobs?q=http developer">"http developer"</a>.
+- See also: (12 related languages) <a href="ftp.html">FTP</a>, <a href="smtp.html">SMTP</a>, <a href="tls.html">TLS</a>, <a href="tcp.html">TCP</a>, <a href="udp.html">UDP</a>, <a href="url.html">URL</a>, <a href="html.html">HTML</a>, <a href="css.html">CSS</a>, <a href="ascii.html">ASCII</a>, <a href="gzip.html">Gzip</a>, <a href="rest.html">REST</a>, <a href="isbn.html">ISBN</a>
+- 1 PLDB concepts link to HTTP: <a href="mosaic.html">NCSA Mosaic</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/h/HTTP.py'>hello-world</a>:
 import http.server
 import socketserver
 from http import HTTPStatus
@@ -34,7 +35,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
 httpd = socketserver.TCPServer((&#39;&#39;, 8000), Handler)
 httpd.serve_forever()
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol'>Wikipedia</a>:
 HTTP/1.1 200 OK
 Date: Mon, 23 May 2005 22:38:34 GMT
 Content-Type: text/html; charset=UTF-8
@@ -54,7 +57,10 @@ Connection: close
   Hello World, this is a very simple HTML document.
 &lt;/body&gt;
 &lt;/html&gt;
+```
 
+```<a href='https://twitter.com/bagder/status/1567162794092404742'>Fun fact</a>:
 http://http://http://@http://http://?http://#http:// is a legitimate URL
+```
 
-View source
+Built with Scroll v178.2.3

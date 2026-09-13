@@ -1,25 +1,27 @@
 Snowball
 ========
 
-Snowball is a programming language created in 2001 by Martin Porter.
+Snowball is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2001 by Martin Porter.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2001
  https://pldb.io/concepts/../lists/creators.html#q=Martin%20Porter Martin Porter
 
-#655 on PLDB
-23 Years Old
+#687 on PLDB
+25 Years Old
 
+```Download source code:
 git clone https://github.com/snowballstem/snowball
+```
 
 Snowball is a small string processing programming language designed for creating stemming algorithms for use in information retrieval.The Snowball compiler translates a Snowball script (a  .sbl file) into either a thread-safe ANSI C program or a Java program. For ANSI C, each Snowball script produces a program file and corresponding header file (with  .c  and  .h  extensions). The Snowball compiler checks the consistency of its script, and this check was used to discover a typo in a seminal academic paper by Lovins which had remained undetected for 30 years.The basic datatypes handled by Snowball are strings of characters, signed integers, and boolean truth values, or more simply strings, integers and booleans. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Snowball_%28programming_language%29 Read more on Wikipedia...
 
-- Tags: programming language
-- Snowball is developed on GitHub and has 736 stars
-- Early development of Snowball happened in https://lists.tartarus.org/pipermail/snowball-discuss
-- Snowball is written in C, Python, Rust, Go, Ada, C#, Java, Perl, Pascal, JavaScript, reStructuredText, Markdown, Make, YAML, Diff, XML, TOML
-- Pygments supports syntax highlighting for Snowball
-- See also: (4 related languages) SNOBOL, Java, ASCII, C
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Snowball is developed on <a href="https://github.com/snowballstem/snowball">GitHub</a> and has 736 stars
+- Early development of Snowball happened in <a href="../lists/labs.html#q=https://lists.tartarus.org/pipermail/snowball-discuss">https://lists.tartarus.org/pipermail/snowball-discuss</a>
+- Snowball is written in <a href="c.html">C</a>, <a href="python.html">Python</a>, <a href="rust.html">Rust</a>, <a href="go.html">Go</a>, <a href="ada.html">Ada</a>, <a href="csharp.html">C#</a>, <a href="java.html">Java</a>, <a href="perl.html">Perl</a>, <a href="pascal.html">Pascal</a>, <a href="javascript.html">JavaScript</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="markdown.html">Markdown</a>, <a href="make.html">Make</a>, <a href="yaml.html">YAML</a>, <a href="diff.html">Diff</a>, <a href="xml.html">XML</a>, <a href="toml.html">TOML</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/dsls.py">syntax highlighting</a> for Snowball
+- See also: (4 related languages) <a href="snobol.html">SNOBOL</a>, <a href="java.html">Java</a>, <a href="ascii.html">ASCII</a>, <a href="c.html">C</a>
 - Read more about Snowball on the web: 1.
  http://snowball.tartarus.org 1.
 
-View source
+Built with Scroll v178.2.3

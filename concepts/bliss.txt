@@ -1,24 +1,25 @@
 BLISS
 =====
 
-BLISS is a programming language created in 1969 by William Wulf.
+BLISS is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1969 by William Wulf.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221969%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1969
  https://pldb.io/concepts/../lists/creators.html#q=William%20Wulf William Wulf
 
-#1132 on PLDB
-55 Years Old
+#1174 on PLDB
+57 Years Old
 
 BLISS is a system programming language developed at Carnegie Mellon by W. A. Wulf, D. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/BLISS Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of BLISS happened in Carnegie Mellon
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of BLISS happened in <a href="../lists/labs.html#q=Carnegie Mellon">Carnegie Mellon</a>
 - BLISS on HOPL
  https://hopl.info/showlanguage.prx?exp=375 BLISS on HOPL
-- See also: (5 related languages) MIPS architecture, IA-32, Algol, C, DOI
+- See also: (5 related languages) <a href="mips.html">MIPS architecture</a>, <a href="ia-32.html">IA-32</a>, <a href="algol.html">Algol</a>, <a href="c.html">C</a>, <a href="doi.html">DOI</a>
 - Read more about BLISS on Semantic Scholar: 1.
  https://semanticscholar.org/paper/4430dfe254804b19bb6a4d9fc10d5bed2932b7cc 1.
 
+```Example from <a href='https://en.wikipedia.org/wiki/BLISS'>Wikipedia</a>:
 MODULE E1 (MAIN = CTRL) =
 BEGIN
 FORWARD ROUTINE
@@ -47,29 +48,30 @@ ROUTINE STEP(A) =
     (.A+1);
 END
 ELUDOM
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ! A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ! A comment
  Token !
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

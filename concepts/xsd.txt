@@ -1,18 +1,19 @@
 XSD
 ===
 
-XSD, aka XML Schema Definition, is a data validation language created in 2001.
+XSD, aka XML Schema Definition, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataValidationLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data validation language</a> created in 2001.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2001
 
-#1639 on PLDB
-23 Years Old
+#1688 on PLDB
+25 Years Old
 
 XSD (XML Schema Definition), a recommendation of the World Wide Web Consortium (W3C), specifies how to formally describe the elements in an Extensible Markup Language (XML) document. It can be used by programmers to verify each piece of item content in a document. They can check if it adheres to the description of the element it is placed in.Like all XML schema languages, XSD can be used to express a set of rules to which an XML document must conform in order to be considered "valid" according to that schema. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/XML_Schema_(W3C) Read more on Wikipedia...
 
-- Tags: dataValidationLanguage
-- 22 PLDB concepts link to XSD: Apache Hbase, ecsharp, Eiffel, Erlang, FFmpeg, Gradle, HHVM, Java, Linux, Minilang, NeXML format, PHP, Plaid, PowerShell, Rebeca Modeling Language, RobotFramework, Roslyn compiler, Simple Binary Encoding, tibet, typecobol, VLC, YAWL
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataValidationLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataValidationLanguage</a>
+- 26 PLDB concepts link to XSD: <a href="apache-hbase.html">Apache Hbase</a>, <a href="ecl.html">ECL</a>, <a href="ecsharp.html">ecsharp</a>, <a href="eiffel.html">Eiffel</a>, <a href="erlang.html">Erlang</a>, <a href="ffmpeg.html">FFmpeg</a>, <a href="gradle.html">Gradle</a>, <a href="hhvm.html">HHVM</a>, <a href="java.html">Java</a>, <a href="linux.html">Linux</a>, <a href="minilang.html">Minilang</a>, <a href="mps.html">MPS</a>, <a href="netbeans-editor.html">netbeans-editor</a>, <a href="nexml.html">NeXML format</a>, <a href="php.html">PHP</a>, <a href="plaid-programming-language.html">Plaid</a>, <a href="powershell.html">PowerShell</a>, <a href="rebeca-modeling-language.html">Rebeca Modeling Language</a>, <a href="reko-decompiler.html">Reko</a>, <a href="robotframework.html">RobotFramework</a>, <a href="roslyn-compiler.html">Roslyn compiler</a>, <a href="simple-binary-encoding.html">Simple Binary Encoding</a>, <a href="tibet.html">tibet</a>, <a href="typecobol.html">typecobol</a>, <a href="vlc.html">VLC</a>, <a href="yawl.html">YAWL</a>
 
+```Example from the web:
 &lt;xs:element name=&quot;PurchaseOrder&quot; type=&quot;PurchaseOrderType&quot;/&gt;
 
 &lt;xs:element name=&quot;gift&quot;&gt;
@@ -23,5 +24,6 @@ XSD (XML Schema Definition), a recommendation of the World Wide Web Consortium (
   &lt;/xs:sequence&gt;
  &lt;/xs:complexType&gt;
 &lt;/xs:element&gt;
+```
 
-View source
+Built with Scroll v178.2.3

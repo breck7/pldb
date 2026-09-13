@@ -1,21 +1,22 @@
 UML
 ===
 
-UML, aka Unified Modeling Language, is a xml format created in 1996.
+UML, aka Unified Modeling Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22xmlFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">xml format</a> created in 1996.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1996
 
-#264 on PLDB
-28 Years Old
+#274 on PLDB
+30 Years Old
 
 The Unified Modeling Language (UML) is a general-purpose, developmental, modeling language in the field of software engineering, that is intended to provide a standard way to visualize the design of a system. UML was originally motivated by the desire to standardize the disparate notational systems and approaches to software design developed by Grady Booch, Ivar Jacobson and James Rumbaugh at Rational Software in 1994–1995, with further development led by them through 1996. In 1997 UML was adopted as a standard by the Object Management Group (OMG), and has been managed by this organization ever since. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Unified_Modeling_Language Read more on Wikipedia...
 
-- Tags: xmlFormat
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"xmlFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>xmlFormat</a>
 - UML on HOPL
  https://hopl.info/showlanguage.prx?exp=7130 UML on HOPL
-- See also: (2 related languages) BPMN, SysML
-- 1 PLDB concepts link to UML: XUML
+- See also: (2 related languages) <a href="bpmn.html">BPMN</a>, <a href="sysml.html">SysML</a>
+- 1 PLDB concepts link to UML: <a href="xuml.html">XUML</a>
 
+```Example from the web:
 &lt;?xml version=&quot;1.0&quot;?&gt;
 &lt;XMI xmi.version=&quot;1.2&quot; xmlns:UML=&quot;org.omg/UML/1.4&quot;&gt;
  &lt;XMI.header&gt;
@@ -51,15 +52,16 @@ The Unified Modeling Language (UML) is a general-purpose, developmental, modelin
   &lt;/UML:Model&gt;
  &lt;/XMI.content&gt;
 &lt;/XMI&gt;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 
-View source
+Built with Scroll v178.2.3

@@ -1,43 +1,48 @@
 Cirru
 =====
 
-Cirru is a data notation created in 2012 by tí yè.
+Cirru is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 2012 by tí yè.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
  https://pldb.io/concepts/../lists/creators.html#q=t%C3%AD%20y%C3%A8 tí yè
 
-#896 on PLDB
-12 Years Old
-346 Repos
+#920 on PLDB
+14 Years Old
+346 <span title="Cirru repos on GitHub.">Repos</span>
 
 Cirru Project helps people code in syntax tree. It offers a tree editor and a text syntax.
 
-- Tags: dataNotation
-- There are at least 346 Cirru repos on GitHub
-- Early development of Cirru happened in https://github.com/Cirru
-- The  Google BigQuery Public Dataset GitHub snapshot shows 266 users using Cirru in 288 repos on GitHub
-- Pygments supports syntax highlighting for Cirru
-- GitHub supports syntax highlighting for Cirru
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- There are at least 346 Cirru repos on <a href="https://github.com/search?q=language:Cirru">GitHub</a>
+- Early development of Cirru happened in <a href="../lists/labs.html#q=https://github.com/Cirru">https://github.com/Cirru</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 266 users using Cirru in 288 repos on <a href="https://api.github.com/search/repositories?q=language:Cirru">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/webmisc.py">syntax highlighting</a> for Cirru
+- GitHub supports <a href="https://github.com/Cirru/sublime-cirru" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Cirru
 - Read more about Cirru on the web: 1.
  https://github.com/Cirru/cirru-parser/wiki/About-Cirru 1.
 
+```Example from the web:
 set a
  add
    number 1
    number 2
+```
+
+```Example from <a href='https://github.com/Cirru/sublime-cirru'>Linguist</a>:
 
 require ./stdio.cr
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   print
     + 1 2
     , 11
  Token
 
-View source
+Built with Scroll v178.2.3

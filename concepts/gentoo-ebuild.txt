@@ -1,24 +1,25 @@
 Gentoo Ebuild
 =============
 
-Gentoo Ebuild is a programming language created in 1999.
+Gentoo Ebuild is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1999.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221999%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1999
 
-#817 on PLDB
-25 Years Old
-1k Repos
+#836 on PLDB
+27 Years Old
+1k <span title="Gentoo Ebuild repos on GitHub.">Repos</span>
 
 An ebuild is a specialized bash script which automates compilation and installation procedures for software packages. The format was created by the Gentoo Linux project for use in its Portage software management system. Each version of an application or package in the Portage repository has a specific ebuild script written for it. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Ebuild Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 1,476 Gentoo Ebuild repos on GitHub
-- Early development of Gentoo Ebuild happened in Gentoo Foundation
-- GitHub supports syntax highlighting for Gentoo Ebuild
-- See also: (1 related languages) Bash
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 1,476 Gentoo Ebuild repos on <a href="https://github.com/search?q=language:Gentoo Ebuild">GitHub</a>
+- Early development of Gentoo Ebuild happened in <a href="../lists/labs.html#q=Gentoo Foundation">Gentoo Foundation</a>
+- GitHub supports <a href="https://github.com/atom/language-shellscript" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Gentoo Ebuild
+- See also: (1 related languages) <a href="bash.html">Bash</a>
 - Read more about Gentoo Ebuild on the web: 1.
  https://wiki.gentoo.org/wiki/Basic_guide_to_write_Gentoo_Ebuilds 1.
 
+```Example from the web:
  Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
@@ -31,29 +32,30 @@ SRC_URI=&quot;https://dev.gentoo.org/~tomwij/files/wiki/hello-world-1.0.tar.gz&q
 LICENSE=&quot;MIT&quot;
 SLOT=&quot;0&quot;
 KEYWORDS=&quot;~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86&quot;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

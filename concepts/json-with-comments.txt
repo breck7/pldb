@@ -1,30 +1,33 @@
 JSON with Comments
 ==================
 
-JSON with Comments is a data notation created in 2001 by Muhammad Muzzammil.
+JSON with Comments is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 2001 by Muhammad Muzzammil.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2001
  https://pldb.io/concepts/../lists/creators.html#q=Muhammad%20Muzzammil Muhammad Muzzammil
 
-#567 on PLDB
-23 Years Old
-0 Repos
+#588 on PLDB
+25 Years Old
+0 <span title="JSON with Comments repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/muhammadmuzzammil1998/jsonc
+```
 
 JSON with comments for Go!
 
-- Tags: dataNotation
-- JSON with Comments is developed on GitHub and has 196 stars
-- There are at least 0 JSON with Comments repos on GitHub
-- JSON with Comments is a superset of JSON
-- Early development of JSON with Comments happened in https://github.com/muhammadmuzzammil1998/jsonc/issues
-- JSON with Comments is written in Markdown, Go, YAML
-- GitHub supports syntax highlighting for JSON with Comments
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- JSON with Comments is developed on <a href="https://github.com/muhammadmuzzammil1998/jsonc">GitHub</a> and has 196 stars
+- There are at least 0 JSON with Comments repos on <a href="https://github.com/search?q=language:JSON with Comments">GitHub</a>
+- JSON with Comments is a <a href="../lists/explorer.html#columns=rank~id~appeared~tags~creators~supersetOf&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22supersetOf%22%2C%22origData%22%3A%22supersetOf%22%2C%22tags%22%3A%22html%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">superset</a> of <a href="json.html">JSON</a>
+- Early development of JSON with Comments happened in <a href="../lists/labs.html#q=https://github.com/muhammadmuzzammil1998/jsonc/issues">https://github.com/muhammadmuzzammil1998/jsonc/issues</a>
+- JSON with Comments is written in <a href="markdown.html">Markdown</a>, <a href="go.html">Go</a>, <a href="yaml.html">YAML</a>
+- GitHub supports <a href="https://github.com/atom/language-javascript" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for JSON with Comments
 - Read more about JSON with Comments on the web: 1. 2. 3.
  https://plus.google.com/118095276221607585885/posts/RK8qyGVaGSr 1.
  https://changelog.com/news/jsonc-is-a-superset-of-json-which-supports-comments-6LwR 2.
  https://github.com/Microsoft/node-jsonc-parser 3.
 
+```Example from the web:
 /*
  * JSLint&#39;s implementation of JSHint
  * The JSLint options and makeup of this file were created based on the documentation of JSLint by
@@ -34,27 +37,30 @@ JSON with comments for Go!
 {
   &quot;foobar&quot; : true,       // Not checked in JSHint
 }
+```
 
+```Example from <a href='https://github.com/atom/language-javascript'>Linguist</a>:
 [
 	{
 		&quot;command&quot;: &quot;haxe_run_build&quot;
 	}
 ]
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -62,15 +68,15 @@ row
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

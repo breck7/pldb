@@ -1,7 +1,7 @@
 const measures = [
   {
     "Name": "id",
-    "Values": 5024,
+    "Values": 5152,
     "Coverage": "100%",
     "Question": "What is the ID of this concept?",
     "Example": "05ab1e",
@@ -13,7 +13,7 @@ const measures = [
   },
   {
     "Name": "name",
-    "Values": 5024,
+    "Values": 5152,
     "Coverage": "100%",
     "Question": "What is the name of this concept?",
     "Example": "05AB1E",
@@ -24,7 +24,7 @@ const measures = [
   },
   {
     "Name": "appeared",
-    "Values": 5024,
+    "Values": 5152,
     "Coverage": "100%",
     "Question": "What year was the language publicly released and/or announced?",
     "Example": "2015",
@@ -35,8 +35,8 @@ const measures = [
   },
   {
     "Name": "creators",
-    "Values": 1498,
-    "Coverage": "29%",
+    "Values": 1640,
+    "Coverage": "31%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Zach Leatherman",
     "Type": "string",
@@ -55,7 +55,7 @@ const measures = [
   },
   {
     "Name": "measurements",
-    "Values": 5024,
+    "Values": 5152,
     "Coverage": "100%",
     "Question": "How many measurements do we have about this thing?",
     "Example": "11",
@@ -65,7 +65,7 @@ const measures = [
   },
   {
     "Name": "tags",
-    "Values": 5024,
+    "Values": 5152,
     "Coverage": "100%",
     "Question": "Which category(ies) in PLDB's subjective ontology does this entity fit into?",
     "Example": "esolang",
@@ -86,8 +86,8 @@ const measures = [
   },
   {
     "Name": "website",
-    "Values": 1764,
-    "Coverage": "35%",
+    "Values": 1884,
+    "Coverage": "36%",
     "Question": "What is the URL of the official homepage for this language project?",
     "Example": "https://www.11ty.dev/",
     "Type": "string",
@@ -96,17 +96,17 @@ const measures = [
   },
   {
     "Name": "spec",
-    "Values": 39,
-    "Coverage": "0%",
+    "Values": 54,
+    "Coverage": "1%",
     "Question": "What is a URL to the official spec for this language?",
-    "Example": "https://atproto.com/specs/atp",
+    "Example": "https://www.iso.org/standard/67472.html",
     "Type": "string",
     "SortIndex": 1.22,
     "IsComputed": false
   },
   {
     "Name": "foundationScore",
-    "Values": 5024,
+    "Values": 5152,
     "Coverage": "100%",
     "Question": "How many languages are built using this language?",
     "Example": "0",
@@ -116,7 +116,7 @@ const measures = [
   },
   {
     "Name": "blog",
-    "Values": 69,
+    "Values": 76,
     "Coverage": "1%",
     "Question": "What is the URL to the official blog for this language?",
     "Example": "https://www.11ty.dev/blog/",
@@ -126,7 +126,7 @@ const measures = [
   },
   {
     "Name": "releaseNotes",
-    "Values": 69,
+    "Values": 71,
     "Coverage": "1%",
     "Question": "What is the URL to the release notes or changelog for this language?",
     "Example": "https://help.sap.com/docs/BTP/4726775c8bfc483abb210252604515b2/e9b10e43016e423ab0efe91e668a6efc.html",
@@ -136,7 +136,7 @@ const measures = [
   },
   {
     "Name": "download",
-    "Values": 42,
+    "Values": 44,
     "Coverage": "0%",
     "Question": "What is a URL to the download page for this language?",
     "Example": "https://developer.arm.com/downloads/-/arm-compiler-for-embedded",
@@ -146,7 +146,7 @@ const measures = [
   },
   {
     "Name": "latestVersion",
-    "Values": 640,
+    "Values": 641,
     "Coverage": "12%",
     "Question": "What is the latest version?",
     "Example": "v1.0.0-test.3-bugfix",
@@ -155,21 +155,21 @@ const measures = [
     "IsComputed": false
   },
   {
-    "Name": "exampleCount",
-    "Values": 5024,
+    "Name": "rank",
+    "Values": 5152,
     "Coverage": "100%",
-    "Question": "How many examples do we have written in this language?",
-    "Example": "2",
+    "Question": "How does this concept rank amongst all other concepts?",
+    "Example": "1270",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
   },
   {
-    "Name": "rank",
-    "Values": 5024,
+    "Name": "exampleCount",
+    "Values": 5152,
     "Coverage": "100%",
-    "Question": "How does this concept rank amongst all other concepts?",
-    "Example": "1212",
+    "Question": "How many examples do we have written in this language?",
+    "Example": "2",
     "Type": "number",
     "SortIndex": 1.5,
     "IsComputed": true
@@ -185,8 +185,8 @@ const measures = [
   },
   {
     "Name": "writtenInCount",
-    "Values": 1169,
-    "Coverage": "23%",
+    "Values": 1274,
+    "Coverage": "24%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
     "Type": "number",
@@ -195,55 +195,57 @@ const measures = [
   },
   {
     "Name": "pldbScore",
-    "Values": 5024,
+    "Values": 5152,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "21740",
+    "Example": "22215",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
   },
   {
-    "Name": "meetup_memberCount",
-    "Values": 57,
-    "Coverage": "1%",
-    "Question": "How many people in this meetup group?",
-    "Example": "1514159",
+    "Name": "hoplId",
+    "Values": 1808,
+    "Coverage": "35%",
+    "Question": "What is the HOPL id of this language?",
+    "Example": "4365",
     "Type": "number",
     "SortIndex": 1.9,
-    "IsComputed": false
+    "IsComputed": true
   },
   {
-    "Name": "meetup_groupCount",
-    "Values": 57,
-    "Coverage": "1%",
-    "Question": "How many groups?",
-    "Example": "2707",
+    "Name": "isLanguage",
+    "Values": 5152,
+    "Coverage": "100%",
+    "Question": "Does PLDB categorize this entity as a language?",
+    "Example": "true",
+    "Type": "boolean",
+    "SortIndex": 1.9,
+    "IsComputed": true
+  },
+  {
+    "Name": "inboundLinksCount",
+    "Values": 5152,
+    "Coverage": "100%",
+    "Question": "How many other concepts link to this one?",
+    "Example": "0",
     "Type": "number",
     "SortIndex": 1.9,
-    "IsComputed": false
+    "IsComputed": true
   },
   {
-    "Name": "subreddit_memberCount",
-    "Values": 0,
-    "Coverage": "0%",
-    "Question": "How many members in this subreddit?",
-    "Type": "textarea",
+    "Name": "inboundLinks",
+    "Values": 482,
+    "Coverage": "9%",
+    "Question": "Which other concepts link to this one?",
+    "Example": "explorer",
+    "Type": "string",
     "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "twitter_followers",
-    "Values": 0,
-    "Coverage": "0%",
-    "Question": "How many followers does the linked account have?",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
+    "IsComputed": true
   },
   {
     "Name": "conferences",
-    "Values": 6,
+    "Values": 7,
     "Coverage": "0%",
     "Question": "What is a URL(s) to a recurring conference(s) focused on this language?",
     "Example": "https://conf.11ty.dev/",
@@ -252,285 +254,72 @@ const measures = [
     "IsComputed": false
   },
   {
-    "Name": "zulip",
-    "Values": 2,
-    "Coverage": "0%",
-    "Question": "What is a URL to an official (or popular unofficial) Zulip for language development?",
-    "Example": "https://coq.zulipchat.com/",
-    "Type": "string",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "githubRepo_created",
-    "Values": 1162,
-    "Coverage": "23%",
-    "Question": "When was the *Github repo* for this entity created?",
-    "Example": "2015",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "githubRepo_updated",
-    "Values": 1162,
-    "Coverage": "23%",
-    "Question": "What year was the last commit made?",
-    "Example": "2024",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "githubRepo_firstCommit",
-    "Values": 844,
-    "Coverage": "16%",
-    "Question": "What year the first commit made in this git repo?",
-    "Example": "2015",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "githubRepo_subscribers",
-    "Values": 1162,
-    "Coverage": "23%",
-    "Question": "How many subscribers to the repo?",
-    "Example": "24",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "githubRepo_forks",
-    "Values": 1160,
-    "Coverage": "23%",
-    "Question": "How many forks of the repo?",
-    "Example": "48",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "githubRepo_stars",
-    "Values": 1162,
-    "Coverage": "23%",
-    "Question": "How many stars of the repo?",
-    "Example": "755",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "githubRepo_issues",
-    "Values": 1159,
-    "Coverage": "23%",
-    "Question": "How many isses on the repo?",
-    "Example": "40",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "screenshot",
-    "Values": 23,
-    "Coverage": "0%",
-    "Question": "What is the filename to a screenshot of this visual language in the concepts/screenshots/ folder?",
-    "Example": "activity-pub.png",
-    "Type": "string",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "photo",
-    "Values": 2,
-    "Coverage": "0%",
-    "Question": "What is a URL to a screenshot of this real world notation in the form https://pldb.io/photos/[id].png?",
-    "Example": "binary-notation.jpg",
-    "Type": "string",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "linguistGrammarRepo_commitCount",
-    "Values": 398,
-    "Coverage": "7%",
-    "Question": "How many commits in this repo?",
-    "Example": "261",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "linguistGrammarRepo_firstCommit",
-    "Values": 398,
-    "Coverage": "7%",
-    "Question": "What year was the first commit made?",
-    "Example": "2015",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "linguistGrammarRepo_lastCommit",
-    "Values": 398,
-    "Coverage": "7%",
-    "Question": "What year was the last commit made?",
-    "Example": "2018",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "linguistGrammarRepo_sampleCount",
-    "Values": 365,
-    "Coverage": "7%",
-    "Question": "How many language samples in this repo?",
-    "Example": "6",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "linguistGrammarRepo_committerCount",
-    "Values": 398,
-    "Coverage": "7%",
-    "Question": "How many people have made commits in this repo?",
-    "Example": "3",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "redditDiscussion",
-    "Values": 3,
-    "Coverage": "0%",
-    "Question": "What is a link to a related discussion on reddit?",
-    "Example": "https://www.reddit.com/r/ProgrammingLanguages/comments/elbt5u/introducing_the_beef_programming_language/",
-    "Type": "string",
-    "Source": "reddit.com",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "roadmap",
-    "Values": 9,
-    "Coverage": "0%",
-    "Question": "What is the URL to a public roadmap page for this language, if one exists?",
-    "Example": "https://github.com/oven-sh/bun/issues/159",
-    "Type": "string",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "webRepl",
-    "Values": 129,
-    "Coverage": "2%",
-    "Question": "What is a URL for an online repl of this language?",
-    "Example": "https://ace.c9.io/build/kitchen-sink.html",
-    "Type": "string",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "wikipedia_related",
-    "Values": 1286,
-    "Coverage": "25%",
-    "Question": "What languages does Wikipedia have as related?",
-    "Example": "unicode assembly-language fortran",
-    "Type": "string",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "wikipedia_appeared",
-    "Values": 1534,
-    "Coverage": "30%",
-    "Question": "When does Wikipedia claim this entity first appeared?",
-    "Example": "1962",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "wikipedia_summary",
-    "Values": 1610,
-    "Coverage": "32%",
-    "Question": "What is the text summary of the language from the Wikipedia page?",
-    "Example": "The IBM 1620 was announced by IBM on October 21, 1959, and marketed as an inexpensive \"scientific computer\". After a total production of about two thousand machines, it was withdrawn on November 19, 1970. Modified versions of the 1620 were used as the CPU of the IBM 1710 and IBM 1720 Industrial Process Control Systems (making it the first digital computer considered reliable enough for real-time process control of factory equipment). Being variable word length decimal, as opposed to fixed-word-length pure binary, made it an especially attractive first computer to learn on –  and hundreds of thousands of students had their first experiences with a computer on the IBM 1620. Core memory cycle times were 20 microseconds for the (earlier) Model I, 10 microseconds for the Model II (about a thousand times slower than typical computer main memory in 2006). The Model II was introduced in 1962.",
-    "Type": "string",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "wikipedia_created",
-    "Values": 1387,
-    "Coverage": "27%",
-    "Question": "When was the *Wikipedia page* for this entity created?",
-    "Example": "2002",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "wikipedia_dailyPageViews",
-    "Values": 1666,
-    "Coverage": "33%",
-    "Question": "How many page views per day does this Wikipedia page get? Useful as a signal for rankings. Available via WP api.",
-    "Example": "60",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "wikipedia_backlinksCount",
-    "Values": 1617,
-    "Coverage": "32%",
-    "Question": "How many pages on WP link to this page?",
-    "Example": "112",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "wikipedia_revisionCount",
-    "Values": 1291,
-    "Coverage": "25%",
-    "Question": "How many revisions does this page have?",
-    "Example": "481",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "wikipedia_pageId",
-    "Values": 1600,
-    "Coverage": "31%",
-    "Question": "What is the internal ID for this entity on WP?",
-    "Example": "92577",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "domainName_registered",
-    "Values": 618,
-    "Coverage": "12%",
-    "Question": "When was this domain first registered?",
-    "Example": "2014",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "domainName_awisRank",
+    "Name": "dblp",
     "Values": 0,
     "Coverage": "0%",
-    "Question": "What is the Alexa Web Information Service (AWIS) domain ranking?",
-    "Type": "textarea",
-    "Source": "aws.amazon.com",
+    "Question": "What are publications about this language from https://dblp.org/?",
+    "Type": "text",
+    "Source": "dblp.org",
     "SortIndex": 1.9,
     "IsComputed": false
+  },
+  {
+    "Name": "dblp_hits",
+    "Values": 0,
+    "Coverage": "0%",
+    "Question": "How many matching publications?",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "dblp_publications",
+    "Values": 0,
+    "Coverage": "0%",
+    "Question": "An inline PSV table of hits.",
+    "Type": "textarea",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "equation",
+    "Values": 15,
+    "Coverage": "0%",
+    "Question": "What is a LaTeX encoding of this equation?",
+    "Example": "∇xB=µ0*J",
+    "Type": "string",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "filenames",
+    "Values": 2,
+    "Coverage": "0%",
+    "Question": "What are the filenames commonly associated with this language?",
+    "Example": "horp.conf",
+    "Type": "string",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "mainRepo",
+    "Values": 1280,
+    "Coverage": "24%",
+    "Question": "Where is the main source code for this language?",
+    "Example": "https://github.com/Adriandmen/05AB1E",
+    "Type": "string",
+    "SortIndex": 1.9,
+    "IsComputed": true
+  },
+  {
+    "Name": "primaryTag",
+    "Values": 5152,
+    "Coverage": "100%",
+    "Question": "Where is the primary tag for this language?",
+    "Example": "esolang",
+    "Type": "string",
+    "SortIndex": 1.9,
+    "IsComputed": true
   },
   {
     "Name": "githubBigQuery_users",
@@ -683,8 +472,118 @@ const measures = [
     "IsComputed": false
   },
   {
+    "Name": "githubRepo_created",
+    "Values": 1209,
+    "Coverage": "23%",
+    "Question": "When was the *Github repo* for this entity created?",
+    "Example": "2015",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "githubRepo_updated",
+    "Values": 1207,
+    "Coverage": "23%",
+    "Question": "What year was the last commit made?",
+    "Example": "2024",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "githubRepo_firstCommit",
+    "Values": 844,
+    "Coverage": "16%",
+    "Question": "What year the first commit made in this git repo?",
+    "Example": "2015",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "githubRepo_subscribers",
+    "Values": 1207,
+    "Coverage": "23%",
+    "Question": "How many subscribers to the repo?",
+    "Example": "24",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "githubRepo_forks",
+    "Values": 1207,
+    "Coverage": "23%",
+    "Question": "How many forks of the repo?",
+    "Example": "48",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "githubRepo_stars",
+    "Values": 1209,
+    "Coverage": "23%",
+    "Question": "How many stars of the repo?",
+    "Example": "755",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "githubRepo_issues",
+    "Values": 1204,
+    "Coverage": "23%",
+    "Question": "How many isses on the repo?",
+    "Example": "40",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "isFinished",
+    "Values": 5152,
+    "Coverage": "100%",
+    "Question": "Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.",
+    "Example": "false",
+    "Type": "boolean",
+    "SortIndex": 1.9,
+    "IsComputed": true
+  },
+  {
+    "Name": "nativeLanguage",
+    "Values": 17,
+    "Coverage": "0%",
+    "Question": "What is the native human language for this language, if not English?",
+    "Example": "Korean",
+    "Type": "string",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "screenshot",
+    "Values": 23,
+    "Coverage": "0%",
+    "Question": "What is the filename to a screenshot of this visual language in the concepts/screenshots/ folder?",
+    "Example": "activity-pub.png",
+    "Type": "string",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "photo",
+    "Values": 2,
+    "Coverage": "0%",
+    "Question": "What is a URL to a screenshot of this real world notation in the form https://pldb.io/photos/[id].png?",
+    "Example": "binary-notation.jpg",
+    "Type": "string",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
     "Name": "leachim6_filepath",
-    "Values": 427,
+    "Values": 428,
     "Coverage": "8%",
     "Question": "What is the filepath to this language in leachim6's hello-world project?",
     "Example": "#/05AB1E",
@@ -693,115 +592,78 @@ const measures = [
     "IsComputed": false
   },
   {
-    "Name": "projectEuler_memberCount",
-    "Values": 0,
-    "Coverage": "0%",
-    "Question": "How many project euler members use this language?",
-    "Type": "textarea",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "pygmentsHighlighter_filename",
-    "Values": 341,
-    "Coverage": "6%",
-    "Question": "What is the Python filename implementing the highlighting for this language?",
-    "Example": "business.py",
-    "Type": "string",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "tiobe_currentRank",
-    "Values": 50,
-    "Coverage": "0%",
-    "Question": "What is the current Tiobe rank of this language?",
-    "Example": "40",
+    "Name": "linguistGrammarRepo_commitCount",
+    "Values": 398,
+    "Coverage": "7%",
+    "Question": "How many commits in this repo?",
+    "Example": "261",
     "Type": "number",
     "SortIndex": 1.9,
     "IsComputed": false
   },
   {
-    "Name": "filenames",
-    "Values": 2,
-    "Coverage": "0%",
-    "Question": "What are the filenames commonly associated with this language?",
-    "Example": "horp.conf",
-    "Type": "string",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "maintainerOrganization",
-    "Values": 11,
-    "Coverage": "0%",
-    "Question": "What organization maintains this language?",
-    "Example": "Software Freedom Conservancy",
-    "Type": "string",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "forLanguages",
-    "Values": 48,
-    "Coverage": "0%",
-    "Question": "Which languages is this repository for?",
-    "Example": "ballerina",
-    "Type": "string",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "dblp",
-    "Values": 0,
-    "Coverage": "0%",
-    "Question": "What are publications about this language from https://dblp.org/?",
-    "Type": "text",
-    "Source": "dblp.org",
-    "SortIndex": 1.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "dblp_hits",
-    "Values": 0,
-    "Coverage": "0%",
-    "Question": "How many matching publications?",
+    "Name": "linguistGrammarRepo_firstCommit",
+    "Values": 398,
+    "Coverage": "7%",
+    "Question": "What year was the first commit made?",
+    "Example": "2015",
     "Type": "number",
     "SortIndex": 1.9,
     "IsComputed": false
   },
   {
-    "Name": "dblp_publications",
-    "Values": 0,
-    "Coverage": "0%",
-    "Question": "An inline PSV table of hits.",
-    "Type": "textarea",
+    "Name": "linguistGrammarRepo_lastCommit",
+    "Values": 398,
+    "Coverage": "7%",
+    "Question": "What year was the last commit made?",
+    "Example": "2018",
+    "Type": "number",
     "SortIndex": 1.9,
     "IsComputed": false
   },
   {
-    "Name": "mainRepo",
-    "Values": 1210,
-    "Coverage": "24%",
-    "Question": "Where is the main source code for this language?",
-    "Example": "https://github.com/Adriandmen/05AB1E",
-    "Type": "string",
+    "Name": "linguistGrammarRepo_sampleCount",
+    "Values": 365,
+    "Coverage": "7%",
+    "Question": "How many language samples in this repo?",
+    "Example": "6",
+    "Type": "number",
     "SortIndex": 1.9,
-    "IsComputed": true
+    "IsComputed": false
   },
   {
-    "Name": "primaryTag",
-    "Values": 5024,
-    "Coverage": "100%",
-    "Question": "Where is the primary tag for this language?",
-    "Example": "esolang",
-    "Type": "string",
+    "Name": "linguistGrammarRepo_committerCount",
+    "Values": 398,
+    "Coverage": "7%",
+    "Question": "How many people have made commits in this repo?",
+    "Example": "3",
+    "Type": "number",
     "SortIndex": 1.9,
-    "IsComputed": true
+    "IsComputed": false
+  },
+  {
+    "Name": "meetup_memberCount",
+    "Values": 58,
+    "Coverage": "1%",
+    "Question": "How many people in this meetup group?",
+    "Example": "1514159",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "meetup_groupCount",
+    "Values": 58,
+    "Coverage": "1%",
+    "Question": "How many groups?",
+    "Example": "2707",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
   },
   {
     "Name": "standsFor",
-    "Values": 368,
+    "Values": 403,
     "Coverage": "7%",
     "Question": "If the language name is an acronym what does/did it stand for?",
     "Example": "3D Manufacturing Format",
@@ -811,7 +673,7 @@ const measures = [
   },
   {
     "Name": "aka",
-    "Values": 181,
+    "Values": 192,
     "Coverage": "3%",
     "Question": "What is this also known as?",
     "Example": "4D",
@@ -830,11 +692,11 @@ const measures = [
     "IsComputed": false
   },
   {
-    "Name": "equation",
-    "Values": 15,
+    "Name": "maintainerOrganization",
+    "Values": 12,
     "Coverage": "0%",
-    "Question": "What is a LaTeX encoding of this equation?",
-    "Example": "∇xB=µ0*J",
+    "Question": "What organization maintains this language?",
+    "Example": "HPE",
     "Type": "string",
     "SortIndex": 1.9,
     "IsComputed": false
@@ -870,68 +732,57 @@ const measures = [
     "IsComputed": false
   },
   {
-    "Name": "hoplId",
-    "Values": 1807,
-    "Coverage": "35%",
-    "Question": "What is the HOPL id of this language?",
-    "Example": "4365",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": true
-  },
-  {
-    "Name": "isLanguage",
-    "Values": 5024,
-    "Coverage": "100%",
-    "Question": "Does PLDB categorize this entity as a language?",
-    "Example": "true",
-    "Type": "boolean",
-    "SortIndex": 1.9,
-    "IsComputed": true
-  },
-  {
-    "Name": "inboundLinksCount",
-    "Values": 5024,
-    "Coverage": "100%",
-    "Question": "How many other concepts link to this one?",
-    "Example": "0",
-    "Type": "number",
-    "SortIndex": 1.9,
-    "IsComputed": true
-  },
-  {
-    "Name": "inboundLinks",
-    "Values": 439,
-    "Coverage": "8%",
-    "Question": "Which other concepts link to this one?",
-    "Example": "explorer",
-    "Type": "string",
-    "SortIndex": 1.9,
-    "IsComputed": true
-  },
-  {
-    "Name": "isFinished",
-    "Values": 5024,
-    "Coverage": "100%",
-    "Question": "Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.",
-    "Example": "false",
-    "Type": "boolean",
-    "SortIndex": 1.9,
-    "IsComputed": true
-  },
-  {
-    "Name": "nativeLanguage",
-    "Values": 17,
+    "Name": "forLanguages",
+    "Values": 48,
     "Coverage": "0%",
-    "Question": "What is the native human language for this language, if not English?",
-    "Example": "Korean",
+    "Question": "Which languages is this repository for?",
+    "Example": "ballerina",
     "Type": "string",
     "SortIndex": 1.9,
     "IsComputed": false
   },
   {
+    "Name": "projectEuler_memberCount",
+    "Values": 0,
+    "Coverage": "0%",
+    "Question": "How many project euler members use this language?",
+    "Type": "textarea",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "pygmentsHighlighter_filename",
+    "Values": 341,
+    "Coverage": "6%",
+    "Question": "What is the Python filename implementing the highlighting for this language?",
+    "Example": "business.py",
+    "Type": "string",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "subreddit_memberCount",
+    "Values": 0,
+    "Coverage": "0%",
+    "Question": "How many members in this subreddit?",
+    "Type": "textarea",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "redditDiscussion",
+    "Values": 3,
+    "Coverage": "0%",
+    "Question": "What is a link to a related discussion on reddit?",
+    "Example": "https://www.reddit.com/r/ProgrammingLanguages/comments/elbt5u/introducing_the_beef_programming_language/",
+    "Type": "string",
+    "Source": "reddit.com",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
     "Name": "repoStats_firstCommit",
-    "Values": 1163,
+    "Values": 1235,
     "Coverage": "23%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -941,27 +792,27 @@ const measures = [
   },
   {
     "Name": "repoStats_newestCommit",
-    "Values": 1125,
-    "Coverage": "22%",
+    "Values": 1229,
+    "Coverage": "23%",
     "Question": "What year was the newest commit made in this git repo?",
-    "Example": "2022",
+    "Example": "2024",
     "Type": "number",
     "SortIndex": 1.9,
     "IsComputed": false
   },
   {
     "Name": "repoStats_commits",
-    "Values": 1163,
+    "Values": 1235,
     "Coverage": "23%",
     "Question": "How many commits to the repo?",
-    "Example": "871",
+    "Example": "872",
     "Type": "number",
     "SortIndex": 1.9,
     "IsComputed": false
   },
   {
     "Name": "repoStats_committers",
-    "Values": 1163,
+    "Values": 1235,
     "Coverage": "23%",
     "Question": "How many committers to the repo?",
     "Example": "28",
@@ -971,7 +822,7 @@ const measures = [
   },
   {
     "Name": "repoStats_files",
-    "Values": 1160,
+    "Values": 1233,
     "Coverage": "23%",
     "Question": "How many files in the repo?",
     "Example": "49",
@@ -980,30 +831,199 @@ const measures = [
     "IsComputed": false
   },
   {
+    "Name": "repoStats_mb",
+    "Values": 1227,
+    "Coverage": "23%",
+    "Question": "How many MBs in .git/objects?",
+    "Example": "4",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "repoStats_linesOfCode",
+    "Values": 1211,
+    "Coverage": "23%",
+    "Question": "How many lines of code?",
+    "Example": "18431",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "roadmap",
+    "Values": 10,
+    "Coverage": "0%",
+    "Question": "What is the URL to a public roadmap page for this language, if one exists?",
+    "Example": "https://github.com/oven-sh/bun/issues/159",
+    "Type": "string",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "tiobe_currentRank",
+    "Values": 50,
+    "Coverage": "0%",
+    "Question": "What is the current Tiobe rank of this language?",
+    "Example": "40",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "twitter_followers",
+    "Values": 0,
+    "Coverage": "0%",
+    "Question": "How many followers does the linked account have?",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "webRepl",
+    "Values": 151,
+    "Coverage": "2%",
+    "Question": "What is a URL for an online repl of this language?",
+    "Example": "https://ace.c9.io/build/kitchen-sink.html",
+    "Type": "string",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "domainName_registered",
+    "Values": 618,
+    "Coverage": "11%",
+    "Question": "When was this domain first registered?",
+    "Example": "2014",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "domainName_awisRank",
+    "Values": 0,
+    "Coverage": "0%",
+    "Question": "What is the Alexa Web Information Service (AWIS) domain ranking?",
+    "Type": "textarea",
+    "Source": "aws.amazon.com",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "wikipedia_appeared",
+    "Values": 1533,
+    "Coverage": "29%",
+    "Question": "When does Wikipedia claim this entity first appeared?",
+    "Example": "1962",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "wikipedia_related",
+    "Values": 1285,
+    "Coverage": "24%",
+    "Question": "What languages does Wikipedia have as related?",
+    "Example": "unicode assembly-language fortran",
+    "Type": "string",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "wikipedia_summary",
+    "Values": 1608,
+    "Coverage": "31%",
+    "Question": "What is the text summary of the language from the Wikipedia page?",
+    "Example": "The IBM 1620 was announced by IBM on October 21, 1959, and marketed as an inexpensive \"scientific computer\". After a total production of about two thousand machines, it was withdrawn on November 19, 1970. Modified versions of the 1620 were used as the CPU of the IBM 1710 and IBM 1720 Industrial Process Control Systems (making it the first digital computer considered reliable enough for real-time process control of factory equipment). Being variable word length decimal, as opposed to fixed-word-length pure binary, made it an especially attractive first computer to learn on –  and hundreds of thousands of students had their first experiences with a computer on the IBM 1620. Core memory cycle times were 20 microseconds for the (earlier) Model I, 10 microseconds for the Model II (about a thousand times slower than typical computer main memory in 2006). The Model II was introduced in 1962.",
+    "Type": "string",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "wikipedia_created",
+    "Values": 1385,
+    "Coverage": "26%",
+    "Question": "When was the *Wikipedia page* for this entity created?",
+    "Example": "2002",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "wikipedia_dailyPageViews",
+    "Values": 1664,
+    "Coverage": "32%",
+    "Question": "How many page views per day does this Wikipedia page get? Useful as a signal for rankings. Available via WP api.",
+    "Example": "60",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "wikipedia_backlinksCount",
+    "Values": 1615,
+    "Coverage": "31%",
+    "Question": "How many pages on WP link to this page?",
+    "Example": "112",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "wikipedia_revisionCount",
+    "Values": 1290,
+    "Coverage": "25%",
+    "Question": "How many revisions does this page have?",
+    "Example": "481",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "wikipedia_pageId",
+    "Values": 1598,
+    "Coverage": "31%",
+    "Question": "What is the internal ID for this entity on WP?",
+    "Example": "92577",
+    "Type": "number",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
+    "Name": "zulip",
+    "Values": 2,
+    "Coverage": "0%",
+    "Question": "What is a URL to an official (or popular unofficial) Zulip for language development?",
+    "Example": "https://coq.zulipchat.com/",
+    "Type": "string",
+    "SortIndex": 1.9,
+    "IsComputed": false
+  },
+  {
     "Name": "description",
-    "Values": 1082,
-    "Coverage": "21%",
+    "Values": 1215,
+    "Coverage": "23%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
     "Type": "string",
     "SortIndex": 1.99,
     "IsComputed": false,
-    "Crux": "description"
+    "Cue": "description"
   },
   {
     "Name": "githubRepo_description",
-    "Values": 1082,
-    "Coverage": "21%",
+    "Values": 1215,
+    "Coverage": "23%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
     "Type": "string",
     "SortIndex": 1.99,
     "IsComputed": false,
-    "Crux": "description"
+    "Cue": "description"
   },
   {
     "Name": "paper",
-    "Values": 31,
+    "Values": 45,
     "Coverage": "0%",
     "Question": "What is a URL to a paper(s) by the creator(s) introducing this language?",
     "Example": "https://functional-art.org/2017/ait",
@@ -1012,24 +1032,64 @@ const measures = [
     "IsComputed": false
   },
   {
+    "Name": "lab",
+    "Values": 4015,
+    "Coverage": "77%",
+    "Question": "In what community(ies) did the language first originate?",
+    "Example": "Department of Computer Science, University of Toronto",
+    "Type": "string",
+    "SortIndex": 1.99,
+    "IsComputed": false
+  },
+  {
     "Name": "rijuRepl_description",
-    "Values": 1082,
-    "Coverage": "21%",
+    "Values": 1215,
+    "Coverage": "23%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
     "Type": "string",
     "SortIndex": 1.99,
     "IsComputed": false,
-    "Crux": "description"
+    "Cue": "description"
   },
   {
-    "Name": "lab",
-    "Values": 3978,
-    "Coverage": "79%",
-    "Question": "In what community(ies) did the language first originate?",
-    "Example": "Department of Computer Science, University of Toronto",
+    "Name": "fileExtensions",
+    "Values": 282,
+    "Coverage": "5%",
+    "Question": "What are the file extensions for this language?",
+    "Example": "3ds",
     "Type": "string",
-    "SortIndex": 1.99,
+    "SortIndex": 1.991,
+    "IsComputed": false
+  },
+  {
+    "Name": "githubLanguage_fileExtensions",
+    "Values": 519,
+    "Coverage": "10%",
+    "Question": "What are the file extensions for this language?",
+    "Example": "bsl os",
+    "Type": "string",
+    "SortIndex": 1.991,
+    "IsComputed": false
+  },
+  {
+    "Name": "leachim6_fileExtensions",
+    "Values": 369,
+    "Coverage": "7%",
+    "Question": "What are the file extensions for this language?",
+    "Example": "abap",
+    "Type": "string",
+    "SortIndex": 1.991,
+    "IsComputed": false
+  },
+  {
+    "Name": "pygmentsHighlighter_fileExtensions",
+    "Values": 326,
+    "Coverage": "6%",
+    "Question": "What are the file extensions for this language?",
+    "Example": "abap ABAP",
+    "Type": "string",
+    "SortIndex": 1.991,
     "IsComputed": false
   },
   {
@@ -1053,48 +1113,8 @@ const measures = [
     "IsComputed": false
   },
   {
-    "Name": "githubLanguage_fileExtensions",
-    "Values": 519,
-    "Coverage": "10%",
-    "Question": "What are the file extensions for this language?",
-    "Example": "bsl os",
-    "Type": "string",
-    "SortIndex": 1.991,
-    "IsComputed": false
-  },
-  {
-    "Name": "leachim6_fileExtensions",
-    "Values": 368,
-    "Coverage": "7%",
-    "Question": "What are the file extensions for this language?",
-    "Example": "abap",
-    "Type": "string",
-    "SortIndex": 1.991,
-    "IsComputed": false
-  },
-  {
-    "Name": "pygmentsHighlighter_fileExtensions",
-    "Values": 326,
-    "Coverage": "6%",
-    "Question": "What are the file extensions for this language?",
-    "Example": "abap ABAP",
-    "Type": "string",
-    "SortIndex": 1.991,
-    "IsComputed": false
-  },
-  {
-    "Name": "fileExtensions",
-    "Values": 241,
-    "Coverage": "4%",
-    "Question": "What are the file extensions for this language?",
-    "Example": "a51",
-    "Type": "string",
-    "SortIndex": 1.991,
-    "IsComputed": false
-  },
-  {
     "Name": "interviews",
-    "Values": 11,
+    "Values": 12,
     "Coverage": "0%",
     "Question": "What is a URL(s) to an interview with the creator(s) about this language?",
     "Example": "https://pldb.io/blog/brianKernighan.html",
@@ -1114,8 +1134,8 @@ const measures = [
   },
   {
     "Name": "writtenIn",
-    "Values": 1169,
-    "Coverage": "23%",
+    "Values": 1274,
+    "Coverage": "24%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
     "Type": "string",
@@ -1124,7 +1144,7 @@ const measures = [
   },
   {
     "Name": "compilesTo",
-    "Values": 84,
+    "Values": 96,
     "Coverage": "1%",
     "Question": "Which language(s) does this language primarily compile to?",
     "Example": "beam-bytecode",
@@ -1134,7 +1154,7 @@ const measures = [
   },
   {
     "Name": "leetSheets",
-    "Values": 82,
+    "Values": 86,
     "Coverage": "1%",
     "Question": "What is a URL(s) to a leet sheet(s) for this language?",
     "Example": "https://github.com/liffiton/Arduino-Cheat-Sheet",
@@ -1144,7 +1164,7 @@ const measures = [
   },
   {
     "Name": "isPublicDomain",
-    "Values": 23,
+    "Values": 25,
     "Coverage": "0%",
     "Question": "Is this public domain?",
     "Example": "true",
@@ -1154,12 +1174,32 @@ const measures = [
   },
   {
     "Name": "isOpenSource",
-    "Values": 1547,
-    "Coverage": "30%",
+    "Values": 1625,
+    "Coverage": "31%",
     "Question": "Is this an open source project?",
     "Example": "true",
     "Type": "boolean",
     "SortIndex": 2.01,
+    "IsComputed": true
+  },
+  {
+    "Name": "numberOfUsersEstimate",
+    "Values": 5152,
+    "Coverage": "100%",
+    "Question": "What is our estimate of number of users of this language?",
+    "Example": "928",
+    "Type": "number",
+    "SortIndex": 2.1,
+    "IsComputed": true
+  },
+  {
+    "Name": "numberOfJobsEstimate",
+    "Values": 5152,
+    "Coverage": "100%",
+    "Question": "What is our estimate of the number of jobs in this language?",
+    "Example": "0",
+    "Type": "number",
+    "SortIndex": 2.1,
     "IsComputed": true
   },
   {
@@ -1173,28 +1213,8 @@ const measures = [
     "IsComputed": false
   },
   {
-    "Name": "numberOfUsersEstimate",
-    "Values": 5024,
-    "Coverage": "100%",
-    "Question": "What is our estimate of number of users of this language?",
-    "Example": "928",
-    "Type": "number",
-    "SortIndex": 2.1,
-    "IsComputed": true
-  },
-  {
-    "Name": "numberOfJobsEstimate",
-    "Values": 5024,
-    "Coverage": "100%",
-    "Question": "What is our estimate of the number of jobs in this language?",
-    "Example": "0",
-    "Type": "number",
-    "SortIndex": 2.1,
-    "IsComputed": true
-  },
-  {
     "Name": "expandedMeasurements",
-    "Values": 5024,
+    "Values": 5152,
     "Coverage": "100%",
     "Question": "How many measurements do we have about this thing counting each list item as a measurement?",
     "Example": "15",
@@ -1204,7 +1224,7 @@ const measures = [
   },
   {
     "Name": "related",
-    "Values": 207,
+    "Values": 237,
     "Coverage": "4%",
     "Question": "What languages are related?",
     "Example": "logo",
@@ -1224,8 +1244,8 @@ const measures = [
   },
   {
     "Name": "influencedBy",
-    "Values": 83,
-    "Coverage": "1%",
+    "Values": 119,
+    "Coverage": "2%",
     "Question": "What languages influenced this one?",
     "Example": "algol-60",
     "Type": "string",
@@ -1254,7 +1274,7 @@ const measures = [
   },
   {
     "Name": "subsetOf",
-    "Values": 11,
+    "Values": 14,
     "Coverage": "0%",
     "Question": "Is this language a subset of another?",
     "Example": "c",
@@ -1264,7 +1284,7 @@ const measures = [
   },
   {
     "Name": "implementationOf",
-    "Values": 9,
+    "Values": 10,
     "Coverage": "0%",
     "Question": "Is this language an implementation of another?",
     "Example": "scheme",
@@ -1284,7 +1304,7 @@ const measures = [
   },
   {
     "Name": "supersetOf",
-    "Values": 52,
+    "Values": 53,
     "Coverage": "1%",
     "Question": "Is this language a superset of another?",
     "Example": "pascal",
@@ -1314,7 +1334,7 @@ const measures = [
   },
   {
     "Name": "inputLanguages",
-    "Values": 12,
+    "Values": 13,
     "Coverage": "0%",
     "Question": "Which language(s) does this take as input? For compilers, what languages does this compile compile?",
     "Example": "javascript typescript jsx",
@@ -1333,8 +1353,18 @@ const measures = [
     "IsComputed": false
   },
   {
-    "Name": "irc",
+    "Name": "iso",
     "Values": 4,
+    "Coverage": "0%",
+    "Question": "What is the link to ISO standard for this language or standard?",
+    "Example": "https://www.iso.org/standard/27688.html",
+    "Type": "string",
+    "SortIndex": 2.2,
+    "IsComputed": false
+  },
+  {
+    "Name": "irc",
+    "Values": 7,
     "Coverage": "0%",
     "Question": "What is a link to an official (or popular unofficial) IRC channel(s) for language development?",
     "Example": "https://darcs.net/IRC",
@@ -1344,8 +1374,8 @@ const measures = [
   },
   {
     "Name": "numberOfCreators",
-    "Values": 1498,
-    "Coverage": "29%",
+    "Values": 1640,
+    "Coverage": "31%",
     "Question": "How many creators?",
     "Example": "1",
     "Type": "number",
@@ -1354,8 +1384,8 @@ const measures = [
   },
   {
     "Name": "isSelfHosted",
-    "Values": 1169,
-    "Coverage": "23%",
+    "Values": 1274,
+    "Coverage": "24%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",
     "Type": "boolean",
@@ -1364,7 +1394,7 @@ const measures = [
   },
   {
     "Name": "latestMajorVersion",
-    "Values": 640,
+    "Values": 641,
     "Coverage": "12%",
     "Question": "What is the latest major version (if using semver)?",
     "Example": "1",
@@ -1374,7 +1404,7 @@ const measures = [
   },
   {
     "Name": "usesSemanticVersioning",
-    "Values": 640,
+    "Values": 641,
     "Coverage": "12%",
     "Question": "Does the official release of the language use semantic versioning?",
     "Example": "true",
@@ -1383,19 +1413,8 @@ const measures = [
     "IsComputed": true
   },
   {
-    "Name": "tryItOnline",
-    "Values": 134,
-    "Coverage": "2%",
-    "Question": "What is a link to try this language on https://tio.run?",
-    "Example": "https://tio.run/#abc",
-    "Type": "string",
-    "Source": "tio.run",
-    "SortIndex": 2.4,
-    "IsComputed": false
-  },
-  {
     "Name": "demoVideo",
-    "Values": 17,
+    "Values": 18,
     "Coverage": "0%",
     "Question": "What is a URL of a demo video of this language?",
     "Example": "https://www.youtube.com/watch?v=qGOIt0xh0dw",
@@ -1435,21 +1454,22 @@ const measures = [
     "IsComputed": false
   },
   {
-    "Name": "docs",
-    "Values": 391,
-    "Coverage": "7%",
-    "Question": "What is a URL(s) to the official documentation for this language?",
-    "Example": "https://www.11ty.dev/docs/",
+    "Name": "tryItOnline",
+    "Values": 133,
+    "Coverage": "2%",
+    "Question": "What is a link to try this language on https://tio.run?",
+    "Example": "https://tio.run/#abc",
     "Type": "string",
-    "SortIndex": 2.5,
+    "Source": "tio.run",
+    "SortIndex": 2.4,
     "IsComputed": false
   },
   {
-    "Name": "forums",
-    "Values": 1,
-    "Coverage": "0%",
-    "Question": "What is a link to a web forum(s) for this language?",
-    "Example": "https://forum.obsidian.md/",
+    "Name": "docs",
+    "Values": 421,
+    "Coverage": "8%",
+    "Question": "What is a URL(s) to the official documentation for this language?",
+    "Example": "https://www.11ty.dev/docs/",
     "Type": "string",
     "SortIndex": 2.5,
     "IsComputed": false
@@ -1466,7 +1486,7 @@ const measures = [
   },
   {
     "Name": "ebook",
-    "Values": 4,
+    "Values": 6,
     "Coverage": "0%",
     "Question": "What is a link to a free public domain high quality eBook about this language?",
     "Example": "https://git-scm.com/book/en/v2",
@@ -1476,10 +1496,20 @@ const measures = [
   },
   {
     "Name": "emailList",
-    "Values": 29,
+    "Values": 34,
     "Coverage": "0%",
     "Question": "What is a link to the mailing list for this language?",
     "Example": "http://www.ada-auth.org/comment.html",
+    "Type": "string",
+    "SortIndex": 2.5,
+    "IsComputed": false
+  },
+  {
+    "Name": "forums",
+    "Values": 1,
+    "Coverage": "0%",
+    "Question": "What is a link to a web forum(s) for this language?",
+    "Example": "https://forum.obsidian.md/",
     "Type": "string",
     "SortIndex": 2.5,
     "IsComputed": false
@@ -1507,10 +1537,20 @@ const measures = [
   },
   {
     "Name": "faq",
-    "Values": 57,
+    "Values": 60,
     "Coverage": "1%",
     "Question": "What is a URL to a frequently asked questions page for this language?",
     "Example": "https://ampl.com/learn/docs/faqs/",
+    "Type": "string",
+    "SortIndex": 2.5,
+    "IsComputed": false
+  },
+  {
+    "Name": "fileType",
+    "Values": 1277,
+    "Coverage": "24%",
+    "Question": "What is the file encoding for programs in this language?",
+    "Example": "paper",
     "Type": "string",
     "SortIndex": 2.5,
     "IsComputed": false
@@ -1522,16 +1562,6 @@ const measures = [
     "Question": "Where does this word rank in terms of common English words?",
     "Example": "4100",
     "Type": "number",
-    "SortIndex": 2.5,
-    "IsComputed": false
-  },
-  {
-    "Name": "fileType",
-    "Values": 1269,
-    "Coverage": "25%",
-    "Question": "What is the file encoding for programs in this language?",
-    "Example": "paper",
-    "Type": "string",
     "SortIndex": 2.5,
     "IsComputed": false
   },
@@ -1553,28 +1583,6 @@ const measures = [
     "Example": "https://github.com/antlr/grammars-v4/tree/master/abnf",
     "Type": "string",
     "Source": "antlr.org",
-    "SortIndex": 2.8,
-    "IsComputed": false
-  },
-  {
-    "Name": "replit",
-    "Values": 30,
-    "Coverage": "0%",
-    "Question": "What is a URL to try this language on replit.com?",
-    "Example": "https://repl.it/languages/apl",
-    "Type": "string",
-    "Source": "replit.com",
-    "SortIndex": 2.8,
-    "IsComputed": false
-  },
-  {
-    "Name": "rosettaCode",
-    "Values": 332,
-    "Coverage": "6%",
-    "Question": "What is a URL to this language on Rosetta Code - http://www.rosettacode.org/?",
-    "Example": "http://www.rosettacode.org/wiki/Category:ABAP",
-    "Type": "string",
-    "Source": "rosettacode.org",
     "SortIndex": 2.8,
     "IsComputed": false
   },
@@ -1612,23 +1620,34 @@ const measures = [
     "IsComputed": false
   },
   {
+    "Name": "replit",
+    "Values": 30,
+    "Coverage": "0%",
+    "Question": "What is a URL to try this language on replit.com?",
+    "Example": "https://repl.it/languages/apl",
+    "Type": "string",
+    "Source": "replit.com",
+    "SortIndex": 2.8,
+    "IsComputed": false
+  },
+  {
+    "Name": "rosettaCode",
+    "Values": 331,
+    "Coverage": "6%",
+    "Question": "What is a URL to this language on Rosetta Code - http://www.rosettacode.org/?",
+    "Example": "http://www.rosettacode.org/wiki/Category:ABAP",
+    "Type": "string",
+    "Source": "rosettacode.org",
+    "SortIndex": 2.8,
+    "IsComputed": false
+  },
+  {
     "Name": "packageRepository",
     "Values": 60,
     "Coverage": "1%",
     "Question": "What is a URL to the package repository for this language?",
     "Example": "https://www.npmjs.com/package/avisynth",
     "Type": "string",
-    "SortIndex": 2.9,
-    "IsComputed": false
-  },
-  {
-    "Name": "ubuntuPackage",
-    "Values": 65,
-    "Coverage": "1%",
-    "Question": "What is the name of an Ubuntu package for this language from https://packages.ubuntu.com/, if any?",
-    "Example": "gnat",
-    "Type": "string",
-    "Source": "ubuntu.com",
     "SortIndex": 2.9,
     "IsComputed": false
   },
@@ -1651,19 +1670,20 @@ const measures = [
     "IsComputed": false
   },
   {
-    "Name": "proposals",
-    "Values": 11,
-    "Coverage": "0%",
-    "Question": "What is the URL to a the place where language proposals are made, if one exists?",
-    "Example": "https://github.com/golang/proposal",
+    "Name": "ubuntuPackage",
+    "Values": 65,
+    "Coverage": "1%",
+    "Question": "What is the name of an Ubuntu package for this language from https://packages.ubuntu.com/, if any?",
+    "Example": "gnat",
     "Type": "string",
-    "SortIndex": 2.99,
+    "Source": "ubuntu.com",
+    "SortIndex": 2.9,
     "IsComputed": false
   },
   {
     "Name": "country",
-    "Values": 3748,
-    "Coverage": "74%",
+    "Values": 3776,
+    "Coverage": "73%",
     "Question": "What country was this language first developed in?",
     "Example": "Russia",
     "Type": "string",
@@ -1681,6 +1701,16 @@ const measures = [
     "IsComputed": false
   },
   {
+    "Name": "proposals",
+    "Values": 11,
+    "Coverage": "0%",
+    "Question": "What is the URL to a the place where language proposals are made, if one exists?",
+    "Example": "https://github.com/golang/proposal",
+    "Type": "string",
+    "SortIndex": 2.99,
+    "IsComputed": false
+  },
+  {
     "Name": "projectEuler",
     "Values": 104,
     "Coverage": "2%",
@@ -1693,8 +1723,8 @@ const measures = [
   },
   {
     "Name": "reference",
-    "Values": 2168,
-    "Coverage": "43%",
+    "Values": 2188,
+    "Coverage": "42%",
     "Question": "What is a URL to more info about this thing?",
     "Example": "https://pdfs.semanticscholar.org/5a43/c1b39643533b04a35f1811824c0c25d089fd.pdf?_ga=2.57752106.1877161244.1546024423-1663431151.1540068998",
     "Type": "string",
@@ -1702,40 +1732,68 @@ const measures = [
     "IsComputed": false
   },
   {
-    "Name": "subreddit",
-    "Values": 106,
-    "Coverage": "2%",
-    "Question": "What is a URL of a subreddit(s) for this language?",
-    "Example": "https://reddit.com/r/ada",
+    "Name": "example",
+    "Values": 982,
+    "Coverage": "19%",
+    "Question": "What is a representative snippet for this language?",
+    "Example": "PUSH 4 PUSH 5 MULTIPLY",
     "Type": "string",
-    "Source": "reddit.com",
     "SortIndex": 3,
     "IsComputed": false
   },
   {
-    "Name": "twitter",
-    "Values": 264,
-    "Coverage": "5%",
-    "Question": "What is a URL to the official Twitter account of this thing, if any?",
-    "Example": "https://twitter.com/3mfconsortium",
+    "Name": "compilerExplorer_example",
+    "Values": 34,
+    "Coverage": "0%",
+    "Question": "What is a representative snippet for this language?",
+    "Example": "-- This pragma will remove the warning produced by the default -- CE filename and the procedure name differing, -- see : https://gcc.gnu.org/onlinedocs/gcc-8.2.0/gnat_rm/Pragma-Source_005fFile_005fName.html#Pragma-Source_005fFile_005fName pragma Source_File_Name (Square, Body_File_Name => \"example.adb\");  -- Type your code here, or load an example. function Square(num : Integer) return Integer is begin     return num**2; end Square;  -- Ada 2012 also provides Expression Functions -- (http://www.ada-auth.org/standards/12rm/html/RM-6-8.html) -- as a short hand for functions whose body consists of a -- single return statement. However they cannot be used as a -- compilation unit. -- function Square(num : Integer) return Integer is (num**2); ",
     "Type": "string",
-    "Source": "twitter.com",
     "SortIndex": 3,
     "IsComputed": false
   },
   {
     "Name": "tiktoks",
-    "Values": 3,
+    "Values": 4,
     "Coverage": "0%",
     "Question": "What is a URL to an official (or popular unofficial) TikTok(s) for this language?",
-    "Example": "https://www.tiktok.com/@scrollhits",
+    "Example": "https://www.tiktok.com/@blender_org",
+    "Type": "string",
+    "SortIndex": 3,
+    "IsComputed": false
+  },
+  {
+    "Name": "instagram",
+    "Values": 2,
+    "Coverage": "0%",
+    "Question": "What is a URL to an official (or popular unofficial) Instagram for this language?",
+    "Example": "https://instagram.com/blender.official/",
+    "Type": "string",
+    "SortIndex": 3,
+    "IsComputed": false
+  },
+  {
+    "Name": "facebook",
+    "Values": 4,
+    "Coverage": "0%",
+    "Question": "What is a URL to an official (or popular unofficial) Facebook group for this language?",
+    "Example": "https://www.facebook.com/YourOwn3DSoftware/",
+    "Type": "string",
+    "SortIndex": 3,
+    "IsComputed": false
+  },
+  {
+    "Name": "youtubes",
+    "Values": 11,
+    "Coverage": "0%",
+    "Question": "What is a URL to an official (or popular unofficial) YouTube channel(s) for this language?",
+    "Example": "https://www.youtube.com/c/EleventyVideo",
     "Type": "string",
     "SortIndex": 3,
     "IsComputed": false
   },
   {
     "Name": "discord",
-    "Values": 20,
+    "Values": 30,
     "Coverage": "0%",
     "Question": "What is a URL to an official (or popular unofficial) Discord for this language?",
     "Example": "https://www.11ty.dev/blog/discord/",
@@ -1745,7 +1803,7 @@ const measures = [
   },
   {
     "Name": "mastodon",
-    "Values": 2,
+    "Values": 5,
     "Coverage": "0%",
     "Question": "What is a URL to an official (or popular unofficial) Mastodon for this language?",
     "Example": "https://fosstodon.org/@eleventy",
@@ -1755,40 +1813,41 @@ const measures = [
   },
   {
     "Name": "discourse",
-    "Values": 2,
+    "Values": 4,
     "Coverage": "0%",
     "Question": "What is a URL to an official (or popular unofficial) Discourse for this language?",
-    "Example": "https://coq.discourse.group/",
+    "Example": "https://chapel.discourse.group/",
     "Type": "string",
     "SortIndex": 3,
     "IsComputed": false
   },
   {
-    "Name": "instagram",
+    "Name": "theLanguage",
     "Values": 1,
     "Coverage": "0%",
-    "Question": "What is a URL to an official (or popular unofficial) Instagram for this language?",
-    "Example": "https://www.instagram.com/TouchDesigner/",
+    "Question": "What is the entire definition of the language, if it's a small one?",
+    "Example": ";;; Qlang version 0.1 ;;; R5RS Scheme plus getprop, putprop, error  ;; queue primitives from SICP pp. 209-212 ;; in classical Lisp, called \"tconc\" representation  (define front-ptr car) (define rear-ptr cdr) (define set-front-ptr! set-car!) (define set-rear-ptr! set-cdr!)  (define (empty-queue? queue) (null? (front-ptr queue))) (define (make-queue) (cons '() '())) (define (insert-queue! queue item)  (let ((new-pair (cons item '())))   (cond ((empty-queue? queue)    (set-front-ptr! queue new-pair)    (set-rear-ptr! queue new-pair))         (else    (set-cdr! (rear-ptr queue) new-pair)    (set-rear-ptr! queue new-pair)))))  (define (delete-queue! queue)  (if (empty-queue? queue)   (error \"delete-queue!\" \"empty queue\")   (let ((front (car (front-ptr queue))))    (set-front-ptr! queue (cdr (front-ptr queue)))    front)))  (define queue->list front-ptr)  ;; define a Qlang primitive (define (q-prim sym fn arity)  (putprop sym 'q-subr fn)  (putprop sym 'q-arity arity))  ;; return the arity of an operator, or -1 if not an operator (define (q-arity sym)  (if (symbol? sym)   (getprop sym 'q-arity -1)   -1))  ;; return the Qlang definition of a symbol (define (q-def sym) (getprop sym 'q-subr #f))  ;; execute Qlang expression encoded as list (define (q-exec list)  (let ((queue (make-queue)))   (for-each (lambda (elem) (insert-queue! queue elem)) list)   (q-exec-queue queue)))  ;; execute Qlang expression encoded as queue (define (q-exec-queue queue)  (let* ((item (delete-queue! queue))         (arity (q-arity item)))   (cond ((empty-queue? queue)    item)               ((negative? arity)    (insert-queue! queue item)    (q-exec-queue queue))         ((q-args-available? (queue->list queue) item arity)    (insert-queue! queue     (apply (q-def item)      (q-get-args! queue arity)))    (q-exec-queue queue))         (else    (insert-queue! queue item)    (q-exec-queue queue)))))  ;; Are the right number of arguments available? (define (q-args-available? args sym count)  (cond ((zero? count)   #t)        ((null? args)   (error (symbol->string sym) \"missing arguments\"))        ((>= (q-arity (car args)) 0)   #f)        (else   (q-args-available? (cdr args) sym (- count 1)))))  (define (q-get-args! queue count)  (if (zero? count)   '()   (let ((arg (delete-queue! queue)))    (cons arg (q-get-args! queue (- count 1))))))  ;; some primitives (q-prim '+ + 2) (q-prim '* * 2) (q-prim 'pi (lambda () 3.141592653) 0)",
     "Type": "string",
     "SortIndex": 3,
     "IsComputed": false
   },
   {
-    "Name": "facebook",
-    "Values": 1,
-    "Coverage": "0%",
-    "Question": "What is a URL to an official (or popular unofficial) Facebook group for this language?",
-    "Example": "https://www.facebook.com/TouchDesigner",
+    "Name": "helloWorldCollection",
+    "Values": 151,
+    "Coverage": "2%",
+    "Question": "What is the name of this project in the Hello World Collection?",
+    "Example": "\\ Hello world in ABC  WRITE \"Hello, World!\" /",
     "Type": "string",
+    "Source": "helloworldcollection.de",
     "SortIndex": 3,
     "IsComputed": false
   },
   {
-    "Name": "youtubes",
-    "Values": 7,
-    "Coverage": "0%",
-    "Question": "What is a URL to an official (or popular unofficial) YouTube channel(s) for this language?",
-    "Example": "https://www.youtube.com/c/EleventyVideo",
+    "Name": "leachim6_example",
+    "Values": 428,
+    "Coverage": "8%",
+    "Question": "What is a representative snippet for this language?",
+    "Example": "\"Hello World",
     "Type": "string",
     "SortIndex": 3,
     "IsComputed": false
@@ -1800,6 +1859,28 @@ const measures = [
     "Question": "What is a representative snippet for this language?",
     "Example": "﻿Каталог = ОбъединитьПути(ТекущийКаталог(), \"libs\\oscript-library\\src\"); Загрузчик_Оригинал_ИмяФайла = ОбъединитьПути(Каталог, \"package-loader.os\");  Файлы = НайтиФайлы(Каталог, , Ложь); Для Каждого ВыбФайл Из Файлы Цикл      Если ВыбФайл.ЭтоФайл() Тогда         Продолжить;     КонецЕсли;      Загрузчик_ИмяФайла = ОбъединитьПути(ВыбФайл.ПолноеИмя, \"package-loader.os\");     Загрузчик_Файл = Новый Файл(Загрузчик_ИмяФайла);      Если Загрузчик_Файл.Существует() Тогда         Продолжить;     КонецЕсли;      КопироватьФайл(Загрузчик_Оригинал_ИмяФайла, Загрузчик_ИмяФайла);  КонецЦикла;",
     "Type": "string",
+    "SortIndex": 3,
+    "IsComputed": false
+  },
+  {
+    "Name": "pygmentsHighlighter",
+    "Values": 341,
+    "Coverage": "6%",
+    "Question": "What is a url to a Pygments syntax highlighting class for this language https://pygments.org/?",
+    "Example": "ABAP",
+    "Type": "string",
+    "Source": "pygments.org",
+    "SortIndex": 3,
+    "IsComputed": false
+  },
+  {
+    "Name": "subreddit",
+    "Values": 115,
+    "Coverage": "2%",
+    "Question": "What is a URL of a subreddit(s) for this language?",
+    "Example": "https://reddit.com/r/ada",
+    "Type": "string",
+    "Source": "reddit.com",
     "SortIndex": 3,
     "IsComputed": false
   },
@@ -1825,6 +1906,17 @@ const measures = [
     "IsComputed": false
   },
   {
+    "Name": "twitter",
+    "Values": 273,
+    "Coverage": "5%",
+    "Question": "What is a URL to the official Twitter account of this thing, if any?",
+    "Example": "https://twitter.com/3mfconsortium",
+    "Type": "string",
+    "Source": "twitter.com",
+    "SortIndex": 3,
+    "IsComputed": false
+  },
+  {
     "Name": "wikipedia_example",
     "Values": 630,
     "Coverage": "12%",
@@ -1835,76 +1927,25 @@ const measures = [
     "IsComputed": false
   },
   {
-    "Name": "compilerExplorer_example",
-    "Values": 34,
-    "Coverage": "0%",
-    "Question": "What is a representative snippet for this language?",
-    "Example": "-- This pragma will remove the warning produced by the default -- CE filename and the procedure name differing, -- see : https://gcc.gnu.org/onlinedocs/gcc-8.2.0/gnat_rm/Pragma-Source_005fFile_005fName.html#Pragma-Source_005fFile_005fName pragma Source_File_Name (Square, Body_File_Name => \"example.adb\");  -- Type your code here, or load an example. function Square(num : Integer) return Integer is begin     return num**2; end Square;  -- Ada 2012 also provides Expression Functions -- (http://www.ada-auth.org/standards/12rm/html/RM-6-8.html) -- as a short hand for functions whose body consists of a -- single return statement. However they cannot be used as a -- compilation unit. -- function Square(num : Integer) return Integer is (num**2); ",
-    "Type": "string",
-    "SortIndex": 3,
-    "IsComputed": false
-  },
-  {
-    "Name": "leachim6_example",
-    "Values": 427,
-    "Coverage": "8%",
-    "Question": "What is a representative snippet for this language?",
-    "Example": "\"Hello World",
-    "Type": "string",
-    "SortIndex": 3,
-    "IsComputed": false
-  },
-  {
-    "Name": "pygmentsHighlighter",
-    "Values": 341,
-    "Coverage": "6%",
-    "Question": "What is a url to a Pygments syntax highlighting class for this language https://pygments.org/?",
-    "Example": "ABAP",
-    "Type": "string",
-    "Source": "pygments.org",
-    "SortIndex": 3,
-    "IsComputed": false
-  },
-  {
-    "Name": "example",
-    "Values": 902,
-    "Coverage": "17%",
-    "Question": "What is a representative snippet for this language?",
-    "Example": "PUSH 4 PUSH 5 MULTIPLY",
-    "Type": "string",
-    "SortIndex": 3,
-    "IsComputed": false
-  },
-  {
-    "Name": "helloWorldCollection",
-    "Values": 150,
-    "Coverage": "2%",
-    "Question": "What is the name of this project in the Hello World Collection?",
-    "Example": "\\ Hello world in ABC  WRITE \"Hello, World!\" /",
-    "Type": "string",
-    "Source": "helloworldcollection.de",
-    "SortIndex": 3,
-    "IsComputed": false
-  },
-  {
-    "Name": "theLanguage",
-    "Values": 1,
-    "Coverage": "0%",
-    "Question": "What is the entire definition of the language, if it's a small one?",
-    "Example": ";;; Qlang version 0.1 ;;; R5RS Scheme plus getprop, putprop, error  ;; queue primitives from SICP pp. 209-212 ;; in classical Lisp, called \"tconc\" representation  (define front-ptr car) (define rear-ptr cdr) (define set-front-ptr! set-car!) (define set-rear-ptr! set-cdr!)  (define (empty-queue? queue) (null? (front-ptr queue))) (define (make-queue) (cons '() '())) (define (insert-queue! queue item)  (let ((new-pair (cons item '())))   (cond ((empty-queue? queue)    (set-front-ptr! queue new-pair)    (set-rear-ptr! queue new-pair))         (else    (set-cdr! (rear-ptr queue) new-pair)    (set-rear-ptr! queue new-pair)))))  (define (delete-queue! queue)  (if (empty-queue? queue)   (error \"delete-queue!\" \"empty queue\")   (let ((front (car (front-ptr queue))))    (set-front-ptr! queue (cdr (front-ptr queue)))    front)))  (define queue->list front-ptr)  ;; define a Qlang primitive (define (q-prim sym fn arity)  (putprop sym 'q-subr fn)  (putprop sym 'q-arity arity))  ;; return the arity of an operator, or -1 if not an operator (define (q-arity sym)  (if (symbol? sym)   (getprop sym 'q-arity -1)   -1))  ;; return the Qlang definition of a symbol (define (q-def sym) (getprop sym 'q-subr #f))  ;; execute Qlang expression encoded as list (define (q-exec list)  (let ((queue (make-queue)))   (for-each (lambda (elem) (insert-queue! queue elem)) list)   (q-exec-queue queue)))  ;; execute Qlang expression encoded as queue (define (q-exec-queue queue)  (let* ((item (delete-queue! queue))         (arity (q-arity item)))   (cond ((empty-queue? queue)    item)               ((negative? arity)    (insert-queue! queue item)    (q-exec-queue queue))         ((q-args-available? (queue->list queue) item arity)    (insert-queue! queue     (apply (q-def item)      (q-get-args! queue arity)))    (q-exec-queue queue))         (else    (insert-queue! queue item)    (q-exec-queue queue)))))  ;; Are the right number of arguments available? (define (q-args-available? args sym count)  (cond ((zero? count)   #t)        ((null? args)   (error (symbol->string sym) \"missing arguments\"))        ((>= (q-arity (car args)) 0)   #f)        (else   (q-args-available? (cdr args) sym (- count 1)))))  (define (q-get-args! queue count)  (if (zero? count)   '()   (let ((arg (delete-queue! queue)))    (cons arg (q-get-args! queue (- count 1))))))  ;; some primitives (q-prim '+ + 2) (q-prim '* * 2) (q-prim 'pi (lambda () 3.141592653) 0)",
-    "Type": "string",
-    "SortIndex": 3,
-    "IsComputed": false
-  },
-  {
     "Name": "leachim6",
-    "Values": 427,
+    "Values": 428,
     "Coverage": "8%",
     "Question": "What is a URL to this language in leachim6's hello-world project?",
     "Example": "05AB1E",
     "Type": "string",
     "Source": "github.com/leachim6/hello-world",
     "SortIndex": 3.2,
+    "IsComputed": false
+  },
+  {
+    "Name": "compilerExplorer",
+    "Values": 34,
+    "Coverage": "0%",
+    "Question": "What is this language's name on https://godbolt.org?",
+    "Example": "Ada",
+    "Type": "string",
+    "Source": "godbolt.org",
+    "SortIndex": 3.4,
     "IsComputed": false
   },
   {
@@ -1930,17 +1971,6 @@ const measures = [
     "IsComputed": false
   },
   {
-    "Name": "compilerExplorer",
-    "Values": 34,
-    "Coverage": "0%",
-    "Question": "What is this language's name on https://godbolt.org?",
-    "Example": "Ada",
-    "Type": "string",
-    "Source": "godbolt.org",
-    "SortIndex": 3.4,
-    "IsComputed": false
-  },
-  {
     "Name": "githubCopilotOptimized",
     "Values": 7,
     "Coverage": "0%",
@@ -1951,19 +1981,18 @@ const measures = [
     "IsComputed": false
   },
   {
-    "Name": "meetup",
-    "Values": 57,
-    "Coverage": "1%",
-    "Question": "What is a URL for active meetup groups for this language on Meetup.com?",
-    "Example": "https://www.meetup.com/topics/android-developers",
+    "Name": "keywords",
+    "Values": 120,
+    "Coverage": "2%",
+    "Question": "What are all the keywords in this language?",
+    "Example": "abap-source abbreviated abstract accept accepting according activation actual add add-corresponding adjacent after alias aliases align all allocate alpha analysis analyzer and append appendage appending application archive area arithmetic as ascending aspect assert assign assigned assigning association asynchronous at attributes authority authority-check avg back background backup backward badi base before begin between big binary bintohex bit black blank blanks blob block blocks blue bound boundaries bounds boxed break-point buffer by bypassing byte byte-order call calling case cast casting catch center centered chain chain-input chain-request change changing channels character char-to-hex check checkbox ci_ circular class class-coding class-data class-events class-methods class-pool cleanup clear client clob clock close coalesce code coding col_background col_group col_heading col_key col_negative col_normal col_positive col_total collect color column columns comment comments commit common communication comparing component components compression compute concat concat_with_space concatenate cond condense condition connect connection constants context contexts continue control controls conv conversion convert copies copy corresponding country cover cpi create creating critical currency currency_conversion current cursor cursor-selection customer customer-function dangerous data database datainfo dataset date dats_add_days dats_add_months dats_days_between dats_is_valid daylight dd/mm/yy dd/mm/yyyy ddmmyy deallocate decimal_shift decimals declarations deep default deferred define defining definition delete deleting demand department descending describe destination detail dialog directory disconnect display display-mode distinct divide divide-corresponding division do dummy duplicate duplicates duration during dynamic dynpro edit editor-call else elseif empty enabled enabling encoding end endat endcase endcatch endchain endclass enddo endenhancement end-enhancement-section endexec endform endfunction endian endif ending endinterface end-lines endloop endmethod endmodule end-of-definition end-of-editing end-of-file end-of-page end-of-selection endon endprovide endselect end-test-injection end-test-seam endtry endwhile endwith engineering enhancement enhancement-point enhancements enhancement-section entries entry enum environment equiv errormessage errors escaping event events exact except exception exceptions exception-table exclude excluding exec execute exists exit exit-command expand expanding expiration explicit exponent export exporting extend extended extension extract fail fetch field field-groups fields field-symbol field-symbols file filter filters filter-table final find first first-line fixed-point fkeq fkge flush font for form format forward found frame frames free friends from function functionality function-pool further gaps generate get giving gkeq gkge global grant green group groups handle handler harmless hashed having hdb header headers heading head-lines help-id help-request hextobin hide high hint hold hotspot icon id identification identifier ids if ignore ignoring immediately implementation implementations implemented implicit import importing in inactive incl include includes including increment index index-line infotypes inheriting init initial initialization inner inout input insert instance instances instr intensified interface interface-pool interfaces internal intervals into inverse inverted-date is iso job join keep keeping kernel key keys keywords kind language last late layout leading leave left left-justified leftplus leftspace legacy length let level levels like line lines line-count linefeed line-selection line-size list listbox list-processing little llang load load-of-program lob local locale locator logfile logical log-point long loop low lower lpad lpi ltrim mail main major-id mapping margin mark mask match matchcode max maximum medium members memory mesh message message-id messages messaging method methods min minimum minor-id mm/dd/yy mm/dd/yyyy mmddyy mode modif modifier modify module move move-corresponding multiply multiply-corresponding name nametab native nested nesting new new-line new-page new-section next no no-display no-extension no-gap no-gaps no-grouping no-heading no-scrolling no-sign no-title no-topofpage no-zero node nodes non-unicode non-unique not null number object objects obligatory occurrence occurrences occurs of off offset ole on only open option optional options or order other others out outer output output-length overflow overlay pack package pad padding page pages parameter parameters parameter-table part partially pattern percentage perform performing person pf1 pf10 pf11 pf12 pf13 pf14 pf15 pf2 pf3 pf4 pf5 pf6 pf7 pf8 pf9 pf-status pink places pool pos_high pos_low position pragmas precompiled preferred preserving primary print print-control priority private procedure process program property protected provide public push pushbutton put queue-only quickinfo radiobutton raise raising range ranges read reader read-only receive received receiver receiving red redefinition reduce reduced ref reference refresh regex reject remote renaming replace replacement replacing report request requested reserve reset resolution respecting responsible result results resumable resume retry return returncode returning returns right right-justified rightplus rightspace risk rmc_communication_failure rmc_invalid_status rmc_system_failure role rollback rows rpad rtrim run sap sap-spool saving scale_preserving scale_preserving_scientific scan scientific scientific_with_leading_zero scroll scroll-boundary scrolling search secondary seconds section select selection selections selection-screen selection-set selection-sets selection-table select-options send separate separated set shared shift short shortdump-id sign_as_postfix single size skip skipping smart some sort sortable sorted source specified split spool spots sql sqlscript stable stamp standard starting start-of-editing start-of-selection state statement statements static statics statusinfo step-loop stop structure structures style subkey submatches submit subroutine subscreen subtract subtract-corresponding suffix sum summary summing supplied supply suppress switch switchstates symbol syncpoints syntax syntax-check syntax-trace system-call system-exceptions system-exit tab tabbed table tables tableview tabstrip target task tasks test testing test-injection test-seam text textpool then throw time times timestamp timezone tims_is_valid title titlebar title-lines to tokenization tokens top-lines top-of-page trace-file trace-table trailing transaction transfer transformation translate transporting trmac truncate truncation try tstmp_add_seconds tstmp_current_utctimestamp tstmp_is_valid tstmp_seconds_between type type-pool type-pools types uline unassign under unicode union unique unit_conversion unix unpack until unwind up update upper user user-command using utf-8 valid value value-request values vary varying verification-message version via view visible wait warning when whenever where while width window windows with with-heading without with-title word work write writer xml xsd yellow yes yymmdd zero zone abap_system_timezone abap_user_timezone access action adabas adjust_numbers allow_precision_loss allowed amdp applicationuser as_geo_json as400 associations balance behavior breakup bulk cds cds_client check_before_save child clients corr corr_spearman cross cycles datn_add_days datn_add_months datn_days_between dats_from_datn dats_tims_to_tstmp dats_to_datn db2 db6 ddl dense_rank depth deterministic discarding entities entity error failed finalize first_value fltp_to_dec following fractional full graph grouping hierarchy hierarchy_ancestors hierarchy_ancestors_aggregate hierarchy_descendants hierarchy_descendants_aggregate hierarchy_siblings incremental indicators lag last_value lead leaves like_regexpr link locale_sap lock locks many mapped matched measures median mssqlnt multiple nodetype ntile nulls occurrences_regexpr one operations oracle orphans over parent parents partition pcre period pfcg_mapping preceding privileged product projection rank redirected replace_regexpr reported response responses root row row_number sap_system_date save schema session sets shortdump siblings spantree start stddev string_agg subtotal sybase tims_from_timn tims_to_timn to_blob to_clob total trace-entry tstmp_to_dats tstmp_to_dst tstmp_to_tims tstmpl_from_utcl tstmpl_to_utcl unbounded utcl_add_seconds utcl_current utcl_seconds_between uuid var verbatim",
     "Type": "string",
-    "Source": "meetup.com",
     "SortIndex": 4,
     "IsComputed": false
   },
   {
     "Name": "gitRepo",
-    "Values": 28,
+    "Values": 35,
     "Coverage": "0%",
     "Question": "What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?",
     "Example": "https://git.savannah.gnu.org/git/bash.git",
@@ -1972,18 +2001,8 @@ const measures = [
     "IsComputed": false
   },
   {
-    "Name": "specRepo",
-    "Values": 2,
-    "Coverage": "0%",
-    "Question": "What is the URL of the official spec for the language project?",
-    "Example": "https://github.com/whatwg/html",
-    "Type": "string",
-    "SortIndex": 4,
-    "IsComputed": false
-  },
-  {
     "Name": "githubRepo",
-    "Values": 1166,
+    "Values": 1229,
     "Coverage": "23%",
     "Question": "What is the URL of the official GitHub repo for the project if it is hosted there?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -2004,13 +2023,13 @@ const measures = [
     "IsComputed": false
   },
   {
-    "Name": "sourcehutRepo",
-    "Values": 5,
-    "Coverage": "0%",
-    "Question": "What is the URL of the official sourcehut repo for this project?",
-    "Example": "https://sourceforge.net/projects/avisynth2/",
+    "Name": "meetup",
+    "Values": 58,
+    "Coverage": "1%",
+    "Question": "What is a URL for active meetup groups for this language on Meetup.com?",
+    "Example": "https://www.meetup.com/topics/android-developers",
     "Type": "string",
-    "Source": "sr.ht",
+    "Source": "meetup.com",
     "SortIndex": 4,
     "IsComputed": false
   },
@@ -2025,18 +2044,29 @@ const measures = [
     "IsComputed": false
   },
   {
-    "Name": "keywords",
-    "Values": 117,
-    "Coverage": "2%",
-    "Question": "What are all the keywords in this language?",
-    "Example": "abap-source abbreviated abstract accept accepting according activation actual add add-corresponding adjacent after alias aliases align all allocate alpha analysis analyzer and append appendage appending application archive area arithmetic as ascending aspect assert assign assigned assigning association asynchronous at attributes authority authority-check avg back background backup backward badi base before begin between big binary bintohex bit black blank blanks blob block blocks blue bound boundaries bounds boxed break-point buffer by bypassing byte byte-order call calling case cast casting catch center centered chain chain-input chain-request change changing channels character char-to-hex check checkbox ci_ circular class class-coding class-data class-events class-methods class-pool cleanup clear client clob clock close coalesce code coding col_background col_group col_heading col_key col_negative col_normal col_positive col_total collect color column columns comment comments commit common communication comparing component components compression compute concat concat_with_space concatenate cond condense condition connect connection constants context contexts continue control controls conv conversion convert copies copy corresponding country cover cpi create creating critical currency currency_conversion current cursor cursor-selection customer customer-function dangerous data database datainfo dataset date dats_add_days dats_add_months dats_days_between dats_is_valid daylight dd/mm/yy dd/mm/yyyy ddmmyy deallocate decimal_shift decimals declarations deep default deferred define defining definition delete deleting demand department descending describe destination detail dialog directory disconnect display display-mode distinct divide divide-corresponding division do dummy duplicate duplicates duration during dynamic dynpro edit editor-call else elseif empty enabled enabling encoding end endat endcase endcatch endchain endclass enddo endenhancement end-enhancement-section endexec endform endfunction endian endif ending endinterface end-lines endloop endmethod endmodule end-of-definition end-of-editing end-of-file end-of-page end-of-selection endon endprovide endselect end-test-injection end-test-seam endtry endwhile endwith engineering enhancement enhancement-point enhancements enhancement-section entries entry enum environment equiv errormessage errors escaping event events exact except exception exceptions exception-table exclude excluding exec execute exists exit exit-command expand expanding expiration explicit exponent export exporting extend extended extension extract fail fetch field field-groups fields field-symbol field-symbols file filter filters filter-table final find first first-line fixed-point fkeq fkge flush font for form format forward found frame frames free friends from function functionality function-pool further gaps generate get giving gkeq gkge global grant green group groups handle handler harmless hashed having hdb header headers heading head-lines help-id help-request hextobin hide high hint hold hotspot icon id identification identifier ids if ignore ignoring immediately implementation implementations implemented implicit ",
+    "Name": "sourcehutRepo",
+    "Values": 5,
+    "Coverage": "0%",
+    "Question": "What is the URL of the official sourcehut repo for this project?",
+    "Example": "https://sourceforge.net/projects/avisynth2/",
+    "Type": "string",
+    "Source": "sr.ht",
+    "SortIndex": 4,
+    "IsComputed": false
+  },
+  {
+    "Name": "specRepo",
+    "Values": 3,
+    "Coverage": "0%",
+    "Question": "What is the URL of the official spec for the language project?",
+    "Example": "https://github.com/whatwg/html",
     "Type": "string",
     "SortIndex": 4,
     "IsComputed": false
   },
   {
     "Name": "lineCommentToken",
-    "Values": 485,
+    "Values": 492,
     "Coverage": "9%",
     "Question": "What is the token(s) that can be placed anywhere on a line and starts a comment that cannot be stopped except by a line break character or end of file?",
     "Example": "*",
@@ -2046,7 +2076,7 @@ const measures = [
   },
   {
     "Name": "multiLineCommentTokens",
-    "Values": 179,
+    "Values": 182,
     "Coverage": "3%",
     "Question": "What is the start delimiter and end token (which can be the same) for comments that can span multiple lines?",
     "Example": "/* */",
@@ -2056,7 +2086,7 @@ const measures = [
   },
   {
     "Name": "printToken",
-    "Values": 317,
+    "Values": 320,
     "Coverage": "6%",
     "Question": "What token(s) is used to print a message?",
     "Example": "\"",
@@ -2066,7 +2096,7 @@ const measures = [
   },
   {
     "Name": "stringToken",
-    "Values": 336,
+    "Values": 339,
     "Coverage": "6%",
     "Question": "What token(s) is used to delimit a string?",
     "Example": "\"",
@@ -2076,7 +2106,7 @@ const measures = [
   },
   {
     "Name": "assignmentToken",
-    "Values": 36,
+    "Values": 39,
     "Coverage": "0%",
     "Question": "What token(s) is used for assignment to an identifier?",
     "Example": ":=",
@@ -2086,7 +2116,7 @@ const measures = [
   },
   {
     "Name": "booleanTokens",
-    "Values": 100,
+    "Values": 102,
     "Coverage": "1%",
     "Question": "What token(s) is used for true and false?",
     "Example": "true false",
@@ -2116,7 +2146,7 @@ const measures = [
   },
   {
     "Name": "canReadCommandLineArgs",
-    "Values": 2,
+    "Values": 4,
     "Coverage": "0%",
     "Question": "Does this language support command line arguments?",
     "Example": "true",
@@ -2136,9 +2166,19 @@ const measures = [
   },
   {
     "Name": "canWriteToDisk",
-    "Values": 12,
+    "Values": 14,
     "Coverage": "0%",
     "Question": "Does this language have methods or standard libraries for writing to disk?",
+    "Example": "true",
+    "Type": "boolean",
+    "SortIndex": 7,
+    "IsComputed": false
+  },
+  {
+    "Name": "hasSinglePassParser",
+    "Values": 13,
+    "Coverage": "0%",
+    "Question": "Is the language designed for a single pass parser requiring define before use (topological sorting)?",
     "Example": "true",
     "Type": "boolean",
     "SortIndex": 7,
@@ -2156,7 +2196,7 @@ const measures = [
   },
   {
     "Name": "hasAccessModifiers",
-    "Values": 21,
+    "Values": 22,
     "Coverage": "0%",
     "Question": "Does this language have access modifiers?",
     "Example": "true",
@@ -2166,7 +2206,7 @@ const measures = [
   },
   {
     "Name": "hasAlgebraicTypes",
-    "Values": 2,
+    "Values": 3,
     "Coverage": "0%",
     "Question": "Does this language support algebraic types?",
     "Example": "true",
@@ -2176,7 +2216,7 @@ const measures = [
   },
   {
     "Name": "hasAnonymousFunctions",
-    "Values": 7,
+    "Values": 9,
     "Coverage": "0%",
     "Question": "Does the language support anonymous functions, aka Lambdas?",
     "Example": "true",
@@ -2186,7 +2226,7 @@ const measures = [
   },
   {
     "Name": "hasArraySlicingSyntax",
-    "Values": 2,
+    "Values": 3,
     "Coverage": "0%",
     "Question": "Does the language have array slicing syntax, such as [0:2]?",
     "Example": "true",
@@ -2206,7 +2246,7 @@ const measures = [
   },
   {
     "Name": "hasAssignment",
-    "Values": 56,
+    "Values": 58,
     "Coverage": "1%",
     "Question": "Does the language allow assigning values to variables?",
     "Example": "true",
@@ -2216,7 +2256,7 @@ const measures = [
   },
   {
     "Name": "hasAsyncAwait",
-    "Values": 8,
+    "Values": 9,
     "Coverage": "0%",
     "Question": "Does the language have an async/await construct?",
     "Example": "true",
@@ -2246,7 +2286,7 @@ const measures = [
   },
   {
     "Name": "hasBitWiseOperators",
-    "Values": 13,
+    "Values": 15,
     "Coverage": "0%",
     "Question": "Does the language have operators for bitwise manipulations?",
     "Example": "true",
@@ -2266,7 +2306,7 @@ const measures = [
   },
   {
     "Name": "hasBooleans",
-    "Values": 122,
+    "Values": 131,
     "Coverage": "2%",
     "Question": "Does the language have a type and syntax for booleans?",
     "Example": "true",
@@ -2276,7 +2316,7 @@ const measures = [
   },
   {
     "Name": "hasBoundedCheckedArrays",
-    "Values": 2,
+    "Values": 3,
     "Coverage": "0%",
     "Question": "Are array boundaries checked by the language?",
     "Example": "true",
@@ -2306,7 +2346,7 @@ const measures = [
   },
   {
     "Name": "hasCaseInsensitiveIdentifiers",
-    "Values": 79,
+    "Values": 81,
     "Coverage": "1%",
     "Question": "Are identifiers in this language case insensitive?",
     "Example": "false",
@@ -2326,7 +2366,7 @@ const measures = [
   },
   {
     "Name": "hasClasses",
-    "Values": 37,
+    "Values": 38,
     "Coverage": "0%",
     "Question": "Does the language have a concept of classes?",
     "Example": "true",
@@ -2346,7 +2386,7 @@ const measures = [
   },
   {
     "Name": "hasComments",
-    "Values": 634,
+    "Values": 642,
     "Coverage": "12%",
     "Question": "Does the language have a syntax and support for comments?",
     "Example": "true",
@@ -2356,7 +2396,7 @@ const measures = [
   },
   {
     "Name": "hasConditionals",
-    "Values": 79,
+    "Values": 82,
     "Coverage": "1%",
     "Question": "Does the language have conditional statements and/or conditional expressions?",
     "Example": "true",
@@ -2366,7 +2406,7 @@ const measures = [
   },
   {
     "Name": "hasConstants",
-    "Values": 30,
+    "Values": 32,
     "Coverage": "0%",
     "Question": "Does the language have a way to declare constant compile time variables?",
     "Example": "true",
@@ -2376,7 +2416,7 @@ const measures = [
   },
   {
     "Name": "hasConstructors",
-    "Values": 19,
+    "Values": 21,
     "Coverage": "0%",
     "Question": "Does the language have a syntax and/or notion of constructors?",
     "Example": "true",
@@ -2416,7 +2456,7 @@ const measures = [
   },
   {
     "Name": "hasDefaultParameters",
-    "Values": 6,
+    "Values": 7,
     "Coverage": "0%",
     "Question": "Does the language have a way to define default parameters for functions?",
     "Example": "true",
@@ -2436,7 +2476,7 @@ const measures = [
   },
   {
     "Name": "hasDestructuring",
-    "Values": 6,
+    "Values": 7,
     "Coverage": "0%",
     "Question": "Does the language have a syntax for conveniently extracting multiple values from a structure?",
     "Example": "true",
@@ -2496,7 +2536,7 @@ const measures = [
   },
   {
     "Name": "hasDynamicSizedArrays",
-    "Values": 2,
+    "Values": 3,
     "Coverage": "0%",
     "Question": "Do arrays have to have their size specified at compile time or can they be dynamically sized?",
     "Example": "true",
@@ -2506,17 +2546,17 @@ const measures = [
   },
   {
     "Name": "hasDynamicTyping",
-    "Values": 2,
+    "Values": 5,
     "Coverage": "0%",
     "Question": "Are types of variables fixed or can they change during runtime?",
-    "Example": "true",
+    "Example": "false",
     "Type": "boolean",
     "SortIndex": 7,
     "IsComputed": false
   },
   {
     "Name": "hasEnums",
-    "Values": 13,
+    "Values": 16,
     "Coverage": "0%",
     "Question": "Does the language have a syntax and type for enums?",
     "Example": "true",
@@ -2526,7 +2566,7 @@ const measures = [
   },
   {
     "Name": "hasEscapeCharacters",
-    "Values": 4,
+    "Values": 5,
     "Coverage": "0%",
     "Question": "Does the language have any notion of escape characters?",
     "Example": "true",
@@ -2536,7 +2576,7 @@ const measures = [
   },
   {
     "Name": "hasExceptions",
-    "Values": 25,
+    "Values": 28,
     "Coverage": "0%",
     "Question": "Does the language have a concept and syntax for exceptions?",
     "Example": "true",
@@ -2546,7 +2586,7 @@ const measures = [
   },
   {
     "Name": "hasExplicitTypeCasting",
-    "Values": 7,
+    "Values": 8,
     "Coverage": "0%",
     "Question": "Does the language have a syntax for type casting?",
     "Example": "true",
@@ -2566,7 +2606,7 @@ const measures = [
   },
   {
     "Name": "hasExpressions",
-    "Values": 7,
+    "Values": 8,
     "Coverage": "0%",
     "Question": "Does the language have a concept of expressions?",
     "Example": "true",
@@ -2576,7 +2616,7 @@ const measures = [
   },
   {
     "Name": "hasFirstClassFunctions",
-    "Values": 4,
+    "Values": 6,
     "Coverage": "0%",
     "Question": "Does the language have functions that can be passed as arguments to other functions, can be returned by other functions, and can be assigned to variables or stored in data structures?",
     "Example": "true",
@@ -2596,7 +2636,7 @@ const measures = [
   },
   {
     "Name": "hasFloats",
-    "Values": 140,
+    "Values": 149,
     "Coverage": "2%",
     "Question": "Does the language have a syntax and type for floating points?",
     "Example": "true",
@@ -2616,7 +2656,7 @@ const measures = [
   },
   {
     "Name": "hasForEachLoops",
-    "Values": 6,
+    "Values": 7,
     "Coverage": "0%",
     "Question": "Does the language have a concept and syntax for for-each loops?",
     "Example": "true",
@@ -2626,7 +2666,7 @@ const measures = [
   },
   {
     "Name": "hasForLoops",
-    "Values": 7,
+    "Values": 9,
     "Coverage": "0%",
     "Question": "Does the language have a concept of and syntax for for-loops?",
     "Example": "true",
@@ -2646,7 +2686,7 @@ const measures = [
   },
   {
     "Name": "hasFunctionOverloading",
-    "Values": 9,
+    "Values": 18,
     "Coverage": "0%",
     "Question": "Can you have multiple functions with the same name but different parameters?",
     "Example": "false",
@@ -2656,8 +2696,8 @@ const measures = [
   },
   {
     "Name": "hasFunctions",
-    "Values": 46,
-    "Coverage": "0%",
+    "Values": 54,
+    "Coverage": "1%",
     "Question": "Does the language have a concept of and syntax for functions?",
     "Example": "true",
     "Type": "boolean",
@@ -2666,7 +2706,7 @@ const measures = [
   },
   {
     "Name": "hasGarbageCollection",
-    "Values": 28,
+    "Values": 31,
     "Coverage": "0%",
     "Question": "Does the language have a garbage collector or must memory of constructs be managed manually?",
     "Example": "true",
@@ -2696,7 +2736,7 @@ const measures = [
   },
   {
     "Name": "hasGenerics",
-    "Values": 7,
+    "Values": 9,
     "Coverage": "0%",
     "Question": "Does the language have generics?",
     "Example": "true",
@@ -2706,7 +2746,7 @@ const measures = [
   },
   {
     "Name": "hasGlobalScope",
-    "Values": 3,
+    "Values": 4,
     "Coverage": "0%",
     "Question": "Is there at least one top level scope?",
     "Example": "true",
@@ -2736,7 +2776,7 @@ const measures = [
   },
   {
     "Name": "hasHexadecimals",
-    "Values": 110,
+    "Values": 112,
     "Coverage": "2%",
     "Question": "Does the language have a syntax for hexadecimals?",
     "Example": "true",
@@ -2776,9 +2816,9 @@ const measures = [
   },
   {
     "Name": "hasIfs",
-    "Values": 3,
+    "Values": 4,
     "Coverage": "0%",
-    "Question": "Does the language have \"if\" statements or expressoins?",
+    "Question": "Does the language have \"if\" statements or expressions?",
     "Example": "true",
     "Type": "boolean",
     "SortIndex": 7,
@@ -2806,7 +2846,7 @@ const measures = [
   },
   {
     "Name": "hasImports",
-    "Values": 51,
+    "Values": 56,
     "Coverage": "1%",
     "Question": "Does this language have a syntax for importing other files?",
     "Example": "true",
@@ -2816,7 +2856,7 @@ const measures = [
   },
   {
     "Name": "hasIncrementAndDecrementOperators",
-    "Values": 13,
+    "Values": 16,
     "Coverage": "0%",
     "Question": "Does this language have increment and decrement operators?",
     "Example": "true",
@@ -2836,7 +2876,7 @@ const measures = [
   },
   {
     "Name": "hasInheritance",
-    "Values": 22,
+    "Values": 24,
     "Coverage": "0%",
     "Question": "Does this language have class inheritance?",
     "Example": "true",
@@ -2846,7 +2886,7 @@ const measures = [
   },
   {
     "Name": "hasIntegers",
-    "Values": 164,
+    "Values": 175,
     "Coverage": "3%",
     "Question": "Does this language have a syntax and type for integers?",
     "Example": "true",
@@ -2856,7 +2896,7 @@ const measures = [
   },
   {
     "Name": "hasInterfaces",
-    "Values": 7,
+    "Values": 8,
     "Coverage": "0%",
     "Question": "Does this language have a concept of interfaces?",
     "Example": "true",
@@ -2866,7 +2906,7 @@ const measures = [
   },
   {
     "Name": "hasIterators",
-    "Values": 8,
+    "Values": 9,
     "Coverage": "0%",
     "Question": "Does this language have iterators?",
     "Example": "true",
@@ -2896,8 +2936,8 @@ const measures = [
   },
   {
     "Name": "hasLineComments",
-    "Values": 555,
-    "Coverage": "11%",
+    "Values": 562,
+    "Coverage": "10%",
     "Question": "Does the language have line comments?",
     "Example": "true",
     "Type": "boolean",
@@ -2906,7 +2946,7 @@ const measures = [
   },
   {
     "Name": "hasLists",
-    "Values": 24,
+    "Values": 28,
     "Coverage": "0%",
     "Question": "Does the language have lists?",
     "Example": "true",
@@ -2916,7 +2956,7 @@ const measures = [
   },
   {
     "Name": "hasStandardLibrary",
-    "Values": 40,
+    "Values": 47,
     "Coverage": "0%",
     "Question": "Does the language have a standard library?",
     "Example": "true",
@@ -2936,7 +2976,7 @@ const measures = [
   },
   {
     "Name": "hasMacros",
-    "Values": 37,
+    "Values": 38,
     "Coverage": "0%",
     "Question": "Does the language have a compile-time macro pass?",
     "Example": "true",
@@ -2976,7 +3016,7 @@ const measures = [
   },
   {
     "Name": "hasMaps",
-    "Values": 7,
+    "Values": 10,
     "Coverage": "0%",
     "Question": "Does the language have a map (aka hashtable) data structure?",
     "Example": "true",
@@ -2996,7 +3036,7 @@ const measures = [
   },
   {
     "Name": "hasMessagePassing",
-    "Values": 13,
+    "Values": 14,
     "Coverage": "0%",
     "Question": "Does the language support message passing?",
     "Example": "true",
@@ -3046,7 +3086,7 @@ const measures = [
   },
   {
     "Name": "hasModules",
-    "Values": 12,
+    "Values": 14,
     "Coverage": "0%",
     "Question": "Does the language have a concept of modules for organizing and packaging code?",
     "Example": "true",
@@ -3066,7 +3106,7 @@ const measures = [
   },
   {
     "Name": "hasMultiLineComments",
-    "Values": 246,
+    "Values": 253,
     "Coverage": "4%",
     "Question": "Does the language have multi-line comments?",
     "Example": "true",
@@ -3105,6 +3145,16 @@ const measures = [
     "IsComputed": false
   },
   {
+    "Name": "hasNamedArguments",
+    "Values": 12,
+    "Coverage": "0%",
+    "Question": "Does the language have named arguments / named parameters?",
+    "Example": "false",
+    "Type": "boolean",
+    "SortIndex": 7,
+    "IsComputed": false
+  },
+  {
     "Name": "hasNamespaces",
     "Values": 9,
     "Coverage": "0%",
@@ -3126,7 +3176,7 @@ const measures = [
   },
   {
     "Name": "hasOctals",
-    "Values": 56,
+    "Values": 58,
     "Coverage": "1%",
     "Question": "Does the language have a syntax for octal numbers?",
     "Example": "true",
@@ -3136,7 +3186,7 @@ const measures = [
   },
   {
     "Name": "hasOperatorOverloading",
-    "Values": 47,
+    "Values": 50,
     "Coverage": "0%",
     "Question": "Does the language allow operator overloading?",
     "Example": "true",
@@ -3146,7 +3196,7 @@ const measures = [
   },
   {
     "Name": "hasOperators",
-    "Values": 6,
+    "Values": 7,
     "Coverage": "0%",
     "Question": "Does the language have operators?",
     "Example": "true",
@@ -3176,7 +3226,7 @@ const measures = [
   },
   {
     "Name": "hasPatternMatching",
-    "Values": 11,
+    "Values": 17,
     "Coverage": "0%",
     "Question": "Does the language support pattern matching?",
     "Example": "true",
@@ -3186,7 +3236,7 @@ const measures = [
   },
   {
     "Name": "hasPipes",
-    "Values": 6,
+    "Values": 7,
     "Coverage": "0%",
     "Question": "Does the language have a pipe operator?",
     "Example": "true",
@@ -3196,7 +3246,7 @@ const measures = [
   },
   {
     "Name": "hasPointers",
-    "Values": 25,
+    "Values": 26,
     "Coverage": "0%",
     "Question": "Does the language have a structure that is a location in memory?",
     "Example": "true",
@@ -3236,7 +3286,7 @@ const measures = [
   },
   {
     "Name": "hasPrintDebugging",
-    "Values": 322,
+    "Values": 324,
     "Coverage": "6%",
     "Question": "Does the language have a built in function that allows one to print debug?",
     "Example": "true",
@@ -3256,7 +3306,7 @@ const measures = [
   },
   {
     "Name": "hasRangeOperators",
-    "Values": 4,
+    "Values": 5,
     "Coverage": "0%",
     "Question": "Does the language have a syntax for creating ranges?",
     "Example": "true",
@@ -3266,7 +3316,7 @@ const measures = [
   },
   {
     "Name": "hasReferences",
-    "Values": 2,
+    "Values": 3,
     "Coverage": "0%",
     "Question": "Does the language have a structure for holding a reference to an existing object?",
     "Example": "true",
@@ -3296,10 +3346,10 @@ const measures = [
   },
   {
     "Name": "hasRequiredMainFunction",
-    "Values": 2,
+    "Values": 3,
     "Coverage": "0%",
     "Question": "Does the language require a function named main (or similar)?",
-    "Example": "true",
+    "Example": "false",
     "Type": "boolean",
     "SortIndex": 7,
     "IsComputed": false
@@ -3356,7 +3406,7 @@ const measures = [
   },
   {
     "Name": "hasSemanticIndentation",
-    "Values": 589,
+    "Values": 601,
     "Coverage": "11%",
     "Question": "Does the language use semantic indentation?",
     "Example": "false",
@@ -3416,7 +3466,7 @@ const measures = [
   },
   {
     "Name": "hasStatements",
-    "Values": 2,
+    "Values": 3,
     "Coverage": "0%",
     "Question": "Does the language have a concept of statements?",
     "Example": "true",
@@ -3426,7 +3476,7 @@ const measures = [
   },
   {
     "Name": "hasStaticMethods",
-    "Values": 2,
+    "Values": 3,
     "Coverage": "0%",
     "Question": "Can a class have static methods?",
     "Example": "true",
@@ -3436,10 +3486,10 @@ const measures = [
   },
   {
     "Name": "hasStaticTyping",
-    "Values": 10,
+    "Values": 25,
     "Coverage": "0%",
     "Question": "Does the language have static typing at compile time?",
-    "Example": "true",
+    "Example": "false",
     "Type": "boolean",
     "SortIndex": 7,
     "IsComputed": false
@@ -3466,7 +3516,7 @@ const measures = [
   },
   {
     "Name": "hasStrings",
-    "Values": 367,
+    "Values": 380,
     "Coverage": "7%",
     "Question": "Does the language have a strings data structure?",
     "Example": "true",
@@ -3476,7 +3526,7 @@ const measures = [
   },
   {
     "Name": "hasStructs",
-    "Values": 8,
+    "Values": 11,
     "Coverage": "0%",
     "Question": "Does the language have a structs structure?",
     "Example": "true",
@@ -3485,8 +3535,18 @@ const measures = [
     "IsComputed": false
   },
   {
+    "Name": "hasStructuralTyping",
+    "Values": 11,
+    "Coverage": "0%",
+    "Question": "Does the language feature (significant) structural typing?",
+    "Example": "false",
+    "Type": "boolean",
+    "SortIndex": 7,
+    "IsComputed": false
+  },
+  {
     "Name": "hasSwitch",
-    "Values": 26,
+    "Values": 29,
     "Coverage": "0%",
     "Question": "Does the language have switch statements or expressions?",
     "Example": "true",
@@ -3576,7 +3636,7 @@ const measures = [
   },
   {
     "Name": "hasTryCatch",
-    "Values": 3,
+    "Values": 4,
     "Coverage": "0%",
     "Question": "Does the language have a try/catch construct?",
     "Example": "true",
@@ -3586,7 +3646,7 @@ const measures = [
   },
   {
     "Name": "hasTypeAliases",
-    "Values": 2,
+    "Values": 3,
     "Coverage": "0%",
     "Question": "Does the language have type aliases?",
     "Example": "true",
@@ -3596,7 +3656,7 @@ const measures = [
   },
   {
     "Name": "hasTypeAnnotations",
-    "Values": 2,
+    "Values": 3,
     "Coverage": "0%",
     "Question": "Does the language have a syntax for annotating the types of variables?",
     "Example": "true",
@@ -3605,8 +3665,18 @@ const measures = [
     "IsComputed": false
   },
   {
+    "Name": "hasTypeClasses",
+    "Values": 13,
+    "Coverage": "0%",
+    "Question": "Does the language have type classes?",
+    "Example": "false",
+    "Type": "boolean",
+    "SortIndex": 7,
+    "IsComputed": false
+  },
+  {
     "Name": "hasTypeInference",
-    "Values": 27,
+    "Values": 31,
     "Coverage": "0%",
     "Question": "Can the parser infer the type of a variable at compile time without an annotation?",
     "Example": "true",
@@ -3616,7 +3686,7 @@ const measures = [
   },
   {
     "Name": "hasTypeParameters",
-    "Values": 2,
+    "Values": 3,
     "Coverage": "0%",
     "Question": "Does the language support a concept of type parameters?",
     "Example": "true",
@@ -3646,7 +3716,7 @@ const measures = [
   },
   {
     "Name": "hasUnicodeIdentifiers",
-    "Values": 5,
+    "Values": 6,
     "Coverage": "0%",
     "Question": "Does the language support Unicode identifiers?",
     "Example": "false",
@@ -3666,7 +3736,7 @@ const measures = [
   },
   {
     "Name": "hasUnitsOfMeasure",
-    "Values": 10,
+    "Values": 11,
     "Coverage": "0%",
     "Question": "Does the language support units of measure?",
     "Example": "false",
@@ -3706,7 +3776,7 @@ const measures = [
   },
   {
     "Name": "hasVariadicFunctions",
-    "Values": 6,
+    "Values": 8,
     "Coverage": "0%",
     "Question": "Does the language support functions that accept a variable number of parameters?",
     "Example": "true",
@@ -3736,7 +3806,7 @@ const measures = [
   },
   {
     "Name": "hasWhileLoops",
-    "Values": 53,
+    "Values": 54,
     "Coverage": "1%",
     "Question": "Does the language have while loops?",
     "Example": "true",
@@ -3766,7 +3836,7 @@ const measures = [
   },
   {
     "Name": "isCaseSensitive",
-    "Values": 28,
+    "Values": 31,
     "Coverage": "0%",
     "Question": "Is this language case sensitive?",
     "Example": "false",
@@ -3817,7 +3887,7 @@ const measures = [
   },
   {
     "Name": "wikipedia",
-    "Values": 1916,
+    "Values": 1974,
     "Coverage": "38%",
     "Question": "What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?",
     "Example": "https://en.wikipedia.org/wiki/IBM_1620",
@@ -3828,7 +3898,7 @@ const measures = [
   },
   {
     "Name": "bookCount",
-    "Values": 5024,
+    "Values": 5152,
     "Coverage": "100%",
     "Question": "What is the count of booked we have published about this thing?",
     "Example": "0",
@@ -3838,7 +3908,7 @@ const measures = [
   },
   {
     "Name": "paperCount",
-    "Values": 5024,
+    "Values": 5152,
     "Coverage": "100%",
     "Question": "What is the count of papers we have published about this thing?",
     "Example": "0",
@@ -3848,7 +3918,7 @@ const measures = [
   },
   {
     "Name": "hopl",
-    "Values": 1807,
+    "Values": 1808,
     "Coverage": "35%",
     "Question": "What is the URL to this language in Diarmuid Pigott's Online Historical Encyclopaedia of Programming Languages site?",
     "Example": "https://hopl.info/showlanguage.prx?exp=4365",
@@ -3871,7 +3941,7 @@ const measures = [
   {
     "Name": "tiobe",
     "Values": 204,
-    "Coverage": "4%",
+    "Coverage": "3%",
     "Question": "What is the ID of this language in Tiobe's ranking of programming languages here: https://www.tiobe.com/tiobe-index/?",
     "Example": "ABAP",
     "Type": "string",
@@ -3881,7 +3951,7 @@ const measures = [
   },
   {
     "Name": "domainName",
-    "Values": 890,
+    "Values": 889,
     "Coverage": "17%",
     "Question": "What is the domain for this language's website if it has its own?",
     "Example": "6gu.nz",

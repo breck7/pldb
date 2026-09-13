@@ -1,52 +1,60 @@
 basic calculator
 ================
 
-basic calculator, aka basic calculator, is a programming language created in 1975.
+basic calculator, aka basic calculator, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1975.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221975%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1975
 
-#621 on PLDB
-49 Years Old
+#623 on PLDB
+51 Years Old
 
 bc, for basic calculator (often referred to as bench calculator), is "an arbitrary-precision calculator language" with syntax similar to the C programming language. bc is typically used as either a mathematical scripting language or as an interactive mathematical shell. A typical interactive usage is typing the command bc on a Unix command prompt and entering a mathematical expression, such as (1 + 3) * 2, whereupon 8 will be output. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Bc_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of basic calculator happened in Bell Labs
-- Explore basic calculator snippets on Rosetta Code
-- Pygments supports syntax highlighting for basic calculator
-- See also: (6 related languages) C, Unix, Dc, Reverse Polish notation, Yacc, Bash
-- 1 PLDB concepts link to basic calculator: Idio
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of basic calculator happened in <a href="../lists/labs.html#q=Bell Labs">Bell Labs</a>
+- Explore basic calculator snippets on <a href="http://www.rosettacode.org/wiki/Category:Bc">Rosetta Code</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/algebra.py">syntax highlighting</a> for basic calculator
+- See also: (6 related languages) <a href="c.html">C</a>, <a href="unix.html">Unix</a>, <a href="dc.html">Dc</a>, <a href="reverse-polish-notation.html">Reverse Polish notation</a>, <a href="yacc.html">Yacc</a>, <a href="bash.html">Bash</a>
+- 1 PLDB concepts link to basic calculator: <a href="idio.html">Idio</a>
 
+```Example from <a href='https://riju.codes/bc'>Riju</a>:
 &quot;Hello, world!
 &quot;
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/b/BC.bc'>hello-world</a>:
 &quot;Hello World&quot;
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Bc_(programming_language)'>Wikipedia</a>:
 $ result=$(echo &quot;scale=2; 5 * 7 /3;&quot; | bc)
 $ echo $result
 11.66
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 
-View source
+Built with Scroll v178.2.3

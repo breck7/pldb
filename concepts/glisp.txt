@@ -1,26 +1,30 @@
 Glisp
 =====
 
-Glisp is a visual programming language created in 2020 by Baku Hashiomoto.
+Glisp is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22visual%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">visual programming language</a> created in 2020 by Baku Hashiomoto.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
  https://pldb.io/concepts/../lists/creators.html#q=Baku%20Hashiomoto Baku Hashiomoto
 
-#893 on PLDB
-4 Years Old
+#926 on PLDB
+6 Years Old
 
+```Download source code:
 git clone https://github.com/baku89/glisp
+```
 
 [Image Omitted]
- A screenshot of the visual programming language Glisp.
+ A screenshot of the <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22visual%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">visual programming language</a> Glisp.
 
 Glisp is a Lisp-based design tool that combines generative approaches with traditional design methods, empowering artists to discover new forms of expression.
 
-- Tags: visual programming language, lisp
-- Glisp is developed on GitHub and has 1,101 stars
-- Glisp is written in TypeScript, Markdown, JavaScript, Stylus, HTML, JSON, YAML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"visual"%5D%7D%5D%2C"logic"%3A"AND"%7D'>visual programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"lisp"%5D%7D%5D%2C"logic"%3A"AND"%7D'>lisp</a>
+- Glisp is developed on <a href="https://github.com/baku89/glisp">GitHub</a> and has 1,101 stars
+- Glisp is written in <a href="typescript.html">TypeScript</a>, <a href="markdown.html">Markdown</a>, <a href="javascript.html">JavaScript</a>, <a href="stylus.html">Stylus</a>, <a href="html.html">HTML</a>, <a href="json.html">JSON</a>, <a href="yaml.html">YAML</a>
 
+```Example from the web:
 (style
  (fill   &quot;blue&quot;)
  (circle [6 -152.1659] 140.0047))
+```
 
-View source
+Built with Scroll v178.2.3

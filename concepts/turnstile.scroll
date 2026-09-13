@@ -12,12 +12,9 @@ reference https://docs.racket-lang.org/turnstile/index.html
 example
  #lang turnstile
  (provide → Int λ #%app #%datum + ann)
-  
  (define-base-type Int)
  (define-type-constructor → #:arity > 0)
-  
  (define-primop + : (→ Int Int Int))
-  
  ; [APP]
  (define-typed-syntax (#%app e_fn e_arg ...) ≫
    [⊢ e_fn ≫ e_fn- ⇒ (~→ τ_in ... τ_out)]

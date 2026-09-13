@@ -1,27 +1,30 @@
 WDL
 ===
 
-WDL, aka Workflow Description Language, is an open source programming language created in 2012.
+WDL, aka Workflow Description Language, is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2012.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
 
-#327 on PLDB
-12 Years Old
-888 Repos
+#348 on PLDB
+14 Years Old
+888 <span title="WDL repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/openwdl/wdl
+```
 
 The Workflow Description Language (WDL) is a way to specify data processing workflows with a human-readable and -writeable syntax. WDL makes it straightforward to define analysis tasks, chain them together in workflows, and parallelize their execution. The language makes common patterns simple to express, while also admitting uncommon or complicated behavior; and strives to achieve portability not only across execution platforms, but also different types of users. Whether one is an analyst, a programmer, an operator of a production system, or any other sort of user, WDL should be accessible and understandable.
 
-- Tags: programming language
-- WDL is developed on GitHub and has 756 stars
-- There are at least 888 WDL repos on GitHub
-- WDL is written in Markdown, YAML, JSON
-- The  Google BigQuery Public Dataset GitHub snapshot shows 23 users using WDL in 30 repos on GitHub
-- GitHub supports syntax highlighting for WDL
-- openwdl.org was registered in 2017
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- WDL is developed on <a href="https://github.com/openwdl/wdl">GitHub</a> and has 756 stars
+- There are at least 888 WDL repos on <a href="https://github.com/search?q=language:wdl">GitHub</a>
+- WDL is written in <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="json.html">JSON</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 23 users using WDL in 30 repos on <a href="https://api.github.com/search/repositories?q=language:wdl">GitHub</a>
+- GitHub supports <a href="https://github.com/broadinstitute/wdl-sublime-syntax-highlighter" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for WDL
+- <a href="http://www.openwdl.org/">openwdl.org</a> was registered in 2017
 - Read more about WDL on the web: 1.
  https://software.broadinstitute.org/wdl/ 1.
 
+```Example from <a href='https://github.com/broadinstitute/wdl-sublime-syntax-highlighter'>Linguist</a>:
 # Sample originally from https://github.com/broadinstitute/centaur
 
 task hello {
@@ -43,29 +46,30 @@ workflow wf_hello {
      hello.salutation
   }
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

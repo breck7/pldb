@@ -1,23 +1,26 @@
 JAL compiler
 ============
 
-JAL compiler is a compiler created in 2000.
+JAL compiler is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22compiler%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">compiler</a> created in 2000.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2000
 
-#1636 on PLDB
-24 Years Old
+#1699 on PLDB
+26 Years Old
 
+```Download source code:
 git clone https://github.com/jallib/jallib
+```
 
 JAL (Just Another Language) is a Pascal-like programming language and compiler that generates executable code for PIC microcontrollers.  It is a free-format language with a compiler that runs on Linux, MS-Windows and MS-DOS (OSX support). It is configurable and extendable through the use of libraries and can even be combined with PIC assembly language.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/JAL_(compiler) Read more on Wikipedia...
 
-- Tags: compiler
-- JAL compiler is developed on GitHub and has 24 stars
-- Early development of JAL compiler happened in Van Ooijen Technische Informatica
-- JAL compiler is written in HTML, XML, Python, C, Bourne shell, JSON, Perl, XSLT, Make, Tex, Assembly language, Stata, CSS, Scheme, Logos, Rexx, Markdown, YAML, Bash
-- See also: (1 related languages) PIC microcontroller
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"compiler"%5D%7D%5D%2C"logic"%3A"AND"%7D'>compiler</a>
+- JAL compiler is developed on <a href="https://github.com/jallib/jallib">GitHub</a> and has 24 stars
+- Early development of JAL compiler happened in <a href="../lists/labs.html#q=Van Ooijen Technische Informatica">Van Ooijen Technische Informatica</a>
+- JAL compiler is written in <a href="html.html">HTML</a>, <a href="xml.html">XML</a>, <a href="python.html">Python</a>, <a href="c.html">C</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="json.html">JSON</a>, <a href="perl.html">Perl</a>, <a href="xslt.html">XSLT</a>, <a href="make.html">Make</a>, <a href="tex.html">Tex</a>, <a href="assembly-language.html">Assembly language</a>, <a href="stata.html">Stata</a>, <a href="css.html">CSS</a>, <a href="scheme.html">Scheme</a>, <a href="logos.html">Logos</a>, <a href="rexx.html">Rexx</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="bash.html">Bash</a>
+- See also: (1 related languages) <a href="pic-microcontroller.html">PIC microcontroller</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/JAL_(compiler)'>Wikipedia</a>:
 -- JAL 2.3
 include 16f877_bert--define the variables
 var byte resist--define the pins
@@ -47,5 +50,6 @@ forever loop--convert analog on a0 to digital
    PWM_Set_DutyCycle (resist, resist)
 
 end loop
+```
 
-View source
+Built with Scroll v178.2.3

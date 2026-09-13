@@ -1,27 +1,31 @@
 JSONiq
 ======
 
-JSONiq is a query language created in 2011.
+JSONiq is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22queryLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">query language</a> created in 2011.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2011
 
-#940 on PLDB
-13 Years Old
-153 Repos
+#977 on PLDB
+15 Years Old
+153 <span title="JSONiq repos on GitHub.">Repos</span>
 
 JSONiq is a query and functional programming language that is designed to declaratively query and transform collections of hierarchical and heterogeneous data in format of JSON, XML, as well as unstructured, textual data. JSONiq is an open specification published under the Creative Commons Attribution-ShareAlike 3.0 license. It is based on the XQuery language, with which it shares the same core expressions and operations on atomic types. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/JSONiq Read more on Wikipedia...
 
-- Tags: queryLanguage
-- There are at least 153 JSONiq repos on GitHub
-- JSONiq is a superset of JSON
-- Early development of JSONiq happened in https://groups.google.com/g/zorba-io-user
-- The  Google BigQuery Public Dataset GitHub snapshot shows 386 users using JSONiq in 423 repos on GitHub
-- GitHub supports syntax highlighting for JSONiq
-- jsoniq.org was registered in 2011
-- See also: (5 related languages) XQuery, SQL, JSON, XML, ISBN
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"queryLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>queryLanguage</a>
+- There are at least 153 JSONiq repos on <a href="https://github.com/search?q=language:JSONiq">GitHub</a>
+- JSONiq is a <a href="../lists/explorer.html#columns=rank~id~appeared~tags~creators~supersetOf&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22supersetOf%22%2C%22origData%22%3A%22supersetOf%22%2C%22tags%22%3A%22html%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">superset</a> of <a href="json.html">JSON</a>
+- Early development of JSONiq happened in <a href="../lists/labs.html#q=https://groups.google.com/g/zorba-io-user">https://groups.google.com/g/zorba-io-user</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 386 users using JSONiq in 423 repos on <a href="https://api.github.com/search/repositories?q=language:JSONiq">GitHub</a>
+- GitHub supports <a href="https://github.com/wcandillon/language-jsoniq" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for JSONiq
+- <a href="http://www.jsoniq.org/">jsoniq.org</a> was registered in 2011
+- See also: (5 related languages) <a href="xquery.html">XQuery</a>, <a href="sql.html">SQL</a>, <a href="json.html">JSON</a>, <a href="xml.html">XML</a>, <a href="isbn.html">ISBN</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/j/JSONiq'>hello-world</a>:
 &quot;Hello World&quot;
 
+```
+
+```Example from <a href='https://github.com/wcandillon/language-jsoniq'>Linguist</a>:
 (: Query for returning one database entry :)
 
 import module namespace req = &quot;http://www.28msec.com/modules/http-request&quot;;
@@ -32,6 +36,9 @@ variable $part := (req:param-values(&quot;part&quot;), &quot;main&quot;)[1];
 
 catalog:get-data-by-key($id, $part)
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/JSONiq'>Wikipedia</a>:
 for $p in collection(&quot;persons&quot;)
  return
    &lt;person&gt;
@@ -39,16 +46,17 @@ for $p in collection(&quot;persons&quot;)
      &lt;lastName&gt;{$p(&quot;lastName&quot;)}&lt;/lastName&gt;
      &lt;age&gt;{$p(&quot;age&quot;)}&lt;/age&gt;
    &lt;/person&gt;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 
-View source
+Built with Scroll v178.2.3

@@ -1,105 +1,120 @@
 J
 =
 
-J is an open source programming language created in 1990 by Kenneth E. Iverson and Roger Hui.
+J is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1990 by Kenneth E. Iverson and Roger Hui.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1990
  https://pldb.io/concepts/../lists/creators.html#q=Kenneth%20E.%20Iverson Kenneth E. Iverson
  https://pldb.io/concepts/../lists/creators.html#q=Roger%20Hui Roger Hui
 
-#107 on PLDB
-34 Years Old
-468 Repos
+#110 on PLDB
+36 Years Old
+468 <span title="J repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/jsoftware/jsource
+```
 
 The J programming language, developed in the early 1990s by Kenneth E. Iverson and Roger Hui, is a synthesis of APL (also by Iverson) and the FP and FL function-level languages created by John Backus. To avoid repeating the APL special-character problem, J uses only the basic ASCII character set, resorting to the use of the dot and colon as inflections to form short words similar to digraphs. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/J_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language, arrayLang
-- J is developed on GitHub and has 650 stars
-- Watch the history of the J repo visualized with Gource
-- There are at least 468 J repos on GitHub
-- Early development of J happened in Jsoftware Inc
-- J is written in C, Assembly language, Bourne shell, Make, XML, Markdown, YAML, C++, IDL, HTML
-- The  Google BigQuery Public Dataset GitHub snapshot shows 124 users using J in 151 repos on GitHub
-- There are 2,478 Project Euler users using J
-- Explore J snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"arrayLang"%5D%7D%5D%2C"logic"%3A"AND"%7D'>arrayLang</a>
+- J is developed on <a href="https://github.com/jsoftware/jsource">GitHub</a> and has 650 stars
+- Watch the history of <a href="https://www.youtube.com/watch?v=DJyQnlVf95E">the J repo visualized with Gource</a>
+- There are at least 468 J repos on <a href="https://github.com/search?q=language:J">GitHub</a>
+- Early development of J happened in <a href="../lists/labs.html#q=Jsoftware Inc">Jsoftware Inc</a>
+- J is written in <a href="c.html">C</a>, <a href="assembly-language.html">Assembly language</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="make.html">Make</a>, <a href="xml.html">XML</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="cpp.html">C++</a>, <a href="idl.html">IDL</a>, <a href="html.html">HTML</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 124 users using J in 151 repos on <a href="https://api.github.com/search/repositories?q=language:J">GitHub</a>
+- There are 2,478 <a href="https://projecteuler.net/language=APL/J/K">Project Euler</a> users using J
+- Explore J snippets on <a href="http://www.rosettacode.org/wiki/Category:J">Rosetta Code</a>
 - J on HOPL
  https://hopl.info/showlanguage.prx?exp=1558 J on HOPL
-- J appears in the TIOBE Index
-- Pygments supports syntax highlighting for J
-- GitHub supports syntax highlighting for J
-- There is 1 Jupyter Kernel for J
-- jsoftware.com was registered in 1996
-- See also: (13 related languages) Linux, APL, FP, FL, NumPy, SuperCollider, ASCII, Unix, SQL, C, Unicode, K, Q
+- J appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/j.py">syntax highlighting</a> for J
+- GitHub supports <a href="https://github.com/tikkanz/JSyntax" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for J
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/martin-saurer/jkernel">Kernel</a> for J
+- <a href="http://www.jsoftware.com">jsoftware.com</a> was registered in 1996
+- See also: (13 related languages) <a href="linux.html">Linux</a>, <a href="apl.html">APL</a>, <a href="fp.html">FP</a>, <a href="fl.html">FL</a>, <a href="numpy.html">NumPy</a>, <a href="supercollider.html">SuperCollider</a>, <a href="ascii.html">ASCII</a>, <a href="unix.html">Unix</a>, <a href="sql.html">SQL</a>, <a href="c.html">C</a>, <a href="unicode.html">Unicode</a>, <a href="k.html">K</a>, <a href="q.html">Q</a>
 - Read more about J on the web: 1.
  https://aplwiki.com/wiki/Jsoftware 1.
-- 4 PLDB concepts link to J: Goal, Jelly, U, Uiua
+- 4 PLDB concepts link to J: <a href="goal.html">Goal</a>, <a href="jelly.html">Jelly</a>, <a href="u.html">U</a>, <a href="uiua.html">Uiua</a>
 
+```Example from <a href='https://riju.codes/j'>Riju</a>:
 echo &#39;Hello, world!&#39;
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/j/J.ijs'>hello-world</a>:
 #!/opt/local/bin/jc
 echo &#39;Hello World&#39;
 exit &#39;&#39;
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#J'>the Hello World Collection</a>:
 NB. Hello World in J
 &#39;Hello World&#39; 1!:2(2)
+```
 
+```Example from <a href='https://github.com/tikkanz/JSyntax'>Linguist</a>:
 #!/bin/jconsole
 echo &#39;Hello, GitHub!&#39;
 exit &#39;&#39;
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/J_(programming_language)'>Wikipedia</a>:
 3 |. 1 0 1 1 0 0 1 1 1 1 1             NB. rotate
 1 0 0 1 1 1 1 1 1 0 1
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   NB. _?\d+
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   NB. _?\d+\.(?=\d+)
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   'Hello world'
  Token '
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token echo
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   NB. A comment
  Token NB.
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

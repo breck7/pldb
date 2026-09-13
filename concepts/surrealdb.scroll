@@ -1,0 +1,35 @@
+../code/conceptPage.scroll
+
+id surrealdb
+name SurrealDB
+appeared 2016
+creators Tobie Morgan Hitchcock
+tags queryLanguage
+website https://surrealdb.com/
+description SurrealDB is an end-to-end cloud-native database designed for modern applications, including web, mobile, serverless, Jamstack, backend, and traditional applications. With SurrealDB, you can simplify your database and API infrastructure, reduce development time, and build secure, performant apps quickly and cost-effectively.
+writtenIn rust svg yaml markdown toml nix bourne-shell make dockerfile d ini
+
+repoStats
+ firstCommit 2016
+ newestCommit 2025
+ commits 4199
+ committers 152
+ files 1551
+ mb 33
+ linesOfCode 303275
+
+example
+ UPDATE person SET
+    waist = <int> "34",
+    height = <float> 201,
+    score = <decimal> 0.3 + 0.3 + 0.3 + 0.1
+ ;
+
+githubRepo https://github.com/surrealdb/surrealdb
+ stars 28116
+ forks 922
+ subscribers 156
+ created 2021
+ updated 2024
+ description A scalable, distributed, collaborative, document-graph database, for the realtime web
+ issues 679

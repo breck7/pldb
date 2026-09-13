@@ -1,0 +1,64 @@
+../code/conceptPage.scroll
+
+id kdl
+name KDL
+appeared 2020
+tags pl
+website https://kdl.dev
+spec https://github.com/kdl-org/kdl/blob/main/SPEC.md
+webRepl https://kdl.dev/play/
+description KDL is a small, pleasant document language with XML-like node semantics that looks like you're invoking a bunch of CLI commands! It's meant to be used both as a serialization format and a configuration language, much like JSON, YAML, or XML.
+writtenIn markdown svg yaml python json xml
+
+influencedBy sdlang
+repoStats
+ firstCommit 2020
+ newestCommit 2025
+ commits 359
+ committers 55
+ files 596
+ mb 2
+ linesOfCode 4637
+
+example
+ package {
+   name my-pkg
+   version "1.2.3"
+   dependencies {
+     // Nodes can have standalone values as well as
+     // key/value pairs.
+     lodash "^3.2.1" optional=#true alias=underscore
+   }
+   scripts {
+     // "Raw" and dedented multi-line strings are supported.
+     message """
+       hello
+       world
+       """
+     build #"""
+       echo "foo"
+       node -c "console.log('hello, world!');"
+       echo "foo" > some-file.txt
+       """#
+   }
+   // `\` breaks up a single node across multiple lines.
+   the-matrix 1 2 3 \
+              4 5 6 \
+              7 8 9
+   // "Slashdash" comments operate at the node level,
+   // with just `/-`.
+   /-this-is-commented {
+     this entire node {
+       is gone
+     }
+   }
+ }
+
+githubRepo https://github.com/kdl-org/kdl
+ stars 1231
+ forks 65
+ subscribers 27
+ created 2020
+ updated 2025
+ description the kdl document language specifications
+ issues 24

@@ -1,39 +1,46 @@
 Standard ML
 ===========
 
-Standard ML is a programming language created in 1990.
+Standard ML is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1990.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1990
 
-#134 on PLDB
-34 Years Old
-392k Repos
+#130 on PLDB
+36 Years Old
+392k <span title="Standard ML repos on GitHub.">Repos</span>
 
 Standard ML (SML; Standard Meta Language) is a general-purpose, modular, functional programming language with compile-time type checking and type inference. It is popular among compiler writers and programming language researchers, as well as in the development of theorem provers. SML is a modern dialect of ML, the programming language used in the Logic for Computable Functions (LCF) theorem-proving project. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Standard_ML Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 392,047 Standard ML repos on GitHub
-- Early development of Standard ML happened in Bell Labs and Princeton University
-- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Standard ML in 2k repos on GitHub
-- Standard ML appears in the TIOBE Index
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 392,047 Standard ML repos on <a href="https://github.com/search?q=language:Standard ML">GitHub</a>
+- Early development of Standard ML happened in <a href="../lists/labs.html#q=Bell Labs">Bell Labs</a> and <a href="../lists/labs.html#q=Princeton University">Princeton University</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Standard ML in 2k repos on <a href="https://api.github.com/search/repositories?q=language:Standard ML">GitHub</a>
+- Standard ML appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - Standard ML Ubuntu package
  https://packages.ubuntu.com/jammy/mlton Standard ML Ubuntu package
-- Pygments supports syntax highlighting for Standard ML
-- GitHub supports syntax highlighting for Standard ML
-- Standard ML appears in the Quine Relay project
-- Learn Standard ML on exercism.
-- sml-family.org was registered in 2014
-- See also: (19 related languages) Alice, DML, HOPE, Elm, F*, OCaml, Rust, Scala, ML, Caml, C, POPLOG, Pop-11, Common Lisp, Prolog, Emacs, Isabelle, Extended ML, F#
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/ml.py">syntax highlighting</a> for Standard ML
+- GitHub supports <a href="https://github.com/textmate/standard-ml.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Standard ML
+- Standard ML appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Learn <a href="https://exercism.org/tracks/standardml">Standard ML on exercism.</a>
+- <a href="http://sml-family.org">sml-family.org</a> was registered in 2014
+- See also: (19 related languages) <a href="alice.html">Alice</a>, <a href="dependent-ml.html">DML</a>, <a href="hope.html">HOPE</a>, <a href="elm.html">Elm</a>, <a href="fstar.html">F*</a>, <a href="ocaml.html">OCaml</a>, <a href="rust.html">Rust</a>, <a href="scala.html">Scala</a>, <a href="ml.html">ML</a>, <a href="caml.html">Caml</a>, <a href="c.html">C</a>, <a href="poplog.html">POPLOG</a>, <a href="pop-11.html">Pop-11</a>, <a href="common-lisp.html">Common Lisp</a>, <a href="prolog.html">Prolog</a>, <a href="emacs-editor.html">Emacs</a>, <a href="isabelle.html">Isabelle</a>, <a href="extended-ml.html">Extended ML</a>, <a href="f-sharp.html">F#</a>
 - Read more about Standard ML on the web: 1.
  https://www.smlnj.org/sml.html 1.
-- 10 PLDB concepts link to Standard ML: Elpi, invokator, jonprl, k-framework, mal, mlpolyr, mythryl, Pygments, redprl, UrWeb
+- 14 PLDB concepts link to Standard ML: <a href="dynamo-visual-language.html">Dynamo</a>, <a href="elpi.html">Elpi</a>, <a href="fun.html">Fun</a>, <a href="invokator.html">invokator</a>, <a href="jonprl.html">jonprl</a>, <a href="k-framework.html">k-framework</a>, <a href="mal.html">mal</a>, <a href="mlpolyr.html">mlpolyr</a>, <a href="mlscript.html">MLscript</a>, <a href="mythryl.html">mythryl</a>, <a href="netbeans-editor.html">netbeans-editor</a>, <a href="pygments.html">Pygments</a>, <a href="redprl.html">redprl</a>, <a href="urweb.html">UrWeb</a>
 
+```Example from <a href='https://riju.codes/standardml'>Riju</a>:
 print &quot;Hello, world!\n&quot;;
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/s/Standard ML.sml'>hello-world</a>:
 fun hello() = print(&quot;Hello World\n&quot;);
 
 hello()
 
+```
+
+```Example from <a href='https://github.com/textmate/standard-ml.tmbundle'>Linguist</a>:
  
 signature LAZY_BASE =
    sig
@@ -62,35 +69,39 @@ signature LAZY&#39; =
                    end
    end
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Standard_ML'>Wikipedia</a>:
 - haar [1, 2, 3, 4, ~4, ~3, ~2, ~1];
    val it = [0,20,4,4,~1,~1,~1,~1]  : int list
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print
 row
  Feature Type Inference
  FeatureLink ../features/hasTypeInference.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

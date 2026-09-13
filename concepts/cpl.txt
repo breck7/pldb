@@ -1,22 +1,23 @@
 CPL
 ===
 
-CPL, aka Combined Programming Language, is a programming language created in 1963 by Christopher Strachey.
+CPL, aka Combined Programming Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1963 by Christopher Strachey.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221963%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1963
  https://pldb.io/concepts/../lists/creators.html#q=Christopher%20Strachey Christopher Strachey
 
-#1004 on PLDB
-61 Years Old
+#1040 on PLDB
+63 Years Old
 
 CPL (Combined Programming Language) is a multi-paradigm programming language, that was developed in the early 1960s.  It is an early ancestor of the C language via the BCPL and B languages.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/CPL_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of CPL happened in University of Cambridge and University of London
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of CPL happened in <a href="../lists/labs.html#q=University of Cambridge">University of Cambridge</a> and <a href="../lists/labs.html#q=University of London">University of London</a>
 - CPL on HOPL
  https://hopl.info/showlanguage.prx?exp=181 CPL on HOPL
-- See also: (5 related languages) ALGOL 60, BCPL, POP-2, B, C
+- See also: (5 related languages) <a href="algol-60.html">ALGOL 60</a>, <a href="bcpl.html">BCPL</a>, <a href="pop-2.html">POP-2</a>, <a href="b.html">B</a>, <a href="c.html">C</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/CPL_(programming_language)'>Wikipedia</a>:
 Max(Items, ValueFunction) = value of
 § (Best, BestVal) = (NIL, -∞)
 while Items do §
@@ -24,15 +25,16 @@ while Items do §
 if Val &gt; BestVal then (Best, BestVal) := (Item, Val)
 Items := Rest(Items) §⃒
 result is Best §⃒
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token :=
 
-View source
+Built with Scroll v178.2.3

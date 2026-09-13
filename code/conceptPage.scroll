@@ -1,21 +1,13 @@
 importOnly
-replace BASE_URL ..
-replaceJs TEMPLATE
- {
-  const path = require("path")
-  const {Tables} = require(path.join(path.dirname(absolutePath), "..", "Computer.js"))
-  Tables.getLanguageTemplate(absolutePath);
- }
-
-// testStrict
- temporarily disable until we can figure out problem with examples
+testStrict
 
 tags All
 
 measures.parsers
 
-../header.scroll
-
-TEMPLATE
-
-../footer.scroll
+replace BASE_URL ..
+evalNodeJs
+ const path = require("path")
+ const filePath = particle.root.filePath
+ const {Tables} = require(path.join(path.dirname(filePath), "..", "Computer.js"))
+ Tables.getLanguageTemplate(filePath);

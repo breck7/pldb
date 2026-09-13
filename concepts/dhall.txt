@@ -1,25 +1,28 @@
 Dhall
 =====
 
-Dhall is a data notation created in 2017.
+Dhall is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 2017.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2017
 
-#131 on PLDB
-7 Years Old
-817 Repos
+#135 on PLDB
+9 Years Old
+817 <span title="Dhall repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/dhall-lang/dhall-lang
+```
 
 Maintainable configuration files
 
-- Tags: dataNotation
-- Dhall is developed on GitHub and has 4,185 stars
-- There are at least 817 Dhall repos on GitHub
-- Early development of Dhall happened in https://github.com/dhall-lang
-- Dhall is written in Dhall, Markdown, Nix, Haskell, SVG, Bourne shell, HTML, Diff, JSON, CSS, Python, JavaScript, YAML
-- The  Google BigQuery Public Dataset GitHub snapshot shows 46 users using Dhall in 60 repos on GitHub
-- 6 PLDB concepts link to Dhall: cloc, Dhall, lamdu-editor, Lamdu, mal, PureScript
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- Dhall is developed on <a href="https://github.com/dhall-lang/dhall-lang">GitHub</a> and has 4,185 stars
+- There are at least 817 Dhall repos on <a href="https://github.com/search?q=language:Dhall">GitHub</a>
+- Early development of Dhall happened in <a href="../lists/labs.html#q=https://github.com/dhall-lang">https://github.com/dhall-lang</a>
+- Dhall is written in <a href="dhall.html">Dhall</a>, <a href="markdown.html">Markdown</a>, <a href="nix.html">Nix</a>, <a href="haskell.html">Haskell</a>, <a href="svg.html">SVG</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="html.html">HTML</a>, <a href="diff.html">Diff</a>, <a href="json.html">JSON</a>, <a href="css.html">CSS</a>, <a href="python.html">Python</a>, <a href="javascript.html">JavaScript</a>, <a href="yaml.html">YAML</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 46 users using Dhall in 60 repos on <a href="https://api.github.com/search/repositories?q=language:Dhall">GitHub</a>
+- 7 PLDB concepts link to Dhall: <a href="cloc.html">cloc</a>, <a href="dhall.html">Dhall</a>, <a href="lamdu-editor.html">lamdu-editor</a>, <a href="lamdu.html">Lamdu</a>, <a href="mal.html">mal</a>, <a href="purescript.html">PureScript</a>, <a href="unison.html">unison</a>
 
+```Example from the web:
 -- ./company.dhall
 
 let Prelude =
@@ -58,31 +61,34 @@ in  { emails = Prelude.List.map User Text toEmail users
     , bios = Prelude.List.map User Bio toBio users
     , greetingPage = greetingPage
     }
+```
 
+```Example from <a href='https://riju.codes/dhall'>Riju</a>:
 { output = &quot;Hello, world!&quot; }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token --
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

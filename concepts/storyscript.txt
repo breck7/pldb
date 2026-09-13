@@ -1,20 +1,23 @@
 storyscript
 ===========
 
-storyscript is a programming language created in 2017.
+storyscript is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2017.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2017
 
-#936 on PLDB
-7 Years Old
+#974 on PLDB
+9 Years Old
 
+```Download source code:
 git clone https://github.com/storyscript/welcome
+```
 
 Storyscript is a language, editor, database, infra and community all-in-one. Create holistic apps, tools and workflows blazing fast that power your business.
 
-- Tags: programming language
-- storyscript is developed on GitHub and has 303 stars
-- storyscript.com was registered in 2010
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- storyscript is developed on <a href="https://github.com/storyscript/welcome">GitHub</a> and has 303 stars
+- <a href="https://storyscript.com">storyscript.com</a> was registered in 2010
 
+```Example from the web:
 ###
 Storyscript is a language, editor, database, infra and community all-in-one.
 Create holistic apps, tools and workflows blazing fast that power your business.
@@ -64,29 +67,30 @@ function name input:int returns int
     return input
 name(input:1)
 # &gt;&gt;&gt; 1
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

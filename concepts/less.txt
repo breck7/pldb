@@ -1,37 +1,44 @@
 Less
 ====
 
-Less is an open source stylesheet language created in 2009 by Alexis Sellier.
+Less is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22stylesheetLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">stylesheet language</a> created in 2009 by Alexis Sellier.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2009
  https://pldb.io/concepts/../lists/creators.html#q=Alexis%20Sellier Alexis Sellier
 
-#161 on PLDB
-15 Years Old
-12k Repos
+#162 on PLDB
+17 Years Old
+12k <span title="Less repos on GitHub.">Repos</span>
 
 Less (sometimes stylized as LESS) is a dynamic style sheet language that can be compiled into Cascading Style Sheets (CSS) and run on the client side or server side. Designed by Alexis Sellier, Less is influenced by Sass and has influenced the newer "SCSS" syntax of Sass, which adapted its CSS-like block formatting syntax. Less is open source. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Less_(stylesheet_language) Read more on Wikipedia...
 
-- Tags: stylesheetLanguage
-- There are at least 12,105 Less repos on GitHub
-- Early development of Less happened in https://github.com/less
-- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Less in 3k repos on GitHub
-- ANTLR grammar for Less
-- Monaco package for syntax highlighting Less
-- Pygments supports syntax highlighting for Less
-- GitHub supports syntax highlighting for Less
-- lesscss.org was registered in 2009
-- See also: (5 related languages) JavaScript, Sass, CSS, Ruby, Stylus
-- 15 PLDB concepts link to Less: Ace Editor, Bounce, gogs-editor, gridstudio-editor, KaTeX, Koka, Livr, Mu, NGS, Nit, Prettier, PROMETHEUS, PureScript, SandDance, Statsplorer
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"stylesheetLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>stylesheetLanguage</a>
+- There are at least 12,105 Less repos on <a href="https://github.com/search?q=language:Less">GitHub</a>
+- Early development of Less happened in <a href="../lists/labs.html#q=https://github.com/less">https://github.com/less</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using Less in 3k repos on <a href="https://api.github.com/search/repositories?q=language:Less">GitHub</a>
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/less">grammar</a> for Less
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/less">package</a> for syntax highlighting Less
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/css.py">syntax highlighting</a> for Less
+- GitHub supports <a href="https://github.com/atom/language-less.git" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Less
+- <a href="http://lesscss.org">lesscss.org</a> was registered in 2009
+- See also: (5 related languages) <a href="javascript.html">JavaScript</a>, <a href="sass.html">Sass</a>, <a href="css.html">CSS</a>, <a href="ruby.html">Ruby</a>, <a href="stylus.html">Stylus</a>
+- 16 PLDB concepts link to Less: <a href="ace.html">Ace Editor</a>, <a href="bounce-lang.html">Bounce</a>, <a href="gogs-editor.html">gogs-editor</a>, <a href="gridstudio-editor.html">gridstudio-editor</a>, <a href="katex.html">KaTeX</a>, <a href="koka.html">Koka</a>, <a href="livr.html">Livr</a>, <a href="mu.html">Mu</a>, <a href="netbeans-editor.html">netbeans-editor</a>, <a href="ngs.html">NGS</a>, <a href="nit.html">Nit</a>, <a href="prettier.html">Prettier</a>, <a href="prometheus.html">PROMETHEUS</a>, <a href="purescript.html">PureScript</a>, <a href="sanddance.html">SandDance</a>, <a href="statsplorer.html">Statsplorer</a>
 
+```Example from <a href='https://riju.codes/less'>Riju</a>:
 body:before {
   content: &quot;Hello, world!&quot;;
 }
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/l/Less.less'>hello-world</a>:
 body::before {
     content: &quot;Hello World&quot;
 }
 
+```
+
+```Example from <a href='https://github.com/atom/language-less.git'>Linguist</a>:
 @blue: #3bbfce;
 @margin: 16px;
 
@@ -47,6 +54,9 @@ body::before {
   border-color: @blue;
 }
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Less_(stylesheet_language)'>Wikipedia</a>:
 #header {
   color: #333333;
   border-left: 1px;
@@ -56,28 +66,29 @@ body::before {
   color: #114411;
   border-color: #7d2717;
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -85,9 +96,9 @@ row
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 
-View source
+Built with Scroll v178.2.3

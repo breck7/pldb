@@ -1,0 +1,24 @@
+../code/conceptPage.scroll
+
+id move
+name Move
+appeared 2022
+creators Sam Blackshear
+tags contractLanguage
+website https://sui.io/move
+description A blockchain-agnostic language offering significant advancements in security and productivity. Move drastically reduces the Web3 learning curve and enables a developer experience of unprecedented ease. On a computer, everything is just bits and bytes and can be freely copied. You want a language that gives you the necessary abstractions around ownership and scarcity, just like in the physical world. You want those basic safety guarantees. That's what Move does and why we created a new language. These things are hard to recreate in other languages, including existing smart contract languages, and we wanted to design the entire language around providing these primitives so programmers can write code safely and efficiently and not have to reinvent the wheel every time they want to write some code.
+lab Mysten Labs
+fileExtensions move
+
+docs https://docs.sui.io/concepts/sui-move-concepts
+
+example
+ module satoshi_flip::house_data {
+  use sui::balance::{Self, Balance};
+  use sui::sui::SUI;
+  use sui::coin::{Self, Coin};
+  use sui::package::{Self};
+  // Error codes
+  const ECallerNotHouse: u64 = 0;
+  const EInsufficientBalance: u64 = 1;
+ }

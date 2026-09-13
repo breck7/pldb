@@ -1,23 +1,26 @@
 Crap
 ====
 
-Crap, aka Concise RegEx-Aware Preprocessor, is a programming language created in 2018 by Henry Kroll III.
+Crap, aka Concise RegEx-Aware Preprocessor, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2018 by Henry Kroll III.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2018
  https://pldb.io/concepts/../lists/creators.html#q=Henry%20Kroll%20III Henry Kroll III
 
-#1499 on PLDB
-6 Years Old
+#1553 on PLDB
+8 Years Old
 
+```Download source code:
 git clone https://github.com/themanyone/crap
+```
 
 crap stands for concise, regex-aware preprocessor, it turns simplified crap code, python or lua-like pseudocode into c11
 
-- Tags: programming language
-- Crap is developed on GitHub and has 7 stars
-- Early development of Crap happened in https://github.com/themanyone/
-- Crap is written in C
-- Pygments supports syntax highlighting for Crap
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Crap is developed on <a href="https://github.com/themanyone/crap">GitHub</a> and has 7 stars
+- Early development of Crap happened in <a href="../lists/labs.html#q=https://github.com/themanyone/">https://github.com/themanyone/</a>
+- Crap is written in <a href="c.html">C</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/crap">syntax highlighting</a> for Crap
 
+```Example from the web:
  #if 0
  crap $0 | tcc -run -; exit 0
  #endif
@@ -37,64 +40,65 @@ crap stands for concise, regex-aware preprocessor, it turns simplified crap code
      for i in test_image // computable length
          for j in i[:N] // undefined length, add [:N]
              printf  &quot;%i%s&quot;, j, j_index==N-1?&quot;\n&quot;:&quot;, &quot;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // The same as c
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
    // The same as c
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // The same as c
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // The same as c
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // Similar to python or lua
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment */
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // The same as c
  Token //
 
-View source
+Built with Scroll v178.2.3

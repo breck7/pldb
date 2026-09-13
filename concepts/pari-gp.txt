@@ -1,26 +1,29 @@
 PARI/GP
 =======
 
-PARI/GP is an open source programming language created in 1985.
+PARI/GP is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1985.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221985%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1985
 
-#819 on PLDB
-39 Years Old
+#839 on PLDB
+41 Years Old
 
 PARI/GP is a computer algebra system with the main aim of facilitating number theory computations. Versions 2.1.0 and higher are distributed under the GNU General Public License. It runs on most common operating systems.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/PARI/GP Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of PARI/GP happened in Université Bordeaux
-- There are 123 Project Euler users using PARI/GP
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of PARI/GP happened in <a href="../lists/labs.html#q=Université Bordeaux">Université Bordeaux</a>
+- There are 123 <a href="https://projecteuler.net/language=PARI/GP">Project Euler</a> users using PARI/GP
 - PARI/GP Ubuntu package
  https://packages.ubuntu.com/jammy/pari-gp PARI/GP Ubuntu package
-- PARI/GP appears in the Quine Relay project
-- There is 1 Jupyter Kernel for PARI/GP
-- See also: (6 related languages) C, Pascal, Fortran, Perl, Python, Sage
+- PARI/GP appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/jdemeyer/pari_jupyter">Kernel</a> for PARI/GP
+- See also: (6 related languages) <a href="c.html">C</a>, <a href="pascal.html">Pascal</a>, <a href="fortran.html">Fortran</a>, <a href="perl.html">Perl</a>, <a href="python.html">Python</a>, <a href="sagemath.html">Sage</a>
 
+```Example from <a href='https://riju.codes/parigp'>Riju</a>:
 print(&quot;Hello, world!&quot;)
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/PARI/GP'>Wikipedia</a>:
 ? \p 212
    realprecision = 221 significant digits (212 digits displayed)
 ? (1.378-0.09143*I)^(14.87+0.3721*I)
@@ -56,14 +59,15 @@ time = 5 ms.
 time = 1ms.
 %4 = [3]
 /* This number field has class number 3. */
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -71,7 +75,7 @@ row
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -79,8 +83,8 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

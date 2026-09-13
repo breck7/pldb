@@ -1,32 +1,36 @@
 Lasso
 =====
 
-Lasso is an open source programming language created in 1995 by Kyle Jessup.
+Lasso is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1995 by Kyle Jessup.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221995%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1995
  https://pldb.io/concepts/../lists/creators.html#q=Kyle%20Jessup Kyle Jessup
 
-#543 on PLDB
-29 Years Old
-464 Repos
+#560 on PLDB
+31 Years Old
+464 <span title="Lasso repos on GitHub.">Repos</span>
 
 Lasso is an application server and server management interface used to develop internet applications and is a general-purpose, high-level programming language. Originally a web datasource connection tool, for Filemaker and later included in Apple Computer's FileMaker 4.0 and Claris Homepage as CDML, it has since evolved into a complex language used to develop and serve large-scale internet applications and web pages. Lasso includes a simple template system allowing code to control generation of HTML and other content types. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Lasso_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 464 Lasso repos on GitHub
-- Early development of Lasso happened in LassoSoft Inc
-- The  Google BigQuery Public Dataset GitHub snapshot shows 388 users using Lasso in 435 repos on GitHub
-- Explore Lasso snippets on Rosetta Code
-- Lasso appears in the TIOBE Index
-- Pygments supports syntax highlighting for Lasso
-- GitHub supports syntax highlighting for Lasso
-- Indeed.com has 142 matches for "lasso engineer".
-- lassosoft.com was registered in 2005
-- See also: (17 related languages) C, Linux, Dylan, Smalltalk, Scala, HTML, PHP, Python, Java, SQL, Unicode, UTF-8, CFML, Applescript, MySQL, Eclipse, ASP
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 464 Lasso repos on <a href="https://github.com/search?q=language:Lasso">GitHub</a>
+- Early development of Lasso happened in <a href="../lists/labs.html#q=LassoSoft Inc">LassoSoft Inc</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 388 users using Lasso in 435 repos on <a href="https://api.github.com/search/repositories?q=language:Lasso">GitHub</a>
+- Explore Lasso snippets on <a href="http://www.rosettacode.org/wiki/Category:Lasso">Rosetta Code</a>
+- Lasso appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/javascript.py">syntax highlighting</a> for Lasso
+- GitHub supports <a href="https://github.com/bfad/Sublime-Lasso" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Lasso
+- Indeed.com has 142 matches for <a href="https://www.indeed.com/jobs?q=lasso engineer">"lasso engineer"</a>.
+- <a href="http://www.lassosoft.com">lassosoft.com</a> was registered in 2005
+- See also: (17 related languages) <a href="c.html">C</a>, <a href="linux.html">Linux</a>, <a href="dylan.html">Dylan</a>, <a href="smalltalk.html">Smalltalk</a>, <a href="scala.html">Scala</a>, <a href="html.html">HTML</a>, <a href="php.html">PHP</a>, <a href="python.html">Python</a>, <a href="java.html">Java</a>, <a href="sql.html">SQL</a>, <a href="unicode.html">Unicode</a>, <a href="utf-8.html">UTF-8</a>, <a href="cfml.html">CFML</a>, <a href="applescript.html">Applescript</a>, <a href="mysql.html">MySQL</a>, <a href="eclipse-editor.html">Eclipse</a>, <a href="asp.html">ASP</a>
 
+```Example from <a href='http://helloworldcollection.de/#Lasso'>the Hello World Collection</a>:
 // Hello world in Lasso
 
 Hello world!
+```
+
+```Example from <a href='https://github.com/bfad/Sublime-Lasso'>Linguist</a>:
 
 /**
 	trait_json_serialize
@@ -241,6 +245,9 @@ define json_rpccall(method::string, params=map, id=&#39;&#39;, host=&#39;&#39;) 
 	Return(Decode_JSON(Include_URL(#host, -PostParams=Encode_JSON(Map(&#39;method&#39; = #method, &#39;params&#39; = #params, &#39;id&#39; = #id)))));
 }
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Lasso_(programming_language)'>Wikipedia</a>:
 // Define type
 define bottles_of_beer =&gt; type {
 
@@ -274,20 +281,21 @@ define bottles_of_beer =&gt; type {
 }
 
 bottles_of_beer
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -295,21 +303,21 @@ row
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

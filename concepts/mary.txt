@@ -1,22 +1,23 @@
 Mary
 ====
 
-Mary is a programming language created in 1970.
+Mary is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1970.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221970%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1970
 
-#1363 on PLDB
-54 Years Old
+#1405 on PLDB
+56 Years Old
 
 Mary was a programming language designed and implemented by RUNIT at Trondheim, Norway in the 1970s. It borrowed many features from ALGOL 68 but was designed for machine-oriented programming. An unusual feature of its syntax was that expressions were constructed using the conventional infix operators, but all of them had the same precedence and evaluation went from left to right unless there were brackets. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Mary_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Mary is a superset of ALGOL 68
-- Early development of Mary happened in Stiftelsen for industriell og teknisk forskning
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Mary is a <a href="../lists/explorer.html#columns=rank~id~appeared~tags~creators~supersetOf&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22supersetOf%22%2C%22origData%22%3A%22supersetOf%22%2C%22tags%22%3A%22html%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">superset</a> of <a href="algol-68.html">ALGOL 68</a>
+- Early development of Mary happened in <a href="../lists/labs.html#q=Stiftelsen for industriell og teknisk forskning">Stiftelsen for industriell og teknisk forskning</a>
 - Mary on HOPL
  https://hopl.info/showlanguage.prx?exp=647 Mary on HOPL
-- See also: (4 related languages) SPARC, ALGOL 68, C, Algol
+- See also: (4 related languages) <a href="sparc.html">SPARC</a>, <a href="algol-68.html">ALGOL 68</a>, <a href="c.html">C</a>, <a href="algol.html">Algol</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Mary_(programming_language)'>Wikipedia</a>:
 BEGIN
    INT i := 10;          %% Variable with initial value.
    REF INT ri := i;      %% Pointer initialized to point to i.
@@ -33,35 +34,36 @@ BEGIN
       2
    FI + j =: j;
 END
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token :=
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % A comment
  Token %
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

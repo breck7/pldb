@@ -1,20 +1,21 @@
 Sheep
 =====
 
-Sheep is a programming language created in 2000 by Wouter Van Oortmerssen.
+Sheep is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2000 by Wouter Van Oortmerssen.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2000
  https://pldb.io/concepts/../lists/creators.html#q=Wouter%20Van%20Oortmerssen Wouter Van Oortmerssen
 
-#2105 on PLDB
-24 Years Old
+#2189 on PLDB
+26 Years Old
 
 New scripting/querying/ipc/programming language I created for Amiga Inc. There is no publicly available material right now, except for an introductory article at Amiga World, an interview at OSNews.com, and this released screenshot of an early sheep beta in action: SHEEP was planned to have familiar beginner friendly syntax and semantics coupled with multimethods, automatic memory management without garbage collection (linearity), powerful datatypes, pattern matching, strong and dynamic typing living together in harmony, integrated access to all the new Amiga OS features, and optional compiled output comparable to C in speed and size.
 
-- Tags: programming language
-- Early development of Sheep happened in https://strlen.com/sheep-language
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Sheep happened in <a href="../lists/labs.html#q=https://strlen.com/sheep-language">https://strlen.com/sheep-language</a>
 - Read more about Sheep on the web: 1.
  https://www.osnews.com/story/169/interview-wouter-van-oortmerssen-on-sheep/ 1.
 
+```Example from the web:
 — Tree of Pythagoras
 
 — based on an old E example by Raymond Hoving
@@ -65,18 +66,19 @@ pythtree width/2-width/12 height-20 width/2+width/12 height-20 0
 ave_update
 repeat
 until ave_getmessage = &#39;Q&#39;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   define pythtree ax:real ay:real bx:real by:real depth:int do
      cx = ax-ay+by
    end
  Token
 
-View source
+Built with Scroll v178.2.3

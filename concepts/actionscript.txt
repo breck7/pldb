@@ -1,29 +1,30 @@
 ActionScript
 ============
 
-ActionScript is a programming language created in 1998 by Gary Grossman.
+ActionScript is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1998 by Gary Grossman.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221998%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1998
  https://pldb.io/concepts/../lists/creators.html#q=Gary%20Grossman Gary Grossman
 
-#142 on PLDB
-26 Years Old
-25k Repos
+#143 on PLDB
+28 Years Old
+25k <span title="ActionScript repos on GitHub.">Repos</span>
 
 438 184 ActionScript is an object-oriented programming language originally developed by Macromedia Inc. (later acquired by Adobe Systems). It is a derivation of HyperTalk, the scripting language for HyperCard. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/ActionScript Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 24,615 ActionScript repos on GitHub
-- Early development of ActionScript happened in Macromedia
-- The  Google BigQuery Public Dataset GitHub snapshot shows 7k users using ActionScript in 9k repos on GitHub
-- Explore ActionScript snippets on Rosetta Code
-- ActionScript appears in the TIOBE Index
-- Pygments supports syntax highlighting for ActionScript
-- GitHub supports syntax highlighting for ActionScript
-- Indeed.com has 88 matches for "ActionScript developer".
-- See also: (11 related languages) JavaScript, Java, Haxe, HyperTalk, HyperCard, iOS, Android, JSON, OpenGL, XML, MXML
-- 6 PLDB concepts link to ActionScript: Ace Editor, Haxe, JFlex, LinearML, MonkeyX, Pygments
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 24,615 ActionScript repos on <a href="https://github.com/search?q=language:ActionScript">GitHub</a>
+- Early development of ActionScript happened in <a href="../lists/labs.html#q=Macromedia">Macromedia</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 7k users using ActionScript in 9k repos on <a href="https://api.github.com/search/repositories?q=language:ActionScript">GitHub</a>
+- Explore ActionScript snippets on <a href="http://www.rosettacode.org/wiki/Category:ActionScript">Rosetta Code</a>
+- ActionScript appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/actionscript.py">syntax highlighting</a> for ActionScript
+- GitHub supports <a href="https://github.com/simongregory/actionscript3-tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for ActionScript
+- Indeed.com has 88 matches for <a href="https://www.indeed.com/jobs?q=ActionScript developer">"ActionScript developer"</a>.
+- See also: (11 related languages) <a href="javascript.html">JavaScript</a>, <a href="java.html">Java</a>, <a href="haxe.html">Haxe</a>, <a href="hypertalk.html">HyperTalk</a>, <a href="hypercard.html">HyperCard</a>, <a href="ios.html">iOS</a>, <a href="android.html">Android</a>, <a href="json.html">JSON</a>, <a href="opengl.html">OpenGL</a>, <a href="xml.html">XML</a>, <a href="mxml.html">MXML</a>
+- 6 PLDB concepts link to ActionScript: <a href="ace.html">Ace Editor</a>, <a href="haxe.html">Haxe</a>, <a href="jflex.html">JFlex</a>, <a href="linearml.html">LinearML</a>, <a href="monkeyx.html">MonkeyX</a>, <a href="pygments.html">Pygments</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/a/ActionScript.as'>hello-world</a>:
 package
 {
 	import flash.display.Sprite;
@@ -40,6 +41,9 @@ package
 	}
 }
 
+```
+
+```Example from <a href='https://github.com/simongregory/actionscript3-tmbundle'>Linguist</a>:
 package mypackage
 {
 	public class Hello
@@ -54,6 +58,9 @@ package mypackage
 	}
 }
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/ActionScript'>Wikipedia</a>:
 private function getNeighbours(_arg1:int, _arg2:int):Array{
   var _local3:Array = -(((null - !NULL!) % ~(undefined)));
   var _local4:*;
@@ -83,45 +90,46 @@ private function getNeighbours(_arg1:int, _arg2:int):Array{
   }
 return (_local3);
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -129,7 +137,7 @@ row
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -137,20 +145,20 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token trace
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

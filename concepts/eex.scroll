@@ -28,7 +28,6 @@ linguistGrammarRepo https://github.com/elixir-lang/elixir-tmbundle
  sampleCount 1
  example
   <h1>Listing Books</h1>
-   
   <table>
     <tr>
       <th>Title</th>
@@ -49,9 +48,7 @@ linguistGrammarRepo https://github.com/elixir-lang/elixir-tmbundle
     </tr>
   <% end %>
   </table>
-   
   <br />
-   
   <%= link "New book", to: book_path(@conn, :new) %>
 
 githubLanguage HTML+EEX

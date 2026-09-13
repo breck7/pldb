@@ -1,21 +1,23 @@
 Gzip
 ====
 
-Gzip is an open source binary data format created in 1992.
+Gzip is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22binaryDataFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">binary data format</a> created in 1992 by Jean-loup Gailly and Mark Adler.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221992%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1992
+ https://pldb.io/concepts/../lists/creators.html#q=Jean-loup%20Gailly Jean-loup Gailly
+ https://pldb.io/concepts/../lists/creators.html#q=Mark%20Adler Mark Adler
 
-#755 on PLDB
-32 Years Old
+#607 on PLDB
+34 Years Old
 
 gzip is a file format and a software application used for file compression and decompression. The program was created by Jean-loup Gailly and Mark Adler as a free software replacement for the compress program used in early Unix systems, and intended for use by GNU (the "g" is from "GNU"). Version 0.1 was first publicly released on 31 October 1992, and version 1.0 followed in February 1993.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Gzip Read more on Wikipedia...
 
-- Tags: binaryDataFormat
-- Early development of Gzip happened in GNU Project
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"binaryDataFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>binaryDataFormat</a>
+- Early development of Gzip happened in <a href="../lists/labs.html#q=GNU Project">GNU Project</a>
 - Gzip Ubuntu package
  https://packages.ubuntu.com/jammy/gzip Gzip Ubuntu package
-- Gzip appears in the Quine Relay project
-- See also: (5 related languages) C, Unix, FreeBSD, HTML, RFC
-- 1 PLDB concepts link to Gzip: sqlar-format
+- Gzip appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- See also: (5 related languages) <a href="c.html">C</a>, <a href="unix.html">Unix</a>, <a href="freebsd.html">FreeBSD</a>, <a href="html.html">HTML</a>, <a href="rfc.html">RFC</a>
+- 2 PLDB concepts link to Gzip: <a href="spz.html">SPZ</a>, <a href="sqlar-format.html">sqlar-format</a>
 
-View source
+Built with Scroll v178.2.3

@@ -1,23 +1,24 @@
 NewtonScript
 ============
 
-NewtonScript is a programming language created in 1993 by Walter Smith.
+NewtonScript is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1993 by Walter Smith.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221993%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1993
  https://pldb.io/concepts/../lists/creators.html#q=Walter%20Smith Walter Smith
 
-#1293 on PLDB
-31 Years Old
+#1329 on PLDB
+33 Years Old
 
 NewtonScript is a prototype-based programming language created to write programs for the Newton platform. It is heavily influenced by the Self programming language, but modified to be more suited to needs of mobile and embedded devices.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/NewtonScript Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of NewtonScript happened in Apple
-- Explore NewtonScript snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of NewtonScript happened in <a href="../lists/labs.html#q=Apple">Apple</a>
+- Explore NewtonScript snippets on <a href="http://www.rosettacode.org/wiki/Category:NewtonScript">Rosetta Code</a>
 - NewtonScript on HOPL
  https://hopl.info/showlanguage.prx?exp=1278 NewtonScript on HOPL
-- See also: (7 related languages) Self, Dylan, Smalltalk, JavaScript, Lisp, Lua, Io
+- See also: (7 related languages) <a href="self.html">Self</a>, <a href="dylan.html">Dylan</a>, <a href="smalltalk.html">Smalltalk</a>, <a href="javascript.html">JavaScript</a>, <a href="lisp.html">Lisp</a>, <a href="lua.html">Lua</a>, <a href="io.html">Io</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/n/NewtonScript.nwt'>hello-world</a>:
 baseview :=
    {viewBounds: {left: -3, top: 71, right: 138, bottom: 137},
     viewFlags: 581,
@@ -34,15 +35,17 @@ textview := * child of baseview *
     debug: &quot;textview&quot;
    };
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 
-View source
+Built with Scroll v178.2.3

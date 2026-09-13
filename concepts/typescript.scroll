@@ -32,10 +32,12 @@ packageRepository https://npmjs.org/
 ubuntuPackage node-typescript
 repoStats
  firstCommit 2014
- commits 39579
- committers 981
- files 71312
- newestCommit 2024
+ commits 40300
+ committers 1007
+ files 73529
+ newestCommit 2025
+ mb 2542
+ linesOfCode 1965447
 
 helloWorldCollection TypeScript
  // Hello world in TypeScript
@@ -126,6 +128,8 @@ hasMixins true
  class SmartObject implements Disposable, Activatable {
  }
  // Note: still need to do some runtime ops to make that work.
+hasNamedArguments false
+ // idiomatically emulated using parameters that expect objects
 hasNamespaces true
  // Typescript even supports splitting namespaces across multiple files:
  // Validation.ts
@@ -150,7 +154,26 @@ hasPrintDebugging true
 hasInheritance true
  class B {}
  class A extends B {}
+hasStructuralTyping true
+ // https://www.typescriptlang.org/docs/handbook/type-compatibility.html
+ // Subtype relations are structural for both interfaces and classes.
+ // Interface example:
+ interface CanCheckIncludes<T> {
+     includes(x: T): boolean;
+ }
+ 
+ function logIfIncludes<T>(includer: CanCheckIncludes<T>, includee: T) {
+     if (includer.includes(includee)) {
+         console.log(includer);
+     }
+ }
+ 
+ logIfIncludes("abc", "b");
+ logIfIncludes([1, 2, 3], 4);
+ logIfIncludes(1, 1);  // Fails typechecking, as numbers don't have includes()
 hasStaticTyping true
+hasTypeClasses false
+  https://github.com/microsoft/TypeScript/issues/10844#issuecomment-256182331
 hasTypeParameters true
  function identity<T>(arg: T): T {
     return arg;

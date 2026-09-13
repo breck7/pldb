@@ -1,29 +1,33 @@
 EGL
 ===
 
-EGL, aka Enterprise Generation Language, is a programming language created in 2008.
+EGL, aka Enterprise Generation Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2008.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
 
-#1087 on PLDB
-16 Years Old
+#1125 on PLDB
+18 Years Old
 
 EGL (Enterprise Generation Language), originally developed by IBM and now available as the EDT (EGL Development Tools) Open Source project under the Eclipse Public License (EPL), is a programming technology designed to meet the challenges of modern, multi-platform application development by providing a common language and programming model across languages, frameworks, and runtime platforms. The language borrows concepts familiar to anyone using statically typed languages like Java, COBOL, C, etc. However, it borrows the concept of stereotype from Unified Modeling Language (UML) that is not typically found in statically typed programming languages. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/EGL_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of EGL happened in IBM
-- Explore EGL snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of EGL happened in <a href="../lists/labs.html#q=IBM">IBM</a>
+- Explore EGL snippets on <a href="http://www.rosettacode.org/wiki/Category:EGL">Rosetta Code</a>
 - EGL on HOPL
  https://hopl.info/showlanguage.prx?exp=7930 EGL on HOPL
-- EGL appears in the TIOBE Index
-- See also: (10 related languages) Java, COBOL, C, UML, JavaScript, JVM, Linux, IBM System z, SOAP, RPG
+- EGL appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- See also: (10 related languages) <a href="java.html">Java</a>, <a href="cobol.html">COBOL</a>, <a href="c.html">C</a>, <a href="uml.html">UML</a>, <a href="javascript.html">JavaScript</a>, <a href="jvm.html">JVM</a>, <a href="linux.html">Linux</a>, <a href="systemz.html">IBM System z</a>, <a href="soap.html">SOAP</a>, <a href="ibm-rpg.html">RPG</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/e/Egl.egl'>hello-world</a>:
 program HelloWorld
     function main()
         SysLib.writeStdout(&quot;Hello World&quot;);
     end
 end
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/EGL_(programming_language)'>Wikipedia</a>:
 1 package com.mycompany.ui;
  2
  3 import com.mycompany.services.Employee;
@@ -51,22 +55,23 @@ end
 25     end
 26
 27 end
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token SysLib.writeStdout
 
-View source
+Built with Scroll v178.2.3

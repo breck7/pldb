@@ -1,0 +1,120 @@
+SAT
+===
+
+SAT is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%223d%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">3 d</a> created in 1985 by Spatial Technology.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221985%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1985
+ https://pldb.io/concepts/../lists/creators.html#q=Spatial%20Technology Spatial Technology
+
+#1903 on PLDB
+41 Years Old
+
+SAT is a text-based file format for representing 3D geometric models using boundary representation (B-Rep). It is part of the ACIS modeling kernel, widely used in CAD software for precise solid and surface modeling.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"3d"%5D%7D%5D%2C"logic"%3A"AND"%7D'>3d</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"cad"%5D%7D%5D%2C"logic"%3A"AND"%7D'>cad</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textDataFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>textDataFormat</a>
+- Early development of SAT happened in <a href="../lists/labs.html#q=Spatial Technology">Spatial Technology</a>
+- Read more about SAT on the web: 1. 2.
+ https://www.spatial.com/products/3d-acis-modeling 1.
+ https://en.wikipedia.org/wiki/ACIS 2.
+
+```Example from the web:
+400 0 1 0
+11 Scheme AIDE 11 ACIS 4.0 NT 24 Mon Apr 12 13:59:03 1998
+25.4 1e-06 1e-10
+-0 body $1 $2 $-1 $3 #
+-1 display_attribute-st-attrib $-1 $4 $-1 $0 1 #
+-2 lump $-1 $-1 $5 $0 #
+-3 transform $-1 1 0 0 0 0 -1 0 1 0 0 10 0 1 rotate no_reflect
+no_shear #
+-4 rgb_color-st-attrib $-1 $6 $1 $0010#
+-5 shell $-1 $-1 $-1 $7 $-1 $2 #
+-6 id_attribute-st-attrib $-1 $-1 $4 $0 1 #
+-7 face $-1 $8 $9 $5 $-1 $10 forward single #
+-8 face $-1 $11 $12 $5 $-1 $13 forward single #
+-9 loop $-1 $14 $15 $7 #
+-10 cone-surface $-1 0 0 0 0 0 1 10 0 0 1 I I 0 1 forwardIIII#
+-11 face $-1 $-1 $16 $5 $-1 $17 forward single #
+-12 loop $-1 $-1 $18 $8 #
+-13 plane-surface $-1 0 0 -10 0 0 -1 -1 0 0 forward_vIIII#
+-14 loop $-1 $-1 $19 $7 #
+-15 coedge $-1 $15 $15 $18 $20 1 $9 $-1 #
+-16 loop $-1 $-1 $21 $11 #
+-17 plane-surface $-1 0 0 10 0 0 1 1 0 0 forward_vIIII#
+-18 coedge $-1 $18 $18 $15 $20 0 $12 $-1 #
+-19 coedge $-1 $19 $19 $21 $22 1 $14 $-1 #
+-20 edge $-1 $23 $23 $18 $24 forward #
+-21 coedge $-1 $21 $21 $19 $22 0 $16 $-1 #
+-22 edge $-1 $25 $25 $21 $26 forward #
+-23 vertex $-1 $20 $27 #
+-24 ellipse-curve $-1 0 0 -10 0 0 -1 10001II#
+-25 vertex $-1 $22 $28 #
+-26 ellipse-curve $-1 0 0 10 0 0 1 10 0 0 1 I I #
+-27 point $-1 10 0 -10 #
+-28 point $-1 10 0 10 #
+End-of-ACIS-data
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Case Sensitivity
+ FeatureLink ../features/isCaseSensitive.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Standard Library
+ FeatureLink ../features/hasStandardLibrary.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v178.2.3

@@ -1,23 +1,26 @@
 Taichi
 ======
 
-Taichi is a programming language created in 2019 by Yuanming Hu.
+Taichi is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2019 by Yuanming Hu.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2019
  https://pldb.io/concepts/../lists/creators.html#q=Yuanming%20Hu Yuanming Hu
 
-#258 on PLDB
-5 Years Old
+#275 on PLDB
+7 Years Old
 
+```Download source code:
 git clone https://github.com/taichi-dev/taichi
+```
 
 Taichi Lang is an open-source, imperative, parallel programming language for high-performance numerical computation. It is embedded in Python and uses just-in-time (JIT) compiler frameworks, for example LLVM, to offload the compute-intensive Python code to the native GPU or CPU instructions.
 
-- Tags: programming language
-- Taichi is developed on GitHub and has 25,152 stars
-- Taichi is written in Python, C++, Markdown, CMake, JSON, GLSL, YAML, CUDA, Bourne shell, Objective C++, PowerShell, TOML, C, Jupyter Notebook, Make, Ini
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Taichi is developed on <a href="https://github.com/taichi-dev/taichi">GitHub</a> and has 25,152 stars
+- Taichi is written in <a href="python.html">Python</a>, <a href="cpp.html">C++</a>, <a href="markdown.html">Markdown</a>, <a href="cmake.html">CMake</a>, <a href="json.html">JSON</a>, <a href="glsl.html">GLSL</a>, <a href="yaml.html">YAML</a>, <a href="cuda.html">CUDA</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="objective-cpp.html">Objective C++</a>, <a href="powershell.html">PowerShell</a>, <a href="toml.html">TOML</a>, <a href="c.html">C</a>, <a href="jupyter-notebook.html">Jupyter Notebook</a>, <a href="make.html">Make</a>, <a href="ini.html">Ini</a>
 - Read more about Taichi on the web: 1.
  http://taichi.graphics/wp-content/uploads/2019/09/taichi_lang.pdf 1.
 
+```Example from the web:
 // For CPU
 Parallelize(int num_threads) // Multi-threading
 Vectorize(int width) // Loop vectorization
@@ -29,29 +32,30 @@ Cache(Expr)
 // Cache data into GPU L1 cache
 CacheL1(Expr)
 More discussions on h
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

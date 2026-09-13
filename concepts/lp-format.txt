@@ -1,32 +1,34 @@
 LP Format
 =========
 
-LP Format is a text data format created in 1987 by Robert Bixby.
+LP Format is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textDataFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text data format</a> created in 1987 by Robert Bixby.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221987%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1987
  https://pldb.io/concepts/../lists/creators.html#q=Robert%20Bixby Robert Bixby
 
-#2414 on PLDB
-37 Years Old
+#2507 on PLDB
+39 Years Old
 
 A format for storing linear programming problems. The LP format captures an optimization model in a way that is easier for humans to read than MPS format, and can often be more natural to produce.
 
-- Tags: textDataFormat
-- See also: (3 related languages) MPS Format, CPLEX, Gurobi
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textDataFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>textDataFormat</a>
+- See also: (3 related languages) <a href="mps-format.html">MPS Format</a>, <a href="cplex.html">CPLEX</a>, <a href="gurobi.html">Gurobi</a>
 - Read more about LP Format on the web: 1. 2.
  https://www.gurobi.com/documentation/current/refman/lp_format.html 1.
  https://lpsolve.sourceforge.net/5.5/lp-format.htm 2.
 
+```Example from the web:
 \ LP format example
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   \ A comment
  Token \
 
-View source
+Built with Scroll v178.2.3

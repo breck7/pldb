@@ -1,26 +1,29 @@
 Papyrus
 =======
 
-Papyrus is a programming language created in 2015.
+Papyrus is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2015.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
 
-#551 on PLDB
-9 Years Old
-4k Repos
+#572 on PLDB
+11 Years Old
+4k <span title="Papyrus repos on GitHub.">Repos</span>
 
 Papyrus  is a material similar to thick paper that was used in ancient times as a writing surface. It was made from the pith of the papyrus plant, Cyperus papyrus, a wetland sedge. Papyrus (plural: papyri) can also refer to a document written on sheets of such material, joined together side by side and rolled up into a scroll, an early form of a book. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Papyrus Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 3,518 Papyrus repos on GitHub
-- Early development of Papyrus happened in Bethesda Softworks LLC
-- The  Google BigQuery Public Dataset GitHub snapshot shows 58 users using Papyrus in 79 repos on GitHub
-- Papyrus LSP implementation
-- GitHub supports syntax highlighting for Papyrus
-- See also: (2 related languages) ISBN, DOI
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 3,518 Papyrus repos on <a href="https://github.com/search?q=language:Papyrus">GitHub</a>
+- Early development of Papyrus happened in <a href="../lists/labs.html#q=Bethesda Softworks LLC">Bethesda Softworks LLC</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 58 users using Papyrus in 79 repos on <a href="https://api.github.com/search/repositories?q=language:Papyrus">GitHub</a>
+- Papyrus <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/joelday/papyrus-lang">implementation</a>
+- GitHub supports <a href="https://github.com/Kapiainen/SublimePapyrus" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Papyrus
+- See also: (2 related languages) <a href="isbn.html">ISBN</a>, <a href="doi.html">DOI</a>
 - Read more about Papyrus on the web: 1.
  https://www.creationkit.com/index.php?title=Category:Papyrus 1.
 
+```Example from <a href='https://github.com/Kapiainen/SublimePapyrus'>Linguist</a>:
 Scriptname vMFX_FXPlugin extends Quest
 
-View source
+```
+
+Built with Scroll v178.2.3

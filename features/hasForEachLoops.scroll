@@ -7,7 +7,7 @@ printTitle hasForEachLoops
 <a class="trueBaseThemePreviousItem" href="hasFnArguments.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasForLoops.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -15,6 +15,9 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/pug.html">P
  ul
    each val in [1, 2, 3, 4, 5]
      li= val
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/chapel.html">Chapel</a>
+ foreach
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3</a>
  foreach (x : list)
@@ -38,7 +41,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.htm
 
 ***
 
-* Languages *with* hasForEachLoops include <a href="../concepts/pug.html">Pug</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/cyber.html">Cyber</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/hecl.html">hecl</a>
+* Languages *with* hasForEachLoops include <a href="../concepts/pug.html">Pug</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/cyber.html">Cyber</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/hecl.html">hecl</a>
 
 ***
 

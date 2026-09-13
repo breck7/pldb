@@ -1,20 +1,21 @@
 SHACL
 =====
 
-SHACL, aka Shapes Constraint Language, is a programming language created in 2015.
+SHACL, aka Shapes Constraint Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2015.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
 
-#2020 on PLDB
-9 Years Old
+#2104 on PLDB
+11 Years Old
 
 A standard language for describing Resource Description Framework (RDF) graphs.
 
-- Tags: programming language
-- Early development of SHACL happened in W3C
-- See also: (1 related languages) RDF
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of SHACL happened in <a href="../lists/labs.html#q=W3C">W3C</a>
+- See also: (1 related languages) <a href="rdf.html">RDF</a>
 - Read more about SHACL on the web: 1.
  https://www.w3.org/TR/shacl/ 1.
 
+```Example from the web:
 ex:PersonShape
 a sh:NodeShape ;
 sh:targetClass ex:Person ;    # Applies to all persons
@@ -22,7 +23,7 @@ sh:property [                 # _:b1
 	sh:path ex:ssn ;           # constrains the values of ex:ssn
 	sh:maxCount 1 ;
 	sh:datatype xsd:string ;
-	sh:pattern &quot;^\\d{3}-\\d{2}-\\d{4}TEMPLATEquot; ;
+	sh:pattern &quot;^\\d{3}-\\d{2}-\\d{4}$&quot; ;
 ] ;
 sh:property [                 # _:b2
 	sh:path ex:worksFor ;
@@ -31,5 +32,6 @@ sh:property [                 # _:b2
 ] ;
 sh:closed true ;
 sh:ignoredProperties ( rdf:type ) .
+```
 
-View source
+Built with Scroll v178.2.3

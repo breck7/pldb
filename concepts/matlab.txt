@@ -1,45 +1,52 @@
 MATLAB
 ======
 
-MATLAB is a programming language created in 1984 by Cleve Moler.
+MATLAB is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1984 by Cleve Moler.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221984%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1984
  https://pldb.io/concepts/../lists/creators.html#q=Cleve%20Moler Cleve Moler
 
-#24 on PLDB
-40 Years Old
-312k Repos
+#22 on PLDB
+42 Years Old
+312k <span title="MATLAB repos on GitHub.">Repos</span>
 
 MATLAB (matrix laboratory) is a multi-paradigm numerical computing environment. A proprietary programming language developed by MathWorks, MATLAB allows matrix manipulations, plotting of functions and data, implementation of algorithms, creation of user interfaces, and interfacing with programs written in other languages, including C, C++, C#, Java, Fortran and Python. Although MATLAB is intended primarily for numerical computing, an optional toolbox uses the MuPAD symbolic engine, allowing access to symbolic computing abilities. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/MATLAB Read more on Wikipedia...
 
-- Tags: programming language, arrayLang
-- There are at least 311,901 MATLAB repos on GitHub
-- Early development of MATLAB happened in University of New Mexico
-- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using MATLAB in 3k repos on GitHub
-- Check out the 25 MATLAB meetup groups on Meetup.com.
-- There are 46,296 members in the MATLAB subreddit
-- There are 3,252 Project Euler users using MATLAB
-- In the 2021 StackOverflow developer survey MATLAB programmers reported a median salary of $43,948. 5% of respondents reported using MATLAB. 3,846 programmers reported using MATLAB, and 1,562 said they wanted to use it
-- Explore MATLAB snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"arrayLang"%5D%7D%5D%2C"logic"%3A"AND"%7D'>arrayLang</a>
+- There are at least 311,901 MATLAB repos on <a href="https://github.com/search?q=language:Matlab">GitHub</a>
+- Early development of MATLAB happened in <a href="../lists/labs.html#q=University of New Mexico">University of New Mexico</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2k users using MATLAB in 3k repos on <a href="https://api.github.com/search/repositories?q=language:MATLAB">GitHub</a>
+- Check out the 25 <a href="https://www.meetup.com/topics/matlab/">MATLAB meetup groups</a> on Meetup.com.
+- There are 46,296 members in the <a href="https://reddit.com/r/matlab">MATLAB subreddit</a>
+- There are 3,252 <a href="https://projecteuler.net/language=Matlab">Project Euler</a> users using MATLAB
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> MATLAB programmers reported a median salary of $43,948. 5% of respondents reported using MATLAB. 3,846 programmers reported using MATLAB, and 1,562 said they wanted to use it
+- Explore MATLAB snippets on <a href="http://www.rosettacode.org/wiki/Category:MATLAB">Rosetta Code</a>
 - MATLAB on HOPL
  https://hopl.info/showlanguage.prx?exp=2216 MATLAB on HOPL
-- MATLAB ranks #12 in the TIOBE Index
-- Pygments supports syntax highlighting for MATLAB
-- GitHub supports syntax highlighting for MATLAB
-- PLDB has 2 Jupyter Kernels for MATLAB: github.com, github.com
-- There is a central package repository for MATLAB
+- MATLAB ranks #12 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/matlab.py">syntax highlighting</a> for MATLAB
+- GitHub supports <a href="https://github.com/mathworks/MATLAB-Language-grammar" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for MATLAB
+- PLDB has 2 <a href="jupyter-notebook.html">Jupyter</a> Kernels for MATLAB: <a href="https://github.com/imatlab/imatlab">github.com</a>, <a href="https://github.com/calysto/matlab_kernel">github.com</a>
+- There is a <a href="https://www.mathworks.com/matlabcentral/fileexchange/">central package repository</a> for MATLAB
 - Events page for MATLAB
  https://www.mathworks.com/company/events.html Events page for MATLAB
-- Indeed.com has 6,204 matches for "matlab engineer".
-- See also: (40 related languages) MATHLAB, C, Java, Linux, IA-32, APL, PL/0, Speakeasy, Julia, GNU Octave, Scilab, C#, Fortran, Python, muPad, Simulink, R, Perl, XML, SQL, Maple, Mathematica, IDL, Sage, S, Perl Data Language, NumPy, SciPy, Matplotlib, Lua, Ruby, JavaScript, JVM, Hierarchical Data Format, PowerPC, Solaris, SPARC, Subversion, JSON, ISBN
-- 16 PLDB concepts link to MATLAB: Apache Arrow, badlanguage, cloc, eff, Eiffel, Go, invokator, Iterm2, JSL, Linux, mal, mathics, NCAR Command Language, SciPy, Simit, Swift
+- Indeed.com has 6,204 matches for <a href="https://www.indeed.com/jobs?q=matlab engineer">"matlab engineer"</a>.
+- See also: (40 related languages) <a href="mathlab.html">MATHLAB</a>, <a href="c.html">C</a>, <a href="java.html">Java</a>, <a href="linux.html">Linux</a>, <a href="ia-32.html">IA-32</a>, <a href="apl.html">APL</a>, <a href="pl-0.html">PL/0</a>, <a href="speakeasy.html">Speakeasy</a>, <a href="julia.html">Julia</a>, <a href="octave.html">GNU Octave</a>, <a href="scilab.html">Scilab</a>, <a href="csharp.html">C#</a>, <a href="fortran.html">Fortran</a>, <a href="python.html">Python</a>, <a href="mupad.html">muPad</a>, <a href="simulink.html">Simulink</a>, <a href="r.html">R</a>, <a href="perl.html">Perl</a>, <a href="xml.html">XML</a>, <a href="sql.html">SQL</a>, <a href="maple.html">Maple</a>, <a href="mathematica.html">Mathematica</a>, <a href="idl.html">IDL</a>, <a href="sagemath.html">Sage</a>, <a href="s.html">S</a>, <a href="perl-data-language.html">Perl Data Language</a>, <a href="numpy.html">NumPy</a>, <a href="scipy.html">SciPy</a>, <a href="matplotlib.html">Matplotlib</a>, <a href="lua.html">Lua</a>, <a href="ruby.html">Ruby</a>, <a href="javascript.html">JavaScript</a>, <a href="jvm.html">JVM</a>, <a href="hdf.html">Hierarchical Data Format</a>, <a href="powerpc.html">PowerPC</a>, <a href="solaris.html">Solaris</a>, <a href="sparc.html">SPARC</a>, <a href="subversion.html">Subversion</a>, <a href="json.html">JSON</a>, <a href="isbn.html">ISBN</a>
+- 19 PLDB concepts link to MATLAB: <a href="arrow-format.html">Apache Arrow</a>, <a href="badlanguage.html">badlanguage</a>, <a href="cir.html">CIR</a>, <a href="cloc.html">cloc</a>, <a href="cmake.html">CMake</a>, <a href="dlvm.html">dlvm</a>, <a href="eff.html">eff</a>, <a href="eiffel.html">Eiffel</a>, <a href="go.html">Go</a>, <a href="invokator.html">invokator</a>, <a href="iterm2.html">Iterm2</a>, <a href="jsl.html">JSL</a>, <a href="linux.html">Linux</a>, <a href="mal.html">mal</a>, <a href="mathics.html">mathics</a>, <a href="ncl.html">NCAR Command Language</a>, <a href="scipy.html">SciPy</a>, <a href="simit.html">Simit</a>, <a href="swift.html">Swift</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/m/MATLAB.m'>hello-world</a>:
 disp(&#39;Hello World&#39;)
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#MATLAB'>the Hello World Collection</a>:
 % Hello World in MATLAB.
 
 disp(&#39;Hello World&#39;);
 
+```
+
+```Example from <a href='https://github.com/mathworks/MATLAB-Language-grammar'>Linguist</a>:
 function [ d, d_mean, d_std ] = normalize( d )
     d_mean = mean(d);
     d = d - repmat(d_mean, size(d,1), 1);
@@ -47,6 +54,9 @@ function [ d, d_mean, d_std ] = normalize( d )
     d = d./ repmat(d_std, size(d,1), 1);
 end
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/MATLAB'>Wikipedia</a>:
 [X,Y] = meshgrid(-10:0.25:10,-10:0.25:10);
 f = sinc(sqrt((X/pi).^2+(Y/pi).^2));
 surf(X,Y,f);
@@ -54,46 +64,47 @@ axis([-10 10 -10 10 -0.3 1])
 xlabel(&#39;{\bfx}&#39;)
 ylabel(&#39;{\bfy}&#39;)
 zlabel(&#39;{\bfsinc} ({\bfR})&#39;)
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Standard Library
  FeatureLink ../features/hasStandardLibrary.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   disp('Hello, World!')
  Token 
 row
  Feature Scientific Notation
  FeatureLink ../features/hasScientificNotation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token disp
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % A comment
  Token %
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Iterators
  FeatureLink ../features/hasIterators.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % Define an array of integers
   myArray = [1,3,5,7,11,13];
@@ -106,7 +117,7 @@ row
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   import pkg.cls1
   import pkg.pkfcn
@@ -114,20 +125,20 @@ row
 row
  Feature Type Casting
  FeatureLink ../features/hasExplicitTypeCasting.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   b = cast(a, 'like', p)
  Token 
 row
  Feature Constructors
  FeatureLink ../features/hasConstructors.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   %{
   A comment.
@@ -136,22 +147,22 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % A comment
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "hello world"
  Token '
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -1,35 +1,42 @@
 SCSS
 ====
 
-SCSS is a stylesheet language created in 2006 by Hampton Lintorn-Catlin.
+SCSS is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22stylesheetLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">stylesheet language</a> created in 2006 by Hampton Lintorn-Catlin.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
  https://pldb.io/concepts/../lists/creators.html#q=Hampton%20Lintorn-Catlin Hampton Lintorn-Catlin
 
-#412 on PLDB
-18 Years Old
-335k Repos
+#415 on PLDB
+20 Years Old
+335k <span title="SCSS repos on GitHub.">Repos</span>
 
-- Tags: stylesheetLanguage
-- There are at least 335,325 SCSS repos on GitHub
-- Early development of SCSS happened in https://github.com/sass
-- The  Google BigQuery Public Dataset GitHub snapshot shows 8k users using SCSS in 9k repos on GitHub
-- ANTLR grammar for SCSS
-- Monaco package for syntax highlighting SCSS
-- Pygments supports syntax highlighting for SCSS
-- GitHub supports syntax highlighting for SCSS
-- sass-lang.com was registered in 2009
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"stylesheetLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>stylesheetLanguage</a>
+- There are at least 335,325 SCSS repos on <a href="https://github.com/search?q=language:SCSS">GitHub</a>
+- Early development of SCSS happened in <a href="../lists/labs.html#q=https://github.com/sass">https://github.com/sass</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 8k users using SCSS in 9k repos on <a href="https://api.github.com/search/repositories?q=language:SCSS">GitHub</a>
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/scss">grammar</a> for SCSS
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/scss">package</a> for syntax highlighting SCSS
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/css.py">syntax highlighting</a> for SCSS
+- GitHub supports <a href="https://github.com/MarioRicalde/SCSS.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for SCSS
+- <a href="http://sass-lang.com/">sass-lang.com</a> was registered in 2009
 - Read more about SCSS on the web: 1.
  https://en.wikipedia.org/wiki/Sass_(stylesheet_language) 1.
-- 35 PLDB concepts link to SCSS: 11ty, Ace Editor, AsciiDots, blockml, Bounce, cloc, dllup, Eiffel, flownote, Ibis, infusion-framework, jasmine, Jekyll, Ligo, Marp, Mastodon, mavo, Monaco Editor, mys, NGS, packagist-pm, Prettier, PROMETHEUS, RMarkdown, SandDance, Sibilant, SQRL, Statsplorer, Tao, tiledb, ToonTalk, UCG, verona, walt, xodio
+- 41 PLDB concepts link to SCSS: <a href="11ty.html">11ty</a>, <a href="ace.html">Ace Editor</a>, <a href="asciidots.html">AsciiDots</a>, <a href="blockml.html">blockml</a>, <a href="bounce-lang.html">Bounce</a>, <a href="cloc.html">cloc</a>, <a href="codeql.html">CodeQL</a>, <a href="dllup.html">dllup</a>, <a href="eiffel.html">Eiffel</a>, <a href="flownote.html">flownote</a>, <a href="hedy.html">Hedy</a>, <a href="ibis.html">Ibis</a>, <a href="infusion-framework.html">infusion-framework</a>, <a href="jasmine.html">jasmine</a>, <a href="jekyll.html">Jekyll</a>, <a href="ligo.html">Ligo</a>, <a href="marp.html">Marp</a>, <a href="mastodon.html">Mastodon</a>, <a href="mavo.html">mavo</a>, <a href="monaco.html">Monaco Editor</a>, <a href="mys.html">mys</a>, <a href="netbeans-editor.html">netbeans-editor</a>, <a href="ngs.html">NGS</a>, <a href="packagist-pm.html">packagist-pm</a>, <a href="prettier.html">Prettier</a>, <a href="prometheus.html">PROMETHEUS</a>, <a href="reach.html">Reach</a>, <a href="rmarkdown.html">RMarkdown</a>, <a href="rocksdb.html">RocksDB</a>, <a href="sanddance.html">SandDance</a>, <a href="sibilant.html">Sibilant</a>, <a href="sqrl.html">SQRL</a>, <a href="statsplorer.html">Statsplorer</a>, <a href="tao-lang.html">Tao</a>, <a href="threejs.html">Three.js</a>, <a href="tiledb.html">tiledb</a>, <a href="toontalk.html">ToonTalk</a>, <a href="ucg.html">UCG</a>, <a href="verona.html">verona</a>, <a href="walt.html">walt</a>, <a href="xodio.html">xodio</a>
 
+```Example from <a href='https://riju.codes/scss'>Riju</a>:
 body:before {
   content: &quot;Hello, world!&quot;;
 }
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/s/SCSS.scss'>hello-world</a>:
 body::before {
     content: &quot;Hello World&quot;;
 }
 
+```
+
+```Example from <a href='https://github.com/MarioRicalde/SCSS.tmbundle'>Linguist</a>:
 $blue: #3bbfce;
 $margin: 16px;
 
@@ -45,13 +52,15 @@ $margin: 16px;
   border-color: $blue;
 }
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Mixins
  FeatureLink ../features/hasMixins.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   @mixin reset-list {
     margin: 0;
@@ -76,21 +85,21 @@ row
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -98,15 +107,15 @@ row
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

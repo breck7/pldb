@@ -1,24 +1,25 @@
 MiniD
 =====
 
-MiniD is a programming language created in 2006 by Jarrett Billingsley.
+MiniD is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2006 by Jarrett Billingsley.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
  https://pldb.io/concepts/../lists/creators.html#q=Jarrett%20Billingsley Jarrett Billingsley
 
-#981 on PLDB
-18 Years Old
-0 Repos
+#996 on PLDB
+20 Years Old
+0 <span title="MiniD repos on GitHub.">Repos</span>
 
 The MiniD (has been renamed Croc) programming language is a small, lightweight, extension language in the vein of Lua or Squirrel, but designed to be used mainly with the D programming language.  It supports both object-oriented and imperative programming paradigms, as well as some simple functional aspects. Distributed under the licence of zlib/libpng, MiniD is free software.. Read more on Wikipedia...
  https://web.archive.org/web/20190311032913/https://en.wikipedia.org/wiki/MiniD Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 0 MiniD repos on GitHub
-- Early development of MiniD happened in http://www.dsource.org/projects/minid
-- Pygments supports syntax highlighting for MiniD
-- See also: (7 related languages) D, Lua, Squirrel, Python, Io, C, Croc
-- 1 PLDB concepts link to MiniD: Croc
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 0 MiniD repos on <a href="https://github.com/search?q=language:MiniD">GitHub</a>
+- Early development of MiniD happened in <a href="../lists/labs.html#q=http://www.dsource.org/projects/minid">http://www.dsource.org/projects/minid</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/d.py">syntax highlighting</a> for MiniD
+- See also: (7 related languages) <a href="d.html">D</a>, <a href="lua.html">Lua</a>, <a href="squirrel.html">Squirrel</a>, <a href="python.html">Python</a>, <a href="io.html">Io</a>, <a href="c.html">C</a>, <a href="croc.html">Croc</a>
+- 1 PLDB concepts link to MiniD: <a href="croc.html">Croc</a>
 
+```Example from the web:
 module matrix
 
 local SIZE = 30
@@ -76,69 +77,72 @@ function main(N)
 
     writefln(mm[0][0], &quot; &quot;, mm[2][3], &quot; &quot;, mm[3][2], &quot; &quot;, mm[4][4])
 }
+```
 
+```Example from <a href='https://web.archive.org/web/20190311032913/https://en.wikipedia.org/wiki/MiniD'>Wikipedia</a>:
 function first(x: array|string) = x[0]
 
  writeln(first([1, 2, 3])) // prints 1
  writeln(first(&quot;hello&quot;))   // prints h
  writeln(first(45))        // error, invalid parameter type &#39;int&#39;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // 0[bB][01][01_]*
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // ([0-9][0-9_]*)(?![.eE])
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // ([0-9][0-9_]*)(?=[.eE])(\.[0-9][0-9_]*)?([eE][+\-]?[0-9_]+)?
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // 0[xX][0-9a-fA-F][0-9a-fA-F_]*
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

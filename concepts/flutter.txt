@@ -1,0 +1,38 @@
+Flutter
+=======
+
+Flutter is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22framework%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">framework</a> created in 2017 by Eric Seidel.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2017
+ https://pldb.io/concepts/../lists/creators.html#q=Eric%20Seidel Eric Seidel
+
+#195 on PLDB
+9 Years Old
+
+```Download source code:
+git clone https://github.com/flutter/flutter
+```
+
+Flutter is an open-source mobile application development framework created by Google. It is used to develop applications for Android and iOS, as well as being the primary method of creating applications for Google Fuchsia.. Read more on Wikipedia...
+ https://en.wikipedia.org/wiki/Flutter_(software) Read more on Wikipedia...
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"framework"%5D%7D%5D%2C"logic"%3A"AND"%7D'>framework</a>
+- Flutter is developed on <a href="https://github.com/flutter/flutter">GitHub</a> and has 165,775 stars
+- Early development of Flutter happened in <a href="../lists/labs.html#q=Google">Google</a>
+- Flutter is written in <a href="dart.html">Dart</a>, <a href="markdown.html">Markdown</a>, <a href="xml.html">XML</a>, <a href="yaml.html">YAML</a>, <a href="json.html">JSON</a>, <a href="gradle.html">Gradle</a>, <a href="objective-c.html">Objective-C</a>, <a href="java.html">Java</a>, <a href="cpp.html">C++</a>, <a href="cmake.html">CMake</a>, <a href="swift.html">Swift</a>, <a href="html.html">HTML</a>, <a href="kotlin.html">Kotlin</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="svg.html">SVG</a>, <a href="javascript.html">JavaScript</a>, <a href="bash.html">Bash</a>, <a href="ruby.html">Ruby</a>, <a href="groovy.html">Groovy</a>, <a href="css.html">CSS</a>, <a href="csv.html">CSV</a>, <a href="powershell.html">PowerShell</a>, <a href="glsl.html">GLSL</a>, <a href="protobuf.html">Protocol Buffers</a>, <a href="toml.html">TOML</a>, <a href="c.html">C</a>
+- Check out the 146 <a href="https://www.meetup.com/pro/flutter//">Flutter meetup groups</a> on Meetup.com.
+- There are 140,000 members in the <a href="https://www.reddit.com/r/FlutterDev/">Flutter subreddit</a>
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/f/Flutter.dart'>hello-world</a>:
+import &#39;package:flutter/widgets.dart&#39;;
+
+void main() {
+  runApp(
+    Text(
+      &#39;Hello World&#39;,
+      textDirection: TextDirection.ltr,
+    ),
+  );
+}
+```
+
+Built with Scroll v178.2.3

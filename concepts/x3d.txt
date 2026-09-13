@@ -1,0 +1,57 @@
+X3D
+===
+
+X3D is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%223d%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">3 d</a> created in 1997.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1997
+
+#1562 on PLDB
+29 Years Old
+
+X3D is an ISO/IEC standard for declaratively representing 3D computer graphics. It is a file format and runtime architecture for representing and communicating 3D scenes and objects using XML, succeeding VRML. X3D is designed for real-time interactive 3D visualization across various platforms, including web browsers, and is used in fields like CAD, simulation, medical visualization, and gaming.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"3d"%5D%7D%5D%2C"logic"%3A"AND"%7D'>3d</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"xmlFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>xmlFormat</a>
+- See also: (1 related languages) <a href="vrml.html">VRML</a>
+
+```Example from the web:
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;X3D profile=&#39;Immersive&#39; version=&#39;4.0&#39; xmlns=&#39;http://www.web3d.org/specifications/x3d-4.0.xsd&#39;&gt;
+  &lt;head&gt;
+    &lt;meta name=&#39;title&#39; content=&#39;HelloWorld.x3d&#39;/&gt;
+  &lt;/head&gt;
+  &lt;Scene&gt;
+    &lt;WorldInfo title=&#39;Hello World Example&#39;/&gt;
+    &lt;Shape&gt;
+      &lt;Sphere radius=&#39;1&#39;/&gt;
+      &lt;Appearance&gt;
+        &lt;Material diffuseColor=&#39;1 0 0&#39;/&gt;
+      &lt;/Appearance&gt;
+    &lt;/Shape&gt;
+  &lt;/Scene&gt;
+&lt;/X3D&gt;
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  <!-- This is a comment in X3D -->
+ Token 
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  "Hello World Example"
+ Token 
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v178.2.3

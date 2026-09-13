@@ -1,24 +1,26 @@
 Jekyll
 ======
 
-Jekyll is a static site generator created in 2008 by Tom Preston-Werner.
+Jekyll is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22staticSiteGenerator%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">static site generator</a> created in 2008 by Tom Preston-Werner.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
  https://pldb.io/concepts/../lists/creators.html#q=Tom%20Preston-Werner Tom Preston-Werner
 
-#178 on PLDB
-16 Years Old
+#180 on PLDB
+18 Years Old
 
+```Download source code:
 git clone https://github.com/jekyll/jekyll
+```
 
 Transforms your plain text into static websites and blogs.
 
-- Tags: static site generator
-- Jekyll is developed on GitHub and has 48,705 stars
-- Early development of Jekyll happened in https://github.com/jekyll
-- Jekyll is written in Markdown, Ruby, HTML, YAML, Gherkin, SCSS, Bash, ERB, JavaScript, JSON, SVG, CoffeeScript, CSS, XML, Dockerfile, PHP, CSV, TOML, XHTML
-- There are 3,212 members in the Jekyll subreddit
-- jekyllrb.com was registered in 2009
-- See also: (1 related languages) WordPress
-- 1 PLDB concepts link to Jekyll: Scroll
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"staticSiteGenerator"%5D%7D%5D%2C"logic"%3A"AND"%7D'>static site generator</a>
+- Jekyll is developed on <a href="https://github.com/jekyll/jekyll">GitHub</a> and has 48,705 stars
+- Early development of Jekyll happened in <a href="../lists/labs.html#q=https://github.com/jekyll">https://github.com/jekyll</a>
+- Jekyll is written in <a href="markdown.html">Markdown</a>, <a href="ruby.html">Ruby</a>, <a href="html.html">HTML</a>, <a href="yaml.html">YAML</a>, <a href="gherkin.html">Gherkin</a>, <a href="scss.html">SCSS</a>, <a href="bash.html">Bash</a>, <a href="erb.html">ERB</a>, <a href="javascript.html">JavaScript</a>, <a href="json.html">JSON</a>, <a href="svg.html">SVG</a>, <a href="coffeescript.html">CoffeeScript</a>, <a href="css.html">CSS</a>, <a href="xml.html">XML</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="php.html">PHP</a>, <a href="csv.html">CSV</a>, <a href="toml.html">TOML</a>, <a href="xhtml.html">XHTML</a>
+- There are 3,212 members in the <a href="https://www.reddit.com/r/jekyll/">Jekyll subreddit</a>
+- <a href="https://jekyllrb.com/">jekyllrb.com</a> was registered in 2009
+- See also: (1 related languages) <a href="wordpress.html">WordPress</a>
+- 1 PLDB concepts link to Jekyll: <a href="scroll.html">Scroll</a>
 
-View source
+Built with Scroll v178.2.3

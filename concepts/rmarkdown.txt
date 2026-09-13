@@ -1,25 +1,28 @@
 RMarkdown
 =========
 
-RMarkdown is an open source text markup language created in 2014 by Joseph J. Allaire.
+RMarkdown is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2014 by Joseph J. Allaire.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
  https://pldb.io/concepts/../lists/creators.html#q=Joseph%20J.%20Allaire Joseph J. Allaire
 
-#253 on PLDB
-10 Years Old
-198 Repos
+#266 on PLDB
+12 Years Old
+198 <span title="RMarkdown repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/rstudio/rmarkdown
+```
 
 Dynamic Documents for R
 
-- Tags: text markup language
-- RMarkdown is developed on GitHub and has 2,841 stars
-- There are at least 198 RMarkdown repos on GitHub
-- Early development of RMarkdown happened in https://github.com/rstudio
-- RMarkdown is written in R, CSS, JavaScript, Markdown, YAML, HTML, Lua, SVG, Tex, Bourne shell, XML, SCSS, CSV
-- GitHub supports syntax highlighting for RMarkdown
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- RMarkdown is developed on <a href="https://github.com/rstudio/rmarkdown">GitHub</a> and has 2,841 stars
+- There are at least 198 RMarkdown repos on <a href="https://github.com/search?q=language:RMarkdown">GitHub</a>
+- Early development of RMarkdown happened in <a href="../lists/labs.html#q=https://github.com/rstudio">https://github.com/rstudio</a>
+- RMarkdown is written in <a href="r.html">R</a>, <a href="css.html">CSS</a>, <a href="javascript.html">JavaScript</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="html.html">HTML</a>, <a href="lua.html">Lua</a>, <a href="svg.html">SVG</a>, <a href="tex.html">Tex</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="xml.html">XML</a>, <a href="scss.html">SCSS</a>, <a href="csv.html">CSV</a>
+- GitHub supports <a href="https://github.com/atom/language-gfm" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for RMarkdown
 
+```Example from <a href='https://github.com/atom/language-gfm'>Linguist</a>:
 # An example RMarkdown
 
 Some text.
@@ -30,5 +33,6 @@ Some text.
 plot(1:10)
 hist(rnorm(10000))
 ```
+```
 
-View source
+Built with Scroll v178.2.3

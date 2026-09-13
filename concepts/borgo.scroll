@@ -1,0 +1,61 @@
+../code/conceptPage.scroll
+
+id borgo
+name Borgo
+appeared 2023
+creators Marco Sampellegrini
+tags pl
+website https://borgo-lang.github.io/
+webRepl https://borgo-lang.github.io/
+description A language for writing applications that is more expressive than Go but less complex than Rust.
+writtenIn expect rust markdown typescript toml json go javascript yaml nix css
+compilesTo go
+
+repoStats
+ firstCommit 2023
+ newestCommit 2024
+ commits 170
+ committers 2
+ files 386
+ mb 2
+ linesOfCode 86535
+
+example
+ use fmt
+ 
+ enum NetworkState<T> {
+     Loading,
+     Failed(int),
+     Success(T),
+ }
+ 
+ struct Response {
+     title: string,
+     duration: int,
+ }
+ 
+ fn main() {
+     let res = Response {
+         title: "Hello world",
+         duration: 0,
+     }
+ 
+     let state = NetworkState.Success(res)
+ 
+     let msg = match state {
+         NetworkState.Loading => "still loading",
+         NetworkState.Failed(code) => fmt.Sprintf("Got error code: %d", code),
+         NetworkState.Success(res) => res.title,
+     }
+ 
+     fmt.Println(msg)
+ }
+
+githubRepo https://github.com/borgo-lang/borgo
+ stars 4261
+ forks 58
+ subscribers 31
+ created 2023
+ updated 2025
+ description Borgo is a statically typed language that compiles to Go.
+ issues 29

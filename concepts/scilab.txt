@@ -1,91 +1,102 @@
 Scilab
 ======
 
-Scilab is an open source programming language created in 1990.
+Scilab is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1990.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1990
 
-#321 on PLDB
-34 Years Old
-4k Repos
+#340 on PLDB
+36 Years Old
+4k <span title="Scilab repos on GitHub.">Repos</span>
 
 Scilab is an open source, cross-platform numerical computational package and a high-level, numerically oriented programming language. It can be used for signal processing, statistical analysis, image enhancement, fluid dynamics simulations, numerical optimization, and modeling, simulation of explicit and implicit dynamical systems and (if the corresponding toolbox is installed) symbolic manipulations. Scilab is one of the two major open-source alternatives to MATLAB, the other one being GNU Octave. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Scilab Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 3,986 Scilab repos on GitHub
-- Early development of Scilab happened in https://gitlab.com/groups/scilab/-/issues
-- The  Google BigQuery Public Dataset GitHub snapshot shows 7k users using Scilab in 13k repos on GitHub
-- Explore Scilab snippets on Rosetta Code
-- Pygments supports syntax highlighting for Scilab
-- GitHub supports syntax highlighting for Scilab
-- There is 1 Jupyter Kernel for Scilab
-- See also: (10 related languages) C, Java, Fortran, FreeBSD, Linux, MATLAB, GNU Octave, Modelica, Simulink, Sage
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 3,986 Scilab repos on <a href="https://github.com/search?q=language:Scilab">GitHub</a>
+- Early development of Scilab happened in <a href="../lists/labs.html#q=https://gitlab.com/groups/scilab/-/issues">https://gitlab.com/groups/scilab/-/issues</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 7k users using Scilab in 13k repos on <a href="https://api.github.com/search/repositories?q=language:Scilab">GitHub</a>
+- Explore Scilab snippets on <a href="http://www.rosettacode.org/wiki/Category:Scilab">Rosetta Code</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/matlab.py">syntax highlighting</a> for Scilab
+- GitHub supports <a href="https://github.com/textmate/scilab.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Scilab
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/calysto/scilab_kernel">Kernel</a> for Scilab
+- See also: (10 related languages) <a href="c.html">C</a>, <a href="java.html">Java</a>, <a href="fortran.html">Fortran</a>, <a href="freebsd.html">FreeBSD</a>, <a href="linux.html">Linux</a>, <a href="matlab.html">MATLAB</a>, <a href="octave.html">GNU Octave</a>, <a href="modelica.html">Modelica</a>, <a href="simulink.html">Simulink</a>, <a href="sagemath.html">Sage</a>
 
+```Example from <a href='https://riju.codes/scilab'>Riju</a>:
 disp(&quot;Hello, world!&quot;)
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/s/SCILab.scilab'>hello-world</a>:
 disp(&quot;Hello World&quot;)
 
+```
+
+```Example from <a href='https://github.com/textmate/scilab.tmbundle'>Linguist</a>:
 disp(%pi);
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Scilab'>Wikipedia</a>:
 // A simple plot of z = f(x,y)
 t=[0:0.3:2*%pi]&#39;;
 z=sin(t)*cos(t&#39;);
 plot3d(t,t,z)
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Scientific Notation
  FeatureLink ../features/hasScientificNotation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // \d+
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // (\d+\.\d*|\d*\.\d+)([eEf][+-]?[0-9]+)?
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token disp
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -1,36 +1,40 @@
 Modelica
 ========
 
-Modelica is a programming language created in 1997.
+Modelica is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1997.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1997
 
-#445 on PLDB
-27 Years Old
-1k Repos
+#464 on PLDB
+29 Years Old
+1k <span title="Modelica repos on GitHub.">Repos</span>
 
 Modelica is an object-oriented, declarative, multi-domain modeling language for component-oriented modeling of complex systems, e.g., systems containing mechanical, electrical, electronic, hydraulic, thermal, control, electric power or process-oriented subcomponents. The free Modelica language is developed by the non-profit Modelica Association. The Modelica Association also develops the free Modelica Standard Library that contains about 1360 generic model components and 1280 functions in various domains, as of version 3.2.1.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Modelica Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 1,208 Modelica repos on GitHub
-- Early development of Modelica happened in Modelica Association
-- The  Google BigQuery Public Dataset GitHub snapshot shows 447 users using Modelica in 542 repos on GitHub
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 1,208 Modelica repos on <a href="https://github.com/search?q=language:Modelica">GitHub</a>
+- Early development of Modelica happened in <a href="../lists/labs.html#q=Modelica Association">Modelica Association</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 447 users using Modelica in 542 repos on <a href="https://api.github.com/search/repositories?q=language:Modelica">GitHub</a>
 - Modelica on HOPL
  https://hopl.info/showlanguage.prx?exp=4965 Modelica on HOPL
-- ANTLR grammar for Modelica
-- CodeMirror package for syntax highlighting Modelica
-- Pygments supports syntax highlighting for Modelica
-- GitHub supports syntax highlighting for Modelica
-- modelica.org was registered in 1998
-- See also: (7 related languages) Java, Unicode, AMPL, GAMS, MATLAB, Simulink, DOI
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/modelica">grammar</a> for Modelica
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/modelica">package</a> for syntax highlighting Modelica
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/modeling.py">syntax highlighting</a> for Modelica
+- GitHub supports <a href="https://github.com/BorisChumichev/modelicaSublimeTextPackage" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Modelica
+- <a href="http://www.modelica.org/">modelica.org</a> was registered in 1998
+- See also: (7 related languages) <a href="java.html">Java</a>, <a href="unicode.html">Unicode</a>, <a href="ampl.html">AMPL</a>, <a href="general-algebraic-modeling-system.html">GAMS</a>, <a href="matlab.html">MATLAB</a>, <a href="simulink.html">Simulink</a>, <a href="doi.html">DOI</a>
 - Read more about Modelica on the web: 1. 2.
  https://marcobonvini.com/modelica/2020/06/29/all-about-modelica.html 1.
  https://modelica.readthedocs.io/en/latest/lexical.html 2.
 
+```Example from <a href='https://github.com/BorisChumichev/modelicaSublimeTextPackage'>Linguist</a>:
 within ModelicaByExample;
 package PackageExamples &quot;Examples of using packages&quot;
 end PackageExamples;
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Modelica'>Wikipedia</a>:
 model Circuit
    Capacitor C1(C=1e-4) &quot;A Capacitor instance from the model above&quot;;
    Capacitor C2(C=1e-5) &quot;A Capacitor instance from the model above&quot;;
@@ -39,35 +43,36 @@ equation
    connect(C1.pin_p, C2.pin_n);
    ...
 end Circuit;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // \d+
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // \d+(\.?\d*[eE][-+]?\d+|\.\d*)
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Units of Measure
  FeatureLink ../features/hasUnitsOfMeasure.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   type SpecificHeatCapacity = Real (
     final quantity="SpecificHeatCapacity",
@@ -77,15 +82,15 @@ row
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

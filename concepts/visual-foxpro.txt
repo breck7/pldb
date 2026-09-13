@@ -1,20 +1,21 @@
 Visual FoxPro
 =============
 
-Visual FoxPro is a programming language created in 1995.
+Visual FoxPro is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1995.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221995%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1995
 
-#1301 on PLDB
-29 Years Old
+#1370 on PLDB
+31 Years Old
 
 Visual FoxPro is a discontinued data-centric, object-oriented, procedural, programming language produced by Microsoft. It was derived from FoxPro (originally known as FoxBASE) which was developed by Fox Software beginning in 1984. It contained the fastest PC-based database engine available at the time. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Visual_FoxPro Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Visual FoxPro happened in Microsoft
-- Visual FoxPro ranks #46 in the TIOBE Index
-- See also: (7 related languages) IA-32, FoxPRO, Unix, DBase, xBase, SQL, Linux
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Visual FoxPro happened in <a href="../lists/labs.html#q=Microsoft">Microsoft</a>
+- Visual FoxPro ranks #46 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- See also: (7 related languages) <a href="ia-32.html">IA-32</a>, <a href="foxpro.html">FoxPRO</a>, <a href="unix.html">Unix</a>, <a href="dbase.html">DBase</a>, <a href="xbase.html">xBase</a>, <a href="sql.html">SQL</a>, <a href="linux.html">Linux</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Visual_FoxPro'>Wikipedia</a>:
 PRIVATE cAuthorID, cAuthorName      &amp;&amp; Private variables supplant any previous global or private variable of the same name
  LOCAL nHnd, nResult                 &amp;&amp; Local variables are visible only here
 
@@ -52,5 +53,6 @@ PRIVATE cAuthorID, cAuthorName      &amp;&amp; Private variables supplant any pr
 
  * Close the connection
  SQLDISCONNECT(nHnd)
+```
 
-View source
+Built with Scroll v178.2.3

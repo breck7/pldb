@@ -1,54 +1,67 @@
 Nim
 ===
 
-Nim is an open source programming language created in 2008 by Andreas Rumpf.
- https://pldb.io/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
- https://pldb.io/../lists/creators.html#q=Andreas%20Rumpf Andreas Rumpf
+Nim is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2008 by Andreas Rumpf.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
+ https://pldb.io/concepts/../lists/creators.html#q=Andreas%20Rumpf Andreas Rumpf
 
 #47 on PLDB
-16 Years Old
-8k Repos
+18 Years Old
+8k <span title="Nim repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/nim-lang/Nim
+```
 
 Nim (formerly named Nimrod) is an imperative, multi-paradigm, compiled programming language designed and developed by Andreas Rumpf. It is designed to be "efficient, expressive, and elegant", supporting metaprogramming, functional, message passing, procedural, and object-oriented programming styles by providing several features such as compile time code generation, algebraic data types, a foreign function interface (FFI) with C and compiling to JavaScript, C and C++.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Nim_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Nim is developed on GitHub and has 16,308 stars
-- There are at least 8,018 Nim repos on GitHub
-- Early development of Nim happened in https://github.com/nim-lang
-- Nim compiles to C or C++ or Objective-C or JavaScript
-- Nim is written in Nim, Markdown, HTML, YAML, C, Bourne shell, JSON, reStructuredText, Python, CSS, Assembly language, CSV, SQL, Tex, Ini, XML, Bash
-- The  Google BigQuery Public Dataset GitHub snapshot shows 299 users using Nim in 472 repos on GitHub
-- There are 36 Project Euler users using Nim
-- Explore Nim snippets on Rosetta Code
-- Nim appears in the TIOBE Index
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Nim is developed on <a href="https://github.com/nim-lang/Nim">GitHub</a> and has 16,308 stars
+- There are at least 8,018 Nim repos on <a href="https://github.com/search?q=language:Nim">GitHub</a>
+- Early development of Nim happened in <a href="../lists/labs.html#q=https://github.com/nim-lang">https://github.com/nim-lang</a>
+- Nim compiles to <a href="c.html">C</a> or <a href="cpp.html">C++</a> or <a href="objective-c.html">Objective-C</a> or <a href="javascript.html">JavaScript</a>
+- Nim is written in <a href="nim.html">Nim</a>, <a href="markdown.html">Markdown</a>, <a href="html.html">HTML</a>, <a href="yaml.html">YAML</a>, <a href="c.html">C</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="json.html">JSON</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="python.html">Python</a>, <a href="css.html">CSS</a>, <a href="assembly-language.html">Assembly language</a>, <a href="csv.html">CSV</a>, <a href="sql.html">SQL</a>, <a href="tex.html">Tex</a>, <a href="ini.html">Ini</a>, <a href="xml.html">XML</a>, <a href="bash.html">Bash</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 299 users using Nim in 472 repos on <a href="https://api.github.com/search/repositories?q=language:Nim">GitHub</a>
+- There are 36 <a href="https://projecteuler.net/language=Nim">Project Euler</a> users using Nim
+- Explore Nim snippets on <a href="http://www.rosettacode.org/wiki/Category:Nim">Rosetta Code</a>
+- Nim appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - Nim Ubuntu package
  https://packages.ubuntu.com/jammy/nim Nim Ubuntu package
-- Nim LSP implementation
-- GitHub supports syntax highlighting for Nim
-- Nim appears in the Quine Relay project
-- Learn Nim on exercism.
-- There is a central package repository for Nim
-- nim-lang.org was registered in 2014
-- See also: (25 related languages) Ada, Modula-3, Lisp, Object Pascal, Python, Oberon, C, JavaScript, Pascal, Delphi, C#, Go, Objective-C, iOS, Android, Git, JSON, OpenGL, PostgreSQL, MySQL, SQLite, Lua, Scala, D, Rust
+- Nim <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/PMunch/nimlsp">implementation</a>
+- GitHub supports <a href="https://github.com/Varriount/NimLime" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Nim
+- Nim appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Learn <a href="https://exercism.org/tracks/nim">Nim on exercism.</a>
+- There is a <a href="https://nimble.directory/">central package repository</a> for Nim
+- <a href="https://nim-lang.org/">nim-lang.org</a> was registered in 2014
+- See also: (25 related languages) <a href="ada.html">Ada</a>, <a href="modula-3.html">Modula-3</a>, <a href="lisp.html">Lisp</a>, <a href="object-pascal.html">Object Pascal</a>, <a href="python.html">Python</a>, <a href="oberon.html">Oberon</a>, <a href="c.html">C</a>, <a href="javascript.html">JavaScript</a>, <a href="pascal.html">Pascal</a>, <a href="delphi.html">Delphi</a>, <a href="csharp.html">C#</a>, <a href="go.html">Go</a>, <a href="objective-c.html">Objective-C</a>, <a href="ios.html">iOS</a>, <a href="android.html">Android</a>, <a href="git.html">Git</a>, <a href="json.html">JSON</a>, <a href="opengl.html">OpenGL</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="mysql.html">MySQL</a>, <a href="sqlite.html">SQLite</a>, <a href="lua.html">Lua</a>, <a href="scala.html">Scala</a>, <a href="d.html">D</a>, <a href="rust.html">Rust</a>
 - Read more about Nim on the web: 1.
  https://irclogs.nim-lang.org/01-07-2012.html 1.
-- 13 PLDB concepts link to Nim: Ace Editor, cloc, FlatBuffers, Flow9, mal, Nim, Nimskull, pipelines, Pygments, shiv, spry, Star, Xidoc
+- 13 PLDB concepts link to Nim: <a href="ace.html">Ace Editor</a>, <a href="cloc.html">cloc</a>, <a href="flatbuffers.html">FlatBuffers</a>, <a href="flow9.html">Flow9</a>, <a href="mal.html">mal</a>, <a href="nim.html">Nim</a>, <a href="nimskull.html">Nimskull</a>, <a href="pipelines.html">pipelines</a>, <a href="pygments.html">Pygments</a>, <a href="shiv.html">shiv</a>, <a href="spry.html">spry</a>, <a href="star.html">Star</a>, <a href="xidoc.html">Xidoc</a>
 
+```Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
 # Type your code here, or load an example.
 proc square(num: int): int {.exportc.} =
   num * num
 
-echo &quot;Hello, world!&quot;
+```
 
+```Example from <a href='https://riju.codes/nim'>Riju</a>:
+echo &quot;Hello, world!&quot;
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/n/Nim.nim'>hello-world</a>:
 echo(&quot;Hello World&quot;)
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Nim'>the Hello World Collection</a>:
 # Hello world in Nim
 
 echo &quot;Hello World&quot;
+```
 
+```Example from <a href='https://github.com/Varriount/NimLime'>Linguist</a>:
 # from: https://github.com/nim-lang/Nim/blob/27b081d1f77604ee47c886e69dbc52f53ea3741f/compiler/nimfix/nimfix.nim.cfg
 
 # Special configuration file for the Nim project
@@ -69,44 +82,48 @@ cs:partial
 define:booting
 define:noDocgen
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Nim_(programming_language)'>Wikipedia</a>:
 proc printf(formatstr: cstring) {.header: &quot;&lt;stdio.h&gt;&quot;, varargs.}
 
 printf(&quot;%s %d\n&quot;, &quot;foo&quot;, 5)
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Unicode Identifers
  FeatureLink ../features/hasUnicodeIdentifiers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   let δ = 0.00001
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
    let res = true
  Token true false on off
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token =
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   #[ A comment
   ]#
@@ -114,26 +131,26 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token echo
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Static Typing
  FeatureLink ../features/hasStaticTyping.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # Though they may be phased out:
   # https://github.com/nim-lang/RFCs/issues/456
@@ -141,13 +158,13 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#macros
   import macros
@@ -157,20 +174,26 @@ row
 row
  Feature Templates
  FeatureLink ../features/hasTemplates.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # https://hookrace.net/blog/introduction-to-metaprogramming-in-nim/#templates
-  template debug*(args: varargs[string, `importOnly
+  template debug*(args: varargs[string, `$`]) =
+  if logLevel <= Level.debug:
+    const module = instantiationInfo().filename[0 .. ^5]
+    echo "[$# $#][$#]: $#" % [getDateStr(), getClockStr(),
+      module, join args]
+ Token 
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Gotos
+ FeatureLink ../features/hasGotos.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
 
-]) =
-    if logLevel ✓
-   Example
-   Token 
-  row
-   Feature Gotos
-   FeatureLink ../features/hasGotos.html
-   Supported X
-   Example
-   Token 
-
-View source
+Built with Scroll v178.2.3

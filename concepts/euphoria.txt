@@ -1,45 +1,57 @@
 Euphoria
 ========
 
-Euphoria, aka End User Programming Hierarchial Objects for Robust Interpreted Applications, is an open source programming language created in 1993 by Jeremy Cowgar and Robert Craig and Matt Lewis and Derek Parnell.
+Euphoria, aka End User Programming Hierarchial Objects for Robust Interpreted Applications, is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1993 by Jeremy Cowgar and Robert Craig and Matt Lewis and Derek Parnell.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221993%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1993
  https://pldb.io/concepts/../lists/creators.html#q=Jeremy%20Cowgar Jeremy Cowgar
  https://pldb.io/concepts/../lists/creators.html#q=Robert%20Craig Robert Craig
  https://pldb.io/concepts/../lists/creators.html#q=Matt%20Lewis Matt Lewis
  https://pldb.io/concepts/../lists/creators.html#q=Derek%20Parnell Derek Parnell
 
-#574 on PLDB
-31 Years Old
-75 Repos
+#590 on PLDB
+33 Years Old
+75 <span title="Euphoria repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/OpenEuphoria/euphoria
+```
 
 Euphoria is a programming language originally created by Robert Craig of Rapid Deployment Software in Toronto, Ontario, Canada. Initially developed (though not publicly released) on the Atari ST, the first commercial release was for the 16-bit DOS platform and was proprietary. In 2006, with the release of version 3, Euphoria became open-source software. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Euphoria_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Euphoria is developed on GitHub and has 86 stars
-- There are at least 75 Euphoria repos on GitHub
-- Early development of Euphoria happened in Rapid Deployment Software
-- Euphoria is written in Elixir, C, Bourne shell, Make, WebAssembly, HTML, JSON, JavaScript, CSS, YAML, Markdown, Tex, Prolog, XML, Lex, Dockerfile
-- The  Google BigQuery Public Dataset GitHub snapshot shows 46 users using Euphoria in 47 repos on GitHub
-- There are 8 Project Euler users using Euphoria
-- Explore Euphoria snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Euphoria is developed on <a href="https://github.com/OpenEuphoria/euphoria">GitHub</a> and has 86 stars
+- There are at least 75 Euphoria repos on <a href="https://github.com/search?q=language:Euphoria">GitHub</a>
+- Early development of Euphoria happened in <a href="../lists/labs.html#q=Rapid Deployment Software">Rapid Deployment Software</a>
+- Euphoria is written in <a href="elixir.html">Elixir</a>, <a href="c.html">C</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="make.html">Make</a>, <a href="wasm.html">WebAssembly</a>, <a href="html.html">HTML</a>, <a href="json.html">JSON</a>, <a href="javascript.html">JavaScript</a>, <a href="css.html">CSS</a>, <a href="yaml.html">YAML</a>, <a href="markdown.html">Markdown</a>, <a href="tex.html">Tex</a>, <a href="prolog.html">Prolog</a>, <a href="xml.html">XML</a>, <a href="lex.html">Lex</a>, <a href="dockerfile.html">Dockerfile</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 46 users using Euphoria in 47 repos on <a href="https://api.github.com/search/repositories?q=language:Euphoria">GitHub</a>
+- There are 8 <a href="https://projecteuler.net/language=Euphoria">Project Euler</a> users using Euphoria
+- Explore Euphoria snippets on <a href="http://www.rosettacode.org/wiki/Category:Euphoria">Rosetta Code</a>
 - Euphoria on HOPL
  https://hopl.info/showlanguage.prx?exp=2020 Euphoria on HOPL
-- Euphoria appears in the TIOBE Index
-- Learn Euphoria on exercism.
-- openeuphoria.org was registered in 2007
-- See also: (9 related languages) Linux, FreeBSD, C, BASIC, ASCII, Lua, Python, REBOL, Ruby
+- Euphoria appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- Learn <a href="https://exercism.org/tracks/euphoria">Euphoria on exercism.</a>
+- <a href="http://openeuphoria.org">openeuphoria.org</a> was registered in 2007
+- See also: (9 related languages) <a href="linux.html">Linux</a>, <a href="freebsd.html">FreeBSD</a>, <a href="c.html">C</a>, <a href="basic.html">BASIC</a>, <a href="ascii.html">ASCII</a>, <a href="lua.html">Lua</a>, <a href="python.html">Python</a>, <a href="rebol.html">REBOL</a>, <a href="ruby.html">Ruby</a>
 
+```Example from <a href='https://riju.codes/euphoria'>Riju</a>:
 puts(1, &quot;Hello, world!\n&quot;)
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/e/Euphoria.ex'>hello-world</a>:
 puts(1, &quot;Hello World&quot;)
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#End'>the Hello World Collection</a>:
 -- Hello World in Euphoria
 
 puts(1, &quot;Hello World!\n&quot;)
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Euphoria_(programming_language)'>Wikipedia</a>:
 global function replace_item( object old, object new, sequence group )
    integer pos
              -- Code begins --
@@ -49,41 +61,42 @@ global function replace_item( object old, object new, sequence group )
    end if
    return group
 end function
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token puts
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token --
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

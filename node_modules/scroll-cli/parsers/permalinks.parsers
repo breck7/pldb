@@ -2,6 +2,8 @@ baseUrlParser
  popularity 0.009188
  description Required for RSS and OpenGraph.
  extends abstractUrlSettingParser
+ example
+  baseUrl https://hub.scroll.pub/
 
 permalinkParser
  popularity 0.000265

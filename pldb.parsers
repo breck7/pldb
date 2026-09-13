@@ -1,43 +1,12 @@
-// Basic atom types
-blankAtom
-anyAtom
-
-// Enum atom types
-enumAtom
- paint constant.language
-booleanAtom
- enum true false
- extends enumAtom
-
-// String atom types
-stringAtom
- paint string
-
-atomAtom
- paint string
- description A non-empty single atom string.
- regex .+
-
 columnNameAtom
- extends stringAtom
+ paint constant
+newColumnNameAtom
+ description Name a derived column.
+ paint variable
 
-semanticVersionAtom
- paint string
- description A 3 part sem version string like 1.2.1
+constantAtom
+ paint constant
 
-// Date atom types
-dateAtom
- paint string
-
-// Numeric atom types
-numberAtom
- paint constant.numeric
-integerAtom
- extends numberAtom
- paint constant.numeric.integer
-floatAtom
- extends numberAtom
- paint constant.numeric.float
 percentAtom
  paint constant.numeric.float
  extends stringAtom
@@ -47,32 +16,21 @@ countAtom
 yearAtom
  extends integerAtom
 
-// Scroll atom types
-cueAtom
- description A atom that indicates a certain parser to use.
- paint keyword
-
-preBuildCommandAtom
+parseTimeCommandAtom
  extends cueAtom
- description Give build command atoms their own color.
+ description Give parse time command atoms their own color.
  paint constant.character.escape
-
-commentAtom
- paint comment
 
 delimiterAtom
  description String to use as a delimiter.
  paint string
-
-codeAtom
- paint comment
 
 bulletPointAtom
  description Any token used as a bullet point such as "-" or "1." or ">"
  paint keyword
 
 comparisonAtom
- enum < > <= >= = != includes doesNotInclude empty notEmpty
+ enum < > <= >= = != includes doesNotInclude empty notEmpty startsWith endsWith oneOf
  paint constant
 
 personNameAtom
@@ -87,6 +45,7 @@ absoluteUrlAtom
 
 emailAddressAtom
  extends stringAtom
+ paint constant.language
 
 // File system atom types
 permalinkAtom
@@ -94,7 +53,11 @@ permalinkAtom
  description A string that doesn't contain characters that might interfere with most filesystems. No slashes, for instance.
 
 filePathAtom
- extends stringAtom
+ paint constant.language
+
+outputFileExtensionAtom
+ extends fileExtensionAtom
+ enum html txt css js json pdf tsv csv parsers rss
 
 // HTML atom types
 tagOrUrlAtom
@@ -102,46 +65,80 @@ tagOrUrlAtom
  paint constant.language
 
 htmlAttributesAtom
- paint comment
+ paint constant
+
+htmlMethodAtom
+ paint constant
+ enum get post
 
 htmlTagAtom
  paint constant.language
  enum div span p a img ul ol li h1 h2 h3 h4 h5 h6 header nav section article aside main footer input button form label select option textarea table tr td th tbody thead tfoot br hr meta link script style title code
 
+htmlTypeAtom
+ extends stringAtom
+ paint constant.language
+ enum text password email number tel url search date time datetime-local week month color checkbox radio file submit reset button hidden range
+ description HTML input type attribute values.
+
 classNameAtom
  paint constant
 
 htmlIdAtom
- extends anyAtom
+ paint constant
 
+fontFamilyAtom
+ enum Arial Helvetica Verdana Georgia Impact Tahoma Slim
+ paint constant
+
+javascriptAnyAtom
+ extends codeAtom
+
+htmlAnyAtom
+ extends codeAtom
+
+colorAtom
+ extends codeAtom
+
+namedColorAtom
+ extends colorAtom
+ enum aliceblue antiquewhite aqua aquamarine azure beige bisque black blanchedalmond blue blueviolet brown burlywood cadetblue chartreuse chocolate coral cornflowerblue cornsilk crimson cyan darkblue darkcyan darkgoldenrod darkgray darkgreen darkkhaki darkmagenta darkolivegreen darkorange darkorchid darkred darksalmon darkseagreen darkslateblue darkslategray darkturquoise darkviolet deeppink deepskyblue dimgray dodgerblue firebrick floralwhite forestgreen fuchsia gainsboro ghostwhite gold goldenrod gray green greenyellow honeydew hotpink indianred indigo ivory khaki lavender lavenderblush lawngreen lemonchiffon lightblue lightcoral lightcyan lightgoldenrodyellow lightgray lightgreen lightpink lightsalmon lightseagreen lightskyblue lightslategray lightsteelblue lightyellow lime limegreen linen magenta maroon mediumaquamarine mediumblue mediumorchid mediumpurple mediumseagreen mediumslateblue mediumspringgreen mediumturquoise mediumvioletred midnightblue mintcream mistyrose moccasin navajowhite navy oldlace olive olivedrab orange orangered orchid palegoldenrod palegreen paleturquoise palevioletred papayawhip peachpuff peru pink plum powderblue purple rebeccapurple red rosybrown royalblue saddlebrown salmon sandybrown seagreen seashell sienna silver skyblue slateblue slategray snow springgreen steelblue tan teal thistle tomato turquoise violet wheat white whitesmoke yellow yellowgreen
+
+mimeTypeAtom
+ extends stringAtom
+ paint constant.language
+ description File MIME types (e.g. 'image/*', 'application/pdf')
+ enum image/* image/jpeg image/png image/gif image/webp image/svg+xml application/pdf text/plain text/html text/css text/javascript text/csv application/json application/xml application/zip application/msword application/vnd.openxmlformats-officedocument.wordprocessingml.document application/vnd.ms-excel application/vnd.openxmlformats-officedocument.spreadsheetml.sheet audio/* audio/mpeg audio/wav audio/ogg video/* video/mp4 video/webm video/ogg
 
 abstractScrollParser
  atoms cueAtom
  javascript
-  compileEmbeddedVersion(compileSettings) {
-   return this.compile(compileSettings)
-  }
-  compileTxt() {
+  buildHtml() {
     return ""
   }
-  getHtmlRequirements(compileSettings) {
+  buildHtmlSnippet(buildSettings) {
+   return this.buildHtml(buildSettings)
+  }
+  buildTxt() {
+    return ""
+  }
+  getHtmlRequirements(buildSettings) {
     const {requireOnce} = this
     if (!requireOnce)
       return ""
-    const set = compileSettings?.alreadyRequired || this.root.alreadyRequired
+    const set = buildSettings?.alreadyRequired || this.root.alreadyRequired
     if (set.has(requireOnce))
       return ""
-    
     set.add(requireOnce)
     return requireOnce + "\n\n"
   }
 
 abstractScrollWithRequirementsParser
  extends abstractScrollParser
- cruxFromId
+ cueFromId
  javascript
-  compile(compileSettings) {
-    return this.getHtmlRequirements(compileSettings) + this.compileInstance()
+  buildHtml(buildSettings) {
+    return this.getHtmlRequirements(buildSettings) + this.buildInstance()
   }
 
 metaCommandAtom
@@ -156,34 +153,28 @@ abstractTopLevelSingleMetaParser
  description Use these parsers once per file.
  extends abstractScrollParser
  inScope slashCommentParser
- cruxFromId
+ cueFromId
  atoms metaCommandAtom
- javascript
-  isTopMatter = true
-  isSetterParser = true
-  compile() {
-   return ""
-  }
+ boolean isTopMatter true
+ boolean isSetterParser true
 
 scrollParser
- extensions scroll
  description Scroll is a language for scientists of all ages. Refine, share and collaborate on ideas.
  root
- inScope abstractScrollParser blankLineParser
+ inScope abstractScrollParser blankLineParser atomTypeDefinitionParser parserDefinitionParser
  catchAllParser errorParser
- compilesTo html
  javascript
   setFile(file) {
    this.file = file
    return this
   }
-  compile(compileSettings) {
+  buildHtml(buildSettings) {
     this.sectionStack = []
-    return this.map(subparticle => subparticle.compile(compileSettings)).filter(i => i).join("\n") + this.clearSectionStack()
+    return this.filter(subparticle => subparticle.buildHtml).map(subparticle => { try {return subparticle.buildHtml(buildSettings)} catch (err) {console.error(err); return ""} }).filter(i => i).join("\n") + this.clearSectionStack()
   }
   sectionStack = []
   clearSectionStack() {
-   const result = this.sectionStack.join("")
+   const result = this.sectionStack.join("\n")
    this.sectionStack = []
    return result
   }
@@ -193,33 +184,142 @@ scrollParser
    this.bodyStack = []
    return result
   }
-  get hakonParser() {
-    if (this.isNodeJs())
-      return require("scrollsdk/products/hakon.nodejs.js")
-    return hakonParser
-  }
   readSyncFromFileOrUrl(fileOrUrl) {
-    if (!this.isNodeJs()) return localStorage.getItem(fileOrUrl) || ""
+    if (!this.isNodeJs()) return this.getInBrowser(fileOrUrl)
     const isUrl = fileOrUrl.match(/^https?\:[^ ]+$/)
     if (!isUrl) return this.root.readFile(fileOrUrl)
     return this.readFile(this.makeFullPath(new URL(fileOrUrl).pathname.split('/').pop()))
+  }
+  getInBrowser(key) {
+    return localStorage.getItem(key) || (window.inMemStorage ? window.inMemStorage[key] : "") || ""
   }
   async fetch(url, filename) {
     const isUrl = url.match(/^https?\:[^ ]+$/)
     if (!isUrl) return
     return this.isNodeJs() ? this.fetchNode(url, filename) : this.fetchBrowser(url)
   }
+  get path() {
+    return require("path")
+  }
   makeFullPath(filename) {
-    return require("path").join(this.file.folderPath, filename)
+    return this.path.join(this.folderPath, filename)
+  }
+  _nextAndPrevious(arr, index) {
+    const nextIndex = index + 1
+    const previousIndex = index - 1
+    return {
+      previous: arr[previousIndex] ?? arr[arr.length - 1],
+      next: arr[nextIndex] ?? arr[0]
+    }
+  }
+  // keyboard nav is always in the same folder. does not currently support cross folder
+  _includeFileInKeyboardNav(file) {
+    const { scrollProgram } = file
+    return scrollProgram.buildsHtml && scrollProgram.hasKeyboardNav && scrollProgram.tags.includes(this.primaryTag)
+  }
+  _timestamp
+  get timestamp() {
+   if (!this._timestamp) {
+    this._timestamp = this.file.timestamp
+    const date = this.get("date")
+    if (date) this._timestamp = this.dayjs(date).unix()
+   }
+   return this._timestamp
+  }
+  get linkToPrevious() {
+    if (!this.hasKeyboardNav)
+      // Dont provide link to next unless keyboard nav is on
+      return undefined
+    const {allScrollFiles} = this
+    let file = this._nextAndPrevious(allScrollFiles, this.timeIndex).previous
+    if (!file) return undefined
+    while (!this._includeFileInKeyboardNav(file)) {
+      file = this._nextAndPrevious(allScrollFiles, file.scrollProgram.timeIndex).previous
+    }
+    return file.scrollProgram.permalink
+  }
+  get linkToNext() {
+    if (!this.hasKeyboardNav)
+      // Dont provide link to next unless keyboard nav is on
+      return undefined
+    const {allScrollFiles} = this
+    let file = this._nextAndPrevious(allScrollFiles, this.timeIndex).next
+    if (!file) return undefined
+    while (!this._includeFileInKeyboardNav(file)) {
+      file = this._nextAndPrevious(allScrollFiles, file.scrollProgram.timeIndex).next
+    }
+    return file.scrollProgram.permalink
+  }
+  // todo: clean up this naming pattern and add a parser instead of special casing 404.html
+  get allHtmlFiles() {
+    return this.allScrollFiles.filter(file => file.scrollProgram.buildsHtml && file.scrollProgram.permalink !== "404.html")
+  }
+  parseNestedTag(tag) {
+    if (!tag.includes("/")) return;
+    const {path} = this
+    const parts = tag.split("/")
+    const group = parts.pop()
+    const relativePath = parts.join("/")
+    return {
+      group,
+      relativePath,
+      folderPath: path.join(this.folderPath, path.normalize(relativePath))
+      }
+  }
+  getFilesByTags(tags, limit) {
+    // todo: tags is currently matching partial substrings
+    const getFilesWithTag = (tag, files) => files.filter(file => file.scrollProgram.buildsHtml && file.scrollProgram.tags.includes(tag))
+    if (typeof tags === "string") tags = tags.split(" ")
+    if (!tags || !tags.length)
+      return this.allHtmlFiles
+        .filter(file => file !== this) // avoid infinite loops. todo: think this through better.
+        .map(file => {
+          return { file, relativePath: "" }
+        })
+        .slice(0, limit)
+    let arr = []
+    tags.forEach(tag => {
+      if (!tag.includes("/"))
+        return (arr = arr.concat(
+          getFilesWithTag(tag, this.allScrollFiles)
+            .map(file => {
+              return { file, relativePath: "" }
+            })
+            .slice(0, limit)
+        ))
+      const {folderPath, group, relativePath} = this.parseNestedTag(tag)
+      let files = []
+      try {
+      files = this.fileSystem.getFusedFilesInFolderIfCached(folderPath, this)
+      } catch (err) {
+        console.error(err)
+      }
+      const filtered = getFilesWithTag(group, files).map(file => {
+        return { file, relativePath: relativePath + "/" }
+      })
+      arr = arr.concat(filtered.slice(0, limit))
+    })
+    return this.lodash.sortBy(arr, file => file.file.scrollProgram.timestamp).reverse()
   }
   async fetchNode(url, filename) {
     filename = filename || new URL(url).pathname.split('/').pop()
     const fullpath = this.makeFullPath(filename)
     if (require("fs").existsSync(fullpath)) return this.readFile(fullpath)
-    return this.downloadToDisk(url, fullpath)
+    this.log(`🛜 fetching ${url} to ${fullpath} `)
+    try {
+    await this.downloadToDisk(url, fullpath)
+    return this.readFile(fullpath)
+    } catch (err) {
+      console.error(`fetching ${url} failed`)
+      console.error(err)
+      return ""
+    }
+  }
+  log(message) {
+    if (this.logger) this.logger.log(message)
   }
   async fetchBrowser(url) {
-    const content = localStorage.getItem(url)
+    const content = this.getInBrowser(url)
     if (content) return content
     return this.downloadToLocalStorage(url)
   }
@@ -233,22 +333,44 @@ scrollParser
   async downloadToLocalStorage(url) {
     const response = await fetch(url)
     const blob = await response.blob()
-    localStorage.setItem(url, await blob.text())
-    return localStorage.getItem(url)
+    const text = await blob.text()
+    try {
+      localStorage.setItem(url, text)
+      return localStorage.getItem(url)
+    } catch (err) {
+      if (!window.inMemStorage) window.inMemStorage = {}
+      window.inMemStorage[url] = text
+      console.error(err)
+      return text
+    }
   }
   readFile(filename) {
-    const path = require("path")
+    const {path} = this
     const fs = require("fs")
-    const fullPath = path.join(this.file.folderPath, filename)
+    const fullPath = path.join(this.folderPath, filename.replace(this.folderPath, ""))
+    try {
     if (fs.existsSync(fullPath))
       return fs.readFileSync(fullPath, "utf8")
     console.error(`File '${filename}' not found`)
     return ""
+    } catch (err) {
+      console.error(`Error in '${this.filePath}' reading file: '${fullPath}'`)
+      console.error(err)
+      return ""
+    }
   }
   alreadyRequired = new Set()
-  compileEmbeddedVersion(compileSettings) {
+  buildHtmlSnippet(buildSettings) {
    this.sectionStack = []
-   return this.map(subparticle => (subparticle.compileEmbeddedVersion ? subparticle.compileEmbeddedVersion(compileSettings) : subparticle.compile(compileSettings)))
+   return this.map(subparticle => {
+   try {
+   if (subparticle.noSnippet) return ""
+   return subparticle.buildHtmlSnippet ? subparticle.buildHtmlSnippet(buildSettings) : (subparticle.buildHtml ? subparticle.buildHtml(buildSettings) : "")} catch (err) {
+     console.error(`Error building snippet in file '${this.filename}' in particle '${subparticle.toString()}'`)
+     console.error(err)
+     return ""
+   }
+   })
      .filter(i => i)
      .join("\n")
      .trim() + this.clearSectionStack()
@@ -257,15 +379,621 @@ scrollParser
    if (this._footnotes === undefined) this._footnotes = this.filter(particle => particle.isFootnote)
    return this._footnotes
   }
-  async build() {
-    await Promise.all(this.filter(particle => particle.build).map(async particle => particle.build()))
+  get authors() {
+    return this.get("authors")
+  }
+  _addTimeIndexes(files) {
+    // A little hacky but ah well.
+    // For blogs, we want to sort posts in a folder in order of the date property.
+    // If the date property is not set, we use the file timestamp from disk.
+    const sorted = this.lodash.sortBy(files.map(a => a.scrollProgram), "timestamp")
+    sorted.forEach((scrollProgram, index) => (scrollProgram.timeIndex = index))
+  }
+  get allScrollFiles() {
+    try {
+    const files = this.fileSystem.getFusedFilesInFolderIfCached(this.folderPath, this)
+    if (this.timeIndex === undefined)
+      this._addTimeIndexes(files)
+    return files
+    } catch (err) {
+      console.error(err)
+      return []
+    }
+  }
+  async doThing(thing) {
+    await Promise.all(this.filter(particle => particle[thing]).map(async particle => particle[thing]()))
+  }
+  async load() {
+    // todo: document when to use load instead of wake? do we need both?
+    await this.doThing("load")
+  }
+  async execute() {
+    await this.doThing("execute")
   }
   file = {}
+  getFromParserId(parserId) {
+    return this.parserIdIndex[parserId]?.[0].content
+  }
+  notifyOnReady(particle) {
+    if (!this._toNotify)
+     this._toNotify = []
+    this._toNotify.push(particle)
+  }
+  wake() {
+    // In case the file ended on a parser definition, refresh parser pool
+    this._refreshParserPool()
+    if (this._toNotify)
+      this._toNotify.forEach(particle => particle.onReady())
+  }
+  get fileSystem() {
+    return this.file.fileSystem
+  }
+  get filePath() {
+    // Note: we currently do not support files with spaces in their filepaths
+    return this.cue
+  }
+  get folderPath() {
+    return Utils.posix.dirname(this.filePath) + "/"
+  }
+  get filename() {
+    return Utils.posix.basename(this.filePath)
+  }
+  get hasKeyboardNav() {
+    return this.has("keyboardNav")
+  }
+  get editHtml() {
+    return `<a href="${this.editUrl}" class="abstractTextLinkParser">Edit</a>`
+  }
+  get externalsPath() {
+    return this.path.join(this.fileSystem.standardParserDirectory, "..", "external")
+  }
+  get endSnippetIndex() {
+    // Get the line number that the snippet should stop at.
+    // First if its hard coded, use that
+    if (this.has("endSnippet")) return this.getParticle("endSnippet").index
+    // Next look for a dinkus
+    const snippetBreak = this.find(particle => particle.isDinkus)
+    if (snippetBreak) return snippetBreak.index
+    return -1
+  }
+  get parserIds() {
+    return this.topDownArray.map(particle => particle.definition.id)
+  }
+  get tags() {
+    return this.get("tags") || ""
+  }
+  get primaryTag() {
+    return this.tags.split(" ")[0]
+  }
+  get filenameNoExtension() {
+    return this.filename.replace(".scroll", "")
+  }
+  // todo: rename publishedUrl? Or something to indicate that this is only for stuff on the web (not localhost)
+  // BaseUrl must be provided for RSS Feeds and OpenGraph tags to work
+  get baseUrl() {
+    const baseUrl = (this.get("baseUrl") || "").replace(/\/$/, "")
+    return baseUrl + "/"
+  }
+  get canonicalUrl() {
+    return this.get("canonicalUrl") || this.baseUrl + this.permalink
+  }
+  get openGraphImage() {
+    const openGraphImage = this.get("openGraphImage")
+    if (openGraphImage !== undefined) return this.ensureAbsoluteLink(openGraphImage)
+    const images = this.filter(particle => particle.doesExtend("scrollImageParser"))
+    const hit = images.find(particle => particle.has("openGraph")) || images[0]
+    if (!hit) return ""
+    return this.ensureAbsoluteLink(hit.filename)
+  }
+  get absoluteLink() {
+    return this.ensureAbsoluteLink(this.permalink)
+  }
+  ensureAbsoluteLink(link) {
+    if (link.includes("://")) return link
+    return this.baseUrl + link.replace(/^\//, "")
+  }
+  get editUrl() {
+    const editUrl = this.get("editUrl")
+    if (editUrl) return editUrl
+    const editBaseUrl = this.get("editBaseUrl")
+    return (editBaseUrl ? editBaseUrl.replace(/\/$/, "") + "/" : "") + this.filename
+  }
+  get gitRepo() {
+    // given https://github.com/breck7/breckyunits.com/blob/main/four-tips-to-improve-communication.scroll
+    // return https://github.com/breck7/breckyunits.com
+    return this.editUrl.split("/").slice(0, 5).join("/")
+  }
+  get scrollVersion() {
+    // currently manually updated
+    return "178.2.3"
+  }
+  // Use the first paragraph for the description
+  // todo: add a particle method version of get that gets you the first particle. (actulaly make get return array?)
+  // would speed up a lot.
+  get description() {
+    const description = this.getFromParserId("openGraphDescriptionParser")
+    if (description) return description
+    return this.generatedDescription
+  }
+  get keywords() {
+    if (this.has("keywords"))
+    return this.get("keywords")
+    const tags = this.get("tags")
+    if (tags)
+      return tags.split(" ").join(", ")
+    return ""
+  }
+  get generatedDescription() {
+    const firstParagraph = this.find(particle => particle.isArticleContent)
+    return firstParagraph ? firstParagraph.originalText.substr(0, 100).replace(/[&"<>']/g, "") : ""
+  }
+  get titleFromFilename() {
+    const unCamelCase = str => str.replace(/([a-z])([A-Z])/g, "$1 $2").replace(/^./, match => match.toUpperCase())
+    return unCamelCase(this.filenameNoExtension)
+  }
   get title() {
-    return this.file.title || this.get("title")
+    return this.getFromParserId("scrollTitleParser") || this.titleFromFilename
+  }
+  get linkTitle() {
+    return this.getFromParserId("scrollLinkTitleParser") || this.title
   }
   get permalink() {
-   return this.get("permalink") || this.file.permalink || ""
+   return this.get("permalink") || (this.filename ? this.filenameNoExtension + ".html" : "")
+  }
+  compileTo(extensionCapitalized) {
+    if (extensionCapitalized === "Txt")
+      return this.asTxt
+    if (extensionCapitalized === "Html")
+      return this.asHtml
+    const methodName = "build" + extensionCapitalized
+    return this.topDownArray
+      .filter(particle => particle[methodName])
+      .map((particle, index) => particle[methodName](index))
+      .join("\n")
+      .trim()
+  }
+  get asTxt() {
+    return (
+      this.map(particle => {
+          const text = particle.buildTxt ? particle.buildTxt() : ""
+          if (text) return text + "\n"
+          if (!particle.getLine().length) return "\n"
+          return ""
+        })
+        .join("")
+        .replace(/\n\n\n+/g, "\n\n") // Maximum 2 newlines in a row
+        .trim() + "\n" // Always end in a newline, Posix style
+    )
+  }
+  get dependencies() {
+      const dependencies = this.file.dependencies?.slice() || []
+      const files = this.topDownArray.filter(particle => particle.dependencies).map(particle => particle.dependencies).flat()
+      return dependencies.concat(files)
+  }
+  get importOnly() {
+    return this.has("importOnly")
+  }
+  get buildsHtml() {
+    const { permalink } = this
+    return !this.importOnly && (permalink.endsWith(".html") || permalink.endsWith(".htm"))
+  }
+  // Without specifying the language hyphenation will not work.
+  get lang() {
+    return this.get("htmlLang") || "en"
+  }
+  _compiledHtml = ""
+  get asHtml() {
+    if (!this._compiledHtml) {
+      const { permalink, buildsHtml } = this
+      const content = (this.buildHtml() + this.clearBodyStack()).trim()
+      // Don't add html tags to CSV feeds. A little hacky as calling a getter named _html_ to get _xml_ is not ideal. But
+      // <1% of use case so might be good enough.
+      const wrapWithHtmlTags = buildsHtml
+      const bodyTag = this.has("metaTags") ? "" : "<body>\n"
+      this._compiledHtml = wrapWithHtmlTags ? `<!DOCTYPE html>\n<html lang="${this.lang}">\n${bodyTag}${content}\n</body>\n</html>` : content
+    }
+    return this._compiledHtml
+  }
+  get wordCount() {
+    return this.asTxt.match(/\b\w+\b/g)?.length || 0
+  }
+  get minutes() {
+    return parseFloat((this.wordCount / 200).toFixed(1))
+  }
+  get date() {
+    return this.dateObject.format(`MM/DD/YYYY`)
+  }
+  get dateObject() {
+    const date = this.get("date") || (this.timestamp || 0)
+    return this.dayjs(date)
+  }
+  get year() {
+    return parseInt(this.dayjs(this.date).format(`YYYY`))
+  }
+  get dayjs() {
+    if (!this.isNodeJs()) return dayjs
+    const lib = require("dayjs")
+    const relativeTime = require("dayjs/plugin/relativeTime")
+    lib.extend(relativeTime)
+    return lib
+  }
+  get lodash() {
+    return this.isNodeJs() ? require("lodash") : lodash
+  }
+  get d3() {
+    return this.isNodeJs() ? require('d3') : d3
+  }
+  getConcepts(parsed) {
+    const concepts = []
+    let currentConcept
+    parsed.forEach(particle => {
+      if (particle.isConceptDelimiter) {
+        if (currentConcept) concepts.push(currentConcept)
+        currentConcept = []
+      }
+      if (currentConcept && particle.isMeasure) currentConcept.push(particle)
+    })
+    if (currentConcept) concepts.push(currentConcept)
+    return concepts
+  }
+  _formatConcepts(parsed) {
+    const concepts = this.getConcepts(parsed)
+    if (!concepts.length) return false
+    const {lodash} = this
+    // does a destructive sort in place on the parsed program
+    concepts.forEach(concept => {
+      let currentSection
+      const newCode = lodash
+        .sortBy(concept, ["sortIndex"])
+        .map(particle => {
+          let newLines = ""
+          const section = particle.sortIndex.toString().split(".")[0]
+          if (section !== currentSection) {
+            currentSection = section
+            newLines = "\n"
+          }
+          return newLines + particle.toString()
+        })
+        .join("\n")
+      concept.forEach((particle, index) => (index ? particle.destroy() : ""))
+      concept[0].replaceWith(newCode)
+    })
+  }
+  get formatted() {
+    return this.getFormatted(this.codeAtStart)
+  }
+  get lastCommitTime() {
+    // todo: speed this up and do a proper release. also could add more metrics like this.
+    if (this._lastCommitTime === undefined) {
+      try {
+        this._lastCommitTime = require("child_process").execSync(`git log -1 --format="%at" -- "${this.filePath}"`).toString().trim()
+      } catch (err) {
+        this._lastCommitTime = 0
+      }
+    }
+    return this._lastCommitTime
+  }
+  get codeAtStart() {
+    return this.file.codeAtStart
+  }
+  async ensureFileLoaded() {
+    // todo: cleanup
+    if (!this.codeAtStart)
+      await this.file._readCodeFromStorage()
+  }
+  getFormatted(codeAtStart = this.toString()) {
+    let formatted = codeAtStart.replace(/\r/g, "") // remove all carriage returns if there are any
+    const parsed = new this.latestConstructor(formatted)
+    parsed.topDownArray.forEach(subparticle => {
+      subparticle.format()
+      const original = subparticle.getLine()
+      const trimmed = original.replace(/(\S.*?)[  \t]*$/gm, "$1")
+      // Trim trailing whitespace unless parser allows it
+      if (original !== trimmed && !subparticle.allowTrailingWhitespace) subparticle.setLine(trimmed)
+    })
+    this._formatConcepts(parsed)
+    let importOnlys = []
+    let topMatter = []
+    let allElse = []
+    // Create any bindings
+    parsed.forEach(particle => {
+      if (particle.bindTo === "next" && !particle.isLast) particle.binding = particle.next
+      if (particle.bindTo === "previous" && !particle.isFirst) particle.binding = particle.previous
+    })
+    let noFormat = false
+    parsed.forEach(particle => {
+      if (noFormat) return allElse.push(particle)
+      if (particle.getLine() === "noFormat") {
+         noFormat = true
+         return allElse.push(particle)
+      }
+      if (particle.getLine() === "importOnly") importOnlys.push(particle)
+      else if (particle.isTopMatter) topMatter.push(particle)
+      else allElse.push(particle)
+    })
+    const combined = importOnlys.concat(topMatter, allElse)
+    // Move any bound particles
+    combined
+      .filter(particle => particle.binding)
+      .forEach(particle => {
+        // First remove the particle from its current position
+        const originalIndex = combined.indexOf(particle)
+        combined.splice(originalIndex, 1)
+        // Then insert it at the new position
+        // We need to find the binding index again after removal
+        const bindingIndex = combined.indexOf(particle.binding)
+        if (particle.bindTo === "next") combined.splice(bindingIndex, 0, particle)
+        else combined.splice(bindingIndex + 1, 0, particle)
+      })
+    const trimmed = combined
+      .map(particle => particle.toString())
+      .join("\n")
+      .replace(/^\n*/, "") // Remove leading newlines
+      .replace(/\n\n\n+/g, "\n\n") // Maximum 2 newlines in a row
+      .replace(/\n+$/, "")
+    return trimmed === "" ? trimmed : trimmed + "\n" // End non blank Scroll files in a newline character POSIX style for better working with tools like git
+  }
+  get parser() {
+    return this.constructor
+  }
+  get parsersRequiringExternals() {
+    const { parser } = this
+    // todo: could be cleaned up a bit
+    if (!parser.parsersRequiringExternals) parser.parsersRequiringExternals = parser.cachedHandParsersProgramRoot.filter(particle => particle.copyFromExternal).map(particle => particle.atoms[0])
+    return parser.parsersRequiringExternals
+  }
+  get Disk() { return this.isNodeJs() ? require("scrollsdk/products/Disk.node.js").Disk : {}}
+  async buildAll(options = {}) {
+    await this.load()
+    await this.buildOne(options)
+    await this.buildTwo(options)
+  }
+  async buildOne(options) {
+    await this.execute()
+    const toBuild = this.filter(particle => particle.buildOne)
+    for (let particle of toBuild) {
+      await particle.buildOne(options)
+    }
+  }
+  async buildTwo(options) {
+    const toBuild = this.filter(particle => particle.buildTwo)
+    for (let particle of toBuild) {
+      await particle.buildTwo(options)
+    }
+  }
+  stackParserCode(parser) {
+    // Add top level parsers only which will add their nested parsers.
+    if (parser.parent !== this) return
+    // Perf hack until we can refactor ParserPool and add incremental addition of parsers.
+    // What we see in the wild is that frequently you'll have parser definitions one after
+    // the other, separated by blank lines or comments. So we stack up those parsers and
+    // dont add them until we are done with that section.
+    if (this._parsersToRegister === undefined)
+        this._parsersToRegister = []
+    this._parsersToRegister.push(parser)
+    if (!this._beforeAppend)
+        this._beforeAppend = (block) => {
+          const line1 = block.split(/\n/)[0]
+          if (line1 === "" || line1.endsWith("Parser") || line1.startsWith("//"))
+            return
+          this._refreshParserPool()
+        }
+  }
+  _refreshParserPool() {
+    if (!this._parsersToRegister) return
+    this.registerParsers(this._parsersToRegister.map(p => p.toString()).join("\n"), this.filePath)
+    delete this._beforeAppend
+    delete this._parsersToRegister
+  }
+  get outputFileNames() {
+    return this.filter(p => p.outputFileNames).map(p => p.outputFileNames).flat()
+  }
+  _compileArray(filename, arr) {
+    const removeBlanks = data => data.map(obj => Object.fromEntries(Object.entries(obj).filter(([_, value]) => value !== "")))
+    const parts = filename.split(".")
+    const format = parts.pop()
+    if (format === "json") return JSON.stringify(removeBlanks(arr), null, 2)
+    if (format === "js") return `const ${parts[0]} = ` + JSON.stringify(removeBlanks(arr), null, 2)
+    if (format === "csv") return this.arrayToCSV(arr)
+    if (format === "tsv") return this.arrayToCSV(arr, "\t")
+    if (format === "particles") return particles.toString()
+    return particles.toString()
+  }
+  inspect(particles = this.getSubparticles()) {
+    const mapFn = particle => {
+    const atomTypes = particle.lineAtomTypes.split(" ")
+    return `${particle.constructor.name} ${particle.atoms.map((atom, index) => `${atomTypes[index]}:${atom}`).join(" ")}${(particle.length ? `\n ` + particle.map(mapFn).join("\n") + `` : "")}`}
+   return particles.map(mapFn).join("\n")
+  }
+  levenshteinDistance(a, b) {
+    const m = a.length
+    const n = b.length
+    const dp = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0))
+    for (let i = 0; i <= m; i++) {
+      dp[i][0] = i
+    }
+    for (let j = 0; j <= n; j++) {
+      dp[0][j] = j
+    }
+    for (let i = 1; i <= m; i++) {
+      for (let j = 1; j <= n; j++) {
+        const cost = a[i - 1] === b[j - 1] ? 0 : 1
+        dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + cost)
+      }
+    }
+    return dp[m][n]
+  }
+  makeLodashOrderByParams(str) {
+  const part1 = str.split(" ")
+  const part2 = part1.map(col => (col.startsWith("-") ? "desc" : "asc"))
+  return [part1.map(col => col.replace(/^\-/, "")), part2]
+  }
+  arrayToCSV(data, delimiter = ",") {
+   if (!data.length) return ""
+   // Extract headers
+   const headers = Object.keys(data[0])
+   const csv = data.map(row =>
+     headers
+       .map(fieldName => {
+         const fieldValue = row[fieldName]
+         // Escape commas if the value is a string
+         if (typeof fieldValue === "string" && (fieldValue.includes(delimiter) || fieldValue.includes('"'))) {
+           return `"${fieldValue.replace(/"/g, '""')}"` // Escape double quotes and wrap in double quotes
+         }
+         return fieldValue
+       })
+       .join(delimiter)
+   )
+   csv.unshift(headers.join(delimiter)) // Add header row at the top
+   return csv.join("\n")
+   }
+  compileConcepts(filename = "csv", sortBy = "") {
+    const {lodash} = this
+    if (!sortBy) return this._compileArray(filename, this.concepts)
+    const orderBy = this.makeLodashOrderByParams(sortBy)
+    return this._compileArray(filename, lodash.orderBy(this.concepts, orderBy[0], orderBy[1]))
+  }
+  _withStats
+  get measuresWithStats() {
+    if (!this._withStats) this._withStats = this.addMeasureStats(this.concepts, this.measures)
+    return this._withStats
+  }
+  addMeasureStats(concepts, measures){
+   return measures.map(measure => {
+    let Type = false
+    concepts.forEach(concept => {
+      const value = concept[measure.Name]
+      if (value === undefined || value === "") return
+      measure.Values++
+      if (!Type) {
+        measure.Example = value.toString().replace(/\n/g, " ")
+        measure.Type = typeof value
+        Type = true
+      }
+    })
+    measure.Coverage = Math.floor((100 * measure.Values) / concepts.length) + "%"
+    return measure
+  })
+  }
+  get latestConstructor() {
+    // todo: cleanup
+    return this._modifiedConstructor || this.constructor
+  }
+  _parseMeasures() {
+  const {lodash, definition} = this
+  // cache measures on the _Parser_, since they are unique to a parser.
+  if (definition._measures)
+    return definition._measures
+  // todo: clean this up
+  // Generate a fake program with one of every of the available parsers. Then parse it. Then we can easily access the meta data on the parsers
+  const dummyCode = Array.from(new Set(definition.map(particle => particle.get("cue") || particle.getLine().replace(/Parser$/, "")))).join("\n")
+  const parser = this.latestConstructor
+  const dummyProgram = new parser(dummyCode, this.getLine())
+  // Delete any particles that are not measures
+  dummyProgram.filter(particle => !particle.isMeasure).forEach(particle => particle.destroy())
+  dummyProgram.forEach(particle => {
+    // add nested measures
+    Object.keys(particle.definition.cueMapWithDefinitions).forEach(key => particle.appendLine(key))
+  })
+  // Delete any nested particles that are not measures
+  dummyProgram.topDownArray.filter(particle => !particle.isMeasure).forEach(particle => particle.destroy())
+  const measures = dummyProgram.topDownArray.map(particle => {
+    return {
+      Name: particle.measureName,
+      Values: 0,
+      Coverage: 0,
+      Question: particle.definition.description,
+      Example: particle.definition.getParticle("example")?.subparticlesToString() || "",
+      Type: particle.typeForWebForms,
+      Source: particle.sourceDomain,
+      //Definition: parsedProgram.root.filename + ":" + particle.lineNumber
+      SortIndex: particle.sortIndex,
+      IsComputed: particle.isComputed,
+      IsRequired: particle.isMeasureRequired,
+      IsConceptDelimiter: particle.isConceptDelimiter,
+      Cue: particle.definition.get("cue")
+    }
+  })
+  definition._measures = lodash.sortBy(measures, "SortIndex")
+  return definition._measures
+  }
+  _concepts
+  get concepts() {
+    if (!this._concepts) this._concepts = this._parseConcepts()
+    return this._concepts
+  }
+  get concept() {
+    return this.concepts[0]
+  }
+  _measures
+  get measures() {
+    if (!this._measures) return this._measures = this._parseMeasures()
+    return this._measures
+  }
+  _parseConcepts(){
+  const parsedProgram = this
+  const measures = this.measures
+  // Todo: might be a perf/memory/simplicity win to have a "segment" method in ScrollSDK, where you could
+  // virtually split a Particle into multiple segments, and then query on those segments.
+  // So we would "segment" on "id ", and then not need to create a bunch of new objects, and the original
+  // already parsed lines could then learn about/access to their respective segments.
+  const conceptDelimiter = measures.filter(measure => measure.IsConceptDelimiter)[0]
+  if (!conceptDelimiter) return []
+  const concepts = parsedProgram.split(conceptDelimiter.Cue || conceptDelimiter.Name)
+  concepts.shift() // Remove the part before "id"
+  return concepts.map(concept => {
+    const row = {}
+    measures.forEach(measure => {
+      const measureName = measure.Name
+      const measureKey = measure.Cue || measureName.replace(/_/g, " ")
+      if (!measure.IsComputed) row[measureName] = concept.getParticle(measureKey)?.measureValue ?? ""
+      else row[measureName] = this.computeMeasure(parsedProgram, measureName, concept, concepts)
+    })
+    return row
+  })
+  }
+  computeMeasure(parsedProgram, measureName, concept, concepts){
+  // note that this is currently global, assuming there wont be. name conflicts in computed measures in a single scroll
+  if (!Particle.measureFnCache) Particle.measureFnCache = {}
+  const measureFnCache = Particle.measureFnCache
+  if (!measureFnCache[measureName]) {
+    // a bit hacky but works??
+    const particle = parsedProgram.appendLine(measureName)
+    measureFnCache[measureName] = particle.computeValue
+    particle.destroy()
+  }
+  return measureFnCache[measureName](concept, measureName, parsedProgram, concepts)
+  }
+  compileMeasures(filename = "csv", sortBy = "") {
+    const withStats = this.measuresWithStats
+    if (!sortBy) return this._compileArray(filename, withStats)
+    const orderBy = this.makeLodashOrderByParams(sortBy)
+    return this._compileArray(filename, this.lodash.orderBy(withStats, orderBy[0], orderBy[1]))
+  }
+  runNodeJs(particle) {
+    if (!this.isNodeJs()) return false
+    const {filePath, Disk} = this
+    const uid = particle._getUid()
+    const tempPath = filePath + `.${uid}.js`
+    if (Disk.exists(tempPath)) throw new Error(`Failed to write/require nodejs snippet since '${tempPath}' already exists.`)
+    try {
+      Disk.write(tempPath, particle.subparticlesToString())
+      return require(tempPath)
+    } catch (err) {
+      console.error(`Error in ${particle.cue} in file '${filePath}'`)
+      console.error(err)
+      return false
+    } finally {
+      Disk.rm(tempPath)
+    }
+  }
+  toRss() {
+    const { title, canonicalUrl } = this
+    return ` <item>
+  <title>${title}</title>
+  <link>${canonicalUrl}</link>
+  <pubDate>${this.dayjs(this.timestamp * 1000).format("ddd, DD MMM YYYY HH:mm:ss ZZ")}</pubDate>
+  </item>`
   }
  example
   # Hello world
@@ -279,7 +1007,7 @@ scrollParser
 abstractUrlSettingParser
  extends abstractTopLevelSingleMetaParser
  atoms metaCommandAtom urlAtom
- cruxFromId
+ cueFromId
 
 
 buildCommandAtom
@@ -289,15 +1017,74 @@ buildCommandAtom
 
 abstractBuildCommandParser
  extends abstractScrollParser
- cruxFromId
+ cueFromId
  atoms buildCommandAtom
  catchAllAtomType filePathAtom
  inScope slashCommentParser
+ boolean isTopMatter true
  javascript
-  isTopMatter = true
-  compile() {
-   return ""
+  get extension() {
+    return this.cue.replace("build", "")
   }
+  buildOutput() {
+    return this.root.compileTo(this.extension)
+  }
+  get outputFileNames() {
+    return this.content?.split(" ") || [this.root.permalink.replace(".html", "." + this.extension.toLowerCase())]
+  }
+  async _buildFileType(extension, options) {
+    const {root} = this
+    const { fileSystem, folderPath, filename, filePath, path, lodash } = root
+    const capitalized = lodash.capitalize(extension)
+    const buildKeyword = "build" + capitalized
+    const {outputFileNames} = this
+    for (let name of outputFileNames) {
+      try {
+        await fileSystem.writeProduct(path.join(folderPath, name), root.compileTo(capitalized))
+        root.log(`💾 Built ${name} from ${filename}`)
+      } catch (err) {
+        console.error(`Error while building '${filePath}' with extension '${extension}'`)
+        throw err
+      }
+    }
+  }
+
+abstractBuildOneCommandParser
+ // buildOne and buildTwo are just a dumb/temporary way to have CSVs/JSONs/TSVs build first. Will be merged at some point.
+ extends abstractBuildCommandParser
+ javascript
+  async buildOne(options) { await this._buildFileType(this.extension, options) }
+
+abstractBuildTwoCommandParser
+ extends abstractBuildCommandParser
+ javascript
+  async buildTwo(options) {
+    await this._buildFileType(this.extension, options)
+  }
+
+scrollFileAddressParser
+ catchAllAtomType filePathAtom
+ catchAllParser scrollFileAddressParser
+
+abstractInlineFileParser
+ extends abstractScrollParser
+ catchAllAtomType filePathAtom
+ catchAllParser scrollFileAddressParser
+ string joinChar ;\n\n
+ string htmlTag script
+ javascript
+  get files() {
+    const inline = this.atoms.slice(1)
+    const children = this.map(particle => particle.cue)
+    return inline.concat(children)
+  }
+  get contents() {
+    return this.files.map(filename => this.root.readFile(filename)).join(this.joinChar)
+  }
+  buildHtml() {
+   return `<${this.htmlTag}>/* ${this.files.join(" ")} */\n${this.contents}</${this.htmlTag}>`
+  }
+
 
 commentLineParser
  catchAllAtomType commentAtom
@@ -308,21 +1095,18 @@ abstractCommentParser
  atoms commentAtom
  extends abstractScrollParser
  baseParser blobParser
- javascript
-  compile() {
-   return ``
-  }
+ string bindTo next
  catchAllParser commentLineParser
 
 commentParser
  popularity 0.000193
  extends abstractCommentParser
- cruxFromId
+ cueFromId
 
 slashCommentParser
  popularity 0.005643
- extends commentParser
- crux //
+ extends abstractCommentParser
+ cue //
  boolean isPopular true
  description A comment. Prints nothing.
 
@@ -332,7 +1116,7 @@ blankLineParser
  atoms blankAtom
  boolean isPopular true
  javascript
-  compile() {
+  buildHtml() {
    return this.parent.clearSectionStack()
   }
  pattern ^$
@@ -345,48 +1129,72 @@ measureNameAtom
 
 buildMeasuresParser
  popularity 0.000024
- cruxFromId
- description Write measures to csv+ files.
+ cueFromId
+ description Compile measures to delimited files.
  extends abstractBuildCommandParser
  sortByParser
-  cruxFromId
-  atoms cueAtom anyAtom
+  cueFromId
+  atoms cueAtom columnNameAtom
+ javascript
+  async buildOne() {
+    const {root} = this
+    const { fileSystem, folderPath, filename, path, permalink, measures } = root
+    const files = this.getAtomsFrom(1)
+    if (!files.length) files.push(permalink.replace(".html", ".csv"))
+    const sortBy = this.get("sortBy")
+    for (let link of files) {
+      await fileSystem.writeProduct(path.join(folderPath, link), root.compileMeasures(link, sortBy))
+      root.log(`💾 Built ${measures.length} measures in ${filename} to ${link}`)
+    }
+  }
 
-// The main measure parser. All measures should extend from this.
 abstractMeasureParser
  atoms measureNameAtom
- cruxFromId
+ description Base parser all measures extend.
+ cueFromId
  boolean isMeasure true
  float sortIndex 1.9
  boolean isComputed false
  string typeForWebForms text
  extends abstractScrollParser
  javascript
-  compileEmbeddedVersion() {
-   return ""
-  }
-  compile() {
-   return ""
-  }
   get measureValue() {
     return this.content ?? ""
   }
   get measureName() {
-    return this.getFirstAtomPath().replace(/ /g, "_")
+    return this.getCuePath().replace(/ /g, "_")
   }
 
 // String Measures
 abstractAtomMeasureParser
- description A measure that contains a single atom.
+ description Contains a single word.
  atoms measureNameAtom atomAtom
+ example
+  nicknameParser
+   extends abstractAtomMeasureParser
+  id Breck
+  nickname breck
  extends abstractMeasureParser
 
 abstractStringMeasureParser
+ description General text data with no specific format.
  catchAllAtomType stringAtom
+ example
+  titleParser
+   extends abstractStringMeasureParser
+  id Breck
+  title I build languages for scientists of all ages
  extends abstractMeasureParser
 
 abstractTextareaMeasureParser
  string typeForWebForms textarea
+ example
+  bioParser
+   extends abstractTextareaMeasureParser
+  id Breck
+  bio
+   I build languages for scientists of all ages
+ description Long-form text content with preserved line breaks.
  extends abstractMeasureParser
  baseParser blobParser
  javascript
@@ -395,32 +1203,49 @@ abstractTextareaMeasureParser
   }
 
 abstractEmailMeasureParser
+ description Email address.
+ example
+  emailParser
+   extends abstractEmailMeasureParser
+  id Breck
+  email breck7@gmail.com
  string typeForWebForms email
  atoms measureNameAtom emailAddressAtom
  extends abstractAtomMeasureParser
 
 // URL Parsers
 abstractUrlMeasureParser
+ description A single url.
+ example
+  homepageParser
+   extends abstractUrlMeasureParser
+  id Breck
+  homepage https://breckyunits.com
  string typeForWebForms url
  atoms measureNameAtom urlAtom
  extends abstractAtomMeasureParser
 
+
 // Required ID measure which denotes a concept
 abstractIdParser
- crux id
+ cue id
  description What is the ID of this concept?
  extends abstractStringMeasureParser
+ example
+  idParser
+   extends abstractIdParser
+  id breck
  float sortIndex 1
  boolean isMeasureRequired true
  boolean isConceptDelimiter true
  javascript
   getErrors() {
     const errors = super.getErrors()
-    let requiredMeasureNames = this.parent.file.measures.filter(measure => measure.isMeasureRequired).map(measure => measure.Name).filter(name => name !== "id")
+    let requiredMeasureNames = this.root.measures.filter(measure => measure.isMeasureRequired).map(measure => measure.Name).filter(name => name !== "id")
     if (!requiredMeasureNames.length) return errors
     let next = this.next
-    while (requiredMeasureNames.length && next.firstAtom !== "id" && next.index !== 0) {
-      requiredMeasureNames = requiredMeasureNames.filter(i => i !== next.firstAtom)
+    while (requiredMeasureNames.length && next.cue !== "id" && next.index !== 0) {
+      requiredMeasureNames = requiredMeasureNames.filter(i => i !== next.cue)
       next = next.next
     }
     requiredMeasureNames.forEach(name =>
@@ -429,100 +1254,372 @@ abstractIdParser
     return errors
   }
 
+abstractIdMeasureParser
+ description Alias for abstractIdParser.
+ extends abstractIdParser
+
 // Numeric Measures
 abstractNumericMeasureParser
  string typeForWebForms number
+ description Base number type.
  extends abstractMeasureParser
  javascript
   get measureValue() {
     const {content} = this
     return content === undefined ? "" : parseFloat(content)
   }
-
-abstractIntegerMeasureParser
- atoms measureNameAtom integerAtom
+abstractNumberMeasureParser
+ description Alias to abstractNumericMeasureParser.
  extends abstractNumericMeasureParser
 
+abstractIntegerMeasureParser
+ description An integer.
+ example
+  ageParser
+   extends abstractIntegerMeasureParser
+  id Breck
+  age 40
+ atoms measureNameAtom integerAtom
+ extends abstractNumericMeasureParser
+ javascript
+  get measureValue() {
+    const {content} = this
+    return content === undefined ? "" : parseInt(content)
+  }
+abstractIntMeasureParser
+ description Alias to abstractIntegerMeasureParser.
+ extends abstractIntegerMeasureParser
+
 abstractFloatMeasureParser
+ description A float.
+ example
+  temperatureParser
+   extends abstractFloatMeasureParser
+  id Breck
+  temperature 31.8
  atoms measureNameAtom floatAtom
  extends abstractNumericMeasureParser
 
 abstractPercentageMeasureParser
+ description A percentage.
  atoms measureNameAtom percentAtom
  extends abstractNumericMeasureParser
+ example
+  ownershipParser
+   extends abstractPercentageMeasureParser
+  id Breck
+  ownership 31.8
  javascript
   get measureValue() {
     const {content} = this
     return content === undefined ? "" : parseFloat(content)
   }
 
+
 // Enum Measures
 abstractEnumMeasureParser
+ description A single enum.
  atoms measureNameAtom enumAtom
  extends abstractMeasureParser
+ example
+  favoriteHtmlTagParser
+   extends abstractEnumMeasureParser
+   atoms measureNameAtom htmlTagAtom
+  id Breck
+  favoriteHtmlTag 2020
 
 // Boolean Measures
 abstractBooleanMeasureParser
+ description A single boolean.
  atoms measureNameAtom booleanAtom
  extends abstractMeasureParser
+ example
+  hasBillOfRightsParser
+   extends abstractBooleanMeasureParser
+  id USA
+  hasBillOfRights true
  javascript
   get measureValue() {
     const {content} = this
     return content === undefined ? "" : content == "true"
+  }
+abstractBoolMeasureParser
+ description Alias to abstractBooleanMeasureParser.
+ extends abstractBooleanMeasureParser
+
+// Date and time measures
+abstractDateMeasureParser
+ description Year/month/day in ISO 8601, US, European formats.
+ atoms measureNameAtom dateAtom
+ extends abstractMeasureParser
+ string typeForWebForms date
+ javascript
+  get measureValue() {
+    const {content} = this
+    if (!content) return ""
+    const {dayjs} = this.root
+    try {
+      // First try parsing with dayjs
+      const parsed = dayjs(content)
+      if (parsed.isValid())
+        return parsed.format("YYYY-MM-DD")
+      // Try parsing other common formats
+      const formats = [
+        "MM/DD/YYYY",
+        "DD/MM/YYYY", 
+        "YYYY/MM/DD",
+        "MM-DD-YYYY",
+        "DD-MM-YYYY",
+        "YYYY-MM-DD",
+        "DD.MM.YYYY",
+        "YYYY.MM.DD"
+      ]
+      for (const format of formats) {
+        const attempt = dayjs(content, format)
+        if (attempt.isValid())
+          return attempt.format("YYYY-MM-DD")
+      }
+    } catch (err) {
+      console.error(err)
+      return ""
+    }
+    return ""
+  }
+  get valueAsTimestamp() {
+    const {measureValue} = this
+    return measureValue ? this.root.dayjs(measureValue).unix() : ""
   }
 
 
 importParser
  description Import a file.
  popularity 0.007524
- cruxFromId
- atoms preBuildCommandAtom
+ cueFromId
+ atoms parseTimeCommandAtom
  extends abstractScrollParser
  catchAllAtomType filePathAtom
- javascript
-  compile() {
-   return ""
-  }
+ int filenameAt 1
  example
   import header.scroll
+ javascript
+  get filename() {
+    return this.getAtom(this.filenameAt)
+  }
+  get fullpath() {
+    const {fileSystem, filePath} = this.root
+    return fileSystem.makeRelativePath(filePath, this.filename)
+  }
+  async wake() {
+    const {fullpath} = this
+    const {file} = this.root
+    if (!file.importsFiles)
+     file.importsFiles = new Set()
+    file.importsFiles.add(fullpath)
+    return await this._handleImport()
+  }
+  async _handleImport() {
+    const hasCircular = await this._hasCircularImports(this.root.filePath, this.fullpath)
+    if (hasCircular)
+      return await this._handleCircularImport(hasCircular)
+    const file = await this._getFile()
+    const particleCount = file.scrollProgram.length
+    if (!file.exists)
+      return await this._handleFileDoesNotExist()
+    const newParticle = new Particle(`imported ${this.fullpath}\n exists true\n original ${this.getLine()}\n particles ${particleCount}`)
+    if (this.has("moveToFooter"))
+      newParticle.particleAt(0).set("moveToFooter", "true")
+    await this.root.appendFromStream(newParticle.toString())
+    // Don't import importOnly lines
+    // todo: look at perf
+    const block = new Particle(file.scrollProgram.toString())
+    block.delete("importOnly")
+    await this.root.appendFromStream(block.toString())
+    this.destroy()
+  }
+  async _handleFileDoesNotExist() {
+    const newParticle = new Particle(`imported ${this.fullpath}\n exists false\n original ${this.getLine()}\n particles 0`)
+    await this.root.appendFromStream(newParticle.toString())
+    this.destroy()
+  }
+  async _handleCircularImport(hasCircular) {
+    const newParticle = new Particle(`imported ${this.fullpath}\n exists true\n original ${this.getLine()}\n particles 0\n circularImportError Circular import error: ${hasCircular}`)
+    await this.root.appendFromStream(newParticle.toString())
+    this.destroy()
+  }
+  async _hasCircularImports(importer, importee) {
+    // if a.scroll requires a.scroll
+    if (importer === importee)
+      return `${importee} imports itself`
+    const {fileSystem} = this.root
+    // Now check the files that the importee is importing
+    const importeeFile = await fileSystem.getFile(importee)
+    if (!importeeFile.importsFiles)
+      return false
+    if (importeeFile.importsFiles.has(importer))
+      return `${importee} imports ${importer}`
+    for (let importPath of importeeFile.importsFiles) {
+      // console.log(`Checking if ${importPath} imports ${importer}`)
+      if (await this._hasCircularImports(importPath, importer))
+        return `${importPath} and ${importer}`
+    }
+    return false
+  }
+  async _getFile() {
+    const {fileSystem, file} = this.root
+    const fileToImport = await fileSystem.getFile(this.fullpath)
+    await fileToImport.singlePassFuse()
+    return fileToImport
+  }
+
+scrollImportedParser
+ description Inserted at import pass.
+ boolean suggestInAutocomplete false
+ cue imported
+ atoms parseTimeCommandAtom
+ extends abstractScrollParser
+ baseParser blobParser
+ catchAllAtomType filePathAtom
+ javascript
+  async wake() {
+    this.checkForFooterMoves()
+  }
+  get dependencies() { return [this.atoms[1]]}
+  checkForFooterMoves() {
+    // If a particle was imported with the "moveToFooter" subparticle set, then that means we want
+    // to move those imported particles to the end of the document.
+    if (!this.has("moveToFooter"))
+      return
+    this.root.notifyOnReady(this)
+  }
+  onReady() {
+    // We move the imported particle along with the number of lines originally imported
+    // to the bottom of the document. Note: I have not looked into perf yet.
+    const particleCount = parseInt(this.get("particles"))
+    const index = this.index
+    const particles = this.root.slice(index, index + particleCount + 1)
+    const str = particles.map(part => part.toString()).join("\n")
+    this.root.appendBlocks(str)
+    particles.forEach(particle => particle.destroy())
+  }
+  getErrors() {
+    if (this.silenceErrors) return [] // todo: generalize this?
+    if (this.has("circularImportError"))
+      return [this.makeError(this.get("circularImportError"))]
+    if (this.get("exists") === "false" && this.previous.getLine() !== "// optional")
+      return [this.makeError(`File '${this.atoms[1]}' does not exist.`)]
+    return []
+  }
+
+importToFooterParser
+ description Import to bottom of file.
+ atoms parseTimeCommandAtom
+ cue moveToFooter
 
 quickImportParser
  popularity 0.007524
- description Import a Scroll or Parsers file.
- extends abstractScrollParser
+ description Import a Scroll file.
+ extends importParser
  boolean isPopular true
+ int filenameAt 0
+ inScope importToFooterParser abstractCommentParser
  atoms urlAtom
- pattern ^[^\s]+\.(scroll|parsers)$
- javascript
-  compile() {
-   return ""
-  }
+ pattern ^[^\s]+\.scroll$
  example
   header.scroll
+
+useParserPoolParser
+ cueFromId
+ description Load a cached parser pool.
+ extends abstractScrollParser
+ atoms cueAtom urlAtom
+ javascript
+  async wake() {
+    this.switchParserPool(this.filename)
+  }
+  get filename() { return this.atoms[1]}
+  get dependencies() { return [this.filename]}
+
+parsersImportParser
+ description Import a Parsers file.
+ extends quickImportParser
+ inScope abstractCommentParser
+ pattern ^[^\s]+\.parsers$
+ example
+  measures.parsers
+ javascript
+  async _handleImport() {
+    const file = await this._getFile()
+    if (!file.exists)
+      return await this._handleFileDoesNotExist()
+    // todo: cleanup
+    const newp = this.replaceWith(`useParserPool ${this.fullpath}`)
+    await newp[0].wake()
+  }
 
 importOnlyParser
  popularity 0.033569
  // This line will be not be imported into the importing file.
  description Don't build this file.
- cruxFromId
- atoms preBuildCommandAtom
+ cueFromId
+ atoms parseTimeCommandAtom
  extends abstractTopLevelSingleMetaParser
- javascript
-  compile() {
-   return ""
-  }
 
 abstractQuickIncludeParser
  popularity 0.007524
  extends abstractScrollParser
  atoms urlAtom
  javascript
+  get dependencies() { return [this.filename]}
   get filename() {
     return this.getAtom(0)
   }
 
 errorParser
  baseParser errorParser
+
+// todo: move out of here
+monacoEditorParser
+ cueFromId
+ extends abstractScrollParser
+ description A Monaco code editor.
+ baseParser blobParser
+ example
+  monacoEditor javascript
+   // Hello world
+ javascript
+  buildHtml() {
+   return `<div id="monacoContainer"></div>
+    <script defer src="../node_modules/monaco-editor/min/vs/loader.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    require.config({ paths: { vs: '../node_modules/monaco-editor/min/vs' } })
+    require(["vs/editor/editor.main"], function() {
+      monaco.editor.create(document.getElementById('monacoContainer'), {
+          value: \`${this.subparticlesToString().replace(/\n/g, "\\n")}\`,
+          language: '${this.getAtom(1)}',
+          minimap: {
+            enabled: false
+        },
+        scrollbar: {
+            vertical:"hidden",
+            horizontal: "hidden",
+            handleMouseWheel:false,
+        },
+        overviewRulerLanes: 0,
+        hideCursorInOverviewRuler: true,
+        overviewRulerBorder: false,
+        wordWrap: 'on',
+        //lineNumbers: 'off',
+      glyphMargin: false,
+      folding: false,
+      // Undocumented see https://github.com/Microsoft/vscode/issues/30795#issuecomment-410998882
+      lineDecorationsWidth: 10,
+      lineNumbersMinChars: 2
+        });
+      });
+      })
+    </script>`
+  }
 
 // Common Measures
 
@@ -550,7 +1647,7 @@ abstractYearMeasureParser
 
 abstractAnnualPopulationCountParser
  atoms yearAtom countAtom
- uniqueFirstAtom
+ uniqueCue
 abstractAnnualPopulationCountMapParser
  catchAllParser abstractAnnualPopulationCountParser
  description A map of counts, one per year.
@@ -826,10 +1923,10 @@ descriptionParser
  description What is a short description of this language?
 
 subDescriptionParser
- // todo fix columnName crux path issue.
+ // todo fix columnName cue path issue.
  extends descriptionParser
  description How is this language described here?
- crux description
+ cue description
 
 tiktoksParser
  extends abstractUrlsMeasureParser
@@ -1047,10 +2144,6 @@ gitRepoParser
  description What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?
  extends abstractGitRepoUrlMeasureParser
 
-specRepoParser
- description What is the URL of the official spec for the language project?
- extends abstractGitRepoUrlMeasureParser
-
 mainRepoParser
  boolean isComputed true
  extends abstractStringMeasureParser
@@ -1199,6 +2292,13 @@ hackerNewsDiscussionsParser
  description What are URLS to Hacker News posts discussing this language?
  string sourceDomain news.ycombinator.com
  float sortIndex 18
+
+hasSinglePassParserParser
+ extends abstractFeatureParser
+ description Is the language designed for a single pass parser requiring define before use (topological sorting)?
+ string title Single Pass Compiler
+ string pseudoExample x = 2; print x
+ string reference https://en.wikipedia.org/wiki/One-pass_compiler
 
 hasAbstractTypesParser
  extends abstractFeatureParser
@@ -1437,6 +2537,8 @@ hasDynamicSizedArraysParser
 hasDynamicTypingParser
  description Are types of variables fixed or can they change during runtime?
  extends abstractFeatureParser
+ string title Dynamic Typing
+ string reference https://en.wikipedia.org/wiki/Type_system#Dynamic_type_checking_and_runtime_type_information
 
 hasEnumsParser
  extends abstractFeatureParser
@@ -1603,7 +2705,7 @@ hasIfElsesParser
  extends abstractFeatureParser
 
 hasIfsParser
- description Does the language have "if" statements or expressoins?
+ description Does the language have "if" statements or expressions?
  extends abstractFeatureParser
 
 hasImplicitArgumentsParser
@@ -1837,6 +2939,12 @@ hasMultipleInheritanceParser
  string title Multiple Inheritance
  string pseudoExample extends parentWhichExtendsSomethingElse
  string reference https://en.wikipedia.org/wiki/Multiple_inheritance
+
+hasNamedArgumentsParser
+ extends abstractFeatureParser
+ description Does the language have named arguments / named parameters?
+ string title Named Arguments
+ string reference https://en.wikipedia.org/wiki/Named_parameter
 
 hasNamespacesParser
  extends abstractFeatureParser
@@ -2093,6 +3201,12 @@ hasStructsParser
  string pseudoExample struct pldbFile { int rank; char *title; };
  string reference https://en.wikipedia.org/wiki/Struct_(C_programming_language)
 
+hasStructuralTypingParser
+ extends abstractFeatureParser
+ description Does the language feature (significant) structural typing?
+ string title Structural Typing
+ string reference https://en.wikipedia.org/wiki/Structural_type_system
+
 hasSwitchParser
  extends abstractFeatureParser
  description Does the language have switch statements or expressions?
@@ -2165,6 +3279,12 @@ hasTypeAnnotationsParser
  description Does the language have a syntax for annotating the types of variables?
  string title Type Annotations
  string pseudoExample score: number
+
+hasTypeClassesParser
+ extends abstractFeatureParser
+ description Does the language have type classes?
+ string title Type Classes
+ string reference https://en.wikipedia.org/wiki/Type_class
 
 hasTypeInferenceParser
  extends abstractFeatureParser
@@ -2271,7 +3391,7 @@ hasZippersParser
 helloWorldCollectionParser
  description What is the name of this project in the Hello World Collection?
  extends abstractExampleParser
- cruxFromId
+ cueFromId
  atoms measureNameAtom
  catchAllAtomType stringAtom
  string sourceDomain helloworldcollection.de
@@ -2598,7 +3718,7 @@ abstractAnnualRankMapParser
  extends abstractHashMapMeasureParser
 annualRankParser
  atoms yearAtom integerAtom
- uniqueFirstAtom
+ uniqueCue
 
 // reddit
 // todo trim the trailing slash
@@ -2719,6 +3839,12 @@ repoStatsParser
  filesParser
   extends abstractCountMeasureParser
   description How many files in the repo?
+ mbParser
+  extends abstractCountMeasureParser
+  description How many MBs in .git/objects?
+ linesOfCodeParser
+  extends abstractCountMeasureParser
+  description How many lines of code?
 
 rijuReplParser
  extends abstractUrlMeasureParser
@@ -2755,6 +3881,15 @@ specParser
  description What is a URL to the official spec for this language?
  float sortIndex 1.22
 
+isoParser
+ extends specParser
+ description What is the link to ISO standard for this language or standard?
+ float sortIndex 2.2
+
+specRepoParser
+ description What is the URL of the official spec for the language project?
+ extends abstractGitRepoUrlMeasureParser
+
 stackOverflowSurveyParser
  float sortIndex 36
  extends abstractHashMapMeasureParser
@@ -2764,7 +3899,7 @@ stackOverflowSurveyParser
   description What are the survey results for a particular year?
   atoms yearAtom
   pattern \d+
-  uniqueFirstAtom
+  uniqueCue
   usersParser
    extends abstractPopulationCountMeasureParser
    description How many developers reported using this language?
@@ -2812,13 +3947,14 @@ twitterParser
   extends abstractPopulationCountMeasureParser
 
 tagAtom
- enum assembly pl barCodeFormat video audio hardwareDescriptionLanguage knowledgeBase binaryDataFormat contractLanguage timeFormat computingMachine xmlFormat yamlFormat jsonFormat compiler grammarLanguage dataValidationLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding arrayLang idl library editor cloud textDataFormat visual plzoo interpreter notation binaryExecutable dataNotation stylesheetLanguage schema bytecode vm filesystem standard linter packageManager framework webApi feature optimizingCompiler numeralSystem hashFunction database font distribution headerLang dataStructure musicalNotation textEncodingFormat equation wikiMarkup decompiler configFormat diffFormat unixApplication webBrowser browserEngine constructedLanguage dataVis dataFlow commandLineApp versionControlApplication staticSiteGenerator network microblogging lisp diagramLang chemistry physics biology mathematics weather simulation messagingProtocol shadingLanguage searchEngine cryptoProtocol cad spreadsheet
+ enum assembly pl barCodeFormat video audio hardwareDescriptionLanguage knowledgeBase binaryDataFormat contractLanguage timeFormat computingMachine xmlFormat yamlFormat jsonFormat compiler grammarLanguage dataValidationLanguage application ir isa queryLanguage protocol os esolang template textMarkup characterEncoding arrayLang geoCode idl library editor cloud textDataFormat visual plzoo interpreter notation binaryExecutable dataNotation stylesheetLanguage schema bytecode vm filesystem standard linter packageManager framework webApi feature optimizingCompiler numeralSystem hashFunction database font distribution headerLang dataStructure musicalNotation textEncodingFormat equation wikiMarkup decompiler configFormat diffFormat unixApplication webBrowser browserEngine constructedLanguage dataVis dataFlow commandLineApp versionControlApplication staticSiteGenerator network microblogging lisp diagramLang chemistry physics biology mathematics weather simulation messagingProtocol shadingLanguage searchEngine cryptoProtocol cad spreadsheet functional linker 3d
  paint constant.language
 tagsParser
  float sortIndex 1.2
  description Which category(ies) in PLDB's subjective ontology does this entity fit into?
  boolean isMeasureRequired true
  extends abstractEnumsMeasureParser
+ atoms measureNameAtom tagAtom
  catchAllAtomType tagAtom
 
 ubuntuPackageParser

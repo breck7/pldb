@@ -1,25 +1,26 @@
 MQL5
 ====
 
-MQL5 is a programming language created in 2005.
+MQL5 is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2005.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2005
 
-#705 on PLDB
-19 Years Old
-1k Repos
+#733 on PLDB
+21 Years Old
+1k <span title="MQL5 repos on GitHub.">Repos</span>
 
 MQL4 (MetaQuotes Language 4) and MQL5 (MetaQuotes Language 5) are integrated programming languages designed for developing trading robots, technical market indicators, scripts and function libraries within the MetaTrader software. The primary objective of MQL4 and MQL5 is automation of trading and facilitation of operational analysis. MQL4 and MQL5 comprises an extensive codebase source code library used for developing trading robots.. Read more on Wikipedia...
  https://de.wikipedia.org/wiki/MetaQuotes_Language_MQL4/MQL5 Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 1,273 MQL5 repos on GitHub
-- Early development of MQL5 happened in MetaQuotes Software
-- The  Google BigQuery Public Dataset GitHub snapshot shows 34 users using MQL5 in 38 repos on GitHub
-- Pygments supports syntax highlighting for MQL5
-- GitHub supports syntax highlighting for MQL5
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 1,273 MQL5 repos on <a href="https://github.com/search?q=language:MQL4">GitHub</a>
+- Early development of MQL5 happened in <a href="../lists/labs.html#q=MetaQuotes Software">MetaQuotes Software</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 34 users using MQL5 in 38 repos on <a href="https://api.github.com/search/repositories?q=language:MQL4">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/c_like.py">syntax highlighting</a> for MQL5
+- GitHub supports <a href="https://github.com/mqsoft/MQL5-sublime" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for MQL5
 - Read more about MQL5 on the web: 1.
  https://www.wikidata.org/wiki/Q11765028 1.
 
+```Example from <a href='https://github.com/mqsoft/MQL5-sublime'>Linguist</a>:
 //+------------------------------------------------------------------+
 //|                                                script-sample.mq5 |
 //|                                   Copyright 2016, Andrey Osorgin |
@@ -77,28 +78,30 @@ void OnStart()
   }
 //+------------------------------------------------------------------+
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -1,17 +1,17 @@
 Stackless Python
 ================
 
-Stackless Python is an interpreter created in 1998.
+Stackless Python is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22interpreter%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">interpreter</a> created in 1998.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221998%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1998
 
-#2322 on PLDB
-26 Years Old
+#2419 on PLDB
+28 Years Old
 
 Stackless Python, or Stackless, is a Python programming language interpreter, so named because it avoids depending on the C call stack for its own stack. In practice, Stackless Python uses the C stack, but the stack is cleared between function calls . The most prominent feature of Stackless is microthreads, which avoid much of the overhead associated with usual operating system threads. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Stackless_Python Read more on Wikipedia...
 
-- Tags: interpreter
-- Early development of Stackless Python happened in http://www.stackless.com/pipermail/stackless-checkins
-- See also: (6 related languages) C, Python, Linux, Erlang, Limbo, Go
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"interpreter"%5D%7D%5D%2C"logic"%3A"AND"%7D'>interpreter</a>
+- Early development of Stackless Python happened in <a href="../lists/labs.html#q=http://www.stackless.com/pipermail/stackless-checkins">http://www.stackless.com/pipermail/stackless-checkins</a>
+- See also: (6 related languages) <a href="c.html">C</a>, <a href="python.html">Python</a>, <a href="linux.html">Linux</a>, <a href="erlang.html">Erlang</a>, <a href="limbo.html">Limbo</a>, <a href="go.html">Go</a>
 
-View source
+Built with Scroll v178.2.3

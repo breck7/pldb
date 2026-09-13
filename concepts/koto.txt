@@ -1,0 +1,36 @@
+Koto
+====
+
+Koto is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2020 by Ian Hobson.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
+ https://pldb.io/concepts/../lists/creators.html#q=Ian%20Hobson Ian Hobson
+
+#895 on PLDB
+6 Years Old
+
+```Download source code:
+git clone https://github.com/koto-lang/koto
+```
+
+A lightweight scripting language for Rust applications.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Koto is developed on <a href="https://github.com/koto-lang/koto">GitHub</a> and has 723 stars
+- Koto is written in <a href="rust.html">Rust</a>, <a href="markdown.html">Markdown</a>, <a href="toml.html">TOML</a>, <a href="yaml.html">YAML</a>, <a href="javascript.html">JavaScript</a>, <a href="json.html">JSON</a>, <a href="css.html">CSS</a>, <a href="html.html">HTML</a>, <a href="svg.html">SVG</a>
+
+```Example from the web:
+# Fizz buzz in Koto
+# https://en.wikipedia.org/wiki/Fizz_buzz
+
+fizz_buzz = |n|
+  match n % 3, n % 5
+    0, 0 then &#39;Fizz Buzz&#39;
+    0, _ then &#39;Fizz&#39;
+    _, 0 then &#39;Buzz&#39;
+    else &#39;{n}&#39;
+
+for i in 1..=25
+  print fizz_buzz i
+```
+
+Built with Scroll v178.2.3

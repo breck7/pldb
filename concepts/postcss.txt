@@ -1,30 +1,35 @@
 PostCSS
 =======
 
-PostCSS is an open source text markup language created in 2013 by Andrey Sitnik.
+PostCSS is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2013 by Andrey Sitnik.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2013
  https://pldb.io/concepts/../lists/creators.html#q=Andrey%20Sitnik Andrey Sitnik
 
-#135 on PLDB
-11 Years Old
-0 Repos
+#144 on PLDB
+13 Years Old
+0 <span title="PostCSS repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/postcss/postcss
+```
 
 Transforming styles with JS plugins
 
-- Tags: text markup language
-- PostCSS is developed on GitHub and has 28,357 stars
-- There are at least 0 PostCSS repos on GitHub
-- Early development of PostCSS happened in https://github.com/postcss
-- PostCSS is written in TypeScript, JavaScript, Markdown, YAML, JSON
-- GitHub supports syntax highlighting for PostCSS
-- postcss.org was registered in 2015
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- PostCSS is developed on <a href="https://github.com/postcss/postcss">GitHub</a> and has 28,357 stars
+- There are at least 0 PostCSS repos on <a href="https://github.com/search?q=language:PostCSS">GitHub</a>
+- Early development of PostCSS happened in <a href="../lists/labs.html#q=https://github.com/postcss">https://github.com/postcss</a>
+- PostCSS is written in <a href="typescript.html">TypeScript</a>, <a href="javascript.html">JavaScript</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="json.html">JSON</a>
+- GitHub supports <a href="https://github.com/hudochenkov/Syntax-highlighting-for-PostCSS" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for PostCSS
+- <a href="https://postcss.org/">postcss.org</a> was registered in 2015
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/p/PostCSS.pcss'>hello-world</a>:
 body::before {
     content: &quot;Hello World&quot;;
 }
+```
 
+```Example from <a href='https://github.com/hudochenkov/Syntax-highlighting-for-PostCSS'>Linguist</a>:
 @define-mixin size $size {
   width: $size;
 }
@@ -38,21 +43,22 @@ $big: 100px;
     @mixin size $big;
   }
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -60,7 +66,7 @@ row
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -68,8 +74,8 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -7,7 +7,7 @@ printTitle Operator Overloading
 <a class="trueBaseThemePreviousItem" href="hasOctals.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasOperators.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -39,6 +39,36 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3
  IntList x = ...
  foo(x[1]);
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/wa.html">Wa-lang</a>
+  #wa:operator + MyInt_add
+  type MyInt :struct {
+      V: int
+  }
+  
+  func MyInt_add(x, y: MyInt) =&gt; int {
+      return x.V + y.V
+  }
+  func main {
+      x1 := MyInt{V: 100}
+      x2 := MyInt{V: 42}
+      println(x1 + x2)
+  }
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/moonbit.html">MoonBit</a>
+ struct T {
+   x:Int
+ } derive(Show)
+ 
+ fn op_add(self: T, other: T) -&gt; T {
+   { x: self.x + other.x }
+ }
+ 
+ fn main {
+   let a = { x:0, }
+   let b = { x:2, }
+   println(a + b)
+ }
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/wolfram.html">Wolfram Language</a>
  f[x_Integer] := x^2;
  f[x_String] := &quot;not a number&quot;;
@@ -50,11 +80,11 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.htm
 
 ***
 
-* Languages *with* Operator Overloading include <a href="../concepts/python.html">Python</a>, <a href="../concepts/cpp.html">C++</a>, <a href="../concepts/perl.html">Perl</a>, <a href="../concepts/ruby.html">Ruby</a>, <a href="../concepts/php.html">PHP</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/r.html">R</a>, <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/swift.html">Swift</a>, <a href="../concepts/scala.html">Scala</a>, <a href="../concepts/lua.html">Lua</a>, <a href="../concepts/matlab.html">MATLAB</a>, <a href="../concepts/kotlin.html">Kotlin</a>, <a href="../concepts/haskell.html">Haskell</a>, <a href="../concepts/clojure.html">Clojure</a>, <a href="../concepts/dart.html">Dart</a>, <a href="../concepts/ada.html">Ada</a>, <a href="../concepts/d.html">D</a>, <a href="../concepts/groovy.html">Groovy</a>, <a href="../concepts/f-sharp.html">F#</a>, <a href="../concepts/smalltalk.html">Smalltalk</a>, <a href="../concepts/visual-basic.net.html">Visual Basic .NET</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/eiffel.html">Eiffel</a>, <a href="../concepts/wolfram.html">Wolfram Language</a>, <a href="../concepts/ceylon.html">Ceylon</a>, <a href="../concepts/raku.html">Raku</a>, <a href="../concepts/io.html">Io</a>, <a href="../concepts/object-pascal.html">Object Pascal</a>, <a href="../concepts/seed7.html">Seed7</a>, <a href="../concepts/freebasic.html">FreeBASIC</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/free-pascal.html">Free Pascal</a>
+* Languages *with* Operator Overloading include <a href="../concepts/python.html">Python</a>, <a href="../concepts/cpp.html">C++</a>, <a href="../concepts/perl.html">Perl</a>, <a href="../concepts/ruby.html">Ruby</a>, <a href="../concepts/php.html">PHP</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/r.html">R</a>, <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/swift.html">Swift</a>, <a href="../concepts/matlab.html">MATLAB</a>, <a href="../concepts/scala.html">Scala</a>, <a href="../concepts/lua.html">Lua</a>, <a href="../concepts/kotlin.html">Kotlin</a>, <a href="../concepts/haskell.html">Haskell</a>, <a href="../concepts/clojure.html">Clojure</a>, <a href="../concepts/dart.html">Dart</a>, <a href="../concepts/ada.html">Ada</a>, <a href="../concepts/d.html">D</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/groovy.html">Groovy</a>, <a href="../concepts/f-sharp.html">F#</a>, <a href="../concepts/smalltalk.html">Smalltalk</a>, <a href="../concepts/visual-basic.net.html">Visual Basic .NET</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/eiffel.html">Eiffel</a>, <a href="../concepts/wa.html">Wa-lang</a>, <a href="../concepts/moonbit.html">MoonBit</a>, <a href="../concepts/wolfram.html">Wolfram Language</a>, <a href="../concepts/ceylon.html">Ceylon</a>, <a href="../concepts/raku.html">Raku</a>, <a href="../concepts/io.html">Io</a>, <a href="../concepts/object-pascal.html">Object Pascal</a>, <a href="../concepts/seed7.html">Seed7</a>, <a href="../concepts/freebasic.html">FreeBASIC</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/free-pascal.html">Free Pascal</a>
 
 ***
 
-* Languages *without* Operator Overloading include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/go.html">Go</a>, <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/objective-c.html">Objective-C</a>, <a href="../concepts/visual-basic.html">Visual Basic</a>, <a href="../concepts/pascal.html">Pascal</a>, <a href="../concepts/basic.html">BASIC</a>, <a href="../concepts/lil.html">Lil</a>, <a href="../concepts/modula-2.html">Modula-2</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/veryl.html">Veryl</a>, <a href="../concepts/jule.html">Jule</a>
+* Languages *without* Operator Overloading include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/go.html">Go</a>, <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/objective-c.html">Objective-C</a>, <a href="../concepts/visual-basic.html">Visual Basic</a>, <a href="../concepts/pascal.html">Pascal</a>, <a href="../concepts/basic.html">BASIC</a>, <a href="../concepts/modula-2.html">Modula-2</a>, <a href="../concepts/lil.html">Lil</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/veryl.html">Veryl</a>, <a href="../concepts/jule.html">Jule</a>
 
 ***
 

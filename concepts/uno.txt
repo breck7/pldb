@@ -1,27 +1,30 @@
 Uno
 ===
 
-Uno is an open source programming language created in 2002.
+Uno is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2002.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222002%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2002
 
-#799 on PLDB
-22 Years Old
-232 Repos
+#826 on PLDB
+24 Years Old
+232 <span title="Uno repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/fuse-open/uno
+```
 
 The Uno langauge is a dialect of C#, designed for cross-compilation to C++ and other languages. Uno does not require the .NET Framework, but has instead a more lightweight library called UnoCore. The syntax of Uno is more or less identical to C#, with deviations documented here.
 
-- Tags: programming language
-- Uno is developed on GitHub and has 89 stars
-- There are at least 232 Uno repos on GitHub
-- Uno is written in C#, XML, Java, C++, Bourne shell, Objective C++, Markdown, JSON, JavaScript, Python, Gradle, CMake, XAML, Bash, YAML, Make, Swift, TypeScript
-- The  Google BigQuery Public Dataset GitHub snapshot shows 24 users using Uno in 37 repos on GitHub
-- GitHub supports syntax highlighting for Uno
-- fuseopen.com was registered in 2017
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Uno is developed on <a href="https://github.com/fuse-open/uno">GitHub</a> and has 89 stars
+- There are at least 232 Uno repos on <a href="https://github.com/search?q=language:Uno">GitHub</a>
+- Uno is written in <a href="csharp.html">C#</a>, <a href="xml.html">XML</a>, <a href="java.html">Java</a>, <a href="cpp.html">C++</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="objective-cpp.html">Objective C++</a>, <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>, <a href="javascript.html">JavaScript</a>, <a href="python.html">Python</a>, <a href="gradle.html">Gradle</a>, <a href="cmake.html">CMake</a>, <a href="xaml.html">XAML</a>, <a href="bash.html">Bash</a>, <a href="yaml.html">YAML</a>, <a href="make.html">Make</a>, <a href="swift.html">Swift</a>, <a href="typescript.html">TypeScript</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 24 users using Uno in 37 repos on <a href="https://api.github.com/search/repositories?q=language:Uno">GitHub</a>
+- GitHub supports <a href="https://github.com/atom/language-csharp" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Uno
+- <a href="https://fuseopen.com">fuseopen.com</a> was registered in 2017
 - Read more about Uno on the web: 1.
  https://fuseopen.com/docs/uno/uno-lang.html 1.
 
+```Example from <a href='https://github.com/atom/language-csharp'>Linguist</a>:
 using Uno;
 using Uno.Collections;
 using Uno.Graphics;
@@ -176,5 +179,6 @@ namespace PONG2D
 
 	}
 }
+```
 
-View source
+Built with Scroll v178.2.3

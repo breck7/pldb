@@ -1,23 +1,26 @@
 JSFuck
 ======
 
-JSFuck is an esoteric programming language created in 2012 by Martin Kleppe.
+JSFuck is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22esolang%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">esoteric programming language</a> created in 2012 by Martin Kleppe.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
  https://pldb.io/concepts/../lists/creators.html#q=Martin%20Kleppe Martin Kleppe
 
-#350 on PLDB
-12 Years Old
+#380 on PLDB
+14 Years Old
 
+```Download source code:
 git clone https://github.com/aemkei/jsfuck
+```
 
 JSFuck is an esoteric and educational programming style based on the atomic parts of JavaScript. It uses only six different characters to write and execute code.
 
-- Tags: esoteric programming language
-- JSFuck is developed on GitHub and has 8,070 stars
-- Early development of JSFuck happened in https://github.com/aemkei/jsfuck/issues
-- JSFuck is written in JavaScript, JSON, Markdown, HTML
-- jsfuck.com was registered in 2012
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"esolang"%5D%7D%5D%2C"logic"%3A"AND"%7D'>esoteric programming language</a>
+- JSFuck is developed on <a href="https://github.com/aemkei/jsfuck">GitHub</a> and has 8,070 stars
+- Early development of JSFuck happened in <a href="../lists/labs.html#q=https://github.com/aemkei/jsfuck/issues">https://github.com/aemkei/jsfuck/issues</a>
+- JSFuck is written in <a href="javascript.html">JavaScript</a>, <a href="json.html">JSON</a>, <a href="markdown.html">Markdown</a>, <a href="html.html">HTML</a>
+- <a href="http://www.jsfuck.com/">jsfuck.com</a> was registered in 2012
 
+```Example from <a href='https://riju.codes/jsf'>Riju</a>:
 [][(![]+[])[+[]]+(![]+[])[!![]+!![]]+(![]+[])[+!![]]+(!![]+[])[+[]]][([]+[][(![]
 +[])[+[]]+(![]+[])[!![]+!![]]+(![]+[])[+!![]]+(!![]+[])[+[]]])[!![]+!![]+!![]]+(
 !![]+[][(![]+[])[+[]]+(![]+[])[!![]+!![]]+(![]+[])[+!![]]+(!![]+[])[+[]]])[+!![]
@@ -151,5 +154,6 @@ JSFuck is an esoteric and educational programming style based on the atomic part
 ])[!![]+!![]]+(![]+[])[+!![]]+(!![]+[])[+[]]])[+!![]+[+[]]]+(![]+[])[!![]+!![]]+
 (!![]+[][(![]+[])[+[]]+(![]+[])[!![]+!![]]+(![]+[])[+!![]]+(!![]+[])[+[]]])[+!![
 ]+[+[]]]+(!![]+[])[+!![]]]()[+!![]+[!![]+!![]]])())
+```
 
-View source
+Built with Scroll v178.2.3

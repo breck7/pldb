@@ -1,27 +1,28 @@
 IGOR Pro
 ========
 
-IGOR Pro is a programming language created in 1993.
+IGOR Pro is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1993.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221993%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1993
 
-#594 on PLDB
-31 Years Old
-146 Repos
+#592 on PLDB
+33 Years Old
+146 <span title="IGOR Pro repos on GitHub.">Repos</span>
 
 IGOR Pro is a scientific data analysis software, numerical computing environment and programming language that runs on Windows or Mac operating systems. It is developed by WaveMetrics Inc., and was originally aimed at time series analysis, but has since then evolved and covers other applications such as curve fitting and image processing. It comes with a fully functional programming language and compiler, but many functions are also accessible through menus. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/IGOR_Pro Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 146 IGOR Pro repos on GitHub
-- Early development of IGOR Pro happened in WaveMetrics, Inc
-- The  Google BigQuery Public Dataset GitHub snapshot shows 48 users using IGOR Pro in 80 repos on GitHub
-- Pygments supports syntax highlighting for IGOR Pro
-- GitHub supports syntax highlighting for IGOR Pro
-- See also: (1 related languages) C
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 146 IGOR Pro repos on <a href="https://github.com/search?q=language:IGOR Pro">GitHub</a>
+- Early development of IGOR Pro happened in <a href="../lists/labs.html#q=WaveMetrics, Inc">WaveMetrics, Inc</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 48 users using IGOR Pro in 80 repos on <a href="https://api.github.com/search/repositories?q=language:IGOR Pro">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/igor.py">syntax highlighting</a> for IGOR Pro
+- GitHub supports <a href="https://github.com/byte-physics/language-igor" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for IGOR Pro
+- See also: (1 related languages) <a href="c.html">C</a>
 - Read more about IGOR Pro on the web: 1.
  https://groups.google.com/forum/#!search/igor-pro/comp.sys.mac.scitech/1QMC8N6AyLw/1Vvaa5rZPBwJ 1.
-- 1 PLDB concepts link to IGOR Pro: cloc
+- 1 PLDB concepts link to IGOR Pro: <a href="cloc.html">cloc</a>
 
+```Example from <a href='https://github.com/byte-physics/language-igor'>Linguist</a>:
 #pragma rtGlobals=3
 
 StrConstant myConstString=&quot;abcd&quot;
@@ -44,36 +45,40 @@ EndStructure
 	// conditional compilation
 #endif
 
-override ThreadSafe MultiThread static Proc Picture Prompt DoPrompt macro window function end Structure EndStructure EndMacro Menu SubMenu
+```
 
-Language features
+```IGOR Pro <a href="../lists/keywords.html#q=igor-pro">Keywords</a>
+override ThreadSafe MultiThread static Proc Picture Prompt DoPrompt macro window function end Structure EndStructure EndMacro Menu SubMenu
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

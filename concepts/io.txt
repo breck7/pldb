@@ -1,100 +1,108 @@
 Io
 ==
 
-Io is a programming language created in 2002 by Steve Dekorte.
+Io is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2002 by Steve Dekorte.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222002%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2002
  https://pldb.io/concepts/../lists/creators.html#q=Steve%20Dekorte Steve Dekorte
 
-#487 on PLDB
-22 Years Old
-2k Repos
+#505 on PLDB
+24 Years Old
+2k <span title="Io repos on GitHub.">Repos</span>
 
 Io is a pure object-oriented programming language inspired by Smalltalk, Self, Lua, Lisp, Act1, and NewtonScript. Io has a prototype-based object model similar to the ones in Self and NewtonScript, eliminating the distinction between instance and class. Like Smalltalk, everything is an object and it uses dynamic typing. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Io_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 2,062 Io repos on GitHub
-- Early development of Io happened in https://github.com/IoLanguage
-- The  Google BigQuery Public Dataset GitHub snapshot shows 594 users using Io in 624 repos on GitHub
-- Explore Io snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 2,062 Io repos on <a href="https://github.com/search?q=language:Io">GitHub</a>
+- Early development of Io happened in <a href="../lists/labs.html#q=https://github.com/IoLanguage">https://github.com/IoLanguage</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 594 users using Io in 624 repos on <a href="https://api.github.com/search/repositories?q=language:Io">GitHub</a>
+- Explore Io snippets on <a href="http://www.rosettacode.org/wiki/Category:Io">Rosetta Code</a>
 - Io on HOPL
  https://hopl.info/showlanguage.prx?exp=7112 Io on HOPL
-- Pygments supports syntax highlighting for Io
-- GitHub supports syntax highlighting for Io
-- iolanguage.org was registered in 2009
-- See also: (7 related languages) Smalltalk, NewtonScript, Self, Lua, Lisp, Python, Ioke
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/iolang.py">syntax highlighting</a> for Io
+- GitHub supports <a href="https://github.com/textmate/io.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Io
+- <a href="https://iolanguage.org/">iolanguage.org</a> was registered in 2009
+- See also: (7 related languages) <a href="smalltalk.html">Smalltalk</a>, <a href="newtonscript.html">NewtonScript</a>, <a href="self.html">Self</a>, <a href="lua.html">Lua</a>, <a href="lisp.html">Lisp</a>, <a href="python.html">Python</a>, <a href="ioke.html">Ioke</a>
 - Read more about Io on the web: 1.
  https://news.ycombinator.com/item?id=8867575 1.
 
+```Example from <a href='https://riju.codes/io'>Riju</a>:
 &quot;Hello, world!&quot; println
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/i/Io.Io'>hello-world</a>:
 &quot;Hello World\n&quot; print
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Io_(programming_language)'>Wikipedia</a>:
 factorial := method(n,
     if(n == 0, return 1)
     res := 1
     Range 1 to(n) foreach(i, res = res * i)
 )
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // \d+
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // (\d+\.?\d*|\d*\.\d+)([eE][+-]?[0-9]+)?
  Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token :=
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

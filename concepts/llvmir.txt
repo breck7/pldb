@@ -1,34 +1,39 @@
 LLVM IR
 =======
 
-LLVM IR is an open source intermediate representation language created in 2003.
+LLVM IR is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22ir%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">intermediate representation language</a> created in 2003 by Chris Lattner.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2003
+ https://pldb.io/concepts/../lists/creators.html#q=Chris%20Lattner Chris Lattner
 
 #71 on PLDB
-21 Years Old
-1k Repos
+23 Years Old
+1k <span title="LLVM IR repos on GitHub.">Repos</span>
 
 The LLVM compiler infrastructure project is a "collection of modular and reusable compiler and toolchain technologies" used to develop compiler front ends and back ends. LLVM is written in C++ and is designed for compile-time, link-time, run-time, and "idle-time" optimization of programs written in arbitrary programming languages. Originally implemented for C and C++, the language-agnostic design of LLVM has since spawned a wide variety of front ends: languages with compilers that use LLVM include ActionScript, Ada, C#, Common Lisp, Crystal, D, Delphi, Fortran, OpenGL Shading Language, Halide, Haskell, Java bytecode, Julia, Lua, Objective-C, Pony, Python, R, Ruby, Rust, CUDA, Scala, Swift, and Xojo. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/LLVM Read more on Wikipedia...
 
-- Tags: intermediate representation language
-- There are at least 1,351 LLVM IR repos on GitHub
-- Early development of LLVM IR happened in https://github.com/llvm
-- The  Google BigQuery Public Dataset GitHub snapshot shows 1k users using LLVM IR in 1k repos on GitHub
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"ir"%5D%7D%5D%2C"logic"%3A"AND"%7D'>intermediate representation language</a>
+- There are at least 1,351 LLVM IR repos on <a href="https://github.com/search?q=language:LLVM">GitHub</a>
+- Early development of LLVM IR happened in <a href="../lists/labs.html#q=https://github.com/llvm">https://github.com/llvm</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 1k users using LLVM IR in 1k repos on <a href="https://api.github.com/search/repositories?q=language:LLVM">GitHub</a>
 - LLVM IR Ubuntu package
  https://packages.ubuntu.com/jammy/llvm LLVM IR Ubuntu package
-- Pygments supports syntax highlighting for LLVM IR
-- LLVM IR appears in the Quine Relay project
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/asm.py">syntax highlighting</a> for LLVM IR
+- LLVM IR appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
 - Events page for LLVM IR
  https://discourse.llvm.org/t/llvm-community-events-calendar/63237 Events page for LLVM IR
-- See also: (41 related languages) C, ActionScript, Ada, C#, Common Lisp, Crystal, D, Delphi, Fortran, GLSL, Haskell, Java Bytecode, Julia, Lua, Objective-C, Python, R, Ruby, Rust, CUDA, Scala, Swift, Xojo, iOS, Assembly language, Java, OpenGL, CIL, Standard ML, ARM, Qualcomm Hexagon, MIPS architecture, PTX, PowerPC, SPARC, X86, Extensible Linking Format, C--, Pure, OpenCL, ISBN
-- 23 PLDB concepts link to LLVM IR: Chapel, CIR, cloc, Emscripten, firrtl, FLEX, Halide, HHVM, invokator, Julia, Kotlin, neeilang, oopsilon, Pony, rhine, Rust MIR, Simit, sixten, souper, SIL, Swift, TensorFlow, Triton
+- See also: (41 related languages) <a href="c.html">C</a>, <a href="actionscript.html">ActionScript</a>, <a href="ada.html">Ada</a>, <a href="csharp.html">C#</a>, <a href="common-lisp.html">Common Lisp</a>, <a href="crystal.html">Crystal</a>, <a href="d.html">D</a>, <a href="delphi.html">Delphi</a>, <a href="fortran.html">Fortran</a>, <a href="glsl.html">GLSL</a>, <a href="haskell.html">Haskell</a>, <a href="java-bytecode.html">Java Bytecode</a>, <a href="julia.html">Julia</a>, <a href="lua.html">Lua</a>, <a href="objective-c.html">Objective-C</a>, <a href="python.html">Python</a>, <a href="r.html">R</a>, <a href="ruby.html">Ruby</a>, <a href="rust.html">Rust</a>, <a href="cuda.html">CUDA</a>, <a href="scala.html">Scala</a>, <a href="swift.html">Swift</a>, <a href="xojo.html">Xojo</a>, <a href="ios.html">iOS</a>, <a href="assembly-language.html">Assembly language</a>, <a href="java.html">Java</a>, <a href="opengl.html">OpenGL</a>, <a href="cil.html">CIL</a>, <a href="standard-ml.html">Standard ML</a>, <a href="arm.html">ARM</a>, <a href="hexagon.html">Qualcomm Hexagon</a>, <a href="mips.html">MIPS architecture</a>, <a href="ptx.html">PTX</a>, <a href="powerpc.html">PowerPC</a>, <a href="sparc.html">SPARC</a>, <a href="x86-isa.html">X86</a>, <a href="elf.html">Extensible Linking Format</a>, <a href="c--.html">C--</a>, <a href="pure.html">Pure</a>, <a href="opencl.html">OpenCL</a>, <a href="isbn.html">ISBN</a>
+- 30 PLDB concepts link to LLVM IR: <a href="cir.html">CIR</a>, <a href="cloc.html">cloc</a>, <a href="cobrust.html">Cobrust</a>, <a href="dlvm.html">dlvm</a>, <a href="emscripten.html">Emscripten</a>, <a href="firrtl.html">firrtl</a>, <a href="flex.html">FLEX</a>, <a href="halide.html">Halide</a>, <a href="hhvm.html">HHVM</a>, <a href="invokator.html">invokator</a>, <a href="julia.html">Julia</a>, <a href="kotlin.html">Kotlin</a>, <a href="lateralus.html">Lateralus</a>, <a href="lfortran.html">LFortran</a>, <a href="mlir.html">MLIR</a>, <a href="mojo.html">Mojo</a>, <a href="neeilang.html">neeilang</a>, <a href="oopsilon.html">oopsilon</a>, <a href="pony.html">Pony</a>, <a href="reko-decompiler.html">Reko</a>, <a href="rhine.html">rhine</a>, <a href="rust-mir.html">Rust MIR</a>, <a href="simit.html">Simit</a>, <a href="sixten.html">Sixten</a>, <a href="souper.html">souper</a>, <a href="swift-il.html">Swift SIL</a>, <a href="swift.html">Swift</a>, <a href="tensorflow.html">TensorFlow</a>, <a href="triton.html">Triton</a>, <a href="xla.html">XLA</a>
 
+```Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
 define i32 @square(i32) local_unnamed_addr #0 {
     %2 = mul nsw i32 %0, %0
     ret i32 %2
 }
 
+```
+
+```Example from <a href='https://riju.codes/llvm'>Riju</a>:
 @.str = private unnamed_addr constant [13 x i8] c&quot;Hello, world!&quot;
 
 declare i32 @puts(i8* nocapture) nounwind
@@ -39,6 +44,9 @@ define i32 @main() {
     ret i32 0
 }
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/l/LLVM.ll'>hello-world</a>:
 target datalayout = &quot;e-p:32:32:32-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:32:64-f32:32:32-f64:32:64-v64:64:64-v128:128:128-a0:0:64-f80:128:128&quot;
 @.str = internal constant [12 x i8] c&quot;Hello World\00&quot;
 
@@ -50,6 +58,9 @@ define i32 @main(...) {
 	ret i32 0
 }
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/LLVM'>Wikipedia</a>:
 @.str = internal constant [14 x i8] c&quot;hello, world\0A\00&quot;
 
 declare i32 @printf(i8*, ...)
@@ -60,29 +71,30 @@ entry:
     %tmp2 = call i32 (i8*, ...) @printf( i8* %tmp1 ) nounwind
     ret i32 0
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token ;
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

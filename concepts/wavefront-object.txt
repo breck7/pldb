@@ -1,23 +1,25 @@
-Wavefront Object
-================
+Wavefront OBJ format
+====================
 
-Wavefront Object is an application created in 1988.
+Wavefront OBJ format is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textDataFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text data format</a> created in 1988.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221988%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1988
 
-#1427 on PLDB
-36 Years Old
-331k Repos
+#896 on PLDB
+38 Years Old
+331k <span title="Wavefront OBJ format repos on GitHub.">Repos</span>
 
 OBJ (or .OBJ) is a geometry definition file format first developed by Wavefront Technologies for its Advanced Visualizer animation package. The file format is open and has been adopted by other 3D graphics application vendors. The OBJ file format is a simple data-format that represents 3D geometry alone — namely, the position of each vertex, the UV position of each texture coordinate vertex, vertex normals, and the faces that make each polygon defined as a list of vertices, and texture vertices. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Wavefront_.obj_file Read more on Wikipedia...
 
-- Tags: application
-- There are at least 331,144 Wavefront Object repos on GitHub
-- GitHub supports syntax highlighting for Wavefront Object
-- See also: (1 related languages) ASCII
-- Read more about Wavefront Object on the web: 1.
- https://scholar.google.com/scholar?q=Wavefront+file+formats&hl=en&as_sdt=0%2C5&as_ylo=1980&as_yhi=1992 1.
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textDataFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>textDataFormat</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"3d"%5D%7D%5D%2C"logic"%3A"AND"%7D'>3d</a>
+- There are at least 331,144 Wavefront OBJ format repos on <a href="https://github.com/search?q=language:Wavefront Object">GitHub</a>
+- GitHub supports <a href="https://github.com/Alhadis/language-wavefront" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Wavefront OBJ format
+- See also: (1 related languages) <a href="ascii.html">ASCII</a>
+- Read more about Wavefront OBJ format on the web: 1. 2.
+ https://www.loc.gov/preservation/digital/formats/fdd/fdd000507.shtml 1.
+ https://scholar.google.com/scholar?q=Wavefront+file+formats&hl=en&as_sdt=0%2C5&as_ylo=1980&as_yhi=1992 2.
 
+```Example from <a href='https://github.com/Alhadis/language-wavefront'>Linguist</a>:
 cstype bmatrix
 deg 3 3
 step 3 3
@@ -82,6 +84,9 @@ sp 4
 con 1 2.0 2.0 1 2 4.0 3.0 1
 end
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Wavefront_.obj_file'>Wikipedia</a>:
 Pr/map_Pr     # roughness
 Pm/map_Pm     # metallic
 Ps/map_Ps     # sheen
@@ -91,5 +96,6 @@ Ke/map_Ke     # emissive
 aniso         # anisotropy
 anisor        # anisotropy rotation
 norm          # normal map, same format as &quot;bump&quot; parameter
+```
 
-View source
+Built with Scroll v178.2.3

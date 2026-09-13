@@ -1,24 +1,25 @@
 BCPL
 ====
 
-BCPL, aka Basic Combined Programming Language, is a programming language created in 1966 by Martin Richards.
+BCPL, aka Basic Combined Programming Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1966 by Martin Richards.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221966%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1966
  https://pldb.io/concepts/../lists/creators.html#q=Martin%20Richards Martin Richards
 
-#393 on PLDB
-58 Years Old
+#411 on PLDB
+60 Years Old
 
 BCPL ("Basic Combined Programming Language"; or 'Before C Programming Language' (a common humorous backronym) ) is a procedural, imperative, and structured computer programming language. Originally intended for writing compilers for other languages, BCPL is no longer in common use. However, its influence is still felt because a stripped down and syntactically changed version of BCPL, called B, was the language on which the C programming language was based. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/BCPL Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of BCPL happened in University of Cambridge
-- Explore BCPL snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of BCPL happened in <a href="../lists/labs.html#q=University of Cambridge">University of Cambridge</a>
+- Explore BCPL snippets on <a href="http://www.rosettacode.org/wiki/Category:BCPL">Rosetta Code</a>
 - BCPL on HOPL
  https://hopl.info/showlanguage.prx?exp=374 BCPL on HOPL
-- BCPL appears in the TIOBE Index
-- See also: (8 related languages) CPL, B, C, Go, Pascal, Java, Fortran, CPL
+- BCPL appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- See also: (8 related languages) <a href="cpl.html">CPL</a>, <a href="b.html">B</a>, <a href="c.html">C</a>, <a href="go.html">Go</a>, <a href="pascal.html">Pascal</a>, <a href="java.html">Java</a>, <a href="fortran.html">Fortran</a>, <a href="cpl.html">CPL</a>
 
+```Example from the web:
 GET &quot;LIBHDR&quot;
 
 LET START() = VALOF $(
@@ -28,7 +29,9 @@ LET START() = VALOF $(
 $)
 
 AND FACT(N) = N = 0 -&gt; 1, N * FACT(N - 1)
+```
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/b/BCPL.bcl'>hello-world</a>:
 GET &quot;LIBHDR&quot;
 
 LET START() BE
@@ -36,6 +39,9 @@ $(
   WRITES(&quot;Hello World*N&quot;)
 $)
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Basic'>the Hello World Collection</a>:
 // Hello world in BCLP
 GET &quot;libhdr&quot;
 
@@ -44,6 +50,9 @@ $( writes(&quot;Hello world*N&quot;)
    RESULTIS 0
 $)
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/BCPL'>Wikipedia</a>:
 GET &quot;LIBHDR&quot;
 
 GLOBAL $(
@@ -73,41 +82,42 @@ LET START() = VALOF $(
 	$)
 	RESULTIS 0
 $)
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token :=
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token WRITES
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -1,49 +1,56 @@
 Slope
 =====
 
-Slope, aka SLOum's Programming Environment, is a programming language created in 2021 by Sloum.
- https://pldb.io/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2021
- https://pldb.io/../lists/creators.html#q=Sloum Sloum
+Slope, aka SLOum's Programming Environment, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2021 by Sloum.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2021
+ https://pldb.io/concepts/../lists/creators.html#q=Sloum Sloum
 
-#332 on PLDB
-3 Years Old
+#353 on PLDB
+5 Years Old
 
+```Download source code:
 git clone https://git.rawtext.club/slope-lang/slope
+```
 
 A small s-expression based programming language
 
-- Tags: programming language, lisp
-- Early development of Slope happened in https://git.rawtext.club/slope-lang
-- Scheme influenced the design of Slope
-- Slope is written in Go
-- There is a central package repository for Slope
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"lisp"%5D%7D%5D%2C"logic"%3A"AND"%7D'>lisp</a>
+- Early development of Slope happened in <a href="../lists/labs.html#q=https://git.rawtext.club/slope-lang">https://git.rawtext.club/slope-lang</a>
+- <a href="scheme.html">Scheme</a> influenced the design of Slope
+- Slope is written in <a href="go.html">Go</a>
+- There is a <a href="https://git.rawtext.club/slope-lang/packages">central package repository</a> for Slope
 
+```Example from the web:
 ; hello world
 (define greeting &quot;Hello&quot;)
 (display greeting &quot;, world!\n&quot;)
 
-define set! lambda cond case if for load load-mod load-mod-file usage macro eval apply and or begin begin0 exists coeval
+```
 
-Language features
+```Slope <a href="../lists/keywords.html#q=slope">Keywords</a>
+define set! lambda cond case if for load load-mod load-mod-file usage macro eval apply and or begin begin0 exists coeval
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (if positive? 1 -1)
  Token 
 row
  Feature Zero-based numbering
  FeatureLink ../features/hasZeroBasedNumbering.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (case my-num
     (5 (display "Five!"))
@@ -53,20 +60,20 @@ row
 row
  Feature Variadic Functions
  FeatureLink ../features/hasVariadicFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (lambda (...) (apply + ...))
  Token 
 row
  Feature Case Sensitivity
  FeatureLink ../features/isCaseSensitive.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (load-mod my-module)
   (load "examples/test.slo")
@@ -74,13 +81,13 @@ row
 row
  Feature Garbage Collection
  FeatureLink ../features/hasGarbageCollection.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "hello world"
   `hello	wold`
@@ -88,14 +95,14 @@ row
 row
  Feature canUseQuestionMarksAsPartOfIdentifier
  FeatureLink ../features/canUseQuestionMarksAsPartOfIdentifier.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (define yes? #t)
  Token 
 row
  Feature Namespaces
  FeatureLink ../features/hasNamespaces.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (ns-create 'hello-world)
   (ns-define
@@ -108,9 +115,69 @@ row
 row
  Feature hasBuiltInRegex
  FeatureLink ../features/hasBuiltInRegex.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (regex-match? `[0-9]+` "Hello 12345")
-  (regex-replace `Hello, (\w+)!importOnly
+  (regex-replace `Hello, (\w+)!$` "Hello, world!" "Goodbye, $1!")
+ Token 
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  ; I am a comment
+ Token 
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  ; I am a comment
+ Token ;
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  (define open? #t)
+ Token #t #f
+row
+ Feature Bitwise Operators
+ FeatureLink ../features/hasBitWiseOperators.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  (& 0xFF 0x1B)
+ Token 
+row
+ Feature Prefix Notation
+ FeatureLink ../features/hasPrefixNotation.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  (+ 1 2)
+ Token 
+row
+ Feature Macros
+ FeatureLink ../features/hasMacros.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Increment and decrement operators
+ FeatureLink ../features/hasIncrementAndDecrementOperators.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Gotos
+ FeatureLink ../features/hasGotos.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
 
-View source
+Built with Scroll v178.2.3

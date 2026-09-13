@@ -1,17 +1,17 @@
 IMAP
 ====
 
-IMAP, aka Internet Message Access Protocol, is a protocol created in 1986.
+IMAP, aka Internet Message Access Protocol, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22protocol%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">protocol</a> created in 1986.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1986
 
-#1318 on PLDB
-38 Years Old
+#1373 on PLDB
+40 Years Old
 
 In computing, the Internet Message Access Protocol (IMAP) is an Internet standard protocol used by email clients to retrieve email messages from a mail server over a TCP/IP connection. IMAP is defined by RFC 3501. IMAP was designed with the goal of permitting complete management of an email box by multiple email clients, therefore clients generally leave messages on the server until the user explicitly deletes them. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol Read more on Wikipedia...
 
-- Tags: protocol
-- Early development of IMAP happened in Standford
-- 1 PLDB concepts link to IMAP: JMAP
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"protocol"%5D%7D%5D%2C"logic"%3A"AND"%7D'>protocol</a>
+- Early development of IMAP happened in <a href="../lists/labs.html#q=Standford">Standford</a>
+- 1 PLDB concepts link to IMAP: <a href="jmap.html">JMAP</a>
 
-View source
+Built with Scroll v178.2.3

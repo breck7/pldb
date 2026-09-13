@@ -1,19 +1,20 @@
 Lite-C
 ======
 
-Lite-C is an open source programming language created in 2007.
+Lite-C is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2007.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2007
 
-#1411 on PLDB
-17 Years Old
+#1454 on PLDB
+19 Years Old
 
 Lite-C is a programming language for multimedia applications and personal computer games, using a syntax subset of the C language with some elements of the C++ language. Its main difference to C is the native implementation of multimedia and computer game related objects like sounds, images, movies, GUI elements, 2D and 3D models, collision detection and rigid body physics. Lite-C executables are compiled instead of interpreted. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Lite-C Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Lite-C happened in Conitec Datensysteme GmbH
-- See also: (2 related languages) C, OpenGL
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Lite-C happened in <a href="../lists/labs.html#q=Conitec Datensysteme GmbH">Conitec Datensysteme GmbH</a>
+- See also: (2 related languages) <a href="c.html">C</a>, <a href="opengl.html">OpenGL</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Lite-C'>Wikipedia</a>:
 void main()
 {
    level_load(&quot;&quot;); // open an empty level. you can use NULL instead of &quot;&quot;
@@ -23,29 +24,30 @@ void main()
       wait(1);  // wait one frame
    }
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

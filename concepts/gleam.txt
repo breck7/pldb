@@ -1,45 +1,49 @@
 Gleam
 =====
 
-Gleam is a programming language created in 2016 by Louis Pilfold.
+Gleam is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2016 by Louis Pilfold.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2016
  https://pldb.io/concepts/../lists/creators.html#q=Louis%20Pilfold Louis Pilfold
 
 #70 on PLDB
-8 Years Old
-104 Repos
+10 Years Old
+104 <span title="Gleam repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/lpil/gleam
+```
 
 Gleam is a statically typed functional programming language for building scalable concurrent systems. It compiles to Erlang and has straightforward interop with other BEAM languages such as Erlang, Elixir and LFE.
 
-- Tags: programming language
-- Gleam is developed on GitHub and has 16,825 stars
-- There are at least 104 Gleam repos on GitHub
-- Early development of Gleam happened in https://github.com/gleam-lang
-- Alpaca influenced the design of Gleam
-- Gleam compiles to Erlang or JavaScript
-- Gleam is written in Rust, Gleam, TOML, Markdown, JavaScript, Dockerfile, Erlang, Make, YAML, Bourne shell, CSS, HTML, Elixir, PowerShell, JSON, TypeScript
-- The  Google BigQuery Public Dataset GitHub snapshot shows 2 users using Gleam in 2 repos on GitHub
-- There are 2,600 members in the Gleam subreddit
-- Learn Gleam on exercism.
-- gleam.run was registered in 2019
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Gleam is developed on <a href="https://github.com/lpil/gleam">GitHub</a> and has 16,825 stars
+- There are at least 104 Gleam repos on <a href="https://github.com/search?q=language:Gleam">GitHub</a>
+- Early development of Gleam happened in <a href="../lists/labs.html#q=https://github.com/gleam-lang">https://github.com/gleam-lang</a>
+- <a href="alpaca.html">Alpaca</a> influenced the design of Gleam
+- Gleam compiles to <a href="erlang.html">Erlang</a> or <a href="javascript.html">JavaScript</a>
+- Gleam is written in <a href="rust.html">Rust</a>, <a href="gleam.html">Gleam</a>, <a href="toml.html">TOML</a>, <a href="markdown.html">Markdown</a>, <a href="javascript.html">JavaScript</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="erlang.html">Erlang</a>, <a href="make.html">Make</a>, <a href="yaml.html">YAML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="css.html">CSS</a>, <a href="html.html">HTML</a>, <a href="elixir.html">Elixir</a>, <a href="powershell.html">PowerShell</a>, <a href="json.html">JSON</a>, <a href="typescript.html">TypeScript</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 2 users using Gleam in 2 repos on <a href="https://api.github.com/search/repositories?q=language:Gleam">GitHub</a>
+- There are 2,600 members in the <a href="https://www.reddit.com/r/gleamlang/">Gleam subreddit</a>
+- Learn <a href="https://exercism.org/tracks/gleam">Gleam on exercism.</a>
+- <a href="https://gleam.run/">gleam.run</a> was registered in 2019
 - Read more about Gleam on the web: 1.
  https://news.ycombinator.com/item?id=22902462 1.
-- 3 PLDB concepts link to Gleam: cloc, EYG, Gleam
+- 3 PLDB concepts link to Gleam: <a href="cloc.html">cloc</a>, <a href="eyg.html">EYG</a>, <a href="gleam.html">Gleam</a>
 
+```Example from the web:
 import gleam/io
 pub fn main() {
   io.println(&quot;hello, friend!&quot;)
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Decorators
  FeatureLink ../features/hasDecorators.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   @deprecated("Use new_function instead")
   fn old_function() {
@@ -49,28 +53,28 @@ row
 row
  Feature Lists
  FeatureLink ../features/hasLists.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   let numbers = [1, 2, 3, 4, 5]
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   let is_awesome = True
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   let pi = 3.14159
  Token 
 row
  Feature Union Types
  FeatureLink ../features/hasUnionTypes.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   type IntOrFloat {
     AnInt(Int)
@@ -86,7 +90,7 @@ row
 row
  Feature Module Pattern
  FeatureLink ../features/hasModules.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // Gleam’s file is a module and named by the file name (and its directory path). Since there is no special syntax to create a module, there can be only one module in a file.
   // in file main.gleam
@@ -98,7 +102,7 @@ row
 row
  Feature Type Aliases
  FeatureLink ../features/hasTypeAliases.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   pub type Headers =
    List(#(String, String))
@@ -107,21 +111,21 @@ row
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   let age = 30
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // This is a line comment in Gleam
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // This is a single-line comment
   // Gleam doesn't have multi-line comments
@@ -132,21 +136,21 @@ row
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   io.println("Hello world")
  Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   import gleam/io
   import unix/cat as kitty
@@ -155,9 +159,9 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
   // Gleam uses curly braces for blocks, not indentation
  Token
 
-View source
+Built with Scroll v178.2.3

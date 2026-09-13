@@ -1,25 +1,26 @@
 Android
 =======
 
-Android is an open source operating system created in 2008 by Andy Rubin and Rich Miner and Nick Sears and Chris White.
+Android is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22os%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">operating system</a> created in 2008 by Andy Rubin and Rich Miner and Nick Sears and Chris White.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
  https://pldb.io/concepts/../lists/creators.html#q=Andy%20Rubin Andy Rubin
  https://pldb.io/concepts/../lists/creators.html#q=Rich%20Miner Rich Miner
  https://pldb.io/concepts/../lists/creators.html#q=Nick%20Sears Nick Sears
  https://pldb.io/concepts/../lists/creators.html#q=Chris%20White Chris White
 
-#158 on PLDB
-16 Years Old
+#166 on PLDB
+18 Years Old
 
 Android is a mobile operating system developed by Google, based on a modified version of the Linux kernel and other open source software and designed primarily for touchscreen mobile devices such as smartphones and tablets. In addition, Google has further developed Android TV for televisions, Android Auto for cars, and Wear OS for wrist watches, each with a specialized user interface. Variants of Android are also used on game consoles, digital cameras, PCs and other electronics. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Android_(operating_system) Read more on Wikipedia...
 
-- Tags: operating system
-- Early development of Android happened in Android Inc. and Google
-- Check out the 2,707 Android meetup groups on Meetup.com.
-- android.com was registered in 1997
-- See also: (11 related languages) Java, C, ARM, X86, Linux, Go, Kotlin, Eclipse, MIPS architecture, iOS, Java Bytecode
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"os"%5D%7D%5D%2C"logic"%3A"AND"%7D'>operating system</a>
+- Early development of Android happened in <a href="../lists/labs.html#q=Android Inc.">Android Inc.</a> and <a href="../lists/labs.html#q=Google">Google</a>
+- Check out the 2,707 <a href="https://www.meetup.com/topics/android-developers/">Android meetup groups</a> on Meetup.com.
+- <a href="https://android.com/">android.com</a> was registered in 1997
+- See also: (11 related languages) <a href="java.html">Java</a>, <a href="c.html">C</a>, <a href="arm.html">ARM</a>, <a href="x86-isa.html">X86</a>, <a href="linux.html">Linux</a>, <a href="go.html">Go</a>, <a href="kotlin.html">Kotlin</a>, <a href="eclipse-editor.html">Eclipse</a>, <a href="mips.html">MIPS architecture</a>, <a href="ios.html">iOS</a>, <a href="java-bytecode.html">Java Bytecode</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/a/Android.java'>hello-world</a>:
 package com.example.helloworld;
 
 import android.app.Activity;
@@ -37,4 +38,6 @@ public class HelloWorld extends Activity {
    }
 }
 
-View source
+```
+
+Built with Scroll v178.2.3

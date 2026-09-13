@@ -7,7 +7,7 @@ printTitle Enums
 <a class="trueBaseThemePreviousItem" href="hasDynamicTyping.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasEscapeCharacters.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -30,12 +30,22 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/graphql.htm
    JEDI
  }
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/chapel.html">Chapel</a>
+ enum color { red, green, blue=3 };
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3</a>
  enum TestEnum : int
  {
     FOO,
     BAR,
     BAZ
+ }
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/moonbit.html">MoonBit</a>
+ enum Relation {
+  Smaller
+  Greater
+  Equal
  }
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/parsers.html">Parsers</a>
@@ -64,7 +74,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.htm
 
 ***
 
-* Languages *with* Enums include <a href="../concepts/c.html">C</a>, <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/graphql.html">GraphQL</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/c2.html">C2</a>, <a href="../concepts/parsers.html">Parsers</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/speedie.html">Speedie</a>
+* Languages *with* Enums include <a href="../concepts/c.html">C</a>, <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/graphql.html">GraphQL</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/moonbit.html">MoonBit</a>, <a href="../concepts/c2.html">C2</a>, <a href="../concepts/parsers.html">Parsers</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/cobrust.html">Cobrust</a>
 
 ***
 

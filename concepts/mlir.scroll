@@ -1,21 +1,26 @@
 ../code/conceptPage.scroll
 
 id mlir
-name mlir
+name MLIR
 appeared 2019
 creators Chris Lattner
 tags ir
 website https://mlir.llvm.org/
+standsFor Multi-Level Intermediate Representation
 paper https://ieeexplore.ieee.org/document/9370308
-lab https://github.com/tensorflow
+lab Google
+description The MLIR project is a novel approach to building reusable and extensible compiler infrastructure. MLIR aims to address software fragmentation, improve compilation for heterogeneous hardware, significantly reduce the cost of building domain specific compilers, and aid in connecting existing compilers together.
 writtenIn markdown
 
+influencedBy llvmir swift-il xla
 repoStats
  firstCommit 2019
  commits 3349
  committers 91
  files 1
  newestCommit 2021
+ mb 20
+ linesOfCode 36
 country Various
 reference https://blog.tensorflow.org/2019/04/mlir-new-intermediate-representation.html
 

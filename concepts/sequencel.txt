@@ -1,21 +1,23 @@
 SequenceL
 =========
 
-SequenceL is an open source programming language created in 1989.
+SequenceL is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1989.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221989%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1989
 
-#1904 on PLDB
-35 Years Old
+#1993 on PLDB
+37 Years Old
 
 SequenceL is a general purpose functional programming language and auto-parallelizing (Parallel computing) compiler and tool set, whose primary design objectives are performance on multi-core processor hardware, ease of programming, platform portability/optimization, and code clarity and readability.  Its main advantage is that it can be used to write straightforward code that automatically takes full advantage of all the processing power available, without programmers needing to be concerned with identifying parallelisms, specifying vectorization, avoiding race conditions, and other challenges of manual directive-based programming approaches such as OpenMP. Programs written in SequenceL can be compiled to multithreaded code that runs in parallel, with no explicit indications from a programmer of how or what to parallelize. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/SequenceL Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of SequenceL happened in Texas Tech University and Texas Multicore Technologies
-- Explore SequenceL snippets on Rosetta Code
-- See also: (13 related languages) X86, ARM, Linux, OpenCL, C, C#, Fortran, Java, Python, Lisp, Haskell, Pascal, Eclipse
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of SequenceL happened in <a href="../lists/labs.html#q=Texas Tech University">Texas Tech University</a> and <a href="../lists/labs.html#q=Texas Multicore Technologies">Texas Multicore Technologies</a>
+- Explore SequenceL snippets on <a href="http://www.rosettacode.org/wiki/Category:SequenceL">Rosetta Code</a>
+- See also: (13 related languages) <a href="x86-isa.html">X86</a>, <a href="arm.html">ARM</a>, <a href="linux.html">Linux</a>, <a href="opencl.html">OpenCL</a>, <a href="c.html">C</a>, <a href="csharp.html">C#</a>, <a href="fortran.html">Fortran</a>, <a href="java.html">Java</a>, <a href="python.html">Python</a>, <a href="lisp.html">Lisp</a>, <a href="haskell.html">Haskell</a>, <a href="pascal.html">Pascal</a>, <a href="eclipse-editor.html">Eclipse</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/SequenceL'>Wikipedia</a>:
 cmd:&gt;prime(100...200)
    [101,103,107,109,113,127,131,137,139,149,151,157,163,167,173,179,181,191,193,197,199]
+```
 
-View source
+Built with Scroll v178.2.3

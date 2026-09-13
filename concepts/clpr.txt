@@ -1,28 +1,32 @@
 CLPR
 ====
 
-CLPR is a programming language created in 1986.
+CLPR is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1986.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1986
 
-#2034 on PLDB
-38 Years Old
+#2115 on PLDB
+40 Years Old
 
 CLP(R) is a declarative programming language. It stands for constraint logic programming (Real) where real refers to the real numbers. It can be considered and is generally implemented as a superset or add-on package for a Prolog implementation.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/CLP(R) Read more on Wikipedia...
 
-- Tags: programming language
-- CLPR is a superset of Prolog
-- Early development of CLPR happened in Monash University
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- CLPR is a <a href="../lists/explorer.html#columns=rank~id~appeared~tags~creators~supersetOf&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22supersetOf%22%2C%22origData%22%3A%22supersetOf%22%2C%22tags%22%3A%22html%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">superset</a> of <a href="prolog.html">Prolog</a>
+- Early development of CLPR happened in <a href="../lists/labs.html#q=Monash University">Monash University</a>
 - CLPR on HOPL
  https://hopl.info/showlanguage.prx?exp=1205 CLPR on HOPL
-- See also: (1 related languages) Prolog
+- See also: (1 related languages) <a href="prolog.html">Prolog</a>
 
+```Example from the web:
 3*X + 4*Y - 2*Z = 8,
 X - 5*Y + Z = 10,
 2*X + 3*Y -Z = 20.
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/CLP(R)'>Wikipedia</a>:
 3*X + 4*Y - 2*Z = 8,
 X - 5*Y + Z = 10,
 2*X + 3*Y -Z = 20.
+```
 
-View source
+Built with Scroll v178.2.3

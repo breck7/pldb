@@ -1,23 +1,26 @@
 Easybuild
 =========
 
-Easybuild is an open source application created in 2014 by Kenneth Hoste.
+Easybuild is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 2014 by Kenneth Hoste.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
  https://pldb.io/concepts/../lists/creators.html#q=Kenneth%20Hoste Kenneth Hoste
 
-#577 on PLDB
-10 Years Old
+#601 on PLDB
+12 Years Old
 
+```Download source code:
 git clone https://github.com/easybuilders/easybuild
+```
 
 EasyBuild is a software build and installation framework that allows you to manage (scientific) software on High Performance Computing (HPC) systems in an efficient way.
 
-- Tags: application
-- Easybuild is developed on GitHub and has 457 stars
-- Early development of Easybuild happened in https://github.com/easybuilders/
-- Easybuild is written in YAML, Bourne shell, Python, reStructuredText, Markdown
-- GitHub supports syntax highlighting for Easybuild
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>
+- Easybuild is developed on <a href="https://github.com/easybuilders/easybuild">GitHub</a> and has 457 stars
+- Early development of Easybuild happened in <a href="../lists/labs.html#q=https://github.com/easybuilders/">https://github.com/easybuilders/</a>
+- Easybuild is written in <a href="yaml.html">YAML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="python.html">Python</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="markdown.html">Markdown</a>
+- GitHub supports <a href="https://github.com/MagicStack/MagicPython" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Easybuild
 
+```Example from <a href='https://github.com/MagicStack/MagicPython'>Linguist</a>:
 # not really (there&#39;s an EB_bzip2 easyblock), but fine for use in unit tests
 easyblock = &#39;ConfigureMake&#39;
 
@@ -39,4 +42,6 @@ builddependencies = [(&#39;gzip&#39;, &#39;1.6&#39;)]
 
 moduleclass = &#39;tools&#39;
 
-View source
+```
+
+Built with Scroll v178.2.3

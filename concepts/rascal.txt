@@ -1,28 +1,32 @@
 Rascal
 ======
 
-Rascal is an open source grammar language created in 2013.
+Rascal is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22grammarLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">grammar language</a> created in 2013.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2013
 
-#578 on PLDB
-11 Years Old
-722 Repos
+#566 on PLDB
+13 Years Old
+722 <span title="Rascal repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/usethesource/rascal
+```
 
 Rascal is an experimental domain specific language for metaprogramming, such as static code analysis, program transformation and implementation of domain specific languages. It is a general meta language in the sense that it does not have a bias for any particular software language. It includes primitives from relational calculus and term rewriting. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/RascalMPL Read more on Wikipedia...
 
-- Tags: grammarLanguage
-- Rascal is developed on GitHub and has 398 stars
-- There are at least 722 Rascal repos on GitHub
-- Early development of Rascal happened in https://github.com/usethesource
-- The  Google BigQuery Public Dataset GitHub snapshot shows 99 users using Rascal in 107 repos on GitHub
-- Explore Rascal snippets on Rosetta Code
-- GitHub supports syntax highlighting for Rascal
-- rascal-mpl.org was registered in 2010
-- See also: (3 related languages) Linux, Unix, ANTLR
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"grammarLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>grammarLanguage</a>
+- Rascal is developed on <a href="https://github.com/usethesource/rascal">GitHub</a> and has 398 stars
+- There are at least 722 Rascal repos on <a href="https://github.com/search?q=language:Rascal">GitHub</a>
+- Early development of Rascal happened in <a href="../lists/labs.html#q=https://github.com/usethesource">https://github.com/usethesource</a>
+- Rascal is written in <a href="java.html">Java</a>, <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>, <a href="ini.html">Ini</a>, <a href="c.html">C</a>, <a href="xml.html">XML</a>, <a href="csv.html">CSV</a>, <a href="yaml.html">YAML</a>, <a href="html.html">HTML</a>, <a href="tex.html">Tex</a>, <a href="ruby.html">Ruby</a>, <a href="python.html">Python</a>, <a href="javascript.html">JavaScript</a>, <a href="diff.html">Diff</a>, <a href="bourne-shell.html">Bourne shell</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 99 users using Rascal in 107 repos on <a href="https://api.github.com/search/repositories?q=language:Rascal">GitHub</a>
+- Explore Rascal snippets on <a href="http://www.rosettacode.org/wiki/Category:Rascal">Rosetta Code</a>
+- GitHub supports <a href="https://github.com/usethesource/rascal-syntax-highlighting" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Rascal
+- <a href="https://www.rascal-mpl.org/">rascal-mpl.org</a> was registered in 2010
+- See also: (3 related languages) <a href="linux.html">Linux</a>, <a href="unix.html">Unix</a>, <a href="antlr.html">ANTLR</a>
 
+```Example from <a href='https://github.com/usethesource/rascal-syntax-highlighting'>Linguist</a>:
 module Syntax
 
 extend lang::std::Layout;
@@ -32,4 +36,6 @@ start syntax Machine = machine: State+ states;
 syntax State = @Foldable state: &quot;state&quot; Id name Trans* out;
 syntax Trans = trans: Id event &quot;:&quot; Id to;
 
-View source
+```
+
+Built with Scroll v178.2.3

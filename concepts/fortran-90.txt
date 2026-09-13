@@ -1,28 +1,28 @@
 Fortran 90
 ==========
 
-Fortran 90 is a programming language created in 1990.
+Fortran 90 is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1990.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1990
 
-#2537 on PLDB
-34 Years Old
+#2636 on PLDB
+36 Years Old
 
-- Tags: programming language
-- Fortran 90 is a superset of FORTRAN 77
-- Early development of Fortran 90 happened in University of Liverpool
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Fortran 90 is a <a href="../lists/explorer.html#columns=rank~id~appeared~tags~creators~supersetOf&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22supersetOf%22%2C%22origData%22%3A%22supersetOf%22%2C%22tags%22%3A%22html%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">superset</a> of <a href="fortran-77.html">FORTRAN 77</a>
+- Early development of Fortran 90 happened in <a href="../lists/labs.html#q=University of Liverpool">University of Liverpool</a>
 - Fortran 90 on HOPL
  https://hopl.info/showlanguage.prx?exp=1627 Fortran 90 on HOPL
 - Read more about Fortran 90 on Semantic Scholar: 1.
  https://semanticscholar.org/paper/d896513025079fa1e7a8d6aa44843c39bbf2b6ff 1.
-- 7 PLDB concepts link to Fortran 90: Chapel, cloc, Go, NCAR Command Language, Node.js, Pygments, SciPy
+- 10 PLDB concepts link to Fortran 90: <a href="cir.html">CIR</a>, <a href="cloc.html">cloc</a>, <a href="cmake.html">CMake</a>, <a href="go.html">Go</a>, <a href="lfortran.html">LFortran</a>, <a href="ncl.html">NCAR Command Language</a>, <a href="nodejs.html">Node.js</a>, <a href="paraview.html">ParaView</a>, <a href="pygments.html">Pygments</a>, <a href="scipy.html">SciPy</a>
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Pointers
  FeatureLink ../features/hasPointers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   type real_list_t
     real :: sample_data(100)
@@ -41,4 +41,4 @@ row
   end do
  Token
 
-View source
+Built with Scroll v178.2.3

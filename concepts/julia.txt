@@ -1,60 +1,71 @@
 Julia
 =====
 
-Julia is an open source programming language created in 2012 by Jeff Bezanson and Alan Edelman and Stefan Karpinski and Viral B. Shah.
+Julia is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2012 by Jeff Bezanson and Alan Edelman and Stefan Karpinski and Viral B. Shah.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
  https://pldb.io/concepts/../lists/creators.html#q=Jeff%20Bezanson Jeff Bezanson
  https://pldb.io/concepts/../lists/creators.html#q=Alan%20Edelman Alan Edelman
  https://pldb.io/concepts/../lists/creators.html#q=Stefan%20Karpinski Stefan Karpinski
  https://pldb.io/concepts/../lists/creators.html#q=Viral%20B.%20Shah Viral B. Shah
 
-#33 on PLDB
-12 Years Old
-54k Repos
+#35 on PLDB
+14 Years Old
+54k <span title="Julia repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/JuliaLang/julia
+```
 
 Julia is a high-level dynamic programming language designed to address the needs of high-performance numerical analysis and computational science, without the typical need of separate compilation to be fast, while also being effective for general-purpose programming, web use or as a specification language. Distinctive aspects of Julia's design include a type system with parametric polymorphism and types in a fully dynamic programming language and multiple dispatch as its core programming paradigm. It allows concurrent, parallel and distributed computing, and direct calling of C and Fortran libraries without glue code. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Julia_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language, arrayLang
-- Julia is developed on GitHub and has 45,137 stars
-- Watch the history of the Julia repo visualized with Gource
-- There are at least 53,507 Julia repos on GitHub
-- Early development of Julia happened in https://github.com/JuliaLang
-- Julia is written in Julia, Markdown, TOML, C, Make, C++, LLVM IR, Bourne shell, Diff, XML, Scheme, Lisp, Assembly language, Tex, YAML, JSON, Objective-C, Python, SVG, Pascal, Clojure, D, CSS, Dockerfile
-- The  Google BigQuery Public Dataset GitHub snapshot shows 3k users using Julia in 6k repos on GitHub
-- Check out the 36 Julia meetup groups on Meetup.com.
-- There are 20,624 members in the Julia subreddit
-- There are 700 Project Euler users using Julia
-- In the 2021 StackOverflow developer survey Julia programmers reported a median salary of $65,228. 1% of respondents reported using Julia. 1,068 programmers reported using Julia, and 2,445 said they wanted to use it
-- Explore Julia snippets on Rosetta Code
-- Julia ranks #35 in the TIOBE Index
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"arrayLang"%5D%7D%5D%2C"logic"%3A"AND"%7D'>arrayLang</a>
+- Julia is developed on <a href="https://github.com/JuliaLang/julia">GitHub</a> and has 45,137 stars
+- Watch the history of <a href="https://www.youtube.com/watch?v=n3chDPl19jI">the Julia repo visualized with Gource</a>
+- There are at least 53,507 Julia repos on <a href="https://github.com/search?q=language:Julia">GitHub</a>
+- Early development of Julia happened in <a href="../lists/labs.html#q=https://github.com/JuliaLang">https://github.com/JuliaLang</a>
+- Julia is written in <a href="julia.html">Julia</a>, <a href="markdown.html">Markdown</a>, <a href="toml.html">TOML</a>, <a href="c.html">C</a>, <a href="make.html">Make</a>, <a href="cpp.html">C++</a>, <a href="llvmir.html">LLVM IR</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="diff.html">Diff</a>, <a href="xml.html">XML</a>, <a href="scheme.html">Scheme</a>, <a href="lisp.html">Lisp</a>, <a href="assembly-language.html">Assembly language</a>, <a href="tex.html">Tex</a>, <a href="yaml.html">YAML</a>, <a href="json.html">JSON</a>, <a href="objective-c.html">Objective-C</a>, <a href="python.html">Python</a>, <a href="svg.html">SVG</a>, <a href="pascal.html">Pascal</a>, <a href="clojure.html">Clojure</a>, <a href="d.html">D</a>, <a href="css.html">CSS</a>, <a href="dockerfile.html">Dockerfile</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 3k users using Julia in 6k repos on <a href="https://api.github.com/search/repositories?q=language:Julia">GitHub</a>
+- Check out the 36 <a href="https://www.meetup.com/topics/julia/">Julia meetup groups</a> on Meetup.com.
+- There are 20,624 members in the <a href="https://reddit.com/r/Julia">Julia subreddit</a>
+- There are 700 <a href="https://projecteuler.net/language=Julia">Project Euler</a> users using Julia
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> Julia programmers reported a median salary of $65,228. 1% of respondents reported using Julia. 1,068 programmers reported using Julia, and 2,445 said they wanted to use it
+- Explore Julia snippets on <a href="http://www.rosettacode.org/wiki/Category:Julia">Rosetta Code</a>
+- Julia ranks #35 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - Julia Ubuntu package
  https://packages.ubuntu.com/jammy/julia Julia Ubuntu package
-- Julia LSP implementation
-- CodeMirror package for syntax highlighting Julia
-- Monaco package for syntax highlighting Julia
-- Pygments supports syntax highlighting for Julia
-- GitHub supports syntax highlighting for Julia
-- Julia appears in the Quine Relay project
-- Learn Julia on exercism.
-- There is 1 Jupyter Kernel for Julia
-- There is a central package repository for Julia
+- Julia <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/JuliaEditorSupport/LanguageServer.jl">implementation</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/julia">package</a> for syntax highlighting Julia
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/julia">package</a> for syntax highlighting Julia
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/julia.py">syntax highlighting</a> for Julia
+- GitHub supports <a href="https://github.com/JuliaEditorSupport/atom-language-julia" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Julia
+- Julia appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Learn <a href="https://exercism.org/tracks/julia">Julia on exercism.</a>
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/JuliaLang/IJulia.jl">Kernel</a> for Julia
+- There is a <a href="https://pkg.julialang.org/">central package repository</a> for Julia
 - Events page for Julia
  https://discourse.julialang.org/c/community/events/56 Events page for Julia
-- Indeed.com has 85 matches for "julia engineer".
-- See also: (28 related languages) C, Scheme, LLVM IR, Fortran, IA-32, Linux, FreeBSD, Lisp, Lua, Mathematica, Wolfram Language, MATLAB, Perl, Python, R, Ruby, Regular Expressions, Unicode, UTF-8, Common Lisp, Dylan, Algol, Fortress, HTML, XML, JSON, ARM, PowerPC
-- 10 PLDB concepts link to Julia: Ace Editor, Chapel, cloc, dex, invokator, Julia, Links, mal, polyglot-compiler, Pygments
+- Indeed.com has 85 matches for <a href="https://www.indeed.com/jobs?q=julia engineer">"julia engineer"</a>.
+- See also: (28 related languages) <a href="c.html">C</a>, <a href="scheme.html">Scheme</a>, <a href="llvmir.html">LLVM IR</a>, <a href="fortran.html">Fortran</a>, <a href="ia-32.html">IA-32</a>, <a href="linux.html">Linux</a>, <a href="freebsd.html">FreeBSD</a>, <a href="lisp.html">Lisp</a>, <a href="lua.html">Lua</a>, <a href="mathematica.html">Mathematica</a>, <a href="wolfram.html">Wolfram Language</a>, <a href="matlab.html">MATLAB</a>, <a href="perl.html">Perl</a>, <a href="python.html">Python</a>, <a href="r.html">R</a>, <a href="ruby.html">Ruby</a>, <a href="regex.html">Regular Expressions</a>, <a href="unicode.html">Unicode</a>, <a href="utf-8.html">UTF-8</a>, <a href="common-lisp.html">Common Lisp</a>, <a href="dylan.html">Dylan</a>, <a href="algol.html">Algol</a>, <a href="fortress.html">Fortress</a>, <a href="html.html">HTML</a>, <a href="xml.html">XML</a>, <a href="json.html">JSON</a>, <a href="arm.html">ARM</a>, <a href="powerpc.html">PowerPC</a>
+- 10 PLDB concepts link to Julia: <a href="ace.html">Ace Editor</a>, <a href="cir.html">CIR</a>, <a href="cloc.html">cloc</a>, <a href="dex.html">dex</a>, <a href="invokator.html">invokator</a>, <a href="julia.html">Julia</a>, <a href="links-programming-language.html">Links</a>, <a href="mal.html">mal</a>, <a href="polyglot-compiler.html">polyglot-compiler</a>, <a href="pygments.html">Pygments</a>
 
+```Example from <a href='https://riju.codes/julia'>Riju</a>:
 println(&quot;Hello, world!&quot;)
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/j/Julia.jl'>hello-world</a>:
 println(&quot;Hello World&quot;)
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Julia'>the Hello World Collection</a>:
 # Hello world in Julia
 
 println(&quot;Hello, World!&quot;)
+```
 
+```Example from <a href='https://github.com/JuliaEditorSupport/atom-language-julia'>Linguist</a>:
 #!/usr/bin/env julia
 
 # From https://github.com/JoshCheek/language-sampler-for-fullpath/blob/b766dcdbd249ec63516f491390a75315e78cba95/julia/fullpath
@@ -116,85 +127,91 @@ end
 
 print_paths(STDOUT, paths)
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Julia_(programming_language)'>Wikipedia</a>:
 julia&gt; p(x) = 2x^2 + 1; f(x, y) = 1 + 2p(x)y
 julia&gt; println(&quot;Hello world!&quot;, &quot; I&#39;m on cloud &quot;, f(0, 4), &quot; as Julia supports recognizable syntax!&quot;)
 Hello world! I&#39;m on cloud 9 as Julia supports recognizable syntax!
+```
 
+```Julia <a href="../lists/keywords.html#q=julia">Keywords</a>
 begin while if for try return break continue function macro quote let local global const do struct abstract typealias bitstype type immutable module baremodule using import export importall end else catch finally true false
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Standard Library
  FeatureLink ../features/hasStandardLibrary.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   println("Hello, World!")
  Token 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # 0b[01]+((_[01]+)+)?
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # (\d+((_\d+)+)?\.(?!\.)(\d+((_\d+)+)?)?|\.\d+((_\d+)+)?)([eEf][+-]?[0-9]+)?
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # 0x[a-fA-F0-9]+((_[a-fA-F0-9]+)+)?
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # 0o[0-7]+((_[0-7]+)+)?
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Module Pattern
  FeatureLink ../features/hasModules.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   module MyModule
   using Lib
@@ -218,14 +235,14 @@ row
 row
  Feature Pipes
  FeatureLink ../features/hasPipes.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   [1,2,3] |> (y -> f(3, y))
  Token 
 row
  Feature Mixins
  FeatureLink ../features/hasMixins.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # Including the same code in different modules provides mixin-like behavior.
   module Normal
@@ -240,7 +257,7 @@ row
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # Files and file names are mostly unrelated to modules; modules are associated only with module expressions.
   # One can have multiple files per module, and multiple modules per file:
@@ -257,33 +274,33 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   print("hello world")
  Token println
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   80766866
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature Garbage Collection
  FeatureLink ../features/hasGarbageCollection.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   #=
   A comment.
@@ -292,21 +309,21 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Unicode Identifers
  FeatureLink ../features/hasUnicodeIdentifiers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   δ = 0.00001
  Token 
 row
  Feature Multiple Dispatch
  FeatureLink ../features/hasMultipleDispatch.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   collide_with(x::Asteroid, y::Asteroid) = ... # deal with asteroid hitting asteroid
   collide_with(x::Asteroid, y::Spaceship) = ... # deal with asteroid hitting spaceship
@@ -316,14 +333,14 @@ row
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "hello world"
  Token "
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # https://jkrumbiegel.com/pages/2021-06-07-macros-for-beginners/
   macro show_value(variable)
@@ -338,14 +355,14 @@ row
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

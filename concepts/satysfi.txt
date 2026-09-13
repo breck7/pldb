@@ -1,20 +1,22 @@
 SATySFi
 =======
 
-SATySFi is a text markup language created in 2015 by Takashi Suwa.
+SATySFi is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2015 by Takashi Suwa.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
  https://pldb.io/concepts/../lists/creators.html#q=Takashi%20Suwa Takashi Suwa
 
-#1123 on PLDB
-9 Years Old
+#1182 on PLDB
+11 Years Old
 
+```Download source code:
 git clone https://github.com/gfngfn/SATySFi
+```
 
 A statically-typed, functional typesetting system
 
-- Tags: text markup language
-- SATySFi is developed on GitHub and has 1,162 stars
-- Early development of SATySFi happened in https://github.com/gfngfn/SATySFi/issues
-- SATySFi is written in OCaml, Make, Markdown, CSS, Bourne shell, SVG, YAML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- SATySFi is developed on <a href="https://github.com/gfngfn/SATySFi">GitHub</a> and has 1,162 stars
+- Early development of SATySFi happened in <a href="../lists/labs.html#q=https://github.com/gfngfn/SATySFi/issues">https://github.com/gfngfn/SATySFi/issues</a>
+- SATySFi is written in <a href="ocaml.html">OCaml</a>, <a href="make.html">Make</a>, <a href="markdown.html">Markdown</a>, <a href="css.html">CSS</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="svg.html">SVG</a>, <a href="yaml.html">YAML</a>
 
-View source
+Built with Scroll v178.2.3

@@ -1,25 +1,28 @@
 Rockstar
 ========
 
-Rockstar is an open source esoteric programming language created in 2018 by Dylan Beattie.
+Rockstar is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22esolang%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">esoteric programming language</a> created in 2018 by Dylan Beattie.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2018
  https://pldb.io/concepts/../lists/creators.html#q=Dylan%20Beattie Dylan Beattie
 
-#829 on PLDB
-6 Years Old
+#837 on PLDB
+8 Years Old
 
+```Download source code:
 git clone https://github.com/dylanbeattie/rockstar
+```
 
 Rockstar is a dynamically typed Turing-complete programming language. Rockstar is designed for creating computer programs that are also song lyrics, and is heavily influenced by the lyrical conventions of 1980s hard rock and power ballads.
 
-- Tags: esoteric programming language
-- Rockstar is developed on GitHub and has 79 stars
-- Early development of Rockstar happened in https://github.com/RockstarLang
-- Rockstar is written in JavaScript, CSS, Markdown, HTML, JSON, YAML, Python
-- Explore Rockstar snippets on Rosetta Code
-- codewithrockstar.com was registered in 2018
-- 1 PLDB concepts link to Rockstar: rockstar-rkt
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"esolang"%5D%7D%5D%2C"logic"%3A"AND"%7D'>esoteric programming language</a>
+- Rockstar is developed on <a href="https://github.com/dylanbeattie/rockstar">GitHub</a> and has 79 stars
+- Early development of Rockstar happened in <a href="../lists/labs.html#q=https://github.com/RockstarLang">https://github.com/RockstarLang</a>
+- Rockstar is written in <a href="javascript.html">JavaScript</a>, <a href="css.html">CSS</a>, <a href="markdown.html">Markdown</a>, <a href="html.html">HTML</a>, <a href="json.html">JSON</a>, <a href="yaml.html">YAML</a>, <a href="python.html">Python</a>
+- Explore Rockstar snippets on <a href="http://www.rosettacode.org/wiki/Category:Rockstar">Rosetta Code</a>
+- <a href="https://codewithrockstar.com/">codewithrockstar.com</a> was registered in 2018
+- 1 PLDB concepts link to Rockstar: <a href="rockstar-rkt.html">rockstar-rkt</a>
 
+```Example from the web:
 Midnight takes your heart and your soul
 While your heart is as high as your soul
 Put your heart without your soul into your heart
@@ -45,24 +48,28 @@ Say &quot;Buzz!&quot;
 Take it to the top
 
 Whisper my world
+```
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/r/Rockstar.rock'>hello-world</a>:
 Scream &quot;Hello World&quot;
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token Scream
 
-View source
+Built with Scroll v178.2.3

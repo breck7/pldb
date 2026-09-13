@@ -7,7 +7,7 @@ printTitle Static Methods
 <a class="trueBaseThemePreviousItem" href="hasStatements.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasStaticTyping.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -17,6 +17,9 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/typescript.
      console.log(&quot;Hello world&quot;)
    }
  }
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/toit.html">Toit</a>
+ static foo x y
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
  class abc
@@ -28,7 +31,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.htm
 
 ***
 
-* Languages *with* Static Methods include <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/speedie.html">Speedie</a>
+* Languages *with* Static Methods include <a href="../concepts/typescript.html">TypeScript</a>, <a href="../concepts/toit.html">Toit</a>, <a href="../concepts/speedie.html">Speedie</a>
 
 ***
 

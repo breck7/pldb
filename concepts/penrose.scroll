@@ -1,22 +1,47 @@
 ../code/conceptPage.scroll
 
 id penrose
-name penrose
+name Penrose
 appeared 2016
-tags pl
+creators Katherine Ye and Wode Ni and Max Krieger and Dor Ma’Ayan and Jenna Wise and Jonathan Aldrich and Joshua Sunshine and Keenan Crane
+tags diagramLang
 website http://penrose.ink
 latestVersion v3.2.0
+blog https://penrose.cs.cmu.edu/blog
+webRepl https://penrose.cs.cmu.edu/try/
+paper https://penrose.cs.cmu.edu/media/Penrose_SIGGRAPH2020a.pdf
 lab Carnegie Mellon
+description Create beautiful diagrams just by typing notation in plain text.
 writtenIn json typescript markdown svg css html javascript yaml vim-script python lisp handlebars bourne-shell
 
+docs https://penrose.cs.cmu.edu/docs/ref
 repoStats
  firstCommit 2016
- commits 5069
- committers 57
- files 1370
- newestCommit 2024
+ commits 5539
+ committers 60
+ files 1516
+ newestCommit 2025
+ mb 1100
+ linesOfCode 250183
 country United States
 
+discord https://discord.com/invite/a7VXJU4dfR
+example
+ Set A, B, C, D, E, F, G
+ 
+ Subset(B, A)
+ Subset(C, A)
+ Subset(D, B)
+ Subset(E, B)
+ Subset(F, C)
+ Subset(G, C)
+ 
+ Disjoint(E, D)
+ Disjoint(F, G)
+ Disjoint(B, C)
+ 
+ AutoLabel All
+ 
 twitter https://twitter.com/usepenrose
 
 githubRepo https://github.com/penrose/penrose

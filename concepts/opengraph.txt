@@ -1,18 +1,19 @@
 opengraph
 =========
 
-opengraph is a xml format created in 2010.
+opengraph is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22xmlFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">xml format</a> created in 2010.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2010
 
-#2480 on PLDB
-14 Years Old
+#2598 on PLDB
+16 Years Old
 
 The Open Graph protocol enables any web page to become a rich object in a social graph. For instance, this is used on Facebook to allow any web page to have the same functionality as any other object on Facebook.
 
-- Tags: xmlFormat
-- Early development of opengraph happened in Facebook
-- ogp.me was registered in 2010
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"xmlFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>xmlFormat</a>
+- Early development of opengraph happened in <a href="../lists/labs.html#q=Facebook">Facebook</a>
+- <a href="https://ogp.me/">ogp.me</a> was registered in 2010
 
+```Example from the web:
 &lt;html prefix=&quot;og: http://ogp.me/ns#&quot;&gt;
 &lt;head&gt;
 &lt;title&gt;The Rock (1996)&lt;/title&gt;
@@ -24,14 +25,15 @@ The Open Graph protocol enables any web page to become a rich object in a social
 &lt;/head&gt;
 ...
 &lt;/html&gt;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   true
   false
@@ -39,4 +41,4 @@ row
   0
  Token
 
-View source
+Built with Scroll v178.2.3

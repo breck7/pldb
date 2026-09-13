@@ -1,0 +1,50 @@
+L#
+==
+
+L# is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2025 by Moude AI LLC.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222025%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2025
+ https://pldb.io/concepts/../lists/creators.html#q=Moude%20AI%20LLC Moude AI LLC
+
+#1789 on PLDB
+1 Years Old
+
+```Download source code:
+git clone https://github.com/Arthurc1Moude/lsharp-language
+```
+
+L# (L-Sharp) is a native UI programming language with zero web dependencies. Like Flutter, but for native desktop development with React-like syntax.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- L# is developed on <a href="https://github.com/Arthurc1Moude/lsharp-language">GitHub</a>
+- L# compiles to <a href="c.html">C</a>
+- L# is written in <a href="c.html">C</a>
+
+```Example from the web:
+component HelloWorld {
+  render {
+    &lt;Container&gt;
+      &lt;Text&gt;Hello, L#!&lt;/Text&gt;
+    &lt;/Container&gt;
+  }
+}
+```
+
+```L# <a href="../lists/keywords.html#q=lsharp">Keywords</a>
+import export deport report component render useState useEffect
+```
+
+Built with Scroll v178.2.3
+
+originCommunity Moude AI LLC
+
+features
+ hasLineComments true
+ hasComments true
+ hasStrings true
+ hasFloats true
+ hasIntegers true
+ hasBooleans true
+ hasWhileLoops true
+ hasComponents true
+
+license Proprietary

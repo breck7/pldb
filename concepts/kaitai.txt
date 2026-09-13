@@ -1,26 +1,29 @@
 kaitai
 ======
 
-kaitai is an interface design language created in 2016 by Mikhail Yakshin.
+kaitai is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22idl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">interface design language</a> created in 2016 by Mikhail Yakshin.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2016
  https://pldb.io/concepts/../lists/creators.html#q=Mikhail%20Yakshin Mikhail Yakshin
 
-#287 on PLDB
-8 Years Old
+#301 on PLDB
+10 Years Old
 
+```Download source code:
 git clone https://github.com/kaitai-io/kaitai_struct
+```
 
 Kaitai Struct is a YAML-based declarative language used to describe various binary data structures, laid out in files or in memory: i.e. binary file formats, network stream packet formats, etc. The main idea is that a particular format is described in Kaitai Struct language (.ksy file) and then can be compiled with ksc into source files in one of the supported programming languages. These modules will include a generated code for a parser that can read described data structure from a file / stream and give access to it in a nice, easy-to-comprehend API.
 
-- Tags: interface design language
-- kaitai is developed on GitHub and has 3,922 stars
-- Early development of kaitai happened in http://kaitai.io/
-- kaitai is written in Markdown, Bourne shell, YAML
-- kaitai.io was registered in 2016
-- See also: (1 related languages) Protocol Buffers
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"idl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>interface design language</a>
+- kaitai is developed on <a href="https://github.com/kaitai-io/kaitai_struct">GitHub</a> and has 3,922 stars
+- Early development of kaitai happened in <a href="../lists/labs.html#q=http://kaitai.io/">http://kaitai.io/</a>
+- kaitai is written in <a href="markdown.html">Markdown</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="yaml.html">YAML</a>
+- <a href="http://kaitai.io/">kaitai.io</a> was registered in 2016
+- See also: (1 related languages) <a href="protobuf.html">Protocol Buffers</a>
 - Read more about kaitai on the web: 1.
  http://kaitai.io/ 1.
 
+```Example from the web:
 meta:
   id: tcp_segment
   endian: be
@@ -33,5 +36,6 @@ seq:
     type: u4
   - id: ack_num
     type: u4
+```
 
-View source
+Built with Scroll v178.2.3

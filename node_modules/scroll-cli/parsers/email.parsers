@@ -2,7 +2,7 @@ siteOwnerEmailParser
  popularity 0.001302
  description Set email address for site contact.
  extends abstractTopLevelSingleMetaParser
- crux email
+ cue email
  atoms metaCommandAtom emailAddressAtom
 
 emailButtonParser

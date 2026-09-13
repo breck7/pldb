@@ -1,32 +1,36 @@
 Harbour
 =======
 
-Harbour is an open source programming language created in 1999 by Antonio Linares.
+Harbour is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1999 by Antonio Linares.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221999%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1999
  https://pldb.io/concepts/../lists/creators.html#q=Antonio%20Linares Antonio Linares
 
-#665 on PLDB
-25 Years Old
-45 Repos
+#675 on PLDB
+27 Years Old
+45 <span title="Harbour repos on GitHub.">Repos</span>
 
 Harbour is a modern computer programming language, primarily used to create database/business programs. It is a modernized, open sourced and cross-platform version of the older Clipper system, which in turn developed from the dBase database market of the 1980s and 90s. Harbour code using the same databases can be compiled under a wide variety of platforms, including Microsoft Windows, Linux, Unix variants, several BSD descendants, Mac OS X, MINIX 3, Windows CE, Pocket PC, Symbian, iOS, Android, QNX, VxWorks, OS/2/eComStation, BeOS/Haiku,  AIX and MS-DOS.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Harbour_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 45 Harbour repos on GitHub
-- Early development of Harbour happened in https://github.com/harbour
-- The  Google BigQuery Public Dataset GitHub snapshot shows 80 users using Harbour in 86 repos on GitHub
-- Explore Harbour snippets on Rosetta Code
-- GitHub supports syntax highlighting for Harbour
-- See also: (16 related languages) Clipper, DBase, Linux, Unix, iOS, Android, TCP, MySQL, PostgreSQL, SQLite, xBase, C, Java, Visual FoxPro, Visual Objects, XBase++
-- 1 PLDB concepts link to Harbour: tibet
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 45 Harbour repos on <a href="https://github.com/search?q=language:Harbour">GitHub</a>
+- Early development of Harbour happened in <a href="../lists/labs.html#q=https://github.com/harbour">https://github.com/harbour</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 80 users using Harbour in 86 repos on <a href="https://api.github.com/search/repositories?q=language:Harbour">GitHub</a>
+- Explore Harbour snippets on <a href="http://www.rosettacode.org/wiki/Category:Harbour">Rosetta Code</a>
+- GitHub supports <a href="https://github.com/hernad/atom-language-harbour" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Harbour
+- See also: (16 related languages) <a href="clipper.html">Clipper</a>, <a href="dbase.html">DBase</a>, <a href="linux.html">Linux</a>, <a href="unix.html">Unix</a>, <a href="ios.html">iOS</a>, <a href="android.html">Android</a>, <a href="tcp.html">TCP</a>, <a href="mysql.html">MySQL</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="sqlite.html">SQLite</a>, <a href="xbase.html">xBase</a>, <a href="c.html">C</a>, <a href="java.html">Java</a>, <a href="visual-foxpro.html">Visual FoxPro</a>, <a href="visual-objects.html">Visual Objects</a>, <a href="xbasepp.html">XBase++</a>
+- 1 PLDB concepts link to Harbour: <a href="tibet.html">tibet</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/h/Harbour.prg'>hello-world</a>:
 PROCEDURE Main()
 
    ? &quot;Hello World&quot;
 
    RETURN
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Harbour_(programming_language)'>Wikipedia</a>:
 #include &quot;hbclass.ch&quot;
 
  PROCEDURE Main()
@@ -83,36 +87,37 @@ PROCEDURE Main()
     ENDIF
 
     RETURN cDescription
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

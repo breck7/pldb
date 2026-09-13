@@ -1,31 +1,35 @@
 xBase
 =====
 
-xBase is a programming language created in 1986.
+xBase is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1986.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1986
 
-#450 on PLDB
-38 Years Old
-3k Repos
+#445 on PLDB
+40 Years Old
+3k <span title="xBase repos on GitHub.">Repos</span>
 
 xBase is the generic term for all programming languages that derive from the original dBASE (Ashton-Tate) programming language and database formats. These are sometimes informally known as dBASE "clones". While there was a non-commercial predecessor to the Ashton-Tate product (Vulcan written by Wayne Ratliff), most clones are based on Ashton-Tate's 1986 dBASE III+ release — scripts written in the dBASE III+ dialect are most likely to run on all the clones.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/XBase Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 2,564 xBase repos on GitHub
-- The  Google BigQuery Public Dataset GitHub snapshot shows 313 users using xBase in 350 repos on GitHub
-- Explore xBase snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 2,564 xBase repos on <a href="https://github.com/search?q=language:xBase">GitHub</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 313 users using xBase in 350 repos on <a href="https://api.github.com/search/repositories?q=language:xBase">GitHub</a>
+- Explore xBase snippets on <a href="http://www.rosettacode.org/wiki/Category:XBase">Rosetta Code</a>
 - xBase on HOPL
  https://hopl.info/showlanguage.prx?exp=2621 xBase on HOPL
-- xBase appears in the TIOBE Index
-- GitHub supports syntax highlighting for xBase
-- See also: (1 related languages) Jet Propulsion Laboratory Display Information System
-- 2 PLDB concepts link to xBase: cloc, Pygments
+- xBase appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- GitHub supports <a href="https://github.com/hernad/atom-language-harbour" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for xBase
+- See also: (1 related languages) <a href="jet-propulsion-laboratory-display-information-system.html">Jet Propulsion Laboratory Display Information System</a>
+- 2 PLDB concepts link to xBase: <a href="cloc.html">cloc</a>, <a href="pygments.html">Pygments</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/x/XBase.dbf'>hello-world</a>:
 do while .t.
  ? &#39;Hello World&#39;
 enddo
 
+```
+
+```Example from <a href='https://github.com/hernad/atom-language-harbour'>Linguist</a>:
 #ifndef __HARBOUR__
    #ifndef __XPP__
       #ifndef __CLIP__
@@ -57,20 +61,22 @@ enddo
    #xtranslate hb_default( @&lt;v&gt;, &lt;x&gt; )   =&gt; iif( StrTran( ValType( &lt;v&gt; ), &quot;M&quot;, &quot;C&quot; ) == StrTran( ValType( &lt;x&gt; ), &quot;M&quot;, &quot;C&quot; ),, &lt;v&gt; := &lt;x&gt;, )
 #endif
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   'Hello world'
  Token '
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -78,22 +84,22 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

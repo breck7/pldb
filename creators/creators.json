@@ -1,16 +1,132 @@
 [
   {
     "name": "Aaron Swartz",
+    "homepage": "http://aaronsw.com",
+    "gits": "https://github.com/aaronsw",
+    "twitter": "https://x.com/aaronsw",
     "born": 1986,
+    "died": 2013,
     "wikipedia": "https://en.wikipedia.org/wiki/Aaron_Swartz",
     "country": "United States",
-    "primaryLink": "https://en.wikipedia.org/wiki/Aaron_Swartz"
+    "primaryLink": "http://aaronsw.com"
+  },
+  {
+    "name": "Walter Fontana",
+    "homepage": "https://www.walterfontana.zone/",
+    "primaryLink": "https://www.walterfontana.zone/"
+  },
+  {
+    "name": "Bill Hall",
+    "homepage": "https://www.gingerbill.org",
+    "gits": "https://github.com/gingerBill",
+    "twitter": "https://x.com/thegingerbill",
+    "primaryLink": "https://www.gingerbill.org"
+  },
+  {
+    "name": "Diego Marcos",
+    "gits": "https://github.com/dmarcos",
+    "twitter": "https://x.com/dmarcos",
+    "primaryLink": "https://github.com/dmarcos"
+  },
+  {
+    "name": "Don McCurdy",
+    "homepage": "https://www.donmccurdy.com",
+    "gits": "https://github.com/donmccurdy",
+    "primaryLink": "https://www.donmccurdy.com"
+  },
+  {
+    "name": "Kevin Ngo",
+    "gits": "https://github.com/ngokevin",
+    "twitter": "https://twitter.com/kevopuff",
+    "primaryLink": "https://github.com/ngokevin"
+  },
+  {
+    "name": "Carlo H. Séquin",
+    "homepage": "https://people.eecs.berkeley.edu/~sequin/",
+    "born": 1941,
+    "wikipedia": "https://en.wikipedia.org/wiki/Carlo_H._S%C3%A9quin",
+    "country": "Switzerland",
+    "primaryLink": "https://people.eecs.berkeley.edu/~sequin/"
+  },
+  {
+    "name": "Andrzej Trybulec",
+    "born": 1941,
+    "died": 2013,
+    "wikipedia": "https://en.wikipedia.org/wiki/Andrzej_Trybulec",
+    "country": "Poland",
+    "primaryLink": "https://en.wikipedia.org/wiki/Andrzej_Trybulec"
+  },
+  {
+    "name": "Florian Loitsch",
+    "homepage": "http://florian.loitsch.com/",
+    "gits": "https://github.com/floitsch",
+    "primaryLink": "http://florian.loitsch.com/"
+  },
+  {
+    "name": "Hailey Somerville",
+    "homepage": "https://hails.org/",
+    "gits": "https://github.com/haileys",
+    "country": "Australia",
+    "primaryLink": "https://hails.org/"
+  },
+  {
+    "name": "Nicolaas Govert de Bruijn",
+    "born": 1918,
+    "died": 2012,
+    "wikipedia": "https://en.wikipedia.org/wiki/Nicolaas_Govert_de_Bruijn",
+    "country": "Netherlands",
+    "primaryLink": "https://en.wikipedia.org/wiki/Nicolaas_Govert_de_Bruijn"
+  },
+  {
+    "name": "Alonzo Church",
+    "born": 1903,
+    "died": 1995,
+    "wikipedia": "https://en.wikipedia.org/wiki/Alonzo_Church",
+    "country": "United States",
+    "primaryLink": "https://en.wikipedia.org/wiki/Alonzo_Church"
+  },
+  {
+    "name": "Mikkel Damsgaard",
+    "gits": "https://github.com/mikkeldamsgaard",
+    "primaryLink": "https://github.com/mikkeldamsgaard"
+  },
+  {
+    "name": "Fernando Borretti",
+    "homepage": "https://borretti.me/",
+    "gits": "https://github.com/eudoxia0",
+    "twitter": "https://x.com/zetalyrae",
+    "primaryLink": "https://borretti.me/"
+  },
+  {
+    "name": "Neil Conway",
+    "homepage": "https://www.neilconway.org",
+    "gits": "https://github.com/neilconway",
+    "twitter": "https://x.com/neil_conway",
+    "primaryLink": "https://www.neilconway.org"
+  },
+  {
+    "name": "Jamie Brandon",
+    "homepage": "https://www.scattered-thoughts.net/",
+    "gits": "https://github.com/jamii",
+    "primaryLink": "https://www.scattered-thoughts.net/"
   },
   {
     "name": "Mark Sibly",
     "gits": "https://github.com/blitz-research",
     "country": "Australia",
     "primaryLink": "https://github.com/blitz-research"
+  },
+  {
+    "name": "David Turner",
+    "born": 1946,
+    "died": 2023,
+    "country": "United Kingdom"
+  },
+  {
+    "name": "Paul Fitzpatrick",
+    "gits": "https://github.com/paulfitz",
+    "twitter": "https://x.com/fitzyfitzyfitzy",
+    "primaryLink": "https://github.com/paulfitz"
   },
   {
     "name": "Adele Goldberg",
@@ -87,6 +203,32 @@
     "primaryLink": "https://en.wikipedia.org/wiki/Alan_Perlis"
   },
   {
+    "name": "Ross Boucher",
+    "homepage": "https://rossboucher.com",
+    "born": 1985,
+    "primaryLink": "https://rossboucher.com"
+  },
+  {
+    "name": "Francisco Tolmasky",
+    "homepage": "https://tolmasky.com",
+    "primaryLink": "https://tolmasky.com"
+  },
+  {
+    "name": "Edgar F. Codd",
+    "born": 1923,
+    "died": 2003,
+    "wikipedia": "https://en.wikipedia.org/wiki/Edgar_F._Codd",
+    "country": "United Kingdom",
+    "primaryLink": "https://en.wikipedia.org/wiki/Edgar_F._Codd"
+  },
+  {
+    "name": "Tom Robinson",
+    "homepage": "https://tlrobinson.net",
+    "gits": "http://github.com/tlrobinson",
+    "twitter": "http://twitter.com/tlrobinson",
+    "primaryLink": "https://tlrobinson.net"
+  },
+  {
     "name": "Mitchel Resnick",
     "born": 1956,
     "wikipedia": "https://en.wikipedia.org/wiki/Mitchel_Resnick",
@@ -126,6 +268,14 @@
     "wikipedia": "https://en.wikipedia.org/wiki/Alfred_Aho",
     "country": "Canada",
     "primaryLink": "https://en.wikipedia.org/wiki/Alfred_Aho"
+  },
+  {
+    "name": "Linas Vepstas",
+    "homepage": "https://linas.org",
+    "gits": "https://github.com/linas",
+    "twitter": "https://x.com/linasvepstas",
+    "country": "United States",
+    "primaryLink": "https://linas.org"
   },
   {
     "name": "Jeffrey Heer",
@@ -200,6 +350,12 @@
     "primaryLink": "https://lingdong.works/"
   },
   {
+    "name": "Kurt Normack",
+    "homepage": "https://homes.cs.aau.dk/~normark/",
+    "country": "Denmark",
+    "primaryLink": "https://homes.cs.aau.dk/~normark/"
+  },
+  {
     "name": "Charlie Bass",
     "born": 1942,
     "wikipedia": "https://en.wikipedia.org/wiki/Charlie_Bass_(engineer)",
@@ -215,18 +371,24 @@
   },
   {
     "name": "Jose E. Marchesi",
-    "homepage": "https://www.jemarch.net/",
+    "homepage": "https://www.jemarch.net",
     "born": 1980,
     "country": "Spain",
-    "primaryLink": "https://www.jemarch.net/"
+    "primaryLink": "https://www.jemarch.net"
   },
   {
     "name": "Bjarne Stroustrup",
-    "homepage": "https://www.stroustrup.com/",
+    "homepage": "https://www.stroustrup.com",
     "born": 1950,
     "wikipedia": "https://en.wikipedia.org/wiki/Bjarne_Stroustrup",
     "country": "Denmark",
-    "primaryLink": "https://www.stroustrup.com/"
+    "primaryLink": "https://www.stroustrup.com"
+  },
+  {
+    "name": "Ondrej Certik",
+    "homepage": "https://ondrejcertik.com",
+    "twitter": "https://x.com/OndrejCertik",
+    "primaryLink": "https://ondrejcertik.com"
   },
   {
     "name": "Brad Cox",
@@ -237,12 +399,12 @@
   },
   {
     "name": "Brendan Eich",
-    "homepage": "https://brendaneich.com/",
+    "homepage": "https://brendaneich.com",
     "twitter": "https://x.com/BrendanEich",
     "born": 1961,
     "wikipedia": "https://en.wikipedia.org/wiki/Brendan_Eich",
     "country": "United States",
-    "primaryLink": "https://brendaneich.com/"
+    "primaryLink": "https://brendaneich.com"
   },
   {
     "name": "Brian Fox",
@@ -262,10 +424,13 @@
   },
   {
     "name": "Carl Sassenrath",
+    "homepage": "https://sassenrath.com",
+    "gits": "https://github.com/carls",
+    "twitter": "https://x.com/CarlSassenrath",
     "born": 1957,
     "wikipedia": "https://en.wikipedia.org/wiki/Carl_Sassenrath",
     "country": "United States",
-    "primaryLink": "https://en.wikipedia.org/wiki/Carl_Sassenrath"
+    "primaryLink": "https://sassenrath.com"
   },
   {
     "name": "Marshall Lochbaum",
@@ -301,6 +466,20 @@
     "wikipedia": "https://en.wikipedia.org/wiki/Michael_Sperberg-McQueen",
     "country": "United States",
     "primaryLink": "http://cmsmcq.com/"
+  },
+  {
+    "name": "Corey Montella",
+    "homepage": "https://engineering.lehigh.edu/faculty/corey-montella",
+    "gits": "https://github.com/cmontella",
+    "country": "United States",
+    "primaryLink": "https://engineering.lehigh.edu/faculty/corey-montella"
+  },
+  {
+    "name": "Chris Granger",
+    "homepage": "https://chris-granger.com/",
+    "gits": "https://github.com/ibdknox",
+    "country": "United States",
+    "primaryLink": "https://chris-granger.com/"
   },
   {
     "name": "John W. Cowan",
@@ -606,6 +785,12 @@
     "homepage": "https://www.t3x.org/",
     "country": "Germany",
     "primaryLink": "https://www.t3x.org/"
+  },
+  {
+    "name": "Oleg Kiselyov",
+    "homepage": "https://okmij.org/ftp/",
+    "country": "Russia",
+    "primaryLink": "https://okmij.org/ftp/"
   },
   {
     "name": "Erik Arvidsson",
@@ -919,6 +1104,7 @@
   {
     "name": "Clark Evans",
     "homepage": "https://clarkevans.com/",
+    "twitter": "https://github.com/clarkevans",
     "country": "United States",
     "primaryLink": "https://clarkevans.com/"
   },
@@ -1873,7 +2059,8 @@
     "homepage": "https://www.youtube.com/@awesomekling",
     "gits": "https://github.com/awesomekling",
     "twitter": "https://x.com/awesomekling",
-    "country": "Germany",
+    "born": 1985,
+    "country": "Sweden",
     "primaryLink": "https://www.youtube.com/@awesomekling"
   },
   {
@@ -2373,5 +2560,245 @@
     "twitter": "https://x.com/marknadal",
     "country": "United States",
     "primaryLink": "https://marknadal.com/"
+  },
+  {
+    "name": "David Vorick",
+    "gits": "https://github.com/davidvorick",
+    "twitter": "https://x.com/davidvorick",
+    "born": 1992,
+    "country": "United States",
+    "primaryLink": "https://github.com/davidvorick"
+  },
+  {
+    "name": "Luke Champine",
+    "homepage": "https://lukechampine.com/",
+    "gits": "https://github.com/lukechampine",
+    "twitter": "https://x.com/lukechampine",
+    "country": "United States",
+    "primaryLink": "https://lukechampine.com/"
+  },
+  {
+    "name": "Gavin Wood",
+    "homepage": "https://gavwood.com",
+    "gits": "https://github.com/gavofyork",
+    "twitter": "https://x.com/gavofyork",
+    "born": 1980,
+    "wikipedia": "https://en.wikipedia.org/wiki/Gavin_Wood",
+    "country": "United Kingdom",
+    "primaryLink": "https://gavwood.com"
+  },
+  {
+    "name": "Evan Cheng",
+    "twitter": "https://x.com/evanweb3",
+    "born": 1970,
+    "primaryLink": "https://x.com/evanweb3"
+  },
+  {
+    "name": "Hongbo Zhang",
+    "gits": "https://github.com/bobzhang",
+    "twitter": "https://x.com/bobzhang1988",
+    "born": 1988,
+    "country": "China",
+    "primaryLink": "https://github.com/bobzhang"
+  },
+  {
+    "name": "Terry A. Davis",
+    "homepage": "https://templeos.org",
+    "born": 1969,
+    "died": 2018,
+    "wikipedia": "https://en.wikipedia.org/wiki/Terry_A._Davis",
+    "primaryLink": "https://templeos.org"
+  },
+  {
+    "name": "Eric Seidel",
+    "homepage": "https://eseidel.com/",
+    "gits": "https://github.com/eseidel",
+    "twitter": "https://x.com/_eseidel",
+    "born": 1980,
+    "primaryLink": "https://eseidel.com/"
+  },
+  {
+    "name": "Dries Buytaert",
+    "homepage": "https://dri.es",
+    "gits": "https://github.com/dbuytaert",
+    "born": 1978,
+    "wikipedia": "https://en.wikipedia.org/wiki/Dries_Buytaert",
+    "country": "Belgium",
+    "primaryLink": "https://dri.es"
+  },
+  {
+    "name": "Yosbel Marin",
+    "gits": "https://github.com/yosbelms",
+    "primaryLink": "https://github.com/yosbelms"
+  },
+  {
+    "name": "Avik Chaudhuri",
+    "homepage": "https://avikchaudhuri.github.io/",
+    "twitter": "https://twitter.com/__avik",
+    "primaryLink": "https://avikchaudhuri.github.io/"
+  },
+  {
+    "name": "Émile Baudot",
+    "born": 1845,
+    "wikipedia": "https://en.wikipedia.org/wiki/%C3%89mile_Baudot",
+    "country": "France",
+    "primaryLink": "https://en.wikipedia.org/wiki/%C3%89mile_Baudot"
+  },
+  {
+    "name": "Adam McDaniel",
+    "homepage": "https://adam-mcdaniel.net/",
+    "gits": "https://github.com/adam-mcdaniel",
+    "born": 2002,
+    "country": "United States",
+    "primaryLink": "https://adam-mcdaniel.net/"
+  },
+  {
+    "name": "Ricardo Cabello",
+    "homepage": "https://ricardocabello.com",
+    "gits": "https://github.com/mrdoob",
+    "twitter": "https://x.com/mrdoob",
+    "primaryLink": "https://ricardocabello.com"
+  },
+  {
+    "name": "Jarkko Oikarinen",
+    "born": 1967,
+    "country": "Finland"
+  },
+  {
+    "name": "Tobie Morgan Hitchcock",
+    "twitter": "https://x.com/tobiemh",
+    "country": "United Kingdom",
+    "primaryLink": "https://x.com/tobiemh"
+  },
+  {
+    "name": "Jeff Dean",
+    "twitter": "https://x.com/JeffDean",
+    "born": 1968,
+    "wikipedia": "https://en.wikipedia.org/wiki/Jeff_Dean",
+    "country": "United States",
+    "primaryLink": "https://x.com/JeffDean"
+  },
+  {
+    "name": "Sanjay Ghemawat",
+    "born": 1966,
+    "wikipedia": "https://en.wikipedia.org/wiki/Sanjay_Ghemawat",
+    "country": "United States",
+    "primaryLink": "https://en.wikipedia.org/wiki/Sanjay_Ghemawat"
+  },
+  {
+    "name": "Ernan Ding",
+    "gits": "https://github.com/3dgen",
+    "born": 1981,
+    "country": "China",
+    "primaryLink": "https://github.com/3dgen"
+  },
+  {
+    "name": "Shushan Chai",
+    "gits": "https://github.com/chai2010",
+    "twitter": "https://x.com/chaishushan",
+    "born": 1983,
+    "country": "China",
+    "primaryLink": "https://github.com/chai2010"
+  },
+  {
+    "name": "Jesse Grosjean",
+    "gits": "https://github.com/jessegrosjean",
+    "twitter": "https://x.com/jessegrosjean",
+    "primaryLink": "https://github.com/jessegrosjean"
+  },
+  {
+    "name": "Margo Seltzer",
+    "born": 1962,
+    "wikipedia": "https://en.wikipedia.org/wiki/Margo_Seltzer",
+    "country": "United States",
+    "primaryLink": "https://en.wikipedia.org/wiki/Margo_Seltzer"
+  },
+  {
+    "name": "Keith Bostic",
+    "homepage": "http://bostic.com",
+    "gits": "https://github.com/keithbostic",
+    "born": 1959,
+    "wikipedia": "https://en.wikipedia.org/wiki/Keith_Bostic_(software_engineer)",
+    "country": "United States",
+    "primaryLink": "http://bostic.com"
+  },
+  {
+    "name": "Michael Cahill",
+    "gits": "https://github.com/michaelcahill",
+    "primaryLink": "https://github.com/michaelcahill"
+  },
+  {
+    "name": "Kat Marchán",
+    "homepage": "https://zkat.tech",
+    "gits": "https://github.com/zkat",
+    "born": 1986,
+    "primaryLink": "https://zkat.tech"
+  },
+  {
+    "name": "Marco Sampellegrini",
+    "homepage": "https://marcosampellegrini.com",
+    "gits": "https://github.com/alpacaaa",
+    "twitter": "https://x.com/_alpacaaa",
+    "primaryLink": "https://marcosampellegrini.com"
+  },
+  {
+    "name": "Jon Anderson",
+    "homepage": "https://jander.land",
+    "gits": "https://github.com/janderland",
+    "country": "United States",
+    "primaryLink": "https://jander.land"
+  },
+  {
+    "name": "Ivan Sutherland",
+    "born": 1938,
+    "country": "United States"
+  },
+  {
+    "name": "John Walker",
+    "homepage": "https://fourmilab.ch/",
+    "gits": "https://github.com/Fourmilab",
+    "born": 1949,
+    "died": 2024,
+    "wikipedia": "https://en.wikipedia.org/wiki/John_Walker_(programmer)",
+    "country": "United States",
+    "primaryLink": "https://fourmilab.ch/"
+  },
+  {
+    "name": "Sam Williams",
+    "homepage": "https://sam.arweave.dev",
+    "gits": "https://github.com/samcamwilliams",
+    "twitter": "https://x.com/samecwilliams",
+    "primaryLink": "https://sam.arweave.dev"
+  },
+  {
+    "name": "Walter F. Tichy",
+    "homepage": "https://ps.ipd.kit.edu/english/176_376.php",
+    "twitter": "https://x.com/wtichy",
+    "born": 1952,
+    "wikipedia": "https://en.wikipedia.org/wiki/Walter_F._Tichy",
+    "country": "Germany",
+    "primaryLink": "https://ps.ipd.kit.edu/english/176_376.php"
+  },
+  {
+    "name": "Marc J. Rochkind",
+    "born": 1948,
+    "wikipedia": "https://en.wikipedia.org/wiki/Marc_Rochkind",
+    "primaryLink": "https://en.wikipedia.org/wiki/Marc_Rochkind"
+  },
+  {
+    "name": "Dick Grune",
+    "homepage": "https://dickgrune.com/index.html",
+    "born": 1939,
+    "wikipedia": "https://en.wikipedia.org/wiki/Dick_Grune",
+    "country": "Netherlands",
+    "primaryLink": "https://dickgrune.com/index.html"
+  },
+  {
+    "name": "Matheus Afonso Martins Moreira",
+    "homepage": "https://www.matheusmoreira.com/",
+    "gits": "https://github.com/matheusmoreira",
+    "born": 1994,
+    "country": "Brazil",
+    "primaryLink": "https://www.matheusmoreira.com/"
   }
 ]

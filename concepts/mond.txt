@@ -1,22 +1,25 @@
 Mond
 ====
 
-Mond is a programming language created in 2014 by Rohan Singh.
+Mond is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2014 by Rohan Singh.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
  https://pldb.io/concepts/../lists/creators.html#q=Rohan%20Singh Rohan Singh
 
-#917 on PLDB
-10 Years Old
+#955 on PLDB
+12 Years Old
 
+```Download source code:
 git clone https://github.com/Rohansi/Mond
+```
 
 A scripting language for C# which can be embedded in Lua-like manner.
 
-- Tags: programming language
-- Mond is developed on GitHub and has 357 stars
-- Early development of Mond happened in https://github.com/Rohansi/Mond
-- Mond is written in C#, JSON, TypeScript, JavaScript, CSS, YAML, Razor, Markdown, HTML, XML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Mond is developed on <a href="https://github.com/Rohansi/Mond">GitHub</a> and has 357 stars
+- Early development of Mond happened in <a href="../lists/labs.html#q=https://github.com/Rohansi/Mond">https://github.com/Rohansi/Mond</a>
+- Mond is written in <a href="csharp.html">C#</a>, <a href="json.html">JSON</a>, <a href="typescript.html">TypeScript</a>, <a href="javascript.html">JavaScript</a>, <a href="css.html">CSS</a>, <a href="yaml.html">YAML</a>, <a href="razor.html">Razor</a>, <a href="markdown.html">Markdown</a>, <a href="html.html">HTML</a>, <a href="xml.html">XML</a>
 
+```Example from the web:
 // documentation can be found here: https://github.com/Rohansi/Mond/wiki
 seq range(start, end) {
     for (var i = start; i &lt;= end; i++)
@@ -49,7 +52,10 @@ return range(0, 1000)
        |&gt; where(x -&gt; x % 2 == 0)
        |&gt; select(x -&gt; x / 2)
        |&gt; toArray();
+```
 
+```Mond <a href="../lists/keywords.html#q=mond">Keywords</a>
 Infinity NaN break case const continue debugger default do else false for foreach fun global if in null return seq switch true undefined var while yield
+```
 
-View source
+Built with Scroll v178.2.3

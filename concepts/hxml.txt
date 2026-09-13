@@ -1,23 +1,24 @@
 HXML
 ====
 
-HXML is an application created in 2009.
+HXML is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 2009.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2009
 
-#1182 on PLDB
-15 Years Old
-0 Repos
+#1228 on PLDB
+17 Years Old
+0 <span title="HXML repos on GitHub.">Repos</span>
 
-Haxe compiler arguments can be stored in a .hxml file and can be executed with haxe . In hxml it is possible to use newlines and comments which makes it easier to maintain Haxe build configurations. It is possible to supply more arguments after the hxml file, e.g. haxe build.hxml -debug.
+Haxe compiler arguments can be stored in a .hxml file and can be executed with haxe <file.hxml>. In hxml it is possible to use newlines and comments which makes it easier to maintain Haxe build configurations. It is possible to supply more arguments after the hxml file, e.g. haxe build.hxml -debug.
 
-- Tags: application
-- There are at least 0 HXML repos on GitHub
-- Early development of HXML happened in Haxe Foundation
-- Pygments supports syntax highlighting for HXML
-- GitHub supports syntax highlighting for HXML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>
+- There are at least 0 HXML repos on <a href="https://github.com/search?q=language:HXML">GitHub</a>
+- Early development of HXML happened in <a href="../lists/labs.html#q=Haxe Foundation">Haxe Foundation</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/haxe.py">syntax highlighting</a> for HXML
+- GitHub supports <a href="https://github.com/vshaxe/haxe-TmLanguage" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for HXML
 - Read more about HXML on the web: 1.
  https://haxe.org/manual/compiler-usage-hxml.html 1.
 
+```Example from the web:
 -cp src
 -dce full
 
@@ -35,7 +36,9 @@ Haxe compiler arguments can be stored in a .hxml file and can be executed with h
 
 -js bin/contact.js
 -main website.ContactPage
+```
 
+```Example from <a href='https://github.com/vshaxe/haxe-TmLanguage'>Linguist</a>:
 buildGlobal.hxml
 -lib mcover:2.1.1
 -D unittest
@@ -46,15 +49,16 @@ buildGlobal.hxml
 -cmd neko run -s src -s test -p resources/static-analysis.txt
 -cmd neko run --default-config resources/default-config.json
 -cmd neko run -c resources/default-config.json
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

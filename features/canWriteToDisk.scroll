@@ -5,9 +5,9 @@ tags Feature
 printTitle Disk Output
 
 <a class="trueBaseThemePreviousItem" href="canUseQuestionMarksAsPartOfIdentifier.html">&lt;</a>
-<a class="trueBaseThemeNextItem" href="hasAbstractTypes.html">&gt;</a>
+<a class="trueBaseThemeNextItem" href="hasSinglePassParser.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -42,7 +42,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.htm
 
 ***
 
-* Languages *with* Disk Output include <a href="../concepts/python.html">Python</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/nodejs.html">Node.js</a>, <a href="../concepts/rebol.html">REBOL</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/sako.html">SAKO</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/boron.html">Boron</a>
+* Languages *with* Disk Output include <a href="../concepts/python.html">Python</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/nodejs.html">Node.js</a>, <a href="../concepts/rebol.html">REBOL</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/sako.html">SAKO</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/lone.html">Lone</a>, <a href="../concepts/boron.html">Boron</a>
 
 ***
 
@@ -54,6 +54,6 @@ View all concepts with or missing a *canWriteToDisk* measurement
  link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~canWriteToDisk&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22null%22%2C%22data%22%3A%22canWriteToDisk%22%2C%22origData%22%3A%22canWriteToDisk%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D missing
  link ../lists/explorer.html#columns=rank~id~appeared~tags~creators~canWriteToDisk&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22canWriteToDisk%22%2C%22origData%22%3A%22canWriteToDisk%22%2C%22type%22%3A%22num%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D with
 
-keyboardNav canUseQuestionMarksAsPartOfIdentifier.html hasAbstractTypes.html
+keyboardNav canUseQuestionMarksAsPartOfIdentifier.html hasSinglePassParser.html
 
 ../footer.scroll

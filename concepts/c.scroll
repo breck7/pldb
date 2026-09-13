@@ -88,6 +88,7 @@ hasEnums true
 hasRegularExpressionsSyntaxSugar false
 hasBooleans true
 hasConstructors false
+hasSinglePassParser true
 hasCharacters true
  char character = 'P';
 hasTernaryOperators true
@@ -198,6 +199,9 @@ hasImports true
 hasNamespaces false
 hasMultipleInheritance false
 hasTemplates false
+hasStaticTyping true
+hasStructuralTyping false
+hasTypeClasses false
 hasIntegers true
  int pldb = 80766866;
 hasMacros true
@@ -251,6 +255,9 @@ hasConstants true
 hasConditionals true
 hasFixedPoint false
 hasScientificNotation true
+hasFunctions true
+hasFunctionOverloading false
+hasNamedArguments false
 hasStandardLibrary true
  #include <stdio.h>
 

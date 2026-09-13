@@ -1,44 +1,56 @@
 MUMPS
 =====
 
-MUMPS is a programming language created in 1966 by Neil Pappalardo.
+MUMPS is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1966 by Neil Pappalardo.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221966%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1966
  https://pldb.io/concepts/../lists/creators.html#q=Neil%20Pappalardo Neil Pappalardo
 
-#181 on PLDB
-58 Years Old
-2k Repos
+#167 on PLDB
+60 Years Old
+2k <span title="MUMPS repos on GitHub.">Repos</span>
 
 MUMPS (Massachusetts General Hospital Utility Multi-Programming System), or M, is a general-purpose computer programming language that provides ACID (Atomic, Consistent, Isolated, and Durable) transaction processing. Its differentiating feature is its "built-in" database, enabling high-level access to disk storage using simple symbolic program variables and subscripted arrays, similar to the variables used by most languages to access main memory. The M database is a key-value database engine optimized for high-throughput transaction processing. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/MUMPS Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 2,448 MUMPS repos on GitHub
-- Early development of MUMPS happened in MUMPS Development Committee
-- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using MUMPS in 5k repos on GitHub
-- There are 38 Project Euler users using MUMPS
-- Explore MUMPS snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 2,448 MUMPS repos on <a href="https://github.com/search?q=language:M">GitHub</a>
+- Early development of MUMPS happened in <a href="../lists/labs.html#q=MUMPS Development Committee">MUMPS Development Committee</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using MUMPS in 5k repos on <a href="https://api.github.com/search/repositories?q=language:M">GitHub</a>
+- There are 38 <a href="https://projecteuler.net/language=MUMPS">Project Euler</a> users using MUMPS
+- Explore MUMPS snippets on <a href="http://www.rosettacode.org/wiki/Category:MUMPS">Rosetta Code</a>
 - MUMPS on HOPL
  https://hopl.info/showlanguage.prx?exp=773 MUMPS on HOPL
-- MUMPS appears in the TIOBE Index
-- ANTLR grammar for MUMPS
-- CodeMirror package for syntax highlighting MUMPS
-- See also: (8 related languages) JOSS, Unix, TELCOMP, Meditech Interpretive Information System, Linux, Tiny BASIC, ASCII, CSV
-- 4 PLDB concepts link to MUMPS: Caché ObjectScript, cloc, NCAR Command Language, proto-GNOSIS
+- MUMPS appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/mumps">grammar</a> for MUMPS
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/mumps">package</a> for syntax highlighting MUMPS
+- See also: (8 related languages) <a href="joss.html">JOSS</a>, <a href="unix.html">Unix</a>, <a href="telcomp.html">TELCOMP</a>, <a href="miis.html">Meditech Interpretive Information System</a>, <a href="linux.html">Linux</a>, <a href="tiny-basic.html">Tiny BASIC</a>, <a href="ascii.html">ASCII</a>, <a href="csv.html">CSV</a>
+- 6 PLDB concepts link to MUMPS: <a href="cache-objectscript.html">Caché ObjectScript</a>, <a href="cloc.html">cloc</a>, <a href="cmake.html">CMake</a>, <a href="mps.html">MPS</a>, <a href="ncl.html">NCAR Command Language</a>, <a href="proto-gnosis.html">proto-GNOSIS</a>
 
+```Example from the web:
 label1 ; This is a label
     write &quot;Hello World !&quot;,!
     quit
 
+```
+
+```Example from <a href='https://riju.codes/mumps'>Riju</a>:
 main()
   write &quot;Hello, world!&quot;,!
   quit
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/m/Mumps.m'>hello-world</a>:
  w &quot;Hello World&quot;,!
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#MUMPS'>the Hello World Collection</a>:
 ; Hello World in Mumps-M
  w !,&quot;Hello World&quot;
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/MUMPS'>Wikipedia</a>:
 GTM&gt;S n=&quot;&quot;
 GTM&gt;S n=$order(^nodex(n))
 GTM&gt;zwr n
@@ -49,42 +61,43 @@ n=&quot; name:gd&quot;
 GTM&gt;S n=$order(^nodex(n))
 GTM&gt;zwr n
 n=&quot;%kml:guid&quot;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token w
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token ;
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -1,0 +1,14 @@
+../code/conceptPage.scroll
+
+id mdd
+name MDD
+appeared 1998
+tags 3d binaryDataFormat
+standsFor Motion Designer Document
+aka Lightwave Point Cache
+lab LightWave
+description MDD (Motion Designer Data) is a file format used primarily for storing vertex animation data in 3D modeling and animation software, such as LightWave and Maya. It captures point cloud or mesh vertex positions over time, enabling precise animation playback without requiring skeletal rigging.
+fileExtensions mdd
+
+fileType binary
+reference https://rodolphe-vaillant.fr/entry/134/mdd-file-exporter-importer-source-code-c-c

@@ -1,111 +1,125 @@
 Clojure
 =======
 
-Clojure is an open source programming language created in 2007 by Rich Hickey.
+Clojure is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2007 by Rich Hickey.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2007
  https://pldb.io/concepts/../lists/creators.html#q=Rich%20Hickey Rich Hickey
 
 #27 on PLDB
-17 Years Old
-82k Repos
+19 Years Old
+82k <span title="Clojure repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/clojure/clojure
+```
 
 Clojure ( , like "closure") is a dialect of the Lisp programming language. Clojure is a general-purpose programming language with an emphasis on functional programming. It runs on the Java virtual machine and the Common Language Runtime. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Clojure Read more on Wikipedia...
 
-- Tags: programming language, lisp
-- Clojure is developed on GitHub and has 10,392 stars
-- Watch the history of the Clojure repo visualized with Gource
-- There are at least 82,125 Clojure repos on GitHub
-- Early development of Clojure happened in Cognitect
-- Clojure is written in Java, Clojure, Markdown, YAML, HTML, XML, Bourne shell
-- The  Google BigQuery Public Dataset GitHub snapshot shows 14k users using Clojure in 26k repos on GitHub
-- Check out the 378 Clojure meetup groups on Meetup.com.
-- There are 29,258 members in the Clojure subreddit
-- There are 1,655 Project Euler users using Clojure
-- In the 2021 StackOverflow developer survey Clojure programmers reported a median salary of $95,000. 2% of respondents reported using Clojure. 1,552 programmers reported using Clojure, and 2,413 said they wanted to use it
-- Explore Clojure snippets on Rosetta Code
-- Clojure ranks #42 in the TIOBE Index
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"lisp"%5D%7D%5D%2C"logic"%3A"AND"%7D'>lisp</a>
+- Clojure is developed on <a href="https://github.com/clojure/clojure">GitHub</a> and has 10,392 stars
+- Watch the history of <a href="https://www.youtube.com/watch?v=wM5sxT0BEdU">the Clojure repo visualized with Gource</a>
+- There are at least 82,125 Clojure repos on <a href="https://github.com/search?q=language:Clojure">GitHub</a>
+- Early development of Clojure happened in <a href="../lists/labs.html#q=Cognitect">Cognitect</a>
+- Clojure is written in <a href="java.html">Java</a>, <a href="clojure.html">Clojure</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="html.html">HTML</a>, <a href="xml.html">XML</a>, <a href="bourne-shell.html">Bourne shell</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 14k users using Clojure in 26k repos on <a href="https://api.github.com/search/repositories?q=language:Clojure">GitHub</a>
+- Check out the 378 <a href="https://www.meetup.com/topics/clojure/">Clojure meetup groups</a> on Meetup.com.
+- There are 29,258 members in the <a href="https://reddit.com/r/Clojure">Clojure subreddit</a>
+- There are 1,655 <a href="https://projecteuler.net/language=Clojure">Project Euler</a> users using Clojure
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> Clojure programmers reported a median salary of $95,000. 2% of respondents reported using Clojure. 1,552 programmers reported using Clojure, and 2,413 said they wanted to use it
+- Explore Clojure snippets on <a href="http://www.rosettacode.org/wiki/Category:Clojure">Rosetta Code</a>
+- Clojure ranks #42 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - Clojure Ubuntu package
  https://packages.ubuntu.com/jammy/clojure Clojure Ubuntu package
-- ANTLR grammar for Clojure
-- Clojure LSP implementation
-- CodeMirror package for syntax highlighting Clojure
-- Monaco package for syntax highlighting Clojure
-- Pygments supports syntax highlighting for Clojure
-- GitHub supports syntax highlighting for Clojure
-- Clojure appears in the Quine Relay project
-- Learn Clojure on exercism.
-- PLDB has 2 Jupyter Kernels for Clojure: github.com, github.com
-- There is a central package repository for Clojure
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/clojure">grammar</a> for Clojure
+- Clojure <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/snoe/clojure-lsp">implementation</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/clojure">package</a> for syntax highlighting Clojure
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/clojure">package</a> for syntax highlighting Clojure
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/jvm.py">syntax highlighting</a> for Clojure
+- GitHub supports <a href="https://github.com/atom/language-clojure" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Clojure
+- Clojure appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Learn <a href="https://exercism.org/tracks/clojure">Clojure on exercism.</a>
+- PLDB has 2 <a href="jupyter-notebook.html">Jupyter</a> Kernels for Clojure: <a href="https://github.com/roryk/clojupyter">github.com</a>, <a href="https://github.com/achesnais/clj-jupyter">github.com</a>
+- There is a <a href="https://clojars.org/">central package repository</a> for Clojure
 - Events page for Clojure
  https://clojure.org/events/2022/reclojure Events page for Clojure
-- Indeed.com has 355 matches for "clojure engineer".
-- clojure.org was registered in 2005
-- See also: (20 related languages) JVM, C#, Common Lisp, Erlang, Haskell, Mathematica, ML, Prolog, Scheme, Java, Racket, Ruby, Elixir, Lisp, Apache Maven, S-expressions, CSP, ActionScript, Python, Unicode
+- Indeed.com has 355 matches for <a href="https://www.indeed.com/jobs?q=clojure engineer">"clojure engineer"</a>.
+- <a href="https://clojure.org">clojure.org</a> was registered in 2005
+- See also: (20 related languages) <a href="jvm.html">JVM</a>, <a href="csharp.html">C#</a>, <a href="common-lisp.html">Common Lisp</a>, <a href="erlang.html">Erlang</a>, <a href="haskell.html">Haskell</a>, <a href="mathematica.html">Mathematica</a>, <a href="ml.html">ML</a>, <a href="prolog.html">Prolog</a>, <a href="scheme.html">Scheme</a>, <a href="java.html">Java</a>, <a href="racket.html">Racket</a>, <a href="ruby.html">Ruby</a>, <a href="elixir.html">Elixir</a>, <a href="lisp.html">Lisp</a>, <a href="maven-pom.html">Apache Maven</a>, <a href="s-expressions.html">S-expressions</a>, <a href="csp.html">CSP</a>, <a href="actionscript.html">ActionScript</a>, <a href="python.html">Python</a>, <a href="unicode.html">Unicode</a>
 - Read more about Clojure on the web: 1.
  https://download.clojure.org/papers/clojure-hopl-iv-final.pdf 1.
-- 22 PLDB concepts link to Clojure: Ace Editor, Clojure, ClojureScript, datascript, Felix, femtolisp, fleck, Flow9, F*, hasklig, Insitux, Jank, Julia, Linux, Lux, mal, multiaddr, Opal, OpenCV, Pan, Pygments, wah
+- 24 PLDB concepts link to Clojure: <a href="ace.html">Ace Editor</a>, <a href="clojure.html">Clojure</a>, <a href="clojurescript.html">ClojureScript</a>, <a href="datascript.html">datascript</a>, <a href="felix.html">Felix</a>, <a href="femtolisp.html">femtolisp</a>, <a href="fleck.html">fleck</a>, <a href="flow9.html">Flow9</a>, <a href="fstar.html">F*</a>, <a href="hasklig.html">hasklig</a>, <a href="insitux.html">Insitux</a>, <a href="jank.html">Jank</a>, <a href="julia.html">Julia</a>, <a href="lighttable.html">Light Table</a>, <a href="linux.html">Linux</a>, <a href="lux.html">Lux</a>, <a href="mal.html">mal</a>, <a href="multiaddr.html">multiaddr</a>, <a href="opal.html">Opal</a>, <a href="opencv.html">OpenCV</a>, <a href="pan.html">Pan</a>, <a href="pygments.html">Pygments</a>, <a href="shrubbery.html">Shrubbery Notation</a>, <a href="wah.html">wah</a>
 
+```Example from <a href='https://riju.codes/clojure'>Riju</a>:
 (println &quot;Hello, world!&quot;)
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/c/Clojure.clj'>hello-world</a>:
 (println &quot;Hello World&quot;)
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Clojure'>the Hello World Collection</a>:
 ; Hello world in Clojure
 
 (defn hello []
   (println &quot;Hello world!&quot;))
 
 (hello)
+```
 
+```Example from <a href='https://github.com/atom/language-clojure'>Linguist</a>:
 (defn rand
   &quot;Returns a random floating point number between 0 (inclusive) and
   n (default 1) (exclusive).&quot;
   ([] (scm* [n] (random-real)))
   ([n] (* (rand) n)))
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Clojure'>Wikipedia</a>:
 ;; A typical entry point of a Clojure program:
 ;;   `-main` function
 (defn -main ; name
   [&amp; args] ; (variable) parameters
   (println &quot;Hello, World!&quot;)) ; body
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Standard Library
  FeatureLink ../features/hasStandardLibrary.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (println "Hello, World!")
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; -?\d+
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; -?\d+\.\d+
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; 0x-?[abcdef\d]+
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (comment A comment
   )
@@ -113,32 +127,44 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token println
 row
+ Feature Garbage Collection
+ FeatureLink ../features/hasGarbageCollection.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Dynamic Typing
+ FeatureLink ../features/hasDynamicTyping.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
  Feature Homoiconicity
  FeatureLink ../features/hasHomoiconicity.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token ;
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; https://www.braveclojure.com/writing-macros/
   ; https://clojure.org/reference/macros
@@ -157,7 +183,7 @@ row
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (load "fun")
   (load "files/fun")
@@ -175,13 +201,13 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Partial Application
  FeatureLink ../features/hasPartialApplication.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (defn fun-full [x y] (+ x y))
   (fun-full 2 3)
@@ -191,21 +217,29 @@ row
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "hello world"
  Token "
 row
+ Feature Single Pass Compiler
+ FeatureLink ../features/hasSinglePassParser.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+  ; FWIW, Clojure's compiler is two-pass, but the units are tiny (top-level forms).
+  https://news.ycombinator.com/item?id=2467359
+ Token 
+row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

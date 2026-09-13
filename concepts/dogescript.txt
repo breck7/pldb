@@ -1,25 +1,28 @@
 Dogescript
 ==========
 
-Dogescript is an open source programming language created in 2013 by Zach Bruggeman.
+Dogescript is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2013 by Zach Bruggeman.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2013
  https://pldb.io/concepts/../lists/creators.html#q=Zach%20Bruggeman Zach Bruggeman
 
-#323 on PLDB
-11 Years Old
-35 Repos
+#344 on PLDB
+13 Years Old
+35 <span title="Dogescript repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/dogescript/dogescript
+```
 
 wow so syntax very doge much future
 
-- Tags: programming language
-- Dogescript is developed on GitHub and has 1,341 stars
-- There are at least 35 Dogescript repos on GitHub
-- Early development of Dogescript happened in https://github.com/dogescript
-- Dogescript is written in JavaScript, Markdown, JSON, Dockerfile, HTML, YAML, Bourne shell
-- The  Google BigQuery Public Dataset GitHub snapshot shows 22 users using Dogescript in 26 repos on GitHub
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Dogescript is developed on <a href="https://github.com/dogescript/dogescript">GitHub</a> and has 1,341 stars
+- There are at least 35 Dogescript repos on <a href="https://github.com/search?q=language:Dogescript">GitHub</a>
+- Early development of Dogescript happened in <a href="../lists/labs.html#q=https://github.com/dogescript">https://github.com/dogescript</a>
+- Dogescript is written in <a href="javascript.html">JavaScript</a>, <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="html.html">HTML</a>, <a href="yaml.html">YAML</a>, <a href="bourne-shell.html">Bourne shell</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 22 users using Dogescript in 26 repos on <a href="https://api.github.com/search/repositories?q=language:Dogescript">GitHub</a>
 
+```Example from the web:
 quiet
  wow
     such language
@@ -36,28 +39,35 @@ such language much friendly
 wow
 
 module.exports is language
+```
 
+```Example from <a href='https://riju.codes/dogescript'>Riju</a>:
 plz console.loge with &quot;Hello, world!&quot;
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/d/DogeScript.djs'>hello-world</a>:
 shh such hello dogescript very next-gen wow difficulty
 
 plz console.loge with &quot;Hello World&quot;
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token console.loge
 
-View source
+Built with Scroll v178.2.3

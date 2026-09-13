@@ -1,25 +1,29 @@
 STON
 ====
 
-STON is an open source application created in 2012 by Sven Van Caekenberghe.
+STON is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 2012 by Sven Van Caekenberghe.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
  https://pldb.io/concepts/../lists/creators.html#q=Sven%20Van%20Caekenberghe Sven Van Caekenberghe
 
-#994 on PLDB
-12 Years Old
-0 Repos
+#1030 on PLDB
+14 Years Old
+0 <span title="STON repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/svenvc/ston
+```
 
 STON - Smalltalk Object Notation - A lightweight text-based, human-readable data interchange format for class-based object-oriented languages like Smalltalk.
 
-- Tags: application
-- STON is developed on GitHub and has 135 stars
-- There are at least 0 STON repos on GitHub
-- Early development of STON happened in https://github.com/svenvc/ston/issues
-- STON is written in Smalltalk, JSON, Markdown, YAML, XML
-- GitHub supports syntax highlighting for STON
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>
+- STON is developed on <a href="https://github.com/svenvc/ston">GitHub</a> and has 135 stars
+- There are at least 0 STON repos on <a href="https://github.com/search?q=language:STON">GitHub</a>
+- Early development of STON happened in <a href="../lists/labs.html#q=https://github.com/svenvc/ston/issues">https://github.com/svenvc/ston/issues</a>
+- STON is written in <a href="smalltalk.html">Smalltalk</a>, <a href="json.html">JSON</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="xml.html">XML</a>
+- GitHub supports <a href="https://github.com/tomas-stefano/smalltalk-tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for STON
 
+```Example from <a href='https://github.com/tomas-stefano/smalltalk-tmbundle'>Linguist</a>:
 [1, 2, 3]
+```
 
-View source
+Built with Scroll v178.2.3

@@ -1,21 +1,24 @@
 Zot
 ===
 
-Zot is a programming language created in 2015 by Adam Treat.
+Zot is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2015 by Adam Treat.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
  https://pldb.io/concepts/../lists/creators.html#q=Adam%20Treat Adam Treat
 
-#2970 on PLDB
-9 Years Old
+#3095 on PLDB
+11 Years Old
 
+```Download source code:
 git clone https://github.com/manyoso/zot
+```
 
 Zot language interpreter written in c++
 
-- Tags: programming language
-- Zot is developed on GitHub and has 3 stars
-- Zot is written in C++, Bourne shell, Markdown
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Zot is developed on <a href="https://github.com/manyoso/zot">GitHub</a> and has 3 stars
+- Zot is written in <a href="cpp.html">C++</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="markdown.html">Markdown</a>
 
+```Example from <a href='https://riju.codes/zot'>Riju</a>:
 111101010100111010101001001101010010010011101010100111010101
 001101010010101010011101010100110101001101010100110101001010
 101001110101010011101010100110101001010101001110101010011010
@@ -38,5 +41,6 @@ Zot language interpreter written in c++
 100101010011101010100110101001010100101010001010000100001000
 010011000110110010011101111011011101110000001000011010011110
 11000110110001101101010011000010010
+```
 
-View source
+Built with Scroll v178.2.3

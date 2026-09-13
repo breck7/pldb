@@ -1,10 +1,10 @@
 {
   "name": "pldb",
-  "version": "10.0.0",
+  "version": "12.0.0",
   "description": "PLDB: a Programming Language Database",
   "main": "./pldb.json",
   "scripts": {
-    "build": "./cli.js buildParsersFile; scroll list | scroll build",
+    "build": "./cli.js buildParsersFile && scroll build concepts.scroll && scroll build code/generateFeaturePages.scroll && scroll list | scroll build",
     "test": "scroll list | scroll test",
     "format": "scroll list | scroll format",
     "open": "open index.html",
@@ -25,6 +25,10 @@
   "bin": {
     "pldb": "./cli.js"
   },
+  "bugs": {
+    "url": "https://issues.pldb.io",
+    "email": "bugs@pldb.io"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/breck7/pldb.git"
@@ -42,11 +46,12 @@
     "lodash": "^4.17.21",
     "monaco-editor": "^0.34.1",
     "numeral": "^2.0.6",
-    "scroll-cli": "^138.2.0",
-    "scrollsdk": "^87.0.0",
+    "scroll-cli": "^178.0.0",
+    "scrollsdk": "^107.0.0",
     "semver": "^7.6.2"
   },
   "dependencies": {
-    "ky": "^1.4.0"
+    "ky": "^1.4.0",
+    "prettier": "^3.4.1"
   }
 }

@@ -1,60 +1,77 @@
 OpenSCAD
 ========
 
-OpenSCAD is an open source programming language created in 2010.
+OpenSCAD is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2010 by Marius Kintel and Clifford Wolf.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2010
+ https://pldb.io/concepts/../lists/creators.html#q=Marius%20Kintel Marius Kintel
+ https://pldb.io/concepts/../lists/creators.html#q=Clifford%20Wolf Clifford Wolf
 
-#527 on PLDB
-14 Years Old
-11k Repos
+#292 on PLDB
+16 Years Old
+11k <span title="OpenSCAD repos on GitHub.">Repos</span>
+
+```Download source code:
+git clone https://github.com/openscad/openscad
+```
 
 OpenSCAD is a free software application for creating solid 3D CAD (computer-aided design) objects. It is a script-only based modeller that uses its own description language; parts can be previewed, but it cannot be interactively selected or modified by mouse in the 3D view. An OpenSCAD script specifies geometric primitives (such as spheres, boxes, cylinders, etc.) and defines how they are modified and combined (for instance by intersection, difference, envelope combination and Minkowski sums) to render a 3D model. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/OpenSCAD Read more on Wikipedia...
 
-- Tags: programming language, cad
-- There are at least 10,989 OpenSCAD repos on GitHub
-- Early development of OpenSCAD happened in https://opencollective.com/openscad
-- The  Google BigQuery Public Dataset GitHub snapshot shows 1k users using OpenSCAD in 2k repos on GitHub
-- Explore OpenSCAD snippets on Rosetta Code
-- GitHub supports syntax highlighting for OpenSCAD
-- See also: (5 related languages) OpenGL, Linux, FreeBSD, IA-32, AutoCAD DXF
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"cad"%5D%7D%5D%2C"logic"%3A"AND"%7D'>cad</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"3d"%5D%7D%5D%2C"logic"%3A"AND"%7D'>3d</a>
+- OpenSCAD is developed on <a href="https://github.com/openscad/openscad">GitHub</a>
+- There are at least 10,989 OpenSCAD repos on <a href="https://github.com/search?q=language:OpenSCAD">GitHub</a>
+- Early development of OpenSCAD happened in <a href="../lists/labs.html#q=https://opencollective.com/openscad">https://opencollective.com/openscad</a>
+- OpenSCAD is written in <a href="cpp.html">C++</a>, <a href="svg.html">SVG</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="json.html">JSON</a>, <a href="xml.html">XML</a>, <a href="qt.html">Qt</a>, <a href="cmake.html">CMake</a>, <a href="markdown.html">Markdown</a>, <a href="python.html">Python</a>, <a href="yaml.html">YAML</a>, <a href="diff.html">Diff</a>, <a href="c.html">C</a>, <a href="javascript.html">JavaScript</a>, <a href="html.html">HTML</a>, <a href="css.html">CSS</a>, <a href="objective-cpp.html">Objective C++</a>, <a href="glsl.html">GLSL</a>, <a href="yacc.html">Yacc</a>, <a href="lex.html">Lex</a>, <a href="make.html">Make</a>, <a href="nix.html">Nix</a>, <a href="bash.html">Bash</a>, <a href="dockerfile.html">Dockerfile</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 1k users using OpenSCAD in 2k repos on <a href="https://api.github.com/search/repositories?q=language:OpenSCAD">GitHub</a>
+- Explore OpenSCAD snippets on <a href="http://www.rosettacode.org/wiki/Category:Openscad">Rosetta Code</a>
+- GitHub supports <a href="https://github.com/tbuser/openscad.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for OpenSCAD
+- See also: (5 related languages) <a href="opengl.html">OpenGL</a>, <a href="linux.html">Linux</a>, <a href="freebsd.html">FreeBSD</a>, <a href="ia-32.html">IA-32</a>, <a href="dxf.html">DXF</a>
 - Read more about OpenSCAD on the web: 1.
  https://en.wikipedia.org/wiki/OpenSCAD 1.
+- 1 PLDB concepts link to OpenSCAD: <a href="csg.html">CSG Format</a>
 
+```Example from the web:
  cube(5);
  x = 4+y;
  rotate(40) square(5,10);
  translate([10,5]) { circle(5); square(4); }
  rotate(60) color(&quot;red&quot;) { circle(5); square(4); }
  color(&quot;blue&quot;) { translate([5,3,0]) sphere(5); rotate([45,0,45]) { cylinder(10); cube([5,6,7]); } }
+```
 
+```Example from <a href='https://riju.codes/openscad'>Riju</a>:
 echo(&quot;Hello, world!&quot;);
 
+```
+
+```Example from <a href='https://github.com/tbuser/openscad.tmbundle'>Linguist</a>:
 // Simple sphere in OpenSCAD
 
 sphere( r=10 );
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

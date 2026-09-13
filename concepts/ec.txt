@@ -1,31 +1,34 @@
 eC
 ==
 
-eC, aka Ecere C, is an open source programming language created in 2004 by Jérôme Jacovella-St-Louis.
+eC, aka Ecere C, is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2004 by Jérôme Jacovella-St-Louis.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2004
  https://pldb.io/concepts/../lists/creators.html#q=J%C3%A9r%C3%B4me%20Jacovella-St-Louis Jérôme Jacovella-St-Louis
 
-#345 on PLDB
-20 Years Old
-139 Repos
+#362 on PLDB
+22 Years Old
+139 <span title="eC repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/ecere/ecere-sdk/
+```
 
 eC (Ecere C) is an object-oriented programming language, defined as a super-set of the C language. eC was initially developed as part of the Ecere Cross-platform Software Development Kit project. The goals of the language are to provide object-oriented constructs, reflection, properties and dynamic modules on top of the C language while maintaining C compatibility and optimal native performance.eC currently relies on GCC or Clang to perform the final steps of compilation, using C as an intermediate language. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/EC_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- eC is developed on GitHub and has 353 stars
-- There are at least 139 eC repos on GitHub
-- Early development of eC happened in Ecere Corporation
-- eC is written in C, Make, SVG, Assembly language, Python, M4, C++, XML, Bourne shell, Expect, GLSL, Yacc, Markdown, YAML, Objective-C, Java, Tex, Lex, Perl, HTML
-- The  Google BigQuery Public Dataset GitHub snapshot shows 894 users using eC in 920 repos on GitHub
-- Explore eC snippets on Rosetta Code
-- Pygments supports syntax highlighting for eC
-- GitHub supports syntax highlighting for eC
-- ec-lang.org was registered in 2014
-- See also: (8 related languages) C, Python, LLVM IR, Linux, FreeBSD, Android, JavaScript, WebAssembly
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- eC is developed on <a href="https://github.com/ecere/ecere-sdk/">GitHub</a> and has 353 stars
+- There are at least 139 eC repos on <a href="https://github.com/search?q=language:eC">GitHub</a>
+- Early development of eC happened in <a href="../lists/labs.html#q=Ecere Corporation">Ecere Corporation</a>
+- eC is written in <a href="c.html">C</a>, <a href="make.html">Make</a>, <a href="svg.html">SVG</a>, <a href="assembly-language.html">Assembly language</a>, <a href="python.html">Python</a>, <a href="m4.html">M4</a>, <a href="cpp.html">C++</a>, <a href="xml.html">XML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="expect.html">Expect</a>, <a href="glsl.html">GLSL</a>, <a href="yacc.html">Yacc</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="objective-c.html">Objective-C</a>, <a href="java.html">Java</a>, <a href="tex.html">Tex</a>, <a href="lex.html">Lex</a>, <a href="perl.html">Perl</a>, <a href="html.html">HTML</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 894 users using eC in 920 repos on <a href="https://api.github.com/search/repositories?q=language:eC">GitHub</a>
+- Explore eC snippets on <a href="http://www.rosettacode.org/wiki/Category:EC">Rosetta Code</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/c_like.py">syntax highlighting</a> for eC
+- GitHub supports <a href="https://github.com/ecere/ec.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for eC
+- <a href="http://ec-lang.org/">ec-lang.org</a> was registered in 2014
+- See also: (8 related languages) <a href="c.html">C</a>, <a href="python.html">Python</a>, <a href="llvmir.html">LLVM IR</a>, <a href="linux.html">Linux</a>, <a href="freebsd.html">FreeBSD</a>, <a href="android.html">Android</a>, <a href="javascript.html">JavaScript</a>, <a href="wasm.html">WebAssembly</a>
 
+```Example from <a href='https://riju.codes/ec'>Riju</a>:
 class Main : Application
 {
    void Main()
@@ -34,6 +37,9 @@ class Main : Application
    }
 }
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/e/Ec.ec'>hello-world</a>:
 class HelloWorldApp : Application
 {
    void Main()
@@ -42,6 +48,9 @@ class HelloWorldApp : Application
    }
 }
 
+```
+
+```Example from <a href='https://github.com/ecere/ec.tmbundle'>Linguist</a>:
 import &quot;ide&quot;
 
 class Designer : DesignerBase
@@ -183,17 +192,17 @@ class Designer : DesignerBase
    hasClose = true;
    hasMaximize = true;
    hasMinimize = true;
-   text = TEMPLATEquot;Designer&quot;;
+   text = $&quot;Designer&quot;;
    menu = Menu { };
    anchor = Anchor { left = 300, right = 150, top = 0, bottom = 0 };
 
    ToolBox toolBox;
    CodeEditor codeEditor;
 
-   Menu fileMenu { menu, TEMPLATEquot;File&quot;, f };
+   Menu fileMenu { menu, $&quot;File&quot;, f };
    MenuItem fileSaveItem
    {
-      fileMenu, TEMPLATEquot;Save&quot;, s, ctrlS;
+      fileMenu, $&quot;Save&quot;, s, ctrlS;
       bool NotifySelect(MenuItem selection, Modifiers mods)
       {
          return codeEditor.MenuFileSave(selection, mods);
@@ -201,7 +210,7 @@ class Designer : DesignerBase
    };
    MenuItem fileSaveAsItem
    {
-      fileMenu, TEMPLATEquot;Save As...&quot;, a;
+      fileMenu, $&quot;Save As...&quot;, a;
       bool NotifySelect(MenuItem selection, Modifiers mods)
       {
          return codeEditor.MenuFileSaveAs(selection, mods);
@@ -380,6 +389,9 @@ class Designer : DesignerBase
    }
 }
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/EC_(programming_language)'>Wikipedia</a>:
 import &quot;ecere&quot;
 
 class HelloForm : Window
@@ -397,27 +409,28 @@ class HelloForm : Window
 };
 
 HelloForm hello { };
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -425,28 +438,28 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token PrintLn
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

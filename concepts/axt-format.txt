@@ -1,21 +1,23 @@
 axt-format
 ==========
 
-axt-format is a text data format created in 2004.
+axt-format is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textDataFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text data format</a> created in 2004.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2004
 
-#2837 on PLDB
-20 Years Old
+#2958 on PLDB
+22 Years Old
 
 axt alignment files are produced from Blastz, an alignment tool available from Webb Miller's lab at Penn State University. The axtNet and axtChain alignments are produced by processing the alignment files with additional utilities written by Jim Kent at UCSC.
 
-- Tags: textDataFormat
-- Early development of axt-format happened in Penn State University
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textDataFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>textDataFormat</a>
+- Early development of axt-format happened in <a href="../lists/labs.html#q=Penn State University">Penn State University</a>
 - Read more about axt-format on the web: 1.
  https://github.com/lastz/lastz/blob/a93880f640776e9c7427326f1401a429ad14f2fb/src/axt.c 1.
 
+```Example from the web:
 0 chr19 3001012 3001075 chr11 70568380 70568443 - 3500
 TCAGCTCATAAATCACCTCCTGCCACAAGCCTGGCCTGGTCCCAGGAGAGTGTCCAGGCTCAGA
 TCTGTTCATAAACCACCTGCCATGACAAGCCTGGCCTGTTCCCAAGACAATGTCCAGGCTCAGA
+```
 
-View source
+Built with Scroll v178.2.3

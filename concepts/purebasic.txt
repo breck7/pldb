@@ -1,30 +1,34 @@
 PureBasic
 =========
 
-PureBasic is a programming language created in 1998.
+PureBasic is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1998.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221998%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1998
 
-#565 on PLDB
-26 Years Old
-6k Repos
+#580 on PLDB
+28 Years Old
+6k <span title="PureBasic repos on GitHub.">Repos</span>
 
 PureBasic is a commercially distributed procedural computer programming language and integrated development environment based on BASIC and developed by Fantaisie Software for Windows 32/64-bit, Linux 32/64-bit, and macOS. An Amiga version is available, although it has been discontinued and some parts of it are released as open source. The first public release of PureBasic for Windows was on December 17, 2000. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/PureBasic Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 6,366 PureBasic repos on GitHub
-- Early development of PureBasic happened in Fantaisie Software
-- The  Google BigQuery Public Dataset GitHub snapshot shows 556 users using PureBasic in 647 repos on GitHub
-- Explore PureBasic snippets on Rosetta Code
-- GitHub supports syntax highlighting for PureBasic
-- Indeed.com has 0 matches for "purebasic developer".
-- purebasic.com was registered in 2000
-- See also: (5 related languages) BASIC, Linux, X86, PowerPC, ISBN
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 6,366 PureBasic repos on <a href="https://github.com/search?q=language:PureBasic">GitHub</a>
+- Early development of PureBasic happened in <a href="../lists/labs.html#q=Fantaisie Software">Fantaisie Software</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 556 users using PureBasic in 647 repos on <a href="https://api.github.com/search/repositories?q=language:PureBasic">GitHub</a>
+- Explore PureBasic snippets on <a href="http://www.rosettacode.org/wiki/Category:PureBasic">Rosetta Code</a>
+- GitHub supports <a href="https://github.com/telnet23/language-basic" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for PureBasic
+- Indeed.com has 0 matches for <a href="https://www.indeed.com/jobs?q=purebasic developer">"purebasic developer"</a>.
+- <a href="http://www.purebasic.com">purebasic.com</a> was registered in 2000
+- See also: (5 related languages) <a href="basic.html">BASIC</a>, <a href="linux.html">Linux</a>, <a href="x86-isa.html">X86</a>, <a href="powerpc.html">PowerPC</a>, <a href="isbn.html">ISBN</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/p/PureBasic.pb'>hello-world</a>:
 If OpenConsole()
   PrintN(&quot;Hello World&quot;)
 EndIf
 
+```
+
+```Example from <a href='https://github.com/telnet23/language-basic'>Linguist</a>:
 EnableExplicit
 
 ; ##################################################### Includes ####################################################
@@ -138,12 +142,10 @@ Repeat
             
           Case Main_Window\TrackBar[1]
             Amplitude = GetGadgetState(Main_Window\TrackBar[1]) / 1000
-            
         EndSelect
         
       Case #PB_Event_CloseWindow
         Main\Quit = #True
-        
       Case 0
         Break
     EndSelect
@@ -163,6 +165,9 @@ AudioOut::Deinitialize(Main\AudioOut)
 ; EnableThread
 ; EnableXP
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/PureBasic'>Wikipedia</a>:
 Structure type_name
    field_name.type ; Single field. Perhaps the structures attachment.
    field_name[count].type ; Static arrays.
@@ -175,41 +180,42 @@ Structure type_name
       ; ...
    EndStructureUnion
 EndStructure
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token PrintN
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ; A comment
  Token ;
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

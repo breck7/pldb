@@ -1,24 +1,27 @@
 FaCT
 ====
 
-FaCT is an open source programming language created in 2017 by Deian Stefan.
+FaCT is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2017 by Deian Stefan.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2017
  https://pldb.io/concepts/../lists/creators.html#q=Deian%20Stefan Deian Stefan
 
-#911 on PLDB
-7 Years Old
+#943 on PLDB
+9 Years Old
 
+```Download source code:
 git clone https://github.com/PLSysSec/FaCT
+```
 
 FaCT is a domain-specific language that aids you in writing constant-time code for cryptographic routines that need to be free from timing side channels. This is the compiler for the Flexible and Constant Time cryptographic programming language. Real-world cryptographic code is often written in a subset of C intended to execute in constant-time, thereby avoiding timing side channel vulnerabilities. This C subset eschews structured programming as we know it: if-statements, looping constructs, and procedural abstractions can leak timing information when handling sensitive data. The resulting obfuscation has led to subtle bugs, even in widely-used high-profile libraries like OpenSSL. To address the challenge of writing constant-time cryptographic code, we present FaCT, a crypto DSL that provides high-level but safe language constructs. The FaCT compiler uses a secrecy type system to automatically transform potentially timing-sensitive high-level code into low-level, constant-time LLVM bitcode. We develop the language and type system, formalize the constant-time transformation, and present an empirical evaluation that uses FaCT to implement core crypto routines from several open-source projects including OpenSSL, libsodium, and curve25519-donna. Our evaluation shows that FaCT's design makes it possible to write \emph{readable}, high-level cryptographic code, with \emph{efficient}, \emph{constant-time} behavior.
 
-- Tags: programming language
-- FaCT is developed on GitHub and has 191 stars
-- Early development of FaCT happened in University of California San Diego and Stanford University and PI for Security and Privacy and Inria and IMDEA Software Institute
-- FaCT is written in OCaml, C, Bourne shell, Markdown, Make, Dockerfile
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- FaCT is developed on <a href="https://github.com/PLSysSec/FaCT">GitHub</a> and has 191 stars
+- Early development of FaCT happened in <a href="../lists/labs.html#q=University of California San Diego">University of California San Diego</a> and <a href="../lists/labs.html#q=Stanford University">Stanford University</a> and <a href="../lists/labs.html#q=PI for Security and Privacy">PI for Security and Privacy</a> and <a href="../lists/labs.html#q=Inria">Inria</a> and <a href="../lists/labs.html#q=IMDEA Software Institute">IMDEA Software Institute</a>
+- FaCT is written in <a href="ocaml.html">OCaml</a>, <a href="c.html">C</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="markdown.html">Markdown</a>, <a href="make.html">Make</a>, <a href="dockerfile.html">Dockerfile</a>
 - Read more about FaCT on the web: 1.
  https://ranjitjhala.github.io/static/fact_dsl.pdf 1.
 
+```Example from the web:
 void
 swap_conditional(secret mut uint64[5] a, secret mut uint64[5] b, secret uint64 swapi) {
   if (swapi == 1) {
@@ -29,5 +32,6 @@ swap_conditional(secret mut uint64[5] a, secret mut uint64[5] b, secret uint64 s
     }
   }
 }
+```
 
-View source
+Built with Scroll v178.2.3

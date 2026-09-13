@@ -1,26 +1,29 @@
 Textile
 =======
 
-Textile is an open source text markup language created in 2002 by netcarver.
+Textile is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2002 by netcarver.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222002%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2002
  https://pldb.io/concepts/../lists/creators.html#q=netcarver netcarver
 
-#550 on PLDB
-22 Years Old
-0 Repos
+#570 on PLDB
+24 Years Old
+0 <span title="Textile repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/textile/php-textile
+```
 
 Textile is a lightweight markup language that uses a text formatting syntax to convert plain text into structured HTML markup. Textile is used for writing articles, forum posts, readme documentation, and any other type of written content published online.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Textile_(markup_language) Read more on Wikipedia...
 
-- Tags: text markup language
-- Textile is developed on GitHub and has 213 stars
-- There are at least 0 Textile repos on GitHub
-- Textile is written in YAML, PHP, Markdown, Dockerfile, XML, Make, JSON
-- CodeMirror package for syntax highlighting Textile
-- See also: (11 related languages) Markdown, PHP, Perl, Python, Ruby, JavaScript, C#, HTML, Qt, iOS, Android
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- Textile is developed on <a href="https://github.com/textile/php-textile">GitHub</a> and has 213 stars
+- There are at least 0 Textile repos on <a href="https://github.com/search?q=language:Textile">GitHub</a>
+- Textile is written in <a href="yaml.html">YAML</a>, <a href="php.html">PHP</a>, <a href="markdown.html">Markdown</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="xml.html">XML</a>, <a href="make.html">Make</a>, <a href="json.html">JSON</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/textile">package</a> for syntax highlighting Textile
+- See also: (11 related languages) <a href="markdown.html">Markdown</a>, <a href="php.html">PHP</a>, <a href="perl.html">Perl</a>, <a href="python.html">Python</a>, <a href="ruby.html">Ruby</a>, <a href="javascript.html">JavaScript</a>, <a href="csharp.html">C#</a>, <a href="html.html">HTML</a>, <a href="qt.html">Qt</a>, <a href="ios.html">iOS</a>, <a href="android.html">Android</a>
 
+```Example from the web:
 &quot;&quot;&quot;
 _This_ is a *test.*
 
@@ -30,7 +33,11 @@ _This_ is a *test.*
 
 Link to &quot;Slashdot&quot;:http://slashdot.org/
 &quot;&quot;&quot;
+```
 
+```Example from <a href='https://riju.codes/textile'>Riju</a>:
 Hello, world!
 
-View source
+```
+
+Built with Scroll v178.2.3

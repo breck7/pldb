@@ -1,26 +1,27 @@
 Ch
 ==
 
-Ch is a programming language created in 2003 by Ge Wang.
+Ch is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2003 by Ge Wang.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2003
  https://pldb.io/concepts/../lists/creators.html#q=Ge%20Wang Ge Wang
 
-#610 on PLDB
-21 Years Old
-571 Repos
+#626 on PLDB
+23 Years Old
+571 <span title="Ch repos on GitHub.">Repos</span>
 
 ChucK is a concurrent, strongly timed audio programming language for real-time synthesis, composition, and performance, which runs on Linux, Mac OS X, Microsoft Windows, and iOS. It is designed to favor readability and flexibility for the programmer over other considerations such as raw performance. It natively supports deterministic concurrency and multiple, simultaneous, dynamic control rates. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/ChucK Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 571 Ch repos on GitHub
-- Early development of Ch happened in chuck team
-- The  Google BigQuery Public Dataset GitHub snapshot shows 85 users using Ch in 95 repos on GitHub
-- Explore Ch snippets on Rosetta Code
-- Ch appears in the TIOBE Index
-- GitHub supports syntax highlighting for Ch
-- See also: (2 related languages) Linux, iOS
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 571 Ch repos on <a href="https://github.com/search?q=language:ChucK">GitHub</a>
+- Early development of Ch happened in <a href="../lists/labs.html#q=chuck team">chuck team</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 85 users using Ch in 95 repos on <a href="https://api.github.com/search/repositories?q=language:ChucK">GitHub</a>
+- Explore Ch snippets on <a href="http://www.rosettacode.org/wiki/Category:ChucK">Rosetta Code</a>
+- Ch appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- GitHub supports <a href="https://github.com/textmate/java.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Ch
+- See also: (2 related languages) <a href="linux.html">Linux</a>, <a href="ios.html">iOS</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/ChucK'>Wikipedia</a>:
 // our signal graph (patch)
  SinOsc f =&gt; dac;
  // set gain
@@ -38,28 +39,29 @@ ChucK is a concurrent, strongly timed audio programming language for real-time s
      // advance time by 120 ms
      120::ms =&gt; now;
  }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

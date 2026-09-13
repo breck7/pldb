@@ -1,21 +1,23 @@
 Entropy
 =======
 
-Entropy is an esoteric programming language created in 2021 by Daniel Temkin.
+Entropy is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22esolang%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">esoteric programming language</a> created in 2021 by Daniel Temkin.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2021
  https://pldb.io/concepts/../lists/creators.html#q=Daniel%20Temkin Daniel Temkin
 
-#2462 on PLDB
-3 Years Old
+#2580 on PLDB
+5 Years Old
 
 Entropy is a language where data decays the more it's used.
 
-- Tags: esoteric programming language
-- Early development of Entropy happened in https://danieltemkin.com
-- entropy-lang.org was registered in 2021
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"esolang"%5D%7D%5D%2C"logic"%3A"AND"%7D'>esoteric programming language</a>
+- Early development of Entropy happened in <a href="../lists/labs.html#q=https://danieltemkin.com">https://danieltemkin.com</a>
+- <a href="https://entropy-lang.org/">entropy-lang.org</a> was registered in 2021
 
+```Example from <a href='https://riju.codes/entropy'>Riju</a>:
 Program MyNamespace MyProgram [
 	print &quot;Hello, world!\n&quot;;
 ]
+```
 
-View source
+Built with Scroll v178.2.3

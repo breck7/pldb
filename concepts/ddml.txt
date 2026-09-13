@@ -1,18 +1,19 @@
 DDML
 ====
 
-DDML, aka Document Definition Markup Language, is a xml format created in 1999.
+DDML, aka Document Definition Markup Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22xmlFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">xml format</a> created in 1999.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221999%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1999
 
-#2605 on PLDB
-25 Years Old
+#2700 on PLDB
+27 Years Old
 
 Document Definition Markup Language (DDML) is an XML schema language proposed in 1999 by various contributors from the xml-dev electronic mailing list. It was published only as a W3C Note, not a Recommendation, and never found favor with developers. DDML began as XSchema, a reformulation of XML DTDs as full XML documents, so that elements and attributes, rather than declarations, could be used to describe a schema. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Document_Definition_Markup_Language Read more on Wikipedia...
 
-- Tags: xmlFormat
-- Early development of DDML happened in http://www.xml.org/xml-dev/
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"xmlFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>xmlFormat</a>
+- Early development of DDML happened in <a href="../lists/labs.html#q=http://www.xml.org/xml-dev/">http://www.xml.org/xml-dev/</a>
 
+```Example from the web:
 &lt;?xml version=&quot;1.0&quot;?&gt;
 
 &lt;!DOCTYPE &quot;DocumentDef&quot;&gt;
@@ -345,5 +346,6 @@ Document Definition Markup Language (DDML) is an XML schema language proposed in
   &lt;/ElementDecl&gt;
 
 &lt;/DocumentDef&gt;
+```
 
-View source
+Built with Scroll v178.2.3

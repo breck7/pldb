@@ -1,0 +1,60 @@
+KRML
+====
+
+KRML, aka Knowledge Representation Markup Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2021 by Edward Anderson.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2021
+ https://pldb.io/concepts/../lists/creators.html#q=Edward%20Anderson Edward Anderson
+
+#2182 on PLDB
+5 Years Old
+
+KRML is a lightweight markup language for creating knowledge graphs using Markdown syntax. It represents resources and relationships via nested lists, hyperlinks, and definition lists, with configuration in YAML frontmatter, targeting applications in semantic web and linked data.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- <a href="markdown.html">Markdown</a> and <a href="rdf.html">RDF</a> and <a href="yaml.html">YAML</a> influenced the design of KRML
+- KRML compiles to <a href="json-ld.html">JSON-LD</a>
+- See also: (4 related languages) <a href="markdown.html">Markdown</a>, <a href="rdf.html">RDF</a>, <a href="json-ld.html">JSON-LD</a>, <a href="schemaorg.html">Schema.org</a>
+
+```Example from the web:
+---
+id: http://example.org/mona-lisa
+title: Mona Lisa
+language: en
+---
+
+- Mona Lisa
+  - title
+    - &gt; Mona Lisa
+    - &gt; La joconde `fr`
+    - &gt; la Gioconda `it`
+    - &gt; モナ・リザ `jp`
+  - a
+    - Painting
+  - description
+    - &gt; Considered an archetypal [masterpiece](https://en.wikipedia.org/wiki/Masterpiece) of the [Italian Renaissance](https://en.wikipedia.org/wiki/Italian_Renaissance), it has been described as &quot;the best known, the most visited, the most written about, the most sung about, [and] the most parodied work of art in the world.&quot;
+      - source
+        - &lt;https://en.wikipedia.org/wiki/Mona_Lisa&gt;
+  - image
+    - ![Mona Lisa, by Leonardo da Vinci](https://w.wiki/C4dN)
+  - creator
+    - [Leonardo da Vinci](http://www.wikidata.org/entity/Q762)
+      - description
+        - &gt; Italian Renaissance polymath (1452−1519)
+      - [date of birth](https://schema.org/birthDate)
+        - &gt; 1452-04-15 `date`
+
+---
+&lt;!-- Term definitions --&gt;
+
+Mona Lisa
+: &lt;http://www.wikidata.org/entity/Q12418&gt;
+: &lt;https://collections.louvre.fr/ark:/53355/cl010062370&gt;
+
+title
+: &lt;https://schema.org/name&gt;
+
+date
+: &lt;http://www.w3.org/2001/XMLSchema#date&gt;
+```
+
+Built with Scroll v178.2.3

@@ -1,27 +1,34 @@
 Miranda
 =======
 
-Miranda is a programming language created in 1985 by David Turner.
+Miranda is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1985 by David Turner.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221985%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1985
  https://pldb.io/concepts/../lists/creators.html#q=David%20Turner David Turner
 
-#837 on PLDB
-39 Years Old
+#862 on PLDB
+41 Years Old
 
 Miranda is a lazy, purely functional programming language designed by David Turner as a successor to his earlier programming languages SASL and KRC, using some concepts from ML and Hope.  It was produced by Research Software Ltd. of England (which holds a trademark on the name Miranda) and was the first purely functional language to be commercially supported.Miranda was first released in 1985, as a fast interpreter in C for Unix-flavour operating systems, with subsequent releases in 1987 and 1989. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Miranda_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Miranda happened in Research Software Ltd
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Miranda happened in <a href="../lists/labs.html#q=Research Software Ltd">Research Software Ltd</a>
 - Miranda on HOPL
  https://hopl.info/showlanguage.prx?exp=911 Miranda on HOPL
-- See also: (11 related languages) KRC, ML, HOPE, Clean, Haskell, C, Unix, ISWIM, Occam, Python, Pascal
+- See also: (11 related languages) <a href="krc.html">KRC</a>, <a href="ml.html">ML</a>, <a href="hope.html">HOPE</a>, <a href="clean.html">Clean</a>, <a href="haskell.html">Haskell</a>, <a href="c.html">C</a>, <a href="unix.html">Unix</a>, <a href="iswim.html">ISWIM</a>, <a href="occam.html">Occam</a>, <a href="python.html">Python</a>, <a href="pascal.html">Pascal</a>
 
+```Example from <a href='https://riju.codes/miranda'>Riju</a>:
 main = [Stdout &quot;Hello, world!&quot;]
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/m/Miranda.m'>hello-world</a>:
 main :: [sys_message]
 main = [Stdout &quot;Hello World&quot;]
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Miranda_(programming_language)'>Wikipedia</a>:
 &gt; || The infinite list of all prime numbers.
 
 The list of potential prime numbers starts as all integers from 2 onwards;
@@ -30,28 +37,29 @@ divided by it are filtered out of the list of candidates.
 
 &gt; primes = sieve [2..]
 &gt; sieve (p:x) = p : sieve [n | n &lt;- x; n mod p ~= 0]
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token Stdout
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

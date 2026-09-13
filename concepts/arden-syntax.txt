@@ -1,15 +1,16 @@
 Arden syntax
 ============
 
-Arden syntax is a data notation created in 1992.
+Arden syntax is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 1992.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221992%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1992
 
-#1760 on PLDB
-32 Years Old
+#1825 on PLDB
+34 Years Old
 
-- Tags: dataNotation
-- Early development of Arden syntax happened in Columbia Presbyterian Medical Center and IBM
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- Early development of Arden syntax happened in <a href="../lists/labs.html#q=Columbia Presbyterian Medical Center">Columbia Presbyterian Medical Center</a> and <a href="../lists/labs.html#q=IBM">IBM</a>
 
+```Example from the web:
 maintenance:
  title: To check the diastolic blood pressure of the patient;;
  mlmname: Hypotension;;
@@ -63,20 +64,21 @@ resources:
  &#39;msg&#39; : &quot;Der Normalbereich von 60 bis 90&quot;;
  ;;
 end:
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -84,7 +86,7 @@ row
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -92,8 +94,8 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

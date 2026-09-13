@@ -1,19 +1,20 @@
 Geography Markup Language
 =========================
 
-Geography Markup Language is a xml format created in 2000.
+Geography Markup Language is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22xmlFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">xml format</a> created in 2000.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2000
 
-#2135 on PLDB
-24 Years Old
+#2219 on PLDB
+26 Years Old
 
 The Geography Markup Language (GML) is the XML grammar defined by the Open Geospatial Consortium (OGC) to express geographical features. GML serves as a modeling language for geographic systems as well as an open interchange format for geographic transactions on the Internet. Key to GML's utility is its ability to integrate all forms of geographic information, including not only conventional "vector" or discrete objects, but coverages (see also GMLJP2) and sensor data.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Geography_Markup_Language Read more on Wikipedia...
 
-- Tags: xmlFormat
-- Early development of Geography Markup Language happened in Open Geospatial Consortium
-- See also: (3 related languages) XML, RDF, KML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"xmlFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>xmlFormat</a>
+- Early development of Geography Markup Language happened in <a href="../lists/labs.html#q=Open Geospatial Consortium">Open Geospatial Consortium</a>
+- See also: (3 related languages) <a href="xml.html">XML</a>, <a href="rdf.html">RDF</a>, <a href="kml.html">KML</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Geography_Markup_Language'>Wikipedia</a>:
 &lt;PhotoCollection xmlns=&quot;http://www.myphotos.org&quot; xmlns:gml=&quot;http://www.opengis.net/gml&quot;
       xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
       xsi:schemaLocation=&quot;http://www.myphotos.org
@@ -31,5 +32,6 @@ The Geography Markup Language (GML) is the XML grammar defined by the Open Geosp
          &lt;/Item&gt;
      &lt;/items&gt;
  &lt;/PhotoCollection&gt;
+```
 
-View source
+Built with Scroll v178.2.3

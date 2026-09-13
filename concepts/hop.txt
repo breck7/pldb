@@ -1,19 +1,25 @@
-hop
+Hop
 ===
 
-hop is a programming language created in 2006.
+Hop is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2006 by Manuel Serrano and Erick Gallesio and Florian Loitsch.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
+ https://pldb.io/concepts/../lists/creators.html#q=Manuel%20Serrano Manuel Serrano
+ https://pldb.io/concepts/../lists/creators.html#q=Erick%20Gallesio Erick Gallesio
+ https://pldb.io/concepts/../lists/creators.html#q=Florian%20Loitsch Florian Loitsch
 
-#2571 on PLDB
-18 Years Old
+#1967 on PLDB
+20 Years Old
 
-- Tags: programming language
-- Early development of hop happened in Inria and Universit ́e de Nice
-- hop on HOPL
- https://hopl.info/showlanguage.prx?exp=8576 hop on HOPL
-- Read more about hop on the web: 1.
+Hop is a new higher-order language designed for programming interactive web applications such as web agendas, web galleries, music players, etc.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Hop happened in <a href="../lists/labs.html#q=Inria">Inria</a> and <a href="../lists/labs.html#q=Universit ́e de Nice">Universit ́e de Nice</a>
+- Hop on HOPL
+ https://hopl.info/showlanguage.prx?exp=8576 Hop on HOPL
+- Read more about Hop on the web: 1.
  https://www.lri.fr/~conchon/TER/2012/3/dls06.pdf 1.
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/h/HOP'>hello-world</a>:
 (define-service (hello-world)
   (&lt;HTML&gt;
      (&lt;HEAD&gt;
@@ -21,15 +27,17 @@ hop is a programming language created in 2006.
      (&lt;BODY&gt;
         &quot;Hello World&quot;)))
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 
-View source
+Built with Scroll v178.2.3

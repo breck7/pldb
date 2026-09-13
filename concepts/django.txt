@@ -1,24 +1,26 @@
 Django
 ======
 
-Django is an open source library created in 2005.
+Django is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22library%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">library</a> created in 2005.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222005%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2005
 
-#664 on PLDB
-19 Years Old
+#699 on PLDB
+21 Years Old
 
 Django ( JANG-goh) is a free and open-source web framework, written in Python, which follows the model-view-template (MVT) architectural pattern. It is maintained by the Django Software Foundation (DSF), an independent organization established as a 501(c)(3) non-profit. Django's primary goal is to ease the creation of complex, database-driven websites. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Django_(web_framework) Read more on Wikipedia...
 
-- Tags: library
-- Early development of Django happened in Django Software Foundation
-- CodeMirror package for syntax highlighting Django
-- GitHub supports syntax highlighting for Django
-- See also: (16 related languages) Python, Regular Expressions, HTML, XML, JSON, Nginx, PostgreSQL, MySQL, SQLite, MongoDB, Jython, Ruby, Perl, PHP, Erlang, ISBN
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"library"%5D%7D%5D%2C"logic"%3A"AND"%7D'>library</a>
+- Early development of Django happened in <a href="../lists/labs.html#q=Django Software Foundation">Django Software Foundation</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/django">package</a> for syntax highlighting Django
+- GitHub supports <a href="https://github.com/textmate/python-django.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Django
+- See also: (16 related languages) <a href="python.html">Python</a>, <a href="regex.html">Regular Expressions</a>, <a href="html.html">HTML</a>, <a href="xml.html">XML</a>, <a href="json.html">JSON</a>, <a href="nginx-config.html">Nginx</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="mysql.html">MySQL</a>, <a href="sqlite.html">SQLite</a>, <a href="mongodb.html">MongoDB</a>, <a href="jython.html">Jython</a>, <a href="ruby.html">Ruby</a>, <a href="perl.html">Perl</a>, <a href="php.html">PHP</a>, <a href="erlang.html">Erlang</a>, <a href="isbn.html">ISBN</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/d/Django.py'>hello-world</a>:
 from django.http import HttpResponse
 
 def index(request):
     return HttpResponse(&quot;Hello World&quot;)
+```
 
-View source
+Built with Scroll v178.2.3

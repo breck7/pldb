@@ -1,23 +1,26 @@
 TQL
 ===
 
-TQL, aka TrueBase Query Language, is an open source query language created in 2023 by Breck Yunits.
+TQL, aka TrueBase Query Language, is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22queryLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">query language</a> created in 2023 by Breck Yunits.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222023%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2023
  https://pldb.io/concepts/../lists/creators.html#q=Breck%20Yunits Breck Yunits
 
-#1583 on PLDB
-1 Years Old
+#1642 on PLDB
+3 Years Old
 
+```Download source code:
 git clone https://github.com/breck7/truebase
+```
 
 A language for querying TrueBases.
 
-- Tags: queryLanguage
-- TQL is developed on GitHub and has 9 stars
-- Early development of TQL happened in Breck's Lab
-- SQL influenced the design of TQL
-- TQL is written in Parsers, JavaScript
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"queryLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>queryLanguage</a>
+- TQL is developed on <a href="https://github.com/breck7/truebase">GitHub</a> and has 9 stars
+- Early development of TQL happened in <a href="../lists/labs.html#q=Breck's Lab">Breck's Lab</a>
+- <a href="sql.html">SQL</a> influenced the design of TQL
+- TQL is written in <a href="parsers.html">Parsers</a>, <a href="javascript.html">JavaScript</a>
 
+```Example from the web:
 where appeared &gt; 2009
 where appeared &lt; 2020
 notMissing githubRepo_stars
@@ -25,21 +28,22 @@ where type = pl
 sortBy githubRepo_stars
 select githubRepo_stars
 reverse
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature hasBuiltInRegex
  FeatureLink ../features/hasBuiltInRegex.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

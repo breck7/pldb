@@ -6,6 +6,7 @@ appeared 2004
 creators Martin Odersky
 tags pl
 website http://www.scala-lang.org
+spec https://www.scala-lang.org/files/archive/spec/2.11/
 blog https://www.scala-lang.org/blog/
 releaseNotes https://www.scala-lang.org/download/all.html
 download https://scala-lang.org/download/
@@ -128,6 +129,33 @@ hasImplicitArguments true
    }
  }
 hasOperatorOverloading true
+hasStaticTyping true
+hasStructuralTyping true
+ // https://docs.scala-lang.org/scala3/reference/changed-features/structural-types.html#using-java-reflection-1
+ import scala.reflect.Selectable.reflectiveSelectable
+ 
+ type Reversable[T] = { def reverse: T }
+ 
+ def printReversed[T](x: Reversable[T]): Unit = {
+   println(x.reverse)
+ }
+ 
+ printReversed("abc")
+ printReversed(Array(1, 2, 3))
+ printReversed(1)  // Doesn't compile because integers don't have a reverse method
+hasTypeClasses true
+ // https://docs.scala-lang.org/scala3/book/ca-type-classes.html
+ trait TypedJsonConvertible[A]:
+   extension (a: A) def toTypedJson: String
+ 
+ given TypedJsonConvertible[Int] with
+   extension (x: Int) def toTypedJson: String =
+     s"{\"type\": \"int\", \"value\": ${x}}"
+ 
+ def printAsTypedJson[T: TypedJsonConvertible](x: T): Unit =
+   println(x.toTypedJson);
+ 
+ printAsTypedJson(123);
 hasTypeInference true
 hasLineComments true
  // A comment
@@ -143,6 +171,9 @@ hasWhileLoops true
 hasClasses true
 hasExceptions true
 hasFunctions true
+hasFunctionOverloading false
+hasNamedArguments true
+ "abcdef".slice(from=2, until=4)
 hasInheritance true
 hasConditionals true
 hasStandardLibrary true

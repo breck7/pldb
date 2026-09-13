@@ -1,29 +1,32 @@
 Vue
 ===
 
-Vue is an open source framework created in 2014 by Evan You.
+Vue is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22framework%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">framework</a> created in 2014 by Evan You.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
  https://pldb.io/concepts/../lists/creators.html#q=Evan%20You Evan You
 
-#156 on PLDB
-10 Years Old
-876k Repos
+#160 on PLDB
+12 Years Old
+876k <span title="Vue repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/vuejs/vue
+```
 
 Vue.js (commonly referred to as Vue; pronounced , like view) is an open-source JavaScript framework for building user interfaces. Integration into projects that use other JavaScript libraries is simplified with Vue because it is designed to be incrementally adoptable. Vue can also function as a web application framework capable of powering advanced single-page applications.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Vue.js Read more on Wikipedia...
 
-- Tags: framework
-- Vue is developed on GitHub and has 207,463 stars
-- There are at least 875,562 Vue repos on GitHub
-- Vue is written in TypeScript, JavaScript, HTML, JSON, Markdown, CSS, YAML, Bash
-- The  Google BigQuery Public Dataset GitHub snapshot shows 8k users using Vue in 9k repos on GitHub
-- Vue LSP implementation
-- GitHub supports syntax highlighting for Vue
-- vuejs.org was registered in 2013
-- See also: (4 related languages) JavaScript, HTML, CSS, Elm
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"framework"%5D%7D%5D%2C"logic"%3A"AND"%7D'>framework</a>
+- Vue is developed on <a href="https://github.com/vuejs/vue">GitHub</a> and has 207,463 stars
+- There are at least 875,562 Vue repos on <a href="https://github.com/search?q=language:Vue">GitHub</a>
+- Vue is written in <a href="typescript.html">TypeScript</a>, <a href="javascript.html">JavaScript</a>, <a href="html.html">HTML</a>, <a href="json.html">JSON</a>, <a href="markdown.html">Markdown</a>, <a href="css.html">CSS</a>, <a href="yaml.html">YAML</a>, <a href="bash.html">Bash</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 8k users using Vue in 9k repos on <a href="https://api.github.com/search/repositories?q=language:Vue">GitHub</a>
+- Vue <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/vuejs/vetur">implementation</a>
+- GitHub supports <a href="https://github.com/vuejs/vue-syntax-highlight" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Vue
+- <a href="https://vuejs.org">vuejs.org</a> was registered in 2013
+- See also: (4 related languages) <a href="javascript.html">JavaScript</a>, <a href="html.html">HTML</a>, <a href="css.html">CSS</a>, <a href="elm.html">Elm</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/v/Vue.js'>hello-world</a>:
 &lt;div id=&quot;app&quot;&gt;
   &lt;p&gt;{{ message }}&lt;/p&gt;
 &lt;/div&gt;
@@ -36,6 +39,9 @@ new Vue({
 })
 &lt;/script&gt;
 
+```
+
+```Example from <a href='https://github.com/vuejs/vue-syntax-highlight'>Linguist</a>:
 &lt;style&gt;
 .red {
   color: #f00;
@@ -58,10 +64,14 @@ module.exports = {
 }
 &lt;/script&gt;
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Vue.js'>Wikipedia</a>:
 &lt;div id=&quot;app&quot;&gt;
   &lt;div&gt;
     &lt;div&gt;User 1&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
+```
 
-View source
+Built with Scroll v178.2.3

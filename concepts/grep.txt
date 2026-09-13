@@ -1,21 +1,23 @@
 grep
 ====
 
-grep is an open source programming language created in 1974.
- https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221974%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1974
+grep is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1973 by Ken Thompson.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221973%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1973
+ https://pldb.io/concepts/../lists/creators.html#q=Ken%20Thompson Ken Thompson
 
-#839 on PLDB
-50 Years Old
+#752 on PLDB
+53 Years Old
 
 grep is a command-line utility for searching plain-text data sets for lines that match a regular expression. Its name comes from the ed command g/re/p (globally search a regular expression and print), which has the same effect: doing a global search with the regular expression and printing all matching lines. Grep was originally developed for the Unix operating system, but later available for all Unix-like systems.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Grep Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of grep happened in Bell Labs
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of grep happened in <a href="../lists/labs.html#q=Bell Labs">Bell Labs</a>
 - grep on HOPL
  https://hopl.info/showlanguage.prx?exp=2295 grep on HOPL
-- See also: (3 related languages) Unix, Regular Expressions, Perl
+- See also: (3 related languages) <a href="unix.html">Unix</a>, <a href="regex.html">Regular Expressions</a>, <a href="perl.html">Perl</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Grep'>Wikipedia</a>:
 $ grep root /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 operator:x:11:0:operator:/root:/sbin/nologin
@@ -26,5 +28,6 @@ $ grep -n root /etc/passwd
 
 $ grep -c false /etc/passwd
 7
+```
 
-View source
+Built with Scroll v178.2.3

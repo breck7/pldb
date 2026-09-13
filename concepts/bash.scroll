@@ -26,9 +26,11 @@ ubuntuPackage bash
 repoStats
  firstCommit 1996
  newestCommit 2024
- commits 1509
+ commits 1571
  committers 3
- files 1459
+ files 1454
+ mb 279
+ linesOfCode 482954
 country United States
 
 pygmentsHighlighter Bash
@@ -91,9 +93,13 @@ hasImports true
  source ./bash.sh
 hasWhileLoops true
 hasFunctions true
+hasFunctionOverloading false
+hasNamedArguments false
 hasConditionals true
 hasStandardLibrary true
  echo "Hello, World!"
+hasStaticTyping false
+hasStructuralTyping false
 
 jupyterKernel https://github.com/takluyver/bash_kernel
 wikipedia https://en.wikipedia.org/wiki/Bash_(Unix_shell)

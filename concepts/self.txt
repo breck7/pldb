@@ -1,67 +1,74 @@
 Self
 ====
 
-Self is an open source programming language created in 1987 by David Ungar.
+Self is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1987 by David Ungar.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221987%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1987
  https://pldb.io/concepts/../lists/creators.html#q=David%20Ungar David Ungar
 
-#456 on PLDB
-37 Years Old
-36 Repos
+#451 on PLDB
+39 Years Old
+36 <span title="Self repos on GitHub.">Repos</span>
 
 Self is an object-oriented programming language based on the concept of prototypes. Self began as a dialect of Smalltalk, being dynamically typed and using just-in-time compilation (JIT) as well as the prototype-based approach to objects: it was first used as an experimental test system for language design in the 1980s and 1990s. In 2006, Self was still being developed as part of the Klein project, which was a Self virtual machine written fully in Self. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Self_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 36 Self repos on GitHub
-- Early development of Self happened in Sun Microsystems
-- The  Google BigQuery Public Dataset GitHub snapshot shows 24 users using Self in 26 repos on GitHub
-- Explore Self snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 36 Self repos on <a href="https://github.com/search?q=language:Self">GitHub</a>
+- Early development of Self happened in <a href="../lists/labs.html#q=Sun Microsystems">Sun Microsystems</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 24 users using Self in 26 repos on <a href="https://api.github.com/search/repositories?q=language:Self">GitHub</a>
+- Explore Self snippets on <a href="http://www.rosettacode.org/wiki/Category:Self">Rosetta Code</a>
 - Self on HOPL
  https://hopl.info/showlanguage.prx?exp=1361 Self on HOPL
-- selflanguage.org was registered in 2009
-- See also: (16 related languages) Smalltalk, NewtonScript, JavaScript, Io, Agora, Squeak, Lisaac, Lua, Factor, REBOL, Java, Solaris, Linux, C, CECIL, Ioke
+- <a href="http://www.selflanguage.org">selflanguage.org</a> was registered in 2009
+- See also: (16 related languages) <a href="smalltalk.html">Smalltalk</a>, <a href="newtonscript.html">NewtonScript</a>, <a href="javascript.html">JavaScript</a>, <a href="io.html">Io</a>, <a href="agora.html">Agora</a>, <a href="squeak.html">Squeak</a>, <a href="lisaac.html">Lisaac</a>, <a href="lua.html">Lua</a>, <a href="factor.html">Factor</a>, <a href="rebol.html">REBOL</a>, <a href="java.html">Java</a>, <a href="solaris.html">Solaris</a>, <a href="linux.html">Linux</a>, <a href="c.html">C</a>, <a href="cecil.html">CECIL</a>, <a href="ioke.html">Ioke</a>
 - Read more about Self on the web: 1.
  https://www.youtube.com/watch?v=Ox5P7QyL774 1.
-- 1 PLDB concepts link to Self: JavaScript
+- 1 PLDB concepts link to Self: <a href="javascript.html">JavaScript</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/s/Self.self'>hello-world</a>:
 &#39;Hello World&#39; printLine
+```
 
+```Example from <a href='http://helloworldcollection.de/#Self'>the Hello World Collection</a>:
 (|  &quot;Hello World in Self&quot;
 
   hello = (| | &#39;Hello World!&#39; print)
 |)
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Self_(programming_language)'>Wikipedia</a>:
 _AddSlots: (| porsche911 &lt;- sportsCar copy |).
 porsche911 name:&#39;Bobs Porsche&#39;.
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   'Hello world'
  Token '
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token printLine
 row
  Feature Message Passing
  FeatureLink ../features/hasMessagePassing.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

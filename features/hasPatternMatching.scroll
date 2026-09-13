@@ -7,9 +7,19 @@ printTitle Pattern Matching
 <a class="trueBaseThemePreviousItem" href="hasPartialApplication.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasPipes.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/python.html">Python</a>
+ def get_two_ends(l):
+   match l:
+     case [first, *_, last]:
+       return (first, last)
+     case [_] | []:
+       raise ValueError(&quot;list is too short to have two ends&quot;)
+     case _:
+       raise ValueError(&quot;not a list&quot;)
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/haskell.html">Haskell</a>
  fib 0 = 1
@@ -32,12 +42,36 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/felix.html"
   | None =&gt; println &quot;NONE&quot;;
   endmatch;
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/rhombus.html">Rhombus</a>
+ // pattern matching on objects, lists, and maps
+ class Rect(left, top, right, bottom)
+                      
+ fun rect_like_to_rect(v):
+   match v
+   | Rect(_, _, _, _): v
+   | {&quot;LT&quot;: [l, t], &quot;RB&quot;: [r, b]}: Rect(l, t, r, b)
+   | {&quot;TL&quot;: [t, l], &quot;RB&quot;: [b, r]}: Rect(l, t, r, b)
+                                 
+ rect_like_to_rect({&quot;TL&quot;: [0, 2], &quot;RB&quot;: [10, 5]})
+ // ⇒ Rect(0, 2, 10, 5)
+ rect_like_to_rect({&quot;LT&quot;: [0, 2], &quot;RB&quot;: [10, 5]})
+ // ⇒ Rect(2, 0, 5, 10)
+ // pattern matching in all binding positions
+ class Posn(x, y)
+ fun flip_all([Posn(x, y), ...]):
+   [Posn(y, x), ...]
+  
+ flip_all([Posn(1, 2), Posn(3, 4)])
+ // ⇒ [Posn(2, 1), Posn(4, 3)]
+ flip_all([Posn(5, 6)])
+ // ⇒ [Posn(6, 5)]
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/aardvark.html">Aardvark</a>
  This functionality is included in switch statements.
 
 ***
 
-* Languages *with* Pattern Matching include <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/haskell.html">Haskell</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/coconut.html">Coconut</a>, <a href="../concepts/felix.html">Felix</a>, <a href="../concepts/egison.html">Egison</a>, <a href="../concepts/hope.html">HOPE</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/npl-lang.html">NPL</a>
+* Languages *with* Pattern Matching include <a href="../concepts/python.html">Python</a>, <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/haskell.html">Haskell</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/coconut.html">Coconut</a>, <a href="../concepts/moonbit.html">MoonBit</a>, <a href="../concepts/felix.html">Felix</a>, <a href="../concepts/egison.html">Egison</a>, <a href="../concepts/rhombus.html">Rhombus</a>, <a href="../concepts/hope.html">HOPE</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/nova.html">NOVA</a>, <a href="../concepts/cobrust.html">Cobrust</a>, <a href="../concepts/lateralus.html">Lateralus</a>, <a href="../concepts/npl-lang.html">NPL</a>
 
 ***
 

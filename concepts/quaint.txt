@@ -1,23 +1,26 @@
 Quaint
 ======
 
-Quaint is a text markup language created in 2014 by Olivier Breuleux.
+Quaint is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2014 by Olivier Breuleux.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
  https://pldb.io/concepts/../lists/creators.html#q=Olivier%20Breuleux Olivier Breuleux
 
-#1368 on PLDB
-10 Years Old
+#1402 on PLDB
+12 Years Old
 
+```Download source code:
 git clone https://github.com/breuleux/quaint
+```
 
 Quaint is a markup language that you can use to write documents. It is similar to Markdown, but it is more powerful and more extensible.
 
-- Tags: text markup language
-- Quaint is developed on GitHub and has 33 stars
-- Early development of Quaint happened in https://github.com/breuleux/quaint/issues
-- Quaint is written in JSON, JavaScript, Markdown, CSS
-- See also: (2 related languages) Markdown, Scroll
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- Quaint is developed on <a href="https://github.com/breuleux/quaint">GitHub</a> and has 33 stars
+- Early development of Quaint happened in <a href="../lists/labs.html#q=https://github.com/breuleux/quaint/issues">https://github.com/breuleux/quaint/issues</a>
+- Quaint is written in <a href="json.html">JSON</a>, <a href="javascript.html">JavaScript</a>, <a href="markdown.html">Markdown</a>, <a href="css.html">CSS</a>
+- See also: (2 related languages) <a href="markdown.html">Markdown</a>, <a href="scroll.html">Scroll</a>
 
+```Example from the web:
 ;; Edit me!
 
 meta ::
@@ -55,29 +58,30 @@ javascript &amp;
   function virus() { alert(&quot;AAAAAAAAHHH&quot;); }
 
 @@image:assets/quaint-small.png
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ;; A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ;; A comment
  Token ;;
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

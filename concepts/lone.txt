@@ -1,0 +1,121 @@
+Lone
+====
+
+Lone is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2023 by Matheus Afonso Martins Moreira.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222023%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2023
+ https://pldb.io/concepts/../lists/creators.html#q=Matheus%20Afonso%20Martins%20Moreira Matheus Afonso Martins Moreira
+
+#1548 on PLDB
+3 Years Old
+
+```Download source code:
+git clone https://github.com/lone-lang/lone
+```
+
+Freestanding no libc Lisp interpreter that runs directly on the Linux kernel
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"lisp"%5D%7D%5D%2C"logic"%3A"AND"%7D'>lisp</a>
+- Lone is developed on <a href="https://github.com/lone-lang/lone">GitHub</a>
+- Lone is written in <a href="c.html">C</a>
+- Read more about Lone on the web: 1. 2. 3. 4. 5. 6.
+ https://www.matheusmoreira.com/articles/lone-lisp-heap 1.
+ https://www.matheusmoreira.com/articles/babys-second-garbage-collector 2.
+ https://www.matheusmoreira.com/articles/generators-in-lone-lisp 3.
+ https://www.matheusmoreira.com/articles/delimited-continuations-in-lone-lisp 4.
+ https://www.matheusmoreira.com/articles/self-contained-lone-lisp-applications 5.
+ https://alexalejandre.com/interviews/interview-with-matheus-moreira/ 6.
+
+```Example from the web:
+(import (lone) (linux system-call))
+(system-call &#39;write 1 &quot;Hello, world!&quot; 13)
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Disk Output
+ FeatureLink ../features/canWriteToDisk.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature canReadCommandLineArgs
+ FeatureLink ../features/canReadCommandLineArgs.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Maps
+ FeatureLink ../features/hasMaps.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Lists
+ FeatureLink ../features/hasLists.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Standard Library
+ FeatureLink ../features/hasStandardLibrary.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Garbage Collection
+ FeatureLink ../features/hasGarbageCollection.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Variadic Functions
+ FeatureLink ../features/hasVariadicFunctions.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature First-Class Functions
+ FeatureLink ../features/hasFirstClassFunctions.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Anonymous Functions
+ FeatureLink ../features/hasAnonymousFunctions.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token
+
+Built with Scroll v178.2.3

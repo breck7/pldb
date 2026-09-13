@@ -1,0 +1,25 @@
+Foundation Query Language
+=========================
+
+Foundation Query Language is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22queryLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">query language</a> created in 2024 by Jon Anderson.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222024%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2024
+ https://pldb.io/concepts/../lists/creators.html#q=Jon%20Anderson Jon Anderson
+
+#1942 on PLDB
+2 Years Old
+
+```Download source code:
+git clone https://github.com/janderland/fql
+```
+
+Foundation DB Query Language
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"queryLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>queryLanguage</a>
+- Foundation Query Language is developed on <a href="https://github.com/janderland/fql">GitHub</a> and has 140 stars
+- Foundation Query Language is written in <a href="go.html">Go</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="javascript.html">JavaScript</a>, <a href="markdown.html">Markdown</a>, <a href="css.html">CSS</a>, <a href="yaml.html">YAML</a>, <a href="html.html">HTML</a>, <a href="dockerfile.html">Dockerfile</a>
+
+```Example from the web:
+/some/where(&quot;home&quot;, &quot;town&quot;, 88.3)=clear
+```
+
+Built with Scroll v178.2.3

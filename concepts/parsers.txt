@@ -1,39 +1,43 @@
 Parsers
 =======
 
-Parsers is an open source grammar language created in 2017 by Breck Yunits.
+Parsers is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22grammarLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">grammar language</a> created in 2017 by Breck Yunits.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222017%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2017
  https://pldb.io/concepts/../lists/creators.html#q=Breck%20Yunits Breck Yunits
 
-#380 on PLDB
-7 Years Old
+#389 on PLDB
+9 Years Old
 
+```Download source code:
 git clone https://github.com/breck7/scrollsdk
+```
 
 Parsers is a language for building languages on top of Particle Notation. A compiler compiler. By creating a parsers file you get a parser, a type checker, syntax highlighting, autocomplete, a compiler, and interpreter for executing your new language. Parsers uses both postfix and prefix language features.
 
-- Tags: grammarLanguage, compiler
-- Parsers is developed on GitHub and has 379 stars
-- Early development of Parsers happened in Breck's Lab
-- ANTLR and Yacc and EBNF and BNF influenced the design of Parsers
-- Parsers is written in Particles, JavaScript, TypeScript, HTML, JSON, SVG, CSS, YAML, Markdown
-- There are 0 members in the Parsers subreddit
-- See also: (2 related languages) Particles, ANTLR
-- 4 PLDB concepts link to Parsers: Particles, Scroll, Speedie, TQL
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"grammarLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>grammarLanguage</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"compiler"%5D%7D%5D%2C"logic"%3A"AND"%7D'>compiler</a>
+- Parsers is developed on <a href="https://github.com/breck7/scrollsdk">GitHub</a> and has 379 stars
+- Early development of Parsers happened in <a href="../lists/labs.html#q=Breck's Lab">Breck's Lab</a>
+- <a href="antlr.html">ANTLR</a> and <a href="yacc.html">Yacc</a> and <a href="ebnf.html">EBNF</a> and <a href="bnf.html">BNF</a> influenced the design of Parsers
+- Parsers is written in <a href="particles.html">Particles</a>, <a href="javascript.html">JavaScript</a>, <a href="typescript.html">TypeScript</a>, <a href="html.html">HTML</a>, <a href="json.html">JSON</a>, <a href="svg.html">SVG</a>, <a href="css.html">CSS</a>, <a href="yaml.html">YAML</a>, <a href="markdown.html">Markdown</a>
+- There are 0 members in the <a href="https://www.reddit.com/r/WorldWideScroll/">Parsers subreddit</a>
+- See also: (2 related languages) <a href="particles.html">Particles</a>, <a href="antlr.html">ANTLR</a>
+- 4 PLDB concepts link to Parsers: <a href="particles.html">Particles</a>, <a href="scroll.html">Scroll</a>, <a href="speedie.html">Speedie</a>, <a href="tql.html">TQL</a>
 
+```Example from the web:
 latinNode
  root
  catchAllParser anyNode
 anyNode
  baseParser blobNode
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Enums
  FeatureLink ../features/hasEnums.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   boolCell
    enum true false
@@ -41,8 +45,8 @@ row
 row
  Feature Variable Substitution Syntax
  FeatureLink ../features/hasVariableSubstitutionSyntax.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

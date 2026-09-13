@@ -1,24 +1,27 @@
 Reia
 ====
 
-Reia is a programming language created in 2008.
+Reia is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2008.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
 
-#534 on PLDB
-16 Years Old
+#553 on PLDB
+18 Years Old
 
+```Download source code:
 git clone https://github.com/tarcieri/reia
+```
 
 Ruby-like hybrid OOP/functional programming language for BEAM, the Erlang VM
 
-- Tags: programming language
-- Reia is developed on GitHub and has 777 stars
-- Early development of Reia happened in https://github.com/tarcieri/reia/issues
-- Reia is written in Reason, Erlang, Bourne shell, Ruby, Markdown
-- reia-lang.org was registered in 2008
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Reia is developed on <a href="https://github.com/tarcieri/reia">GitHub</a> and has 777 stars
+- Early development of Reia happened in <a href="../lists/labs.html#q=https://github.com/tarcieri/reia/issues">https://github.com/tarcieri/reia/issues</a>
+- Reia is written in <a href="reason.html">Reason</a>, <a href="erlang.html">Erlang</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="ruby.html">Ruby</a>, <a href="markdown.html">Markdown</a>
+- <a href="http://reia-lang.org">reia-lang.org</a> was registered in 2008
 - Read more about Reia on the web: 1.
  http://www.unlimitednovelty.com/2011/06/why-im-stopping-work-on-reia.html 1.
 
+```Example from the web:
 # Hello, world!
 &quot;Hello, world!&quot;.puts()
 
@@ -89,28 +92,29 @@ numbers.reverse!() # numbers is now [3,2,1]
 
 # List comprehensions
 doubled = [n * 2 for n in numbers] # doubled is [6,4,2]
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token =
 
@@ -120,4 +124,4 @@ HackerNews discussions of Reia
 title|titleLink|date|score|comments
 Reia - Ruby's powerful syntax with Erlang concurrency and fault-tolerance|https://news.ycombinator.com/item?id=1889905|11/10/2010|2|1
 
-View source
+Built with Scroll v178.2.3

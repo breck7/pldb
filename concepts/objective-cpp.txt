@@ -1,25 +1,26 @@
 Objective C++
 =============
 
-Objective C++ is a programming language created in 1993.
+Objective C++ is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1993.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221993%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1993
 
-#560 on PLDB
-31 Years Old
-536k Repos
+#559 on PLDB
+33 Years Old
+536k <span title="Objective C++ repos on GitHub.">Repos</span>
 
 Objective-C++ is simply source code that mixes Objective-C classes and C++ classes.
 
-- Tags: programming language
-- There are at least 535,669 Objective C++ repos on GitHub
-- Early development of Objective C++ happened in Apple
-- The  Google BigQuery Public Dataset GitHub snapshot shows 15k users using Objective C++ in 18k repos on GitHub
-- Pygments supports syntax highlighting for Objective C++
-- GitHub supports syntax highlighting for Objective C++
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 535,669 Objective C++ repos on <a href="https://github.com/search?q=language:Objective-C++">GitHub</a>
+- Early development of Objective C++ happened in <a href="../lists/labs.html#q=Apple">Apple</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 15k users using Objective C++ in 18k repos on <a href="https://api.github.com/search/repositories?q=language:Objective-C++">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/objective.py">syntax highlighting</a> for Objective C++
+- GitHub supports <a href="https://github.com/textmate/objective-c.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Objective C++
 - Read more about Objective C++ on the web: 1.
  https://en.wikipedia.org/wiki/Objective-C 1.
-- 31 PLDB concepts link to Objective C++: Apache Arrow, Bazel, BlitzMax, Factor, Flow9, GCC, GN, GHC, Gradle, groff, Halide, invokator, Iterm2, Kotlin, kumir, Ladybird, LWJGL, MongoDB, MonkeyX, OpenCV, PyTorch, React Native, Revolution, score, Swift, Taichi, tao3d, TensorFlow, Uno, Wonkey, Xtext
+- 38 PLDB concepts link to Objective C++: <a href="arrow-format.html">Apache Arrow</a>, <a href="bazel.html">Bazel</a>, <a href="blender-app.html">Blender</a>, <a href="blitzmax.html">BlitzMax</a>, <a href="cir.html">CIR</a>, <a href="cmake.html">CMake</a>, <a href="dlvm.html">dlvm</a>, <a href="factor.html">Factor</a>, <a href="flow9.html">Flow9</a>, <a href="gcc.html">GCC</a>, <a href="generate-ninja.html">GN</a>, <a href="ghc.html">GHC</a>, <a href="gradle.html">Gradle</a>, <a href="groff.html">groff</a>, <a href="halide.html">Halide</a>, <a href="invokator.html">invokator</a>, <a href="iterm2.html">Iterm2</a>, <a href="kotlin.html">Kotlin</a>, <a href="kumir.html">kumir</a>, <a href="ladybird.html">Ladybird</a>, <a href="lwjgl.html">LWJGL</a>, <a href="mongodb.html">MongoDB</a>, <a href="monkeyx.html">MonkeyX</a>, <a href="opencv.html">OpenCV</a>, <a href="openscad.html">OpenSCAD</a>, <a href="paraview.html">ParaView</a>, <a href="pytorch.html">PyTorch</a>, <a href="react-native.html">React Native</a>, <a href="revolution-programming-language.html">Revolution</a>, <a href="score.html">score</a>, <a href="swift.html">Swift</a>, <a href="taichi.html">Taichi</a>, <a href="tao3d.html">tao3d</a>, <a href="tensorflow.html">TensorFlow</a>, <a href="tiscript.html">TIScript</a>, <a href="uno.html">Uno</a>, <a href="wonkey.html">Wonkey</a>, <a href="xtext.html">Xtext</a>
 
+```Example from <a href='https://riju.codes/objectivecpp'>Riju</a>:
 #import &lt;Foundation/Foundation.h&gt;
 
 int main() {
@@ -29,6 +30,9 @@ int main() {
   return 0;
 }
 
+```
+
+```Example from <a href='https://github.com/textmate/objective-c.tmbundle'>Linguist</a>:
 // grabbed from https://raw.github.com/AOKP/external_webkit/61b2fb934bdd3a5fea253e2de0bcf8a47a552333/Source/WebCore/page/mac/EventHandlerMac.mm
 
 /*
@@ -76,14 +80,15 @@ int main() {
 #include &quot;Page.h&quot;
 #include &quot;PlatformKeyboardEvent.h&quot;
 #include &quot;Pl
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -91,22 +96,22 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -1,22 +1,22 @@
 Simple Actor Language System and Architecture
 =============================================
 
-Simple Actor Language System and Architecture, aka Simple Actor Language System and Architecture, is a programming language created in 2001.
+Simple Actor Language System and Architecture, aka Simple Actor Language System and Architecture, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2001.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2001
 
-#1397 on PLDB
-23 Years Old
+#1431 on PLDB
+25 Years Old
 
 The SALSA programming language (Simple Actor Language System and Architecture) is an actor-oriented programming language that uses concurrency primitives beyond asynchronous message passing, including token-passing, join, and first-class continuations. It also supports distributed computing over the Internet with universal naming, remote communication, and migration linguistic abstractions and associated middleware. For portability, it produces Java code.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/SALSA_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Simple Actor Language System and Architecture happened in Rensselaer Polytechnic Institute and University of Illinois Urbana-Champaign
-- See also: (1 related languages) Java
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Simple Actor Language System and Architecture happened in <a href="../lists/labs.html#q=Rensselaer Polytechnic Institute">Rensselaer Polytechnic Institute</a> and <a href="../lists/labs.html#q=University of Illinois Urbana-Champaign">University of Illinois Urbana-Champaign</a>
+- See also: (1 related languages) <a href="java.html">Java</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/SALSA_(programming_language)'>Wikipedia</a>:
 module demo;
 
- 
 /*
    This behavior simply prints out a string,
    reads a line from the Standard Input,
@@ -39,14 +39,15 @@ behavior StandardInputTest{
       standardOutput&lt;-println(token);
    }
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -54,7 +55,7 @@ row
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -62,8 +63,8 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

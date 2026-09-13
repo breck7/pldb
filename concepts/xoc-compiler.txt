@@ -1,7 +1,7 @@
 Xoc
 ===
 
-Xoc is a compiler created in 2008 by Russ Cox and Tom Bergan† and Austin T. Clements and Frans Kaashoek and Eddie Kohler.
+Xoc is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22compiler%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">compiler</a> created in 2008 by Russ Cox and Tom Bergan† and Austin T. Clements and Frans Kaashoek and Eddie Kohler.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
  https://pldb.io/concepts/../lists/creators.html#q=Russ%20Cox Russ Cox
  https://pldb.io/concepts/../lists/creators.html#q=Tom%20Bergan%E2%80%A0 Tom Bergan†
@@ -9,15 +9,15 @@ Xoc is a compiler created in 2008 by Russ Cox and Tom Bergan† and Austin T. Cl
  https://pldb.io/concepts/../lists/creators.html#q=Frans%20Kaashoek Frans Kaashoek
  https://pldb.io/concepts/../lists/creators.html#q=Eddie%20Kohler Eddie Kohler
 
-#2512 on PLDB
-16 Years Old
+#2629 on PLDB
+18 Years Old
 
 Today’s system programmers go to great lengths to extend the languages in which they program. For instance, system-specific compilers find errors in Linux and other systems, and add support for specialized control flow to Qt and event-based programs. These compilers are difficult to build and cannot always understand each other’s language changes. However, they can greatly improve code understandability and correctness, advantages that should be accessible to all programmers. We describe an extension-oriented compiler for C called xoc. An extension-oriented compiler, unlike a conventional extensible compiler, implements new features via many small extensions that are loaded together as needed. Xoc gives extension writers full control over program syntax and semantics while hiding many compiler internals. Xoc programmers concisely define powerful compiler extensions that, by construction, can be combined; even some parts of the base compiler, such as GNU C compatibility, are structured as extensions.
 
-- Tags: compiler
-- Early development of Xoc happened in MIT and UCLA
-- Xoc is written in Zeta
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"compiler"%5D%7D%5D%2C"logic"%3A"AND"%7D'>compiler</a>
+- Early development of Xoc happened in <a href="../lists/labs.html#q=MIT">MIT</a> and <a href="../lists/labs.html#q=UCLA">UCLA</a>
+- Xoc is written in <a href="zeta.html">Zeta</a>
 - Read more about Xoc on the web: 1.
  https://swtch.com/~rsc/papers/xoc-asplos2008.pdf 1.
 
-View source
+Built with Scroll v178.2.3

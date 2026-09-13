@@ -1,23 +1,27 @@
 Horse64
 =======
 
-Horse64 is an open source programming language created in 2020 by Ellie Kanning-Dawn.
+Horse64 is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2020 by Ellie Kanning-Dawn.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
  https://pldb.io/concepts/../lists/creators.html#q=Ellie%20Kanning-Dawn Ellie Kanning-Dawn
 
-#1630 on PLDB
-4 Years Old
+#1679 on PLDB
+6 Years Old
 
+```Download source code:
 git clone https://codeberg.org/Horse64/core.horse64.org
+```
 
-Horse64 is a high-level language that combines readability, clean dynamic typing, and readiness for large projects.
+Horse64 is a high-level language that combines readability, clean dynamic typing, and readiness for large projects. It's a more grounded rethinking of Python.
 
-- Tags: programming language
-- Horse64 is written in Horse64, Moose64, Python, Markdown, Cython, YAML, SVG, XML, Make, Bash
-- 2 PLDB concepts link to Horse64: Horse64, Moose64
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Horse64 is written in <a href="horse64.html">Horse64</a>, <a href="horse64-root.html">Horse64 Root</a>, <a href="python.html">Python</a>, <a href="markdown.html">Markdown</a>, <a href="cython.html">Cython</a>, <a href="yaml.html">YAML</a>, <a href="svg.html">SVG</a>, <a href="xml.html">XML</a>, <a href="make.html">Make</a>, <a href="bash.html">Bash</a>
+- 2 PLDB concepts link to Horse64: <a href="horse64-root.html">Horse64 Root</a>, <a href="horse64.html">Horse64</a>
 
+```Example from the web:
 func main {
     print(&quot;Hello World&quot;)
 }
+```
 
-View source
+Built with Scroll v178.2.3

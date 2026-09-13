@@ -1,24 +1,25 @@
 PL/I
 ====
 
-PL/I, aka Programming Language One, is a programming language created in 1964.
+PL/I, aka Programming Language One, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1964.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221964%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1964
 
-#263 on PLDB
-60 Years Old
+#258 on PLDB
+62 Years Old
 
 PL/I (Programming Language One, pronounced ) is a procedural, imperative computer programming language designed for scientific, engineering, business and system programming uses. It has been used by various academic, commercial and industrial organizations since it was introduced in the 1960s, and continues to be actively used. PL/I's main domains are data processing, numerical computation, scientific computing, and system programming; it supports recursion, structured programming, linked data structure handling, fixed-point, floating-point, complex, character string handling, and bit string handling. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/PL/I Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of PL/I happened in IBM
-- There are 1 Project Euler users using PL/I
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of PL/I happened in <a href="../lists/labs.html#q=IBM">IBM</a>
+- There are 1 <a href="https://projecteuler.net/language=PL/I">Project Euler</a> users using PL/I
 - PL/I on HOPL
  https://hopl.info/showlanguage.prx?exp=185 PL/I on HOPL
-- PL/I appears in the TIOBE Index
-- See also: (25 related languages) PL/M, XPL, PL/P, PL/C, COBOL, Fortran, Algol, CMS-2, SP/k, B, Rexx, AUTOCODER, COMTRAN, GEORGE, Multics, BASIC, Pascal, Daisy Systems, Linux, HAL/S, Unix, Java, C, ISBN, DOI
-- 2 PLDB concepts link to PL/I: cloc, PL/I-FORMAC
+- PL/I appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- See also: (25 related languages) <a href="pl-m.html">PL/M</a>, <a href="xpl.html">XPL</a>, <a href="pl-p.html">PL/P</a>, <a href="pl-c.html">PL/C</a>, <a href="cobol.html">COBOL</a>, <a href="fortran.html">Fortran</a>, <a href="algol.html">Algol</a>, <a href="cms-2.html">CMS-2</a>, <a href="sp-k.html">SP/k</a>, <a href="b.html">B</a>, <a href="rexx.html">Rexx</a>, <a href="autocoder.html">AUTOCODER</a>, <a href="comtran.html">COMTRAN</a>, <a href="george.html">GEORGE</a>, <a href="multics.html">Multics</a>, <a href="basic.html">BASIC</a>, <a href="pascal.html">Pascal</a>, <a href="daisy-systems.html">Daisy Systems</a>, <a href="linux.html">Linux</a>, <a href="hal-s.html">HAL/S</a>, <a href="unix.html">Unix</a>, <a href="java.html">Java</a>, <a href="c.html">C</a>, <a href="isbn.html">ISBN</a>, <a href="doi.html">DOI</a>
+- 2 PLDB concepts link to PL/I: <a href="cloc.html">cloc</a>, <a href="pl-i-formac.html">PL/I-FORMAC</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/PL/I'>Wikipedia</a>:
 /* Read in a line, which contains a string,
 /* and then print every subsequent line that contains that string. */
 
@@ -39,26 +40,27 @@ find_strings: procedure options (main);
    end;
 
 end find_strings;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Fixed Point Numbers
  FeatureLink ../features/hasFixedPoint.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token =
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -66,28 +68,34 @@ row
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
  Token /* */
 row
+ Feature Single Pass Compiler
+ FeatureLink ../features/hasSinglePassParser.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
  Feature Threads
  FeatureLink ../features/hasThreads.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Pointers
  FeatureLink ../features/hasPointers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -1,79 +1,90 @@
 Pug
 ===
 
-Pug is an open source template language created in 2010 by Tj Holowaychuk.
+Pug is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22template%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">template language</a> created in 2010 by Tj Holowaychuk.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2010
  https://pldb.io/concepts/../lists/creators.html#q=Tj%20Holowaychuk Tj Holowaychuk
 
-#62 on PLDB
-14 Years Old
-12k Repos
+#60 on PLDB
+16 Years Old
+12k <span title="Pug repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/pugjs/pug
+```
 
 Pug – robust, elegant, feature rich template engine for Node.js
 
-- Tags: template language
-- Pug is developed on GitHub and has 21,601 stars
-- There are at least 11,560 Pug repos on GitHub
-- Early development of Pug happened in https://github.com/pugjs
-- Pug is written in Pug, JSON, HTML, JavaScript, Markdown, YAML, TypeScript, Stylus, CSS, CoffeeScript
-- The  Google BigQuery Public Dataset GitHub snapshot shows 528 users using Pug in 575 repos on GitHub
-- Monaco package for syntax highlighting Pug
-- Pygments supports syntax highlighting for Pug
-- GitHub supports syntax highlighting for Pug
-- 4 PLDB concepts link to Pug: Ace Editor, Jedi, Nit, Pug
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"template"%5D%7D%5D%2C"logic"%3A"AND"%7D'>template language</a>
+- Pug is developed on <a href="https://github.com/pugjs/pug">GitHub</a> and has 21,601 stars
+- There are at least 11,560 Pug repos on <a href="https://github.com/search?q=language:Pug">GitHub</a>
+- Early development of Pug happened in <a href="../lists/labs.html#q=https://github.com/pugjs">https://github.com/pugjs</a>
+- Pug is written in <a href="pug.html">Pug</a>, <a href="json.html">JSON</a>, <a href="html.html">HTML</a>, <a href="javascript.html">JavaScript</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="typescript.html">TypeScript</a>, <a href="stylus.html">Stylus</a>, <a href="css.html">CSS</a>, <a href="coffeescript.html">CoffeeScript</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 528 users using Pug in 575 repos on <a href="https://api.github.com/search/repositories?q=language:Pug">GitHub</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/pug">package</a> for syntax highlighting Pug
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/html.py">syntax highlighting</a> for Pug
+- GitHub supports <a href="https://github.com/davidrios/jade-tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Pug
+- 6 PLDB concepts link to Pug: <a href="ace.html">Ace Editor</a>, <a href="jedi.html">Jedi</a>, <a href="kaffeine.html">Kaffeine</a>, <a href="netbeans-editor.html">netbeans-editor</a>, <a href="nit.html">Nit</a>, <a href="pug.html">Pug</a>
 
+```Example from <a href='https://riju.codes/pug'>Riju</a>:
 html
   body
     p Hello, world!
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/p/Pug.pug'>hello-world</a>:
 doctype html
 html
     head
        title Hello World
     body
        h1 Hello World
+```
 
+```Example from <a href='https://github.com/davidrios/jade-tmbundle'>Linguist</a>:
 p.
   Hello,
   World!
+```
 
+```Pug <a href="../lists/keywords.html#q=pug">Keywords</a>
 append block case default doctype each else extends for if in include mixin typeof unless var when
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Inheritance
  FeatureLink ../features/hasInheritance.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   - var title = "On Dogs: Man's Best Friend";
   
@@ -82,7 +93,7 @@ row
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   mixin article(title)
     .article
@@ -102,7 +113,7 @@ row
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   - var friends = 10
   case friends
@@ -116,7 +127,7 @@ row
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   - var user = {description: 'foo bar baz'}
   - var authorised = false
@@ -136,7 +147,7 @@ row
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   //- index.pug
   doctype html
@@ -150,7 +161,7 @@ row
 row
  Feature hasForEachLoops
  FeatureLink ../features/hasForEachLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ul
     each val in [1, 2, 3, 4, 5]
@@ -159,8 +170,8 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

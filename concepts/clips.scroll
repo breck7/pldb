@@ -129,14 +129,12 @@ linguistGrammarRepo https://github.com/psicomante/CLIPS-sublime
   (deftemplate technique
      (slot name)
      (slot priority))
-     
   (deffacts startup
      (phase grid-values))
   
   (deftemplate size-value
      (slot size)
      (slot value))
-     
   (deffacts values
      (size-value (size 1) (value 1))
      (size-value (size 2) (value 2))

@@ -4,7 +4,7 @@ blankLineParser
  atoms blankAtom
  boolean isPopular true
  javascript
-  compile() {
+  buildHtml() {
    return this.parent.clearSectionStack()
   }
  pattern ^$

@@ -1,16 +1,17 @@
 xCard
 =====
 
-xCard is a xml format created in 2011.
+xCard is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22xmlFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">xml format</a> created in 2011.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2011
 
-#4870 on PLDB
-13 Years Old
+#4997 on PLDB
+15 Years Old
 
-- Tags: xmlFormat
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"xmlFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>xmlFormat</a>
 - Read more about xCard on the web: 1.
  https://tools.ietf.org/html/rfc6351 1.
 
+```Example from the web:
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;vcards xmlns=&quot;urn:ietf:params:xml:ns:vcard-4.0&quot;&gt;
   &lt;vcard&gt;
@@ -105,5 +106,6 @@ United States of America&lt;/text&gt;
     &lt;/rev&gt;
   &lt;/vcard&gt;
 &lt;/vcards&gt;
+```
 
-View source
+Built with Scroll v178.2.3

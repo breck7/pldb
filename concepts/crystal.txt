@@ -1,56 +1,69 @@
 Crystal
 =======
 
-Crystal is an open source programming language created in 2014 by Ary Borenszweig and Juan Wajnerman and Brian Cardiff.
+Crystal is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2014 by Ary Borenszweig and Juan Wajnerman and Brian Cardiff.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
  https://pldb.io/concepts/../lists/creators.html#q=Ary%20Borenszweig Ary Borenszweig
  https://pldb.io/concepts/../lists/creators.html#q=Juan%20Wajnerman Juan Wajnerman
  https://pldb.io/concepts/../lists/creators.html#q=Brian%20Cardiff Brian Cardiff
 
 #53 on PLDB
-10 Years Old
-8k Repos
+12 Years Old
+8k <span title="Crystal repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/crystal-lang/crystal
+```
 
 In computer software programming languages, Crystal is a general-purpose, object-oriented programming language, designed and developed by Ary Borenszweig and Juan Wajnerman and more than 200 contributors. With syntax inspired by the language Ruby, it is a compiled language with static type-checking, but specifying the types of variables or method arguments is generally unneeded. Types are resolved by an advanced global type inference algorithm. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Crystal_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Crystal is developed on GitHub and has 19,260 stars
-- Watch the history of the Crystal repo visualized with Gource
-- There are at least 7,522 Crystal repos on GitHub
-- Early development of Crystal happened in https://forum.crystal-lang.org/
-- Crystal is written in Crystal, Embedded Crystal, YAML, Markdown, HTML, JavaScript, PowerShell, Bourne shell, CSS, C, SVG, Make, XML, Python, JSON, Z shell, Bash, C++, Nix, Ini
-- The  Google BigQuery Public Dataset GitHub snapshot shows 767 users using Crystal in 1k repos on GitHub
-- There are 4,118 members in the Crystal subreddit
-- There are 14 Project Euler users using Crystal
-- In the 2021 StackOverflow developer survey Crystal programmers reported a median salary of $72,400. 1% of respondents reported using Crystal. 466 programmers reported using Crystal, and 790 said they wanted to use it
-- Explore Crystal snippets on Rosetta Code
-- Crystal ranks #24 in the TIOBE Index
-- Crystal LSP implementation
-- Pygments supports syntax highlighting for Crystal
-- GitHub supports syntax highlighting for Crystal
-- Learn Crystal on exercism.
-- crystal-lang.org was registered in 2013
-- See also: (10 related languages) IA-32, FreeBSD, Ruby, C, Rust, Go, C#, Python, LLVM IR, CSP
-- 8 PLDB concepts link to Crystal: Ace Editor, Civet, Crystal, Embedded Crystal, mal, Pegasus, Pygments, Savi
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Crystal is developed on <a href="https://github.com/crystal-lang/crystal">GitHub</a> and has 19,260 stars
+- Watch the history of <a href="https://www.youtube.com/watch?v=YToY_0fhEzc">the Crystal repo visualized with Gource</a>
+- There are at least 7,522 Crystal repos on <a href="https://github.com/search?q=language:Crystal">GitHub</a>
+- Early development of Crystal happened in <a href="../lists/labs.html#q=https://forum.crystal-lang.org/">https://forum.crystal-lang.org/</a>
+- Crystal is written in <a href="crystal.html">Crystal</a>, <a href="ecr.html">Embedded Crystal</a>, <a href="yaml.html">YAML</a>, <a href="markdown.html">Markdown</a>, <a href="html.html">HTML</a>, <a href="javascript.html">JavaScript</a>, <a href="powershell.html">PowerShell</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="css.html">CSS</a>, <a href="c.html">C</a>, <a href="svg.html">SVG</a>, <a href="make.html">Make</a>, <a href="xml.html">XML</a>, <a href="python.html">Python</a>, <a href="json.html">JSON</a>, <a href="z-shell.html">Z shell</a>, <a href="bash.html">Bash</a>, <a href="cpp.html">C++</a>, <a href="nix.html">Nix</a>, <a href="ini.html">Ini</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 767 users using Crystal in 1k repos on <a href="https://api.github.com/search/repositories?q=language:Crystal">GitHub</a>
+- There are 4,118 members in the <a href="https://reddit.com/r/crystal_programming">Crystal subreddit</a>
+- There are 14 <a href="https://projecteuler.net/language=Crystal">Project Euler</a> users using Crystal
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> Crystal programmers reported a median salary of $72,400. 1% of respondents reported using Crystal. 466 programmers reported using Crystal, and 790 said they wanted to use it
+- Explore Crystal snippets on <a href="http://www.rosettacode.org/wiki/Category:Crystal">Rosetta Code</a>
+- Crystal ranks #24 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- Crystal <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/kofno/scry">implementation</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/crystal.py">syntax highlighting</a> for Crystal
+- GitHub supports <a href="https://github.com/atom-crystal/language-crystal" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Crystal
+- Learn <a href="https://exercism.org/tracks/crystal">Crystal on exercism.</a>
+- <a href="https://crystal-lang.org">crystal-lang.org</a> was registered in 2013
+- See also: (10 related languages) <a href="ia-32.html">IA-32</a>, <a href="freebsd.html">FreeBSD</a>, <a href="ruby.html">Ruby</a>, <a href="c.html">C</a>, <a href="rust.html">Rust</a>, <a href="go.html">Go</a>, <a href="csharp.html">C#</a>, <a href="python.html">Python</a>, <a href="llvmir.html">LLVM IR</a>, <a href="csp.html">CSP</a>
+- 8 PLDB concepts link to Crystal: <a href="ace.html">Ace Editor</a>, <a href="civet.html">Civet</a>, <a href="crystal.html">Crystal</a>, <a href="ecr.html">Embedded Crystal</a>, <a href="mal.html">mal</a>, <a href="pegasus.html">Pegasus</a>, <a href="pygments.html">Pygments</a>, <a href="savi.html">Savi</a>
 
+```Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
 # Type your code here, or load an example.
 
 # compile with --prelude=empty
 fun square(num : Int32) : Int32
   num &amp;* num
 end
+```
 
+```Example from <a href='https://riju.codes/crystal'>Riju</a>:
 puts &quot;Hello, world!&quot;
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/c/Crystal.cr'>hello-world</a>:
 puts &quot;Hello World&quot;
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Crystal'>the Hello World Collection</a>:
 # Hello world in Crystal
 
 puts &quot;Hello World&quot;
+```
 
+```Example from <a href='https://github.com/atom-crystal/language-crystal'>Linguist</a>:
 #!/usr/bin/env bin/crystal --run
 require &quot;../../spec_helper&quot;
 
@@ -131,6 +144,9 @@ describe &quot;Type inference: declare var&quot; do
   end
 end
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Crystal_(programming_language)'>Wikipedia</a>:
 channel = Channel(Int32).new
 
 spawn do
@@ -147,93 +163,96 @@ puts value # =&gt; 1
 puts &quot;Before second receive&quot;
 value = channel.receive
 puts value # =&gt; 2
+```
 
+```Crystal <a href="../lists/keywords.html#q=crystal">Keywords</a>
 abstract do if nil? self unless alias else in of sizeof until as elsif include out struct when as? end instance_sizeof pointerof super while asm ensure is_a? private then with begin enum lib protected true yield break extend macro require type case false module rescue typeof class for next return uninitialized def fun nil select union
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   require "../../spec_helper"
  Token require
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token puts
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Type Inference
  FeatureLink ../features/hasTypeInference.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -1,44 +1,46 @@
 Gettext Catalog
 ===============
 
-Gettext Catalog is an open source text markup language created in 1990.
+Gettext Catalog is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 1990.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1990
 
-#725 on PLDB
-34 Years Old
-63k Repos
+#765 on PLDB
+36 Years Old
+63k <span title="Gettext Catalog repos on GitHub.">Repos</span>
 
 In computing, gettext is an internationalization and localization (i18n) system commonly used for writing multilingual programs on Unix-like computer operating systems. The most commonly used implementation of gettext is GNU gettext, released by the GNU Project in 1995.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Gettext Read more on Wikipedia...
 
-- Tags: text markup language
-- There are at least 62,782 Gettext Catalog repos on GitHub
-- Early development of Gettext Catalog happened in Free Software Foundation
-- The  Google BigQuery Public Dataset GitHub snapshot shows 509 users using Gettext Catalog in 650 repos on GitHub
-- Pygments supports syntax highlighting for Gettext Catalog
-- GitHub supports syntax highlighting for Gettext Catalog
-- See also: (8 related languages) C, Emacs, Unix, C#, Perl, PHP, Python, Scala
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- There are at least 62,782 Gettext Catalog repos on <a href="https://github.com/search?q=language:Gettext Catalog">GitHub</a>
+- Early development of Gettext Catalog happened in <a href="../lists/labs.html#q=Free Software Foundation">Free Software Foundation</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 509 users using Gettext Catalog in 650 repos on <a href="https://api.github.com/search/repositories?q=language:Gettext Catalog">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/textfmts.py">syntax highlighting</a> for Gettext Catalog
+- GitHub supports <a href="https://github.com/textmate/gettext.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Gettext Catalog
+- See also: (8 related languages) <a href="c.html">C</a>, <a href="emacs-editor.html">Emacs</a>, <a href="unix.html">Unix</a>, <a href="csharp.html">C#</a>, <a href="perl.html">Perl</a>, <a href="php.html">PHP</a>, <a href="python.html">Python</a>, <a href="scala.html">Scala</a>
 - Read more about Gettext Catalog on the web: 1.
  https://www.gnu.org/software/gettext/ 1.
 
+```Example from <a href='https://en.wikipedia.org/wiki/Gettext'>Wikipedia</a>:
 #: src/name.c:36
 msgid &quot;My name is %s.\n&quot;
 msgstr &quot;Je m&#39;appelle %s.\n&quot;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

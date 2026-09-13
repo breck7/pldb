@@ -1,0 +1,19 @@
+:root {
+  /* Base Colors */
+  --scrollPrimaryRgb: 10, 92, 202; /* Base primary button */
+  --scrollSurfaceRgb: 204, 204, 204; /* Base surface */
+  --scrollTextBase: 0, 0, 0;
+  --scrollLinkBase: 51, 102, 204;
+
+  /* Semantic Colors */
+  --scrollColorBackground: rgb(244, 244, 244);
+  --scrollColorText: rgba(var(--scrollTextBase), 1);
+  --scrollColorLink: rgb(var(--scrollLinkBase), 1);
+  --scrollColorSubdued: rgb(150, 150, 150);
+
+  /* Typography */
+  --scrollFontPrimary: Exchange, Georgia, serif;
+  --scrollFontUi: "SF Pro", "Helvetica Neue", "Segoe UI", "Arial";
+  --scrollFontMono: monospace;
+  --scrollBaseFontSize: 16px;
+}

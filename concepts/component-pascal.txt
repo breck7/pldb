@@ -1,24 +1,25 @@
 COMPONENT PASCAL
 ================
 
-COMPONENT PASCAL is a programming language created in 1997.
+COMPONENT PASCAL is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1997.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1997
 
-#967 on PLDB
-27 Years Old
-13k Repos
+#1004 on PLDB
+29 Years Old
+13k <span title="COMPONENT PASCAL repos on GitHub.">Repos</span>
 
-- Tags: programming language
-- There are at least 13,387 COMPONENT PASCAL repos on GitHub
-- COMPONENT PASCAL is a superset of Oberon-2
-- Early development of COMPONENT PASCAL happened in www.oberon.ch
-- The  Google BigQuery Public Dataset GitHub snapshot shows 128 users using COMPONENT PASCAL in 132 repos on GitHub
-- There are 8 Project Euler users using COMPONENT PASCAL
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 13,387 COMPONENT PASCAL repos on <a href="https://github.com/search?q=language:Component Pascal">GitHub</a>
+- COMPONENT PASCAL is a <a href="../lists/explorer.html#columns=rank~id~appeared~tags~creators~supersetOf&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22supersetOf%22%2C%22origData%22%3A%22supersetOf%22%2C%22tags%22%3A%22html%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">superset</a> of <a href="oberon-2.html">Oberon-2</a>
+- Early development of COMPONENT PASCAL happened in <a href="../lists/labs.html#q=www.oberon.ch">www.oberon.ch</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 128 users using COMPONENT PASCAL in 132 repos on <a href="https://api.github.com/search/repositories?q=language:Component Pascal">GitHub</a>
+- There are 8 <a href="https://projecteuler.net/language=Component Pascal">Project Euler</a> users using COMPONENT PASCAL
 - COMPONENT PASCAL on HOPL
  https://hopl.info/showlanguage.prx?exp=1209 COMPONENT PASCAL on HOPL
-- Pygments supports syntax highlighting for COMPONENT PASCAL
-- GitHub supports syntax highlighting for COMPONENT PASCAL
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/oberon.py">syntax highlighting</a> for COMPONENT PASCAL
+- GitHub supports <a href="https://github.com/textmate/pascal.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for COMPONENT PASCAL
 
+```Example from <a href='https://github.com/textmate/pascal.tmbundle'>Linguist</a>:
 MODULE ObxFact;
 (**
     project         = &quot;BlackBox&quot;
@@ -90,14 +91,15 @@ BEGIN
 END Compute;
 
 END ObxFact.
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (* A comment
   *)
@@ -105,7 +107,7 @@ row
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (* A comment
   *)
@@ -113,8 +115,8 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

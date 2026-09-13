@@ -7,7 +7,7 @@ printTitle Variadic Functions
 <a class="trueBaseThemePreviousItem" href="hasVariableSubstitutionSyntax.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasVirtualFunctions.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -42,6 +42,17 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3
  foo_typed(1, 2, 3);
  foo_untyped(1, &quot;hello&quot;, 1.2);
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/wa.html">Wa-lang</a>
+ // This variadic function takes an arbitrary number of ints as arguments.
+ func sum(nums: ...int) {
+   print(&quot;The sum of &quot;, nums) // Also a variadic function.
+   total := 0
+   for _, num := range nums {
+     total += num
+   }
+   println(&quot; is&quot;, total) // Also a variadic function.
+ }
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/slope.html">Slope</a>
  (lambda (...) (apply + ...))
 
@@ -52,7 +63,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">
 
 ***
 
-* Languages *with* Variadic Functions include <a href="../concepts/c.html">C</a>, <a href="../concepts/php.html">PHP</a>, <a href="../concepts/go.html">Go</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/slope.html">Slope</a>, <a href="../concepts/jule.html">Jule</a>
+* Languages *with* Variadic Functions include <a href="../concepts/c.html">C</a>, <a href="../concepts/php.html">PHP</a>, <a href="../concepts/go.html">Go</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/wa.html">Wa-lang</a>, <a href="../concepts/slope.html">Slope</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/lone.html">Lone</a>
 
 ***
 

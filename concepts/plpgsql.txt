@@ -1,26 +1,27 @@
 PL/pgSQL
 ========
 
-PL/pgSQL is a programming language created in 1998 by Jan Wieck.
+PL/pgSQL is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1998 by Jan Wieck.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221998%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1998
  https://pldb.io/concepts/../lists/creators.html#q=Jan%20Wieck Jan Wieck
 
-#531 on PLDB
-26 Years Old
-25k Repos
+#533 on PLDB
+28 Years Old
+25k <span title="PL/pgSQL repos on GitHub.">Repos</span>
 
 PL/pgSQL (Procedural Language/PostgreSQL) is a procedural programming language supported by the PostgreSQL ORDBMS.  It closely resembles Oracle's PL/SQL language. Implemented by Jan Wieck, PL/pgSQL first appeared with PostgreSQL 6.4, released on October 30, 1998. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/PL/pgSQL Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 24,919 PL/pgSQL repos on GitHub
-- Early development of PL/pgSQL happened in The PostgreSQL Global Development Group
-- The  Google BigQuery Public Dataset GitHub snapshot shows 8k users using PL/pgSQL in 9k repos on GitHub
-- Pygments supports syntax highlighting for PL/pgSQL
-- GitHub supports syntax highlighting for PL/pgSQL
-- See also: (6 related languages) PL/SQL, Ada, PostgreSQL, SQL/PSM, SQL, Bison
-- 2 PLDB concepts link to PL/pgSQL: Bucardo, PgBouncer
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 24,919 PL/pgSQL repos on <a href="https://github.com/search?q=language:PLpgSQL">GitHub</a>
+- Early development of PL/pgSQL happened in <a href="../lists/labs.html#q=The PostgreSQL Global Development Group">The PostgreSQL Global Development Group</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 8k users using PL/pgSQL in 9k repos on <a href="https://api.github.com/search/repositories?q=language:PLpgSQL">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/sql.py">syntax highlighting</a> for PL/pgSQL
+- GitHub supports <a href="https://github.com/textmate/sql.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for PL/pgSQL
+- See also: (6 related languages) <a href="pl-sql.html">PL/SQL</a>, <a href="ada.html">Ada</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="sql-psm.html">SQL/PSM</a>, <a href="sql.html">SQL</a>, <a href="bison.html">Bison</a>
+- 2 PLDB concepts link to PL/pgSQL: <a href="bucardo.html">Bucardo</a>, <a href="pgbouncer.html">PgBouncer</a>
 
+```Example from <a href='https://github.com/textmate/sql.tmbundle'>Linguist</a>:
 load &#39;plpgsql&#39;;
 load &#39;plpgsql_lint&#39;;
 
@@ -52,38 +53,40 @@ BEGIN
 END;
 $func$ LANGUAGE plpgsql;
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

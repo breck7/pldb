@@ -1,26 +1,29 @@
 Smali
 =====
 
-Smali is an open source assembly language created in 2010.
+Smali is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22assembly%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">assembly language</a> created in 2010.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2010
 
-#169 on PLDB
-14 Years Old
-2k Repos
+#181 on PLDB
+16 Years Old
+2k <span title="Smali repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/JesusFreke/smali
+```
 
 smali/baksmali
 
-- Tags: assembly language
-- Smali is developed on GitHub and has 6,269 stars
-- There are at least 2,479 Smali repos on GitHub
-- Early development of Smali happened in https://github.com/JesusFreke/smali/issues
-- Smali is written in Java, Gradle, XML, Bash, Markdown, Bourne shell, C, Make
-- The  Google BigQuery Public Dataset GitHub snapshot shows 195 users using Smali in 212 repos on GitHub
-- Pygments supports syntax highlighting for Smali
-- GitHub supports syntax highlighting for Smali
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"assembly"%5D%7D%5D%2C"logic"%3A"AND"%7D'>assembly language</a>
+- Smali is developed on <a href="https://github.com/JesusFreke/smali">GitHub</a> and has 6,269 stars
+- There are at least 2,479 Smali repos on <a href="https://github.com/search?q=language:Smali">GitHub</a>
+- Early development of Smali happened in <a href="../lists/labs.html#q=https://github.com/JesusFreke/smali/issues">https://github.com/JesusFreke/smali/issues</a>
+- Smali is written in <a href="java.html">Java</a>, <a href="gradle.html">Gradle</a>, <a href="xml.html">XML</a>, <a href="bash.html">Bash</a>, <a href="markdown.html">Markdown</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="c.html">C</a>, <a href="make.html">Make</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 195 users using Smali in 212 repos on <a href="https://api.github.com/search/repositories?q=language:Smali">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/dalvik.py">syntax highlighting</a> for Smali
+- GitHub supports <a href="https://github.com/ShaneWilton/sublime-smali" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Smali
 
+```Example from the web:
 .method public getTokens(I)I
  .locals 2
  .param p1, &quot;amt&quot;    # I
@@ -55,7 +58,9 @@ smali/baksmali
  
  goto :goto_0
 .end method
+```
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/s/Smali.smali'>hello-world</a>:
 .class public LHelloWorld;
 
 .super Ljava/lang/Object;
@@ -72,6 +77,9 @@ smali/baksmali
     return-void
 .end method
 
+```
+
+```Example from <a href='https://github.com/ShaneWilton/sublime-smali'>Linguist</a>:
 .class public Lcom/tdq/game/shootbubble/sprite/PenguinSprite;
 .super Lcom/tdq/game/shootbubble/sprite/Sprite;
 .source &quot;PenguinSprite.java&quot;
@@ -190,36 +198,37 @@ smali/baksmali
     new-array v1, v3, [I
 
     fil
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

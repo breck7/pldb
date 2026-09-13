@@ -1,19 +1,20 @@
 ActiveVFP
 =========
 
-ActiveVFP is an open source programming language created in 2001.
+ActiveVFP is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2001.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2001
 
-#1821 on PLDB
-23 Years Old
+#1890 on PLDB
+25 Years Old
 
 ActiveVFP (also known as AVFP) is a server-side scripting framework designed for Web development to produce dynamic Web pages. Similar to PHP, but using the native Visual Foxpro (VFP) language and database (or other databases like Microsoft SQL and MySQL), ActiveVFP can also be used in Model-View-Controller (MVC) web applications as well as RESTful API.  ActiveVFP is completely free and open source and does not require the purchase of Microsoft Visual FoxPro or any additional software. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/ActiveVFP Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of ActiveVFP happened in VFP Community
-- See also: (5 related languages) PHP, Visual FoxPro, MySQL, REST, HTML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of ActiveVFP happened in <a href="../lists/labs.html#q=VFP Community">VFP Community</a>
+- See also: (5 related languages) <a href="php.html">PHP</a>, <a href="visual-foxpro.html">Visual FoxPro</a>, <a href="mysql.html">MySQL</a>, <a href="rest.html">REST</a>, <a href="html.html">HTML</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/ActiveVFP'>Wikipedia</a>:
 * customers.prg -Customers Controller
 * * bypasses Main.prg and .AVFP script code
 *
@@ -65,7 +66,6 @@ DEFINE CLASS customersController AS restController
  ENDPROC
  
  PROCEDURE getemployees      &amp;&amp; custom method   (&amp;&amp; GET www.hostname.com/app/customers/getemployee/&lt;id&gt;
-  
 	oJSON=NEWOBJECT(&#39;json&#39;,&#39;json.prg&#39;)
     
     SET PATH TO oProp.AppStartPath+&#39;data\AVFPdemo41\&#39;
@@ -88,29 +88,30 @@ DEFINE CLASS customersController AS restController
 ************************************************************************
 
 ENDDEFINE
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   * A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   * A comment
  Token *
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

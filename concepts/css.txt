@@ -1,42 +1,49 @@
 CSS
 ===
 
-CSS, aka Cascading Style Sheets, is an open source stylesheet language created in 1996 by Håkon Wium Lie.
+CSS, aka Cascading Style Sheets, is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22stylesheetLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">stylesheet language</a> created in 1996 by Håkon Wium Lie.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1996
  https://pldb.io/concepts/../lists/creators.html#q=H%C3%A5kon%20Wium%20Lie Håkon Wium Lie
 
 #7 on PLDB
-28 Years Old
-4m Repos
+30 Years Old
+4m <span title="CSS repos on GitHub.">Repos</span>
 
 Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Cascading_Style_Sheets Read more on Wikipedia...
 
-- Tags: stylesheetLanguage
-- There are at least 4,446,834 CSS repos on GitHub
-- Early development of CSS happened in CERN
-- The  Google BigQuery Public Dataset GitHub snapshot shows 506k users using CSS in 809k repos on GitHub
-- Check out the 963 CSS meetup groups on Meetup.com.
-- ANTLR grammar for CSS
-- CodeMirror package for syntax highlighting CSS
-- Monaco package for syntax highlighting CSS
-- Pygments supports syntax highlighting for CSS
-- GitHub supports syntax highlighting for CSS
-- Indeed.com has 16,898 matches for "css developer".
-- See also: (6 related languages) HTML, JavaScript, WebGL, XML, SVG, XPath
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"stylesheetLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>stylesheetLanguage</a>
+- There are at least 4,446,834 CSS repos on <a href="https://github.com/search?q=language:CSS">GitHub</a>
+- Early development of CSS happened in <a href="../lists/labs.html#q=CERN">CERN</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 506k users using CSS in 809k repos on <a href="https://api.github.com/search/repositories?q=language:CSS">GitHub</a>
+- Check out the 963 <a href="https://www.meetup.com/topics/css/">CSS meetup groups</a> on Meetup.com.
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/css3">grammar</a> for CSS
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/css">package</a> for syntax highlighting CSS
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/css">package</a> for syntax highlighting CSS
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/css.py">syntax highlighting</a> for CSS
+- GitHub supports <a href="https://github.com/atom/language-css" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for CSS
+- Indeed.com has 16,898 matches for <a href="https://www.indeed.com/jobs?q=css developer">"css developer"</a>.
+- See also: (6 related languages) <a href="html.html">HTML</a>, <a href="javascript.html">JavaScript</a>, <a href="webgl.html">WebGL</a>, <a href="xml.html">XML</a>, <a href="svg.html">SVG</a>, <a href="xpath.html">XPath</a>
 - Read more about CSS on the web: 1.
  https://examples.p6c.dev/categories/parsers/CSSGrammar.html 1.
-- 400 PLDB concepts link to CSS: abs, Ace Editor, AL, Alumina, Apache Hbase, Argdown, Apache Arrow, AsciiDots, AT Protocol, Avail, awl, Ballerina, Bazel, beef-lang, Bicep, Bitsy, BlackCoffee, BlitzMax, blockml, Bounce, BQN, Broccoli, Bruijn, Bucklescript, Cap'n Proto, Caramel, carp, cat, categorical-query-language, Ceylon, Chapel, chatterbot, chevrotain, CHICKEN, chisel, Civet, Claro, clash, clay, ClojureScript, Coco, CoffeeKup, CoffeeScript, CokeScript, contracts.coffee, Coq, cor, Cortex, CouchDB, crmsh, Croc, Cryptol, Crystal, CSVw, curv, Cyber, D3.js, Dafny, Dak, daonode, Deno, dex, dexvis, Dhall, Differential Datalog, djangoql, Djot, DragonBASIC, duro, Embedded Crystal, edgedb, Eiffel, EJS, ELENA, Elm, Elvish, Emojicode, Emscripten, Enso, Erlang, Euphoria, Eve, EYG, Factor, Fancy, Fardlang, Felix, FFmpeg, fish, FlatBuffers, Flatline, Flix, Flow, Flow9, FlowchartFun, flua, FLUX, Frost, fructure-editor, Frundis, Futhark, FutureScript, GAP, Gforth, GHC, Git, Gleam, Glicol, gluon, Go, Goal, gogs-editor, Golo, Gradle, gravity, gridstudio-editor, groff, Gun, gura, Hackett, hakaru, Halide, hasklig, Haxe Library Manager, Hazel, Heron, HHVM, highlight.js, Hjson, hrqr, htmx, huginn, hurl, Hy, Hyperscript, Ibis, IcedCoffeeScript, Idris, idyll, Imba, ImHex, Impala, infusion-framework, inko, invokator, Ioke, Iterm2, Invisible XML, JAL compiler, jasmine, Java, Jeeves, Jekyll, Jet, JFlex, jinx, Jison, jq, JQuery, jsil-compiler, Jsonnet, Julia, juvix, k-framework, KaTeX, Kefir, Koka, Kotlin, ktye/k, kumir, Kuroko, Ladybird, JSON Lines, leo-editor, Lesma, lever, lift, Ligo, Links, Linux, lispyscript, Literate CoffeeScript, lobster, loci, Logica, Language Server Index Format, LuaJIT, Lucid, Luna, m3db, mal, manhood, Manim, Margin, Marko, Markwhen, Mask, Mastodon, MathJSON, Mathpix Markdown, Matplotlib, mavo, MDX, Melody, mermaid, MicroBlocks, MicroPython, Minilang, MiniZinc, Mirah, mochajs, Monaco Editor, Mond, MongoDB, MonkeyX, monte, moya, Mu, mun-lang, myia, mys, mythryl, Nadesiko, Nearley, NestedText, NetLogo, neut, NewLisp, Nextflow, NGS, Nim, Ninja, Nit, nlpl, Natural Language Toolkit, Node.js, noisecraft, nomnoml, Numba, ObjectScript, Observable Framework, Observable Plot, Obsidian, oden, Ohayo, ohm, oil, OK, Om, onnx, Opa, OpenNN, Open Shading Language, OpenCV, Openverse, P*, p4p, packagist-pm, Pact, Pandas, Parsers, Particles, Pawn, PAWN, PEG.js, penrose, pinto, Plaid, plang, Please Build, Podlite, GNU Poke, polyglot-compiler, popr, PostgreSQL, Potion, POV-Ray SDL, Prettier, Prism, Project Mentat, PROMETHEUS, PRQL, Pug, PureScript, Pygments, Pyth, Python, PyTorch, Qalb, Qore, Quaint, Quint, Racket, rainbow, ramen, rant, RapidBatch, raptorjit, Recfiles, Red, Redis, redprl, RicScript, RMarkdown, RobotFramework, Roc, Rockstar, rosie, roy, Ruby, Rust, Rye, SandDance, SATySFi, Scala.js, Scikit-learn, SciPy, scribble, Scroll, sentient, Serious, shadama, shml, Sibilant, Simoji, sizzle, skip, skulpt, Slab, Slony, SmallBASIC, Semantic Patch Language, Snowman, Solid, Solidity, SourcePawn, Speedie, SpiderBasic, SQRL, stacklang, Statsplorer, strat, stringbean, Subleq, SugarSS, Svelte, Swift, Swym, SymPy, tablam, Tabloid, taf, Taijilang, tampio, tangledown, Terra, Textadept, tht, tibet, tiledb, tldr, tldraw, ToffeeScript, ToonTalk, tornado, Tosh, Twine, twtxt, txtzyme, U, Uiua, UrWeb, V, v8, vega-editor-app, Vega, Vimwiki, visdown, VLC, VSXu, Vue, Vyxal, WebAssembly, Wasp, 文言文編程語言, Wing, Wonkey, Wren, Wyvern, Xgboost, XGBoost, Xidoc, XL, Xtext, YASnippet, YAWL, yeti, Yes It Is, YoptaScript, Zephir
+- 448 PLDB concepts link to CSS: <a href="abs.html">abs</a>, <a href="ace.html">Ace Editor</a>, <a href="aframe.html">A-Frame</a>, <a href="al.html">AL</a>, <a href="alumina.html">Alumina</a>, <a href="apache-hbase.html">Apache Hbase</a>, <a href="argdown.html">Argdown</a>, <a href="arrow-format.html">Apache Arrow</a>, <a href="asciidots.html">AsciiDots</a>, <a href="atprotocol.html">AT Protocol</a>, <a href="avail.html">Avail</a>, <a href="awl.html">awl</a>, <a href="ballerina.html">Ballerina</a>, <a href="bazel.html">Bazel</a>, <a href="beef.html">beef-lang</a>, <a href="bicep.html">Bicep</a>, <a href="bitsy.html">Bitsy</a>, <a href="blackcoffee.html">BlackCoffee</a>, <a href="blender-app.html">Blender</a>, <a href="blitzmax.html">BlitzMax</a>, <a href="blockml.html">blockml</a>, <a href="borgo.html">Borgo</a>, <a href="bounce-lang.html">Bounce</a>, <a href="bqn.html">BQN</a>, <a href="bruijn.html">Bruijn</a>, <a href="bucklescript.html">Bucklescript</a>, <a href="capn-proto.html">Cap'n Proto</a>, <a href="caramel.html">Caramel</a>, <a href="carp.html">carp</a>, <a href="cat.html">cat</a>, <a href="categorical-query-language.html">categorical-query-language</a>, <a href="ceylon.html">Ceylon</a>, <a href="chatterbot.html">chatterbot</a>, <a href="chevrotain.html">chevrotain</a>, <a href="chicken.html">CHICKEN</a>, <a href="chisel.html">chisel</a>, <a href="cir.html">CIR</a>, <a href="civet.html">Civet</a>, <a href="claro.html">Claro</a>, <a href="clash.html">clash</a>, <a href="clay.html">clay</a>, <a href="clojurescript.html">ClojureScript</a>, <a href="cmake.html">CMake</a>, <a href="coco.html">Coco</a>, <a href="codeql.html">CodeQL</a>, <a href="coffeekup.html">CoffeeKup</a>, <a href="coffeescript.html">CoffeeScript</a>, <a href="cokescript.html">CokeScript</a>, <a href="contracts.coffee.html">contracts.coffee</a>, <a href="coq.html">Coq</a>, <a href="cor.html">cor</a>, <a href="cortex.html">Cortex</a>, <a href="couchdb.html">CouchDB</a>, <a href="cperl.html">cperl</a>, <a href="crmsh.html">crmsh</a>, <a href="croc.html">Croc</a>, <a href="cryptol.html">Cryptol</a>, <a href="crystal.html">Crystal</a>, <a href="csvw.html">CSVw</a>, <a href="curv.html">curv</a>, <a href="cyber.html">Cyber</a>, <a href="d3.html">D3.js</a>, <a href="dafny.html">Dafny</a>, <a href="dak.html">Dak</a>, <a href="daonode.html">daonode</a>, <a href="deno.html">Deno</a>, <a href="dex.html">dex</a>, <a href="dexvis.html">dexvis</a>, <a href="dhall.html">Dhall</a>, <a href="differential-datalog.html">Differential Datalog</a>, <a href="djangoql.html">djangoql</a>, <a href="djot.html">Djot</a>, <a href="dlvm.html">dlvm</a>, <a href="dragonbasic.html">DragonBASIC</a>, <a href="drupal.html">Drupal</a>, <a href="duro.html">duro</a>, <a href="ecl.html">ECL</a>, <a href="ecr.html">Embedded Crystal</a>, <a href="edgedb.html">edgedb</a>, <a href="eiffel.html">Eiffel</a>, <a href="ejs.html">EJS</a>, <a href="elena.html">ELENA</a>, <a href="elm.html">Elm</a>, <a href="elvish.html">Elvish</a>, <a href="emojicode.html">Emojicode</a>, <a href="emscripten.html">Emscripten</a>, <a href="enso.html">Enso</a>, <a href="erlang.html">Erlang</a>, <a href="euphoria.html">Euphoria</a>, <a href="eve.html">Eve</a>, <a href="eyg.html">EYG</a>, <a href="factor.html">Factor</a>, <a href="fancy.html">Fancy</a>, <a href="fardlang.html">Fardlang</a>, <a href="felix.html">Felix</a>, <a href="ffmpeg.html">FFmpeg</a>, <a href="fish.html">fish</a>, <a href="flatbuffers.html">FlatBuffers</a>, <a href="flatline.html">Flatline</a>, <a href="flix.html">Flix</a>, <a href="flow.html">Flow</a>, <a href="flow9.html">Flow9</a>, <a href="flowchart-fun.html">FlowchartFun</a>, <a href="flua.html">flua</a>, <a href="flutter.html">Flutter</a>, <a href="flux.html">FLUX</a>, <a href="forml.html">Forml</a>, <a href="fql.html">Foundation Query Language</a>, <a href="frost.html">Frost</a>, <a href="fructure-editor.html">fructure-editor</a>, <a href="frundis.html">Frundis</a>, <a href="fun.html">Fun</a>, <a href="futhark.html">Futhark</a>, <a href="futurescript.html">FutureScript</a>, <a href="gap.html">GAP</a>, <a href="gforth.html">Gforth</a>, <a href="ghc.html">GHC</a>, <a href="git.html">Git</a>, <a href="gleam.html">Gleam</a>, <a href="glicol.html">Glicol</a>, <a href="gluon.html">gluon</a>, <a href="go.html">Go</a>, <a href="goal.html">Goal</a>, <a href="gogs-editor.html">gogs-editor</a>, <a href="golo.html">Golo</a>, <a href="gradle.html">Gradle</a>, <a href="gravity.html">gravity</a>, <a href="gridstudio-editor.html">gridstudio-editor</a>, <a href="groff.html">groff</a>, <a href="gun.html">Gun</a>, <a href="gura.html">gura</a>, <a href="hackett.html">Hackett</a>, <a href="hakaru.html">hakaru</a>, <a href="halide.html">Halide</a>, <a href="hasklig.html">hasklig</a>, <a href="haxelibs-pm.html">Haxe Library Manager</a>, <a href="hazel.html">Hazel</a>, <a href="heap.coffee.html">heap.coffee</a>, <a href="hedy.html">Hedy</a>, <a href="heron-lang.html">Heron</a>, <a href="hhvm.html">HHVM</a>, <a href="highlightjs.html">highlight.js</a>, <a href="hjson.html">Hjson</a>, <a href="hrqr.html">hrqr</a>, <a href="htmx.html">htmx</a>, <a href="htsql.html">HTSQL</a>, <a href="huginn.html">huginn</a>, <a href="hurl.html">hurl</a>, <a href="hy.html">Hy</a>, <a href="hyperscript-lang.html">Hyperscript</a>, <a href="ibis.html">Ibis</a>, <a href="icedcoffeescript.html">IcedCoffeeScript</a>, <a href="idris.html">Idris</a>, <a href="idyll.html">idyll</a>, <a href="imba.html">Imba</a>, <a href="imhex.html">ImHex</a>, <a href="impala.html">Impala</a>, <a href="infusion-framework.html">infusion-framework</a>, <a href="inko.html">inko</a>, <a href="invokator.html">invokator</a>, <a href="ioke.html">Ioke</a>, <a href="iterm2.html">Iterm2</a>, <a href="ixml.html">Invisible XML</a>, <a href="jal-compiler.html">JAL compiler</a>, <a href="jasmine.html">jasmine</a>, <a href="java.html">Java</a>, <a href="jeeves.html">Jeeves</a>, <a href="jekyll.html">Jekyll</a>, <a href="jet.html">Jet</a>, <a href="jflex.html">JFlex</a>, <a href="jinx.html">jinx</a>, <a href="jison.html">Jison</a>, <a href="jq.html">jq</a>, <a href="jquery.html">JQuery</a>, <a href="jsil-compiler.html">jsil-compiler</a>, <a href="jsoncanvas.html">JSON Canvas</a>, <a href="jsonnet.html">Jsonnet</a>, <a href="julia.html">Julia</a>, <a href="juvix.html">juvix</a>, <a href="k-framework.html">k-framework</a>, <a href="kaffeine.html">Kaffeine</a>, <a href="katex.html">KaTeX</a>, <a href="kefir.html">Kefir</a>, <a href="koka.html">Koka</a>, <a href="kotlin.html">Kotlin</a>, <a href="koto.html">Koto</a>, <a href="ktyek.html">ktye/k</a>, <a href="kumir.html">kumir</a>, <a href="kuroko.html">Kuroko</a>, <a href="ladybird.html">Ladybird</a>, <a href="ld-json.html">JSON Lines</a>, <a href="leo-editor.html">leo-editor</a>, <a href="lesma.html">Lesma</a>, <a href="lever.html">lever</a>, <a href="lfortran.html">LFortran</a>, <a href="lift.html">lift</a>, <a href="lighttable.html">Light Table</a>, <a href="ligo.html">Ligo</a>, <a href="links-programming-language.html">Links</a>, <a href="linux.html">Linux</a>, <a href="lispyscript.html">lispyscript</a>, <a href="literate-coffeescript.html">Literate CoffeeScript</a>, <a href="lobster.html">lobster</a>, <a href="loci.html">loci</a>, <a href="logica.html">Logica</a>, <a href="lsif-format.html">Language Server Index Format</a>, <a href="luajit.html">LuaJIT</a>, <a href="lucid-lang.html">Lucid</a>, <a href="luna.html">Luna</a>, <a href="m3db.html">m3db</a>, <a href="mal.html">mal</a>, <a href="manhood.html">manhood</a>, <a href="manim.html">Manim</a>, <a href="margin.html">Margin</a>, <a href="marko.html">Marko</a>, <a href="markwhen.html">Markwhen</a>, <a href="maskjs.html">Mask</a>, <a href="masm.html">MASM</a>, <a href="mastodon.html">Mastodon</a>, <a href="mathjson.html">MathJSON</a>, <a href="mathpix-markdown.html">Mathpix Markdown</a>, <a href="matplotlib.html">Matplotlib</a>, <a href="mavo.html">mavo</a>, <a href="mdx.html">MDX</a>, <a href="melody.html">Melody</a>, <a href="menhir.html">Menhir</a>, <a href="mermaid.html">mermaid</a>, <a href="michelson.html">michelson</a>, <a href="microblocks.html">MicroBlocks</a>, <a href="micropython.html">MicroPython</a>, <a href="minilang.html">Minilang</a>, <a href="minizinc.html">MiniZinc</a>, <a href="mirah.html">Mirah</a>, <a href="mlscript.html">MLscript</a>, <a href="mochajs.html">mochajs</a>, <a href="moescript.html">Moescript</a>, <a href="monaco.html">Monaco Editor</a>, <a href="mond.html">Mond</a>, <a href="mongodb.html">MongoDB</a>, <a href="monkeyx.html">MonkeyX</a>, <a href="monte.html">monte</a>, <a href="moya.html">moya</a>, <a href="mps.html">MPS</a>, <a href="mu.html">Mu</a>, <a href="mun-lang.html">mun-lang</a>, <a href="myia.html">myia</a>, <a href="mys.html">mys</a>, <a href="mythryl.html">mythryl</a>, <a href="nadesiko.html">Nadesiko</a>, <a href="nearley.html">Nearley</a>, <a href="nestedtext.html">NestedText</a>, <a href="netbeans-editor.html">netbeans-editor</a>, <a href="netlogo.html">NetLogo</a>, <a href="neut.html">Neut</a>, <a href="newlisp.html">NewLisp</a>, <a href="nextflow.html">Nextflow</a>, <a href="ngs.html">NGS</a>, <a href="nim.html">Nim</a>, <a href="nimskull.html">Nimskull</a>, <a href="ninja.html">Ninja</a>, <a href="nit.html">Nit</a>, <a href="nlpl.html">nlpl</a>, <a href="nltk.html">Natural Language Toolkit</a>, <a href="nodejs.html">Node.js</a>, <a href="noisecraft.html">noisecraft</a>, <a href="nomnoml.html">nomnoml</a>, <a href="note.html">Note</a>, <a href="numba.html">Numba</a>, <a href="objectscript.html">ObjectScript</a>, <a href="observable-framework.html">Observable Framework</a>, <a href="observable-plot.html">Observable Plot</a>, <a href="obsidian-lang.html">Obsidian</a>, <a href="oden.html">oden</a>, <a href="ohayo.html">Ohayo</a>, <a href="ohm.html">ohm</a>, <a href="oil.html">oil</a>, <a href="ok.html">OK</a>, <a href="olc.html">Open Location Code</a>, <a href="om.html">Om</a>, <a href="onnx.html">onnx</a>, <a href="opa.html">Opa</a>, <a href="open-nn.html">OpenNN</a>, <a href="open-shading-language.html">Open Shading Language</a>, <a href="opencv.html">OpenCV</a>, <a href="openscad.html">OpenSCAD</a>, <a href="openverse.html">Openverse</a>, <a href="p-star.html">P*</a>, <a href="p4p.html">p4p</a>, <a href="packagist-pm.html">packagist-pm</a>, <a href="pact.html">Pact</a>, <a href="pandas.html">Pandas</a>, <a href="paraview.html">ParaView</a>, <a href="parsers.html">Parsers</a>, <a href="particles.html">Particles</a>, <a href="pawn-scripting-language.html">Pawn</a>, <a href="pawn.html">PAWN</a>, <a href="pegjs.html">PEG.js</a>, <a href="penrose.html">Penrose</a>, <a href="pinto.html">pinto</a>, <a href="pkl.html">Pkl</a>, <a href="plaid-programming-language.html">Plaid</a>, <a href="plang.html">plang</a>, <a href="plasma.html">Plasma</a>, <a href="please-build.html">Please Build</a>, <a href="podlite.html">Podlite</a>, <a href="poke.html">GNU Poke</a>, <a href="polyglot-compiler.html">polyglot-compiler</a>, <a href="popr.html">popr</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="potion.html">Potion</a>, <a href="pov-ray-sdl.html">POV-Ray SDL</a>, <a href="prettier.html">Prettier</a>, <a href="prismjs.html">Prism</a>, <a href="project-mentat.html">Project Mentat</a>, <a href="prometheus.html">PROMETHEUS</a>, <a href="prql.html">PRQL</a>, <a href="pug.html">Pug</a>, <a href="purescript.html">PureScript</a>, <a href="pygments.html">Pygments</a>, <a href="pyth.html">Pyth</a>, <a href="python.html">Python</a>, <a href="pytorch.html">PyTorch</a>, <a href="qalb.html">Qalb</a>, <a href="qore.html">Qore</a>, <a href="quaint.html">Quaint</a>, <a href="quint.html">Quint</a>, <a href="racket.html">Racket</a>, <a href="rainbow.html">rainbow</a>, <a href="ramen.html">ramen</a>, <a href="rant.html">rant</a>, <a href="rapidbatch.html">RapidBatch</a>, <a href="raptorjit.html">raptorjit</a>, <a href="reach.html">Reach</a>, <a href="reactjs.html">ReactJS</a>, <a href="recfiles.html">Recfiles</a>, <a href="red.html">Red</a>, <a href="redis.html">Redis</a>, <a href="redprl.html">redprl</a>, <a href="reko-decompiler.html">Reko</a>, <a href="rescript.html">Rescript</a>, <a href="ricscript.html">RicScript</a>, <a href="rmarkdown.html">RMarkdown</a>, <a href="robotframework.html">RobotFramework</a>, <a href="roc.html">Roc</a>, <a href="rockstar.html">Rockstar</a>, <a href="rosie.html">rosie</a>, <a href="roy.html">roy</a>, <a href="ruby.html">Ruby</a>, <a href="rust.html">Rust</a>, <a href="rye.html">Rye</a>, <a href="sagemath.html">Sage</a>, <a href="saltstack.html">SaltStack</a>, <a href="sanddance.html">SandDance</a>, <a href="satysfi.html">SATySFi</a>, <a href="scala-js.html">Scala.js</a>, <a href="scikit-learn.html">Scikit-learn</a>, <a href="scipy.html">SciPy</a>, <a href="scribble.html">scribble</a>, <a href="scroll.html">Scroll</a>, <a href="sentient.html">sentient</a>, <a href="serious.html">Serious</a>, <a href="shadama.html">shadama</a>, <a href="shml.html">shml</a>, <a href="sibilant.html">Sibilant</a>, <a href="simoji.html">Simoji</a>, <a href="sizzle.html">sizzle</a>, <a href="skip.html">skip</a>, <a href="skulpt.html">skulpt</a>, <a href="slab.html">Slab</a>, <a href="slony.html">Slony</a>, <a href="smallbasic.html">SmallBASIC</a>, <a href="smpl.html">Semantic Patch Language</a>, <a href="snowman-decompiler.html">Snowman</a>, <a href="solid-network.html">Solid</a>, <a href="solidity.html">Solidity</a>, <a href="sourcepawn.html">SourcePawn</a>, <a href="space.html">Space</a>, <a href="speedie.html">Speedie</a>, <a href="spiderbasic.html">SpiderBasic</a>, <a href="sqlite.html">SQLite</a>, <a href="sqrl.html">SQRL</a>, <a href="stacklang.html">stacklang</a>, <a href="statsplorer.html">Statsplorer</a>, <a href="strat.html">strat</a>, <a href="stringbean.html">stringbean</a>, <a href="subleq.html">Subleq</a>, <a href="sugarss.html">SugarSS</a>, <a href="svelte.html">Svelte</a>, <a href="swift.html">Swift</a>, <a href="swym.html">Swym</a>, <a href="sympy.html">SymPy</a>, <a href="tablam.html">tablam</a>, <a href="tabloid.html">Tabloid</a>, <a href="taf.html">taf</a>, <a href="taijilang.html">Taijilang</a>, <a href="tampio.html">tampio</a>, <a href="tangledown.html">tangledown</a>, <a href="terra.html">Terra</a>, <a href="textadept-editor.html">Textadept</a>, <a href="threejs.html">Three.js</a>, <a href="tht.html">tht</a>, <a href="tibet.html">tibet</a>, <a href="tiledb.html">tiledb</a>, <a href="tiscript.html">TIScript</a>, <a href="tldr.html">tldr</a>, <a href="tldraw.html">tldraw</a>, <a href="toffeescript.html">ToffeeScript</a>, <a href="toontalk.html">ToonTalk</a>, <a href="tornado.html">tornado</a>, <a href="tosh.html">Tosh</a>, <a href="twine.html">Twine</a>, <a href="twtxt.html">twtxt</a>, <a href="txtzyme.html">txtzyme</a>, <a href="u.html">U</a>, <a href="uiua.html">Uiua</a>, <a href="urweb.html">UrWeb</a>, <a href="v.html">V</a>, <a href="v8.html">V8</a>, <a href="vega-editor-app.html">vega-editor-app</a>, <a href="vega.html">Vega</a>, <a href="vimwiki.html">Vimwiki</a>, <a href="vine.html">Vine</a>, <a href="visdown.html">visdown</a>, <a href="vlc.html">VLC</a>, <a href="vsxu.html">VSXu</a>, <a href="vuejs.html">Vue</a>, <a href="vyxal.html">Vyxal</a>, <a href="wasm.html">WebAssembly</a>, <a href="wasp-lang.html">Wasp</a>, <a href="web3js.html">Web3.js</a>, <a href="wenyan.html">文言文編程語言</a>, <a href="wing.html">Wing</a>, <a href="wiredtiger.html">WiredTiger</a>, <a href="wonkey.html">Wonkey</a>, <a href="wren.html">Wren</a>, <a href="wyvern.html">Wyvern</a>, <a href="xarray.html">Xarray</a>, <a href="xgboost-model.html">Xgboost</a>, <a href="xgboost.html">XGBoost</a>, <a href="xidoc.html">Xidoc</a>, <a href="xl-lang.html">XL</a>, <a href="xtext.html">Xtext</a>, <a href="yasnippet.html">YASnippet</a>, <a href="yawl.html">YAWL</a>, <a href="yeti.html">yeti</a>, <a href="yii.html">Yes It Is</a>, <a href="yoptascript.html">YoptaScript</a>, <a href="zephir.html">Zephir</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/c/CSS.css'>hello-world</a>:
 body::before {
     content: &quot;Hello World&quot;;
 }
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Cascading'>the Hello World Collection</a>:
 /* Hello World in CSS */
 body:before {
     content: &quot;Hello World&quot;;
 }
 
+```
+
+```Example from <a href='https://github.com/atom/language-css'>Linguist</a>:
 /*!
  * Bootstrap v2.3.1
  *
@@ -69,39 +76,42 @@ label,select,button,input[type=&quot;button&quot;],input[type=&quot;reset&quot;]
 input[type=&quot;search&quot;]{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;-webkit-appearance:textfield;}
 input[type=&quot;search&quot;]::-webkit-search-decoration,input[type=&quot;search&quot;]::-webkit-search-cancel-button{-webkit-appearance:none;}
 textarea{overflow:
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Cascading_Style_Sheets'>Wikipedia</a>:
 body {
    overflow: hidden;
    background: #000000;
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Standard Library
  FeatureLink ../features/hasStandardLibrary.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   body { font-family: Arial, sans-serif; }
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -109,58 +119,58 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* This is a single-line comment */ p { color: red; }
  Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   @import 'custom.css';
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Ternary operators
  FeatureLink ../features/hasTernaryOperators.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Disk Output
  FeatureLink ../features/canWriteToDisk.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Mixins
  FeatureLink ../features/hasMixins.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Enums
  FeatureLink ../features/hasEnums.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

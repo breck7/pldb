@@ -1,50 +1,58 @@
 Coconut
 =======
 
-Coconut is an open source programming language created in 2014.
+Coconut is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2014.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
 
-#188 on PLDB
-10 Years Old
+#201 on PLDB
+12 Years Old
 
+```Download source code:
 git clone https://github.com/evhub/coconut
+```
 
 Simple, elegant, Pythonic functional programming.
 
-- Tags: programming language
-- Coconut is developed on GitHub and has 4,012 stars
-- Early development of Coconut happened in http://coconut-lang.org
-- Coconut compiles to Python
-- Coconut is written in Python, YAML, Markdown, JSON, Make, reStructuredText, TOML
-- There is 1 Jupyter Kernel for Coconut
-- coconut-lang.org was registered in 2016
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Coconut is developed on <a href="https://github.com/evhub/coconut">GitHub</a> and has 4,012 stars
+- Early development of Coconut happened in <a href="../lists/labs.html#q=http://coconut-lang.org">http://coconut-lang.org</a>
+- Coconut compiles to <a href="python.html">Python</a>
+- Coconut is written in <a href="python.html">Python</a>, <a href="yaml.html">YAML</a>, <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>, <a href="make.html">Make</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="toml.html">TOML</a>
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="http://coconut-lang.org/">Kernel</a> for Coconut
+- <a href="http://coconut-lang.org/">coconut-lang.org</a> was registered in 2016
 - Read more about Coconut on the web: 1.
  https://news.ycombinator.com/item?id=23759721 1.
 
+```Example from <a href='https://riju.codes/coconut'>Riju</a>:
 print(&quot;Hello, world!&quot;)
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/c/Coconut.coc'>hello-world</a>:
 &quot;Hello World&quot; |&gt; print
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print
 row
  Feature Algebraic Data Type
  FeatureLink ../features/hasAlgebraicTypes.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   data Empty()
   data Leaf(n)
@@ -59,38 +67,38 @@ row
 row
  Feature Function Composition
  FeatureLink ../features/hasFunctionComposition.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (f..g..h)(x, y, z)
  Token 
 row
  Feature Destructuring
  FeatureLink ../features/hasDestructuring.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   {"list": [0] + rest} = {"list": [0, 1, 2, 3]}
  Token 
 row
  Feature Anonymous Functions
  FeatureLink ../features/hasAnonymousFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   x -> x ** 2
  Token 
 row
  Feature Infix Notation
  FeatureLink ../features/hasInfixNotation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   5 `mod` 3 == 2
  Token 
 row
  Feature Pattern Matching
  FeatureLink ../features/hasPatternMatching.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   match [head] + tail in [0, 1, 2, 3]:
      print(head, tail)
  Token
 
-View source
+Built with Scroll v178.2.3

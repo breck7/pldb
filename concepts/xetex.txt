@@ -1,18 +1,19 @@
 XeTeX
 =====
 
-XeTeX is an open source text markup language created in 2004.
+XeTeX is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2004.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2004
 
-#1477 on PLDB
-20 Years Old
+#1537 on PLDB
+22 Years Old
 
 XeTeX ( ZEE-tekh or ; see also Pronouncing and writing "TeX") is a TeX typesetting engine using Unicode and supporting modern font technologies such as OpenType, Graphite and Apple Advanced Typography (AAT). It was originally written by Jonathan Kew and is distributed under the X11 free software license. Initially developed for Mac OS X only, it is now available for all major platforms. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/XeTeX Read more on Wikipedia...
 
-- Tags: text markup language
-- See also: (8 related languages) Pascal, C, Tex, Unicode, UTF-8, LaTeX, Linux, PostScript
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- See also: (8 related languages) <a href="pascal.html">Pascal</a>, <a href="c.html">C</a>, <a href="tex.html">Tex</a>, <a href="unicode.html">Unicode</a>, <a href="utf-8.html">UTF-8</a>, <a href="latex.html">LaTeX</a>, <a href="linux.html">Linux</a>, <a href="postscript.html">PostScript</a>
 
+```Example from the web:
 \documentclass[11pt]{article}
 \usepackage{fontspec}
 \setmainfont[Ligatures=TeX]{Linux Libertine O}
@@ -21,10 +22,11 @@ XeTeX ( ZEE-tekh or ; see also Pronouncing and writing "TeX") is a TeX typesetti
 
 \subsection{English}
 All human beings are born free and equal in dignity and rights.
- 
 \subsection{Íslenska}
 Hver maður er borinn frjáls og jafn öðrum að virðingu og réttindum.
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/XeTeX'>Wikipedia</a>:
 % Encoding: UTF8
 @ARTICLE(Ekstrom,
         AUTHOR    = &quot;Author w&quot;,
@@ -40,5 +42,6 @@ Hver maður er borinn frjáls og jafn öðrum að virðingu og réttindum.
         YEAR      = &quot;1965&quot;,
     note      = {Not working with pdflatex but with xelatex}
         )
+```
 
-View source
+Built with Scroll v178.2.3

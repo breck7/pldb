@@ -1,20 +1,21 @@
 Orc
 ===
 
-Orc is an open source programming language created in 2004 by Jayadev Misra.
+Orc is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2004 by Jayadev Misra.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2004
  https://pldb.io/concepts/../lists/creators.html#q=Jayadev%20Misra Jayadev Misra
 
-#1120 on PLDB
-20 Years Old
+#1154 on PLDB
+22 Years Old
 
 Orc is a concurrent, nondeterministic computer programming language created by Jayadev Misra at the University of Texas at Austin. Orc  provides uniform access to computational services, including distributed communication and data manipulation, through sites. Using four simple concurrency primitives, the programmer orchestrates the invocation of sites to achieve a goal, while managing timeouts, priorities, and failures.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Orc_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Orc happened in University of Texas at Austin
-- See also: (4 related languages) Haskell, ML, Oz, Smalltalk
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Orc happened in <a href="../lists/labs.html#q=University of Texas at Austin">University of Texas at Austin</a>
+- See also: (4 related languages) <a href="haskell.html">Haskell</a>, <a href="ml.html">ML</a>, <a href="oz.html">Oz</a>, <a href="smalltalk.html">Smalltalk</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/o/Orc.orc'>hello-world</a>:
 {- HelloWorld.orc -- Orc program HelloWorld
  -
  - $Id$
@@ -26,20 +27,22 @@ Orc is a concurrent, nondeterministic computer programming language created by J
 Println(&quot;Hello World&quot;) &gt;&gt;
 stop
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   {- A comment
   -}
@@ -47,7 +50,7 @@ row
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   {- A comment
   -}
@@ -55,14 +58,14 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token Println
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -1,19 +1,20 @@
 Piet
 ====
 
-Piet is an esoteric programming language created in 1990.
+Piet is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22esolang%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">esoteric programming language</a> created in 1990.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221990%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1990
 
-#3616 on PLDB
-34 Years Old
+#3437 on PLDB
+36 Years Old
 
 An esoteric programming language (sometimes shortened to esolang) is a programming language designed to test the boundaries of computer programming language design, as a proof of concept, as software art, as a hacking interface to another language (particularly functional programming or procedural programming languages), or as a joke.  The use of esoteric distinguishes these languages from programming languages that working developers use to write software. Usually, an esolang's creators do not intend the language to be used for mainstream programming, although some esoteric features, such as visuospatial syntax,  have inspired practical applications in the arts. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Piet_%28programming_language%29 Read more on Wikipedia...
 
-- Tags: esoteric programming language
-- Early development of Piet happened in https://www.dangermouse.net/esoteric/piet.html
-- See also: (13 related languages) INTERCAL, Fortran, COBOL, Assembly language, Unix, Brainfuck, Befunge, FRACTRAN, GRASS, LOLCODE, Malbolge, UNLAMBDA, Whitespace
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"esolang"%5D%7D%5D%2C"logic"%3A"AND"%7D'>esoteric programming language</a>
+- Early development of Piet happened in <a href="../lists/labs.html#q=https://www.dangermouse.net/esoteric/piet.html">https://www.dangermouse.net/esoteric/piet.html</a>
+- See also: (13 related languages) <a href="intercal.html">INTERCAL</a>, <a href="fortran.html">Fortran</a>, <a href="cobol.html">COBOL</a>, <a href="assembly-language.html">Assembly language</a>, <a href="unix.html">Unix</a>, <a href="brainfuck.html">Brainfuck</a>, <a href="befunge.html">Befunge</a>, <a href="fractran.html">FRACTRAN</a>, <a href="grass.html">GRASS</a>, <a href="lolcode.html">LOLCODE</a>, <a href="malbolge.html">Malbolge</a>, <a href="unlambda.html">UNLAMBDA</a>, <a href="whitespace.html">Whitespace</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Piet_%28programming_language%29'>Wikipedia</a>:
 ~ATH(THIS) {
 
     // ADDITIONAL GRAVES...
@@ -21,5 +22,6 @@ An esoteric programming language (sometimes shortened to esolang) is a programmi
 } EXECUTE(NULL);
 
 THIS.DIE();
+```
 
-View source
+Built with Scroll v178.2.3

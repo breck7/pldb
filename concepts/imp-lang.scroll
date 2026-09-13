@@ -1,14 +1,23 @@
 ../code/conceptPage.scroll
 
 id imp-lang
-name imp-lang
+name imp
 appeared 2019
+creators Jamie Brandon
 tags pl
 website https://scattered-thoughts.net/writing/imp-intro/
 webRepl https://scattered-thoughts.net/imp
 description The vision is of an emacs-y live self-modifying environment for working with structured data across multiple devices. The big moving parts are: a versioned relational database; an extensible GUI; a pure programming language built around relations; an interpreter with fast incremental view maintenance.
-lab https://github.com/jamii/imp/issues
+writtenIn zig c nix markdown bash
 
+repoStats
+ firstCommit 2022
+ newestCommit 2022
+ commits 1343
+ mb 6
+ committers 1
+ files 17
+ linesOfCode 275798
 country United States
 
 example
@@ -16,4 +25,11 @@ example
  let fancy = "red" x "scarlet" | "red" x "crimson" | "green" x "emerald" in
  "apples" colors fancy
 
-semanticScholar 0
+githubRepo https://github.com/jamii/imp
+ stars 272
+ forks 11
+ subscribers 14
+ created 2015
+ updated 2025
+ description Various experiments in relational programming
+ issues 0

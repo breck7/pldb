@@ -1,21 +1,22 @@
 MATH-MATIC
 ==========
 
-MATH-MATIC is a programming language created in 1957.
+MATH-MATIC is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1957.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221957%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1957
 
-#2063 on PLDB
-67 Years Old
+#2151 on PLDB
+69 Years Old
 
 MATH-MATIC is the marketing name for the AT-3 (Algebraic Translator 3) compiler, an early programming language for the UNIVAC I and UNIVAC II. MATH-MATIC was written beginning around 1955 by a team led by Charles Katz under the direction of Grace Hopper. A preliminary manual was produced in 1957 and a final manual the following year. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/MATH-MATIC Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of MATH-MATIC happened in Remington Rand
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of MATH-MATIC happened in <a href="../lists/labs.html#q=Remington Rand">Remington Rand</a>
 - MATH-MATIC on HOPL
  https://hopl.info/showlanguage.prx?exp=435 MATH-MATIC on HOPL
-- See also: (4 related languages) FLOW-MATIC, ARITH-MATIC, ALGOL 58, Fortran
+- See also: (4 related languages) <a href="flow-matic.html">FLOW-MATIC</a>, <a href="arith-matic.html">ARITH-MATIC</a>, <a href="algol-58.html">ALGOL 58</a>, <a href="fortran.html">Fortran</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/MATH-MATIC'>Wikipedia</a>:
 (2)  TYPE-IN ALPHA .
 (2A) READ A B C SERVO 4 STORAGE A IF SENTINEL JUMP TO SENTENCE 8 .
 (3)  READ D F SERVO 5 .
@@ -31,5 +32,6 @@ MATH-MATIC is the marketing name for the AT-3 (Algebraic Translator 3) compiler,
 (13) WRITE EDIT F D F X2 SERVO 6 .
 (16) JUMP TO SENTENCE 10 .
 (20) STOP .
+```
 
-View source
+Built with Scroll v178.2.3

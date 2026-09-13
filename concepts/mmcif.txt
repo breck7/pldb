@@ -1,0 +1,163 @@
+mmCIF
+=====
+
+mmCIF is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textDataFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text data format</a> created in 1996.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1996
+
+#1334 on PLDB
+30 Years Old
+
+mmCIF (Macromolecular Crystallographic Information File) is a text-based data format developed by the International Union of Crystallography (IUCr) for representing crystallographic information, particularly for macromolecular structures like proteins and nucleic acids. It extends the CIF (Crystallographic Information File) format with a richer dictionary for structural biology data. mmCIF is widely used in the Protein Data Bank (PDB) for storing and exchanging 3D structural data.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textDataFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>textDataFormat</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"chemistry"%5D%7D%5D%2C"logic"%3A"AND"%7D'>chemistry</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"biology"%5D%7D%5D%2C"logic"%3A"AND"%7D'>biology</a>
+
+```Example from the web:
+data_1BNA
+_entry.id   1BNA
+_struct.title
+;NMR Structure of a DNA Dodecamer
+;
+_entity_poly.type  polydeoxyribonucleotide
+_entity_poly.seq
+;CGCGAATTCGCG
+;
+_atom_site.group_PDB
+ATOM
+_atom_site.id
+1
+_atom_site.type_symbol
+C
+_atom_site.label_atom_id
+C1&#39;
+_atom_site.label_comp_id
+DG
+_atom_site.label_seq_id
+1
+_atom_site.Cartn_x
+-2.123
+_atom_site.Cartn_y
+3.456
+_atom_site.Cartn_z
+7.890
+#
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  _atom_site.Cartn_x -2.123
+ Token 
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  _atom_site.id 1
+ Token 
+row
+ Feature Maps
+ FeatureLink ../features/hasMaps.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  _entry.id   1BNA
+ Token 
+row
+ Feature Structs
+ FeatureLink ../features/hasStructs.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  _struct.title
+ Token 
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  "NMR Structure of a DNA Dodecamer"
+ Token 
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  # This is a comment in mmCIF
+ Token 
+row
+ Feature Unicode Identifers
+ FeatureLink ../features/hasUnicodeIdentifiers.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Operators
+ FeatureLink ../features/hasOperators.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Statements
+ FeatureLink ../features/hasStatements.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Expressions
+ FeatureLink ../features/hasExpressions.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Lists
+ FeatureLink ../features/hasLists.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Standard Library
+ FeatureLink ../features/hasStandardLibrary.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v178.2.3

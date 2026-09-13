@@ -1,0 +1,54 @@
+Borgo
+=====
+
+Borgo is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2023 by Marco Sampellegrini.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222023%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2023
+ https://pldb.io/concepts/../lists/creators.html#q=Marco%20Sampellegrini Marco Sampellegrini
+
+#694 on PLDB
+3 Years Old
+
+```Download source code:
+git clone https://github.com/borgo-lang/borgo
+```
+
+A language for writing applications that is more expressive than Go but less complex than Rust.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Borgo is developed on <a href="https://github.com/borgo-lang/borgo">GitHub</a> and has 4,261 stars
+- Borgo compiles to <a href="go.html">Go</a>
+- Borgo is written in <a href="expect.html">Expect</a>, <a href="rust.html">Rust</a>, <a href="markdown.html">Markdown</a>, <a href="typescript.html">TypeScript</a>, <a href="toml.html">TOML</a>, <a href="json.html">JSON</a>, <a href="go.html">Go</a>, <a href="javascript.html">JavaScript</a>, <a href="yaml.html">YAML</a>, <a href="nix.html">Nix</a>, <a href="css.html">CSS</a>
+
+```Example from the web:
+use fmt
+
+enum NetworkState&lt;T&gt; {
+    Loading,
+    Failed(int),
+    Success(T),
+}
+
+struct Response {
+    title: string,
+    duration: int,
+}
+
+fn main() {
+    let res = Response {
+        title: &quot;Hello world&quot;,
+        duration: 0,
+    }
+
+    let state = NetworkState.Success(res)
+
+    let msg = match state {
+        NetworkState.Loading =&gt; &quot;still loading&quot;,
+        NetworkState.Failed(code) =&gt; fmt.Sprintf(&quot;Got error code: %d&quot;, code),
+        NetworkState.Success(res) =&gt; res.title,
+    }
+
+    fmt.Println(msg)
+}
+```
+
+Built with Scroll v178.2.3

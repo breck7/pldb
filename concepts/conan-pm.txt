@@ -1,20 +1,22 @@
 Conan
 =====
 
-Conan is a package manager created in 2015.
+Conan is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22packageManager%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">package manager</a> created in 2015.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
 
-#480 on PLDB
-9 Years Old
+#501 on PLDB
+11 Years Old
 
+```Download source code:
 git clone https://github.com/conan-io/conan
+```
 
 Conan, the C / C++ Package Manager for Developers
 
-- Tags: packageManager
-- Conan is developed on GitHub and has 8,031 stars
-- Early development of Conan happened in https://github.com/conan-io
-- Conan is written in Python, Markdown, YAML, SVG, XML, Dockerfile, TOML, Ini
-- conan.io was registered in 2015
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"packageManager"%5D%7D%5D%2C"logic"%3A"AND"%7D'>packageManager</a>
+- Conan is developed on <a href="https://github.com/conan-io/conan">GitHub</a> and has 8,031 stars
+- Early development of Conan happened in <a href="../lists/labs.html#q=https://github.com/conan-io">https://github.com/conan-io</a>
+- Conan is written in <a href="python.html">Python</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="svg.html">SVG</a>, <a href="xml.html">XML</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="toml.html">TOML</a>, <a href="ini.html">Ini</a>
+- <a href="https://conan.io/">conan.io</a> was registered in 2015
 
-View source
+Built with Scroll v178.2.3

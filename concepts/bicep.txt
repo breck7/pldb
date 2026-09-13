@@ -1,29 +1,32 @@
 Bicep
 =====
 
-Bicep is a json format created in 2020 by Anthony Martin.
+Bicep is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22jsonFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">json format</a> created in 2020 by Anthony Martin.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
  https://pldb.io/concepts/../lists/creators.html#q=Anthony%20Martin Anthony Martin
 
-#216 on PLDB
-4 Years Old
-3k Repos
+#219 on PLDB
+6 Years Old
+3k <span title="Bicep repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/Azure/bicep
+```
 
 Bicep is a Domain Specific Language (DSL) for deploying Azure resources declaratively.
 
-- Tags: jsonFormat
-- Bicep is developed on GitHub and has 3,181 stars
-- There are at least 2,562 Bicep repos on GitHub
-- Early development of Bicep happened in Microsoft
-- Bicep compiles to ARM Templates
-- Bicep is written in C#, JSON, TypeScript, SVG, XML, HTML, Markdown, YAML, JavaScript, PowerShell, Bourne shell, CSS
-- The  Google BigQuery Public Dataset GitHub snapshot shows 13 users using Bicep in 17 repos on GitHub
-- Monaco package for syntax highlighting Bicep
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"jsonFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>jsonFormat</a>
+- Bicep is developed on <a href="https://github.com/Azure/bicep">GitHub</a> and has 3,181 stars
+- There are at least 2,562 Bicep repos on <a href="https://github.com/search?q=language:Bicep">GitHub</a>
+- Early development of Bicep happened in <a href="../lists/labs.html#q=Microsoft">Microsoft</a>
+- Bicep compiles to <a href="arm-templates.html">ARM Templates</a>
+- Bicep is written in <a href="csharp.html">C#</a>, <a href="json.html">JSON</a>, <a href="typescript.html">TypeScript</a>, <a href="svg.html">SVG</a>, <a href="xml.html">XML</a>, <a href="html.html">HTML</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="javascript.html">JavaScript</a>, <a href="powershell.html">PowerShell</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="css.html">CSS</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 13 users using Bicep in 17 repos on <a href="https://api.github.com/search/repositories?q=language:Bicep">GitHub</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/bicep">package</a> for syntax highlighting Bicep
 - Read more about Bicep on the web: 1.
  https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/ 1.
 
+```Example from the web:
 @minLength(3)
 @maxLength(11)
 param storagePrefix string
@@ -54,29 +57,32 @@ module webModule &#39;./webApp.bicep&#39; = {
 }
 
 output storageEndpoint object = stg.properties.primaryEndpoints
+```
 
+```Bicep <a href="../lists/keywords.html#q=bicep">Keywords</a>
 targetScope resource module param var output for in if existing
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -84,9 +90,9 @@ row
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 
-View source
+Built with Scroll v178.2.3

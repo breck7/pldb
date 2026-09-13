@@ -1,25 +1,26 @@
 Gherkin
 =======
 
-Gherkin is a programming language created in 2008.
+Gherkin is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2008.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
 
-#611 on PLDB
-16 Years Old
-8k Repos
+#604 on PLDB
+18 Years Old
+8k <span title="Gherkin repos on GitHub.">Repos</span>
 
 Executable specifications
 
-- Tags: programming language
-- There are at least 7,787 Gherkin repos on GitHub
-- Early development of Gherkin happened in SmartBear Software
-- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using Gherkin in 5k repos on GitHub
-- Pygments supports syntax highlighting for Gherkin
-- GitHub supports syntax highlighting for Gherkin
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 7,787 Gherkin repos on <a href="https://github.com/search?q=language:Gherkin">GitHub</a>
+- Early development of Gherkin happened in <a href="../lists/labs.html#q=SmartBear Software">SmartBear Software</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4k users using Gherkin in 5k repos on <a href="https://api.github.com/search/repositories?q=language:Gherkin">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/testing.py">syntax highlighting</a> for Gherkin
+- GitHub supports <a href="https://github.com/cucumber/cucumber-tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Gherkin
 - Read more about Gherkin on the web: 1.
  https://docs.cucumber.io/gherkin/reference/ 1.
-- 12 PLDB concepts link to Gherkin: Ace Editor, capybara, cloc, codecept, crmsh, Gradle, hamdown, Jekyll, Linux, multiaddr, Pygments, ramen
+- 12 PLDB concepts link to Gherkin: <a href="ace.html">Ace Editor</a>, <a href="capybara.html">capybara</a>, <a href="cloc.html">cloc</a>, <a href="codecept.html">codecept</a>, <a href="crmsh.html">crmsh</a>, <a href="gradle.html">Gradle</a>, <a href="hamdown.html">hamdown</a>, <a href="jekyll.html">Jekyll</a>, <a href="linux.html">Linux</a>, <a href="multiaddr.html">multiaddr</a>, <a href="pygments.html">Pygments</a>, <a href="ramen.html">ramen</a>
 
+```Example from the web:
 Feature: Guess the word
 
  # The first example has two steps
@@ -32,29 +33,30 @@ Feature: Guess the word
    Given the Maker has started a game with the word &quot;silky&quot;
    When the Breaker joins the Maker&#39;s game
    Then the Breaker must guess a word with 5 characters
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

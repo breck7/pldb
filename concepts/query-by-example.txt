@@ -1,24 +1,26 @@
 Query by Example
 ================
 
-Query by Example is a programming language created in 1969.
+Query by Example is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1969.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221969%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1969
 
-#1593 on PLDB
-55 Years Old
+#1649 on PLDB
+57 Years Old
 
 Query by Example (QBE) is a database query language for relational databases. It was devised by Moshé M. Zloof at IBM Research during the mid-1970s, in parallel to the development of SQL. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Query_by_Example Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Query by Example happened in IBM
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Query by Example happened in <a href="../lists/labs.html#q=IBM">IBM</a>
 - Query by Example on HOPL
  https://hopl.info/showlanguage.prx?exp=3957 Query by Example on HOPL
-- See also: (2 related languages) SQL, GraphQL
+- See also: (2 related languages) <a href="sql.html">SQL</a>, <a href="graphql.html">GraphQL</a>
 - Read more about Query by Example on Semantic Scholar: 1.
  https://semanticscholar.org/paper/f320e453ae65ddf0a3789f4383fa164481c7a8b3 1.
-- 1 PLDB concepts link to Query by Example: SBA
+- 1 PLDB concepts link to Query by Example: <a href="sba.html">SBA</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Query_by_Example'>Wikipedia</a>:
 SELECT * FROM Contacts WHERE City=&#39;Sampleton&#39; AND Zipcode=&#39;12345&#39;;
+```
 
-View source
+Built with Scroll v178.2.3

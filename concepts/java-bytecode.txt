@@ -1,19 +1,20 @@
 Java Bytecode
 =============
 
-Java Bytecode is a bytecode format created in 1995.
+Java Bytecode is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22bytecode%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">bytecode format</a> created in 1995.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221995%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1995
 
-#729 on PLDB
-29 Years Old
+#760 on PLDB
+31 Years Old
 
 Java bytecode is the instruction set of the Java virtual machine (JVM).. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Java_bytecode Read more on Wikipedia...
 
-- Tags: bytecode format
-- Early development of Java Bytecode happened in Oracle
-- See also: (19 related languages) JVM, Java, Assembly language, C, ColdFusion, JRuby, Jython, Ruby, Python, Groovy, Scala, Ada, Clojure, Lisp, JavaFX Script, Kotlin, Object Pascal, Free Pascal, CIL
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"bytecode"%5D%7D%5D%2C"logic"%3A"AND"%7D'>bytecode format</a>
+- Early development of Java Bytecode happened in <a href="../lists/labs.html#q=Oracle">Oracle</a>
+- See also: (19 related languages) <a href="jvm.html">JVM</a>, <a href="java.html">Java</a>, <a href="assembly-language.html">Assembly language</a>, <a href="c.html">C</a>, <a href="coldfusion.html">ColdFusion</a>, <a href="jruby.html">JRuby</a>, <a href="jython.html">Jython</a>, <a href="ruby.html">Ruby</a>, <a href="python.html">Python</a>, <a href="groovy.html">Groovy</a>, <a href="scala.html">Scala</a>, <a href="ada.html">Ada</a>, <a href="clojure.html">Clojure</a>, <a href="lisp.html">Lisp</a>, <a href="javafx-script.html">JavaFX Script</a>, <a href="kotlin.html">Kotlin</a>, <a href="object-pascal.html">Object Pascal</a>, <a href="free-pascal.html">Free Pascal</a>, <a href="cil.html">CIL</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/Java_bytecode'>Wikipedia</a>:
 0:   iconst_2
 1:   istore_1
 2:   iload_1
@@ -37,29 +38,30 @@ Java bytecode is the instruction set of the Java virtual machine (JVM).. Read mo
 38:  iinc    1, 1
 41:  goto    2
 44:  return
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

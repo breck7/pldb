@@ -1,25 +1,28 @@
 XCompose
 ========
 
-XCompose is an application created in 2006.
+XCompose is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 2006.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
 
-#2048 on PLDB
-18 Years Old
-0 Repos
+#2135 on PLDB
+20 Years Old
+0 <span title="XCompose repos on GitHub.">Repos</span>
 
-- Tags: application
-- There are at least 0 XCompose repos on GitHub
-- GitHub supports syntax highlighting for XCompose
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>
+- There are at least 0 XCompose repos on <a href="https://github.com/search?q=language:XCompose">GitHub</a>
+- GitHub supports <a href="https://github.com/samcv/language-xcompose" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for XCompose
 - Read more about XCompose on the web: 1.
  https://wiki.debian.org/XCompose 1.
 
+```Example from the web:
 include &quot;%L&quot;
 
 &lt;Multi_key&gt; &lt;g&gt; &lt;a&gt; : &quot;α&quot;
 &lt;Multi_key&gt; &lt;g&gt; &lt;b&gt; : &quot;β&quot;
 &lt;Multi_key&gt; &lt;g&gt; &lt;g&gt; : &quot;γ&quot;
+```
 
+```Example from <a href='https://github.com/samcv/language-xcompose'>Linguist</a>:
 # for Emacs: -*- coding: utf-8 -*-
 include &quot;%L&quot;
 
@@ -56,5 +59,6 @@ include &quot;%L&quot;
 &lt;Multi_key&gt; &lt;minus&gt; &lt;asciitilde&gt; &lt;minus&gt; : &quot;―&quot; U2015 # HORIZONTAL BAR
 &lt;Multi_key&gt; &lt;minus&gt; &lt;2&gt; &lt;M&gt;	 	 : &quot;⸺&quot; U2E3A # TWO-EM DASH
 &lt;M
+```
 
-View source
+Built with Scroll v178.2.3

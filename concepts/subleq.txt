@@ -1,21 +1,24 @@
 Subleq
 ======
 
-Subleq is an instruction set architecture created in 2009 by David Roberts.
+Subleq is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22isa%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">instruction set architecture</a> created in 2009 by David Roberts.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2009
  https://pldb.io/concepts/../lists/creators.html#q=David%20Roberts David Roberts
 
-#1623 on PLDB
-15 Years Old
+#1692 on PLDB
+17 Years Old
 
+```Download source code:
 git clone https://github.com/davidar/subleq
+```
 
 CPU design and toolchain for a simple computer architecture
 
-- Tags: instruction set architecture
-- Subleq is developed on GitHub and has 109 stars
-- Subleq is written in JavaScript, Make, C++, Python, C, XML, Markdown, CSS, HTML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"isa"%5D%7D%5D%2C"logic"%3A"AND"%7D'>instruction set architecture</a>
+- Subleq is developed on <a href="https://github.com/davidar/subleq">GitHub</a> and has 109 stars
+- Subleq is written in <a href="javascript.html">JavaScript</a>, <a href="make.html">Make</a>, <a href="cpp.html">C++</a>, <a href="python.html">Python</a>, <a href="c.html">C</a>, <a href="xml.html">XML</a>, <a href="markdown.html">Markdown</a>, <a href="css.html">CSS</a>, <a href="html.html">HTML</a>
 
+```Example from <a href='https://riju.codes/subleq'>Riju</a>:
 12 12 3
 36 37 6
 37 12 9
@@ -34,7 +37,9 @@ CPU design and toolchain for a simple computer architecture
 32 119 111
 114 108 100
 33 10 53
+```
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/s/SubleQ.sq'>hello-world</a>:
 loop:       hello (-1)
             minusOne loop
             minusOne checkEnd+1
@@ -44,4 +49,6 @@ checkEnd:   Z hello (-1)
 . minusOne: -1
 . hello: &quot;Hello World\n&quot; Z: 0
 
-View source
+```
+
+Built with Scroll v178.2.3

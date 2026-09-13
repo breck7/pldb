@@ -1,0 +1,24 @@
+Lambda Calculus
+===============
+
+Lambda Calculus is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22notation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">notation</a> created in 1936 by Alonzo Church.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221936%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1936
+ https://pldb.io/concepts/../lists/creators.html#q=Alonzo%20Church Alonzo Church
+
+#3009 on PLDB
+90 Years Old
+
+Lambda Calculus is a formal system in mathematical logic for expressing computation based on function abstraction and application using variable binding and substitution. It serves as a foundation for functional programming languages and theoretical computer science.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"notation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>notation</a>
+- Early development of Lambda Calculus happened in <a href="../lists/labs.html#q=Princeton University">Princeton University</a>
+- Read more about Lambda Calculus on the web: 1.
+ https://doi.org/10.2307/2371045 1.
+- 6 PLDB concepts link to Lambda Calculus: <a href="automath.html">Automath</a>, <a href="cosmicos.html">CosmicOS</a>, <a href="de-bruijn-notation.html">De Bruijn Notation</a>, <a href="lego.html">LEGO</a>, <a href="lisp.html">Lisp</a>, <a href="mltt.html">Martin-Lof Type Theory</a>
+
+```Example from the web:
+(λx.x) y
+# Represents the identity function applied to y
+```
+
+Built with Scroll v178.2.3

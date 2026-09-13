@@ -1,21 +1,24 @@
 Cortex
 ======
 
-Cortex is a programming language created in 2019 by Arno Gourdol.
+Cortex is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2019 by Arno Gourdol.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2019
  https://pldb.io/concepts/../lists/creators.html#q=Arno%20Gourdol Arno Gourdol
 
-#1337 on PLDB
-5 Years Old
+#1398 on PLDB
+7 Years Old
 
+```Download source code:
 git clone https://github.com/cortex-js/compute-engine
+```
 
 Cortex is a programming language for scientific computing built on the Cortex Compute Engine.
 
-- Tags: programming language
-- Cortex is developed on GitHub and has 346 stars
-- Cortex is written in TypeScript, Markdown, JSON, JavaScript, Bourne shell, HTML, CSS, Bash, YAML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Cortex is developed on <a href="https://github.com/cortex-js/compute-engine">GitHub</a> and has 346 stars
+- Cortex is written in <a href="typescript.html">TypeScript</a>, <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>, <a href="javascript.html">JavaScript</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="html.html">HTML</a>, <a href="css.html">CSS</a>, <a href="bash.html">Bash</a>, <a href="yaml.html">YAML</a>
 
+```Example from the web:
 Simplify(2 + 3x^3 + 2x^2 + x^3 + 1)
 // ➔ 4x^3 + 2x^2 + 3
 
@@ -23,4 +26,6 @@ x = 2^11 - 1
 &quot;\(x) is a \(Domain(x))&quot;
 // ➔ &quot;2047 is a PrimeNumber&quot;
 
-View source
+```
+
+Built with Scroll v178.2.3

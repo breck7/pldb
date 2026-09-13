@@ -1,24 +1,25 @@
 FreeBASIC
 =========
 
-FreeBASIC is a programming language created in 2004 by Andre Victor.
+FreeBASIC is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2004 by Andre Victor.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2004
  https://pldb.io/concepts/../lists/creators.html#q=Andre%20Victor Andre Victor
 
-#784 on PLDB
-20 Years Old
-535 Repos
+#813 on PLDB
+22 Years Old
+535 <span title="FreeBASIC repos on GitHub.">Repos</span>
 
 FreeBASIC  is a multiplatform, free/open source (GPL) BASIC compiler for Microsoft Windows, protected-mode MS-DOS (DOS extender), Linux, FreeBSD and Xbox.  The Xbox version is no longer maintained.According to its official Web site, FreeBASIC provides syntax compatibility with programs originally written in Microsoft QuickBASIC (QB).  Unlike QuickBASIC, however, FreeBASIC is a command line only compiler, unless users manually install an external integrated development environment (IDE) of their choice. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/FreeBASIC Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 535 FreeBASIC repos on GitHub
-- Early development of FreeBASIC happened in The FreeBASIC Development Team
-- The  Google BigQuery Public Dataset GitHub snapshot shows 41 users using FreeBASIC in 41 repos on GitHub
-- Explore FreeBASIC snippets on Rosetta Code
-- See also: (6 related languages) FreeBSD, Linux, QuickBASIC, C, BASIC, OpenGL
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 535 FreeBASIC repos on <a href="https://github.com/search?q=language:FreeBasic">GitHub</a>
+- Early development of FreeBASIC happened in <a href="../lists/labs.html#q=The FreeBASIC Development Team">The FreeBASIC Development Team</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 41 users using FreeBASIC in 41 repos on <a href="https://api.github.com/search/repositories?q=language:FreeBasic">GitHub</a>
+- Explore FreeBASIC snippets on <a href="http://www.rosettacode.org/wiki/Category:FreeBASIC">Rosetta Code</a>
+- See also: (6 related languages) <a href="freebsd.html">FreeBSD</a>, <a href="linux.html">Linux</a>, <a href="quickbasic.html">QuickBASIC</a>, <a href="c.html">C</a>, <a href="basic.html">BASIC</a>, <a href="opengl.html">OpenGL</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/FreeBASIC'>Wikipedia</a>:
 Dim As Vector Ptr player = New Vector()
 
 *player = Type&lt;Vector&gt;(100, 100)
@@ -28,33 +29,34 @@ Print player-&gt;getY
 Delete player
 
 Sleep &#39;Prevents the program window from closing instantly
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Pointers
  FeatureLink ../features/hasPointers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

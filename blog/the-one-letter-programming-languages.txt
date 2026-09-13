@@ -8,8 +8,8 @@ by Breck Yunits
 July 16, 2022
 
 C and R are two famous programming languages whose name is a single letter. In an effort to retire this practice (😉), I've made an infographic to show that all the letters are taken.
- https://pldb.io/blog/../concepts/c.html C
- https://pldb.io/blog/../concepts/r.html R
+ https://pldb.io/../concepts/c.html C
+ https://pldb.io/../concepts/r.html R
 
 Data used in this post:
 =======================
@@ -45,6 +45,7 @@ Z,z,2019,3105,../concepts/z.html
 I made the viz in Keynote and by hacking on this repo.
  https://breckyunits.com/keyboard/ this repo
 
+```
 html.h1 The Single Letter Programming Languages
 web.get https://pldb.io/pldb.csv
  tables.basic
@@ -58,5 +59,6 @@ web.get https://pldb.io/pldb.csv
     columns.setType titleLength number
      filter.where titleLength < 2
       tables.basic
+```
 
-View source
+Built with Scroll v178.2.3

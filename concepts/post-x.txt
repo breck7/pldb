@@ -1,29 +1,31 @@
 Post-X
 ======
 
-Post-X is a grammar language created in 1980 by P.A.C. Bailes and L.H. Reeker.
+Post-X is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22grammarLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">grammar language</a> created in 1980 by P.A.C. Bailes and L.H. Reeker.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221980%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1980
  https://pldb.io/concepts/../lists/creators.html#q=P.A.C.%20Bailes P.A.C. Bailes
  https://pldb.io/concepts/../lists/creators.html#q=L.H.%20Reeker L.H. Reeker
 
-#2868 on PLDB
-44 Years Old
+#2990 on PLDB
+46 Years Old
 
 The Post-X language is designed to provide facilities for pattern-directed processing of strings, sequences and trees in an integrated applicative format.
 
-- Tags: grammarLanguage
-- Early development of Post-X happened in University of Queensland
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"grammarLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>grammarLanguage</a>
+- Early development of Post-X happened in <a href="../lists/labs.html#q=University of Queensland">University of Queensland</a>
 - Post-X on HOPL
  https://hopl.info/showlanguage.prx?exp=5734 Post-X on HOPL
 - Read more about Post-X on Semantic Scholar: 1.
  https://pdfs.semanticscholar.org/4949/e6dbe9967617534a3e9e5d66e1694a541d74.pdf 1.
 
+```Example from the web:
 REPLACE GRAM := &quot;&lt;&quot;^BREAK&quot;&gt;&quot;^&quot;&gt; &#39;&#39;
-                {TEMPLATElt;^((REPLACE GRAM)&lt;
+                {$&lt;^((REPLACE GRAM)&lt;
                    SELECT RHS
                    (ALT LTST&lt;
                    (LHS--FIND $2 &lt;GRAM)))
                 %&gt;}
-                INULL{$};
+                INULL{$$};
+```
 
-View source
+Built with Scroll v178.2.3

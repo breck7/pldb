@@ -1,48 +1,58 @@
 HAML
 ====
 
-HAML, aka HTML Abstraction Markup Language, is an open source template language created in 2006 by Hampton Lintorn-Catlin.
+HAML, aka HTML Abstraction Markup Language, is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22template%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">template language</a> created in 2006 by Hampton Lintorn-Catlin.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
  https://pldb.io/concepts/../lists/creators.html#q=Hampton%20Lintorn-Catlin Hampton Lintorn-Catlin
 
-#76 on PLDB
-18 Years Old
-323 Repos
+#77 on PLDB
+20 Years Old
+323 <span title="HAML repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/haml/haml
+```
 
 Haml (HTML Abstraction Markup Language) is a templating system that is designed to avoid writing inline code in a web document and make the HTML easy and clean. Haml gives the flexibility to have some dynamic content in HTML. Similar to other web languages like PHP, ASP, JSP and template systems like eRuby, Haml also embeds some code that gets executed during runtime and generates HTML code in order to provide some dynamic content. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Haml Read more on Wikipedia...
 
-- Tags: template language
-- HAML is developed on GitHub and has 3,750 stars
-- There are at least 323 HAML repos on GitHub
-- Early development of HAML happened in Unspace Interactive
-- HAML is written in Ruby, HAML, XHTML, ERB, Markdown, YAML, Bash, Logos, Slim
-- The  Google BigQuery Public Dataset GitHub snapshot shows 390 users using HAML in 465 repos on GitHub
-- There are 467 members in the HAML subreddit
-- CodeMirror package for syntax highlighting HAML
-- Pygments supports syntax highlighting for HAML
-- GitHub supports syntax highlighting for HAML
-- haml.info was registered in 2012
-- See also: (14 related languages) Ruby, HTML, PHP, ASP, JSP, ERB, ASCII, UTF-8, Ruby on Rails, CSS, BBCode, YAML, Sass, WML
-- 9 PLDB concepts link to HAML: Ace Editor, cloc, CSVw, HAML, Mastodon, Particles, Scroll, Speedie, txtzyme
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"template"%5D%7D%5D%2C"logic"%3A"AND"%7D'>template language</a>
+- HAML is developed on <a href="https://github.com/haml/haml">GitHub</a> and has 3,750 stars
+- There are at least 323 HAML repos on <a href="https://github.com/search?q=language:Haml">GitHub</a>
+- Early development of HAML happened in <a href="../lists/labs.html#q=Unspace Interactive">Unspace Interactive</a>
+- HAML is written in <a href="ruby.html">Ruby</a>, <a href="haml.html">HAML</a>, <a href="xhtml.html">XHTML</a>, <a href="erb.html">ERB</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="bash.html">Bash</a>, <a href="logos.html">Logos</a>, <a href="slim.html">Slim</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 390 users using HAML in 465 repos on <a href="https://api.github.com/search/repositories?q=language:Haml">GitHub</a>
+- There are 467 members in the <a href="https://reddit.com/r/dlang">HAML subreddit</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/haml">package</a> for syntax highlighting HAML
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/html.py">syntax highlighting</a> for HAML
+- GitHub supports <a href="https://github.com/ezekg/language-haml" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for HAML
+- <a href="http://haml.info/">haml.info</a> was registered in 2012
+- See also: (14 related languages) <a href="ruby.html">Ruby</a>, <a href="html.html">HTML</a>, <a href="php.html">PHP</a>, <a href="asp.html">ASP</a>, <a href="java-server-pages.html">JSP</a>, <a href="erb.html">ERB</a>, <a href="ascii.html">ASCII</a>, <a href="utf-8.html">UTF-8</a>, <a href="rails.html">Ruby on Rails</a>, <a href="css.html">CSS</a>, <a href="bbcode.html">BBCode</a>, <a href="yaml.html">YAML</a>, <a href="sass.html">Sass</a>, <a href="wml.html">WML</a>
+- 9 PLDB concepts link to HAML: <a href="ace.html">Ace Editor</a>, <a href="cloc.html">cloc</a>, <a href="csvw.html">CSVw</a>, <a href="haml.html">HAML</a>, <a href="mastodon.html">Mastodon</a>, <a href="particles.html">Particles</a>, <a href="scroll.html">Scroll</a>, <a href="speedie.html">Speedie</a>, <a href="txtzyme.html">txtzyme</a>
 
+```Example from the web:
 %section.container
  %h1= post.title
  %h2= post.subtitle
  .content
    = post.content
+```
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/h/Haml.haml'>hello-world</a>:
 %html
   %title Hello World
   %body
     %h1 Hello World
+```
 
+```Example from <a href='https://github.com/ezekg/language-haml'>Linguist</a>:
 %p
   Hello,
   World!
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Haml'>Wikipedia</a>:
 &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
 &lt;html lang=&#39;en&#39; xml:lang=&#39;en&#39; xmlns=&#39;http://www.w3.org/1999/xhtml&#39;&gt;
   &lt;head&gt;
@@ -78,35 +88,36 @@ Haml (HTML Abstraction Markup Language) is a templating system that is designed 
     &lt;/div&gt;
   &lt;/body&gt;
 &lt;/html&gt;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -# A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -# A comment
  Token -#
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Disk Output
  FeatureLink ../features/canWriteToDisk.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

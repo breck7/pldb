@@ -1,22 +1,25 @@
 Slashdown
 =========
 
-Slashdown is a text markup language created in 2021 by Nick Noble.
+Slashdown is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2021 by Nick Noble.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2021
  https://pldb.io/concepts/../lists/creators.html#q=Nick%20Noble Nick Noble
 
-#2226 on PLDB
-3 Years Old
+#2320 on PLDB
+5 Years Old
 
+```Download source code:
 git clone https://github.com/nickisnoble/slashdown
+```
 
 For when MDX is too much, but Markdown is too little.
 
-- Tags: text markup language
-- Slashdown is developed on GitHub and has 0 stars
-- Markdown and MDX influenced the design of Slashdown
-- Slashdown is written in TypeScript, JSON, YAML, Markdown, JavaScript, HTML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- Slashdown is developed on <a href="https://github.com/nickisnoble/slashdown">GitHub</a> and has 0 stars
+- <a href="markdown.html">Markdown</a> and <a href="mdx.html">MDX</a> influenced the design of Slashdown
+- Slashdown is written in <a href="typescript.html">TypeScript</a>, <a href="json.html">JSON</a>, <a href="yaml.html">YAML</a>, <a href="markdown.html">Markdown</a>, <a href="javascript.html">JavaScript</a>, <a href="html.html">HTML</a>
 
+```Example from the web:
 / .h-full.p-4.prose
 
   /header .flex.justify-between
@@ -56,4 +59,6 @@ For when MDX is too much, but Markdown is too little.
     At the end of a tag, you can add ` = ` followed by anything except line breaks. This will be treated as innerText for that tag.
     `/section #hero .rounded.bg-gray-200.p-4`
 
-View source
+```
+
+Built with Scroll v178.2.3

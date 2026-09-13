@@ -1,0 +1,40 @@
+../code/conceptPage.scroll
+
+id x3d
+name X3D
+appeared 1997
+tags 3d xmlFormat
+website https://www.web3d.org/x3d/what-x3d
+webRepl https://andreasplesch.github.io/Library/Viewer/index.html?url=https://www.web3d.org/x3d/content/examples/Basic/CAD/CatiaHubCap.x3d
+description X3D is an ISO/IEC standard for declaratively representing 3D computer graphics. It is a file format and runtime architecture for representing and communicating 3D scenes and objects using XML, succeeding VRML. X3D is designed for real-time interactive 3D visualization across various platforms, including web browsers, and is used in fields like CAD, simulation, medical visualization, and gaming.
+fileExtensions x3d x3dv x3db
+
+isOpenSource true
+related vrml
+iso https://www.iso.org/standard/60760.html
+fileType text
+
+example
+ <?xml version="1.0" encoding="UTF-8"?>
+ <X3D profile='Immersive' version='4.0' xmlns='http://www.web3d.org/specifications/x3d-4.0.xsd'>
+   <head>
+     <meta name='title' content='HelloWorld.x3d'/>
+   </head>
+   <Scene>
+     <WorldInfo title='Hello World Example'/>
+     <Shape>
+       <Sphere radius='1'/>
+       <Appearance>
+         <Material diffuseColor='1 0 0'/>
+       </Appearance>
+     </Shape>
+   </Scene>
+ </X3D>
+
+hasStrings true
+ "Hello World Example"
+hasComments true
+ <!-- This is a comment in X3D -->
+hasSemanticIndentation false
+
+wikipedia https://en.wikipedia.org/wiki/X3D

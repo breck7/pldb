@@ -1,0 +1,16 @@
+../code/conceptPage.scroll
+
+id lambda-calculus
+name Lambda Calculus
+appeared 1936
+creators Alonzo Church
+tags notation
+description Lambda Calculus is a formal system in mathematical logic for expressing computation based on function abstraction and application using variable binding and substitution. It serves as a foundation for functional programming languages and theoretical computer science.
+lab Princeton University
+
+country United States
+reference https://doi.org/10.2307/2371045
+
+example
+ (λx.x) y
+ # Represents the identity function applied to y

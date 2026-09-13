@@ -1,31 +1,33 @@
 Mercury
 =======
 
-Mercury is an open source programming language created in 1995 by Zoltan Somogyi.
+Mercury is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1995 by Zoltan Somogyi.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221995%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1995
  https://pldb.io/concepts/../lists/creators.html#q=Zoltan%20Somogyi Zoltan Somogyi
 
-#378 on PLDB
-29 Years Old
-715 Repos
+#285 on PLDB
+31 Years Old
+715 <span title="Mercury repos on GitHub.">Repos</span>
 
 Mercury is a functional logic programming language made for real-world uses. The first version was developed at the University of Melbourne, Computer Science department, by Fergus Henderson, Thomas Conway, and Zoltan Somogyi, under Somogyi's supervision, and released on April 8, 1995. Mercury is a purely declarative logic programming language. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Mercury_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 715 Mercury repos on GitHub
-- Early development of Mercury happened in University of Melbourne
-- Mercury compiles to C
-- The  Google BigQuery Public Dataset GitHub snapshot shows 594 users using Mercury in 646 repos on GitHub
-- There are 348 members in the Mercury subreddit
-- Explore Mercury snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 715 Mercury repos on <a href="https://github.com/search?q=language:Mercury">GitHub</a>
+- Early development of Mercury happened in <a href="../lists/labs.html#q=University of Melbourne">University of Melbourne</a>
+- Mercury compiles to <a href="c.html">C</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 594 users using Mercury in 646 repos on <a href="https://api.github.com/search/repositories?q=language:Mercury">GitHub</a>
+- There are 348 members in the <a href="https://www.reddit.com/r/mercury">Mercury subreddit</a>
+- Explore Mercury snippets on <a href="http://www.rosettacode.org/wiki/Category:Mercury">Rosetta Code</a>
 - Mercury on HOPL
  https://hopl.info/showlanguage.prx?exp=2226 Mercury on HOPL
-- Mercury appears in the TIOBE Index
-- GitHub supports syntax highlighting for Mercury
-- mercurylang.org was registered in 2011
-- See also: (26 related languages) Autocode, Mercurial, IA-32, ARM, Unix, Linux, Solaris, FreeBSD, Android, Prolog, HOPE, Haskell, C, Java, C#, Erlang, Assembly language, CIL, Vim, Emacs, Eclipse, Curry, Alice, Standard ML, Oz, Visual Prolog
+- Mercury appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- GitHub supports <a href="https://github.com/sebgod/mercury-tmlanguage" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Mercury
+- <a href="http://www.mercurylang.org">mercurylang.org</a> was registered in 2011
+- See also: (26 related languages) <a href="autocode.html">Autocode</a>, <a href="mercurial.html">Mercurial</a>, <a href="ia-32.html">IA-32</a>, <a href="arm.html">ARM</a>, <a href="unix.html">Unix</a>, <a href="linux.html">Linux</a>, <a href="solaris.html">Solaris</a>, <a href="freebsd.html">FreeBSD</a>, <a href="android.html">Android</a>, <a href="prolog.html">Prolog</a>, <a href="hope.html">HOPE</a>, <a href="haskell.html">Haskell</a>, <a href="c.html">C</a>, <a href="java.html">Java</a>, <a href="csharp.html">C#</a>, <a href="erlang.html">Erlang</a>, <a href="assembly-language.html">Assembly language</a>, <a href="cil.html">CIL</a>, <a href="vim.html">Vim</a>, <a href="emacs-editor.html">Emacs</a>, <a href="eclipse-editor.html">Eclipse</a>, <a href="curry.html">Curry</a>, <a href="alice.html">Alice</a>, <a href="standard-ml.html">Standard ML</a>, <a href="oz.html">Oz</a>, <a href="visual-prolog.html">Visual Prolog</a>
+- 1 PLDB concepts link to Mercury: <a href="plasma.html">Plasma</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/m/Mercury.m'>hello-world</a>:
 :- module hello.
 :- interface.
 :- import_module io.
@@ -35,6 +37,9 @@ Mercury is a functional logic programming language made for real-world uses. The
 main(!IO) :-
 	io.write_string(&quot;Hello World\n&quot;, !IO).
 
+```
+
+```Example from <a href='https://github.com/sebgod/mercury-tmlanguage'>Linguist</a>:
 % &quot;Hello World&quot; in Mercury.
 
 % This source file is hereby placed in the public domain.  -fjh (the author).
@@ -50,6 +55,9 @@ main(!IO) :-
 main(!IO) :-
 	io.write_string(&quot;Hello, world\n&quot;, !IO).
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Mercury_(programming_language)'>Wikipedia</a>:
 :- module fib.
  :- interface.
  :- import_module io.
@@ -66,42 +74,43 @@ main(!IO) :-
         io.write_int(fib(10), !IO),
         io.nl(!IO).
         % Could instead use io.format(&quot;fib(10) = %d\n&quot;, [i(fib(10))], !IO).
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token io.write_string
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   % A comment
  Token %
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

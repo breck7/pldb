@@ -1,23 +1,26 @@
 Catala
 ======
 
-Catala is a programming language created in 2019 by Denis Merigoux.
+Catala is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2019 by Denis Merigoux.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2019
  https://pldb.io/concepts/../lists/creators.html#q=Denis%20Merigoux Denis Merigoux
 
-#651 on PLDB
-5 Years Old
+#680 on PLDB
+7 Years Old
 
+```Download source code:
 git clone https://github.com/CatalaLang/catala
+```
 
 Programming language for literate programming law specification
 
-- Tags: programming language
-- Catala is developed on GitHub and has 1,951 stars
-- Early development of Catala happened in https://github.com/CatalaLang
-- Catala is written in OCaml, Markdown, Nix, JSON, Bourne shell, SVG, Tex, Python, TOML, XML, CSON, C, Make, Vim script, JavaScript, Rescript, R, YAML, Lisp, Dockerfile
-- catala-lang.org was registered in 2020
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Catala is developed on <a href="https://github.com/CatalaLang/catala">GitHub</a> and has 1,951 stars
+- Early development of Catala happened in <a href="../lists/labs.html#q=https://github.com/CatalaLang">https://github.com/CatalaLang</a>
+- Catala is written in <a href="ocaml.html">OCaml</a>, <a href="markdown.html">Markdown</a>, <a href="nix.html">Nix</a>, <a href="json.html">JSON</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="svg.html">SVG</a>, <a href="tex.html">Tex</a>, <a href="python.html">Python</a>, <a href="toml.html">TOML</a>, <a href="xml.html">XML</a>, <a href="cson.html">CSON</a>, <a href="c.html">C</a>, <a href="make.html">Make</a>, <a href="vim-script.html">Vim script</a>, <a href="javascript.html">JavaScript</a>, <a href="rescript.html">Rescript</a>, <a href="r.html">R</a>, <a href="yaml.html">YAML</a>, <a href="lisp.html">Lisp</a>, <a href="dockerfile.html">Dockerfile</a>
+- <a href="https://catala-lang.org/">catala-lang.org</a> was registered in 2020
 
+```Example from the web:
 scope QualifiedEmployeeDiscount :
  definition qualified_employee_discount
    under condition is_property consequence
@@ -26,5 +29,6 @@ scope QualifiedEmployeeDiscount :
      customer_price ×$ gross_profit_percentage
    then customer_price ×$ gross_profit_percentage
    else employee_discount
+```
 
-View source
+Built with Scroll v178.2.3

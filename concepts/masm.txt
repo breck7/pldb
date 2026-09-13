@@ -1,23 +1,26 @@
 MASM
 ====
 
-MASM is a programming language created in 1981 by Thomas Jaeger.
+MASM is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1981 by Thomas Jaeger.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221981%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1981
  https://pldb.io/concepts/../lists/creators.html#q=Thomas%20Jaeger Thomas Jaeger
 
-#941 on PLDB
-43 Years Old
+#866 on PLDB
+45 Years Old
 
+```Download source code:
 git clone https://github.com/ThomasJaeger/VisualMASM
+```
 
 Visual MASM - Assembly IDE for Microsoft MASM
 
-- Tags: programming language
-- MASM is developed on GitHub and has 1,327 stars
-- Early development of MASM happened in https://github.com/ThomasJaeger/VisualMASM/issues
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- MASM is developed on <a href="https://github.com/ThomasJaeger/VisualMASM">GitHub</a> and has 1,327 stars
+- Early development of MASM happened in <a href="../lists/labs.html#q=https://github.com/ThomasJaeger/VisualMASM/issues">https://github.com/ThomasJaeger/VisualMASM/issues</a>
+- MASM is written in <a href="pascal.html">Pascal</a>, <a href="json.html">JSON</a>, <a href="assembly-language.html">Assembly language</a>, <a href="xml.html">XML</a>, <a href="html.html">HTML</a>, <a href="css.html">CSS</a>, <a href="markdown.html">Markdown</a>
 - MASM on HOPL
  https://hopl.info/showlanguage.prx?exp=2212 MASM on HOPL
 - Read more about MASM on the web: 1.
  http://www.visualmasm.com/ 1.
 
-View source
+Built with Scroll v178.2.3

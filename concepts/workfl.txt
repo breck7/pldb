@@ -1,20 +1,22 @@
 Workfl
 ======
 
-Workfl, aka Workflow Markup Language, is a text markup language created in 2019 by Adam Dullage.
+Workfl, aka Workflow Markup Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2019 by Adam Dullage.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2019
  https://pldb.io/concepts/../lists/creators.html#q=Adam%20Dullage Adam Dullage
 
-#2404 on PLDB
-5 Years Old
+#2523 on PLDB
+7 Years Old
 
+```Download source code:
 git clone https://github.com/Dullage/workfl
+```
 
 workfl is a lightweight markup language for simple workflow diagrams.
 
-- Tags: text markup language
-- Workfl is developed on GitHub and has 5 stars
-- Workfl is written in Python, Markdown
-- See also: (2 related languages) DOT, FlowchartFun
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- Workfl is developed on <a href="https://github.com/Dullage/workfl">GitHub</a> and has 5 stars
+- Workfl is written in <a href="python.html">Python</a>, <a href="markdown.html">Markdown</a>
+- See also: (2 related languages) <a href="dot.html">DOT</a>, <a href="flowchart-fun.html">FlowchartFun</a>
 
-View source
+Built with Scroll v178.2.3

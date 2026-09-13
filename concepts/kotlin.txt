@@ -1,63 +1,77 @@
 Kotlin
 ======
 
-Kotlin is an open source programming language created in 2011 by Andrey Breslav.
+Kotlin is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2011 by Andrey Breslav.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2011
  https://pldb.io/concepts/../lists/creators.html#q=Andrey%20Breslav Andrey Breslav
 
 #25 on PLDB
-13 Years Old
-901k Repos
+15 Years Old
+901k <span title="Kotlin repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/JetBrains/kotlin
+```
 
 Kotlin is a statically-typed programming language that runs on the Java virtual machine and also can be compiled to JavaScript source code or use the LLVM compiler infrastructure. Its primary development is from a team of JetBrains programmers based in Saint Petersburg, Russia. While the syntax is not compatible with Java, Kotlin is designed to interoperate with Java code and is reliant on Java code from the existing Java Class Library, such as the collections framework. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Kotlin_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Kotlin is developed on GitHub and has 48,462 stars
-- Watch the history of the Kotlin repo visualized with Gource
-- There are at least 901,474 Kotlin repos on GitHub
-- Early development of Kotlin happened in JetBrains
-- Kotlin is written in Kotlin, Java, Gradle, XML, JavaScript, C++, JSON, Markdown, Swift, TypeScript, C, Objective-C, Bourne shell, IDL, Objective C++, Protocol Buffers, Ruby, Bash, Groovy, HTML, CSS, YAML, Dockerfile, Diff, Python, Reason, CMake, CSV, AsciiDoc, EJS, TOML, Velocity Template Language, Puppet, LLVM IR, Scala
-- The  Google BigQuery Public Dataset GitHub snapshot shows 6k users using Kotlin in 8k repos on GitHub
-- Check out the 138 Kotlin meetup groups on Meetup.com.
-- There are 61,654 members in the Kotlin subreddit
-- There are 275 Project Euler users using Kotlin
-- In the 2021 StackOverflow developer survey Kotlin programmers reported a median salary of $55,071. 8% of respondents reported using Kotlin. 6,866 programmers reported using Kotlin, and 10,691 said they wanted to use it
-- Explore Kotlin snippets on Rosetta Code
-- Kotlin ranks #48 in the TIOBE Index
-- ANTLR grammar for Kotlin
-- Monaco package for syntax highlighting Kotlin
-- Pygments supports syntax highlighting for Kotlin
-- GitHub supports syntax highlighting for Kotlin
-- Learn Kotlin on exercism.
-- There is 1 Jupyter Kernel for Kotlin
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Kotlin is developed on <a href="https://github.com/JetBrains/kotlin">GitHub</a> and has 48,462 stars
+- Watch the history of <a href="https://www.youtube.com/watch?v=cbmdwDfqfv0">the Kotlin repo visualized with Gource</a>
+- There are at least 901,474 Kotlin repos on <a href="https://github.com/search?q=language:Kotlin">GitHub</a>
+- Early development of Kotlin happened in <a href="../lists/labs.html#q=JetBrains">JetBrains</a>
+- Kotlin is written in <a href="kotlin.html">Kotlin</a>, <a href="java.html">Java</a>, <a href="gradle.html">Gradle</a>, <a href="xml.html">XML</a>, <a href="javascript.html">JavaScript</a>, <a href="cpp.html">C++</a>, <a href="json.html">JSON</a>, <a href="markdown.html">Markdown</a>, <a href="swift.html">Swift</a>, <a href="typescript.html">TypeScript</a>, <a href="c.html">C</a>, <a href="objective-c.html">Objective-C</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="idl.html">IDL</a>, <a href="objective-cpp.html">Objective C++</a>, <a href="protobuf.html">Protocol Buffers</a>, <a href="ruby.html">Ruby</a>, <a href="bash.html">Bash</a>, <a href="groovy.html">Groovy</a>, <a href="html.html">HTML</a>, <a href="css.html">CSS</a>, <a href="yaml.html">YAML</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="diff.html">Diff</a>, <a href="python.html">Python</a>, <a href="reason.html">Reason</a>, <a href="cmake.html">CMake</a>, <a href="csv.html">CSV</a>, <a href="asciidoc.html">AsciiDoc</a>, <a href="ejs.html">EJS</a>, <a href="toml.html">TOML</a>, <a href="vtl-lang.html">Velocity Template Language</a>, <a href="puppet.html">Puppet</a>, <a href="llvmir.html">LLVM IR</a>, <a href="scala.html">Scala</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 6k users using Kotlin in 8k repos on <a href="https://api.github.com/search/repositories?q=language:Kotlin">GitHub</a>
+- Check out the 138 <a href="https://www.meetup.com/topics/kotlin/">Kotlin meetup groups</a> on Meetup.com.
+- There are 61,654 members in the <a href="https://reddit.com/r/Kotlin">Kotlin subreddit</a>
+- There are 275 <a href="https://projecteuler.net/language=Kotlin">Project Euler</a> users using Kotlin
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> Kotlin programmers reported a median salary of $55,071. 8% of respondents reported using Kotlin. 6,866 programmers reported using Kotlin, and 10,691 said they wanted to use it
+- Explore Kotlin snippets on <a href="http://www.rosettacode.org/wiki/Category:Kotlin">Rosetta Code</a>
+- Kotlin ranks #48 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/kotlin">grammar</a> for Kotlin
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/kotlin">package</a> for syntax highlighting Kotlin
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/jvm.py">syntax highlighting</a> for Kotlin
+- GitHub supports <a href="https://github.com/nishtahir/language-kotlin" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Kotlin
+- Learn <a href="https://exercism.org/tracks/kotlin">Kotlin on exercism.</a>
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="https://github.com/ligee/kotlin-jupyter">Kernel</a> for Kotlin
 - Events page for Kotlin
  https://kotlinlang.org/community/events/ Events page for Kotlin
-- Indeed.com has 5,276 matches for "kotlin developer".
-- kotlinlang.org was registered in 2013
-- See also: (16 related languages) JVM, Java Bytecode, JavaScript, Java, Scala, Groovy, C#, Gosu, Swift, LLVM IR, Android, Pascal, Perl, Eclipse, Apache Maven, Emacs
+- Indeed.com has 5,276 matches for <a href="https://www.indeed.com/jobs?q=kotlin developer">"kotlin developer"</a>.
+- <a href="https://kotlinlang.org">kotlinlang.org</a> was registered in 2013
+- See also: (16 related languages) <a href="jvm.html">JVM</a>, <a href="java-bytecode.html">Java Bytecode</a>, <a href="javascript.html">JavaScript</a>, <a href="java.html">Java</a>, <a href="scala.html">Scala</a>, <a href="groovy.html">Groovy</a>, <a href="csharp.html">C#</a>, <a href="gosu.html">Gosu</a>, <a href="swift.html">Swift</a>, <a href="llvmir.html">LLVM IR</a>, <a href="android.html">Android</a>, <a href="pascal.html">Pascal</a>, <a href="perl.html">Perl</a>, <a href="eclipse-editor.html">Eclipse</a>, <a href="maven-pom.html">Apache Maven</a>, <a href="emacs-editor.html">Emacs</a>
 - Read more about Kotlin on the web: 1. 2.
  https://steve-yegge.blogspot.co.nz/2017/05/why-kotlin-is-better-than-whatever-dumb.html 1.
  https://engineering.fb.com/2022/10/24/android/android-java-kotlin-migration/ 2.
-- 20 PLDB concepts link to Kotlin: Ace Editor, Avail, Céu, cloc, FlatBuffers, Gradle, Kotlin, Ladybird, LWJGL, mal, Melody, Moirai, OpenCV, partiql, Project Mentat, Pygments, Python, React Native, Ecstasy, Yakou Lang
+- 24 PLDB concepts link to Kotlin: <a href="ace.html">Ace Editor</a>, <a href="avail.html">Avail</a>, <a href="ceu.html">Céu</a>, <a href="cloc.html">cloc</a>, <a href="codeql.html">CodeQL</a>, <a href="flatbuffers.html">FlatBuffers</a>, <a href="flutter.html">Flutter</a>, <a href="gradle.html">Gradle</a>, <a href="kotlin.html">Kotlin</a>, <a href="ladybird.html">Ladybird</a>, <a href="lwjgl.html">LWJGL</a>, <a href="mal.html">mal</a>, <a href="melody.html">Melody</a>, <a href="moirai.html">Moirai</a>, <a href="mps.html">MPS</a>, <a href="opencv.html">OpenCV</a>, <a href="partiql.html">partiql</a>, <a href="pkl.html">Pkl</a>, <a href="project-mentat.html">Project Mentat</a>, <a href="pygments.html">Pygments</a>, <a href="python.html">Python</a>, <a href="react-native.html">React Native</a>, <a href="xtclang.html">Ecstasy</a>, <a href="yakou-lang.html">Yakou Lang</a>
 
+```Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
 // Type your code here, or load an example.
 fun square(num: Int): Int = num * num
 
+```
+
+```Example from <a href='https://riju.codes/kotlin'>Riju</a>:
 println(&quot;Hello, world!&quot;)
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/k/Kotlin.kt'>hello-world</a>:
 fun main() {
   println(&quot;Hello World&quot;)
 }
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Kotlin'>the Hello World Collection</a>:
 // Hello world in Kotlin
 
 fun main(args : Array&lt;String&gt;) {
     println(&quot;Hello, world!&quot;)
 }
+```
 
+```Example from <a href='https://github.com/nishtahir/language-kotlin'>Linguist</a>:
 package addressbook
 
 class Contact(
@@ -105,84 +119,102 @@ object Countries {
 }
 
 class Country(val name : String)
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Kotlin_(programming_language)'>Wikipedia</a>:
 // returns null if...
   // - foo() returns null,
   // - or if foo() is non-null, but bar() returns null,
   // - or if foo() and bar() are non-null, but baz() returns null.
   // vice versa, return value is non-null if and only if foo(), bar() and baz() are non-null
   foo()?.bar()?.baz()
+```
 
-as as? break class continue do else false for fun if in !in interface is !is null object package return super this throw true try typealias val var when while by catch constructor delegate dynamic field file finally get import init param property receiver set setparam where actual abstract annotation companion const crossinline data enum expect external final infix inline inner internal lateinit noinline open operator out override private protected public reified sealed suspend tailrec vararg field it + - * / % * = += -= *= /= %= ++ -- && || ! == != === !==  = [ ] !! ?. ?: :: .. : ? ->; @ ; $ _
+```Kotlin <a href="../lists/keywords.html#q=kotlin">Keywords</a>
+as as? break class continue do else false for fun if in !in interface is !is null object package return super this throw true try typealias val var when while by catch constructor delegate dynamic field file finally get import init param property receiver set setparam where actual abstract annotation companion const crossinline data enum expect external final infix inline inner internal lateinit noinline open operator out override private protected public reified sealed suspend tailrec vararg field it + - * / % * = += -= *= /= %= ++ -- && || ! == != === !== < > <= >= [ ] !! ?. ?: :: .. : ? ->; @ ; $ _
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Standard Library
  FeatureLink ../features/hasStandardLibrary.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   println("Hello, World!")
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Access Modifiers
  FeatureLink ../features/hasAccessModifiers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Named Arguments
+ FeatureLink ../features/hasNamedArguments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  "abcdef".subSequence(startIndex=2, endIndex=4)
+ Token 
+row
+ Feature Function Overloading
+ FeatureLink ../features/hasFunctionOverloading.html
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Constants
  FeatureLink ../features/hasConstants.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token "
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -190,32 +222,38 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token println
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Type Inference
  FeatureLink ../features/hasTypeInference.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Static Typing
+ FeatureLink ../features/hasStaticTyping.html
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Interfaces
  FeatureLink ../features/hasInterfaces.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   interface Named {
      val name: String
@@ -230,7 +268,7 @@ row
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   import foo.Bar // Bar is now accessible without qualification
   import foo.* // everything in 'foo' becomes accessible
@@ -239,7 +277,7 @@ row
 row
  Feature Ternary operators
  FeatureLink ../features/hasTernaryOperators.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // Since if statements are expressions
   println(if (true) true else false)
@@ -247,39 +285,53 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   table = HashMap()
  Token 
 row
+ Feature Type Classes
+ FeatureLink ../features/hasTypeClasses.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+  https://github.com/Kotlin/KEEP/pull/87#issuecomment-746042751
+ Token 
+row
+ Feature Structural Typing
+ FeatureLink ../features/hasStructuralTyping.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+  https://youtrack.jetbrains.com/issue/KT-218
+ Token 
+row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Variable Substitution Syntax
  FeatureLink ../features/hasVariableSubstitutionSyntax.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

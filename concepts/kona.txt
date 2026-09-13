@@ -1,23 +1,26 @@
 kona
 ====
 
-kona is a programming language created in 2010.
+kona is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2010.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2010
 
-#921 on PLDB
-14 Years Old
+#972 on PLDB
+16 Years Old
 
+```Download source code:
 git clone https://github.com/kevinlawler/kona
+```
 
 Kona is the open-source implementation of the k3 programming language. k is a synthesis of APL and LISP. Although many of the capabilities come from APL, the fundamental data construct is quite different. In APL the construct is a multi-dimensional matrix-like array, where the dimension of the array can range from 0 to some maximum (often 9). In k, like LISP, the fundamental data construct is a list. Also, like LISP, the k language is ASCII-based, so you don't need a special keyboard.
 
-- Tags: programming language
-- kona is developed on GitHub and has 1,356 stars
-- Early development of kona happened in https://github.com/kevinlawler/kona/issues
-- kona is written in C, Bourne shell, Make, Lisp, Markdown, awk, YAML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- kona is developed on <a href="https://github.com/kevinlawler/kona">GitHub</a> and has 1,356 stars
+- Early development of kona happened in <a href="../lists/labs.html#q=https://github.com/kevinlawler/kona/issues">https://github.com/kevinlawler/kona/issues</a>
+- kona is written in <a href="c.html">C</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="make.html">Make</a>, <a href="lisp.html">Lisp</a>, <a href="markdown.html">Markdown</a>, <a href="awk.html">awk</a>, <a href="yaml.html">YAML</a>
 - Read more about kona on the web: 1.
  http://www.hakank.org/k/ 1.
 
+```Example from the web:
 factorial:{*/1+!:x}
 fib1:{(x(|+\)\1 1)[;1]}
 fib2:{x{x,+/-2#x}/!2}
@@ -25,5 +28,6 @@ fib_rec:{:[x&lt;2;1;_f[x-1]+_f[x-2]]}
 maxsubsum:{|/0(0|+)\x}
 primes_to_n_sieve:{2_&amp;{:[x@y;x&amp;@[1,-1_ z#(1_ y#1),0;y;:;1];x]}/[x#1;2_!__ceil_sqrt x;x]}
 primes_to_n_sieve2:{:[x&lt;4;,2;r,1_&amp;~|/x#&#39;~!:&#39;r: _f[_ _ceil _sqrt x]]}
+```
 
-View source
+Built with Scroll v178.2.3

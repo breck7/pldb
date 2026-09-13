@@ -1,32 +1,36 @@
 bog
 ===
 
-bog is a programming language created in 2020.
+bog is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2020.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
 
-#623 on PLDB
-4 Years Old
+#639 on PLDB
+6 Years Old
 
+```Download source code:
 git clone https://github.com/Vexu/bog
+```
 
 Small, strongly typed, embeddable language.
 
-- Tags: programming language
-- bog is developed on GitHub and has 531 stars
-- Early development of bog happened in https://github.com/Vexu/bog/issues
-- bog is written in Zig, Markdown, C, YAML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- bog is developed on <a href="https://github.com/Vexu/bog">GitHub</a> and has 531 stars
+- Early development of bog happened in <a href="../lists/labs.html#q=https://github.com/Vexu/bog/issues">https://github.com/Vexu/bog/issues</a>
+- bog is written in <a href="zig.html">Zig</a>, <a href="markdown.html">Markdown</a>, <a href="c.html">C</a>, <a href="yaml.html">YAML</a>
 
+```Example from the web:
 let {print} = import &quot;std.io&quot;
 let world = &quot;world&quot;
 print(f&quot;hello {world}!&quot;)
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Async Await
  FeatureLink ../features/hasAsyncAwait.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   let {print} = import "std.io"
   let foo = fn()
@@ -52,7 +56,7 @@ row
 row
  Feature hasForLoops
  FeatureLink ../features/hasForLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   let mut sum = 0
   for let c in "hellö wörld"
@@ -67,7 +71,7 @@ row
 row
  Feature hasTryCatch
  FeatureLink ../features/hasTryCatch.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   let foo = fn(arg)
     try
@@ -81,7 +85,7 @@ row
 row
  Feature Destructuring
  FeatureLink ../features/hasDestructuring.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   let add = fn ((a,b)) a + b
   let tuplify = fn (a,b) (a,b)
@@ -90,35 +94,35 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   let {print} = import "std.io"
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "pldb"
  Token 
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   let pldb = "pldb"
  Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

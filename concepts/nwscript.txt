@@ -1,41 +1,46 @@
 NWScript
 ========
 
-NWScript is a programming language created in 2004.
+NWScript is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2004.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2004
 
-#1667 on PLDB
-20 Years Old
-78 Repos
+#1734 on PLDB
+22 Years Old
+78 <span title="NWScript repos on GitHub.">Repos</span>
 
 NWScript is the scripting language developed by BioWare for the role-playing video game Neverwinter Nights. It is based on the C programming language and is implemented in the Aurora toolset. Neverscript, an open source 3rd party editor, has been created for the Mac OS X and Linux versions of NWN because the Aurora toolset has not been ported to those platforms. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/NWScript Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 78 NWScript repos on GitHub
-- Early development of NWScript happened in BioWare
-- The  Google BigQuery Public Dataset GitHub snapshot shows 1 users using NWScript in 1 repos on GitHub
-- See also: (3 related languages) Linux, C, Java
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 78 NWScript repos on <a href="https://github.com/search?q=language:NWScript">GitHub</a>
+- Early development of NWScript happened in <a href="../lists/labs.html#q=BioWare">BioWare</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 1 users using NWScript in 1 repos on <a href="https://api.github.com/search/repositories?q=language:NWScript">GitHub</a>
+- See also: (3 related languages) <a href="linux.html">Linux</a>, <a href="c.html">C</a>, <a href="java.html">Java</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/n/NWScript.nss'>hello-world</a>:
 // Place in the OnClientEnter event of the module&#39;s properties
 {
     SendMessageToPC(GetEnteringObject(), &quot;Hello World&quot;);
 }
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/NWScript'>Wikipedia</a>:
 void main()
 {
     SendMessageToPC(GetEnteringObject(), &quot;Hello world&quot;);
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 
-View source
+Built with Scroll v178.2.3

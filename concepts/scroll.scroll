@@ -4,7 +4,7 @@ id scroll
 name Scroll
 appeared 2019
 creators Breck Yunits
-tags staticSiteGenerator textMarkup commandLineApp dataNotation dataValidationLanguage wikiMarkup
+tags textMarkup staticSiteGenerator commandLineApp dataNotation dataValidationLanguage wikiMarkup
 website https://scroll.pub/
 blog https://scroll.pub/blog/
 releaseNotes https://scroll.pub/releaseNotes.html
@@ -26,10 +26,12 @@ related markdown particles parsers
 faq https://scroll.pub/faq.html
 repoStats
  firstCommit 2019
- commits 1230
- committers 6
- files 141
- newestCommit 2024
+ commits 1956
+ committers 9
+ files 331
+ newestCommit 2025
+ mb 43
+ linesOfCode 92841
 country United States
 
 tiktoks https://www.tiktok.com/@scrollhits
@@ -37,8 +39,9 @@ youtubes https://www.youtube.com/@breckyunits
 example
  title This is Scroll. The keyword for title is title.
  
- paragraph
-  Scroll is an extensible alternative to Markdown.
+ * Scroll is an extensible alternative to Markdown.
+ 
+ You extend it by writing parsers.
 subreddit https://www.reddit.com/r/WorldWideScroll/
 
 githubRepo https://github.com/breck7/scroll

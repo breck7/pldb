@@ -1,17 +1,18 @@
 Speech Synthesis Markup Language
 ================================
 
-Speech Synthesis Markup Language is a xml format created in 2010.
+Speech Synthesis Markup Language is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22xmlFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">xml format</a> created in 2010.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2010
 
-#2829 on PLDB
-14 Years Old
+#2945 on PLDB
+16 Years Old
 
-- Tags: xmlFormat
-- Early development of Speech Synthesis Markup Language happened in W3C
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"xmlFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>xmlFormat</a>
+- Early development of Speech Synthesis Markup Language happened in <a href="../lists/labs.html#q=W3C">W3C</a>
 - Read more about Speech Synthesis Markup Language on the web: 1.
  https://www.w3.org/TR/speech-synthesis/ 1.
 
+```Example from the web:
 &lt;?xml version=&quot;1.0&quot;?&gt;
 &lt;speak xmlns=&quot;http://www.w3.org/2001/10/synthesis&quot;
        xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot;
@@ -34,5 +35,6 @@ Speech Synthesis Markup Language is a xml format created in 2010.
   &lt;/p&gt;
 
 &lt;/speak&gt;
+```
 
-View source
+Built with Scroll v178.2.3

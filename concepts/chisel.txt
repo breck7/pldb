@@ -1,22 +1,24 @@
 chisel
 ======
 
-chisel is a hardware description language created in 2015.
+chisel is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22hardwareDescriptionLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">hardware description language</a> created in 2015.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
 
-#533 on PLDB
-9 Years Old
+#551 on PLDB
+11 Years Old
 
+```Download source code:
 git clone https://github.com/freechipsproject/chisel3
+```
 
 Chisel: A Modern Hardware Design Language
 
-- Tags: hardwareDescriptionLanguage
-- chisel is developed on GitHub and has 3,854 stars
-- Early development of chisel happened in University of California Berkeley
-- chisel is written in Scala, Markdown, YAML, Scheme, SVG, JavaScript, JSON, Python, Make, CSS, C++, Nix, Dockerfile, XML
-- chisel-lang.org was registered in 2016
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"hardwareDescriptionLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>hardwareDescriptionLanguage</a>
+- chisel is developed on <a href="https://github.com/freechipsproject/chisel3">GitHub</a> and has 3,854 stars
+- Early development of chisel happened in <a href="../lists/labs.html#q=University of California Berkeley">University of California Berkeley</a>
+- chisel is written in <a href="scala.html">Scala</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="scheme.html">Scheme</a>, <a href="svg.html">SVG</a>, <a href="javascript.html">JavaScript</a>, <a href="json.html">JSON</a>, <a href="python.html">Python</a>, <a href="make.html">Make</a>, <a href="css.html">CSS</a>, <a href="cpp.html">C++</a>, <a href="nix.html">Nix</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="xml.html">XML</a>
+- <a href="https://www.chisel-lang.org/">chisel-lang.org</a> was registered in 2016
 - Read more about chisel on the web: 1.
  https://chisel.eecs.berkeley.edu/ 1.
 
-View source
+Built with Scroll v178.2.3

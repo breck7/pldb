@@ -6,9 +6,9 @@ by Breck Yunits
 May 19, 2024
 
 Dennis Ritchie created C when he was 31. Douglas Crockford created JSON when he was 46. Ken Iverson created J at age 70. Here is a new dataset with "ageAtCreation" for 185 programming languages.
- https://pldb.io/blog/../concepts/c.html C
- https://pldb.io/blog/../concepts/json.html JSON
- https://pldb.io/blog/../concepts/j.html Ken Iverson created J
+ https://pldb.io/../concepts/c.html C
+ https://pldb.io/../concepts/json.html JSON
+ https://pldb.io/../concepts/j.html Ken Iverson created J
 
 36 median age
 37.5 avg age
@@ -23,10 +23,10 @@ Dennis Ritchie created C when he was 31. Douglas Crockford created JSON when he 
 No one under 20 has ever created a popular programming language
 ===============================================================
 Aaron Swartz created atx at 16, which hinted at his later work with John Gruber on Markdown. Rasmus Lerdorf created PHP at age 27. Stallman created Emacs at 23.
- https://pldb.io/blog/../concepts/atx.html atx
- https://pldb.io/blog/../concepts/markdown.html Markdown
- https://pldb.io/blog/../concepts/php.html PHP
- https://pldb.io/blog/../concepts/emacs-editor.html Emacs
+ https://pldb.io/../concepts/atx.html atx
+ https://pldb.io/../concepts/markdown.html Markdown
+ https://pldb.io/../concepts/php.html PHP
+ https://pldb.io/../concepts/emacs-editor.html Emacs
 
 But no one under 20 ever created a top language. I find that mildly interesting.
 
@@ -38,10 +38,10 @@ Programming Language Creation Peaks In Your 30's
 Keep on Creating
 ================
 TypeScript, Go, JSON, and Clojure are a handful of very popular Top 100 languages that were created by people in their 40's and 50's.
- https://pldb.io/blog/../concepts/typescript.html TypeScript
- https://pldb.io/blog/../concepts/go.html Go
- https://pldb.io/blog/../concepts/json.html JSON
- https://pldb.io/blog/../concepts/clojure.html Clojure
+ https://pldb.io/../concepts/typescript.html TypeScript
+ https://pldb.io/../concepts/go.html Go
+ https://pldb.io/../concepts/json.html JSON
+ https://pldb.io/../concepts/clojure.html Clojure
 
 Creating your own languages is fun (most of the time), regardless of whether it catches on. But it can be even more fun to build one that catches on, and it's never too late to start something new.
 
@@ -51,11 +51,12 @@ Notes
 =====
 
 - Download the data
- https://pldb.io/blog/age.tsv Download the data
+ https://pldb.io/age.tsv Download the data
 - A reddit user shared some related work ;) from 2012: The Secret of a Successful Programming Language? A Really Great Beard.
  https://www.reddit.com/r/programming/comments/1cw2ri4/comment/l4tt60k/ shared
  https://archive.fo/uB8x4 The Secret of a Successful Programming Language? A Really Great Beard
 
+```
 html.h1 The Ages of Programming Language Creators
 web.get https://pldb.io/blog/age.tsv
  vega.histogram
@@ -72,5 +73,6 @@ web.get https://pldb.io/blog/age.tsv
  vega.scatter
   xColumn ageAtCreation
   yColumn pldbScore
+```
 
-View source
+Built with Scroll v178.2.3

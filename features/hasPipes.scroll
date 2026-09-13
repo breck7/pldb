@@ -7,7 +7,7 @@ printTitle Pipes
 <a class="trueBaseThemePreviousItem" href="hasPatternMatching.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasPointers.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -24,9 +24,15 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/elixir.html
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/julia.html">Julia</a>
  [1,2,3] |&gt; (y -&gt; f(3, y))
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/moonbit.html">MoonBit</a>
+ fn init {
+  x |&gt; f     // 等价于 f(x)
+  x |&gt; f(y)  // 等价于 f(x, y)
+  }
+
 ***
 
-* Languages *with* Pipes include <a href="../concepts/r.html">R</a>, <a href="../concepts/bash.html">Bash</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/julia.html">Julia</a>, <a href="../concepts/speedie.html">Speedie</a>
+* Languages *with* Pipes include <a href="../concepts/r.html">R</a>, <a href="../concepts/bash.html">Bash</a>, <a href="../concepts/elixir.html">Elixir</a>, <a href="../concepts/julia.html">Julia</a>, <a href="../concepts/moonbit.html">MoonBit</a>, <a href="../concepts/speedie.html">Speedie</a>
 
 ***
 

@@ -7,7 +7,7 @@ printTitle Iterators
 <a class="trueBaseThemePreviousItem" href="hasInterfaces.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasLabels.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -52,6 +52,9 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/matlab.html
     disp(n)  % Echo integer to Command Window
  end
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/chapel.html">Chapel</a>
+ iter
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.html">Speedie</a>
  || items = [5,6,7,8]
  for i in items
@@ -59,7 +62,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.htm
 
 ***
 
-* Languages *with* Iterators include <a href="../concepts/python.html">Python</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/cpp.html">C++</a>, <a href="../concepts/ruby.html">Ruby</a>, <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/matlab.html">MATLAB</a>, <a href="../concepts/speedie.html">Speedie</a>
+* Languages *with* Iterators include <a href="../concepts/python.html">Python</a>, <a href="../concepts/java.html">Java</a>, <a href="../concepts/cpp.html">C++</a>, <a href="../concepts/ruby.html">Ruby</a>, <a href="../concepts/rust.html">Rust</a>, <a href="../concepts/matlab.html">MATLAB</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/speedie.html">Speedie</a>
 
 ***
 

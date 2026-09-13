@@ -7,7 +7,7 @@ printTitle Module Pattern
 <a class="trueBaseThemePreviousItem" href="hasMixins.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasMonads.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -64,7 +64,6 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/fortran.htm
  
     real, parameter :: pi = 3.1415926536
     real, parameter :: e = 2.7182818285
-    
  contains
     subroutine show_consts()
        print*, &quot;Pi = &quot;, pi
@@ -90,6 +89,9 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/fortran.htm
     print*, &quot;Area of a circle with radius 7.0 = &quot;, area
     
  end program module_exampl
+
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/chapel.html">Chapel</a>
+ module
 
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/ocaml.html">OCaml</a>
  (* In OCaml, every piece of code is wrapped into a module. *)
@@ -117,7 +119,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/speedie.htm
 
 ***
 
-* Languages *with* Module Pattern include <a href="../concepts/java.html">Java</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/julia.html">Julia</a>, <a href="../concepts/racket.html">Racket</a>, <a href="../concepts/fortran.html">Fortran</a>, <a href="../concepts/ocaml.html">OCaml</a>, <a href="../concepts/gleam.html">Gleam</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/bio.html">Bio</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/aardvark.html">Aardvark</a>
+* Languages *with* Module Pattern include <a href="../concepts/java.html">Java</a>, <a href="../concepts/csharp.html">C#</a>, <a href="../concepts/julia.html">Julia</a>, <a href="../concepts/racket.html">Racket</a>, <a href="../concepts/fortran.html">Fortran</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/ocaml.html">OCaml</a>, <a href="../concepts/gleam.html">Gleam</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/progsbase.html">progsbase</a>, <a href="../concepts/bio.html">Bio</a>, <a href="../concepts/aardvark.html">Aardvark</a>, <a href="../concepts/speedie.html">Speedie</a>, <a href="../concepts/naab.html">NAAb</a>
 
 ***
 

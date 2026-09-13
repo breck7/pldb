@@ -1,23 +1,27 @@
 Newick format
 =============
 
-Newick format is a text data format created in 1986.
+Newick format is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textDataFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text data format</a> created in 1986.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1986
 
-#1838 on PLDB
-38 Years Old
+#1921 on PLDB
+40 Years Old
 
 In mathematics, Newick tree format (or Newick notation or New Hampshire tree format) is a way of representing graph-theoretical trees with edge lengths using parentheses and commas.  It was adopted by James Archie, William H. E. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Newick_format Read more on Wikipedia...
 
-- Tags: textDataFormat
-- Early development of Newick format happened in University of Washington and University of British Columbia
-- See also: (1 related languages) PhyloXML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textDataFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>textDataFormat</a>
+- Early development of Newick format happened in <a href="../lists/labs.html#q=University of Washington">University of Washington</a> and <a href="../lists/labs.html#q=University of British Columbia">University of British Columbia</a>
+- See also: (1 related languages) <a href="phyloxml-format.html">PhyloXML</a>
 
+```Example from the web:
 (A:0.1,B:0.2,(C:0.3,D:0.4):0.5);
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Newick_format'>Wikipedia</a>:
 Tree → RootLeaf &quot;;&quot; | RootInternal &quot;;&quot; | Branch &quot;;&quot;
    RootLeaf → Name | &quot;(&quot; Branch &quot;)&quot; Name
    RootInternal → &quot;(&quot; Branch &quot;,&quot; BranchSet &quot;)&quot; Name
+```
 
-View source
+Built with Scroll v178.2.3

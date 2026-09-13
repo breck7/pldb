@@ -1,36 +1,42 @@
 NewLisp
 =======
 
-NewLisp is an open source programming language created in 1991 by Lutz Mueller.
+NewLisp is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1991 by Lutz Mueller.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221991%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1991
  https://pldb.io/concepts/../lists/creators.html#q=Lutz%20Mueller Lutz Mueller
 
-#467 on PLDB
-33 Years Old
-476 Repos
+#482 on PLDB
+35 Years Old
+476 <span title="NewLisp repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/kosh04/newlisp
+```
 
 newLISP is an open source scripting language in the Lisp family of programming languages developed by Lutz Mueller and released under the GNU General Public License.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/NewLISP Read more on Wikipedia...
 
-- Tags: programming language
-- NewLisp is developed on GitHub and has 94 stars
-- There are at least 476 NewLisp repos on GitHub
-- Early development of NewLisp happened in http://kosh.sdf.org
-- NewLisp is written in Lisp, C, HTML, Bourne shell, Make, YAML, Vim script, CSS, Markdown, XML
-- The  Google BigQuery Public Dataset GitHub snapshot shows 774 users using NewLisp in 812 repos on GitHub
-- There are 1 Project Euler users using NewLisp
-- Explore NewLisp snippets on Rosetta Code
-- Pygments supports syntax highlighting for NewLisp
-- GitHub supports syntax highlighting for NewLisp
-- newlisp.org was registered in 1999
-- See also: (17 related languages) Lisp, Common Lisp, Scheme, Pascal, C, Tcl, S-expressions, XML, UTF-8, TCP, UDP, Linux, Solaris, SQLite, SMTP, FTP, OpenGL
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"lisp"%5D%7D%5D%2C"logic"%3A"AND"%7D'>lisp</a>
+- NewLisp is developed on <a href="https://github.com/kosh04/newlisp">GitHub</a> and has 94 stars
+- There are at least 476 NewLisp repos on <a href="https://github.com/search?q=language:NewLisp">GitHub</a>
+- Early development of NewLisp happened in <a href="../lists/labs.html#q=http://kosh.sdf.org">http://kosh.sdf.org</a>
+- NewLisp is written in <a href="lisp.html">Lisp</a>, <a href="c.html">C</a>, <a href="html.html">HTML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="make.html">Make</a>, <a href="yaml.html">YAML</a>, <a href="vim-script.html">Vim script</a>, <a href="css.html">CSS</a>, <a href="markdown.html">Markdown</a>, <a href="xml.html">XML</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 774 users using NewLisp in 812 repos on <a href="https://api.github.com/search/repositories?q=language:NewLisp">GitHub</a>
+- There are 1 <a href="https://projecteuler.net/language=newLISP">Project Euler</a> users using NewLisp
+- Explore NewLisp snippets on <a href="http://www.rosettacode.org/wiki/Category:NewLISP">Rosetta Code</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/lisp.py">syntax highlighting</a> for NewLisp
+- GitHub supports <a href="https://github.com/textmate/lisp.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for NewLisp
+- <a href="http://www.newlisp.org/">newlisp.org</a> was registered in 1999
+- See also: (17 related languages) <a href="lisp.html">Lisp</a>, <a href="common-lisp.html">Common Lisp</a>, <a href="scheme.html">Scheme</a>, <a href="pascal.html">Pascal</a>, <a href="c.html">C</a>, <a href="tcl.html">Tcl</a>, <a href="s-expressions.html">S-expressions</a>, <a href="xml.html">XML</a>, <a href="utf-8.html">UTF-8</a>, <a href="tcp.html">TCP</a>, <a href="udp.html">UDP</a>, <a href="linux.html">Linux</a>, <a href="solaris.html">Solaris</a>, <a href="sqlite.html">SQLite</a>, <a href="smtp.html">SMTP</a>, <a href="ftp.html">FTP</a>, <a href="opengl.html">OpenGL</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/n/NewLISP.lsp'>hello-world</a>:
 #!/usr/bin/newlisp
 (print &quot;Hello World\n&quot;)
 (exit)
 
+```
+
+```Example from <a href='https://github.com/textmate/lisp.tmbundle'>Linguist</a>:
 #!/usr/bin/env newlisp
 
 (constant &#39;NUM 8)
@@ -80,33 +86,34 @@ newLISP is an open source scripting language in the Lisp family of programming l
 (set &#39;solutions (find-variants NUM))
 (println (length solutions))
 ;;(exit)
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

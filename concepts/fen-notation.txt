@@ -1,19 +1,23 @@
 Forsyth-Edwards Notation
 ========================
 
-Forsyth-Edwards Notation is a notation created in 1883.
+Forsyth-Edwards Notation is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22notation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">notation</a> created in 1883.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221883%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1883
 
-#2906 on PLDB
-141 Years Old
+#3010 on PLDB
+143 Years Old
 
 Forsyth–Edwards Notation (FEN) is a standard notation for describing a particular board position of a chess game. The purpose of FEN is to provide all the necessary information to restart a game from a particular position. FEN is based on a system developed by Scottish newspaper journalist David Forsyth. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Forsyth–Edwards_Notation Read more on Wikipedia...
 
-- Tags: notation
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"notation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>notation</a>
 
+```Example from the web:
 rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Forsyth–Edwards_Notation'>Wikipedia</a>:
 rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2
+```
 
-View source
+Built with Scroll v178.2.3

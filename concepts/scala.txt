@@ -1,65 +1,77 @@
 Scala
 =====
 
-Scala is an open source programming language created in 2004 by Martin Odersky.
+Scala is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2004 by Martin Odersky.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2004
  https://pldb.io/concepts/../lists/creators.html#q=Martin%20Odersky Martin Odersky
 
-#22 on PLDB
-20 Years Old
-219k Repos
+#23 on PLDB
+22 Years Old
+219k <span title="Scala repos on GitHub.">Repos</span>
 
 Scala ( SKAH-lah) is a general-purpose programming language providing support for functional programming and a strong static type system. Designed to be concise, many of Scala's design decisions aimed to address criticisms of Java. Scala source code is intended to be compiled to Java bytecode, so that the resulting executable code runs on a Java virtual machine. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Scala_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 219,084 Scala repos on GitHub
-- Early development of Scala happened in École Polytechnique Fédérale de Lausanne
-- The  Google BigQuery Public Dataset GitHub snapshot shows 21k users using Scala in 35k repos on GitHub
-- Check out the 624 Scala meetup groups on Meetup.com.
-- There are 46,218 members in the Scala subreddit
-- There are 1,985 Project Euler users using Scala
-- In the 2021 StackOverflow developer survey Scala programmers reported a median salary of $77,832. 3% of respondents reported using Scala. 2,148 programmers reported using Scala, and 3,165 said they wanted to use it
-- Explore Scala snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 219,084 Scala repos on <a href="https://github.com/search?q=language:Scala">GitHub</a>
+- Early development of Scala happened in <a href="../lists/labs.html#q=École Polytechnique Fédérale de Lausanne">École Polytechnique Fédérale de Lausanne</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 21k users using Scala in 35k repos on <a href="https://api.github.com/search/repositories?q=language:Scala">GitHub</a>
+- Check out the 624 <a href="https://www.meetup.com/topics/scala/">Scala meetup groups</a> on Meetup.com.
+- There are 46,218 members in the <a href="https://reddit.com/r/scala">Scala subreddit</a>
+- There are 1,985 <a href="https://projecteuler.net/language=Scala">Project Euler</a> users using Scala
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> Scala programmers reported a median salary of $77,832. 3% of respondents reported using Scala. 2,148 programmers reported using Scala, and 3,165 said they wanted to use it
+- Explore Scala snippets on <a href="http://www.rosettacode.org/wiki/Category:Scala">Rosetta Code</a>
 - Scala on HOPL
  https://hopl.info/showlanguage.prx?exp=6814 Scala on HOPL
-- Scala ranks #39 in the TIOBE Index
+- Scala ranks #39 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - Scala Ubuntu package
  https://packages.ubuntu.com/jammy/scala Scala Ubuntu package
-- ANTLR grammar for Scala
-- Scala LSP implementation
-- Monaco package for syntax highlighting Scala
-- Pygments supports syntax highlighting for Scala
-- GitHub supports syntax highlighting for Scala
-- Scala appears in the Quine Relay project
-- Learn Scala on exercism.
-- PLDB has 2 Jupyter Kernels for Scala: github.com, github.com
-- There is a central package repository for Scala
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/scala">grammar</a> for Scala
+- Scala <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/scalameta/metals">implementation</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/scala">package</a> for syntax highlighting Scala
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/jvm.py">syntax highlighting</a> for Scala
+- GitHub supports <a href="https://github.com/scala/vscode-scala-syntax" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Scala
+- Scala appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Learn <a href="https://exercism.org/tracks/scala">Scala on exercism.</a>
+- PLDB has 2 <a href="jupyter-notebook.html">Jupyter</a> Kernels for Scala: <a href="https://github.com/mattpap/IScala">github.com</a>, <a href="https://github.com/alexarchambault/jupyter-scala">github.com</a>
+- There is a <a href="https://index.scala-lang.org/">central package repository</a> for Scala
 - Events page for Scala
  https://scala-lang.org/events/ Events page for Scala
-- Indeed.com has 3,679 matches for "scala engineer".
-- scala-lang.org was registered in 2007
-- See also: (32 related languages) JVM, JavaScript, LLVM IR, Eiffel, Erlang, Haskell, Java, Lisp, Pizza, Standard ML, OCaml, Scheme, Smalltalk, Oz, Ceylon, Fantom, F#, Kotlin, Lasso, Red, Java Bytecode, C, Android, Pascal, C#, Python, ML, CSP, Groovy, Clojure, PHP, Ruby
-- 31 PLDB concepts link to Scala: Ace Editor, baysick, chisel, cloc, Effekt, Enso, Felix, firrtl, Flix, Gradle, k-framework, Kotlin, lift, Luna, mal, NetLogo, Obsidian, OpenCV, parboiled, parboiled2, pegdown, Pygments, Rholang, Scala.js, Apache Spark, Spatial, topshell, Vale, Vyxal, Xgboost, XGBoost
+- Indeed.com has 3,679 matches for <a href="https://www.indeed.com/jobs?q=scala engineer">"scala engineer"</a>.
+- <a href="http://www.scala-lang.org">scala-lang.org</a> was registered in 2007
+- See also: (32 related languages) <a href="jvm.html">JVM</a>, <a href="javascript.html">JavaScript</a>, <a href="llvmir.html">LLVM IR</a>, <a href="eiffel.html">Eiffel</a>, <a href="erlang.html">Erlang</a>, <a href="haskell.html">Haskell</a>, <a href="java.html">Java</a>, <a href="lisp.html">Lisp</a>, <a href="pizza.html">Pizza</a>, <a href="standard-ml.html">Standard ML</a>, <a href="ocaml.html">OCaml</a>, <a href="scheme.html">Scheme</a>, <a href="smalltalk.html">Smalltalk</a>, <a href="oz.html">Oz</a>, <a href="ceylon.html">Ceylon</a>, <a href="fantom.html">Fantom</a>, <a href="f-sharp.html">F#</a>, <a href="kotlin.html">Kotlin</a>, <a href="lasso.html">Lasso</a>, <a href="red.html">Red</a>, <a href="java-bytecode.html">Java Bytecode</a>, <a href="c.html">C</a>, <a href="android.html">Android</a>, <a href="pascal.html">Pascal</a>, <a href="csharp.html">C#</a>, <a href="python.html">Python</a>, <a href="ml.html">ML</a>, <a href="csp.html">CSP</a>, <a href="groovy.html">Groovy</a>, <a href="clojure.html">Clojure</a>, <a href="php.html">PHP</a>, <a href="ruby.html">Ruby</a>
+- 32 PLDB concepts link to Scala: <a href="ace.html">Ace Editor</a>, <a href="baysick.html">baysick</a>, <a href="chisel.html">chisel</a>, <a href="cloc.html">cloc</a>, <a href="effekt.html">Effekt</a>, <a href="enso.html">Enso</a>, <a href="felix.html">Felix</a>, <a href="firrtl.html">firrtl</a>, <a href="flix.html">Flix</a>, <a href="gradle.html">Gradle</a>, <a href="k-framework.html">k-framework</a>, <a href="kotlin.html">Kotlin</a>, <a href="lift.html">lift</a>, <a href="luna.html">Luna</a>, <a href="mal.html">mal</a>, <a href="mlscript.html">MLscript</a>, <a href="netlogo.html">NetLogo</a>, <a href="obsidian-lang.html">Obsidian</a>, <a href="opencv.html">OpenCV</a>, <a href="parboiled.html">parboiled</a>, <a href="parboiled2.html">parboiled2</a>, <a href="pegdown.html">pegdown</a>, <a href="pygments.html">Pygments</a>, <a href="rholang.html">Rholang</a>, <a href="scala-js.html">Scala.js</a>, <a href="spark.html">Apache Spark</a>, <a href="spatial.html">Spatial</a>, <a href="topshell.html">topshell</a>, <a href="vale.html">Vale</a>, <a href="vyxal.html">Vyxal</a>, <a href="xgboost-model.html">Xgboost</a>, <a href="xgboost.html">XGBoost</a>
 
+```Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
 // Type your code here, or load an example.
 object Square {
     def square(num: Int): Int =
         num * num
 }
 
+```
+
+```Example from <a href='https://riju.codes/scala'>Riju</a>:
 println(&quot;Hello, world!&quot;)
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/s/Scala.scala'>hello-world</a>:
 object HelloWorld extends App {
   println(&quot;Hello World&quot;)
 }
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Scala'>the Hello World Collection</a>:
 // Hello world in Scala
 
 object HelloWorld extends App {
   println(&quot;Hello world!&quot;)
 }
+```
 
+```Example from <a href='https://github.com/scala/vscode-scala-syntax'>Linguist</a>:
 #!/bin/sh
 exec scala &quot;$0&quot; &quot;$@&quot;
 !#
@@ -70,6 +82,9 @@ object HelloWorld {
   }
 }
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Scala_(programming_language)'>Wikipedia</a>:
 val urls = List(&quot;http://scala-lang.org&quot;,  &quot;https://github.com/scala/scala&quot;)
 
 def fromURL(url: String) = scala.io.Source.fromURL(url)
@@ -78,65 +93,75 @@ def fromURL(url: String) = scala.io.Source.fromURL(url)
 val t = System.currentTimeMillis()
 urls.par.map(fromURL(_))
 println(&quot;time: &quot; + (System.currentTimeMillis - t) + &quot;ms&quot;)
+```
 
+```Scala <a href="../lists/keywords.html#q=scala">Keywords</a>
 abstract case catch class def do else extends false final finally for forSome if implicit import lazy match new null object override package private protected return sealed super this throw trait try true type val var while with yield
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Standard Library
  FeatureLink ../features/hasStandardLibrary.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   println("Hello, World!")
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Inheritance
  FeatureLink ../features/hasInheritance.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
+ Token 
+row
+ Feature Named Arguments
+ FeatureLink ../features/hasNamedArguments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  "abcdef".slice(from=2, until=4)
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Exceptions
  FeatureLink ../features/hasExceptions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -144,38 +169,80 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token println
 row
  Feature Message Passing
  FeatureLink ../features/hasMessagePassing.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Type Inference
  FeatureLink ../features/hasTypeInference.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Type Classes
+ FeatureLink ../features/hasTypeClasses.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // https://docs.scala-lang.org/scala3/book/ca-type-classes.html
+  trait TypedJsonConvertible[A]:
+    extension (a: A) def toTypedJson: String
+  
+  given TypedJsonConvertible[Int] with
+    extension (x: Int) def toTypedJson: String =
+      s"{\"type\": \"int\", \"value\": ${x}}"
+  
+  def printAsTypedJson[T: TypedJsonConvertible](x: T): Unit =
+    println(x.toTypedJson);
+  
+  printAsTypedJson(123);
+ Token 
+row
+ Feature Structural Typing
+ FeatureLink ../features/hasStructuralTyping.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // https://docs.scala-lang.org/scala3/reference/changed-features/structural-types.html#using-java-reflection-1
+  import scala.reflect.Selectable.reflectiveSelectable
+  
+  type Reversable[T] = { def reverse: T }
+  
+  def printReversed[T](x: Reversable[T]): Unit = {
+    println(x.reverse)
+  }
+  
+  printReversed("abc")
+  printReversed(Array(1, 2, 3))
+  printReversed(1)  // Doesn't compile because integers don't have a reverse method
+ Token 
+row
+ Feature Static Typing
+ FeatureLink ../features/hasStaticTyping.html
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Implicit Arguments
  FeatureLink ../features/hasImplicitArguments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // https://docs.scala-lang.org/tour/implicit-parameters.html
   abstract class Monoid[A] {
@@ -207,7 +274,7 @@ row
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // https://docs.scala-lang.org/scala3/guides/macros/macros.html
   import scala.quoted.* // imports Quotes, Expr
@@ -219,34 +286,40 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Partial Application
  FeatureLink ../features/hasPartialApplication.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   def add(x: Int, y: Int) = {x+y}; add(1, _: Int)
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "hello world"
  Token "
 row
+ Feature Function Overloading
+ FeatureLink ../features/hasFunctionOverloading.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

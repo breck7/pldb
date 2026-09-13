@@ -9,7 +9,7 @@ website https://www.python.org/
 spec https://docs.python.org/3/reference/
 releaseNotes https://docs.python.org/3/whatsnew/
 download https://www.python.org/downloads/
-latestVersion 3.12.3
+latestVersion 3.13.0
 lab Centrum Wiskunde & Informatica
 fileExtensions py pyc pyd pyo
 writtenIn python restructuredtext c xml toml yaml bourne-shell json markdown html objective-c ini svg cpp powershell diff d make gradle m4 javascript bash assembly-language xslt lisp css kotlin idl dockerfile c-shell cmake dtd
@@ -36,10 +36,12 @@ packageRepository https://pypi.python.org/pypi
 ubuntuPackage python
 repoStats
  firstCommit 1990
- commits 149709
- committers 3046
- files 4866
- newestCommit 2024
+ commits 156324
+ committers 3360
+ files 5121
+ newestCommit 2025
+ mb 681
+ linesOfCode 2776350
 country Netherlands
 proposals https://peps.python.org/
 projectEuler Python
@@ -105,8 +107,71 @@ canWriteToDisk true
  with open('helloworld.txt', 'w') as filehandle:
   filehandle.write('Hello, world!\n')
 hasDuckTyping true
+hasTypeAnnotations true
+ name: str
+hasStaticTyping true
+ # Optional, checkable using external type checkers like Mypy or Pyright
+ def print_repeated(text: str, repetitions: int) -> None:
+   print("\n".join([text]*repetitions))
+ 
+ print_repeated("Hello!", 10)
+ print_repeated("This won't typecheck...", "not an integer")
+hasStructuralTyping true
+ # Python's optional static type system features 2 kinds of structural types:
+ from typing import Protocol
+ 
+ class Clearable(Protocol):
+   def clear(self): ...
+ 
+ def print_and_clear(x: Clearable):
+   print(x)
+   x.clear()
+ 
+ print_and_clear([1, 2, 3])  # OK because lists have a clear() method
+ print_and_clear({1, 2, 3})  # OK because sets have a clear() method
+ print_and_clear(1)          # not OK because ints don't have a clear() method
+ 
+ from typing import TypedDict
+ 
+ class NameDict(TypedDict):
+   first_name: str
+   last_name: str
+ 
+ class EmployeeDict(TypedDict):
+   employee_id: int
+   first_name: str
+   last_name: str
+ 
+ def greet(name: NameDict):
+   print(f"Hello {name['first_name']} {name['last_name']}!")
+ 
+ john: EmployeeDict = {
+   "first_name": "John", "last_name": "Smith", "employee_id": 123
+ }
+ 
+ # EmployeeDict is a (structural) subtype of NameDict even though there is no
+ # explicit relation between them, so this passes type checking:
+ greet(john)
 hasSingleDispatch true
+hasTypeClasses false
 hasRegularExpressionsSyntaxSugar false
+hasSwitch true
+ match x:
+   case 0:
+     print("zero")
+   case 1:
+     print("one")
+   case _:
+     print(f"other: {x}")
+hasPatternMatching true
+ def get_two_ends(l):
+   match l:
+     case [first, *_, last]:
+       return (first, last)
+     case [_] | []:
+       raise ValueError("list is too short to have two ends")
+     case _:
+       raise ValueError("not a list")
 hasCaseInsensitiveIdentifiers false
 hasTernaryOperators true
  print(1 if 1 else 0)
@@ -142,8 +207,21 @@ hasGenerators true
 hasDirectives true
  from __future__ import feature
  # coding=<encoding name>
+hasSinglePassParser false
 hasAssignment true
  name = "John"
+hasDestructuring true
+ # destructuring assignment works for sequences, including nested ones:
+ (a, (b, c), *d) = (1, (2, 3), 4, 5, 6)  # result: a=1, b=2, c=3, d=(4,5,6)
+ 
+ # it is NOT implemented for more complicated types like dictionaries:
+ {"a": a} = {"a": 1}  # ERROR
+ 
+ # more complex destructuring is possible using the match statement:
+ d = {"a": {"b": [1, 2]}}
+ match d:
+   case {"a": {"b": [1, x]}}: pass  # result: x=2
+   case _: raise ValueError("destructuring failed!")
 hasImports true
  import datetime
  oTime = datetime.datetime.now()
@@ -232,6 +310,13 @@ hasPrintDebugging true
 isCaseSensitive true
 hasWhileLoops true
 hasFunctions true
+hasFunctionOverloading false
+ may be simulated using `**kwargs` or `functools.singledispatch`
+hasNamedArguments true
+ print("Hello", end="!\n")
+ 
+ # details: any parameter that hasn't been explicitly marked as positional-only
+ # can be provided as a named argument
 hasOctals true
  # 0[oO](?:_?[0-7])+
 hasHexadecimals true

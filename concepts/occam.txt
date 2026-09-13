@@ -1,30 +1,34 @@
 Occam
 =====
 
-Occam is a programming language created in 1983 by David May.
+Occam is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1983 by David May.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221983%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1983
  https://pldb.io/concepts/../lists/creators.html#q=David%20May David May
 
-#723 on PLDB
-41 Years Old
+#749 on PLDB
+43 Years Old
 
 occam is a concurrent programming language that builds on the communicating sequential processes (CSP) process algebra, and shares many of its features. It is named after William of Ockham of Occam's Razor fame. occam is an imperative procedural language (such as Pascal). Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Occam_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Occam happened in Inmos International plc
-- Explore Occam snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Occam happened in <a href="../lists/labs.html#q=Inmos International plc">Inmos International plc</a>
+- Explore Occam snippets on <a href="http://www.rosettacode.org/wiki/Category:Occam">Rosetta Code</a>
 - Occam on HOPL
  https://hopl.info/showlanguage.prx?exp=1002 Occam on HOPL
-- Occam appears in the TIOBE Index
-- See also: (7 related languages) OCaml, Ease, Go, CSP, Pascal, Haskell, Python
+- Occam appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- See also: (7 related languages) <a href="ocaml.html">OCaml</a>, <a href="ease.html">Ease</a>, <a href="go.html">Go</a>, <a href="csp.html">CSP</a>, <a href="pascal.html">Pascal</a>, <a href="haskell.html">Haskell</a>, <a href="python.html">Python</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/o/occam.occam'>hello-world</a>:
 PROGRAM Hello
 #USE ioconv
 
 SEQ
   write.full.string(screen,&quot;Hello World&quot;)
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#Occam'>the Hello World Collection</a>:
 PROGRAM Hello
 -- Hello world in Occam
 #USE ioconv
@@ -32,6 +36,9 @@ PROGRAM Hello
 SEQ
   write.full.string(screen,&quot;Hello World!&quot;)
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Occam_(programming_language)'>Wikipedia</a>:
 ALT
    count1 &lt; 100 &amp; c1 ? data
      SEQ
@@ -45,28 +52,29 @@ ALT
      SEQ
        out ! count1
        out ! count2
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token write.full.string
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

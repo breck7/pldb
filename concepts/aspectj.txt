@@ -1,41 +1,48 @@
 AspectJ
 =======
 
-AspectJ is an open source programming language created in 2001 by Eric Bodden.
+AspectJ is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2001 by Eric Bodden.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2001
  https://pldb.io/concepts/../lists/creators.html#q=Eric%20Bodden Eric Bodden
 
-#398 on PLDB
-23 Years Old
-671 Repos
+#309 on PLDB
+25 Years Old
+671 <span title="AspectJ repos on GitHub.">Repos</span>
 
 AspectJ is an aspect-oriented programming (AOP) extension created at PARC for the Java programming language. It is available in Eclipse Foundation open-source projects, both stand-alone and integrated into Eclipse. AspectJ has become a widely used de facto standard for AOP by emphasizing simplicity and usability for end users. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/AspectJ Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 671 AspectJ repos on GitHub
-- Early development of AspectJ happened in Eclipse Foundation
-- The  Google BigQuery Public Dataset GitHub snapshot shows 734 users using AspectJ in 793 repos on GitHub
-- Explore AspectJ snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 671 AspectJ repos on <a href="https://github.com/search?q=language:AspectJ">GitHub</a>
+- Early development of AspectJ happened in <a href="../lists/labs.html#q=Eclipse Foundation">Eclipse Foundation</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 734 users using AspectJ in 793 repos on <a href="https://api.github.com/search/repositories?q=language:AspectJ">GitHub</a>
+- Explore AspectJ snippets on <a href="http://www.rosettacode.org/wiki/Category:AspectJ">Rosetta Code</a>
 - AspectJ on HOPL
  https://hopl.info/showlanguage.prx?exp=7055 AspectJ on HOPL
-- AspectJ appears in the TIOBE Index
+- AspectJ appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - AspectJ Ubuntu package
  https://packages.ubuntu.com/jammy/aspectj AspectJ Ubuntu package
-- ANTLR grammar for AspectJ
-- Pygments supports syntax highlighting for AspectJ
-- GitHub supports syntax highlighting for AspectJ
-- AspectJ appears in the Quine Relay project
-- See also: (4 related languages) Java, Eclipse, Emacs, ISBN
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/aspectj">grammar</a> for AspectJ
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/jvm.py">syntax highlighting</a> for AspectJ
+- GitHub supports <a href="https://github.com/pchaigno/sublime-aspectj" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for AspectJ
+- AspectJ appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- See also: (4 related languages) <a href="java.html">Java</a>, <a href="eclipse-editor.html">Eclipse</a>, <a href="emacs-editor.html">Emacs</a>, <a href="isbn.html">ISBN</a>
+- 1 PLDB concepts link to AspectJ: <a href="netbeans-editor.html">netbeans-editor</a>
 
+```Example from <a href='https://riju.codes/aspectj'>Riju</a>:
 public class Main {
     public static void main(String[] args) {
         System.out.println(&quot;Hello, world!&quot;);
     }
 }
 
-System.out.println(&quot;Hello World&quot;);
+```
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/a/Aspectj.aj'>hello-world</a>:
+System.out.println(&quot;Hello World&quot;);
+```
+
+```Example from <a href='https://github.com/pchaigno/sublime-aspectj'>Linguist</a>:
 package com.blogspot.miguelinlas3.aspectj.cache;
 
 import java.util.Map;
@@ -78,57 +85,61 @@ public aspect CacheAspect {
 	protected Map&lt;String, Object&gt; cache = new WeakHashMap&lt;String, Object&gt;();
 }
 
-pointcut set() : execution(* set*(..) ) &amp;&amp; this(Point);
+```
 
-Language features
+```Example from <a href='https://en.wikipedia.org/wiki/AspectJ'>Wikipedia</a>:
+pointcut set() : execution(* set*(..) ) &amp;&amp; this(Point);
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // 0[bB][01][01_]*[lL]?
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // 0|[1-9][0-9_]*[lL]?
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // ([0-9][0-9_]*\.([0-9][0-9_]*)?|\.[0-9][0-9_]*)([eE][+\-]?[0-9][0-9_]*)?[fFdD]?|[0-9][eE][+\-]?[0-9][0-9_]*[fFdD]?|[0-9]([eE][+\-]?[0-9][0-9_]*)?[fFdD]|0[xX]([0-9a-fA-F][0-9a-fA-F_]*\.?|([0-9a-fA-F][0-9a-fA-F_]*)?\.[0-9a-fA-F][0-9a-fA-F_]*)[pP][+\-]?[0-9][0-9_]*[fFdD]?
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // 0[xX][0-9a-fA-F][0-9a-fA-F_]*[lL]?
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // 0[0-7_]+[lL]?
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -136,28 +147,28 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token System.out.println
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

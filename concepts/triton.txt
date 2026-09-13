@@ -1,25 +1,28 @@
 Triton
 ======
 
-Triton is a programming language created in 2021 by Philippe Tillet.
+Triton is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2021 by Philippe Tillet.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2021
  https://pldb.io/concepts/../lists/creators.html#q=Philippe%20Tillet Philippe Tillet
 
-#377 on PLDB
-3 Years Old
+#345 on PLDB
+5 Years Old
 
+```Download source code:
 git clone https://github.com/openai/triton
+```
 
 Triton is a language and compiler for parallel programming. It aims to provide a Python-based programming environment for productively writing custom DNN compute kernels capable of running at maximal throughput on modern GPU hardware.
 
-- Tags: programming language
-- Triton is developed on GitHub and has 12,112 stars
-- Early development of Triton happened in OpenAI
-- Triton is written in C++, Python, CMake, Markdown, YAML, reStructuredText, Bourne shell, C, Dockerfile, SVG, TOML, JSON, HTML, LLVM IR, Make
-- See also: (1 related languages) Numba
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Triton is developed on <a href="https://github.com/openai/triton">GitHub</a> and has 12,112 stars
+- Early development of Triton happened in <a href="../lists/labs.html#q=OpenAI">OpenAI</a>
+- Triton is written in <a href="cpp.html">C++</a>, <a href="python.html">Python</a>, <a href="cmake.html">CMake</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="c.html">C</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="svg.html">SVG</a>, <a href="toml.html">TOML</a>, <a href="json.html">JSON</a>, <a href="html.html">HTML</a>, <a href="llvmir.html">LLVM IR</a>, <a href="make.html">Make</a>
+- See also: (1 related languages) <a href="numba.html">Numba</a>
 - Read more about Triton on the web: 1.
  https://openai.com/blog/triton/ 1.
 
+```Example from the web:
 # This is a GPU kernel in Triton.
 # Different instances of this
 # function may run in parallel.
@@ -38,5 +41,6 @@ def add(X, Y, Z, N):
    x = load(X + idx, mask=mask)
    y = load(Y + idx, mask=mask)
    store(Z + idx, x + y, mask=mask)
+```
 
-View source
+Built with Scroll v178.2.3

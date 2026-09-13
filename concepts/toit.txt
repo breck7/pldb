@@ -1,0 +1,139 @@
+Toit
+====
+
+Toit is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2021 by Florian Loitsch and Kasper Lund.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2021
+ https://pldb.io/concepts/../lists/creators.html#q=Florian%20Loitsch Florian Loitsch
+ https://pldb.io/concepts/../lists/creators.html#q=Kasper%20Lund Kasper Lund
+
+#333 on PLDB
+5 Years Old
+
+```Download source code:
+git clone https://github.com/toitlang/toit
+```
+
+Toit is a modern high-level language designed specifically for microcontrollers.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Toit is developed on <a href="https://github.com/toitlang/toit">GitHub</a> and has 1,280 stars
+- There are 0 members in the <a href="https://www.reddit.com/r/toitlang/">Toit subreddit</a>
+
+```Example from the web:
+hi:
+  print &quot;Hello World!&quot;
+
+greet name:
+  print &quot;Hello $name!&quot;
+
+main:
+  hi
+  greet &quot;Kasper&quot;
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  "Hello"
+ Token 
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  import .library
+  import library
+  import library show *
+ Token 
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  while condition:
+ Token 
+row
+ Feature Increment and decrement operators
+ FeatureLink ../features/hasIncrementAndDecrementOperators.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  i++
+ Token 
+row
+ Feature hasForLoops
+ FeatureLink ../features/hasForLoops.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  for i := 0; i < end; i++:
+ Token 
+row
+ Feature hasIfs
+ FeatureLink ../features/hasIfs.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  if condition:
+ Token 
+row
+ Feature Static Methods
+ FeatureLink ../features/hasStaticMethods.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  static foo x y
+ Token 
+row
+ Feature Constants
+ FeatureLink ../features/hasConstants.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  X ::= 0
+ Token 
+row
+ Feature Constructors
+ FeatureLink ../features/hasConstructors.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  constructor x:
+ Token 
+row
+ Feature Inheritance
+ FeatureLink ../features/hasInheritance.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  class Foo extends Bar:
+ Token 
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  // Creating a custom class.
+  class Point:
+    x /int := 42
+    y /int := 103
+ Token 
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  x := 0
+ Token
+
+Built with Scroll v178.2.3

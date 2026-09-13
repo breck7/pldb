@@ -87,7 +87,7 @@ class TestRacerFile {
     this.getRunner()._emitMessage(message)
   }
   _filterSkippedTestBlocks() {
-    // _ prefix = run on these tests block
+    // _ prefix = run only these tests block
     // $ prefix = skip this test
     const runOnlyTheseTestBlocks = Object.keys(this._testParticles).filter(key => key.startsWith("_"))
     if (runOnlyTheseTestBlocks.length) return runOnlyTheseTestBlocks

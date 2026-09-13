@@ -1,20 +1,21 @@
 Apache Maven
 ============
 
-Apache Maven is an open source application created in 2004.
+Apache Maven is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 2004.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2004
 
-#598 on PLDB
-20 Years Old
+#621 on PLDB
+22 Years Old
 
 Maven is a build automation tool used primarily for Java projects. Maven addresses two aspects of building software: first, it describes how software is built, and second, it describes its dependencies. Unlike earlier tools like Apache Ant, it uses conventions for the build procedure, and only exceptions need to be written down. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Apache_Maven Read more on Wikipedia...
 
-- Tags: application
-- Early development of Apache Maven happened in Apache Software Foundation
-- GitHub supports syntax highlighting for Apache Maven
-- See also: (9 related languages) Java, XML, C#, Ruby, Scala, C, Eclipse, YAML, Groovy
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>
+- Early development of Apache Maven happened in <a href="../lists/labs.html#q=Apache Software Foundation">Apache Software Foundation</a>
+- GitHub supports <a href="https://github.com/textmate/maven.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Apache Maven
+- See also: (9 related languages) <a href="java.html">Java</a>, <a href="xml.html">XML</a>, <a href="csharp.html">C#</a>, <a href="ruby.html">Ruby</a>, <a href="scala.html">Scala</a>, <a href="c.html">C</a>, <a href="eclipse-editor.html">Eclipse</a>, <a href="yaml.html">YAML</a>, <a href="groovy.html">Groovy</a>
 
+```Example from <a href='https://github.com/textmate/maven.tmbundle'>Linguist</a>:
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
 	xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd&quot;&gt;
@@ -216,6 +217,9 @@ Maven is a build automation tool used primarily for Java projects. Maven address
 	&lt;/build&gt;
 &lt;/project&gt;
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Apache_Maven'>Wikipedia</a>:
 1  validate
  2  generate-sources
  3  process-sources
@@ -229,5 +233,6 @@ Maven is a build automation tool used primarily for Java projects. Maven address
 11  package
 12  install
 13  deploy
+```
 
-View source
+Built with Scroll v178.2.3

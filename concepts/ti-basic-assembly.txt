@@ -1,19 +1,20 @@
 TI Program
 ==========
 
-TI Program is an assembly language created in 1970.
+TI Program is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22assembly%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">assembly language</a> created in 1970.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221970%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1970
 
-#3600 on PLDB
-54 Years Old
-2m Repos
+#3739 on PLDB
+56 Years Old
+2m <span title="TI Program repos on GitHub.">Repos</span>
 
-- Tags: assembly language
-- There are at least 1,586,478 TI Program repos on GitHub
-- The  Google BigQuery Public Dataset GitHub snapshot shows 4 users using TI Program in 7 repos on GitHub
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"assembly"%5D%7D%5D%2C"logic"%3A"AND"%7D'>assembly language</a>
+- There are at least 1,586,478 TI Program repos on <a href="https://github.com/search?q=language:TI Program">GitHub</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 4 users using TI Program in 7 repos on <a href="https://api.github.com/search/repositories?q=language:TI Program">GitHub</a>
 - Read more about TI Program on the web: 1.
  https://en.wikipedia.org/wiki/TI-BASIC 1.
 
+```Example from the web:
 .AlphaCS
 #ExprOff
 If getKey(41)
@@ -77,5 +78,6 @@ If {[Y1]+6}
 	Asm(FDCB24DE)
 End
 Goto DLIST
+```
 
-View source
+Built with Scroll v178.2.3

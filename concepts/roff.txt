@@ -1,28 +1,32 @@
 ROFF
 ====
 
-ROFF is a text markup language created in 1971 by Joe Ossanna and Ken Thompson.
+ROFF is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 1971 by Joe Ossanna and Ken Thompson.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221971%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1971
  https://pldb.io/concepts/../lists/creators.html#q=Joe%20Ossanna Joe Ossanna
  https://pldb.io/concepts/../lists/creators.html#q=Ken%20Thompson Ken Thompson
 
-#991 on PLDB
-53 Years Old
-37k Repos
+#1012 on PLDB
+55 Years Old
+37k <span title="ROFF repos on GitHub.">Repos</span>
 
-- Tags: text markup language
-- There are at least 36,672 ROFF repos on GitHub
-- Early development of ROFF happened in Bell Labs
-- The  Google BigQuery Public Dataset GitHub snapshot shows 11k users using ROFF in 12k repos on GitHub
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- There are at least 36,672 ROFF repos on <a href="https://github.com/search?q=language:Roff">GitHub</a>
+- Early development of ROFF happened in <a href="../lists/labs.html#q=Bell Labs">Bell Labs</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 11k users using ROFF in 12k repos on <a href="https://api.github.com/search/repositories?q=language:Roff">GitHub</a>
 - ROFF on HOPL
  https://hopl.info/showlanguage.prx?exp=2453 ROFF on HOPL
-- GitHub supports syntax highlighting for ROFF
-- See also: (1 related languages) Troff
-- 1 PLDB concepts link to ROFF: nroff
+- GitHub supports <a href="https://github.com/Alhadis/language-roff" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for ROFF
+- See also: (1 related languages) <a href="troff.html">Troff</a>
+- 1 PLDB concepts link to ROFF: <a href="nroff.html">nroff</a>
 
+```Example from <a href='https://riju.codes/roff'>Riju</a>:
 .PP
 Hello, world!
 
+```
+
+```Example from <a href='https://github.com/Alhadis/language-roff'>Linguist</a>:
 .TH FOO 1
 .SH NAME
 foo \- bar
@@ -37,4 +41,6 @@ quux.
 .B Foo
 bar baz.
 
-View source
+```
+
+Built with Scroll v178.2.3

@@ -1,32 +1,32 @@
 Object Rexx
 ===========
 
-Object Rexx is a programming language created in 1988 by Simon C. Nash.
+Object Rexx is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1988 by Simon C. Nash.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221988%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1988
  https://pldb.io/concepts/../lists/creators.html#q=Simon%20C.%20Nash Simon C. Nash
 
-#1268 on PLDB
-36 Years Old
+#1313 on PLDB
+38 Years Old
 
 The Object REXX programming language is an object-oriented scripting language initially produced by IBM for OS/2. It is a follow-on to and a significant extension of the "Classic Rexx" language originally created for the CMS component of VM/SP and later ported to MVS, OS/2 and PC DOS. OS/2 version of IBM Object REXX is deeply integrated with SOM. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Object_REXX Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Object Rexx happened in IBM
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Object Rexx happened in <a href="../lists/labs.html#q=IBM">IBM</a>
 - Object Rexx on HOPL
  https://hopl.info/showlanguage.prx?exp=3742 Object Rexx on HOPL
-- Object Rexx appears in the TIOBE Index
-- oorexx.org was registered in 2004
-- See also: (5 related languages) Linux, Rexx, Smalltalk, NetRexx, Solaris
+- Object Rexx appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="http://www.oorexx.org">oorexx.org</a> was registered in 2004
+- See also: (5 related languages) <a href="linux.html">Linux</a>, <a href="rexx.html">Rexx</a>, <a href="smalltalk.html">Smalltalk</a>, <a href="netrexx.html">NetRexx</a>, <a href="solaris.html">Solaris</a>
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Multiple Inheritance
  FeatureLink ../features/hasMultipleInheritance.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

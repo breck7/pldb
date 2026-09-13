@@ -1,33 +1,34 @@
 Nemerle
 =======
 
-Nemerle is a programming language created in 2003 by Krzysztof Czarnecki.
+Nemerle is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2003 by Krzysztof Czarnecki.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222003%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2003
  https://pldb.io/concepts/../lists/creators.html#q=Krzysztof%20Czarnecki Krzysztof Czarnecki
 
-#366 on PLDB
-21 Years Old
-177 Repos
+#360 on PLDB
+23 Years Old
+177 <span title="Nemerle repos on GitHub.">Repos</span>
 
 Nemerle is a general-purpose high-level statically typed programming language designed for platforms using the Common Language Infrastructure (.NET/Mono). It offers functional, object-oriented (OO) and imperative features. It has a simple C#-like syntax and a powerful metaprogramming system. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Nemerle Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 177 Nemerle repos on GitHub
-- Early development of Nemerle happened in JetBrains
-- C# and ML and Lisp influenced the design of Nemerle
-- The  Google BigQuery Public Dataset GitHub snapshot shows 257 users using Nemerle in 286 repos on GitHub
-- There are 10 Project Euler users using Nemerle
-- Explore Nemerle snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 177 Nemerle repos on <a href="https://github.com/search?q=language:Nemerle">GitHub</a>
+- Early development of Nemerle happened in <a href="../lists/labs.html#q=JetBrains">JetBrains</a>
+- <a href="csharp.html">C#</a> and <a href="ml.html">ML</a> and <a href="lisp.html">Lisp</a> influenced the design of Nemerle
+- The  Google BigQuery Public Dataset GitHub snapshot shows 257 users using Nemerle in 286 repos on <a href="https://api.github.com/search/repositories?q=language:Nemerle">GitHub</a>
+- There are 10 <a href="https://projecteuler.net/language=Nemerle">Project Euler</a> users using Nemerle
+- Explore Nemerle snippets on <a href="http://www.rosettacode.org/wiki/Category:Nemerle">Rosetta Code</a>
 - Nemerle on HOPL
  https://hopl.info/showlanguage.prx?exp=8336 Nemerle on HOPL
-- Nemerle appears in the TIOBE Index
-- Pygments supports syntax highlighting for Nemerle
-- GitHub supports syntax highlighting for Nemerle
-- nemerle.org was registered in 2003
-- See also: (7 related languages) C#, ML, Lisp, Java, OCaml, Haskell, SQL
-- 3 PLDB concepts link to Nemerle: Eiffel, Nymph, Pygments
+- Nemerle appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/dotnet.py">syntax highlighting</a> for Nemerle
+- GitHub supports <a href="https://github.com/textmate/nemerle.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Nemerle
+- <a href="http://nemerle.org">nemerle.org</a> was registered in 2003
+- See also: (7 related languages) <a href="csharp.html">C#</a>, <a href="ml.html">ML</a>, <a href="lisp.html">Lisp</a>, <a href="java.html">Java</a>, <a href="ocaml.html">OCaml</a>, <a href="haskell.html">Haskell</a>, <a href="sql.html">SQL</a>
+- 4 PLDB concepts link to Nemerle: <a href="eiffel.html">Eiffel</a>, <a href="nymph.html">Nymph</a>, <a href="pygments.html">Pygments</a>, <a href="sqlite.html">SQLite</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/n/Nemerle.n'>hello-world</a>:
 class Hello
 {
     static Main () : void
@@ -35,11 +36,16 @@ class Hello
         System.Console.WriteLine (&quot;Hello World&quot;);
     }
 }
+```
 
+```Example from <a href='http://helloworldcollection.de/#Nemerle'>the Hello World Collection</a>:
 // Hello World in Nemerle (a functional programming language for .NET)
 
 System.Console.WriteLine(&quot;Hello World&quot;);
 
+```
+
+```Example from <a href='https://github.com/textmate/nemerle.tmbundle'>Linguist</a>:
 using System.Console;
 
 module Program
@@ -49,7 +55,9 @@ module Program
      WriteLine(&quot;Hello world&quot;);
    }
 }
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Nemerle'>Wikipedia</a>:
 using System;
 using System.Runtime.InteropServices;
 
@@ -67,34 +75,35 @@ class PlatformInvokeTest
         _ = _flushall();
     }
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token System.Console.WriteLine
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Units of Measure
  FeatureLink ../features/hasUnitsOfMeasure.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   def m3 = 1 g;
   def m4 = Si.Mass(m1);
@@ -108,29 +117,30 @@ row
 row
  Feature Type Inference
  FeatureLink ../features/hasTypeInference.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Macros
  FeatureLink ../features/hasMacros.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // http://nemerle.org/About
   def title = "Programming language authors";
   def authors = ["Anders Hejlsberg", "Simon Peyton-Jones"];
       
   // 'xml' - macro from Nemerle.Xml.Macro library which alows to inline XML literals into the nemerle-code
-  def html = xml 
-      
-        $title
-      
-      
-        
-          $author
-        
-      
-    
+  def html = xml <#
+    <html>
+      <head>
+        <title>$title</title>
+      </head>
+      <body>
+        <ul $when(authors.Any())>
+          <li $foreach(author in authors)>$author</li>
+        </ul>
+      </body>
+    </html>
   #>
   Trace.Assert(html.GetType().Equals(typeof(XElement)));
   WriteLine(html.GetType());
@@ -138,14 +148,14 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

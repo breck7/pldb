@@ -1,19 +1,21 @@
 VLC
 ===
 
-VLC, aka VideoLAN Client, is an application created in 1996 by Jean-Baptiste Kempf.
+VLC, aka VideoLAN Client, is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22application%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">application</a> created in 1996 by Jean-Baptiste Kempf.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221996%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1996
  https://pldb.io/concepts/../lists/creators.html#q=Jean-Baptiste%20Kempf Jean-Baptiste Kempf
 
-#834 on PLDB
-28 Years Old
+#684 on PLDB
+30 Years Old
 
+```Download source code:
 git clone https://github.com/videolan/vlc
+```
 
 VLC media player - All pull requests are ignored, please use MRs on https://code.videolan.org/videolan/vlc
 
-- Tags: application, video
-- VLC is developed on GitHub and has 13,674 stars
-- VLC is written in C, C++, Diff, QML, Objective-C, SVG, XML, Make, Lua, Meson, Bourne shell, Qt, M4, Assembly language, Python, HTML, Rust, Markdown, JSON, GLSL, TOML, JavaScript, Visual Basic, YAML, CSS, Yacc, Lex, DTD, XSD, Perl, Vim script, Protocol Buffers, CMake
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"application"%5D%7D%5D%2C"logic"%3A"AND"%7D'>application</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"video"%5D%7D%5D%2C"logic"%3A"AND"%7D'>video</a>
+- VLC is developed on <a href="https://github.com/videolan/vlc">GitHub</a> and has 13,674 stars
+- VLC is written in <a href="c.html">C</a>, <a href="cpp.html">C++</a>, <a href="diff.html">Diff</a>, <a href="qml.html">QML</a>, <a href="objective-c.html">Objective-C</a>, <a href="svg.html">SVG</a>, <a href="xml.html">XML</a>, <a href="make.html">Make</a>, <a href="lua.html">Lua</a>, <a href="meson.html">Meson</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="qt.html">Qt</a>, <a href="m4.html">M4</a>, <a href="assembly-language.html">Assembly language</a>, <a href="python.html">Python</a>, <a href="html.html">HTML</a>, <a href="rust.html">Rust</a>, <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>, <a href="glsl.html">GLSL</a>, <a href="toml.html">TOML</a>, <a href="javascript.html">JavaScript</a>, <a href="visual-basic.html">Visual Basic</a>, <a href="yaml.html">YAML</a>, <a href="css.html">CSS</a>, <a href="yacc.html">Yacc</a>, <a href="lex.html">Lex</a>, <a href="dtd.html">DTD</a>, <a href="xsd.html">XSD</a>, <a href="perl.html">Perl</a>, <a href="vim-script.html">Vim script</a>, <a href="protobuf.html">Protocol Buffers</a>, <a href="cmake.html">CMake</a>
 
-View source
+Built with Scroll v178.2.3

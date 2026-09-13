@@ -1,40 +1,45 @@
 Scroll
 ======
 
-Scroll is an open source static site generator created in 2019 by Breck Yunits.
+Scroll is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 2019 by Breck Yunits.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2019
  https://pldb.io/concepts/../lists/creators.html#q=Breck%20Yunits Breck Yunits
 
-#372 on PLDB
-5 Years Old
+#371 on PLDB
+7 Years Old
 
+```Download source code:
 git clone https://github.com/breck7/scroll
+```
 
 Scroll is a language for scientists of all ages. Scroll has an unusually simple syntax, an extensive set of features needed by researchers, bloggers, knowledge bases and sites of all sizes, is highly expandable, and is familiar to anyone who knows Markdown.
 
-- Tags: static site generator, text markup language, command line application, dataNotation, dataValidationLanguage, wikiMarkup
-- Scroll is developed on GitHub and has 414 stars
-- Early development of Scroll happened in Breck's Lab
-- Markdown and Lisp and JavaScript and HAML and HTML and Python and TSV and CSV and YAML and Jekyll and WordPress and Tex and Mathematica and dplyr and ANTLR and ReactJS influenced the design of Scroll
-- Scroll compiles to HTML or CSV or TSV or JSON or RSS or Plain text
-- Scroll is written in Parsers, Particles, JavaScript, YAML, CSS, JSON
-- There are 0 members in the Scroll subreddit
-- scroll.pub was registered in 2021
-- See also: (3 related languages) Markdown, Particles, Parsers
-- 2 PLDB concepts link to Scroll: Podlite, Quaint
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"staticSiteGenerator"%5D%7D%5D%2C"logic"%3A"AND"%7D'>static site generator</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"commandLineApp"%5D%7D%5D%2C"logic"%3A"AND"%7D'>command line application</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataValidationLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataValidationLanguage</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"wikiMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>wikiMarkup</a>
+- Scroll is developed on <a href="https://github.com/breck7/scroll">GitHub</a> and has 414 stars
+- Early development of Scroll happened in <a href="../lists/labs.html#q=Breck's Lab">Breck's Lab</a>
+- <a href="markdown.html">Markdown</a> and <a href="lisp.html">Lisp</a> and <a href="javascript.html">JavaScript</a> and <a href="haml.html">HAML</a> and <a href="html.html">HTML</a> and <a href="python.html">Python</a> and <a href="tsv.html">TSV</a> and <a href="csv.html">CSV</a> and <a href="yaml.html">YAML</a> and <a href="jekyll.html">Jekyll</a> and <a href="wordpress.html">WordPress</a> and <a href="tex.html">Tex</a> and <a href="mathematica.html">Mathematica</a> and <a href="dplyr.html">dplyr</a> and <a href="antlr.html">ANTLR</a> and <a href="reactjs.html">ReactJS</a> influenced the design of Scroll
+- Scroll compiles to <a href="html.html">HTML</a> or <a href="csv.html">CSV</a> or <a href="tsv.html">TSV</a> or <a href="json.html">JSON</a> or <a href="rss.html">RSS</a> or <a href="txt.html">Plain text</a>
+- Scroll is written in <a href="parsers.html">Parsers</a>, <a href="particles.html">Particles</a>, <a href="javascript.html">JavaScript</a>, <a href="yaml.html">YAML</a>, <a href="css.html">CSS</a>, <a href="json.html">JSON</a>
+- There are 0 members in the <a href="https://www.reddit.com/r/WorldWideScroll/">Scroll subreddit</a>
+- <a href="https://scroll.pub/">scroll.pub</a> was registered in 2021
+- See also: (3 related languages) <a href="markdown.html">Markdown</a>, <a href="particles.html">Particles</a>, <a href="parsers.html">Parsers</a>
+- 3 PLDB concepts link to Scroll: <a href="org.html">Org Mode</a>, <a href="podlite.html">Podlite</a>, <a href="quaint.html">Quaint</a>
 
+```Example from the web:
 title This is Scroll. The keyword for title is title.
 
-paragraph
- Scroll is an extensible alternative to Markdown.
+* Scroll is an extensible alternative to Markdown.
 
-Language features
+You extend it by writing parsers.
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Multiline Strings
  FeatureLink ../features/hasMultilineStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   plainText
    This is a
@@ -43,7 +48,7 @@ row
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A
    multiline comment
@@ -51,14 +56,14 @@ row
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   * A link to PLDB
    https://pldb.io
@@ -66,15 +71,15 @@ row
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   import settings.scroll
  Token 
 row
  Feature Ternary operators
  FeatureLink ../features/hasTernaryOperators.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

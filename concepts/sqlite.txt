@@ -1,48 +1,57 @@
 SQLite
 ======
 
-SQLite is an open source query language created in 2000 by Dwayne Richard Hipp.
+SQLite is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22queryLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">query language</a> created in 2000 by Dwayne Richard Hipp.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222000%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2000
  https://pldb.io/concepts/../lists/creators.html#q=Dwayne%20Richard%20Hipp Dwayne Richard Hipp
 
-#113 on PLDB
-24 Years Old
+#112 on PLDB
+26 Years Old
+
+```Download source code:
+git clone https://github.com/sqlite/sqlite
+```
 
 SQLite ( or ) is a relational database management system contained in a C programming library. In contrast to many other database management systems, SQLite is not a client–server database engine. Rather, it is embedded into the end program. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/SQLite Read more on Wikipedia...
 
-- Tags: queryLanguage
-- Watch the history of the SQLite repo visualized with Gource
-- Early development of SQLite happened in  Hipp, Wyrick & Company, Inc
-- SQLite is written in C
-- There are 2,744 members in the SQLite subreddit
-- ANTLR grammar for SQLite
-- Learn SQLite on exercism.
-- Indeed.com has 561 matches for "sqlite developer".
-- sqlite.org was registered in 2002
-- See also: (61 related languages) C, SQL, PostgreSQL, Tcl, JSON, SQL-92, Perl, Unicode, JScript, VBScript, Django, Drupal, Ruby on Rails, Solaris, Android, FreeBSD, iOS, AutoIt, BASIC, FreeBASIC, PureBasic, Visual Basic .NET, Xojo, C#, Clipper, Curl, D, Elixir, Emacs Lisp, F#, Go, Haskell, Haxe, Java, JavaScript, Julia, Lisp, Common Lisp, OpenLisp, LiveCode, LabVIEW G, Lua, MATLAB, Nim, Objective-C, OCaml, Pascal, Free Pascal, Delphi, PHP, Pike, Python, R, Racket, REBOL, Ruby, Scheme, Smalltalk, Swift, ISBN, DOI
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"queryLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>queryLanguage</a>
+- Watch the history of <a href="https://www.youtube.com/watch?v=kjdxiG17hGM">the SQLite repo visualized with Gource</a>
+- Early development of SQLite happened in <a href="../lists/labs.html#q= Hipp, Wyrick & Company, Inc"> Hipp, Wyrick & Company, Inc</a>
+- SQLite is written in <a href="c.html">C</a>, <a href="tcl.html">Tcl</a>, <a href="java.html">Java</a>, <a href="javascript.html">JavaScript</a>, <a href="markdown.html">Markdown</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="html.html">HTML</a>, <a href="make.html">Make</a>, <a href="m4.html">M4</a>, <a href="yacc.html">Yacc</a>, <a href="csharp.html">C#</a>, <a href="css.html">CSS</a>, <a href="sql.html">SQL</a>, <a href="cpp.html">C++</a>, <a href="yaml.html">YAML</a>, <a href="nemerle.html">Nemerle</a>
+- There are 2,744 members in the <a href="https://reddit.com/r/sqlite">SQLite subreddit</a>
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/sqlite">grammar</a> for SQLite
+- Learn <a href="https://exercism.org/tracks/sqlite">SQLite on exercism.</a>
+- Indeed.com has 561 matches for <a href="https://www.indeed.com/jobs?q=sqlite developer">"sqlite developer"</a>.
+- <a href="https://sqlite.org">sqlite.org</a> was registered in 2002
+- See also: (61 related languages) <a href="c.html">C</a>, <a href="sql.html">SQL</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="tcl.html">Tcl</a>, <a href="json.html">JSON</a>, <a href="sql-92.html">SQL-92</a>, <a href="perl.html">Perl</a>, <a href="unicode.html">Unicode</a>, <a href="jscript.html">JScript</a>, <a href="vbscript.html">VBScript</a>, <a href="django.html">Django</a>, <a href="drupal.html">Drupal</a>, <a href="rails.html">Ruby on Rails</a>, <a href="solaris.html">Solaris</a>, <a href="android.html">Android</a>, <a href="freebsd.html">FreeBSD</a>, <a href="ios.html">iOS</a>, <a href="autoit.html">AutoIt</a>, <a href="basic.html">BASIC</a>, <a href="freebasic.html">FreeBASIC</a>, <a href="purebasic.html">PureBasic</a>, <a href="visual-basic.net.html">Visual Basic .NET</a>, <a href="xojo.html">Xojo</a>, <a href="csharp.html">C#</a>, <a href="clipper.html">Clipper</a>, <a href="curl.html">Curl</a>, <a href="d.html">D</a>, <a href="elixir.html">Elixir</a>, <a href="emacs-lisp.html">Emacs Lisp</a>, <a href="f-sharp.html">F#</a>, <a href="go.html">Go</a>, <a href="haskell.html">Haskell</a>, <a href="haxe.html">Haxe</a>, <a href="java.html">Java</a>, <a href="javascript.html">JavaScript</a>, <a href="julia.html">Julia</a>, <a href="lisp.html">Lisp</a>, <a href="common-lisp.html">Common Lisp</a>, <a href="openlisp.html">OpenLisp</a>, <a href="livecode.html">LiveCode</a>, <a href="labview.html">LabVIEW G</a>, <a href="lua.html">Lua</a>, <a href="matlab.html">MATLAB</a>, <a href="nim.html">Nim</a>, <a href="objective-c.html">Objective-C</a>, <a href="ocaml.html">OCaml</a>, <a href="pascal.html">Pascal</a>, <a href="free-pascal.html">Free Pascal</a>, <a href="delphi.html">Delphi</a>, <a href="php.html">PHP</a>, <a href="pike.html">Pike</a>, <a href="python.html">Python</a>, <a href="r.html">R</a>, <a href="racket.html">Racket</a>, <a href="rebol.html">REBOL</a>, <a href="ruby.html">Ruby</a>, <a href="scheme.html">Scheme</a>, <a href="smalltalk.html">Smalltalk</a>, <a href="swift.html">Swift</a>, <a href="isbn.html">ISBN</a>, <a href="doi.html">DOI</a>
 - Read more about SQLite on the web: 1.
  https://www.vldb.org/pvldb/vol15/p3535-gaffney.pdf 1.
-- 1 PLDB concepts link to SQLite: Project Mentat
+- 1 PLDB concepts link to SQLite: <a href="project-mentat.html">Project Mentat</a>
 
+```Example from <a href='https://riju.codes/sqlite'>Riju</a>:
 SELECT &#39;Hello, world!&#39;;
 
-ABORT ACTION ADD AFTER ALL ALTER ANALYZE AND AS ASC ATTACH AUTOINCREMENT BEFORE BEGIN BETWEEN BY CASCADE CASE CAST CHECK COLLATE COLUMN COMMIT CONFLICT CONSTRAINT CREATE CROSS CURRENT_DATE CURRENT_TIME CURRENT_TIMESTAMP DATABASE DEFAULT DEFERRABLE DEFERRED DELETE DESC DETACH DISTINCT DROP EACH ELSE END ESCAPE EXCEPT EXCLUSIVE EXISTS EXPLAIN FAIL FOR FOREIGN FROM FULL GLOB GROUP HAVING IF IGNORE IMMEDIATE IN INDEX INDEXED INITIALLY INNER INSERT INSTEAD INTERSECT INTO IS ISNULL JOIN KEY LEFT LIKE LIMIT MATCH NATURAL NO NOT NOTNULL NULL OF OFFSET ON OR ORDER OUTER PLAN PRAGMA PRIMARY QUERY RAISE RECURSIVE REFERENCES REGEXP REINDEX RELEASE RENAME REPLACE RESTRICT RIGHT ROLLBACK ROW SAVEPOINT SELECT SET TABLE TEMP TEMPORARY THEN TO TRANSACTION TRIGGER UNION UNIQUE UPDATE USING VACUUM VALUES VIEW VIRTUAL WHEN WHERE WITH WITHOUT
+```
 
-Language features
+```SQLite <a href="../lists/keywords.html#q=sqlite">Keywords</a>
+ABORT ACTION ADD AFTER ALL ALTER ANALYZE AND AS ASC ATTACH AUTOINCREMENT BEFORE BEGIN BETWEEN BY CASCADE CASE CAST CHECK COLLATE COLUMN COMMIT CONFLICT CONSTRAINT CREATE CROSS CURRENT_DATE CURRENT_TIME CURRENT_TIMESTAMP DATABASE DEFAULT DEFERRABLE DEFERRED DELETE DESC DETACH DISTINCT DROP EACH ELSE END ESCAPE EXCEPT EXCLUSIVE EXISTS EXPLAIN FAIL FOR FOREIGN FROM FULL GLOB GROUP HAVING IF IGNORE IMMEDIATE IN INDEX INDEXED INITIALLY INNER INSERT INSTEAD INTERSECT INTO IS ISNULL JOIN KEY LEFT LIKE LIMIT MATCH NATURAL NO NOT NOTNULL NULL OF OFFSET ON OR ORDER OUTER PLAN PRAGMA PRIMARY QUERY RAISE RECURSIVE REFERENCES REGEXP REINDEX RELEASE RENAME REPLACE RESTRICT RIGHT ROLLBACK ROW SAVEPOINT SELECT SET TABLE TEMP TEMPORARY THEN TO TRANSACTION TRIGGER UNION UNIQUE UPDATE USING VACUUM VALUES VIEW VIRTUAL WHEN WHERE WITH WITHOUT
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

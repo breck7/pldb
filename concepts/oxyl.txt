@@ -1,22 +1,24 @@
 Oxyl
 ====
 
-Oxyl is a programming language created in 2019 by J Rain De Jager.
+Oxyl is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2019 by J Rain De Jager.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2019
  https://pldb.io/concepts/../lists/creators.html#q=J%20Rain%20De%20Jager J Rain De Jager
 
-#737 on PLDB
-5 Years Old
+#777 on PLDB
+7 Years Old
 
+```Download source code:
 git clone https://gitlab.com/selfReferentialName/oxylc
+```
 
 Oxyl is a functional programming language focused on being explicit and safe but not clunky or verbose
 
-- Tags: programming language
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
 - Oxyl on GitLab
  https://gitlab.com/selfReferentialName/oxylc Oxyl on GitLab
-- Early development of Oxyl happened in https://gitlab.com/selfReferentialName/oxylc/-/issues
-- Oxyl is written in Bourne shell, Assembly language, C, Vim script, AsciiDoc, YAML, Make, Python, Dockerfile, Bash
-- There is a central package repository for Oxyl
+- Early development of Oxyl happened in <a href="../lists/labs.html#q=https://gitlab.com/selfReferentialName/oxylc/-/issues">https://gitlab.com/selfReferentialName/oxylc/-/issues</a>
+- Oxyl is written in <a href="bourne-shell.html">Bourne shell</a>, <a href="assembly-language.html">Assembly language</a>, <a href="c.html">C</a>, <a href="vim-script.html">Vim script</a>, <a href="asciidoc.html">AsciiDoc</a>, <a href="yaml.html">YAML</a>, <a href="make.html">Make</a>, <a href="python.html">Python</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="bash.html">Bash</a>
+- There is a <a href="https://opam.ocaml.org/packages/oxylc">central package repository</a> for Oxyl
 
-View source
+Built with Scroll v178.2.3

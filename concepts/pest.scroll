@@ -1,0 +1,47 @@
+../code/conceptPage.scroll
+
+id pest
+name pest
+appeared 2018
+creators Dragoș Tiselice
+tags grammarLanguage
+website https://pest.rs/
+webRepl https://pest.rs/#editor
+description pest is a general purpose parser written in Rust with a focus on accessibility, correctness, and performance.
+fileExtensions pest
+writtenIn rust toml yaml json markdown bourne-shell svg
+
+docs https://docs.rs/pest/latest/pest/
+ebook https://pest.rs/book/
+repoStats
+ firstCommit 2016
+ newestCommit 2025
+ commits 1329
+ mb 3
+ committers 145
+ files 166
+ linesOfCode 71928
+
+example
+ alpha = { 'a'..'z' | 'A'..'Z' }
+ digit = { '0'..'9' }
+ 
+ ident = { (alpha | digit)+ }
+ 
+ ident_list = _{ !digit ~ ident ~ (" " ~ ident)+ }
+          // ^
+          // ident_list rule is silent (produces no tokens or error reports)
+
+githubRepo https://github.com/pest-parser/pest
+ stars 4822
+ forks 266
+ subscribers 42
+ created 2016
+ updated 2025
+ description The Elegant Parser
+ issues 65
+
+lineCommentToken //
+
+hasComments true
+ // A comment

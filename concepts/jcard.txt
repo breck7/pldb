@@ -1,17 +1,18 @@
 jcard
 =====
 
-jcard is a json format created in 2014.
+jcard is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22jsonFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">json format</a> created in 2014.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
 
-#4129 on PLDB
-10 Years Old
+#4279 on PLDB
+12 Years Old
 
-- Tags: jsonFormat
-- Early development of jcard happened in Versit Consortium
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"jsonFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>jsonFormat</a>
+- Early development of jcard happened in <a href="../lists/labs.html#q=Versit Consortium">Versit Consortium</a>
 - Read more about jcard on the web: 1.
  https://en.wikipedia.org/wiki/VCard 1.
 
+```Example from the web:
 [&quot;vcard&quot;,
   [
     [&quot;version&quot;, {}, &quot;text&quot;, &quot;4.0&quot;],
@@ -36,5 +37,6 @@ jcard is a json format created in 2014.
     [&quot;rev&quot;, {}, &quot;timestamp&quot;, &quot;2008-04-24T19:52:43Z&quot;]
   ]
 ]
+```
 
-View source
+Built with Scroll v178.2.3

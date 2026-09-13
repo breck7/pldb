@@ -1,19 +1,20 @@
 jplace
 ======
 
-jplace is a json format created in 2012.
+jplace is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22jsonFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">json format</a> created in 2012.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
 
-#3117 on PLDB
-12 Years Old
+#3256 on PLDB
+14 Years Old
 
 We have developed a unified format for phylogenetic placements, that is, mappings of environmental sequence data (e.g., short reads) into a phylogenetic tree. We are motivated to do so by the growing number of tools for computing and post-processing phylogenetic placements, and the lack of an established standard for storing them. The format is lightweight, versatile, extensible, and is based on the JSON format, which can be parsed by most modern programming languages.
 
-- Tags: jsonFormat
-- Early development of jplace happened in Fred Hutchinson Cancer Research Center and University of Washington and Heidelberg Institute for Theoretical Studies
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"jsonFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>jsonFormat</a>
+- Early development of jplace happened in <a href="../lists/labs.html#q=Fred Hutchinson Cancer Research Center">Fred Hutchinson Cancer Research Center</a> and <a href="../lists/labs.html#q=University of Washington">University of Washington</a> and <a href="../lists/labs.html#q=Heidelberg Institute for Theoretical Studies">Heidelberg Institute for Theoretical Studies</a>
 - Read more about jplace on the web: 1.
  https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0031009 1.
 
+```Example from the web:
 {
 “tree”: “((A:0.2{0},B:0.09{1}):0.7{2},C:0.5{3}){4};”,
 “placements”:
@@ -35,5 +36,6 @@ We have developed a unified format for phylogenetic placements, that is, mapping
 [“edge_num”, “likelihood”, “like_weight_ratio”,
            “distal_length”, “pendant_length”]
 }
+```
 
-View source
+Built with Scroll v178.2.3

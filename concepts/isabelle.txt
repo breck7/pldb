@@ -1,27 +1,29 @@
 Isabelle
 ========
 
-Isabelle is an open source programming language created in 1986.
+Isabelle is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1986.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221986%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1986
 
-#491 on PLDB
-38 Years Old
-839 Repos
+#403 on PLDB
+40 Years Old
+839 <span title="Isabelle repos on GitHub.">Repos</span>
 
 The Isabelle theorem prover is an interactive theorem prover, a Higher Order Logic (HOL) theorem prover. It is an LCF-style theorem prover (written in Standard ML), so it is based on a small logical core to ease logical correctness. Isabelle is generic: it provides a meta-logic (a weak type theory), which is used to encode object logics like first-order logic (FOL), higher-order logic (HOL) or Zermelo–Fraenkel set theory (ZFC). Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Isabelle_(proof_assistant) Read more on Wikipedia...
 
-- Tags: programming language
-- There are at least 839 Isabelle repos on GitHub
-- Early development of Isabelle happened in University of Cambridge and Technische Universität München
-- The  Google BigQuery Public Dataset GitHub snapshot shows 115 users using Isabelle in 137 repos on GitHub
-- Isabelle LSP implementation
-- Pygments supports syntax highlighting for Isabelle
-- GitHub supports syntax highlighting for Isabelle
-- See also: (2 related languages) Standard ML, Coq
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- There are at least 839 Isabelle repos on <a href="https://github.com/search?q=language:Isabelle">GitHub</a>
+- Early development of Isabelle happened in <a href="../lists/labs.html#q=University of Cambridge">University of Cambridge</a> and <a href="../lists/labs.html#q=Technische Universität München">Technische Universität München</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 115 users using Isabelle in 137 repos on <a href="https://api.github.com/search/repositories?q=language:Isabelle">GitHub</a>
+- Isabelle <a href="language-server-protocol.html">LSP</a> <a href="https://isabelle.in.tum.de/repos/isabelle/file/tip/src/Tools/VSCode">implementation</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/theorem.py">syntax highlighting</a> for Isabelle
+- GitHub supports <a href="https://github.com/lsf37/Isabelle.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Isabelle
+- See also: (2 related languages) <a href="standard-ml.html">Standard ML</a>, <a href="coq.html">Coq</a>
 - Read more about Isabelle on the web: 1.
  https://books.google.com/books?id=xwdqCQAAQBAJ&dq=isabelle+language+proof&lr= 1.
+- 1 PLDB concepts link to Isabelle: <a href="lego.html">LEGO</a>
 
+```Example from <a href='https://github.com/lsf37/Isabelle.tmbundle'>Linguist</a>:
 theory HelloWorld
 imports Main
 begin
@@ -69,6 +71,9 @@ corollary &quot;\&lt;forall&gt;(l::string). rev (rev l) = l&quot; by(fastforce i
 
 end
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Isabelle_(proof_assistant)'>Wikipedia</a>:
 theorem sqrt2_not_rational:
   &quot;sqrt (real 2) ∉ ℚ&quot;
 proof
@@ -91,38 +96,39 @@ proof
   with lowest_terms have &quot;2 dvd 1&quot; by simp
   thus False using odd_one by blast
 qed
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token True False
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (* A comment
   *)
@@ -130,7 +136,7 @@ row
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (* A comment
   *)
@@ -138,8 +144,8 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

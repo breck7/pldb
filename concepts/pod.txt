@@ -1,24 +1,25 @@
 Pod
 ===
 
-Pod, aka Plain Old Documentation, is a text markup language created in 1997.
+Pod, aka Plain Old Documentation, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22textMarkup%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">text markup language</a> created in 1997.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1997
 
-#1130 on PLDB
-27 Years Old
-0 Repos
+#1175 on PLDB
+29 Years Old
+0 <span title="Pod repos on GitHub.">Repos</span>
 
 Plain Old Documentation (pod) is a lightweight markup language used to document the Perl programming language.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Plain_Old_Documentation Read more on Wikipedia...
 
-- Tags: text markup language
-- There are at least 0 Pod repos on GitHub
-- Early development of Pod happened in https://www.perl.org
-- GitHub supports syntax highlighting for Pod
-- See also: (10 related languages) Perl, XML, Tex, Markdown, Parrot, Bash, TiddlyWiki, MediaWiki, ASCII, UTF-8
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- There are at least 0 Pod repos on <a href="https://github.com/search?q=language:Pod">GitHub</a>
+- Early development of Pod happened in <a href="../lists/labs.html#q=https://www.perl.org">https://www.perl.org</a>
+- GitHub supports <a href="https://github.com/perl6/atom-language-perl6" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Pod
+- See also: (10 related languages) <a href="perl.html">Perl</a>, <a href="xml.html">XML</a>, <a href="tex.html">Tex</a>, <a href="markdown.html">Markdown</a>, <a href="parrot-vm.html">Parrot</a>, <a href="bash.html">Bash</a>, <a href="tiddlywiki.html">TiddlyWiki</a>, <a href="mediawiki.html">MediaWiki</a>, <a href="ascii.html">ASCII</a>, <a href="utf-8.html">UTF-8</a>
 - Read more about Pod on the web: 1.
  https://groups.google.com/forum/#!search/%22Plain$20Old$20Documentation%22/comp.lang.perl.misc/A9zVCf4UrIs/1hSITu_f4ckJ 1.
 
+```Example from <a href='https://github.com/perl6/atom-language-perl6'>Linguist</a>:
 use strict;
 use warnings;
 package DZT::Sample;
@@ -30,6 +31,9 @@ sub return_arrayref_of_values_passed {
 
 1;
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Plain_Old_Documentation'>Wikipedia</a>:
 =head1 NAME
 
 My::Module - An example module
@@ -76,5 +80,6 @@ Juerd - L&lt;http://juerd.nl/&gt;
 L&lt;perlpod&gt;, L&lt;perlpodspec&gt;
 
 =cut
+```
 
-View source
+Built with Scroll v178.2.3

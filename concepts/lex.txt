@@ -1,30 +1,31 @@
 Lex
 ===
 
-Lex is a grammar language created in 1975 by Mike Lesk and Eric Schmidt.
+Lex is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22grammarLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">grammar language</a> created in 1975 by Mike Lesk and Eric Schmidt.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221975%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1975
  https://pldb.io/concepts/../lists/creators.html#q=Mike%20Lesk Mike Lesk
  https://pldb.io/concepts/../lists/creators.html#q=Eric%20Schmidt Eric Schmidt
 
-#199 on PLDB
-49 Years Old
-3k Repos
+#200 on PLDB
+51 Years Old
+3k <span title="Lex repos on GitHub.">Repos</span>
 
 Lex is a computer program that generates lexical analyzers ("scanners" or "lexers"). Lex is commonly used with the yacc parser generator. Lex, originally written by Mike Lesk and Eric Schmidt and described in 1975, is the standard lexical analyzer generator on many Unix systems, and an equivalent tool is specified as part of the POSIX standard. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Lex_(software) Read more on Wikipedia...
 
-- Tags: grammarLanguage
-- There are at least 2,902 Lex repos on GitHub
-- Early development of Lex happened in https://github.com/babyraging/yash/issues
-- The  Google BigQuery Public Dataset GitHub snapshot shows 10k users using Lex in 12k repos on GitHub
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"grammarLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>grammarLanguage</a>
+- There are at least 2,902 Lex repos on <a href="https://github.com/search?q=language:Lex">GitHub</a>
+- Early development of Lex happened in <a href="../lists/labs.html#q=https://github.com/babyraging/yash/issues">https://github.com/babyraging/yash/issues</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 10k users using Lex in 12k repos on <a href="https://api.github.com/search/repositories?q=language:Lex">GitHub</a>
 - Lex on HOPL
  https://hopl.info/showlanguage.prx?exp=680 Lex on HOPL
-- GitHub supports syntax highlighting for Lex
-- See also: (6 related languages) Yacc, Unix, C, Regular Expressions, Bison, Ragel
+- GitHub supports <a href="https://github.com/Alhadis/language-grammars" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Lex
+- See also: (6 related languages) <a href="yacc.html">Yacc</a>, <a href="unix.html">Unix</a>, <a href="c.html">C</a>, <a href="regex.html">Regular Expressions</a>, <a href="bison.html">Bison</a>, <a href="ragel.html">Ragel</a>
 - Read more about Lex on the web: 1.
  https://github.com/babyraging/yash 1.
-- 62 PLDB concepts link to Lex: Ad-hoc, ana, Blox, Boomerang Decompiler, C3, Carbon, Chapel, Cognate, cor, Crema, duro, eC, Eiffel, ELENA, Em, Euphoria, Fancy, Filebench WML, FLEX, GAP, Gforth, HHVM, hobbes, invokator, Jison Lex, jq, Koka, latino, Lean, Linux, little, Logica, mal, mimium, mlpolyr, Mudlle, mythryl, NCAR Command Language, nesC, never, Opal, Open Shading Language, OpenComal, orca, PHP, GNU Poke, PostgreSQL, PROMETHEUS, Ragel, RamdaScript, Recfiles, redprl, RicScript, shill, Slony, solid, Streem, t2b, UrWeb, VLC, VSXu, YARA
+- 64 PLDB concepts link to Lex: <a href="ad-hoc.html">Ad-hoc</a>, <a href="ana.html">ana</a>, <a href="blox.html">Blox</a>, <a href="boomerang-decompiler.html">Boomerang Decompiler</a>, <a href="c3.html">C3</a>, <a href="carbon.html">Carbon</a>, <a href="cmake.html">CMake</a>, <a href="cognate.html">Cognate</a>, <a href="cor.html">cor</a>, <a href="crema.html">Crema</a>, <a href="duro.html">duro</a>, <a href="ec.html">eC</a>, <a href="ecl.html">ECL</a>, <a href="eiffel.html">Eiffel</a>, <a href="elena.html">ELENA</a>, <a href="em.html">Em</a>, <a href="euphoria.html">Euphoria</a>, <a href="fancy.html">Fancy</a>, <a href="filebench-wml.html">Filebench WML</a>, <a href="flex.html">FLEX</a>, <a href="gap.html">GAP</a>, <a href="gforth.html">Gforth</a>, <a href="hhvm.html">HHVM</a>, <a href="hobbes.html">hobbes</a>, <a href="invokator.html">invokator</a>, <a href="jison-lex.html">Jison Lex</a>, <a href="jq.html">jq</a>, <a href="koka.html">Koka</a>, <a href="latino.html">latino</a>, <a href="lean.html">Lean</a>, <a href="linux.html">Linux</a>, <a href="little.html">little</a>, <a href="logica.html">Logica</a>, <a href="mal.html">mal</a>, <a href="mimium.html">mimium</a>, <a href="mlpolyr.html">mlpolyr</a>, <a href="mudlle.html">Mudlle</a>, <a href="mythryl.html">mythryl</a>, <a href="ncl.html">NCAR Command Language</a>, <a href="nesc.html">nesC</a>, <a href="never.html">never</a>, <a href="opal.html">Opal</a>, <a href="open-shading-language.html">Open Shading Language</a>, <a href="opencomal.html">OpenComal</a>, <a href="openscad.html">OpenSCAD</a>, <a href="orca.html">orca</a>, <a href="php.html">PHP</a>, <a href="poke.html">GNU Poke</a>, <a href="postgresql.html">PostgreSQL</a>, <a href="prometheus.html">PROMETHEUS</a>, <a href="ragel.html">Ragel</a>, <a href="ramdascript.html">RamdaScript</a>, <a href="recfiles.html">Recfiles</a>, <a href="redprl.html">redprl</a>, <a href="ricscript.html">RicScript</a>, <a href="shill.html">shill</a>, <a href="slony.html">Slony</a>, <a href="solid.html">solid</a>, <a href="streem.html">Streem</a>, <a href="t2b.html">t2b</a>, <a href="urweb.html">UrWeb</a>, <a href="vlc.html">VLC</a>, <a href="vsxu.html">VSXu</a>, <a href="yara.html">YARA</a>
 
+```Example from the web:
 /*** Definition section ***/
 
 %{
@@ -52,7 +53,9 @@ int main(void)
     yylex();
     return 0;
 }
+```
 
+```Example from <a href='https://github.com/Alhadis/language-grammars'>Linguist</a>:
 /*
    +----------------------------------------------------------------------+
    | Zend Engine                                                          |
@@ -95,25 +98,28 @@ int main(void)
 /* allow the scanner to read one null byte after the end of the string (from ZEND_MMAP_AHEAD)
  * so that if will be able to terminate to match the current token (e.g. non-enclosed string) */
 #define YYFILL(n) { if (YYCURSOR &gt; YYLIMIT) return 0
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Lex_(software)'>Wikipedia</a>:
 Saw an integer: 123
 Saw an integer: 2
 Saw an integer: 6
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -121,7 +127,7 @@ row
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -129,8 +135,8 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

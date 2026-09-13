@@ -1,24 +1,26 @@
 SciPy
 =====
 
-SciPy is an open source library created in 2001 by Travis Oliphant and Pearu Peterson and Eric Jones.
+SciPy is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22library%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">library</a> created in 2001 by Travis Oliphant and Pearu Peterson and Eric Jones.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222001%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2001
  https://pldb.io/concepts/../lists/creators.html#q=Travis%20Oliphant Travis Oliphant
  https://pldb.io/concepts/../lists/creators.html#q=Pearu%20Peterson Pearu Peterson
  https://pldb.io/concepts/../lists/creators.html#q=Eric%20Jones Eric Jones
 
-#297 on PLDB
-23 Years Old
+#319 on PLDB
+25 Years Old
 
+```Download source code:
 git clone https://github.com/scipy/scipy
+```
 
 SciPy (pronounced "Sigh Pie") is an open source Python library used for scientific computing and technical computing. SciPy contains modules for optimization, linear algebra, integration, interpolation, special functions, FFT, signal and image processing, ODE solvers and other tasks common in science and engineering. SciPy builds on the NumPy array object and is part of the NumPy stack which includes tools like Matplotlib, pandas and SymPy, and an expanding set of scientific computing libraries. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/SciPy Read more on Wikipedia...
 
-- Tags: library
-- SciPy is developed on GitHub and has 12,770 stars
-- Early development of SciPy happened in https://github.com/scipy
-- SciPy is written in Python, reStructuredText, FORTRAN 77, C, Cython, Meson, C++, YAML, Markdown, Bourne shell, SVG, JSON, MATLAB, Tex, Make, Ini, Pascal, Diff, TOML, R, CSS, Fortran 90, HTML
-- See also: (10 related languages) Python, Fortran, C, NumPy, Matplotlib, Pandas, MATLAB, GNU Octave, Scilab, Sage
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"library"%5D%7D%5D%2C"logic"%3A"AND"%7D'>library</a>
+- SciPy is developed on <a href="https://github.com/scipy/scipy">GitHub</a> and has 12,770 stars
+- Early development of SciPy happened in <a href="../lists/labs.html#q=https://github.com/scipy">https://github.com/scipy</a>
+- SciPy is written in <a href="python.html">Python</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="fortran-77.html">FORTRAN 77</a>, <a href="c.html">C</a>, <a href="cython.html">Cython</a>, <a href="meson.html">Meson</a>, <a href="cpp.html">C++</a>, <a href="yaml.html">YAML</a>, <a href="markdown.html">Markdown</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="svg.html">SVG</a>, <a href="json.html">JSON</a>, <a href="matlab.html">MATLAB</a>, <a href="tex.html">Tex</a>, <a href="make.html">Make</a>, <a href="ini.html">Ini</a>, <a href="pascal.html">Pascal</a>, <a href="diff.html">Diff</a>, <a href="toml.html">TOML</a>, <a href="r.html">R</a>, <a href="css.html">CSS</a>, <a href="fortran-90.html">Fortran 90</a>, <a href="html.html">HTML</a>
+- See also: (10 related languages) <a href="python.html">Python</a>, <a href="fortran.html">Fortran</a>, <a href="c.html">C</a>, <a href="numpy.html">NumPy</a>, <a href="matplotlib.html">Matplotlib</a>, <a href="pandas.html">Pandas</a>, <a href="matlab.html">MATLAB</a>, <a href="octave.html">GNU Octave</a>, <a href="scilab.html">Scilab</a>, <a href="sagemath.html">Sage</a>
 
-View source
+Built with Scroll v178.2.3

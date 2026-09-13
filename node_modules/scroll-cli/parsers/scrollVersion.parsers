@@ -5,5 +5,5 @@ scrollVersionLinkParser
  description Print Scroll version.
  javascript
   get text() {
-    return `Built with Scroll v${this.parent.file?.SCROLL_VERSION || ""}`
+    return `Built with Scroll v${this.root.scrollVersion}`
   }

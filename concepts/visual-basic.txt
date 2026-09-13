@@ -1,52 +1,61 @@
 Visual Basic
 ============
 
-Visual Basic is a programming language created in 1991.
+Visual Basic is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1991.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221991%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1991
 
-#44 on PLDB
-33 Years Old
+#45 on PLDB
+35 Years Old
 
 Visual Basic is a third-generation event-driven programming language and integrated development environment (IDE) from Microsoft for its Component Object Model (COM) programming model first released in 1991 and declared legacy during 2008. Microsoft intended Visual Basic to be relatively easy to learn and use. Visual Basic was derived from BASIC and enables the rapid application development (RAD) of graphical user interface (GUI) applications, access to databases using Data Access Objects, Remote Data Objects, or ActiveX Data Objects, and creation of ActiveX controls and objects. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Visual_Basic Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Visual Basic happened in Microsoft
-- The  Google BigQuery Public Dataset GitHub snapshot shows 9k users using Visual Basic in 11k repos on GitHub
-- Check out the 21 Visual Basic meetup groups on Meetup.com.
-- There are 7,807 members in the Visual Basic subreddit
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Visual Basic happened in <a href="../lists/labs.html#q=Microsoft">Microsoft</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 9k users using Visual Basic in 11k repos on <a href="https://api.github.com/search/repositories?q=language:Visual Basic">GitHub</a>
+- Check out the 21 <a href="https://www.meetup.com/topics/vb/">Visual Basic meetup groups</a> on Meetup.com.
+- There are 7,807 members in the <a href="https://reddit.com/r/visualbasic">Visual Basic subreddit</a>
 - Visual Basic on HOPL
  https://hopl.info/showlanguage.prx?exp=1374 Visual Basic on HOPL
-- Visual Basic ranks #6 in the TIOBE Index
+- Visual Basic ranks #6 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - Visual Basic Ubuntu package
  https://packages.ubuntu.com/jammy/mono-vbnc Visual Basic Ubuntu package
-- ANTLR grammar for Visual Basic
-- Monaco package for syntax highlighting Visual Basic
-- GitHub supports syntax highlighting for Visual Basic
-- Visual Basic appears in the Quine Relay project
-- Learn Visual Basic on exercism.
-- Indeed.com has 3,294 matches for "visual basic engineer".
-- See also: (18 related languages) Visual Basic .NET, Visual Studio, BASIC, Gambas, Xojo, Basic4ppc, NS Basic, VBA, Perl, Pascal, Fortran, VBScript, Ruby, QuickBASIC, AUTOCAD, ASP, WinWrap Basic, LotusScript
-- 14 PLDB concepts link to Visual Basic: cloc, Emscripten, Ibis, Iterm2, Linotte, mal, NCAR Command Language, Pygments, Red, SmallBASIC, Speedie, VLC, weebasic, xlwings-editor
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/vb6">grammar</a> for Visual Basic
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/vb">package</a> for syntax highlighting Visual Basic
+- GitHub supports <a href="https://github.com/angryant0007/VBDotNetSyntax" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Visual Basic
+- Visual Basic appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Learn <a href="https://exercism.org/tracks/visual">Visual Basic on exercism.</a>
+- Indeed.com has 3,294 matches for <a href="https://www.indeed.com/jobs?q=visual basic engineer">"visual basic engineer"</a>.
+- See also: (18 related languages) <a href="visual-basic.net.html">Visual Basic .NET</a>, <a href="visual-studio-editor.html">Visual Studio</a>, <a href="basic.html">BASIC</a>, <a href="gambas.html">Gambas</a>, <a href="xojo.html">Xojo</a>, <a href="basic4ppc.html">Basic4ppc</a>, <a href="ns-basic.html">NS Basic</a>, <a href="vba.html">VBA</a>, <a href="perl.html">Perl</a>, <a href="pascal.html">Pascal</a>, <a href="fortran.html">Fortran</a>, <a href="vbscript.html">VBScript</a>, <a href="ruby.html">Ruby</a>, <a href="quickbasic.html">QuickBASIC</a>, <a href="autocad-app.html">AutoCAD</a>, <a href="asp.html">ASP</a>, <a href="winwrap-basic.html">WinWrap Basic</a>, <a href="lotusscript.html">LotusScript</a>
+- 15 PLDB concepts link to Visual Basic: <a href="cloc.html">cloc</a>, <a href="emscripten.html">Emscripten</a>, <a href="ibis.html">Ibis</a>, <a href="iterm2.html">Iterm2</a>, <a href="linotte.html">Linotte</a>, <a href="mal.html">mal</a>, <a href="ncl.html">NCAR Command Language</a>, <a href="olc.html">Open Location Code</a>, <a href="pygments.html">Pygments</a>, <a href="red.html">Red</a>, <a href="smallbasic.html">SmallBASIC</a>, <a href="speedie.html">Speedie</a>, <a href="vlc.html">VLC</a>, <a href="weebasic.html">weebasic</a>, <a href="xlwings-editor.html">xlwings-editor</a>
 
+```Example from <a href='https://godbolt.org/'>Compiler Explorer</a>:
 Module Program
     Function Square(num As Integer) As Integer
         Return num * num
     End Function
 End Module
 
+```
+
+```Example from <a href='https://riju.codes/visualbasic'>Riju</a>:
 Module Main
     Sub Main(args As String())
         Console.WriteLine(&quot;Hello, world!&quot;)
     End Sub
 End Module
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/v/Visual Basic.vb'>hello-world</a>:
 Module HelloWorld
     Sub Main()
         MsgBox(&quot;Hello World&quot;)
     End Sub
 End Module
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Visual_Basic'>Wikipedia</a>:
 Option Explicit
 Dim Count As Integer
 Private Sub Form_Load()
@@ -57,60 +66,63 @@ Private Sub Timer1_Timer()
     Count = Count + 1
     Label1.Caption = Count
 End Sub
+```
 
+```Visual Basic <a href="../lists/keywords.html#q=visual-basic">Keywords</a>
 AddHandler AddressOf Alias And AndAlso As Async Boolean ByRef Byte ByVal Call Case Catch CBool CByte CChar CDate CDbl CDec Char CInt Class CLng CObj Const Continue CSByte CShort CSng CStr CType CUInt CULng CUShort Date Decimal Declare Default Delegate Dim DirectCast Do Double Each Else ElseIf End EndIf Enum Erase Error Event Exit False Finally For Friend Function Get GetType GetXMLNamespace Global GoSub GoTo Handles If Implements Imports In Inherits Integer Interface Is IsNot Let Lib Like Long Loop Me Mod Module MustInherit MustOverride MyBase MyClass NameOf Namespace Narrowing New Next Not Nothing NotInheritable NotOverridable Object Of On Operator Option Optional Or OrElse Out Overloads Overridable Overrides ParamArray Partial Private Property Protected Public RaiseEvent ReadOnly ReDim RemoveHandler Resume Return SByte Select Set Shadows Shared Short Single Static Step Stop String Structure Sub SyncLock Then Throw To True Try TryCast TypeOf UInteger ULong UShort Using Variant Wend When While Widening With WithEvents WriteOnly Xor
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Standard Library
  FeatureLink ../features/hasStandardLibrary.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   Console.WriteLine("Hello, World!")
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token True False
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token "
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token Console.WriteLine
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ' A comment
  Token '
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Directives
  FeatureLink ../features/hasDirectives.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   Option Explicit On|Off
   Option Compare Binary
@@ -118,20 +130,20 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -1,19 +1,22 @@
 netbeans-editor
 ===============
 
-netbeans-editor is an open source editor created in 2013 by pgebauer.
+netbeans-editor is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22editor%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">editor</a> created in 2013 by pgebauer.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222013%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2013
  https://pldb.io/concepts/../lists/creators.html#q=pgebauer pgebauer
 
-#771 on PLDB
-11 Years Old
+#674 on PLDB
+13 Years Old
 
+```Download source code:
 git clone https://github.com/apache/netbeans
+```
 
 Apache NetBeans
 
-- Tags: editor
-- netbeans-editor is developed on GitHub and has 2,609 stars
-- Early development of netbeans-editor happened in Apache Software Foundation
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"editor"%5D%7D%5D%2C"logic"%3A"AND"%7D'>editor</a>
+- netbeans-editor is developed on <a href="https://github.com/apache/netbeans">GitHub</a> and has 2,609 stars
+- Early development of netbeans-editor happened in <a href="../lists/labs.html#q=Apache Software Foundation">Apache Software Foundation</a>
+- netbeans-editor is written in <a href="java.html">Java</a>, <a href="xml.html">XML</a>, <a href="php.html">PHP</a>, <a href="javascript.html">JavaScript</a>, <a href="html.html">HTML</a>, <a href="xsd.html">XSD</a>, <a href="standard-ml.html">Standard ML</a>, <a href="dtd.html">DTD</a>, <a href="twig.html">Twig</a>, <a href="svg.html">SVG</a>, <a href="groovy.html">Groovy</a>, <a href="java-server-pages.html">JSP</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="pug.html">Pug</a>, <a href="xhtml.html">XHTML</a>, <a href="xslt.html">XSLT</a>, <a href="css.html">CSS</a>, <a href="json.html">JSON</a>, <a href="c.html">C</a>, <a href="yaml.html">YAML</a>, <a href="gradle.html">Gradle</a>, <a href="diff.html">Diff</a>, <a href="smarty.html">Smarty</a>, <a href="typescript.html">TypeScript</a>, <a href="fxml.html">FXML</a>, <a href="sql.html">SQL</a>, <a href="markdown.html">Markdown</a>, <a href="ini.html">Ini</a>, <a href="make.html">Make</a>, <a href="cpp.html">C++</a>, <a href="scss.html">SCSS</a>, <a href="toml.html">TOML</a>, <a href="less.html">Less</a>, <a href="rust.html">Rust</a>, <a href="bash.html">Bash</a>, <a href="python.html">Python</a>, <a href="hcl.html">HCL</a>, <a href="swift.html">Swift</a>, <a href="xmi.html">XML Metadata Interchange</a>, <a href="perl.html">Perl</a>, <a href="r.html">R</a>, <a href="aspectj.html">AspectJ</a>, <a href="handlebars.html">Handlebars</a>, <a href="haskell.html">Haskell</a>, <a href="prolog.html">Prolog</a>, <a href="jsx.html">JSX</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="go.html">Go</a>, <a href="ruby.html">Ruby</a>
 
-View source
+Built with Scroll v178.2.3

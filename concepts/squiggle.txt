@@ -1,21 +1,23 @@
 squiggle
 ========
 
-squiggle is a programming language created in 2015.
+squiggle is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2015.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
 
-#1651 on PLDB
-9 Years Old
+#1698 on PLDB
+11 Years Old
 
+```Download source code:
 git clone https://github.com/squiggle-lang/squiggle-lang
+```
 
 NO LONGER IN DEVELOPMENT
 
-- Tags: programming language
-- squiggle is developed on GitHub and has 27 stars
-- Early development of squiggle happened in https://github.com/squiggle-lang
-- squiggle is written in JavaScript, Markdown, JSON, HTML, Bourne shell, YAML, Ruby
-- squiggle-lang.org was registered in 2015
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- squiggle is developed on <a href="https://github.com/squiggle-lang/squiggle-lang">GitHub</a> and has 27 stars
+- Early development of squiggle happened in <a href="../lists/labs.html#q=https://github.com/squiggle-lang">https://github.com/squiggle-lang</a>
+- squiggle is written in <a href="javascript.html">JavaScript</a>, <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>, <a href="html.html">HTML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="yaml.html">YAML</a>, <a href="ruby.html">Ruby</a>
+- <a href="https://web.archive.org/web/20210507050608/http://squiggle-lang.org">squiggle-lang.org</a> was registered in 2015
 
 HackerNews discussions of squiggle
 ==================================
@@ -23,4 +25,4 @@ HackerNews discussions of squiggle
 title|titleLink|date|score|comments
 Squiggle|https://news.ycombinator.com/item?id=10524071|11/07/2015|2|1
 
-View source
+Built with Scroll v178.2.3

@@ -1,22 +1,25 @@
 Superjson
 =========
 
-Superjson is a data notation created in 2014 by Matthew Mueller.
+Superjson is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 2014 by Matthew Mueller.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
  https://pldb.io/concepts/../lists/creators.html#q=Matthew%20Mueller Matthew Mueller
 
-#797 on PLDB
-10 Years Old
+#846 on PLDB
+12 Years Old
 
+```Download source code:
 git clone https://github.com/blitz-js/superjson
+```
 
 A superset of JSON adding: undefined bigint Date RegExp Set Map Error
 
-- Tags: dataNotation
-- Superjson is developed on GitHub and has 3,901 stars
-- Superjson is a superset of JSON
-- Superjson is written in TypeScript, JSON, Markdown, JavaScript, YAML, Bourne shell
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- Superjson is developed on <a href="https://github.com/blitz-js/superjson">GitHub</a> and has 3,901 stars
+- Superjson is a <a href="../lists/explorer.html#columns=rank~id~appeared~tags~creators~supersetOf&searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22!null%22%2C%22data%22%3A%22supersetOf%22%2C%22origData%22%3A%22supersetOf%22%2C%22tags%22%3A%22html%22%2C%22value%22%3A%5B%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">superset</a> of <a href="json.html">JSON</a>
+- Superjson is written in <a href="typescript.html">TypeScript</a>, <a href="json.html">JSON</a>, <a href="markdown.html">Markdown</a>, <a href="javascript.html">JavaScript</a>, <a href="yaml.html">YAML</a>, <a href="bourne-shell.html">Bourne shell</a>
 
+```Example from the web:
 const object = {
   normal: &#39;string&#39;,
   timestamp: new Date(),
@@ -24,5 +27,6 @@ const object = {
 };
 
 const { json, meta } = serialize(object);
+```
 
-View source
+Built with Scroll v178.2.3

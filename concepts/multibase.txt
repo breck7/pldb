@@ -1,21 +1,23 @@
 multibase
 =========
 
-multibase is a standard created in 2016 by Juan Benet.
+multibase is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22standard%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">standard</a> created in 2016 by Juan Benet.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2016
  https://pldb.io/concepts/../lists/creators.html#q=Juan%20Benet Juan Benet
 
-#1305 on PLDB
-8 Years Old
+#1362 on PLDB
+10 Years Old
 
+```Download source code:
 git clone https://github.com/multiformats/multibase
+```
 
 Self identifying base encodings
 
-- Tags: standard
-- multibase is developed on GitHub and has 273 stars
-- Early development of multibase happened in https://github.com/multiformats
-- multibase is written in Markdown, CSV, YAML
-- See also: (1 related languages) Base64
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"standard"%5D%7D%5D%2C"logic"%3A"AND"%7D'>standard</a>
+- multibase is developed on <a href="https://github.com/multiformats/multibase">GitHub</a> and has 273 stars
+- Early development of multibase happened in <a href="../lists/labs.html#q=https://github.com/multiformats">https://github.com/multiformats</a>
+- multibase is written in <a href="markdown.html">Markdown</a>, <a href="csv.html">CSV</a>, <a href="yaml.html">YAML</a>
+- See also: (1 related languages) <a href="base64.html">Base64</a>
 
-View source
+Built with Scroll v178.2.3

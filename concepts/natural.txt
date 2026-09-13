@@ -1,19 +1,20 @@
 NATURAL
 =======
 
-NATURAL is a programming language created in 1971.
+NATURAL is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1971.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221971%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1971
 
-#2666 on PLDB
-53 Years Old
+#2755 on PLDB
+55 Years Old
 
 ADABAS, a contraction of “adaptable database system", is a database package that was developed by Software AG to run on IBM mainframes. Launched in 1971 as a non-relational software package, earnings reports for the package's vendor were being followed by The New York Times in the early 1980s.As of 2017, ADABAS is marketed for use on a wider range of platforms, including Linux, UNIX and Windows.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/NATURAL Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of NATURAL happened in Software AG
-- See also: (5 related languages) Linux, Unix, Model 204, SQL, COBOL
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of NATURAL happened in <a href="../lists/labs.html#q=Software AG">Software AG</a>
+- See also: (5 related languages) <a href="linux.html">Linux</a>, <a href="unix.html">Unix</a>, <a href="model-204.html">Model 204</a>, <a href="sql.html">SQL</a>, <a href="cobol.html">COBOL</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/NATURAL'>Wikipedia</a>:
 0010 * These two lines (0010 and 0020)
 0020 ** are comments.
 0030 FORMAT LS = 80 / * As well as this part of the line (0030)
@@ -21,5 +22,6 @@ ADABAS, a contraction of “adaptable database system", is a database package th
 .
 .
 0200 END
+```
 
-View source
+Built with Scroll v178.2.3

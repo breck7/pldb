@@ -1,60 +1,73 @@
 R
 =
 
-R is an open source programming language created in 1993 by Ross Ihaka and Robert Gentleman.
+R is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1993 by Ross Ihaka and Robert Gentleman.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221993%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1993
  https://pldb.io/concepts/../lists/creators.html#q=Ross%20Ihaka Ross Ihaka
  https://pldb.io/concepts/../lists/creators.html#q=Robert%20Gentleman Robert Gentleman
 
 #17 on PLDB
-31 Years Old
-690k Repos
+33 Years Old
+690k <span title="R repos on GitHub.">Repos</span>
 
 R is an open source programming language and software environment for statistical computing and graphics that is supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis. Polls, surveys of data miners, and studies of scholarly literature databases show that R's popularity has increased substantially in recent years. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/R_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language, arrayLang
-- There are at least 689,533 R repos on GitHub
-- Early development of R happened in University of Auckland
-- The  Google BigQuery Public Dataset GitHub snapshot shows 20k users using R in 29k repos on GitHub
-- Check out the 84 R meetup groups on Meetup.com.
-- There are 29,980 members in the R subreddit
-- There are 1,329 Project Euler users using R
-- In the 2021 StackOverflow developer survey R programmers reported a median salary of $59,454. 5% of respondents reported using R. 4,185 programmers reported using R, and 4,015 said they wanted to use it
-- Explore R snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"arrayLang"%5D%7D%5D%2C"logic"%3A"AND"%7D'>arrayLang</a>
+- There are at least 689,533 R repos on <a href="https://github.com/search?q=language:R">GitHub</a>
+- Early development of R happened in <a href="../lists/labs.html#q=University of Auckland">University of Auckland</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 20k users using R in 29k repos on <a href="https://api.github.com/search/repositories?q=language:R">GitHub</a>
+- Check out the 84 <a href="https://www.meetup.com/topics/r-programming-language/">R meetup groups</a> on Meetup.com.
+- There are 29,980 members in the <a href="https://reddit.com/r/Rlanguage">R subreddit</a>
+- There are 1,329 <a href="https://projecteuler.net/language=R">Project Euler</a> users using R
+- In the 2021 StackOverflow <a href="https://insights.stackoverflow.com/survey">developer survey</a> R programmers reported a median salary of $59,454. 5% of respondents reported using R. 4,185 programmers reported using R, and 4,015 said they wanted to use it
+- Explore R snippets on <a href="http://www.rosettacode.org/wiki/Category:R">Rosetta Code</a>
 - R on HOPL
  https://hopl.info/showlanguage.prx?exp=2426 R on HOPL
-- R ranks #11 in the TIOBE Index
+- R ranks #11 in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
 - R Ubuntu package
  https://packages.ubuntu.com/jammy/r-base R Ubuntu package
-- ANTLR grammar for R
-- R LSP implementation
-- CodeMirror package for syntax highlighting R
-- Monaco package for syntax highlighting R
-- GitHub supports syntax highlighting for R
-- R appears in the Quine Relay project
-- Learn R on exercism.
-- There is 1 Jupyter Kernel for R
+- <a href="antlr.html">ANTLR</a> <a href="https://github.com/antlr/grammars-v4/tree/master/r">grammar</a> for R
+- R <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/REditorSupport/languageserver">implementation</a>
+- <a href="codemirror.html">CodeMirror</a> <a href="https://github.com/codemirror/codemirror5/tree/master/mode/r">package</a> for syntax highlighting R
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/r">package</a> for syntax highlighting R
+- GitHub supports <a href="https://github.com/textmate/r.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for R
+- R appears in the <a href="https://github.com/mame/quine-relay">Quine Relay</a> project
+- Learn <a href="https://exercism.org/tracks/r">R on exercism.</a>
+- There is 1 <a href="jupyter-notebook.html">Jupyter</a> <a href="http://irkernel.github.io/">Kernel</a> for R
 - There are 2 central package repositories for R: 1. 2.
  https://cran.r-project.org/ 1.
  http://bioconductor.org/ 2.
-- Indeed.com has 3,912 matches for "r data scientist".
-- r-project.org was registered in 1999
-- See also: (25 related languages) Common Lisp, S, Scheme, Julia, C, Fortran, Java, Python, LaTeX, APL, MATLAB, GNU Octave, Knitr, Sweave, UTF-8, RStudio, Eclipse, Emacs, LyX, Perl, Ruby, F#, SPSS, Stata, Mathematica
-- 38 PLDB concepts link to R: Ace Editor, Apache Arrow, Catala, checked-c, cloc, dexvis, dplyr, Eiffel, HAL Format, highlight.js, Ibis, invokator, JSL, Lux, mal, MongoDB, Nit, Node.js, Observable Framework, Ohayo, oil, Particles, Pygments, Racket, raptorjit, Red, Ren-C, Revolution, RMarkdown, Rye, SciPy, spry, Statsplorer, Tea, tidyverse, v8, Xgboost, XGBoost
+- Indeed.com has 3,912 matches for <a href="https://www.indeed.com/jobs?q=r data scientist">"r data scientist"</a>.
+- <a href="https://www.r-project.org">r-project.org</a> was registered in 1999
+- See also: (25 related languages) <a href="common-lisp.html">Common Lisp</a>, <a href="s.html">S</a>, <a href="scheme.html">Scheme</a>, <a href="julia.html">Julia</a>, <a href="c.html">C</a>, <a href="fortran.html">Fortran</a>, <a href="java.html">Java</a>, <a href="python.html">Python</a>, <a href="latex.html">LaTeX</a>, <a href="apl.html">APL</a>, <a href="matlab.html">MATLAB</a>, <a href="octave.html">GNU Octave</a>, <a href="knitr.html">Knitr</a>, <a href="sweave.html">Sweave</a>, <a href="utf-8.html">UTF-8</a>, <a href="rstudio.html">RStudio</a>, <a href="eclipse-editor.html">Eclipse</a>, <a href="emacs-editor.html">Emacs</a>, <a href="lyx-editor.html">LyX</a>, <a href="perl.html">Perl</a>, <a href="ruby.html">Ruby</a>, <a href="f-sharp.html">F#</a>, <a href="spss.html">SPSS</a>, <a href="stata.html">Stata</a>, <a href="mathematica.html">Mathematica</a>
+- 43 PLDB concepts link to R: <a href="ace.html">Ace Editor</a>, <a href="arrow-format.html">Apache Arrow</a>, <a href="catala.html">Catala</a>, <a href="checked-c.html">checked-c</a>, <a href="cloc.html">cloc</a>, <a href="cmake.html">CMake</a>, <a href="dexvis.html">dexvis</a>, <a href="dplyr.html">dplyr</a>, <a href="eiffel.html">Eiffel</a>, <a href="ggplot2.html">ggplot2</a>, <a href="hal-format.html">HAL Format</a>, <a href="highlightjs.html">highlight.js</a>, <a href="ibis.html">Ibis</a>, <a href="invokator.html">invokator</a>, <a href="jsl.html">JSL</a>, <a href="lux.html">Lux</a>, <a href="mal.html">mal</a>, <a href="menhir.html">Menhir</a>, <a href="mongodb.html">MongoDB</a>, <a href="netbeans-editor.html">netbeans-editor</a>, <a href="nit.html">Nit</a>, <a href="nodejs.html">Node.js</a>, <a href="observable-framework.html">Observable Framework</a>, <a href="ohayo.html">Ohayo</a>, <a href="oil.html">oil</a>, <a href="particles.html">Particles</a>, <a href="praat-script.html">Praat Script</a>, <a href="pygments.html">Pygments</a>, <a href="racket.html">Racket</a>, <a href="raptorjit.html">raptorjit</a>, <a href="red.html">Red</a>, <a href="ren-c.html">Ren-C</a>, <a href="revolution-programming-language.html">Revolution</a>, <a href="rmarkdown.html">RMarkdown</a>, <a href="rye.html">Rye</a>, <a href="scipy.html">SciPy</a>, <a href="spry.html">spry</a>, <a href="statsplorer.html">Statsplorer</a>, <a href="tea-pl.html">Tea</a>, <a href="tidyverse.html">tidyverse</a>, <a href="v8.html">V8</a>, <a href="xgboost-model.html">Xgboost</a>, <a href="xgboost.html">XGBoost</a>
 
+```Example from <a href='https://riju.codes/r'>Riju</a>:
 print(&quot;Hello, world!&quot;)
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/r/R.R'>hello-world</a>:
 cat(&quot;Hello World&quot;)
 
+```
+
+```Example from <a href='http://helloworldcollection.de/#R'>the Hello World Collection</a>:
 # Hello World in R
 cat(&quot;Hello world\n&quot;)
 
+```
+
+```Example from <a href='https://github.com/textmate/r.tmbundle'>Linguist</a>:
 hello &lt;- function() {
     print(&quot;hello, world!&quot;)
 }
 hello()
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/R_(programming_language)'>Wikipedia</a>:
 install.packages(&quot;caTools&quot;)  # install external package
 library(caTools)           # external package providing write.gif function
 jet.colors &lt;- colorRampPalette(c(&quot;#00007F&quot;, &quot;blue&quot;, &quot;#007FFF&quot;, &quot;cyan&quot;, &quot;#7FFF7F&quot;,
@@ -71,66 +84,69 @@ for (k in 1:20) {          # loop with 20 iterations
   X[,,k] &lt;- exp(-abs(Z))   # capture results
 }
 write.gif(X, &quot;Mandelbrot.gif&quot;, col=jet.colors, delay=100)
+```
 
+```R <a href="../lists/keywords.html#q=r">Keywords</a>
 if else repeat while function for in next break TRUE FALSE NULL Inf NaN NA NA_integer_ NA_real_ NA_complex_ NA_character_ ...
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Standard Library
  FeatureLink ../features/hasStandardLibrary.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   print("Hello, World!")
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token TRUE FALSE
 row
  Feature Assignment
  FeatureLink ../features/hasAssignment.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token =
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Pipes
  FeatureLink ../features/hasPipes.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # R has pipes via a library like dplyr
   starwars %>% filter(species == "Droid")
@@ -138,33 +154,33 @@ row
 row
  Feature Operator Overloading
  FeatureLink ../features/hasOperatorOverloading.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Lazy Evaluation
  FeatureLink ../features/hasLazyEvaluation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   source("filename.r")
  Token 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Bitwise Operators
  FeatureLink ../features/hasBitWiseOperators.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ! x
   x & y
@@ -176,33 +192,33 @@ row
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "hello world"
  Token "
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Zero-based numbering
  FeatureLink ../features/hasZeroBasedNumbering.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

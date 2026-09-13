@@ -1,18 +1,19 @@
 Context Diff
 ============
 
-Context Diff is a diff format created in 1981.
+Context Diff is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22diffFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">diff format</a> created in 1981.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221981%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1981
 
-#4678 on PLDB
-43 Years Old
+#4820 on PLDB
+45 Years Old
 
-- Tags: diffFormat
-- Early development of Context Diff happened in University of California Berkeley
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"diffFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>diffFormat</a>
+- Early development of Context Diff happened in <a href="../lists/labs.html#q=University of California Berkeley">University of California Berkeley</a>
 - Read more about Context Diff on the web: 1.
  https://en.wikipedia.org/wiki/Diff#Context_format 1.
-- 1 PLDB concepts link to Context Diff: Diff
+- 1 PLDB concepts link to Context Diff: <a href="diff.html">Diff</a>
 
+```Example from the web:
 *** /path/to/original	timestamp
 --- /path/to/new	timestamp
 ***************
@@ -61,5 +62,6 @@ Context Diff is a diff format created in 1981.
 + This paragraph contains
 + important new additions
 + to this document.
+```
 
-View source
+Built with Scroll v178.2.3

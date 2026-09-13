@@ -1,123 +1,197 @@
 Chapel
 ======
 
-Chapel is an open source programming language created in 2004 by David Callahan and Hans Zima and Brad Chamberlain and John Plevyak.
+Chapel, aka Cascade High Productivity Language, is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2004 by David Callahan and Hans Zima and Brad Chamberlain and John Plevyak.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2004
  https://pldb.io/concepts/../lists/creators.html#q=David%20Callahan David Callahan
  https://pldb.io/concepts/../lists/creators.html#q=Hans%20Zima Hans Zima
  https://pldb.io/concepts/../lists/creators.html#q=Brad%20Chamberlain Brad Chamberlain
  https://pldb.io/concepts/../lists/creators.html#q=John%20Plevyak John Plevyak
 
-#66 on PLDB
-20 Years Old
-212 Repos
+#62 on PLDB
+22 Years Old
+212 <span title="Chapel repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/chapel-lang/chapel
+```
 
 Chapel, the Cascade High Productivity Language, is a parallel programming language developed by Cray. It is being developed as part of the Cray Cascade project, a participant in DARPA's High Productivity Computing Systems (HPCS) program, which had the goal of increasing supercomputer productivity by the year 2010. It is being developed as an open source project, under version 2 of the Apache license.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Chapel_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language, arrayLang
-- Chapel is developed on GitHub and has 1,758 stars
-- There are at least 212 Chapel repos on GitHub
-- Early development of Chapel happened in Cray
-- Chapel is written in Chapel, C++, C, reStructuredText, Assembly language, Python, Bash, CMake, Bourne shell, Make, HTML, M4, XML, TOML, Markdown, Perl, JSON, Tex, C shell, OCaml, YAML, Pascal, JavaScript, CSS, SVG, Vim script, C#, Dockerfile, Diff, Lisp, LLVM IR, Protocol Buffers, Ini, Fortran 90, Objective-C, FORTRAN 77, DTD, Lex, Bazel, Ruby, Jupyter Notebook, CUDA, PHP, TypeScript, Rust, CSV, Yacc, D, Haskell, Nix, Cython, Go, Java, awk, XSLT, Julia, sed
-- The  Google BigQuery Public Dataset GitHub snapshot shows 50 users using Chapel in 55 repos on GitHub
-- There are 12,989 members in the Chapel subreddit
-- There are 11 Project Euler users using Chapel
-- Explore Chapel snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"arrayLang"%5D%7D%5D%2C"logic"%3A"AND"%7D'>arrayLang</a>
+- Interview with the creators of Chapel: 1.
+ https://www.hpcwire.com/2024/09/04/whats-new-with-chapel-nine-questions-for-the-development-team/ 1.
+- Chapel is developed on <a href="https://github.com/chapel-lang/chapel">GitHub</a> and has 1,758 stars
+- There are at least 212 Chapel repos on <a href="https://github.com/search?q=language:Chapel">GitHub</a>
+- Early development of Chapel happened in <a href="../lists/labs.html#q=Cray Inc.">Cray Inc.</a>
+- <a href="python.html">Python</a> and <a href="zpl.html">ZPL</a> and <a href="ada.html">Ada</a> and <a href="csharp.html">C#</a> and <a href="java.html">Java</a> and <a href="fortran.html">Fortran</a> and <a href="cpp.html">C++</a> and <a href="unified-parallel-c.html">UPC</a> influenced the design of Chapel
+- Chapel compiles to <a href="c.html">C</a>
+- Chapel is written in <a href="chapel.html">Chapel</a>, <a href="cpp.html">C++</a>, <a href="c.html">C</a>, <a href="bash.html">Bash</a>, <a href="make.html">Make</a>, <a href="python.html">Python</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 50 users using Chapel in 55 repos on <a href="https://api.github.com/search/repositories?q=language:Chapel">GitHub</a>
+- There are 12,989 members in the <a href="https://reddit.com/r/chapel">Chapel subreddit</a>
+- There are 11 <a href="https://projecteuler.net/language=Chapel">Project Euler</a> users using Chapel
+- Explore Chapel snippets on <a href="http://www.rosettacode.org/wiki/Category:Chapel">Rosetta Code</a>
 - Chapel on HOPL
  https://hopl.info/showlanguage.prx?exp=8171 Chapel on HOPL
-- Pygments supports syntax highlighting for Chapel
-- GitHub supports syntax highlighting for Chapel
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/chapel.py">syntax highlighting</a> for Chapel
+- GitHub supports <a href="https://github.com/chapel-lang/chapel-tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Chapel
 - Events page for Chapel
  https://chapel-lang.org/events.html Events page for Chapel
-- Indeed.com has 1 matches for "chapel developer".
-- chapel-lang.org was registered in 2014
-- See also: (9 related languages) Ada, C#, C, Fortran, Java, Fortress, UPC, X10, ISBN
+- Indeed.com has 1 matches for <a href="https://www.indeed.com/jobs?q=chapel developer">"chapel developer"</a>.
+- <a href="https://chapel-lang.org/">chapel-lang.org</a> was registered in 2014
+- See also: (13 related languages) <a href="ada.html">Ada</a>, <a href="csharp.html">C#</a>, <a href="c.html">C</a>, <a href="fortran.html">Fortran</a>, <a href="java.html">Java</a>, <a href="fortress.html">Fortress</a>, <a href="unified-parallel-c.html">UPC</a>, <a href="x10.html">X10</a>, <a href="isbn.html">ISBN</a>, <a href="x10.html">X10</a>, <a href="fortress.html">Fortress</a>, <a href="zpl.html">ZPL</a>, <a href="unified-parallel-c.html">UPC</a>
 - Read more about Chapel on the web: 1.
  https://ieeexplore.ieee.org/document/1299190 1.
-- 3 PLDB concepts link to Chapel: Chapel, cloc, Pygments
+- 3 PLDB concepts link to Chapel: <a href="chapel.html">Chapel</a>, <a href="cloc.html">cloc</a>, <a href="pygments.html">Pygments</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/c/Chapel.chpl'>hello-world</a>:
 writeln(&quot;Hello World&quot;);
 
+```
+
+```Example from <a href='https://github.com/chapel-lang/chapel-tmbundle'>Linguist</a>:
 writeln(&quot;Hello, world!&quot;);    // print &#39;Hello, world!&#39; to the console
 
-_ align atomic begin break by class cobegin coforall config const continue delete dmapped do domain else enum export extern for forall if in index inline inout iter label let local module new nil on otherwise out param proc record reduce ref return scan select serial single sparse subdomain sync then type union use var when where while yield zip
+```
 
-Language features
+```Chapel <a href="../lists/keywords.html#q=chapel">Keywords</a>
+_ align atomic begin break by class cobegin coforall config const continue delete dmapped do domain else enum export extern for forall if in index inline inout iter label let local module new nil on otherwise out param proc record reduce ref return scan select serial single sparse subdomain sync then type union use var when where while yield zip
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
+ Feature Case Sensitivity
+ FeatureLink ../features/isCaseSensitive.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // 0[bB][01]+
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // [0-9]+
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // (\d*\.\d+)([eE][+-]?[0-9]+)?i?
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // 0[xX][0-9a-fA-F]+
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // 0[oO][0-7]+
  Token 
 row
- Feature Conditionals
- FeatureLink ../features/hasConditionals.html
- Supported ✓
- Example
- Token 
-row
- Feature Constants
- FeatureLink ../features/hasConstants.html
- Supported ✓
- Example
- Token 
-row
- Feature Classes
- FeatureLink ../features/hasClasses.html
- Supported ✓
- Example
- Token 
-row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
+  while do
+ Token 
+row
+ Feature Type Parameters
+ FeatureLink ../features/hasTypeParameters.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature hasTryCatch
+ FeatureLink ../features/hasTryCatch.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  try catch
+ Token 
+row
+ Feature Switch Statements
+ FeatureLink ../features/hasSwitch.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  select
+ Token 
+row
+ Feature Structs
+ FeatureLink ../features/hasStructs.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  record
  Token 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
+ Feature Static Typing
+ FeatureLink ../features/hasStaticTyping.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Standard Library
+ FeatureLink ../features/hasStandardLibrary.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature References
+ FeatureLink ../features/hasReferences.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  ref
+ Token 
+row
+ Feature Range Operator
+ FeatureLink ../features/hasRangeOperators.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  ..
+ Token 
+row
+ Feature Disk Output
+ FeatureLink ../features/canWriteToDisk.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Operator Overloading
+ FeatureLink ../features/hasOperatorOverloading.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -125,33 +199,254 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token writeln
 row
+ Feature Module Pattern
+ FeatureLink ../features/hasModules.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  module
+ Token 
+row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
- Feature Comments
- FeatureLink ../features/hasComments.html
- Supported ✓
+ Feature Iterators
+ FeatureLink ../features/hasIterators.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  iter
+ Token 
+row
+ Feature Inheritance
+ FeatureLink ../features/hasInheritance.html
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
- Feature Case Insensitive Identifiers
- FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  import use
+ Token 
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Generics
+ FeatureLink ../features/hasGenerics.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  proc
+ Token 
+row
+ Feature Function Overloading
+ FeatureLink ../features/hasFunctionOverloading.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature hasForLoops
+ FeatureLink ../features/hasForLoops.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  for
+ Token 
+row
+ Feature hasForEachLoops
+ FeatureLink ../features/hasForEachLoops.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  foreach
+ Token 
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  real
+ Token 
+row
+ Feature Type Casting
+ FeatureLink ../features/hasExplicitTypeCasting.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  :
+ Token 
+row
+ Feature Exceptions
+ FeatureLink ../features/hasExceptions.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  throw throws
+ Token 
+row
+ Feature hasEscapeCharacters
+ FeatureLink ../features/hasEscapeCharacters.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Enums
+ FeatureLink ../features/hasEnums.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  enum color { red, green, blue=3 };
+ Token 
+row
+ Feature hasDynamicSizedArrays
+ FeatureLink ../features/hasDynamicSizedArrays.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Default Parameters Pattern
+ FeatureLink ../features/hasDefaultParameters.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Constructors
+ FeatureLink ../features/hasConstructors.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  proc init
+ Token 
+row
+ Feature Constants
+ FeatureLink ../features/hasConstants.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  param
+ Token 
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  if then else
+ Token 
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Classes
+ FeatureLink ../features/hasClasses.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  class
+ Token 
+row
+ Feature hasBoundedCheckedArrays
+ FeatureLink ../features/hasBoundedCheckedArrays.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  bool true false
+ Token true false
+row
+ Feature Bitwise Operators
+ FeatureLink ../features/hasBitWiseOperators.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Async Await
+ FeatureLink ../features/hasAsyncAwait.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  begin sync
+ Token 
+row
+ Feature Assignment
+ FeatureLink ../features/hasAssignment.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  =
+ Token =
+row
+ Feature hasArraySlicingSyntax
+ FeatureLink ../features/hasArraySlicingSyntax.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature canReadCommandLineArgs
+ FeatureLink ../features/canReadCommandLineArgs.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Units of Measure
+ FeatureLink ../features/hasUnitsOfMeasure.html
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature hasRequiredMainFunction
+ FeatureLink ../features/hasRequiredMainFunction.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Increment and decrement operators
+ FeatureLink ../features/hasIncrementAndDecrementOperators.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature hasGlobalScope
+ FeatureLink ../features/hasGlobalScope.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Dynamic Typing
+ FeatureLink ../features/hasDynamicTyping.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Case Insensitive Identifiers
+ FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

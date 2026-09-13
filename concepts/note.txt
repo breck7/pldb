@@ -1,37 +1,42 @@
 Note
 ====
 
-Note is an open source data notation created in 2012 by Breck Yunits.
+Note is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22dataNotation%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">data notation</a> created in 2012 by Breck Yunits.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
  https://pldb.io/concepts/../lists/creators.html#q=Breck%20Yunits Breck Yunits
 
-#1643 on PLDB
-12 Years Old
+#1570 on PLDB
+14 Years Old
 
+```Download source code:
 git clone https://github.com/breck7/note
+```
 
 Note is a structured, human readable, concise language for encoding data.
 
-- Tags: dataNotation
-- Note is developed on GitHub and has 8 stars
-- Early development of Note happened in Nudgepad
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>
+- Note is developed on <a href="https://github.com/breck7/note">GitHub</a> and has 8 stars
+- Early development of Note happened in <a href="../lists/labs.html#q=Nudgepad">Nudgepad</a>
+- Note is written in <a href="javascript.html">JavaScript</a>, <a href="html.html">HTML</a>, <a href="css.html">CSS</a>, <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>, <a href="make.html">Make</a>, <a href="yaml.html">YAML</a>
 - Read more about Note on the web: 1.
  https://breckyunits.com/introducing-note.html 1.
-- 1 PLDB concepts link to Note: Space
+- 1 PLDB concepts link to Note: <a href="space.html">Space</a>
 
+```Example from the web:
 settings
  title Note
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   settings
    title Note
  Token
 
-View source
+Built with Scroll v178.2.3

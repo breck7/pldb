@@ -1,22 +1,25 @@
 Stencil
 =======
 
-Stencil is an open source template language created in 2018 by Kyle Fuller.
+Stencil is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22template%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">template language</a> created in 2018 by Kyle Fuller.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222018%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2018
  https://pldb.io/concepts/../lists/creators.html#q=Kyle%20Fuller Kyle Fuller
 
-#411 on PLDB
-6 Years Old
+#436 on PLDB
+8 Years Old
 
+```Download source code:
 git clone https://github.com/stencilproject/Stencil
+```
 
 Stencil is a simple and powerful template language for Swift. It provides a syntax similar to Django and Mustache.
 
-- Tags: template language
-- Stencil is developed on GitHub and has 2,336 stars
-- Early development of Stencil happened in https://github.com/stencilproject
-- Stencil is written in Swift, HTML, Ruby, YAML, reStructuredText, Markdown, Make, Python, JSON, Bourne shell
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"template"%5D%7D%5D%2C"logic"%3A"AND"%7D'>template language</a>
+- Stencil is developed on <a href="https://github.com/stencilproject/Stencil">GitHub</a> and has 2,336 stars
+- Early development of Stencil happened in <a href="../lists/labs.html#q=https://github.com/stencilproject">https://github.com/stencilproject</a>
+- Stencil is written in <a href="swift.html">Swift</a>, <a href="html.html">HTML</a>, <a href="ruby.html">Ruby</a>, <a href="yaml.html">YAML</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="markdown.html">Markdown</a>, <a href="make.html">Make</a>, <a href="python.html">Python</a>, <a href="json.html">JSON</a>, <a href="bourne-shell.html">Bourne shell</a>
 
+```Example from the web:
 There are {{ articles.count }} articles.
 
 &lt;ul&gt;
@@ -24,5 +27,6 @@ There are {{ articles.count }} articles.
     &lt;li&gt;{{ article.title }} by {{ article.author }}&lt;/li&gt;
   {% endfor %}
 &lt;/ul&gt;
+```
 
-View source
+Built with Scroll v178.2.3

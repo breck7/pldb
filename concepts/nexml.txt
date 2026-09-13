@@ -1,22 +1,24 @@
 NeXML format
 ============
 
-NeXML format is an open source xml format created in 2007.
+NeXML format is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22xmlFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">xml format</a> created in 2007.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222007%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2007
 
-#1420 on PLDB
-17 Years Old
+#1463 on PLDB
+19 Years Old
 
+```Download source code:
 git clone https://github.com/nexml/nexml
+```
 
 NeXML is an exchange standard for representing phyloinformatic data. It was inspired by the widely used Nexus file format but uses XML to produce a more robust format for rich phylogenetic data. Advantages include syntax validation, semantic annotation, and web services. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/NeXML_format Read more on Wikipedia...
 
-- Tags: xmlFormat
-- NeXML format is developed on GitHub and has 15 stars
-- Early development of NeXML format happened in Naturalis Biodiversity Center and National Evolutionary Synthesis Center and University of North Carolina and Wayne State University and University of Kansas and University of British Columbia and Indian Institute of Technology Kharagpur and University of Ottawa and National Institute of Standards and Technology
-- NeXML format is written in XML, XSD, XSLT, Markdown
-- nexml.org was registered in 2007
-- See also: (2 related languages) Nexus file, XML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"xmlFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>xmlFormat</a>
+- NeXML format is developed on <a href="https://github.com/nexml/nexml">GitHub</a> and has 15 stars
+- Early development of NeXML format happened in <a href="../lists/labs.html#q=Naturalis Biodiversity Center">Naturalis Biodiversity Center</a> and <a href="../lists/labs.html#q=National Evolutionary Synthesis Center">National Evolutionary Synthesis Center</a> and <a href="../lists/labs.html#q=University of North Carolina">University of North Carolina</a> and <a href="../lists/labs.html#q=Wayne State University">Wayne State University</a> and <a href="../lists/labs.html#q=University of Kansas">University of Kansas</a> and <a href="../lists/labs.html#q=University of British Columbia">University of British Columbia</a> and <a href="../lists/labs.html#q=Indian Institute of Technology Kharagpur">Indian Institute of Technology Kharagpur</a> and <a href="../lists/labs.html#q=University of Ottawa">University of Ottawa</a> and <a href="../lists/labs.html#q=National Institute of Standards and Technology">National Institute of Standards and Technology</a>
+- NeXML format is written in <a href="xml.html">XML</a>, <a href="xsd.html">XSD</a>, <a href="xslt.html">XSLT</a>, <a href="markdown.html">Markdown</a>
+- <a href="http://nexml.org/">nexml.org</a> was registered in 2007
+- See also: (2 related languages) <a href="nexus-format.html">Nexus file</a>, <a href="xml.html">XML</a>
 
-View source
+Built with Scroll v178.2.3

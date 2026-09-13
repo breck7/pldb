@@ -1,25 +1,29 @@
 Formulating On-Line Calculations in Algebraic Language
 ======================================================
 
-Formulating On-Line Calculations in Algebraic Language, aka Formulating On-Line Calculations in Algebraic Language, is a programming language created in 1968 by Richard Merrill.
+Formulating On-Line Calculations in Algebraic Language, aka Formulating On-Line Calculations in Algebraic Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1968 by Richard Merrill.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221968%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1968
  https://pldb.io/concepts/../lists/creators.html#q=Richard%20Merrill Richard Merrill
 
-#1161 on PLDB
-56 Years Old
+#1202 on PLDB
+58 Years Old
 
 FOCAL is an interpreted programming language resembling JOSS. The name is an acronym for Formulating On-Line Calculations in Algebraic Language. Largely the creation of Richard Merrill, FOCAL was initially written for and had its largest impact on the DEC's (DEC's) PDP-8 computers. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/FOCAL_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Formulating On-Line Calculations in Algebraic Language happened in DEC
-- Explore Formulating On-Line Calculations in Algebraic Language snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Formulating On-Line Calculations in Algebraic Language happened in <a href="../lists/labs.html#q=DEC">DEC</a>
+- Explore Formulating On-Line Calculations in Algebraic Language snippets on <a href="http://www.rosettacode.org/wiki/Category:FOCAL">Rosetta Code</a>
 - Formulating On-Line Calculations in Algebraic Language on HOPL
  https://hopl.info/showlanguage.prx?exp=406 Formulating On-Line Calculations in Algebraic Language on HOPL
-- See also: (3 related languages) JOSS, BASIC, MUMPS
+- See also: (3 related languages) <a href="joss.html">JOSS</a>, <a href="basic.html">BASIC</a>, <a href="mumps.html">MUMPS</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/f/Focal.fc'>hello-world</a>:
 0.1.0.1 TYPE &quot;HELLO WORLD&quot; , !
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/FOCAL_(programming_language)'>Wikipedia</a>:
 FOCAL15 V6B
 *01.10 ASK &quot;IN WHAT YEAR WERE YOU BORN?&quot;, YEAR
 *01.20 SET YEAROFFOCAL=YEAR-1969+1
@@ -34,16 +38,17 @@ YOU WERE BORN IN THE YEAR     1.0000 OF FOCAL
 IN WHAT YEAR WERE YOU BORN?:1950
 YOU ARE TOO OLD FOR FOCAL, POPS
 IN WHAT YEAR WERE YOU BORN?:
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 
-View source
+Built with Scroll v178.2.3

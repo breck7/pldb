@@ -1,41 +1,43 @@
 Amazon Redshift
 ===============
 
-Amazon Redshift is a query language created in 2012.
+Amazon Redshift is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22queryLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">query language</a> created in 2012.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222012%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2012
 
-#1520 on PLDB
-12 Years Old
+#1561 on PLDB
+14 Years Old
 
-- Tags: queryLanguage
-- Early development of Amazon Redshift happened in Amazon
-- Monaco package for syntax highlighting Amazon Redshift
-- See also: (3 related languages) PostgreSQL, SQL, MySQL
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"queryLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>queryLanguage</a>
+- Early development of Amazon Redshift happened in <a href="../lists/labs.html#q=Amazon">Amazon</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/redshift">package</a> for syntax highlighting Amazon Redshift
+- See also: (3 related languages) <a href="postgresql.html">PostgreSQL</a>, <a href="sql.html">SQL</a>, <a href="mysql.html">MySQL</a>
 - Read more about Amazon Redshift on the web: 1.
  https://docs.aws.amazon.com/redshift/latest/dg/c_redshift-sql.html 1.
 
+```Amazon Redshift <a href="../lists/keywords.html#q=redshift">Keywords</a>
 AES128 AES256 ALL ALLOWOVERWRITE ANALYSE ANALYZE AND ANY ARRAY AS ASC AUTHORIZATION AZ64 BACKUP BETWEEN BINARY BLANKSASNULL BOTH BYTEDICT BZIP2 CASE CAST CHECK COLLATE COLUMN CONSTRAINT CREATE CREDENTIALS CROSS CURRENT_DATE CURRENT_TIME CURRENT_TIMESTAMP CURRENT_USER CURRENT_USER_ID DEFAULT DEFERRABLE DEFLATE DEFRAG DELTA DELTA32K DESC DISABLE DISTINCT DO ELSE EMPTYASNULL ENABLE ENCODE ENCRYPT ENCRYPTION END EXCEPT EXPLICIT FALSE FOR FOREIGN FREEZE FROM FULL GLOBALDICT256 GLOBALDICT64K GRANT GROUP GZIP HAVING IDENTITY IGNORE ILIKE IN INITIALLY INNER INTERSECT INTO IS ISNULL JOIN LANGUAGE LEADING LEFT LIKE LIMIT LOCALTIME LOCALTIMESTAMP LUN LUNS LZO LZOP MINUS MOSTLY16 MOSTLY32 MOSTLY8 NATURAL NEW NOT NOTNULL NULL NULLS OFF OFFLINE OFFSET OID OLD ON ONLY OPEN OR ORDER OUTER OVERLAPS PARALLEL PARTITION PERCENT PERMISSIONS PLACING PRIMARY RAW READRATIO RECOVER REFERENCES RESPECT REJECTLOG RESORT RESTORE RIGHT SELECT SESSION_USER SIMILAR SNAPSHOT SOME SYSDATE SYSTEM TABLE TAG TDES TEXT255 TEXT32K THEN TIMESTAMP TO TOP TRAILING TRUE TRUNCATECOLUMNS UNION UNIQUE USER USING VERBOSE WALLET WHEN WHERE WITH WITHOUT
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token TRUE FALSE
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -43,15 +45,15 @@ row
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token --
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

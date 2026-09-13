@@ -1,22 +1,25 @@
 YESS
 ====
 
-YESS, aka You Easily Syndicate Scenes, is a protocol created in 2022 by Paul Gordon.
+YESS, aka You Easily Syndicate Scenes, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22protocol%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">protocol</a> created in 2022 by Paul Gordon.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222022%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2022
  https://pldb.io/concepts/../lists/creators.html#q=Paul%20Gordon Paul Gordon
 
-#2195 on PLDB
-2 Years Old
+#2295 on PLDB
+4 Years Old
 
+```Download source code:
 git clone https://github.com/paul-go/YESS-Specification
+```
 
 YESS: A Reboot Of RSS. The protocol is a subset of HTML and CSS. It's central design idea is to split static HTML files up into small single-screen components, called Scenes.
 
-- Tags: protocol
-- YESS is developed on GitHub and has 5 stars
-- RSS influenced the design of YESS
-- YESS is written in SVG, Markdown
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"protocol"%5D%7D%5D%2C"logic"%3A"AND"%7D'>protocol</a>
+- YESS is developed on <a href="https://github.com/paul-go/YESS-Specification">GitHub</a> and has 5 stars
+- <a href="rss.html">RSS</a> influenced the design of YESS
+- YESS is written in <a href="svg.html">SVG</a>, <a href="markdown.html">Markdown</a>
 
+```Example from the web:
 &lt;section&gt;
 	HTML for section 1
 &lt;/section&gt;
@@ -28,5 +31,6 @@ YESS: A Reboot Of RSS. The protocol is a subset of HTML and CSS. It's central de
 	HTML for section 5
 &lt;/section&gt;
 &lt;embed src=&quot;section-6.html&quot;&gt;
+```
 
-View source
+Built with Scroll v178.2.3

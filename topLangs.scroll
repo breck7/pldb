@@ -4,8 +4,8 @@ Top Languages
  link ./lists/top1000.html
  class pldbHomepageLink
 
-table pldb.csv
+pldb.csv
  limit 0 10
-  loop
-   javascript ` <a href="concepts/${item.id}.html">${item.name}</a> `
-   join ·
+  compose topLink <a href="concepts/{id}.html">{name}</a>
+   printColumn topLink
+    join &nbsp;·&nbsp;

@@ -1,33 +1,36 @@
 Reason
 ======
 
-Reason is an open source programming language created in 2016.
+Reason is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2016.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2016
 
 #55 on PLDB
-8 Years Old
-2k Repos
+10 Years Old
+2k <span title="Reason repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/facebook/reason
+```
 
 Simple, fast & type safe code that leverages the JavaScript & OCaml ecosystems
 
-- Tags: programming language
-- Reason is developed on GitHub and has 10,087 stars
-- There are at least 1,924 Reason repos on GitHub
-- Early development of Reason happened in Facebook
-- Reason compiles to OCaml
-- Reason is written in OCaml, Reason, Markdown, JSON, Bourne shell, Diff, Make, JavaScript, YAML, Nix, HTML, Bash
-- The  Google BigQuery Public Dataset GitHub snapshot shows 23 users using Reason in 24 repos on GitHub
-- Check out the 11 Reason meetup groups on Meetup.com.
-- Explore Reason snippets on Rosetta Code
-- Reason LSP implementation
-- Pygments supports syntax highlighting for Reason
-- GitHub supports syntax highlighting for Reason
-- Learn Reason on exercism.
-- See also: (7 related languages) Rust, Elm, PureScript, Fable, ClojureScript, Swift, Haxe
-- 12 PLDB concepts link to Reason: Caramel, cloc, Hazel, Kotlin, Ligo, MongoDB, PHP, Pygments, Reason, Reia, Sophia, xodio
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Reason is developed on <a href="https://github.com/facebook/reason">GitHub</a> and has 10,087 stars
+- There are at least 1,924 Reason repos on <a href="https://github.com/search?q=language:Reason">GitHub</a>
+- Early development of Reason happened in <a href="../lists/labs.html#q=Facebook">Facebook</a>
+- Reason compiles to <a href="ocaml.html">OCaml</a>
+- Reason is written in <a href="ocaml.html">OCaml</a>, <a href="reason.html">Reason</a>, <a href="markdown.html">Markdown</a>, <a href="json.html">JSON</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="diff.html">Diff</a>, <a href="make.html">Make</a>, <a href="javascript.html">JavaScript</a>, <a href="yaml.html">YAML</a>, <a href="nix.html">Nix</a>, <a href="html.html">HTML</a>, <a href="bash.html">Bash</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 23 users using Reason in 24 repos on <a href="https://api.github.com/search/repositories?q=language:Reason">GitHub</a>
+- Check out the 11 <a href="https://www.meetup.com/topics/reasonml/">Reason meetup groups</a> on Meetup.com.
+- Explore Reason snippets on <a href="http://www.rosettacode.org/wiki/Category:Reason">Rosetta Code</a>
+- Reason <a href="language-server-protocol.html">LSP</a> <a href="https://github.com/jaredly/reason-language-server">implementation</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/ml.py">syntax highlighting</a> for Reason
+- GitHub supports <a href="https://github.com/reasonml-editor/language-reason" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Reason
+- Learn <a href="https://exercism.org/tracks/reasonml">Reason on exercism.</a>
+- See also: (7 related languages) <a href="rust.html">Rust</a>, <a href="elm.html">Elm</a>, <a href="purescript.html">PureScript</a>, <a href="fable-lang.html">Fable</a>, <a href="clojurescript.html">ClojureScript</a>, <a href="swift.html">Swift</a>, <a href="haxe.html">Haxe</a>
+- 14 PLDB concepts link to Reason: <a href="caramel.html">Caramel</a>, <a href="cloc.html">cloc</a>, <a href="hazel.html">Hazel</a>, <a href="kotlin.html">Kotlin</a>, <a href="lfortran.html">LFortran</a>, <a href="ligo.html">Ligo</a>, <a href="mongodb.html">MongoDB</a>, <a href="php.html">PHP</a>, <a href="pygments.html">Pygments</a>, <a href="reason.html">Reason</a>, <a href="reia.html">Reia</a>, <a href="rescript.html">Rescript</a>, <a href="sophia.html">Sophia</a>, <a href="xodio.html">xodio</a>
 
+```Example from the web:
 type schoolPerson = Teacher | Director | Student(string);
 
 let greeting = person =&gt;
@@ -37,11 +40,18 @@ let greeting = person =&gt;
   | Student(&quot;Richard&quot;) =&gt; &quot;Still here Ricky?&quot;
   | Student(anyOtherName) =&gt; &quot;Hey, &quot; ++ anyOtherName ++ &quot;.&quot;
   };
+```
 
+```Example from <a href='https://riju.codes/reasonml'>Riju</a>:
 print_string(&quot;Hello, world!\n&quot;);
+```
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/r/Reason.re'>hello-world</a>:
 print_string &quot;Hello World&quot;
 
+```
+
+```Example from <a href='https://github.com/reasonml-editor/language-reason'>Linguist</a>:
 type component = {displayName: string};
 
 let module Bar = {
@@ -524,93 +534,97 @@ let myFun () =&gt;
 /* &lt;/Foo&gt;; */
 /* let res = &lt;Foo a=10 b=(&lt;Foo a=200 /&gt;) /&gt;; */
 
-as assert begin class constraint do done downto else end exception external false for fun esfun function functor if in include inherit initializer lazy let switch module pub mutable new nonrec object of open pri rec sig struct then to true try type val virtual when while with
+```
 
-Language features
+```Reason <a href="../lists/keywords.html#q=reason">Keywords</a>
+as assert begin class constraint do done downto else end exception external false for fun esfun function functor if in include inherit initializer lazy let switch module pub mutable new nonrec object of open pri rec sig struct then to true try type val virtual when while with
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Binary Literals
  FeatureLink ../features/hasBinaryNumbers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // 0[bB][01][01_]*
  Token 
 row
  Feature Integers
  FeatureLink ../features/hasIntegers.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // \d[\d_]*
  Token 
 row
  Feature Floats
  FeatureLink ../features/hasFloats.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // -?\d[\d_]*(.[\d_]*)?([eE][+\-]?\d[\d_]*)
  Token 
 row
  Feature Hexadecimals
  FeatureLink ../features/hasHexadecimals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // 0[xX][\da-fA-F][\da-fA-F_]*
  Token 
 row
  Feature Octals
  FeatureLink ../features/hasOctals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // 0[oO][0-7][0-7_]*
  Token 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Functions
  FeatureLink ../features/hasFunctions.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Classes
  FeatureLink ../features/hasClasses.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature While Loops
  FeatureLink ../features/hasWhileLoops.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -618,20 +632,20 @@ row
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print_string
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Destructuring
  FeatureLink ../features/hasDestructuring.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   type person = {name: string, age: int};
   let somePerson = {name: "Guy", age: 30};
@@ -640,21 +654,21 @@ row
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Case Insensitive Identifiers
  FeatureLink ../features/hasCaseInsensitiveIdentifiers.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token 
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

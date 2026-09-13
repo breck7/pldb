@@ -1,32 +1,34 @@
 ProbeVue
 ========
 
-ProbeVue is a programming language created in 2008.
+ProbeVue is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2008.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
 
-#1761 on PLDB
-16 Years Old
+#1827 on PLDB
+18 Years Old
 
 ProbeVue is IBM's implementation of a lightweight dynamic tracing environment introduced in AIX version 6.1. ProbeVue provides the ability to probe running processes in order to provide statistical analysis as well as retrieve data from the probed process. The dynamic nature of ProbeVue allows it to be used as a global system performance tool while retaining the ability to drill into very specific events on a single process or thread. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/undefined Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of ProbeVue happened in http://www.tablespace.net
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of ProbeVue happened in <a href="../lists/labs.html#q=http://www.tablespace.net">http://www.tablespace.net</a>
 
+```Example from the web:
 @@syscall:*:read:entry
 when ( __pid == 123456)
 {
    /* This is a comment: The process with a PID of 123456 has called read(); */
    printf(&quot;read() system call entered.\n&quot;);
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -34,7 +36,7 @@ row
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -42,8 +44,8 @@ row
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

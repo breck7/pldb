@@ -1,0 +1,76 @@
+STEP
+====
+
+STEP is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22standard%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">standard</a> created in 1994.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221994%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1994
+
+#1684 on PLDB
+32 Years Old
+
+ISO 10303-21, also known as STEP-File or STEP Physical File, is a file format standard for the exchange of product model data as part of the ISO 10303 (STEP) standard. It defines a clear text encoding for the EXPRESS data modeling language, enabling the representation and exchange of product data across different CAD, CAM, and CAE systems.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"standard"%5D%7D%5D%2C"logic"%3A"AND"%7D'>standard</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"dataNotation"%5D%7D%5D%2C"logic"%3A"AND"%7D'>dataNotation</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"3d"%5D%7D%5D%2C"logic"%3A"AND"%7D'>3d</a>
+
+```Example from the web:
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(
+/* description */ (&#39;A minimal AP214 example with a single part&#39;),
+/* implementation_level */ &#39;2;1&#39;);
+FILE_NAME(
+/* name */ &#39;demo&#39;,
+/* time_stamp */ &#39;2003-12-27T11:57:53&#39;,
+/* author */ (&#39;Lothar Klein&#39;),
+/* organization */ (&#39;LKSoft&#39;),
+/* preprocessor_version */ &#39; &#39;,
+/* originating_system */ &#39;IDA-STEP&#39;,
+/* authorization */ &#39; &#39;);
+FILE_SCHEMA ((&#39;AUTOMOTIVE_DESIGN { 1 0 10303 214 2 1 1}&#39;));
+ENDSEC;
+DATA;
+#10=ORGANIZATION(&#39;O0001&#39;,&#39;LKSoft&#39;,&#39;company&#39;);
+#11=PRODUCT_DEFINITION_CONTEXT(&#39;part definition&#39;,#12,&#39;manufacturing&#39;);
+#12=APPLICATION_CONTEXT(&#39;mechanical design&#39;);
+#13=APPLICATION_PROTOCOL_DEFINITION(&#39;&#39;,&#39;automotive_design&#39;,2003,#12);
+#14=PRODUCT_DEFINITION(&#39;0&#39;,$,#15,#11);
+#15=PRODUCT_DEFINITION_FORMATION(&#39;1&#39;,$,#16);
+#16=PRODUCT(&#39;A0001&#39;,&#39;Test Part 1&#39;,&#39;&#39;,(#18));
+#17=PRODUCT_RELATED_PRODUCT_CATEGORY(&#39;part&#39;,$,(#16));
+#18=PRODUCT_CONTEXT(&#39;&#39;,#12,&#39;&#39;);
+#19=APPLIED_ORGANIZATION_ASSIGNMENT(#10,#20,(#16));
+#20=ORGANIZATION_ROLE(&#39;id owner&#39;);
+ENDSEC;
+END-ISO-10303-21;
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  /* This is a comment in a STEP file */
+ Token 
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+  "Part1"
+ Token 
+row
+ Feature Semantic Indentation
+ FeatureLink ../features/hasSemanticIndentation.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token 
+row
+ Feature Standard Library
+ FeatureLink ../features/hasStandardLibrary.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v178.2.3

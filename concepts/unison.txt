@@ -1,23 +1,27 @@
 unison
 ======
 
-unison is an open source programming language created in 2015.
+unison is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2015.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
 
-#280 on PLDB
-9 Years Old
+#270 on PLDB
+11 Years Old
 
+```Download source code:
 git clone https://github.com/unisonweb/unison
+```
 
 A friendly programming language from the future
 
-- Tags: programming language
-- unison is developed on GitHub and has 5,688 stars
-- Learn unison on exercism.
-- unisonweb.org was registered in 2014
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- unison is developed on <a href="https://github.com/unisonweb/unison">GitHub</a> and has 5,688 stars
+- unison is written in <a href="haskell.html">Haskell</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="racket.html">Racket</a>, <a href="sql.html">SQL</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="scheme.html">Scheme</a>, <a href="nix.html">Nix</a>, <a href="vim-script.html">Vim script</a>, <a href="bash.html">Bash</a>, <a href="cson.html">CSON</a>, <a href="json.html">JSON</a>, <a href="html.html">HTML</a>, <a href="xml.html">XML</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="dhall.html">Dhall</a>
+- Learn <a href="https://exercism.org/tracks/unison">unison on exercism.</a>
+- <a href="http://unisonweb.org/">unisonweb.org</a> was registered in 2014
 - Read more about unison on the web: 1.
  https://www.youtube.com/watch?v=rp_Eild1aq8 1.
 
+```Example from the web:
 -- comments start with `--`
 -- alice : Node, bob : Node
 x = factorial 6
@@ -25,7 +29,9 @@ Remote.transfer alice
 y = foo x -- happens on `alice` node
 Remote.transfer bob
 bar x y -- happens on `bob` node
+```
 
+```Example from <a href='https://riju.codes/unison'>Riju</a>:
 use io
 
 runProg: &#39;{IO, Exception} a -&gt; &#39;{IO} ()
@@ -42,28 +48,30 @@ main: &#39;{IO} ()
 main = runProg &#39;let
   printLine &quot;Hello, world!&quot;
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   -- A comment
  Token --
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

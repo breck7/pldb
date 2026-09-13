@@ -1,27 +1,30 @@
 Pep8
 ====
 
-Pep8 is an open source assembly language created in 2009.
+Pep8 is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22assembly%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">assembly language</a> created in 2009.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222009%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2009
 
-#998 on PLDB
-15 Years Old
-165 Repos
+#1035 on PLDB
+17 Years Old
+165 <span title="Pep8 repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/StanWarford/pep8
+```
 
 Pep/8 assembler and simulator for the textbook Computer Systems, J. Stanley Warford, Fourth edition
 
-- Tags: assembly language
-- Pep8 is developed on GitHub and has 23 stars
-- There are at least 165 Pep8 repos on GitHub
-- Early development of Pep8 happened in Pepperdine University
-- Pep8 is written in C++, Qt, HTML, XML, JavaScript
-- The  Google BigQuery Public Dataset GitHub snapshot shows 32 users using Pep8 in 33 repos on GitHub
-- GitHub supports syntax highlighting for Pep8
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"assembly"%5D%7D%5D%2C"logic"%3A"AND"%7D'>assembly language</a>
+- Pep8 is developed on <a href="https://github.com/StanWarford/pep8">GitHub</a> and has 23 stars
+- There are at least 165 Pep8 repos on <a href="https://github.com/search?q=language:Pep8">GitHub</a>
+- Early development of Pep8 happened in <a href="../lists/labs.html#q=Pepperdine University">Pepperdine University</a>
+- Pep8 is written in <a href="cpp.html">C++</a>, <a href="qt.html">Qt</a>, <a href="html.html">HTML</a>, <a href="xml.html">XML</a>, <a href="javascript.html">JavaScript</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 32 users using Pep8 in 33 repos on <a href="https://api.github.com/search/repositories?q=language:Pep8">GitHub</a>
+- GitHub supports <a href="https://github.com/R4PaSs/Sublime-Pep8" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Pep8
 - Read more about Pep8 on the web: 1.
  http://computersystemsbook.com/4th-edition/pep8/ 1.
 
+```Example from the web:
  BR main
  num: .EQUATE 0
  main: SUBSP 2,i
@@ -37,7 +40,9 @@ Pep/8 assembler and simulator for the textbook Computer Systems, J. Stanley Warf
  odd_msg: .ASCII &quot;The number is: Odd\x00&quot;
  even_msg: .ASCII &quot;The number is: Even\x00&quot;
  .END
+```
 
+```Example from <a href='https://github.com/R4PaSs/Sublime-Pep8'>Linguist</a>:
 _start:	LDA	0,i
 	LDX	0,i
 	LDA	20, i
@@ -62,4 +67,6 @@ s3:	CPX	-27746, d
 	LDX	-12289, sx
 	.END
 
-View source
+```
+
+Built with Scroll v178.2.3

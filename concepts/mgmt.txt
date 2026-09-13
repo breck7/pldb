@@ -1,24 +1,27 @@
 mgmt
 ====
 
-mgmt is a programming language created in 2015 by James Shubin.
+mgmt is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2015 by James Shubin.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
  https://pldb.io/concepts/../lists/creators.html#q=James%20Shubin James Shubin
 
-#288 on PLDB
-9 Years Old
+#303 on PLDB
+11 Years Old
 
+```Download source code:
 git clone https://github.com/purpleidea/mgmt
+```
 
 Next generation distributed, event-driven, parallel config management!
 
-- Tags: programming language
-- mgmt is developed on GitHub and has 3,473 stars
-- Early development of mgmt happened in https://github.com/purpleidea/mgmt/issues
-- mgmt is written in Go, YAML, Bourne shell, Markdown, SVG, Make, Python, Bash, Dockerfile, Yacc, Lisp, Smarty, Puppet, reStructuredText
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- mgmt is developed on <a href="https://github.com/purpleidea/mgmt">GitHub</a> and has 3,473 stars
+- Early development of mgmt happened in <a href="../lists/labs.html#q=https://github.com/purpleidea/mgmt/issues">https://github.com/purpleidea/mgmt/issues</a>
+- mgmt is written in <a href="go.html">Go</a>, <a href="yaml.html">YAML</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="markdown.html">Markdown</a>, <a href="svg.html">SVG</a>, <a href="make.html">Make</a>, <a href="python.html">Python</a>, <a href="bash.html">Bash</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="yacc.html">Yacc</a>, <a href="lisp.html">Lisp</a>, <a href="smarty.html">Smarty</a>, <a href="puppet.html">Puppet</a>, <a href="restructuredtext.html">reStructuredText</a>
 - Read more about mgmt on the web: 1.
  https://fosdem.org/2020/schedule/event/mgmtconfigmore/ 1.
 
+```Example from the web:
 import &quot;datetime&quot;
 $is_friday = datetime.weekday(datetime.now()) == &quot;friday&quot;
 file &quot;/srv/files/&quot; {
@@ -29,29 +32,30 @@ file &quot;/srv/files/&quot; {
    &quot;0770&quot;
  },
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

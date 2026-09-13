@@ -1,22 +1,23 @@
 StruQL
 ======
 
-StruQL is a query language created in 1999 by Mary Fernández and Dan Suciu and and Igor Tatarinov.
+StruQL is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22queryLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">query language</a> created in 1999 by Mary Fernández and Dan Suciu and Igor Tatarinov.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221999%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1999
  https://pldb.io/concepts/../lists/creators.html#q=Mary%20Fern%C3%A1ndez Mary Fernández
  https://pldb.io/concepts/../lists/creators.html#q=Dan%20Suciu Dan Suciu
- https://pldb.io/concepts/../lists/creators.html#q=and%20Igor%20Tatarinov and Igor Tatarinov
+ https://pldb.io/concepts/../lists/creators.html#q=Igor%20Tatarinov Igor Tatarinov
 
-#2309 on PLDB
-25 Years Old
+#2401 on PLDB
+27 Years Old
 
 A StruQL query is a function from a set of input graphs to an output graph.
 
-- Tags: queryLanguage
-- Early development of StruQL happened in AT&T and North Dakota State University
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"queryLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>queryLanguage</a>
+- Early development of StruQL happened in <a href="../lists/labs.html#q=AT&T and North Dakota State University">AT&T and North Dakota State University</a>
 - Read more about StruQL on the web: 1.
  https://www.usenix.org/legacy/events/dsl99/full_papers/fernandez/fernandez.pdf 1.
 
+```Example from the web:
  // Link root page to page of all accounts
  link Root() -&gt; &quot;Accounts&quot; -&gt; AccountsPage()
  // AccountsPage refers to each account in account database and its associated page
@@ -41,29 +42,30 @@ A StruQL query is a function from a set of input graphs to an output graph.
   link Info(acct) -&gt; &quot;Alias&quot; -&gt; alias
   }
   }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

@@ -1,22 +1,24 @@
 Scala Markup Language
 =====================
 
-Scala Markup Language is a template language created in 2010.
+Scala Markup Language is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22template%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">template language</a> created in 2010.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2010
 
-#1371 on PLDB
-14 Years Old
-0 Repos
+#1428 on PLDB
+16 Years Old
+0 <span title="Scala Markup Language repos on GitHub.">Repos</span>
 
-- Tags: template language
-- There are at least 0 Scala Markup Language repos on GitHub
-- Early development of Scala Markup Language happened in https://github.com/scalate
-- The  Google BigQuery Public Dataset GitHub snapshot shows 7 users using Scala Markup Language in 7 repos on GitHub
-- Pygments supports syntax highlighting for Scala Markup Language
-- GitHub supports syntax highlighting for Scala Markup Language
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"template"%5D%7D%5D%2C"logic"%3A"AND"%7D'>template language</a>
+- There are at least 0 Scala Markup Language repos on <a href="https://github.com/search?q=language:Scaml">GitHub</a>
+- Early development of Scala Markup Language happened in <a href="../lists/labs.html#q=https://github.com/scalate">https://github.com/scalate</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 7 users using Scala Markup Language in 7 repos on <a href="https://api.github.com/search/repositories?q=language:Scaml">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/html.py">syntax highlighting</a> for Scala Markup Language
+- GitHub supports <a href="https://github.com/scalate/Scalate.tmbundle" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Scala Markup Language
 
+```Example from <a href='https://github.com/scalate/Scalate.tmbundle'>Linguist</a>:
 %p
   Hello,
   World!
+```
 
-View source
+Built with Scroll v178.2.3

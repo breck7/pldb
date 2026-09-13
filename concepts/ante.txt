@@ -1,34 +1,42 @@
 Ante
 ====
 
-Ante is an open source programming language created in 2015 by Jake Fecher.
+Ante is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2015 by Jake Fecher.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222015%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2015
  https://pldb.io/concepts/../lists/creators.html#q=Jake%20Fecher Jake Fecher
 
-#381 on PLDB
-9 Years Old
+#396 on PLDB
+11 Years Old
 
+```Download source code:
 git clone https://github.com/jfecher/ante
+```
 
-Ante is a compiled systems language focusing on providing extreme extensibility through the use of a compile-time API. Using such an API, compiler extensions can be created within the program itself, allowing for the addition of a garbage collector, ownership system, type system changes, etc.
+<a href='https://github.com/jfecher/ante'>Ante</a> is a compiled systems language focusing on providing extreme extensibility through the use of a compile-time API. Using such an API, compiler extensions can be created within the program itself, allowing for the addition of a garbage collector, ownership system, type system changes, etc.
 
-- Tags: programming language
-- Ante is developed on GitHub and has 1,881 stars
-- Ante is written in Rust, Nix, TOML, Markdown, YAML, JSON, Dockerfile
-- antelang.org was registered in 2018
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Ante is developed on <a href="https://github.com/jfecher/ante">GitHub</a> and has 1,881 stars
+- Ante is written in <a href="rust.html">Rust</a>, <a href="nix.html">Nix</a>, <a href="toml.html">TOML</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="json.html">JSON</a>, <a href="dockerfile.html">Dockerfile</a>
+- <a href="http://antelang.org">antelang.org</a> was registered in 2018
 
+```Example from <a href='https://riju.codes/ante'>Riju</a>:
 print &quot;Hello, world!&quot;
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/a/Ante.ante'>hello-world</a>:
 9♦8♥J♦A♦2♣3♥7♠J♦A♦7♦J♦J♦A♦3♦J♦5♥6♦4♥J♥A♥6♠6♠J♥A♦8♦J♦A♦8♠J♦A♦3♦J♦A♦6♠J♦A♦8♠J♦A♥3♦2♠J♥A♥2♣6♠J♥
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print
 
-View source
+Built with Scroll v178.2.3

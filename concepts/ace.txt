@@ -1,22 +1,24 @@
 Ace Editor
 ==========
 
-Ace Editor is an editor created in 2010 by Fabian Jakobs.
+Ace Editor is an <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22editor%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">editor</a> created in 2010 by Fabian Jakobs.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2010
  https://pldb.io/concepts/../lists/creators.html#q=Fabian%20Jakobs Fabian Jakobs
 
-#242 on PLDB
-14 Years Old
+#249 on PLDB
+16 Years Old
 
+```Download source code:
 git clone https://github.com/ajaxorg/ace
+```
 
 Ace is an embeddable code editor written in JavaScript. It matches the features and performance of native editors such as Sublime, Vim and TextMate. It can be easily embedded in any web page and JavaScript application. Ace is maintained as the primary editor for Cloud9 IDE and is the successor of the Mozilla Skywriter (Bespin) project.
 
-- Tags: editor
-- Ace Editor is developed on GitHub and has 26,584 stars
-- Early development of Ace Editor happened in Mozilla and Cloud9
-- Ace Editor is written in JavaScript, JSON, XML, HTML, YAML, Markdown, TypeScript, CSS, SVG, Pug, Assembly language, Bourne shell, Tex, Make, SQL, AsciiDoc, reStructuredText, RobotFramework, Kotlin, Liquid, JSP, Objective-C, HCL, Scala, Blade, PowerShell, GraphQL, HAML, Velocity Template Language, Stylus, Forth, Diff, Rust, C++, Nix, Raku, Tcl, Sass, COBOL, Pascal, Groovy, EJS, Slim, Ruby, ActionScript, Java, AutoHotkey, VHDL, Twig, Crystal, Go, Gherkin, FORTRAN 77, Elixir, ERB, EEX, ABAP, TOML, Lua, Lisp, Less, Scheme, QML, Logtalk, odin, JSON5, Clojure, Vala, R, Dockerfile, CoffeeScript, SCSS, Perl, Haxe, Erlang, Protocol Buffers, PHP, Swift, Python, Julia, GLSL, Nim, OCaml, Haskell, Elm, Dart, JSX, Smarty, Pig Latin, Razor, Handlebars, Zig, XQuery, Ada, Ini, F#, C#, ColdFusion
-- See also: (4 related languages) CodeMirror, Monaco Editor, highlight.js, Pygments
-- 2 PLDB concepts link to Ace Editor: Prism, Pygments
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"editor"%5D%7D%5D%2C"logic"%3A"AND"%7D'>editor</a>
+- Ace Editor is developed on <a href="https://github.com/ajaxorg/ace">GitHub</a> and has 26,584 stars
+- Early development of Ace Editor happened in <a href="../lists/labs.html#q=Mozilla">Mozilla</a> and <a href="../lists/labs.html#q=Cloud9">Cloud9</a>
+- Ace Editor is written in <a href="javascript.html">JavaScript</a>, <a href="json.html">JSON</a>, <a href="xml.html">XML</a>, <a href="html.html">HTML</a>, <a href="yaml.html">YAML</a>, <a href="markdown.html">Markdown</a>, <a href="typescript.html">TypeScript</a>, <a href="css.html">CSS</a>, <a href="svg.html">SVG</a>, <a href="pug.html">Pug</a>, <a href="assembly-language.html">Assembly language</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="tex.html">Tex</a>, <a href="make.html">Make</a>, <a href="sql.html">SQL</a>, <a href="asciidoc.html">AsciiDoc</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="robotframework.html">RobotFramework</a>, <a href="kotlin.html">Kotlin</a>, <a href="liquid.html">Liquid</a>, <a href="java-server-pages.html">JSP</a>, <a href="objective-c.html">Objective-C</a>, <a href="hcl.html">HCL</a>, <a href="scala.html">Scala</a>, <a href="blade.html">Blade</a>, <a href="powershell.html">PowerShell</a>, <a href="graphql.html">GraphQL</a>, <a href="haml.html">HAML</a>, <a href="vtl-lang.html">Velocity Template Language</a>, <a href="stylus.html">Stylus</a>, <a href="forth.html">Forth</a>, <a href="diff.html">Diff</a>, <a href="rust.html">Rust</a>, <a href="cpp.html">C++</a>, <a href="nix.html">Nix</a>, <a href="raku.html">Raku</a>, <a href="tcl.html">Tcl</a>, <a href="sass.html">Sass</a>, <a href="cobol.html">COBOL</a>, <a href="pascal.html">Pascal</a>, <a href="groovy.html">Groovy</a>, <a href="ejs.html">EJS</a>, <a href="slim.html">Slim</a>, <a href="ruby.html">Ruby</a>, <a href="actionscript.html">ActionScript</a>, <a href="java.html">Java</a>, <a href="autohotkey.html">AutoHotkey</a>, <a href="vhdl.html">VHDL</a>, <a href="twig.html">Twig</a>, <a href="crystal.html">Crystal</a>, <a href="go.html">Go</a>, <a href="gherkin.html">Gherkin</a>, <a href="fortran-77.html">FORTRAN 77</a>, <a href="elixir.html">Elixir</a>, <a href="erb.html">ERB</a>, <a href="eex.html">EEX</a>, <a href="abap.html">ABAP</a>, <a href="toml.html">TOML</a>, <a href="lua.html">Lua</a>, <a href="lisp.html">Lisp</a>, <a href="less.html">Less</a>, <a href="scheme.html">Scheme</a>, <a href="qml.html">QML</a>, <a href="logtalk.html">Logtalk</a>, <a href="odin.html">Odin</a>, <a href="json5.html">JSON5</a>, <a href="clojure.html">Clojure</a>, <a href="vala.html">Vala</a>, <a href="r.html">R</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="coffeescript.html">CoffeeScript</a>, <a href="scss.html">SCSS</a>, <a href="perl.html">Perl</a>, <a href="haxe.html">Haxe</a>, <a href="erlang.html">Erlang</a>, <a href="protobuf.html">Protocol Buffers</a>, <a href="php.html">PHP</a>, <a href="swift.html">Swift</a>, <a href="python.html">Python</a>, <a href="julia.html">Julia</a>, <a href="glsl.html">GLSL</a>, <a href="nim.html">Nim</a>, <a href="ocaml.html">OCaml</a>, <a href="haskell.html">Haskell</a>, <a href="elm.html">Elm</a>, <a href="dart.html">Dart</a>, <a href="jsx.html">JSX</a>, <a href="smarty.html">Smarty</a>, <a href="pig.html">Pig Latin</a>, <a href="razor.html">Razor</a>, <a href="handlebars.html">Handlebars</a>, <a href="zig.html">Zig</a>, <a href="xquery.html">XQuery</a>, <a href="ada.html">Ada</a>, <a href="ini.html">Ini</a>, <a href="f-sharp.html">F#</a>, <a href="csharp.html">C#</a>, <a href="coldfusion.html">ColdFusion</a>
+- See also: (4 related languages) <a href="codemirror.html">CodeMirror</a>, <a href="monaco.html">Monaco Editor</a>, <a href="highlightjs.html">highlight.js</a>, <a href="pygments.html">Pygments</a>
+- 2 PLDB concepts link to Ace Editor: <a href="prismjs.html">Prism</a>, <a href="pygments.html">Pygments</a>
 
-View source
+Built with Scroll v178.2.3

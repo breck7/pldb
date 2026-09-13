@@ -1,28 +1,30 @@
 COMAL
 =====
 
-COMAL is a programming language created in 1973 by Børge R. Christensen and Benedict Løfstedt.
+COMAL is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1973 by Børge R. Christensen and Benedict Løfstedt.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221973%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1973
  https://pldb.io/concepts/../lists/creators.html#q=B%C3%B8rge%20R.%20Christensen Børge R. Christensen
  https://pldb.io/concepts/../lists/creators.html#q=Benedict%20L%C3%B8fstedt Benedict Løfstedt
 
-#1676 on PLDB
-51 Years Old
+#1745 on PLDB
+53 Years Old
 
 COMAL (Common Algorithmic Language) is a computer programming language developed in Denmark by Benedict Løfstedt and Børge R. Christensen in 1973. COMAL was one of the few structured programming languages that was available for and comfortably usable on 8-bit home computers. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/COMAL Read more on Wikipedia...
 
-- Tags: programming language
-- Explore COMAL snippets on Rosetta Code
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Explore COMAL snippets on <a href="http://www.rosettacode.org/wiki/Category:Comal">Rosetta Code</a>
 - COMAL on HOPL
  https://hopl.info/showlanguage.prx?exp=605 COMAL on HOPL
-- COMAL appears in the TIOBE Index
-- See also: (8 related languages) BASIC, Pascal, Logo, ISBN, BBC BASIC, Unix, DOI, Action!
+- COMAL appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- See also: (8 related languages) <a href="basic.html">BASIC</a>, <a href="pascal.html">Pascal</a>, <a href="logo.html">Logo</a>, <a href="isbn.html">ISBN</a>, <a href="bbc-basic.html">BBC BASIC</a>, <a href="unix.html">Unix</a>, <a href="doi.html">DOI</a>, <a href="action.html">Action!</a>
 
+```Example from <a href='https://en.wikipedia.org/wiki/COMAL'>Wikipedia</a>:
 10 PAGE
 20 FOR number:= 1 TO 10 DO
 30  PRINT &quot;HELLO, WORLD!&quot;
 40 NEXT or ENDFOR (Unicomal)
 50 END &quot; &quot;
+```
 
-View source
+Built with Scroll v178.2.3

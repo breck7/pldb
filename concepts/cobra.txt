@@ -1,36 +1,41 @@
 Cobra
 =====
 
-Cobra is an open source programming language created in 2006 by Charles Esterbrook.
+Cobra is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2006 by Charles Esterbrook.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222006%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2006
  https://pldb.io/concepts/../lists/creators.html#q=Charles%20Esterbrook Charles Esterbrook
 
-#605 on PLDB
-18 Years Old
+#628 on PLDB
+20 Years Old
 
 Cobra is a general-purpose, object-oriented programming language. Cobra is designed by Charles Esterbrook, and runs on the Microsoft .NET and Mono platforms. It is strongly influenced by Python, C#, Eiffel, Objective-C, and other programming languages. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Cobra_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Cobra happened in Cobra Language LLC
-- There are 11 Project Euler users using Cobra
-- Explore Cobra snippets on Rosetta Code
-- Cobra appears in the TIOBE Index
-- cobra-language.com was registered in 2008
-- See also: (4 related languages) Python, Eiffel, C#, Objective-C
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Cobra happened in <a href="../lists/labs.html#q=Cobra Language LLC">Cobra Language LLC</a>
+- There are 11 <a href="https://projecteuler.net/language=Cobra">Project Euler</a> users using Cobra
+- Explore Cobra snippets on <a href="http://www.rosettacode.org/wiki/Category:Cobra">Rosetta Code</a>
+- Cobra appears in the <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+- <a href="http://cobra-language.com/">cobra-language.com</a> was registered in 2008
+- See also: (4 related languages) <a href="python.html">Python</a>, <a href="eiffel.html">Eiffel</a>, <a href="csharp.html">C#</a>, <a href="objective-c.html">Objective-C</a>
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/c/Cobra.cobra'>hello-world</a>:
 class Hello
 
     def main
         print &#39;Hello World&#39;
+```
 
+```Example from <a href='http://helloworldcollection.de/#Cobra'>the Hello World Collection</a>:
 &quot;&quot;&quot;Hello world in Cobra&quot;&quot;&quot;
 
 class Hello
 
     def main
         print &#39;Hello, world.&#39;
+```
 
+```Example from <a href='https://en.wikipedia.org/wiki/Cobra_(programming_language)'>Wikipedia</a>:
 class Person
 
     var _name as String
@@ -41,28 +46,29 @@ class Person
 
     def toString as String is override
         return &#39;My name is [_name] and I am [_age] years old&#39;
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   'Hello world'
  Token '
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

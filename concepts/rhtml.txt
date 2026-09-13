@@ -1,27 +1,29 @@
 RHTML
 =====
 
-RHTML is a template language created in 2004.
+RHTML is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22template%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">template language</a> created in 2004.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222004%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2004
 
-#1183 on PLDB
-20 Years Old
-0 Repos
+#1229 on PLDB
+22 Years Old
+0 <span title="RHTML repos on GitHub.">Repos</span>
 
 RHTML is HTML mixed with Ruby, using HTML tags. All of Ruby is available for programming along with HTML.
 
-- Tags: template language
-- There are at least 0 RHTML repos on GitHub
-- Early development of RHTML happened in https://github.com/rails
-- Pygments supports syntax highlighting for RHTML
-- GitHub supports syntax highlighting for RHTML
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"template"%5D%7D%5D%2C"logic"%3A"AND"%7D'>template language</a>
+- There are at least 0 RHTML repos on <a href="https://github.com/search?q=language:RHTML">GitHub</a>
+- Early development of RHTML happened in <a href="../lists/labs.html#q=https://github.com/rails">https://github.com/rails</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/templates.py">syntax highlighting</a> for RHTML
+- GitHub supports <a href="https://github.com/atom/language-ruby" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for RHTML
 - Read more about RHTML on the web: 1.
  https://www.tutorialspoint.com/ruby-on-rails/rails-and-rhtml.htm 1.
 
+```Example from the web:
 &lt;ul&gt;
   &lt;% @products.each do |p| %&gt;
      &lt;li&gt;&lt;%=  @p.name %&gt;&lt;/li&gt;
   &lt;% end %&gt;
 &lt;/ul&gt;
+```
 
-View source
+Built with Scroll v178.2.3

@@ -1,17 +1,18 @@
 KCL
 ===
 
-KCL, aka KittyCAD Language, is a cad created in 2021.
+KCL, aka KittyCAD Language, is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22cad%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">cad</a> created in 2021.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222021%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2021
 
-#3118 on PLDB
-3 Years Old
+#3257 on PLDB
+5 Years Old
 
-- Tags: cad, programming language
-- First announcement of KCL
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"cad"%5D%7D%5D%2C"logic"%3A"AND"%7D'>cad</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- <a href="https://zoo.dev/blog/introducing-kittycad">First announcement of</a> KCL
 - Read more about KCL on the web: 1.
  https://github.com/KittyCAD/kcl-samples 1.
 
+```Example from the web:
 const block = startSketchOn(&#39;XY&#39;)
   |&gt; startProfileAt([-width / 2, -length / 2], %)
   |&gt; lineTo([width / 2, -length / 2], %)
@@ -36,5 +37,6 @@ const block = startSketchOn(&#39;XY&#39;)
      ], holeDia / 2, %), %)
   |&gt; hole(circle([0, 0], bearingDia / 2, %), %)
   |&gt; extrude(height - cbDepth, %)
+```
 
-View source
+Built with Scroll v178.2.3

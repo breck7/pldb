@@ -1,28 +1,31 @@
 V
 =
 
-V is a programming language created in 2019 by Alexander Medvednikov.
+V is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2019 by Alexander Medvednikov.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2019
  https://pldb.io/concepts/../lists/creators.html#q=Alexander%20Medvednikov Alexander Medvednikov
 
-#124 on PLDB
-5 Years Old
-1k Repos
+#133 on PLDB
+7 Years Old
+1k <span title="V repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/vlang/v
+```
 
-Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in  V translation. https://vlang.io
+Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io
 
-- Tags: programming language
-- V is developed on GitHub and has 35,595 stars
-- Watch the history of the V repo visualized with Gource
-- There are at least 1,382 V repos on GitHub
-- V is written in Coq, Markdown, C, HTML, YAML, XML, GLSL, JSON, TOML, SVG, Bourne shell, CSS, Dockerfile, JavaScript, Objective-C, Make, Python, awk, C++, C#, TypeScript, Go, SQL, Ruby, Tcl, Assembly language
-- The  Google BigQuery Public Dataset GitHub snapshot shows 44 users using V in 45 repos on GitHub
-- There are 1,547 members in the V subreddit
-- Learn V on exercism.
-- vlang.io was registered in 2019
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- V is developed on <a href="https://github.com/vlang/v">GitHub</a> and has 35,595 stars
+- Watch the history of <a href="https://www.youtube.com/watch?v=zqUE-57Bb1M">the V repo visualized with Gource</a>
+- There are at least 1,382 V repos on <a href="https://github.com/search?q=language:V">GitHub</a>
+- V is written in <a href="coq.html">Coq</a>, <a href="markdown.html">Markdown</a>, <a href="c.html">C</a>, <a href="html.html">HTML</a>, <a href="yaml.html">YAML</a>, <a href="xml.html">XML</a>, <a href="glsl.html">GLSL</a>, <a href="json.html">JSON</a>, <a href="toml.html">TOML</a>, <a href="svg.html">SVG</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="css.html">CSS</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="javascript.html">JavaScript</a>, <a href="objective-c.html">Objective-C</a>, <a href="make.html">Make</a>, <a href="python.html">Python</a>, <a href="awk.html">awk</a>, <a href="cpp.html">C++</a>, <a href="csharp.html">C#</a>, <a href="typescript.html">TypeScript</a>, <a href="go.html">Go</a>, <a href="sql.html">SQL</a>, <a href="ruby.html">Ruby</a>, <a href="tcl.html">Tcl</a>, <a href="assembly-language.html">Assembly language</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 44 users using V in 45 repos on <a href="https://api.github.com/search/repositories?q=language:V">GitHub</a>
+- There are 1,547 members in the <a href="https://reddit.com/r/vlang">V subreddit</a>
+- Learn <a href="https://exercism.org/tracks/v">V on exercism.</a>
+- <a href="https://vlang.io/">vlang.io</a> was registered in 2019
 
+```Example from the web:
 import json
 
 struct User {
@@ -64,48 +67,55 @@ fn (u User) can_register() bool {
 fn (mut u User) register() {
     u.is_registered = true
 }
+```
 
+```Example from <a href='https://riju.codes/v'>Riju</a>:
 fn main() {
 	println(&#39;Hello, world!&#39;)
 }
 
+```
+
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/v/V.v'>hello-world</a>:
 println(&quot;Hello World&quot;)
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token println
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "hello world"
  Token "
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

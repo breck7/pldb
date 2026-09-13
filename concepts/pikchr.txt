@@ -1,20 +1,21 @@
 Pikchr
 ======
 
-Pikchr is an open source diagram lang created in 2020 by Dwayne Richard Hipp.
+Pikchr is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22diagramLang%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">diagram lang</a> created in 2020 by Dwayne Richard Hipp.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222020%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2020
  https://pldb.io/concepts/../lists/creators.html#q=Dwayne%20Richard%20Hipp Dwayne Richard Hipp
 
-#1648 on PLDB
-4 Years Old
+#1714 on PLDB
+6 Years Old
 
 Pikchr (pronounced "picture") is a PIC-like markup language for diagrams in technical documentation. Pikchr is designed to be embedded in fenced code blocks of Markdown or similar mechanisms of other documentation markup languages.
 
-- Tags: diagramLang, text markup language
-- Early development of Pikchr happened in http://www.hwaci.com
-- Pikchr is written in C
-- See also: (1 related languages) PIC
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"diagramLang"%5D%7D%5D%2C"logic"%3A"AND"%7D'>diagramLang</a>, <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"textMarkup"%5D%7D%5D%2C"logic"%3A"AND"%7D'>text markup language</a>
+- Early development of Pikchr happened in <a href="../lists/labs.html#q=http://www.hwaci.com">http://www.hwaci.com</a>
+- Pikchr is written in <a href="c.html">C</a>
+- See also: (1 related languages) <a href="pic.html">PIC</a>
 
+```Example from the web:
 ``` pikchr
 arrow right 200% &quot;Markdown&quot; &quot;Source&quot;
 box rad 10px &quot;Markdown&quot; &quot;Formatter&quot; &quot;(markdown.c)&quot; fit
@@ -22,23 +23,26 @@ arrow right 200% &quot;HTML+SVG&quot; &quot;Output&quot;
 arrow &lt;-&gt; down 70% from last box.s
 box same &quot;Pikchr&quot; &quot;Formatter&quot; &quot;(pikchr.c)&quot; fit
 ```
+```
 
+```Pikchr <a href="../lists/keywords.html#q=pikchr">Keywords</a>
 ; : [ ] \ above aligned arc arrow below big bold box center circle color cylinder diameter diamond dot down ellipse file fill fit from height ht invisible italic left line ljust mono monospace move oval rad radius right rjust small spline text then thick thickness thin to up wid width
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token /* */
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

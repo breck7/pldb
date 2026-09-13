@@ -1,31 +1,45 @@
 ../code/conceptPage.scroll
 
 id egel
-name egel
+name Egel
 appeared 2016
-tags interpreter
+creators Marco Devillers
+tags pl functional
 website https://egel-lang.github.io/
-latestVersion v0.1.10
-description <a href='https://egel-lang.github.io/'>Egel</a> An interpreter for eager untyped combinator rewriting implemented in C++.
-lab https://github.com/egel-lang
-writtenIn c bourne-shell m4 markdown cpp make cmake svg python yaml vim-script tex pascal html protobuf
+description A simple untyped eager functional language.
+fileExtensions eg
+writtenIn cpp
 
-isOpenSource true
-tryItOnline https://tio.run/#egel
-fileType text
-rosettaCode http://www.rosettacode.org/wiki/Category:Egel
 repoStats
  firstCommit 2016
- commits 986
- committers 5
- files 506
  newestCommit 2024
-country Unknown
+ commits 1433
+ committers 6
+ files 225
+ mb 4
+ linesOfCode 39880
 
-twitter https://twitter.com/egel_language
+example
+ # Rosetta Code example 99 Bottles.
+ #
+ # See: http://rosettacode.org
+ 
+ import "prelude.eg"
+ 
+ using System
+ 
+ def print_rhyme =
+     [ 0 ->
+         print "better go to the store, and buy some more\n"
+     | N ->
+         let _ = print N " bottles of beer on the wall\n" in
+         let _ = print N " bottles of beer\n" in
+         let _ = print "take one down, pass it around\n" in
+             print_rhyme (N - 1) ]
+ 
+ def main = print_rhyme 99
 
 githubRepo https://github.com/egel-lang/egel
- firstCommit 2016
  stars 80
  forks 4
  subscribers 2
@@ -33,5 +47,3 @@ githubRepo https://github.com/egel-lang/egel
  updated 2024
  description The Egel Programming Language
  issues 0
-
-domainName egel-lang.github.io

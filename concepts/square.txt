@@ -1,17 +1,30 @@
 SQUARE
 ======
 
-SQUARE is a programming language created in 1975.
+SQUARE is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22queryLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">query language</a> created in 1975 by Raymond F. Boyce and Donald D. Chamberlin and W. Frank King III and Michael M. Hammer.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221975%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1975
+ https://pldb.io/concepts/../lists/creators.html#q=Raymond%20F.%20Boyce Raymond F. Boyce
+ https://pldb.io/concepts/../lists/creators.html#q=Donald%20D.%20Chamberlin Donald D. Chamberlin
+ https://pldb.io/concepts/../lists/creators.html#q=W.%20Frank%20King%20III W. Frank King III
+ https://pldb.io/concepts/../lists/creators.html#q=Michael%20M.%20Hammer Michael M. Hammer
 
-#3593 on PLDB
-49 Years Old
+#2400 on PLDB
+51 Years Old
 
-- Tags: programming language
-- Early development of SQUARE happened in IBM and Massachusettes Institute of Technology
+A data sublanguage called SQUARE, intended for use in ad hoc, interactive problem solving by non-computer specialists, and is shown to be relationally complete; however, it avoids the quantifiers and bound variables required by languages based on the relational calculus.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"queryLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>queryLanguage</a>
+- Early development of SQUARE happened in <a href="../lists/labs.html#q=IBM">IBM</a> and <a href="../lists/labs.html#q=Massachusettes Institute of Technology">Massachusettes Institute of Technology</a>
+- <a href="sql.html">SQL</a> and <a href="bnf.html">BNF</a> and <a href="relational-model.html">Relational Model</a> influenced the design of SQUARE
+- <a href="https://dl.acm.org/doi/pdf/10.1145/361219.361221">First announcement of</a> SQUARE
 - SQUARE on HOPL
  https://hopl.info/showlanguage.prx?exp=696 SQUARE on HOPL
 - Read more about SQUARE on Semantic Scholar: 1.
  https://semanticscholar.org/paper/eb3e849c11a44bc211adc8d393bae752d8396808 1.
 
-View source
+```Example from the web:
+ EMP (&#39;SHOE&#39;, &gt; 10,000)
+NAME, MGR DEPT, SAL
+```
+
+Built with Scroll v178.2.3

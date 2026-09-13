@@ -1,0 +1,811 @@
+:root {
+  /* Base Colors */
+  --scrollPrimaryRgb: 10, 92, 202; /* Base primary button */
+  --scrollSurfaceRgb: 204, 204, 204; /* Base surface */
+  --scrollTextBase: 0, 0, 0;
+  --scrollLinkBase: 51, 102, 204;
+
+  /* Semantic Colors */
+  --scrollColorBackground: rgb(244, 244, 244);
+  --scrollColorText: rgba(var(--scrollTextBase), 1);
+  --scrollColorLink: rgb(var(--scrollLinkBase), 1);
+  --scrollColorSubdued: rgb(150, 150, 150);
+
+  /* Typography */
+  --scrollFontPrimary: Exchange, Georgia, serif;
+  --scrollFontUi: "SF Pro", "Helvetica Neue", "Segoe UI", "Arial";
+  --scrollFontMono: monospace;
+  --scrollBaseFontSize: 16px;
+}
+
+
+:root {
+  /* Derived Colors */
+  --scrollColorPrimary: rgba(var(--scrollPrimaryRgb), 0.8);
+  --scrollColorPrimaryHover: rgba(var(--scrollPrimaryRgb), 0.9);
+  --scrollColorPrimaryActive: rgb(var(--scrollPrimaryRgb));
+
+  --scrollColorSurface: rgba(var(--scrollSurfaceRgb), 0.4);
+  --scrollColorSurfaceAlt: rgba(var(--scrollSurfaceRgb), 0.6);
+  --scrollColorBorder: rgba(var(--scrollSurfaceRgb), 0.8);
+}
+
+html,
+body,
+div,
+span,
+p,
+ol,
+ul,
+li,
+table,
+figure {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  border-spacing: 0;
+}
+
+html {
+  background-color: var(--scrollColorBackground);
+  font-family: var(--scrollFontPrimary);
+  color: var(--scrollColorText);
+  font-size: var(--scrollBaseFontSize);
+  hyphens: auto;
+  height: 100%;
+}
+
+.dropcap:first-letter {
+  font-size: 3rem;
+  line-height: 0.9em;
+  margin-right: 0.125rem;
+  display: block;
+  float: left;
+}
+
+.abstractDinkusParser {
+  text-align: center;
+  padding: 1rem;
+}
+
+.abstractDinkusParser span {
+  vertical-align: sub;
+}
+
+details {
+  margin-top: 10px;
+}
+
+summary {
+  font-family: var(--scrollFontUi);
+  cursor: pointer;
+}
+
+.scrollCaptionedFigure {
+  display: block;
+  break-inside: avoid;
+  max-width: 100%;
+  text-align: center;
+}
+
+.scrollCaptionedFigure img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.1875rem;
+}
+
+.scrollCaptionedFigure figcaption {
+  font-family: var(--scrollFontUi);
+  font-size: 0.8rem;
+}
+
+.scrollCaptionedFigure figcaption .scrollParagraph {
+  margin-top: 0;
+}
+
+.scrollCodeBlock {
+  overflow: auto;
+  font-size: 0.8rem;
+  hyphens: none;
+  white-space: pre;
+  break-inside: avoid;
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 0;
+  position: relative;
+  border-left: 0.5rem solid var(--scrollColorBorder);
+}
+
+.codeWithHeader {
+  break-inside: avoid-column;
+  margin: 10px 0;
+}
+
+.codeHeader {
+  font-size: 80%;
+  text-align: center;
+  background: var(--scrollColorSurfaceAlt);
+  border: 1px solid var(--scrollColorBorder);
+  border-bottom: 0;
+  margin-bottom: -7px;
+  padding: 4px 2px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.scrollCodeBlock:hover .scrollCopyButton {
+  opacity: 0.5;
+}
+
+.scrollCodeBlock:hover .scrollCopyButton:hover {
+  opacity: 0.8;
+}
+
+.scrollCodeBlock:hover .scrollCopyButton:active {
+  opacity: 1;
+}
+
+.scrollCopyButton {
+  position: absolute;
+  top: 0.125rem;
+  right: 0.125rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.scrollCopyButton::after {
+  content: "[ ]";
+}
+
+.scrollCopiedButton::after {
+  content: "[✓]";
+}
+
+ol,
+ul {
+  padding-left: 1rem;
+}
+
+li {
+  margin-top: 0.4rem;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration-color: transparent;
+  color: var(--scrollColorLink);
+}
+
+a:hover {
+  text-decoration-color: initial;
+}
+
+.scrollButton {
+  background: linear-gradient(180deg, var(--scrollColorPrimary) 0%, color-mix(in srgb, var(--scrollColorPrimary), black 15%) 100%);
+  border-radius: 6px;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  transform: translateY(0);
+  /* Halved shadow distances */
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.1),
+    /* Ambient shadow (halved) */ 0 1px 0 rgba(255, 255, 255, 0.2) inset,
+    /* Top highlight */ 0 -1px 0 rgba(0, 0, 0, 0.2) inset,
+    /* Bottom shadow (halved) */ 0 1.5px 0 color-mix(in srgb, var(--scrollColorPrimary), black 30%); /* 3D base (halved) */
+}
+
+.scrollButton a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 0.5px 0.5px rgba(0, 0, 0, 0.2); /* Text depth (halved) */
+}
+
+.scrollButton:hover {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--scrollColorPrimary), white 10%) 0%, var(--scrollColorPrimary) 100%);
+  transform: translateY(-1px); /* Halved */
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.15),
+    /* Halved */ 0 1px 0 rgba(255, 255, 255, 0.2) inset,
+    0 -1px 0 rgba(0, 0, 0, 0.2) inset,
+    0 2.5px 0 color-mix(in srgb, var(--scrollColorPrimary), black 30%); /* Halved */
+}
+
+.scrollButton:active {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--scrollColorPrimary), black 10%) 0%, var(--scrollColorPrimary) 100%);
+  transform: translateY(1px); /* Halved */
+  box-shadow:
+    0 0.5px 1px rgba(0, 0, 0, 0.1),
+    /* Halved */ 0 1px 0 rgba(255, 255, 255, 0.15) inset,
+    0 -0.5px 0 rgba(0, 0, 0, 0.2) inset,
+    0 0.5px 0 color-mix(in srgb, var(--scrollColorPrimary), black 30%); /* Halved */
+}
+sup,
+sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.375rem;
+}
+
+sub {
+  top: 0.375rem;
+}
+
+p {
+  margin-top: 0.4rem;
+  line-height: 1.4rem;
+}
+
+.scrollQuote {
+  break-inside: avoid;
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: var(--scrollColorSurface);
+  white-space: pre-line;
+  border-left: 0.5rem solid var(--scrollColorBorder);
+}
+
+.scrollInlineCode {
+  font-family: var(--scrollFontMono);
+  font-size: 0.9rem;
+  background-color: var(--scrollColorSurface);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.scrollParagraph {
+  text-align: justify;
+}
+
+center .scrollParagraph {
+  text-align: center;
+}
+
+.subdued {
+  color: var(--scrollColorSubdued);
+}
+
+.scrollColumns {
+  column-count: auto;
+  column-fill: balance;
+  column-width: 35ch;
+  column-gap: 1.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin: auto;
+}
+
+.scrollSnippetContainer {
+  padding: 1ch 0;
+  break-inside: avoid;
+  text-align: justify;
+}
+
+.scrollContainerParser {
+  padding: 0 1rem;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0.625rem 0;
+}
+
+h1 {
+  font-size: 1.25rem;
+}
+
+h2 {
+  font-size: 1.125rem;
+}
+
+h3,
+h4 {
+  font-size: 1rem;
+}
+
+h1.printTitleParser {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 0.15625rem;
+  margin-top: 0;
+  font-size: 1.75rem;
+  max-width: calc(100vw - 2 * (1.5625rem + 1.875rem));
+}
+
+h1.printTitleParser a {
+  color: var(--scrollColorText);
+}
+
+.printDateParser {
+  text-align: center;
+}
+.scrollDateline,
+.printDateParser {
+  font-style: italic;
+  line-height: 1.4rem;
+  font-size: 0.75rem;
+}
+
+.scrollSection {
+  break-inside: avoid;
+}
+
+.scrollSection h1,
+.scrollSection h2,
+.scrollSection h3,
+.scrollSection h4 {
+  text-align: center;
+}
+
+h4.scrollQuestion {
+  text-align: left;
+  margin: 1.4rem 0 0 0;
+}
+
+.scrollSection:first-child h1,
+.scrollSection:first-child h2,
+.scrollSection:first-child h3,
+.scrollSection:first-child h4 {
+  margin-top: 0;
+}
+
+.scrollSection:first-child h4.scrollQuestion {
+  margin-top: 0;
+}
+
+.scrollNoteLink {
+  opacity: 0.4;
+  text-decoration: none;
+}
+
+.scrollNoteLink:hover {
+  opacity: 1;
+}
+
+.scrollFootNoteUsageLink {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.scrollFootNoteUsageLink:hover {
+  opacity: 1;
+}
+
+.scrollHoverNote {
+  text-decoration: underline dashed 1px rgba(0, 0, 0, 0.1);
+  cursor: default;
+}
+
+.scrollTable {
+  table-layout: fixed;
+  font-family: var(--scrollFontUi);
+  margin: 0.5rem 0;
+  overflow: hidden;
+  font-size: 0.8rem;
+  width: 100%;
+  hyphens: none;
+  border: 1px solid var(--scrollColorBorder);
+}
+
+.scrollTable td,
+.scrollTable th {
+  padding: 0.1875rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrollTable th {
+  text-transform: capitalize;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+  text-align: left;
+}
+
+.scrollTable tr:nth-child(even) {
+  background: var(--scrollColorSurface);
+}
+
+.scrollTable pre {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+}
+
+.scrollTable.expandedTable {
+  table-layout: unset;
+  background: white;
+  position: relative;
+  z-index: 10;
+  overflow: unset;
+}
+
+.scrollTable.expandedTable pre {
+  white-space: unset;
+  overflow: unset;
+}
+
+.scrollTable.expandedTable td,
+.scrollTable.expandedTable th {
+  overflow: unset;
+  white-space: unset;
+}
+
+.printAuthorsParser {
+  font-size: 0.875rem;
+  font-style: italic;
+  margin: 0.25rem 0;
+  text-align: center;
+}
+
+.abstractTextLinkParser {
+  text-align: center;
+  margin: 0.5em auto;
+  font-family: Verdana;
+  font-weight: 100;
+}
+
+.abstractTextLinkParser a {
+  color: var(--scrollColorBorder);
+}
+
+.abstractTextLinkParser a:hover {
+  color: #333;
+}
+
+.scrollContinueReadingLink {
+  display: block;
+  text-align: center;
+}
+
+.scrollDashboard {
+  width: 100%;
+  font-size: 1.875rem;
+  text-align: center;
+  font-weight: bold;
+  break-inside: avoid;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.scrollDashboard td {
+  width: 33.3%;
+  border: 1px solid #e8e8e8;
+}
+
+.scrollDashboard span {
+  font-size: 1.25rem;
+  display: block;
+}
+
+.scrollChat span {
+  font-family: Verdana;
+  margin-top: 0.3125rem;
+  padding: 0.3125rem 1.25rem;
+  border-radius: 0.9375rem;
+  display: inline-block;
+}
+
+.scrollChatLeft span {
+  background: var(--scrollColorSurface);
+}
+
+.scrollChatRight span {
+  color: white;
+  background: rgb(0, 132, 255);
+}
+
+.scrollYouTubeHolder {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.scrollYouTubeEmbed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  padding: 0 10px;
+}
+
+
+.pldbHomepageLink a {
+  color: #000;
+}
+.newPostLink {
+  line-height: 1.3em;
+}
+.singleColumn {
+  max-width: 800px;
+  margin: auto;
+}
+.hasFeature {
+  color: green;
+}
+.doesNotHaveFeature {
+  color: red;
+}
+.keywordsBlock .scrollCodeBlock {
+  white-space: normal;
+}
+#monacoContainer {
+  display: block;
+  height: 10em;
+  border: 1px solid grey;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+li.scrollParagraph {
+  margin: 0;
+}
+a {
+  color: #36c;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+.scrollButton {
+  text-align: center;
+  margin: 21px 0;
+}
+.scrollButton a {
+  padding: 7px;
+  color: white;
+  background-color: rgb(0, 116, 212);
+  opacity: 0.8;
+  border-radius: 5px;
+  font-family: "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+}
+.scrollButton a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.headerLink a {
+  color: black;
+  line-height: 140%;
+}
+
+.query {
+  text-align: center;
+  margin: 0;
+}
+
+.trueBaseThemeHeader {
+  padding-right: 80px; /* if the width of browser is narrow, save room for view source button */
+  margin-bottom: 10px;
+}
+.trueBaseThemeHeader a {
+  color: black;
+  margin-right: 5px;
+  font-size: 16px;
+}
+.trueBaseThemeLogo {
+  font-weight: bold;
+  font-family: Tahoma, Arial;
+}
+.trueBaseThemeHeader a:hover,
+.trueBaseThemeFooter a:hover {
+  color: black;
+}
+.trueBaseThemeFooter {
+  margin-top: 18px;
+  color: #828282;
+}
+.trueBaseThemeFooter a {
+  color: #828282;
+}
+#trueBaseThemeHeaderSearch {
+  border: 0;
+  background: transparent;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.autocomplete {
+  background: #fff;
+  z-index: 1000;
+  font-size: 14px/22px;
+  overflow: auto;
+  box-sizing: border-box;
+  border: 1px solid rgba(50, 50, 50, 0.6);
+}
+.autocomplete * {
+  font: inherit;
+}
+.autocomplete > div {
+  padding: 3px 4px;
+}
+.autocomplete .group {
+  background: #eee;
+}
+.autocomplete > div.selected,
+.autocomplete > div:hover:not(.group) {
+  background: #e3e3e3;
+  cursor: pointer;
+}
+
+.printTitleParser {
+  font-size: 2em;
+}
+
+.scrollCodeBlock {
+  border: 1px solid rgba(204, 204, 204, 0.8);
+  border-radius: 3px;
+  max-height: 50ch;
+}
+.dataTable th {
+  cursor: pointer;
+}
+.dataTables_filter {
+  float: right;
+  text-align: right;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.citationSection {
+  font-size: 10px;
+}
+.citationSection h4 {
+  text-align: center;
+}
+
+/* todo: should be in trueBase code? */
+.trueBaseThemeSearchResultsHeader {
+  color: #333;
+  margin-bottom: 3px;
+  font-size: 12px;
+  font-style: italic;
+}
+.error {
+  color: red;
+}
+
+.trueBaseSearchFormPadded {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.trueBaseSearchForm #searchFormInput {
+  width: 500px;
+  height: 50px;
+  border: 0;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.trueBaseSearchForm .searchButton {
+  height: 50px;
+  font-size: 16px;
+  border: 0;
+  color: rgb(11, 11, 11);
+  cursor: pointer;
+  background-color: rgb(237, 237, 237);
+}
+
+.trueBaseSearchForm .searchButton:hover {
+  background-color: rgb(207, 207, 207);
+}
+
+.trueBaseSearchForm .searchButton:active {
+  background-color: rgb(187, 187, 187);
+}
+
+/* end search css */
+
+.trueBaseThemePreviousItem,
+.trueBaseThemeNextItem {
+  position: absolute;
+  font-size: 16px;
+  line-height: 26px;
+  top: 8px;
+  color: rgba(204, 204, 204, 0.5);
+}
+.trueBaseThemePreviousItem:hover,
+.trueBaseThemeNextItem:hover {
+  color: rgba(204, 204, 204, 1);
+}
+.trueBaseThemePreviousItem {
+  left: 2px;
+  text-align: left;
+}
+.trueBaseThemeNextItem {
+  right: 2px;
+  text-align: right;
+}
+
+/* Icons */
+
+/* fallback */
+@font-face {
+  font-family: "Material Symbols Outlined";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./googleMaterial.woff2") format("woff2");
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.nciImage img {
+  max-width: 400px;
+}
+
+.trueBaseThemeQuickLinks a {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #333;
+  opacity: 0.6;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 18px;
+  height: 18px;
+  padding: 3px;
+  font-size: 18px;
+}
+.trueBaseThemeQuickLinks a svg {
+  width: 18px;
+  height: 18px;
+}
+.trueBaseThemeQuickLinks a:hover {
+  background-color: #f0f0f0;
+  filter: drop-shadow(0px 1px 1px rgb(0 0 0 / 0.2));
+}
+.trueBaseThemeQuickLinks a:active {
+  background-color: #c0c0c0;
+  filter: drop-shadow(0px 1px 1px rgb(0 0 0 / 0.2));
+}
+
+.creatorQuickLinks a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-size: 16px !important;
+}
+.creatorQuickLinks a svg {
+  width: 16px;
+  height: 16px;
+}
+.creatorQuickLinks a:hover {
+  filter: drop-shadow(0px 1px 1px rgb(0 0 0 / 0.2));
+}
+
+/* End Icons */

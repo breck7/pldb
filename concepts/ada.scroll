@@ -140,6 +140,7 @@ hasLineComments true
  -- A comment
 hasPrintDebugging true
 hasSemanticIndentation false
+hasSinglePassParser true
 hasAssignment true
 hasStrings true
  "Hello world"

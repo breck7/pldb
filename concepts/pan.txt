@@ -1,30 +1,33 @@
 Pan
 ===
 
-Pan is an open source programming language created in 2011 by Charles Loomis.
+Pan is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2011 by Charles Loomis.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222011%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2011
  https://pldb.io/concepts/../lists/creators.html#q=Charles%20Loomis Charles Loomis
 
-#688 on PLDB
-13 Years Old
-41 Repos
+#714 on PLDB
+15 Years Old
+41 <span title="Pan repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/quattor/pan
+```
 
 The pan configuration language allows the definition of machine configuration information and an associated schema with a simple, human-accessible syntax. A pan language compiler transforms the configuration information contained within a set of pan templates to a machine-friendly XML or JSON format. The pan language is used within the Quattor toolkit to define the desired configuration for one or more machines. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Pan_(programming_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Pan is developed on GitHub and has 12 stars
-- There are at least 41 Pan repos on GitHub
-- Early development of Pan happened in https://github.com/quattor
-- Pan is written in Java, XML, HTML, reStructuredText, Ini, Clojure, Perl, Vim script, YAML, SVG, Python, Markdown, Bash
-- The  Google BigQuery Public Dataset GitHub snapshot shows 119 users using Pan in 150 repos on GitHub
-- Pygments supports syntax highlighting for Pan
-- GitHub supports syntax highlighting for Pan
-- quattor.org was registered in 2003
-- See also: (1 related languages) Java
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Pan is developed on <a href="https://github.com/quattor/pan">GitHub</a> and has 12 stars
+- There are at least 41 Pan repos on <a href="https://github.com/search?q=language:Pan">GitHub</a>
+- Early development of Pan happened in <a href="../lists/labs.html#q=https://github.com/quattor">https://github.com/quattor</a>
+- Pan is written in <a href="java.html">Java</a>, <a href="xml.html">XML</a>, <a href="html.html">HTML</a>, <a href="restructuredtext.html">reStructuredText</a>, <a href="ini.html">Ini</a>, <a href="clojure.html">Clojure</a>, <a href="perl.html">Perl</a>, <a href="vim-script.html">Vim script</a>, <a href="yaml.html">YAML</a>, <a href="svg.html">SVG</a>, <a href="python.html">Python</a>, <a href="markdown.html">Markdown</a>, <a href="bash.html">Bash</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 119 users using Pan in 150 repos on <a href="https://api.github.com/search/repositories?q=language:Pan">GitHub</a>
+- <a href="pygments.html">Pygments</a> supports <a href="https://github.com/pygments/pygments/blob/master/pygments/lexers/dsls.py">syntax highlighting</a> for Pan
+- GitHub supports <a href="https://github.com/quattor/language-pan" title="The package used for syntax highlighting by GitHub Linguist.">syntax highlighting</a> for Pan
+- <a href="http://www.quattor.org/">quattor.org</a> was registered in 2003
+- See also: (1 related languages) <a href="java.html">Java</a>
 
+```Example from <a href='https://github.com/quattor/language-pan'>Linguist</a>:
 unique template site/one/onevm;
 
 include &#39;components/chkconfig/config&#39;;
@@ -40,31 +43,35 @@ include &#39;quattor/aii/opennebula/default&#39;;
 &quot;/software/packages/{acpid}&quot; = dict();
 &quot;/software/components/chkconfig/service/acpid&quot; = dict(&#39;on&#39;, &#39;&#39;, &#39;startstop&#39;, true);
 
+```
+
+```Example from <a href='https://en.wikipedia.org/wiki/Pan_(programming_language)'>Wikipedia</a>:
 [ object | declaration | unique | structure ] template template-name;
 [ statement … ]
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

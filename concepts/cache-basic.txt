@@ -1,22 +1,22 @@
 Caché Basic
 ===========
 
-Caché Basic is a query language created in 1997.
+Caché Basic is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22queryLanguage%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">query language</a> created in 1997.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221997%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1997
 
-#2052 on PLDB
-27 Years Old
+#2141 on PLDB
+29 Years Old
 
 Caché is a high-performance object database with several built-in general-purpose programming languages. It supports multiple processes and provides concurrency control. Each process has direct, efficient access to the data.
 
-- Tags: queryLanguage
-- Early development of Caché Basic happened in InterSystems
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"queryLanguage"%5D%7D%5D%2C"logic"%3A"AND"%7D'>queryLanguage</a>
+- Early development of Caché Basic happened in <a href="../lists/labs.html#q=InterSystems">InterSystems</a>
 - Read more about Caché Basic on the web: 1.
  https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=TBAS_ARoutine 1.
 
+```Example from the web:
 &#39; RightTriangle compute area and hypotenuse of a right triangle
 &#39; this routine contains examples of Cache Basic features */
- 
 Sub Run()
 println &quot;Compute the area and hypotenuse of a right triangle&quot;
 println &quot;given the lengths of its two sides.&quot;
@@ -35,24 +35,20 @@ select case left(units, 1)
     case &quot;k&quot; units = &quot;kilometers&quot;
     case else units = &quot;units&quot;
 end select
- 
 do
     println
     input &quot;Length of side 1: &quot;, side1
     if (side1) = &quot;&quot; then exit do
 loop while IsNegative( side1 )
 if (side1 = &quot;&quot;) then exit sub
- 
 do
     println
     input &quot;Length of side 2: &quot;, side2
     if (side2) = &quot;&quot; then exit do
 loop while IsNegative( side2 )
 if (side2 = &quot;&quot;) then exit sub
- 
 Compute(units, side1, side2)
 end sub
- 
 public function IsNegative(ByVal num As %String) As %Boolean
 &#39; is num negative?
     &#39; check in range &quot;1&quot; through &quot;9&quot;
@@ -64,12 +60,10 @@ public function IsNegative(ByVal num As %String) As %Boolean
         return False
     end if
 end function
- 
 private function Compute(ByVal units As %String, _
                          ByVal A As %Integer, _
                          ByVal B As %Integer)
 &#39; compute and display area and hypotenuse
- 
 area  = round((( A * B ) / 2), 2)
 hypot = round(sqr(( A ^ 2 ) + ( B ^ 2 )), 2)
   
@@ -78,41 +72,42 @@ println &quot;The area of this triangle is &quot;, area, &quot; square &quot;, u
 println
 println &quot;The hypotenuse is &quot;, hypot, &quot; &quot;, units, &quot;.&quot;
 end function
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token True False
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token println
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ' A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   ' A comment
  Token '
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
-View source
+Built with Scroll v178.2.3

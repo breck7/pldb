@@ -1,22 +1,25 @@
 zenscript
 =========
 
-zenscript is a programming language created in 2014 by Stan Hebben.
+zenscript is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2014 by Stan Hebben.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222014%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2014
  https://pldb.io/concepts/../lists/creators.html#q=Stan%20Hebben Stan Hebben
 
-#1254 on PLDB
-10 Years Old
-1k Repos
+#1292 on PLDB
+12 Years Old
+1k <span title="zenscript repos on GitHub.">Repos</span>
 
+```Download source code:
 git clone https://github.com/CraftTweaker/ZenScript
+```
 
-- Tags: programming language
-- zenscript is developed on GitHub and has 76 stars
-- There are at least 1,390 zenscript repos on GitHub
-- zenscript is written in Java, Gradle, Markdown
-- The  Google BigQuery Public Dataset GitHub snapshot shows 8 users using zenscript in 8 repos on GitHub
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- zenscript is developed on <a href="https://github.com/CraftTweaker/ZenScript">GitHub</a> and has 76 stars
+- There are at least 1,390 zenscript repos on <a href="https://github.com/search?q=language:ZenScript">GitHub</a>
+- zenscript is written in <a href="java.html">Java</a>, <a href="gradle.html">Gradle</a>, <a href="markdown.html">Markdown</a>
+- The  Google BigQuery Public Dataset GitHub snapshot shows 8 users using zenscript in 8 repos on <a href="https://api.github.com/search/repositories?q=language:ZenScript">GitHub</a>
 
+```Example from the web:
 var x = 5;
 print(x+5);
 for i in 0 to 10 {
@@ -27,15 +30,16 @@ for i in 10 .. 20 {
     print(i);
     }
 }
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print
 
-View source
+Built with Scroll v178.2.3

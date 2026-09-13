@@ -1,25 +1,27 @@
 Short Code computer language
 ============================
 
-Short Code computer language is a programming language created in 1949.
+Short Code computer language is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 1949.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%221949%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 1949
 
-#2589 on PLDB
-75 Years Old
+#2666 on PLDB
+77 Years Old
 
 Short Code was one of the first higher-level languages ever developed for an electronic computer. Unlike machine code, Short Code statements represented mathematic expressions rather than a machine instruction. Also known as an automatic programming, the source code was not compiled but executed through an interpreter to simplify the programming process; the execution time was much slower though.. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/Short_Code_(computer_language) Read more on Wikipedia...
 
-- Tags: programming language
-- Early development of Short Code computer language happened in University of Pennsylvania
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Early development of Short Code computer language happened in <a href="../lists/labs.html#q=University of Pennsylvania">University of Pennsylvania</a>
 - Short Code computer language on HOPL
  https://hopl.info/showlanguage.prx?exp=2707 Short Code computer language on HOPL
 
+```Example from <a href='https://en.wikipedia.org/wiki/Short_Code_(computer_language)'>Wikipedia</a>:
 X3 =  (  X1 +  Y1 )  /  X1 * Y1   substitute variables
 X3 03 09 X1 07 Y1 02 04 X1   Y1   substitute operators and parentheses.
                                        Note multiplication is represented
                                        by juxtaposition.
 07Y10204X1Y1                      group into 12-byte words.
 0000X30309X1
+```
 
-View source
+Built with Scroll v178.2.3

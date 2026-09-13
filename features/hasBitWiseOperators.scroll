@@ -7,7 +7,7 @@ printTitle Bitwise Operators
 <a class="trueBaseThemePreviousItem" href="hasBinaryOperators.html">&lt;</a>
 <a class="trueBaseThemeNextItem" href="hasBlobs.html">&gt;</a>
 
-viewSourceUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
 
 container 600px
 
@@ -35,6 +35,9 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/lua.html">L
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/c3.html">C3</a>
  int i = b &lt;&lt; 4 + x; // Same as (b &lt;&lt; 4) + x
 
+codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/moonbit.html">MoonBit</a>
+ 1 &amp; 0
+
 codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/slope.html">Slope</a>
  (&amp; 0xFF 0x1B)
 
@@ -43,7 +46,7 @@ codeWithHeader Example from <b>1 languages</b>: <a href="../concepts/jule.html">
 
 ***
 
-* Languages *with* Bitwise Operators include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/r.html">R</a>, <a href="../concepts/lua.html">Lua</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/c2.html">C2</a>, <a href="../concepts/slope.html">Slope</a>, <a href="../concepts/dale.html">Dale</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/sako.html">SAKO</a>, <a href="../concepts/speedie.html">Speedie</a>
+* Languages *with* Bitwise Operators include <a href="../concepts/javascript.html">JavaScript</a>, <a href="../concepts/c.html">C</a>, <a href="../concepts/python.html">Python</a>, <a href="../concepts/r.html">R</a>, <a href="../concepts/lua.html">Lua</a>, <a href="../concepts/chapel.html">Chapel</a>, <a href="../concepts/c3.html">C3</a>, <a href="../concepts/moonbit.html">MoonBit</a>, <a href="../concepts/c2.html">C2</a>, <a href="../concepts/slope.html">Slope</a>, <a href="../concepts/dale.html">Dale</a>, <a href="../concepts/jule.html">Jule</a>, <a href="../concepts/sako.html">SAKO</a>, <a href="../concepts/speedie.html">Speedie</a>
 
 ***
 

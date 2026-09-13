@@ -1,24 +1,27 @@
 ArkScript
 =========
 
-ArkScript is an open source programming language created in 2019 by Alexandre Plateau and Pierre Pharel and Natendrtfm.
+ArkScript is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2019 by Alexandre Plateau and Pierre Pharel and Natendrtfm.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222019%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2019
  https://pldb.io/concepts/../lists/creators.html#q=Alexandre%20Plateau Alexandre Plateau
  https://pldb.io/concepts/../lists/creators.html#q=Pierre%20Pharel Pierre Pharel
  https://pldb.io/concepts/../lists/creators.html#q=Natendrtfm Natendrtfm
 
-#423 on PLDB
-5 Years Old
+#442 on PLDB
+7 Years Old
 
+```Download source code:
 git clone https://github.com/ArkScript-lang/Ark
+```
 
 ArkScript is a small, fast, functional and scripting language for C++ projects
 
-- Tags: programming language
-- ArkScript is developed on GitHub and has 578 stars
-- Early development of ArkScript happened in Alexandre Plateau
-- ArkScript is written in C++, Markdown, YAML, JSON, CSV, CMake, Bash, Python, Bourne shell, SVG, XML, Dockerfile
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- ArkScript is developed on <a href="https://github.com/ArkScript-lang/Ark">GitHub</a> and has 578 stars
+- Early development of ArkScript happened in <a href="../lists/labs.html#q=Alexandre Plateau">Alexandre Plateau</a>
+- ArkScript is written in <a href="cpp.html">C++</a>, <a href="markdown.html">Markdown</a>, <a href="yaml.html">YAML</a>, <a href="json.html">JSON</a>, <a href="csv.html">CSV</a>, <a href="cmake.html">CMake</a>, <a href="bash.html">Bash</a>, <a href="python.html">Python</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="svg.html">SVG</a>, <a href="xml.html">XML</a>, <a href="dockerfile.html">Dockerfile</a>
 
+```Example from the web:
 (import std.random)
 (import std.Math)
 
@@ -44,35 +47,39 @@ ArkScript is a small, fast, functional and scripting language for C++ projects
     (print &quot;You won in &quot; tries &quot; tries.&quot;)}))
 
 (game)
+```
 
+```Example from <a href='https://github.com/leachim6/hello-world/blob/main/a/ArkScript.ark'>hello-world</a>:
 (print &quot;Hello World&quot;)
 
-Language features
+```
+
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Booleans
  FeatureLink ../features/hasBooleans.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token true false
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   "Hello world"
  Token "
 row
  Feature Print() Debugging
  FeatureLink ../features/hasPrintDebugging.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token print
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   (import std.List)
   (import std.Math :max)
@@ -80,21 +87,21 @@ row
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token 
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   # A comment
  Token #
 row
  Feature Semantic Indentation
  FeatureLink ../features/hasSemanticIndentation.html
- Supported X
+ Supported <span class="doesNotHaveFeature">X</span>
  Example
  Token
 
@@ -105,4 +112,4 @@ title|titleLink|date|score|comments
 Show HN: ArkScript, a small and fast language for scripting video games|https://news.ycombinator.com/item?id=22695517|03/26/2020|101|42
 Show HN: An Online Playground for ArkScript|https://news.ycombinator.com/item?id=40695579|06/16/2024|1|1
 
-View source
+Built with Scroll v178.2.3

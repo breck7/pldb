@@ -1,67 +1,73 @@
 Flow9
 =====
 
-Flow9 is a programming language created in 2010 by Dmitry Solomennikov.
+Flow9 is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2010 by Dmitry Solomennikov.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222010%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2010
  https://pldb.io/concepts/../lists/creators.html#q=Dmitry%20Solomennikov Dmitry Solomennikov
 
-#417 on PLDB
-14 Years Old
+#434 on PLDB
+16 Years Old
 
+```Download source code:
 git clone https://github.com/area9innovation/flow9
+```
 
 The flow programming language, a safe, functional strongly-typed programming language
 
-- Tags: programming language
-- Flow9 is developed on GitHub and has 563 stars
-- Early development of Flow9 happened in https://github.com/area9innovation
-- Flow9 is written in C, C++, Haxe, Nim, JavaScript, Bourne shell, XML, Java, Markdown, Objective-C, HTML, JSON, Python, C#, TypeScript, Make, CSS, Bash, Objective C++, D, GLSL, YAML, WebAssembly, Qt, M4, Lisp, Clojure, Ruby, Assembly language, Dockerfile, CMake, CSON, Smalltalk, PHP, OCaml, awk, Ini, Gradle, Vim script, Tex, SAS, XAML, SVG, Swift, Perl, Diff
-- Monaco package for syntax highlighting Flow9
-- flow9.org was registered in 2017
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Flow9 is developed on <a href="https://github.com/area9innovation/flow9">GitHub</a> and has 563 stars
+- Early development of Flow9 happened in <a href="../lists/labs.html#q=https://github.com/area9innovation">https://github.com/area9innovation</a>
+- Flow9 is written in <a href="c.html">C</a>, <a href="cpp.html">C++</a>, <a href="haxe.html">Haxe</a>, <a href="nim.html">Nim</a>, <a href="javascript.html">JavaScript</a>, <a href="bourne-shell.html">Bourne shell</a>, <a href="xml.html">XML</a>, <a href="java.html">Java</a>, <a href="markdown.html">Markdown</a>, <a href="objective-c.html">Objective-C</a>, <a href="html.html">HTML</a>, <a href="json.html">JSON</a>, <a href="python.html">Python</a>, <a href="csharp.html">C#</a>, <a href="typescript.html">TypeScript</a>, <a href="make.html">Make</a>, <a href="css.html">CSS</a>, <a href="bash.html">Bash</a>, <a href="objective-cpp.html">Objective C++</a>, <a href="d.html">D</a>, <a href="glsl.html">GLSL</a>, <a href="yaml.html">YAML</a>, <a href="wasm.html">WebAssembly</a>, <a href="qt.html">Qt</a>, <a href="m4.html">M4</a>, <a href="lisp.html">Lisp</a>, <a href="clojure.html">Clojure</a>, <a href="ruby.html">Ruby</a>, <a href="assembly-language.html">Assembly language</a>, <a href="dockerfile.html">Dockerfile</a>, <a href="cmake.html">CMake</a>, <a href="cson.html">CSON</a>, <a href="smalltalk.html">Smalltalk</a>, <a href="php.html">PHP</a>, <a href="ocaml.html">OCaml</a>, <a href="awk.html">awk</a>, <a href="ini.html">Ini</a>, <a href="gradle.html">Gradle</a>, <a href="vim-script.html">Vim script</a>, <a href="tex.html">Tex</a>, <a href="sas.html">SAS</a>, <a href="xaml.html">XAML</a>, <a href="svg.html">SVG</a>, <a href="swift.html">Swift</a>, <a href="perl.html">Perl</a>, <a href="diff.html">Diff</a>
+- <a href="monaco.html">Monaco</a> <a href="https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages/flow9">package</a> for syntax highlighting Flow9
+- <a href="https://flow9.org/">flow9.org</a> was registered in 2017
 - Read more about Flow9 on the web: 1.
  https://news.ycombinator.com/item?id=19769410 1.
 
+```Example from the web:
 import runtime;
 
 main() {
 	println(&quot;Hello world&quot;);
 }
+```
 
+```Flow9 <a href="../lists/keywords.html#q=flow9">Keywords</a>
 import require export forbid native if else cast unsafe switch default
+```
 
-Language features
+Language <a href="../lists/features.html">features</a>
 ======================================================
 
 row
  Feature Conditionals
  FeatureLink ../features/hasConditionals.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature Switch Statements
  FeatureLink ../features/hasSwitch.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token 
 row
  Feature File Imports
  FeatureLink ../features/hasImports.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   import runtime;
  Token import
 row
  Feature Comments
  FeatureLink ../features/hasComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token 
 row
  Feature MultiLine Comments
  FeatureLink ../features/hasMultiLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   /* A comment
   */
@@ -69,15 +75,15 @@ row
 row
  Feature Line Comments
  FeatureLink ../features/hasLineComments.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
   // A comment
  Token //
 row
  Feature Strings
  FeatureLink ../features/hasStrings.html
- Supported ✓
+ Supported <span class="hasFeature">✓</span>
  Example
  Token "
 
-View source
+Built with Scroll v178.2.3

@@ -1,22 +1,23 @@
 GeoJSON
 =======
 
-GeoJSON is a json format created in 2008.
+GeoJSON is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22jsonFormat%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">json format</a> created in 2008.
  https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222008%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2008
 
-#1092 on PLDB
-16 Years Old
+#1153 on PLDB
+18 Years Old
 
 GeoJSON is an open standard format designed for representing simple geographical features, along with their non-spatial attributes. It is based on JSON, the JavaScript Object Notation. The features include points (therefore addresses and locations), line strings (therefore streets, highways and boundaries), polygons (countries, provinces, tracts of land), and multi-part collections of these types. Read more on Wikipedia...
  https://en.wikipedia.org/wiki/GeoJSON Read more on Wikipedia...
 
-- Tags: jsonFormat
-- Early development of GeoJSON happened in Planet Labs and Mapbox and Hobu Inc and Cadcorp
-- geojson.org was registered in 2007
-- See also: (2 related languages) JSON, Julia
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"jsonFormat"%5D%7D%5D%2C"logic"%3A"AND"%7D'>jsonFormat</a>
+- Early development of GeoJSON happened in <a href="../lists/labs.html#q=Planet Labs">Planet Labs</a> and <a href="../lists/labs.html#q=Mapbox">Mapbox</a> and <a href="../lists/labs.html#q=Hobu Inc">Hobu Inc</a> and <a href="../lists/labs.html#q=Cadcorp">Cadcorp</a>
+- <a href="http://geojson.org/">geojson.org</a> was registered in 2007
+- See also: (2 related languages) <a href="json.html">JSON</a>, <a href="julia.html">Julia</a>
 - Read more about GeoJSON on the web: 1.
  https://tools.ietf.org/html/rfc7946 1.
 
+```Example from <a href='https://en.wikipedia.org/wiki/GeoJSON'>Wikipedia</a>:
 {
   &quot;type&quot;:&quot;Topology&quot;,
   &quot;transform&quot;:{
@@ -52,5 +53,6 @@ GeoJSON is an open standard format designed for representing simple geographical
     [[0,-1],[2,0]]
   ]
 }
+```
 
-View source
+Built with Scroll v178.2.3
