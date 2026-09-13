@@ -1,4 +1,5 @@
 importOnly
 baseUrl https://pldb.io/features/
-editBaseUrl /edit.html?folderName=pldb.io&fileName=features/
+editBaseUrl https://github.com/breck7/pldb/blob/main/features
+// editBaseUrl /edit.html?folderName=pldb.io&fileName=features/
 replace BASE_URL ..
