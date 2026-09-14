@@ -1,0 +1,21 @@
+../code/conceptPage.scroll
+
+id conflate
+name Conflate
+appeared 2026
+tags pl
+website https://hacker-lot.github.io/conflate/
+description Conflate is an experimental polyglot programming language that combines Python, C++, Rust, Java, and Go blocks in one program, with shared values and optional typed inputs and outputs.
+fileExtensions confl
+writtenIn python
+isOpenSource true
+gitRepo https://github.com/Hacker-lot/conflate
+reference https://github.com/Hacker-lot/conflate/blob/main/docs/LANGUAGE.md
+
+example
+ @python(out: seed: int)
+ seed = 40
+ @cpp(in: seed: int; out: answer: int)
+ int answer = seed.as<int>() + 2;
+ @python(in: answer: int)
+ print(answer)
