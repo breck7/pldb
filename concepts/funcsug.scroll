@@ -1,0 +1,42 @@
+../code/conceptPage.scroll
+
+id funcsug
+name FuncSug
+appeared 2022
+creators Claude Lion
+country France
+tags pl
+website https://github.com/cl4cnam/funcSug
+rosettaCode http://www.rosettacode.org/wiki/Category:FuncSug
+description FuncSug is a simple alternative to event-driven programming and game loops. It features deterministic structured concurrency, waiting of a determinate event and automatic branch cancellation. 
+fileExtensions fg
+writtenIn javascript
+tryItOnline https://cl4cnam.github.io/try_FuncSug
+keywords and awaitBeep awaitBip branch break calljs def do else exitAfter exitWith false finished for if in js not onBreak or par parallel select seq sequence spawn true var while
+
+lineCommentToken #
+assignmentToken :=
+booleanTokens true false
+
+hasAssignment true
+ name := 'John'
+hasComments true
+hasStrings true
+ "Hello, World!"
+hasConditionals true
+hasWhileLoops true
+hasFunctions true
+hasInfixNotation true
+hasLists true
+ myParallelList := |1, 2, 3, 4, 5|
+hasSemanticIndentation true
+
+isOpenSource true
+example
+ parallel exitAfter 1 finished:
+ 	while true:
+ 		waitSeconds(2)
+ 		displayNewMessage('Hello, World!')
+ 	awaitClick('#stop')
+
+githubRepo https://github.com/cl4cnam/funcSug
