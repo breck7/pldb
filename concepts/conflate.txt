@@ -1,0 +1,30 @@
+Conflate
+========
+
+Conflate is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2026.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222026%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2026
+
+#2350 on PLDB
+0 Years Old
+
+```Download source code:
+git clone https://github.com/Hacker-lot/conflate
+```
+
+Conflate is an experimental polyglot programming language that combines Python, C++, Rust, Java, and Go blocks in one program, with shared values and optional typed inputs and outputs.
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Conflate is written in <a href="python.html">Python</a>
+- Read more about Conflate on the web: 1.
+ https://github.com/Hacker-lot/conflate/blob/main/docs/LANGUAGE.md 1.
+
+```Example from the web:
+@python(out: seed: int)
+seed = 40
+@cpp(in: seed: int; out: answer: int)
+int answer = seed.as&lt;int&gt;() + 2;
+@python(in: answer: int)
+print(answer)
+```
+
+Built with Scroll v178.2.3
