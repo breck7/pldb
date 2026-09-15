@@ -1,7 +1,7 @@
 Features
 ========
 
-A list of 59 features found in programming languages.
+A list of 60 features found in programming languages.
 
 Below are features with at least 10 measurements (you can also view all).
  https://pldb.io/allFeatures.html view all
@@ -11,22 +11,22 @@ We also have a page of all keywords and all file extensions.
  https://pldb.io/extensions.html file extensions
 
 title¶titleLink¶pseudoExample¶yes¶no¶percentage
-Comments¶../features/hasComments.html¶# Hello PLDB¶638¶4¶99%
+Comments¶../features/hasComments.html¶# Hello PLDB¶639¶4¶99%
 Line Comments¶../features/hasLineComments.html¶# Hello PLDB¶540¶22¶96%
-Strings¶../features/hasStrings.html¶"Hello PLDB"¶378¶2¶99%
+Strings¶../features/hasStrings.html¶"Hello PLDB"¶379¶2¶99%
 Print() Debugging¶../features/hasPrintDebugging.html¶print "Hello PLDB"¶323¶1¶100%
 MultiLine Comments¶../features/hasMultiLineComments.html¶/* Hello PLDB */¶228¶25¶90%
 Integers¶../features/hasIntegers.html¶80766866¶174¶1¶99%
 Floats¶../features/hasFloats.html¶80766866.0¶149¶0¶100%
 Booleans¶../features/hasBooleans.html¶pldb = true¶123¶8¶94%
 Hexadecimals¶../features/hasHexadecimals.html¶0x4D06792¶110¶2¶98%
-Conditionals¶../features/hasConditionals.html¶if (isTrue) printPldb()¶78¶4¶95%
-Semantic Indentation¶../features/hasSemanticIndentation.html¶line0 if true line1  print "Hello PLDB"¶73¶528¶12%
-Assignment¶../features/hasAssignment.html¶name = "PLDB"¶57¶1¶98%
+Conditionals¶../features/hasConditionals.html¶if (isTrue) printPldb()¶79¶4¶95%
+Semantic Indentation¶../features/hasSemanticIndentation.html¶line0 if true line1  print "Hello PLDB"¶74¶528¶12%
+Assignment¶../features/hasAssignment.html¶name = "PLDB"¶58¶1¶98%
 Octals¶../features/hasOctals.html¶0o464063622¶54¶4¶93%
 File Imports¶../features/hasImports.html¶import pldb¶53¶3¶95%
-Functions¶../features/hasFunctions.html¶function computePLDBRanks() {}¶52¶2¶96%
-While Loops¶../features/hasWhileLoops.html¶while (pldb.pop()) loop()¶50¶4¶93%
+Functions¶../features/hasFunctions.html¶function computePLDBRanks() {}¶53¶2¶96%
+While Loops¶../features/hasWhileLoops.html¶while (pldb.pop()) loop()¶51¶4¶93%
 Binary Literals¶../features/hasBinaryNumbers.html¶0b100110100000110011110010010¶49¶1¶98%
 Standard Library¶../features/hasStandardLibrary.html¶print("print is part of stdlib")¶42¶5¶89%
 Operator Overloading¶../features/hasOperatorOverloading.html¶def __add__(): doSomethingDifferent()¶36¶14¶72%
@@ -35,7 +35,7 @@ Type Inference¶../features/hasTypeInference.html¶imAString = "pldb"¶30¶1¶97
 Constants¶../features/hasConstants.html¶const name = "PLDB"¶30¶2¶94%
 Macros¶../features/hasMacros.html¶#define pldbItems 4000¶28¶10¶74%
 Switch Statements¶../features/hasSwitch.html¶switch animal: case dog-buy; case cat-sell;¶27¶2¶93%
-Lists¶../features/hasLists.html¶[2, 3, 10]¶26¶2¶93%
+Lists¶../features/hasLists.html¶[2, 3, 10]¶27¶2¶93%
 Exceptions¶../features/hasExceptions.html¶throw new Error("PLDB uh oh")¶25¶3¶89%
 Case Insensitive Identifiers¶../features/hasCaseInsensitiveIdentifiers.html¶pLdB = "PLDB"¶24¶57¶30%
 Static Typing¶../features/hasStaticTyping.html¶int pldbRank = 100¶23¶2¶92%
@@ -58,6 +58,7 @@ Increment and decrement operators¶../features/hasIncrementAndDecrementOperators
 Enums¶../features/hasEnums.html¶colorsEnum { "red", "white", "blue"}¶11¶5¶-
 Zero-based numbering¶../features/hasZeroBasedNumbering.html¶firstItem = pldb[0]¶10¶3¶-
 Maps¶../features/hasMaps.html¶{name: "PLDB"}¶10¶0¶-
+Infix Notation¶../features/hasInfixNotation.html¶1 + 2¶10¶0¶-
 Disk Output¶../features/canWriteToDisk.html¶write("pldb.csv", "...")¶10¶4¶-
 Single Dispatch¶../features/hasSingleDispatch.html¶person.run()¶9¶1¶-
 Regular Expression Syntax Sugar¶../features/hasRegularExpressionsSyntaxSugar.html¶/pldb/¶9¶6¶-
