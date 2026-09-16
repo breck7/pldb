@@ -1,0 +1,111 @@
+../code/conceptPage.scroll
+
+id morloc
+name Morloc
+appeared 2016
+creators Zebulun Arendsee
+tags pl
+website https://morloc.io
+releaseNotes https://github.com/morloc-project/morloc/blob/master/ChangeLog.md
+description Compose functions across languages under a common type system and transform modules into CLIs, APIs, MCPs etc. 
+paper https://peerj.com/articles/cs-3435/
+fileExtensions loc
+writtenIn haskell rust
+
+isOpenSource true
+influencedBy haskell python
+docs https://morloc-project.github.io/docs
+country United States
+
+twitter https://x.com/morlocproject
+example
+ module m (sum, sumOfSums)
+ 
+ import root-py
+ import root-cpp
+ 
+ source Py from "foo.py" ("pmap")
+ source Cpp from "foo.hpp" ("sum")
+ 
+ pmap :: (a -> b) -> [a] -> [b]
+ 
+ --' Add up a list of numbers
+ sum :: [Real] -> Real
+ 
+ --' Add up a list of lists, summing each in parallel
+ sumOfSums :: [[Real]] -> Real
+ sumOfSums = sum . pmap sum
+
+githubRepo https://github.com/morloc-project/morloc
+ created 2016
+ firstCommit 2016
+
+hasComments true
+hasLineComments true
+hasMultiLineComments true
+hasDocComments true
+canReadCommandLineArgs true
+hasAccessModifiers true
+hasAlgebraicTypes true
+hasAlgebraicTypes true
+hasAnonymousFunctions true
+hasAnonymousFunctions true
+hasArraySlicingSyntax true
+hasBinaryNumbers true
+hasBooleans true
+hasBooleans true
+hasBoundedCheckedArrays true
+hasComments true
+hasConditionals true
+hasEnums true
+hasEscapeCharacters true
+hasFirstClassFunctions true
+hasFloats true
+hasFloats true
+hasFnArguments true
+hasFunctionComposition true
+hasFunctionComposition true
+hasFunctions true
+hasFunctions true
+hasGenerics true
+hasGenerics true
+hasHexadecimals true
+hasImports true
+hasInfixNotation true
+hasIntegers true
+hasIntegers true
+hasLineComments true
+hasLists true
+hasLists true
+hasModules true
+hasModules true
+hasMultiLineComments true
+hasMultilineStrings true
+hasNamespaces true
+hasOctals true
+hasPartialApplication true
+hasPartialApplication true
+hasPatternMatching true
+hasPatternMatching true
+hasPolymorphism true
+hasRangeOperators true
+hasScientificNotation true
+hasStandardLibrary true
+hasStandardLibrary true
+hasStaticTyping true
+hasStaticTyping true
+hasStreams true
+hasStringConcatOperator true
+hasStrings true
+hasStrings true
+hasStructs true
+hasTernaryOperators true
+hasTypeAliases true
+hasTypeClasses true
+hasTypeClasses true
+hasTypeInference true
+hasTypeInference true
+hasUnicodeIdentifiers true
+hasUserDefinedOperators true
+hasVariableSubstitutionSyntax true
+hasWhileLoops false
