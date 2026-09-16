@@ -6,7 +6,7 @@ FlowNet is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%
  https://pldb.io/concepts/../lists/creators.html#q=Erann%20Gat Erann Gat
  https://pldb.io/concepts/../lists/creators.html#q=Mike%20Ciholas Mike Ciholas
 
-#3247 on PLDB
+#3248 on PLDB
 33 Years Old
 
 Ethernet alternative. Like ATM, FlowNet is a switched network based on fixed-size cells. Unlike ATM, FlowNet cells are large--800 bytes instead of 53. This allows room for a 14-byte Ethernet header plus an additional QoS extension. The QoS extension header is 18 bytes, making the full FlowNet header 32 bytes long. The remaining 768 bytes (=256+512) are data payload. FlowNet interoperates with Ethernet through a simple bridge device.

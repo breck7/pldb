@@ -1,0 +1,460 @@
+Morloc
+======
+
+Morloc is an open source <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22contains%22%2C%22data%22%3A%22tags%22%2C%22origData%22%3A%22tags%22%2C%22type%22%3A%22string%22%2C%22value%22%3A%5B%22pl%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D">programming language</a> created in 2016 by Zebulun Arendsee.
+ https://pldb.io/concepts/../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%7B%22condition%22%3A%22%3D%22%2C%22data%22%3A%22appeared%22%2C%22origData%22%3A%22appeared%22%2C%22tags%22%3A%22num%22%2C%22value%22%3A%5B%222016%22%5D%7D%5D%2C%22logic%22%3A%22AND%22%7D 2016
+ https://pldb.io/concepts/../lists/creators.html#q=Zebulun%20Arendsee Zebulun Arendsee
+
+#1469 on PLDB
+10 Years Old
+
+```Download source code:
+git clone https://github.com/morloc-project/morloc
+```
+
+Compose functions across languages under a common type system and transform modules into CLIs, APIs, MCPs etc. 
+
+- Tags: <a href='../lists/explorer.html#searchBuilder=%7B"criteria"%3A%5B%7B"condition"%3A"contains"%2C"data"%3A"tags"%2C"origData"%3A"tags"%2C"type"%3A"string"%2C"value"%3A%5B"pl"%5D%7D%5D%2C"logic"%3A"AND"%7D'>programming language</a>
+- Morloc is developed on <a href="https://github.com/morloc-project/morloc">GitHub</a>
+- <a href="haskell.html">Haskell</a> and <a href="python.html">Python</a> influenced the design of Morloc
+- Morloc is written in <a href="haskell.html">Haskell</a>, <a href="rust.html">Rust</a>
+- <a href="https://peerj.com/articles/cs-3435/">First announcement of</a> Morloc
+
+```Example from the web:
+module m (sum, sumOfSums)
+
+import root-py
+import root-cpp
+
+source Py from &quot;foo.py&quot; (&quot;pmap&quot;)
+source Cpp from &quot;foo.hpp&quot; (&quot;sum&quot;)
+
+pmap :: (a -&gt; b) -&gt; [a] -&gt; [b]
+
+--&#39; Add up a list of numbers
+sum :: [Real] -&gt; Real
+
+--&#39; Add up a list of lists, summing each in parallel
+sumOfSums :: [[Real]] -&gt; Real
+sumOfSums = sum . pmap sum
+```
+
+Language <a href="../lists/features.html">features</a>
+======================================================
+
+row
+ Feature Variable Substitution Syntax
+ FeatureLink ../features/hasVariableSubstitutionSyntax.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature hasUserDefinedOperators
+ FeatureLink ../features/hasUserDefinedOperators.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Unicode Identifers
+ FeatureLink ../features/hasUnicodeIdentifiers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Type Inference
+ FeatureLink ../features/hasTypeInference.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Type Classes
+ FeatureLink ../features/hasTypeClasses.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Type Classes
+ FeatureLink ../features/hasTypeClasses.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Type Aliases
+ FeatureLink ../features/hasTypeAliases.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Ternary operators
+ FeatureLink ../features/hasTernaryOperators.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Structs
+ FeatureLink ../features/hasStructs.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Strings
+ FeatureLink ../features/hasStrings.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature hasStringConcatOperator
+ FeatureLink ../features/hasStringConcatOperator.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Streams
+ FeatureLink ../features/hasStreams.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Static Typing
+ FeatureLink ../features/hasStaticTyping.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Static Typing
+ FeatureLink ../features/hasStaticTyping.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Standard Library
+ FeatureLink ../features/hasStandardLibrary.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Standard Library
+ FeatureLink ../features/hasStandardLibrary.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Scientific Notation
+ FeatureLink ../features/hasScientificNotation.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Range Operator
+ FeatureLink ../features/hasRangeOperators.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Polymorphism
+ FeatureLink ../features/hasPolymorphism.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Pattern Matching
+ FeatureLink ../features/hasPatternMatching.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Pattern Matching
+ FeatureLink ../features/hasPatternMatching.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Partial Application
+ FeatureLink ../features/hasPartialApplication.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Partial Application
+ FeatureLink ../features/hasPartialApplication.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Octals
+ FeatureLink ../features/hasOctals.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Namespaces
+ FeatureLink ../features/hasNamespaces.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Multiline Strings
+ FeatureLink ../features/hasMultilineStrings.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Module Pattern
+ FeatureLink ../features/hasModules.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Module Pattern
+ FeatureLink ../features/hasModules.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Lists
+ FeatureLink ../features/hasLists.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Lists
+ FeatureLink ../features/hasLists.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Integers
+ FeatureLink ../features/hasIntegers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Infix Notation
+ FeatureLink ../features/hasInfixNotation.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature File Imports
+ FeatureLink ../features/hasImports.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Hexadecimals
+ FeatureLink ../features/hasHexadecimals.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Generics
+ FeatureLink ../features/hasGenerics.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Generics
+ FeatureLink ../features/hasGenerics.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Functions
+ FeatureLink ../features/hasFunctions.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Function Composition
+ FeatureLink ../features/hasFunctionComposition.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Function Composition
+ FeatureLink ../features/hasFunctionComposition.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature hasFnArguments
+ FeatureLink ../features/hasFnArguments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Floats
+ FeatureLink ../features/hasFloats.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature First-Class Functions
+ FeatureLink ../features/hasFirstClassFunctions.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature hasEscapeCharacters
+ FeatureLink ../features/hasEscapeCharacters.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Enums
+ FeatureLink ../features/hasEnums.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Conditionals
+ FeatureLink ../features/hasConditionals.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature hasBoundedCheckedArrays
+ FeatureLink ../features/hasBoundedCheckedArrays.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Booleans
+ FeatureLink ../features/hasBooleans.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Binary Literals
+ FeatureLink ../features/hasBinaryNumbers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature hasArraySlicingSyntax
+ FeatureLink ../features/hasArraySlicingSyntax.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Anonymous Functions
+ FeatureLink ../features/hasAnonymousFunctions.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Anonymous Functions
+ FeatureLink ../features/hasAnonymousFunctions.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Algebraic Data Type
+ FeatureLink ../features/hasAlgebraicTypes.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Algebraic Data Type
+ FeatureLink ../features/hasAlgebraicTypes.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Access Modifiers
+ FeatureLink ../features/hasAccessModifiers.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature canReadCommandLineArgs
+ FeatureLink ../features/canReadCommandLineArgs.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Doc comments
+ FeatureLink ../features/hasDocComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature MultiLine Comments
+ FeatureLink ../features/hasMultiLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Line Comments
+ FeatureLink ../features/hasLineComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature Comments
+ FeatureLink ../features/hasComments.html
+ Supported <span class="hasFeature">✓</span>
+ Example
+ Token 
+row
+ Feature While Loops
+ FeatureLink ../features/hasWhileLoops.html
+ Supported <span class="doesNotHaveFeature">X</span>
+ Example
+ Token
+
+Built with Scroll v178.2.3

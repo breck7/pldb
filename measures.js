@@ -1,7 +1,7 @@
 const measures = [
   {
     "Name": "id",
-    "Values": 5154,
+    "Values": 5155,
     "Coverage": "100%",
     "Question": "What is the ID of this concept?",
     "Example": "05ab1e",
@@ -13,7 +13,7 @@ const measures = [
   },
   {
     "Name": "name",
-    "Values": 5154,
+    "Values": 5155,
     "Coverage": "100%",
     "Question": "What is the name of this concept?",
     "Example": "05AB1E",
@@ -24,7 +24,7 @@ const measures = [
   },
   {
     "Name": "appeared",
-    "Values": 5154,
+    "Values": 5155,
     "Coverage": "100%",
     "Question": "What year was the language publicly released and/or announced?",
     "Example": "2015",
@@ -35,7 +35,7 @@ const measures = [
   },
   {
     "Name": "creators",
-    "Values": 1641,
+    "Values": 1642,
     "Coverage": "31%",
     "Question": "What are the name(s) of the original creators of the language delimited by \" and \"?",
     "Example": "Zach Leatherman",
@@ -55,7 +55,7 @@ const measures = [
   },
   {
     "Name": "measurements",
-    "Values": 5154,
+    "Values": 5155,
     "Coverage": "100%",
     "Question": "How many measurements do we have about this thing?",
     "Example": "11",
@@ -65,7 +65,7 @@ const measures = [
   },
   {
     "Name": "tags",
-    "Values": 5154,
+    "Values": 5155,
     "Coverage": "100%",
     "Question": "Which category(ies) in PLDB's subjective ontology does this entity fit into?",
     "Example": "esolang",
@@ -86,7 +86,7 @@ const measures = [
   },
   {
     "Name": "website",
-    "Values": 1886,
+    "Values": 1887,
     "Coverage": "36%",
     "Question": "What is the URL of the official homepage for this language project?",
     "Example": "https://www.11ty.dev/",
@@ -106,7 +106,7 @@ const measures = [
   },
   {
     "Name": "foundationScore",
-    "Values": 5154,
+    "Values": 5155,
     "Coverage": "100%",
     "Question": "How many languages are built using this language?",
     "Example": "0",
@@ -126,7 +126,7 @@ const measures = [
   },
   {
     "Name": "releaseNotes",
-    "Values": 71,
+    "Values": 72,
     "Coverage": "1%",
     "Question": "What is the URL to the release notes or changelog for this language?",
     "Example": "https://help.sap.com/docs/BTP/4726775c8bfc483abb210252604515b2/e9b10e43016e423ab0efe91e668a6efc.html",
@@ -156,7 +156,7 @@ const measures = [
   },
   {
     "Name": "rank",
-    "Values": 5154,
+    "Values": 5155,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
     "Example": "1270",
@@ -166,7 +166,7 @@ const measures = [
   },
   {
     "Name": "exampleCount",
-    "Values": 5154,
+    "Values": 5155,
     "Coverage": "100%",
     "Question": "How many examples do we have written in this language?",
     "Example": "2",
@@ -185,7 +185,7 @@ const measures = [
   },
   {
     "Name": "writtenInCount",
-    "Values": 1276,
+    "Values": 1277,
     "Coverage": "24%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
@@ -195,10 +195,10 @@ const measures = [
   },
   {
     "Name": "pldbScore",
-    "Values": 5154,
+    "Values": 5155,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "22223",
+    "Example": "22227",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -215,7 +215,7 @@ const measures = [
   },
   {
     "Name": "isLanguage",
-    "Values": 5154,
+    "Values": 5155,
     "Coverage": "100%",
     "Question": "Does PLDB categorize this entity as a language?",
     "Example": "true",
@@ -225,7 +225,7 @@ const measures = [
   },
   {
     "Name": "inboundLinksCount",
-    "Values": 5154,
+    "Values": 5155,
     "Coverage": "100%",
     "Question": "How many other concepts link to this one?",
     "Example": "0",
@@ -303,7 +303,7 @@ const measures = [
   },
   {
     "Name": "mainRepo",
-    "Values": 1282,
+    "Values": 1283,
     "Coverage": "24%",
     "Question": "Where is the main source code for this language?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -313,7 +313,7 @@ const measures = [
   },
   {
     "Name": "primaryTag",
-    "Values": 5154,
+    "Values": 5155,
     "Coverage": "100%",
     "Question": "Where is the primary tag for this language?",
     "Example": "esolang",
@@ -473,7 +473,7 @@ const measures = [
   },
   {
     "Name": "githubRepo_created",
-    "Values": 1209,
+    "Values": 1210,
     "Coverage": "23%",
     "Question": "When was the *Github repo* for this entity created?",
     "Example": "2015",
@@ -493,7 +493,7 @@ const measures = [
   },
   {
     "Name": "githubRepo_firstCommit",
-    "Values": 844,
+    "Values": 845,
     "Coverage": "16%",
     "Question": "What year the first commit made in this git repo?",
     "Example": "2015",
@@ -543,7 +543,7 @@ const measures = [
   },
   {
     "Name": "isFinished",
-    "Values": 5154,
+    "Values": 5155,
     "Coverage": "100%",
     "Question": "Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.",
     "Example": "false",
@@ -982,7 +982,7 @@ const measures = [
   {
     "Name": "wikipedia_pageId",
     "Values": 1598,
-    "Coverage": "31%",
+    "Coverage": "30%",
     "Question": "What is the internal ID for this entity on WP?",
     "Example": "92577",
     "Type": "number",
@@ -1001,7 +1001,7 @@ const measures = [
   },
   {
     "Name": "description",
-    "Values": 1217,
+    "Values": 1218,
     "Coverage": "23%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
@@ -1012,7 +1012,7 @@ const measures = [
   },
   {
     "Name": "githubRepo_description",
-    "Values": 1217,
+    "Values": 1218,
     "Coverage": "23%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
@@ -1023,7 +1023,7 @@ const measures = [
   },
   {
     "Name": "paper",
-    "Values": 45,
+    "Values": 46,
     "Coverage": "0%",
     "Question": "What is a URL to a paper(s) by the creator(s) introducing this language?",
     "Example": "https://functional-art.org/2017/ait",
@@ -1043,7 +1043,7 @@ const measures = [
   },
   {
     "Name": "rijuRepl_description",
-    "Values": 1217,
+    "Values": 1218,
     "Coverage": "23%",
     "Question": "How is this language described here?",
     "Example": "A simpler site generator. Transforms a directory of templates (of varying types) into HTML.",
@@ -1054,7 +1054,7 @@ const measures = [
   },
   {
     "Name": "fileExtensions",
-    "Values": 284,
+    "Values": 285,
     "Coverage": "5%",
     "Question": "What are the file extensions for this language?",
     "Example": "3ds",
@@ -1134,7 +1134,7 @@ const measures = [
   },
   {
     "Name": "writtenIn",
-    "Values": 1276,
+    "Values": 1277,
     "Coverage": "24%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
@@ -1174,7 +1174,7 @@ const measures = [
   },
   {
     "Name": "isOpenSource",
-    "Values": 1627,
+    "Values": 1628,
     "Coverage": "31%",
     "Question": "Is this an open source project?",
     "Example": "true",
@@ -1184,7 +1184,7 @@ const measures = [
   },
   {
     "Name": "numberOfUsersEstimate",
-    "Values": 5154,
+    "Values": 5155,
     "Coverage": "100%",
     "Question": "What is our estimate of number of users of this language?",
     "Example": "928",
@@ -1194,7 +1194,7 @@ const measures = [
   },
   {
     "Name": "numberOfJobsEstimate",
-    "Values": 5154,
+    "Values": 5155,
     "Coverage": "100%",
     "Question": "What is our estimate of the number of jobs in this language?",
     "Example": "0",
@@ -1214,7 +1214,7 @@ const measures = [
   },
   {
     "Name": "expandedMeasurements",
-    "Values": 5154,
+    "Values": 5155,
     "Coverage": "100%",
     "Question": "How many measurements do we have about this thing counting each list item as a measurement?",
     "Example": "15",
@@ -1244,7 +1244,7 @@ const measures = [
   },
   {
     "Name": "influencedBy",
-    "Values": 119,
+    "Values": 120,
     "Coverage": "2%",
     "Question": "What languages influenced this one?",
     "Example": "algol-60",
@@ -1374,7 +1374,7 @@ const measures = [
   },
   {
     "Name": "numberOfCreators",
-    "Values": 1641,
+    "Values": 1642,
     "Coverage": "31%",
     "Question": "How many creators?",
     "Example": "1",
@@ -1384,7 +1384,7 @@ const measures = [
   },
   {
     "Name": "isSelfHosted",
-    "Values": 1276,
+    "Values": 1277,
     "Coverage": "24%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",
@@ -1466,7 +1466,7 @@ const measures = [
   },
   {
     "Name": "docs",
-    "Values": 421,
+    "Values": 422,
     "Coverage": "8%",
     "Question": "What is a URL(s) to the official documentation for this language?",
     "Example": "https://www.11ty.dev/docs/",
@@ -1682,7 +1682,7 @@ const measures = [
   },
   {
     "Name": "country",
-    "Values": 3777,
+    "Values": 3778,
     "Coverage": "73%",
     "Question": "What country was this language first developed in?",
     "Example": "Russia",
@@ -1733,7 +1733,7 @@ const measures = [
   },
   {
     "Name": "example",
-    "Values": 984,
+    "Values": 985,
     "Coverage": "19%",
     "Question": "What is a representative snippet for this language?",
     "Example": "PUSH 4 PUSH 5 MULTIPLY",
@@ -1907,7 +1907,7 @@ const measures = [
   },
   {
     "Name": "twitter",
-    "Values": 273,
+    "Values": 274,
     "Coverage": "5%",
     "Question": "What is a URL to the official Twitter account of this thing, if any?",
     "Example": "https://twitter.com/3mfconsortium",
@@ -2002,7 +2002,7 @@ const measures = [
   },
   {
     "Name": "githubRepo",
-    "Values": 1230,
+    "Values": 1231,
     "Coverage": "23%",
     "Question": "What is the URL of the official GitHub repo for the project if it is hosted there?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -2146,7 +2146,7 @@ const measures = [
   },
   {
     "Name": "canReadCommandLineArgs",
-    "Values": 4,
+    "Values": 5,
     "Coverage": "0%",
     "Question": "Does this language support command line arguments?",
     "Example": "true",
@@ -2196,7 +2196,7 @@ const measures = [
   },
   {
     "Name": "hasAccessModifiers",
-    "Values": 22,
+    "Values": 23,
     "Coverage": "0%",
     "Question": "Does this language have access modifiers?",
     "Example": "true",
@@ -2206,7 +2206,7 @@ const measures = [
   },
   {
     "Name": "hasAlgebraicTypes",
-    "Values": 3,
+    "Values": 4,
     "Coverage": "0%",
     "Question": "Does this language support algebraic types?",
     "Example": "true",
@@ -2216,7 +2216,7 @@ const measures = [
   },
   {
     "Name": "hasAnonymousFunctions",
-    "Values": 9,
+    "Values": 10,
     "Coverage": "0%",
     "Question": "Does the language support anonymous functions, aka Lambdas?",
     "Example": "true",
@@ -2226,7 +2226,7 @@ const measures = [
   },
   {
     "Name": "hasArraySlicingSyntax",
-    "Values": 3,
+    "Values": 4,
     "Coverage": "0%",
     "Question": "Does the language have array slicing syntax, such as [0:2]?",
     "Example": "true",
@@ -2266,7 +2266,7 @@ const measures = [
   },
   {
     "Name": "hasBinaryNumbers",
-    "Values": 50,
+    "Values": 51,
     "Coverage": "0%",
     "Question": "Does the language have a type and syntax for binary numbers?",
     "Example": "true",
@@ -2306,7 +2306,7 @@ const measures = [
   },
   {
     "Name": "hasBooleans",
-    "Values": 131,
+    "Values": 132,
     "Coverage": "2%",
     "Question": "Does the language have a type and syntax for booleans?",
     "Example": "true",
@@ -2316,7 +2316,7 @@ const measures = [
   },
   {
     "Name": "hasBoundedCheckedArrays",
-    "Values": 3,
+    "Values": 4,
     "Coverage": "0%",
     "Question": "Are array boundaries checked by the language?",
     "Example": "true",
@@ -2386,7 +2386,7 @@ const measures = [
   },
   {
     "Name": "hasComments",
-    "Values": 643,
+    "Values": 644,
     "Coverage": "12%",
     "Question": "Does the language have a syntax and support for comments?",
     "Example": "true",
@@ -2396,7 +2396,7 @@ const measures = [
   },
   {
     "Name": "hasConditionals",
-    "Values": 83,
+    "Values": 84,
     "Coverage": "1%",
     "Question": "Does the language have conditional statements and/or conditional expressions?",
     "Example": "true",
@@ -2506,7 +2506,7 @@ const measures = [
   },
   {
     "Name": "hasDocComments",
-    "Values": 5,
+    "Values": 6,
     "Coverage": "0%",
     "Question": "Is there a standard mini language written in comments for documenting code?",
     "Example": "true",
@@ -2556,7 +2556,7 @@ const measures = [
   },
   {
     "Name": "hasEnums",
-    "Values": 16,
+    "Values": 17,
     "Coverage": "0%",
     "Question": "Does the language have a syntax and type for enums?",
     "Example": "true",
@@ -2566,7 +2566,7 @@ const measures = [
   },
   {
     "Name": "hasEscapeCharacters",
-    "Values": 5,
+    "Values": 6,
     "Coverage": "0%",
     "Question": "Does the language have any notion of escape characters?",
     "Example": "true",
@@ -2616,7 +2616,7 @@ const measures = [
   },
   {
     "Name": "hasFirstClassFunctions",
-    "Values": 6,
+    "Values": 7,
     "Coverage": "0%",
     "Question": "Does the language have functions that can be passed as arguments to other functions, can be returned by other functions, and can be assigned to variables or stored in data structures?",
     "Example": "true",
@@ -2636,7 +2636,7 @@ const measures = [
   },
   {
     "Name": "hasFloats",
-    "Values": 149,
+    "Values": 150,
     "Coverage": "2%",
     "Question": "Does the language have a syntax and type for floating points?",
     "Example": "true",
@@ -2646,7 +2646,7 @@ const measures = [
   },
   {
     "Name": "hasFnArguments",
-    "Values": 3,
+    "Values": 4,
     "Coverage": "0%",
     "Question": "Do functions accept arguments?",
     "Example": "true",
@@ -2676,7 +2676,7 @@ const measures = [
   },
   {
     "Name": "hasFunctionComposition",
-    "Values": 9,
+    "Values": 10,
     "Coverage": "0%",
     "Question": "Can you pass functions into other functions and get new combined functions?",
     "Example": "true",
@@ -2696,7 +2696,7 @@ const measures = [
   },
   {
     "Name": "hasFunctions",
-    "Values": 55,
+    "Values": 56,
     "Coverage": "1%",
     "Question": "Does the language have a concept of and syntax for functions?",
     "Example": "true",
@@ -2736,7 +2736,7 @@ const measures = [
   },
   {
     "Name": "hasGenerics",
-    "Values": 9,
+    "Values": 10,
     "Coverage": "0%",
     "Question": "Does the language have generics?",
     "Example": "true",
@@ -2776,7 +2776,7 @@ const measures = [
   },
   {
     "Name": "hasHexadecimals",
-    "Values": 112,
+    "Values": 113,
     "Coverage": "2%",
     "Question": "Does the language have a syntax for hexadecimals?",
     "Example": "true",
@@ -2846,7 +2846,7 @@ const measures = [
   },
   {
     "Name": "hasImports",
-    "Values": 56,
+    "Values": 57,
     "Coverage": "1%",
     "Question": "Does this language have a syntax for importing other files?",
     "Example": "true",
@@ -2866,7 +2866,7 @@ const measures = [
   },
   {
     "Name": "hasInfixNotation",
-    "Values": 10,
+    "Values": 11,
     "Coverage": "0%",
     "Question": "Does this language use operators between operands?",
     "Example": "true",
@@ -2886,7 +2886,7 @@ const measures = [
   },
   {
     "Name": "hasIntegers",
-    "Values": 175,
+    "Values": 176,
     "Coverage": "3%",
     "Question": "Does this language have a syntax and type for integers?",
     "Example": "true",
@@ -2936,7 +2936,7 @@ const measures = [
   },
   {
     "Name": "hasLineComments",
-    "Values": 562,
+    "Values": 563,
     "Coverage": "10%",
     "Question": "Does the language have line comments?",
     "Example": "true",
@@ -2946,7 +2946,7 @@ const measures = [
   },
   {
     "Name": "hasLists",
-    "Values": 29,
+    "Values": 30,
     "Coverage": "0%",
     "Question": "Does the language have lists?",
     "Example": "true",
@@ -2956,7 +2956,7 @@ const measures = [
   },
   {
     "Name": "hasStandardLibrary",
-    "Values": 47,
+    "Values": 48,
     "Coverage": "0%",
     "Question": "Does the language have a standard library?",
     "Example": "true",
@@ -3086,7 +3086,7 @@ const measures = [
   },
   {
     "Name": "hasModules",
-    "Values": 14,
+    "Values": 15,
     "Coverage": "0%",
     "Question": "Does the language have a concept of modules for organizing and packaging code?",
     "Example": "true",
@@ -3106,7 +3106,7 @@ const measures = [
   },
   {
     "Name": "hasMultiLineComments",
-    "Values": 253,
+    "Values": 254,
     "Coverage": "4%",
     "Question": "Does the language have multi-line comments?",
     "Example": "true",
@@ -3116,7 +3116,7 @@ const measures = [
   },
   {
     "Name": "hasMultilineStrings",
-    "Values": 15,
+    "Values": 16,
     "Coverage": "0%",
     "Question": "Does the language support multiline strings?",
     "Example": "true",
@@ -3156,7 +3156,7 @@ const measures = [
   },
   {
     "Name": "hasNamespaces",
-    "Values": 9,
+    "Values": 10,
     "Coverage": "0%",
     "Question": "Does the language have a namespace construct?",
     "Example": "false",
@@ -3176,7 +3176,7 @@ const measures = [
   },
   {
     "Name": "hasOctals",
-    "Values": 58,
+    "Values": 59,
     "Coverage": "1%",
     "Question": "Does the language have a syntax for octal numbers?",
     "Example": "true",
@@ -3216,7 +3216,7 @@ const measures = [
   },
   {
     "Name": "hasPartialApplication",
-    "Values": 5,
+    "Values": 6,
     "Coverage": "0%",
     "Question": "Does the language support partial application?",
     "Example": "true",
@@ -3226,7 +3226,7 @@ const measures = [
   },
   {
     "Name": "hasPatternMatching",
-    "Values": 17,
+    "Values": 18,
     "Coverage": "0%",
     "Question": "Does the language support pattern matching?",
     "Example": "true",
@@ -3256,7 +3256,7 @@ const measures = [
   },
   {
     "Name": "hasPolymorphism",
-    "Values": 6,
+    "Values": 7,
     "Coverage": "0%",
     "Question": "Does the language have polymorphism?",
     "Example": "true",
@@ -3306,7 +3306,7 @@ const measures = [
   },
   {
     "Name": "hasRangeOperators",
-    "Values": 5,
+    "Values": 6,
     "Coverage": "0%",
     "Question": "Does the language have a syntax for creating ranges?",
     "Example": "true",
@@ -3386,7 +3386,7 @@ const measures = [
   },
   {
     "Name": "hasScientificNotation",
-    "Values": 16,
+    "Values": 17,
     "Coverage": "0%",
     "Question": "Does the language have a syntax for Scientific Notation?",
     "Example": "true",
@@ -3486,7 +3486,7 @@ const measures = [
   },
   {
     "Name": "hasStaticTyping",
-    "Values": 25,
+    "Values": 26,
     "Coverage": "0%",
     "Question": "Does the language have static typing at compile time?",
     "Example": "false",
@@ -3496,7 +3496,7 @@ const measures = [
   },
   {
     "Name": "hasStreams",
-    "Values": 3,
+    "Values": 4,
     "Coverage": "0%",
     "Question": "Does the language have a concept of streams?",
     "Example": "true",
@@ -3506,7 +3506,7 @@ const measures = [
   },
   {
     "Name": "hasStringConcatOperator",
-    "Values": 2,
+    "Values": 3,
     "Coverage": "0%",
     "Question": "Is there an operator for concatenating strings?",
     "Example": "true",
@@ -3516,7 +3516,7 @@ const measures = [
   },
   {
     "Name": "hasStrings",
-    "Values": 381,
+    "Values": 382,
     "Coverage": "7%",
     "Question": "Does the language have a strings data structure?",
     "Example": "true",
@@ -3526,7 +3526,7 @@ const measures = [
   },
   {
     "Name": "hasStructs",
-    "Values": 11,
+    "Values": 12,
     "Coverage": "0%",
     "Question": "Does the language have a structs structure?",
     "Example": "true",
@@ -3586,7 +3586,7 @@ const measures = [
   },
   {
     "Name": "hasTernaryOperators",
-    "Values": 16,
+    "Values": 17,
     "Coverage": "0%",
     "Question": "Does the language have ternary operators?",
     "Example": "true",
@@ -3646,7 +3646,7 @@ const measures = [
   },
   {
     "Name": "hasTypeAliases",
-    "Values": 3,
+    "Values": 4,
     "Coverage": "0%",
     "Question": "Does the language have type aliases?",
     "Example": "true",
@@ -3666,7 +3666,7 @@ const measures = [
   },
   {
     "Name": "hasTypeClasses",
-    "Values": 13,
+    "Values": 14,
     "Coverage": "0%",
     "Question": "Does the language have type classes?",
     "Example": "false",
@@ -3676,7 +3676,7 @@ const measures = [
   },
   {
     "Name": "hasTypeInference",
-    "Values": 31,
+    "Values": 32,
     "Coverage": "0%",
     "Question": "Can the parser infer the type of a variable at compile time without an annotation?",
     "Example": "true",
@@ -3716,7 +3716,7 @@ const measures = [
   },
   {
     "Name": "hasUnicodeIdentifiers",
-    "Values": 6,
+    "Values": 7,
     "Coverage": "0%",
     "Question": "Does the language support Unicode identifiers?",
     "Example": "false",
@@ -3746,7 +3746,7 @@ const measures = [
   },
   {
     "Name": "hasUserDefinedOperators",
-    "Values": 4,
+    "Values": 5,
     "Coverage": "0%",
     "Question": "Does the language allow for defining your own operators?",
     "Example": "false",
@@ -3766,7 +3766,7 @@ const measures = [
   },
   {
     "Name": "hasVariableSubstitutionSyntax",
-    "Values": 12,
+    "Values": 13,
     "Coverage": "0%",
     "Question": "Do you use different syntax when assigning versus referencing a variable?",
     "Example": "true",
@@ -3806,7 +3806,7 @@ const measures = [
   },
   {
     "Name": "hasWhileLoops",
-    "Values": 55,
+    "Values": 56,
     "Coverage": "1%",
     "Question": "Does the language have while loops?",
     "Example": "true",
@@ -3898,7 +3898,7 @@ const measures = [
   },
   {
     "Name": "bookCount",
-    "Values": 5154,
+    "Values": 5155,
     "Coverage": "100%",
     "Question": "What is the count of booked we have published about this thing?",
     "Example": "0",
@@ -3908,7 +3908,7 @@ const measures = [
   },
   {
     "Name": "paperCount",
-    "Values": 5154,
+    "Values": 5155,
     "Coverage": "100%",
     "Question": "What is the count of papers we have published about this thing?",
     "Example": "0",

@@ -4,104 +4,108 @@ All Features
 A list of 174 features found in programming languages.
 
 title¶titleLink¶pseudoExample¶yes¶no¶percentage
-Comments¶../features/hasComments.html¶# Hello PLDB¶639¶4¶99%
-Line Comments¶../features/hasLineComments.html¶# Hello PLDB¶540¶22¶96%
-Strings¶../features/hasStrings.html¶"Hello PLDB"¶379¶2¶99%
+Comments¶../features/hasComments.html¶# Hello PLDB¶640¶4¶99%
+Line Comments¶../features/hasLineComments.html¶# Hello PLDB¶541¶22¶96%
+Strings¶../features/hasStrings.html¶"Hello PLDB"¶380¶2¶99%
 Print() Debugging¶../features/hasPrintDebugging.html¶print "Hello PLDB"¶323¶1¶100%
-MultiLine Comments¶../features/hasMultiLineComments.html¶/* Hello PLDB */¶228¶25¶90%
-Integers¶../features/hasIntegers.html¶80766866¶174¶1¶99%
-Floats¶../features/hasFloats.html¶80766866.0¶149¶0¶100%
-Booleans¶../features/hasBooleans.html¶pldb = true¶123¶8¶94%
-Hexadecimals¶../features/hasHexadecimals.html¶0x4D06792¶110¶2¶98%
-Conditionals¶../features/hasConditionals.html¶if (isTrue) printPldb()¶79¶4¶95%
+MultiLine Comments¶../features/hasMultiLineComments.html¶/* Hello PLDB */¶229¶25¶90%
+Integers¶../features/hasIntegers.html¶80766866¶175¶1¶99%
+Floats¶../features/hasFloats.html¶80766866.0¶150¶0¶100%
+Booleans¶../features/hasBooleans.html¶pldb = true¶124¶8¶94%
+Hexadecimals¶../features/hasHexadecimals.html¶0x4D06792¶111¶2¶98%
+Conditionals¶../features/hasConditionals.html¶if (isTrue) printPldb()¶80¶4¶95%
 Semantic Indentation¶../features/hasSemanticIndentation.html¶line0 if true line1  print "Hello PLDB"¶74¶528¶12%
 Assignment¶../features/hasAssignment.html¶name = "PLDB"¶58¶1¶98%
-Octals¶../features/hasOctals.html¶0o464063622¶54¶4¶93%
-File Imports¶../features/hasImports.html¶import pldb¶53¶3¶95%
-Functions¶../features/hasFunctions.html¶function computePLDBRanks() {}¶53¶2¶96%
-While Loops¶../features/hasWhileLoops.html¶while (pldb.pop()) loop()¶51¶4¶93%
-Binary Literals¶../features/hasBinaryNumbers.html¶0b100110100000110011110010010¶49¶1¶98%
-Standard Library¶../features/hasStandardLibrary.html¶print("print is part of stdlib")¶42¶5¶89%
+Octals¶../features/hasOctals.html¶0o464063622¶55¶4¶93%
+File Imports¶../features/hasImports.html¶import pldb¶54¶3¶95%
+Functions¶../features/hasFunctions.html¶function computePLDBRanks() {}¶54¶2¶96%
+While Loops¶../features/hasWhileLoops.html¶while (pldb.pop()) loop()¶51¶5¶91%
+Binary Literals¶../features/hasBinaryNumbers.html¶0b100110100000110011110010010¶50¶1¶98%
+Standard Library¶../features/hasStandardLibrary.html¶print("print is part of stdlib")¶43¶5¶90%
 Operator Overloading¶../features/hasOperatorOverloading.html¶def __add__(): doSomethingDifferent()¶36¶14¶72%
 Classes¶../features/hasClasses.html¶class PLDBFile {}¶32¶6¶84%
-Type Inference¶../features/hasTypeInference.html¶imAString = "pldb"¶30¶1¶97%
+Type Inference¶../features/hasTypeInference.html¶imAString = "pldb"¶31¶1¶97%
 Constants¶../features/hasConstants.html¶const name = "PLDB"¶30¶2¶94%
 Macros¶../features/hasMacros.html¶#define pldbItems 4000¶28¶10¶74%
+Lists¶../features/hasLists.html¶[2, 3, 10]¶28¶2¶93%
 Switch Statements¶../features/hasSwitch.html¶switch animal: case dog-buy; case cat-sell;¶27¶2¶93%
-Lists¶../features/hasLists.html¶[2, 3, 10]¶27¶2¶93%
 Exceptions¶../features/hasExceptions.html¶throw new Error("PLDB uh oh")¶25¶3¶89%
+Static Typing¶../features/hasStaticTyping.html¶int pldbRank = 100¶24¶2¶92%
 Case Insensitive Identifiers¶../features/hasCaseInsensitiveIdentifiers.html¶pLdB = "PLDB"¶24¶57¶30%
-Static Typing¶../features/hasStaticTyping.html¶int pldbRank = 100¶23¶2¶92%
 Garbage Collection¶../features/hasGarbageCollection.html¶var iDontNeedToFreeThis¶23¶8¶74%
 Case Sensitivity¶../features/isCaseSensitive.html¶pldb != PLDB¶22¶9¶71%
 Inheritance¶../features/hasInheritance.html¶class PLDBFile extends File¶22¶2¶92%
 Pointers¶../features/hasPointers.html¶int *pldb¶21¶5¶81%
 Directives¶../features/hasDirectives.html¶use strict;¶21¶3¶88%
-Access Modifiers¶../features/hasAccessModifiers.html¶class PLDBFile { public title }¶19¶3¶86%
+Access Modifiers¶../features/hasAccessModifiers.html¶class PLDBFile { public title }¶20¶3¶87%
 Constructors¶../features/hasConstructors.html¶PLDBFile { constructor() {} }¶17¶4¶81%
-Scientific Notation¶../features/hasScientificNotation.html¶8076686.6e1¶15¶1¶-
-Pattern Matching¶../features/hasPatternMatching.html¶fib 0 = 1; fib 1 = 1¶15¶2¶-
+Scientific Notation¶../features/hasScientificNotation.html¶8076686.6e1¶16¶1¶-
+Pattern Matching¶../features/hasPatternMatching.html¶fib 0 = 1; fib 1 = 1¶16¶2¶-
+Multiline Strings¶../features/hasMultilineStrings.html¶hello = """Hello\nPLDB"""¶15¶1¶-
+Module Pattern¶../features/hasModules.html¶module PLDB {}¶15¶0¶-
 Multiple Inheritance¶../features/hasMultipleInheritance.html¶extends parentWhichExtendsSomethingElse¶14¶6¶70%
-Multiline Strings¶../features/hasMultilineStrings.html¶hello = """Hello\nPLDB"""¶14¶1¶-
-Module Pattern¶../features/hasModules.html¶module PLDB {}¶14¶0¶-
 Bitwise Operators¶../features/hasBitWiseOperators.html¶3 == (2 &#124; 1)¶14¶1¶-
 Message Passing¶../features/hasMessagePassing.html¶"get pldb"¶13¶1¶-
-Structs¶../features/hasStructs.html¶struct pldbFile { int rank; char *title; };¶11¶0¶-
+Structs¶../features/hasStructs.html¶struct pldbFile { int rank; char *title; };¶12¶0¶-
+Enums¶../features/hasEnums.html¶colorsEnum { "red", "white", "blue"}¶12¶5¶-
+Infix Notation¶../features/hasInfixNotation.html¶1 + 2¶11¶0¶-
 Increment and decrement operators¶../features/hasIncrementAndDecrementOperators.html¶i++¶11¶5¶-
-Enums¶../features/hasEnums.html¶colorsEnum { "red", "white", "blue"}¶11¶5¶-
 Zero-based numbering¶../features/hasZeroBasedNumbering.html¶firstItem = pldb[0]¶10¶3¶-
 Maps¶../features/hasMaps.html¶{name: "PLDB"}¶10¶0¶-
-Infix Notation¶../features/hasInfixNotation.html¶1 + 2¶10¶0¶-
 Disk Output¶../features/canWriteToDisk.html¶write("pldb.csv", "...")¶10¶4¶-
+Ternary operators¶../features/hasTernaryOperators.html¶true ? 1 : 0¶9¶8¶-
 Single Dispatch¶../features/hasSingleDispatch.html¶person.run()¶9¶1¶-
 Regular Expression Syntax Sugar¶../features/hasRegularExpressionsSyntaxSugar.html¶/pldb/¶9¶6¶-
 Here Document¶../features/hasHereDocs.html¶`A big multliline text block`¶9¶1¶-
+Generics¶../features/hasGenerics.html¶function identity&lt;T>(arg: T): T¶9¶1¶-
+Function Composition¶../features/hasFunctionComposition.html¶o = (f, g) => x => f(g(x))¶9¶1¶-
 hasForLoops¶../features/hasForLoops.html¶¶9¶0¶-
+Anonymous Functions¶../features/hasAnonymousFunctions.html¶() => printPldb()¶9¶1¶-
 Variadic Functions¶../features/hasVariadicFunctions.html¶args.map(doSomething)¶8¶0¶-
 Threads¶../features/hasThreads.html¶thread1(); thread2();¶8¶1¶-
-Ternary operators¶../features/hasTernaryOperators.html¶true ? 1 : 0¶8¶8¶-
+Namespaces¶../features/hasNamespaces.html¶namespace PLDB {}¶8¶2¶-
 Mixins¶../features/hasMixins.html¶extends pldbFile, diskFile¶8¶1¶-
 Iterators¶../features/hasIterators.html¶for lang in pldb()¶8¶1¶-
 Homoiconicity¶../features/hasHomoiconicity.html¶(list ())¶8¶1¶-
-Generics¶../features/hasGenerics.html¶function identity&lt;T>(arg: T): T¶8¶1¶-
-Function Composition¶../features/hasFunctionComposition.html¶o = (f, g) => x => f(g(x))¶8¶1¶-
 Type Casting¶../features/hasExplicitTypeCasting.html¶(float)pldbRank;¶8¶0¶-
-Anonymous Functions¶../features/hasAnonymousFunctions.html¶() => printPldb()¶8¶1¶-
-Namespaces¶../features/hasNamespaces.html¶namespace PLDB {}¶7¶2¶-
 Interfaces¶../features/hasInterfaces.html¶interface PLDBFile¶7¶1¶-
 Function Overloading¶../features/hasFunctionOverloading.html¶add(string: str, string2: str)¶7¶11¶-
 hasForEachLoops¶../features/hasForEachLoops.html¶¶7¶0¶-
 Fixed Point Numbers¶../features/hasFixedPoint.html¶80766866.00¶7¶2¶-
+First-Class Functions¶../features/hasFirstClassFunctions.html¶[2.1].map(Math.round)¶7¶0¶-
 Expressions¶../features/hasExpressions.html¶(1 + 2)¶7¶1¶-
 Single Pass Compiler¶../features/hasSinglePassParser.html¶x = 2; print x¶7¶6¶-
 Units of Measure¶../features/hasUnitsOfMeasure.html¶42cm¶6¶5¶-
+Type Classes¶../features/hasTypeClasses.html¶¶6¶8¶-
+Range Operator¶../features/hasRangeOperators.html¶1 ... 10¶6¶0¶-
+Polymorphism¶../features/hasPolymorphism.html¶a + "b"; 1 + 2¶6¶1¶-
 Pipes¶../features/hasPipes.html¶ls pldb &#124; wc¶6¶1¶-
+Partial Application¶../features/hasPartialApplication.html¶add5 = num => addNumbers(10, num)¶6¶0¶-
 Manual Memory Management¶../features/hasManualMemoryManagement.html¶malloc(4);¶6¶1¶-
-First-Class Functions¶../features/hasFirstClassFunctions.html¶[2.1].map(Math.round)¶6¶0¶-
+Doc comments¶../features/hasDocComments.html¶// param1: A comment about the first param¶6¶0¶-
 Destructuring¶../features/hasDestructuring.html¶{title, rank} = pldbFile¶6¶1¶-
 Default Parameters Pattern¶../features/hasDefaultParameters.html¶say(message = "Hello PLDB")¶6¶1¶-
 Async Await¶../features/hasAsyncAwait.html¶async downloadPldb => await getFiles()¶6¶3¶-
 Shebang¶../features/canDoShebang.html¶#! /run¶6¶0¶-
 Union Types¶../features/hasUnionTypes.html¶any = string &#124; number¶5¶0¶-
-Type Classes¶../features/hasTypeClasses.html¶¶5¶8¶-
+Unicode Identifers¶../features/hasUnicodeIdentifiers.html¶δ = 0.00001¶5¶2¶-
 Structural Typing¶../features/hasStructuralTyping.html¶¶5¶6¶-
-Range Operator¶../features/hasRangeOperators.html¶1 ... 10¶5¶0¶-
 Prefix Notation¶../features/hasPrefixNotation.html¶+ 1 2¶5¶0¶-
-Polymorphism¶../features/hasPolymorphism.html¶a + "b"; 1 + 2¶5¶1¶-
-Partial Application¶../features/hasPartialApplication.html¶add5 = num => addNumbers(10, num)¶5¶0¶-
 Operators¶../features/hasOperators.html¶1 + 1¶5¶2¶-
 Null¶../features/hasNull.html¶uhOh = null¶5¶0¶-
 Gotos¶../features/hasGotos.html¶goto 10¶5¶4¶-
-Doc comments¶../features/hasDocComments.html¶// param1: A comment about the first param¶5¶0¶-
+hasEscapeCharacters¶../features/hasEscapeCharacters.html¶¶5¶1¶-
 Dependent types¶../features/hasDependentTypes.html¶pldbSortedList // a list where is sorted is true¶5¶1¶-
 hasContinue¶../features/hasContinue.html¶¶5¶0¶-
 hasBreak¶../features/hasBreak.html¶¶5¶0¶-
 Assert Statements¶../features/hasAssertStatements.html¶assert(isTrue)¶5¶1¶-
-Unicode Identifers¶../features/hasUnicodeIdentifiers.html¶δ = 0.00001¶4¶2¶-
+canReadCommandLineArgs¶../features/canReadCommandLineArgs.html¶¶5¶0¶-
 Unary Operators¶../features/hasUnaryOperators.html¶count++¶4¶0¶-
 Typed Holes¶../features/hasTypedHoles.html¶2 + _ => 2 + [int&#124;float]¶4¶0¶-
+Type Aliases¶../features/hasTypeAliases.html¶type Year = number¶4¶0¶-
 Templates¶../features/hasTemplates.html¶template TCopy(T) {}¶4¶2¶-
 Symbol Tables¶../features/hasSymbolTables.html¶SymbolName&#124;Type&#124;Scope;bar&#124;function,double&#124;extern¶4¶0¶-
+Streams¶../features/hasStreams.html¶echo 123 &#124; 123.txt¶4¶0¶-
 Single-Type Arrays¶../features/hasSingleTypeArrays.html¶const pldbRanks: int[]¶4¶0¶-
 Sets¶../features/hasSets.html¶{"pldb", "PLDB"}¶4¶2¶-
 Postfix Notation¶../features/hasPostfixNotation.html¶2 3 4 + 2 -¶4¶0¶-
@@ -109,14 +113,17 @@ Named Arguments¶../features/hasNamedArguments.html¶¶4¶8¶-
 Multiple Dispatch¶../features/hasMultipleDispatch.html¶collide_with(x::Spaceship, y::Spaceship)¶4¶3¶-
 hasIfs¶../features/hasIfs.html¶¶4¶0¶-
 Generators¶../features/hasGenerators.html¶yield 2¶4¶0¶-
-hasEscapeCharacters¶../features/hasEscapeCharacters.html¶¶4¶1¶-
+hasFnArguments¶../features/hasFnArguments.html¶¶4¶0¶-
 Dynamic Typing¶../features/hasDynamicTyping.html¶¶4¶1¶-
-canReadCommandLineArgs¶../features/canReadCommandLineArgs.html¶¶4¶0¶-
+hasBoundedCheckedArrays¶../features/hasBoundedCheckedArrays.html¶¶4¶0¶-
+hasArraySlicingSyntax¶../features/hasArraySlicingSyntax.html¶¶4¶0¶-
+Algebraic Data Type¶../features/hasAlgebraicTypes.html¶garageContents = empty &#124; vehicle¶4¶0¶-
+Variable Substitution Syntax¶../features/hasVariableSubstitutionSyntax.html¶name = "PLDB"; print $name¶3¶10¶-
+hasUserDefinedOperators¶../features/hasUserDefinedOperators.html¶¶3¶2¶-
 Type Parameters¶../features/hasTypeParameters.html¶function identity&lt;T>(arg: T): T {return arg}¶3¶0¶-
 Type Annotations¶../features/hasTypeAnnotations.html¶score: number¶3¶0¶-
-Type Aliases¶../features/hasTypeAliases.html¶type Year = number¶3¶0¶-
 hasSymbols¶../features/hasSymbols.html¶¶3¶0¶-
-Streams¶../features/hasStreams.html¶echo 123 &#124; 123.txt¶3¶0¶-
+hasStringConcatOperator¶../features/hasStringConcatOperator.html¶¶3¶0¶-
 Static Methods¶../features/hasStaticMethods.html¶static downloadPldb() {}¶3¶0¶-
 hasSelfOrThisWord¶../features/hasSelfOrThisWord.html¶¶3¶0¶-
 hasReservedWords¶../features/hasReservedWords.html¶¶3¶2¶-
@@ -130,27 +137,20 @@ Implicit Type Casting¶../features/hasImplicitTypeConversions.html¶console.log(
 hasIfElses¶../features/hasIfElses.html¶¶3¶0¶-
 hasGlobalScope¶../features/hasGlobalScope.html¶¶3¶1¶-
 hasGradualTypes¶../features/hasGradualTypes.html¶a: int # the type is optional¶3¶0¶-
-hasFnArguments¶../features/hasFnArguments.html¶¶3¶0¶-
 hasDynamicSizedArrays¶../features/hasDynamicSizedArrays.html¶¶3¶0¶-
 Dynamic Properties¶../features/hasDynamicProperties.html¶pldb.score = 50¶3¶2¶-
 Duck Typing¶../features/hasDuckTyping.html¶length() // makes me an iterator¶3¶2¶-
 Dispose Blocks Pattern¶../features/hasDisposeBlocks.html¶with pldb: do computeRanks()¶3¶1¶-
 Characters¶../features/hasCharacters.html¶char character = 'P';¶3¶0¶-
-hasBoundedCheckedArrays¶../features/hasBoundedCheckedArrays.html¶¶3¶0¶-
 Binary Operators¶../features/hasBinaryOperators.html¶1 + 1¶3¶0¶-
-hasArraySlicingSyntax¶../features/hasArraySlicingSyntax.html¶¶3¶0¶-
-Algebraic Data Type¶../features/hasAlgebraicTypes.html¶garageContents = empty &#124; vehicle¶3¶0¶-
 Breakpoints¶../features/supportsBreakpoints.html¶debugger;¶2¶0¶-
 Merges Whitespace¶../features/mergesWhitespace.html¶result = 1    +    2¶2¶0¶-
 Letter-first Identifiers¶../features/letterFirstIdentifiers.html¶pldb100 = "OK" // 100pldb = "ERROR"¶2¶0¶-
 hasVoidFunctions¶../features/hasVoidFunctions.html¶¶2¶0¶-
 Virtual function¶../features/hasVirtualFunctions.html¶virtual FetchPLDBFile();¶2¶0¶-
-Variable Substitution Syntax¶../features/hasVariableSubstitutionSyntax.html¶name = "PLDB"; print $name¶2¶10¶-
-hasUserDefinedOperators¶../features/hasUserDefinedOperators.html¶¶2¶2¶-
 hasTryCatch¶../features/hasTryCatch.html¶¶2¶2¶-
 Traits¶../features/hasTraits.html¶use redBorder¶2¶0¶-
 hasTimestamps¶../features/hasTimestamps.html¶¶2¶0¶-
-hasStringConcatOperator¶../features/hasStringConcatOperator.html¶¶2¶0¶-
 Statements¶../features/hasStatements.html¶print "Hello PLDB"¶2¶1¶-
 hasStatementTerminatorCharacter¶../features/hasStatementTerminatorCharacter.html¶¶2¶0¶-
 Source Maps¶../features/hasSourceMaps.html¶{file: 'pldb.min.js',sources: ['pldb.js'], mappings: 'CAAC,IAAI,IAAM'}¶2¶0¶-

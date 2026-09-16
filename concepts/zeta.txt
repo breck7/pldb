@@ -9,7 +9,7 @@ Zeta is a <a href="../lists/explorer.html#searchBuilder=%7B%22criteria%22%3A%5B%
  https://pldb.io/concepts/../lists/creators.html#q=Frans%20Kaashoek Frans Kaashoek
  https://pldb.io/concepts/../lists/creators.html#q=Eddie%20Kohler Eddie Kohler
 
-#3052 on PLDB
+#3053 on PLDB
 18 Years Old
 
 A prototype implementation of xoc in zeta, a C-like interpreted procedural language with first-class functions. Zeta makes writing extensions easier than standard C, although extension writers must adjust to a slightly different language. Our implementation runs zeta using a bytecode interpreter and is therefore limited in its performance; we plan to replace the bytecode interpreter with compilation to machine code, which should reduce the compilation time for a large program from tens of seconds to a fraction of a second.
