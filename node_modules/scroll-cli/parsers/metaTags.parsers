@@ -26,7 +26,7 @@ metaTagsParser
    return `<head>
    <meta charset="utf-8">
    <title>${title}</title>
-   <script>/* This HTML was generated from ${filename} by 📜 Scroll v${scrollVersion}. https://scroll.pub */</script>
+   <script>/* This HTML was generated from ${filename} by 📜 Scroll v${scrollVersion}. https://scroll.surf */</script>
    <style>@media print {.doNotPrint {display: none !important;}}</style>
    <link rel="canonical" href="${canonicalUrl}">
    <meta name="viewport" content="width=device-width,initial-scale=1">

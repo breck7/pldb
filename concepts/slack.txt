@@ -18,4 +18,4 @@ SLACK is a compiler for a lazy functional K, modelled on David Turner's SASL lan
 gcd a b is if b=0 then a else gcd b(a!b)
 ```
 
-Built with Scroll v178.2.3
+Built with Scroll v180.0.1

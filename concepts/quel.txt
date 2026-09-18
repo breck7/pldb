@@ -27,4 +27,4 @@ where E.Name = &quot;Jones&quot;
 retrieve (a=count(y.i by y.d where y.str = &quot;ii*&quot; or y.str = &quot;foo&quot;),b=max(count(y.i by y.d)))
 ```
 
-Built with Scroll v178.2.3
+Built with Scroll v180.0.1

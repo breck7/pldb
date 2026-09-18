@@ -28,4 +28,4 @@ IDENTIFIER = letter { letter } .
 LITERAL    = &quot;&quot;&quot;&quot; character { character } &quot;&quot;&quot;&quot; .
 ```
 
-Built with Scroll v178.2.3
+Built with Scroll v180.0.1

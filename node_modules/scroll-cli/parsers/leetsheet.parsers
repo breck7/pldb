@@ -66,7 +66,7 @@ printScrollLeetSheetParser
   makeLink(examples, cue) {
     // if (!examples.length) console.log(cue) // find particles that need docs
     const example = examples.length ? examples[0].subparticlesToString() : cue
-    const base = `https://try.scroll.pub/`
+    const base = `https://try.scroll.surf/`
     const particle = new Particle()
     particle.appendLineAndSubparticles("scroll", "theme gazette\n" + example)
     return base + "#" + encodeURIComponent(particle.asString)

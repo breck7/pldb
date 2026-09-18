@@ -40,4 +40,4 @@ let zip {n a b} (left: Vec n a) (right: Vec n b): Vec n (a, b) =
     ;; No other cases are needed, because the lists are the same length!
 ```
 
-Built with Scroll v178.2.3
+Built with Scroll v180.0.1

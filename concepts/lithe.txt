@@ -21,4 +21,4 @@ rule &quot;|&quot; &lt;i:int&gt; &quot;|&quot; return int;
   {if i&lt;0 then return -i else return i end}
 ```
 
-Built with Scroll v178.2.3
+Built with Scroll v180.0.1

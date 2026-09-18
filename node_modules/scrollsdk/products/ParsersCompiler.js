@@ -1,7 +1,6 @@
 var _a
 const fs = require("fs")
 const path = require("path")
-const { Utils } = require("../products/Utils.js")
 const { Particle } = require("../products/Particle.js")
 const { HandParsersProgram } = require("./Parsers.js")
 var CompileTarget
@@ -10,7 +9,7 @@ var CompileTarget
   CompileTarget["browser"] = "browser"
 })(CompileTarget || (CompileTarget = {}))
 class ParsersCompiler {
-  static compileParsersForNodeJs(pathToParsers, outputFolder, usePrettier = true, scrollsdkProductsPath = __dirname) {
+  static compileParsersForNodeJs(pathToParsers, outputFolder, usePrettier = false, scrollsdkProductsPath = __dirname) {
     return this._compileParsers(pathToParsers, outputFolder, CompileTarget.nodejs, usePrettier, scrollsdkProductsPath)
   }
   static _compileParsers(pathToParsers, outputFolder, target, usePrettier, scrollsdkProductsPath) {
@@ -34,7 +33,7 @@ if (!module.parent) new ${program.rootParserId}(Particle.fromDisk(process.argv[2
     if (isNodeJs) fs.chmodSync(outputFilePath, 0o755)
     return outputFilePath
   }
-  static compileParsersForBrowser(pathToParsers, outputFolder, usePrettier = true) {
+  static compileParsersForBrowser(pathToParsers, outputFolder, usePrettier = false) {
     return this._compileParsers(pathToParsers, outputFolder, CompileTarget.browser, usePrettier)
   }
 }
@@ -66,8 +65,7 @@ ParsersCompiler.compileParsersFileAtPathAndReturnRootParser = parsersPath => {
   return parsersProgram.compileAndReturnRootParser()
 }
 ParsersCompiler.combineFiles = globPatterns => {
-  const glob = require("glob")
-  const files = Utils.flatten(globPatterns.map(pattern => glob.sync(pattern)))
+  const files = globPatterns.flatMap(pattern => fs.globSync(pattern))
   const content = files.map(path => fs.readFileSync(path, "utf8")).join("\n")
   return new Particle(content)
 }

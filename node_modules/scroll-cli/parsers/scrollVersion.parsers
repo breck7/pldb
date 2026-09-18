@@ -1,7 +1,7 @@
 scrollVersionLinkParser
  popularity 0.006294
  extends abstractTextLinkParser
- string link https://scroll.pub
+ string link https://scroll.surf
  description Print Scroll version.
  javascript
   get text() {

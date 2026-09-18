@@ -8,7 +8,7 @@
     "test": "scroll list | scroll test",
     "format": "scroll list | scroll format",
     "open": "open index.html",
-    "up": "npm install scroll-cli@latest",
+    "up": "npm install --save-dev github:breck7/scroll#v180.0.1 github:breck7/scrollsdk#v108.0.0",
     "cloc": "cloc --vcs git . --read-lang-def=code/clocLangs.txt",
     "checkLinks": "npx linkinator http://localhost -r --silent --format CSV --skip '^(?!http://localhost)' > brokenLinks.txt"
   },
@@ -46,8 +46,9 @@
     "lodash": "^4.17.21",
     "monaco-editor": "^0.34.1",
     "numeral": "^2.0.6",
-    "scroll-cli": "^178.0.0",
-    "scrollsdk": "^107.0.0",
+    "scroll": "github:breck7/scroll#v180.0.1",
+    "scroll-cli": "github:breck7/scroll#v180.0.1",
+    "scrollsdk": "github:breck7/scrollsdk#v108.0.0",
     "semver": "^7.6.2"
   },
   "dependencies": {

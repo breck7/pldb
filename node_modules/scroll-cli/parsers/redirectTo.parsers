@@ -5,7 +5,7 @@ redirectToParser
  atoms cueAtom urlAtom
  cueFromId
  example
-  redirectTo https://scroll.pub/releaseNotes.html
+  redirectTo https://scroll.surf/releaseNotes.html
  javascript
   buildHtml() {
    return `<meta http-equiv="Refresh" content="0; url='${this.getAtom(1)}'" />`

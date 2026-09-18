@@ -1586,21 +1586,17 @@ class Particle extends AbstractParticle {
     // Node.js Readable stream
     if (typeof process !== "undefined" && input instanceof require("stream").Readable) {
       try {
-        for (var _d = true, input_1 = __asyncValues(input), input_1_1; (input_1_1 = await input_1.next()), (_a = input_1_1.done), !_a; ) {
+        for (var _d = true, input_1 = __asyncValues(input), input_1_1; (input_1_1 = await input_1.next()), (_a = input_1_1.done), !_a; _d = true) {
           _c = input_1_1.value
           _d = false
-          try {
-            const chunk = _c
-            buffer += chunk.toString("utf8")
-            while (true) {
-              const breakIndex = buffer.search(breakRegex)
-              if (breakIndex === -1) break
-              const block = buffer.slice(0, breakIndex)
-              buffer = buffer.slice(breakIndex + particleBreakSymbol.length)
-              await this._transformAndAppendBlockAsync(block)
-            }
-          } finally {
-            _d = true
+          const chunk = _c
+          buffer += chunk.toString("utf8")
+          while (true) {
+            const breakIndex = buffer.search(breakRegex)
+            if (breakIndex === -1) break
+            const block = buffer.slice(0, breakIndex)
+            buffer = buffer.slice(breakIndex + particleBreakSymbol.length)
+            await this._transformAndAppendBlockAsync(block)
           }
         }
       } catch (e_1_1) {
@@ -2814,7 +2810,7 @@ Particle.iris = `sepal_length,sepal_width,petal_length,petal_width,species
 4.9,2.5,4.5,1.7,virginica
 5.1,3.5,1.4,0.2,setosa
 5,3.4,1.5,0.2,setosa`
-Particle.getVersion = () => "107.0.1"
+Particle.getVersion = () => "108.0.0"
 class AbstractExtendibleParticle extends Particle {
   _getFromExtended(cuePath) {
     const hit = this._getParticleFromExtended(cuePath)

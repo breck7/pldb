@@ -25,4 +25,4 @@ Mathics is a free, general-purpose online computer algebra system featuring Math
 StringJoin[Riffle[Map[ToString, Table[Fibonacci[i], {i,16}]], &quot;, &quot;]] &lt;&gt; &quot;...&quot;
 ```
 
-Built with Scroll v178.2.3
+Built with Scroll v180.0.1

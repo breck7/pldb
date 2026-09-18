@@ -7,7 +7,7 @@ printAuthorsParser
  catchAllAtomType stringAtom
  example
   authors Breck Yunits
-   https://breckyunits.com
+   https://breck.lol
   printAuthors
  javascript
   buildHtml() {
@@ -25,7 +25,7 @@ authorsParser
  description Set author(s) name(s).
  example
   authors Breck Yunits
-   https://breckyunits.com Breck Yunits
+   https://breck.lol Breck Yunits
  // note: once we have mixins in Parsers, lets mixin the below from abstractTopLevelSingleMetaParser
  atoms metaCommandAtom
  boolean isTopMatter true

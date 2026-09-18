@@ -4,8 +4,8 @@ fetchParser
  cueFromId
  atoms parseTimeCommandAtom urlAtom
  example
-  fetch https://breckyunits.com/posts.csv
-  fetch https://breckyunits.com/posts.csv renamed.csv
+  fetch https://breck.lol/posts.csv
+  fetch https://breck.lol/posts.csv renamed.csv
  javascript
   get url() {
     return this.getAtom(1)

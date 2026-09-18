@@ -14,6 +14,14 @@ class Timer {
   }
 }
 class Utils {
+  static async httpRequest(url, options = {}) {
+    const response = await fetch(url, options)
+    const text = await response.text()
+    const type = (response.headers.get("content-type") || "").split(";")[0].trim()
+    const result = { status: response.status, type, text, body: text && (type === "application/json" || type.endsWith("+json")) ? JSON.parse(text) : undefined }
+    if (!response.ok) throw Object.assign(new Error(`HTTP ${response.status}: ${url}`), { status: response.status, response: result })
+    return result
+  }
   static getFileExtension(filepath = "") {
     const match = filepath.match(/\.([^\.]+)$/)
     return (match && match[1]) || ""

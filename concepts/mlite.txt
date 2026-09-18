@@ -24,4 +24,4 @@ fun iota (a, b) where (a = b)
        | a      = iota (1, a)
 ```
 
-Built with Scroll v178.2.3
+Built with Scroll v180.0.1

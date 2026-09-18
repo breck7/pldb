@@ -25,4 +25,4 @@ select Guide.restaurant.name,
  where Guide.restaurant.% grep &quot;cheap&quot;
 ```
 
-Built with Scroll v178.2.3
+Built with Scroll v180.0.1

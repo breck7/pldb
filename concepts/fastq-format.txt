@@ -25,4 +25,4 @@ GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
 sed -e &#39;n;n;n;y/!&quot;#$%&amp;&#39;\&#39;&#39;()*+,-.\/0123456789:;&lt;=&gt;?@ABCDEFGHIJKL/▁▁▁▁▁▁▁▁▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇██████/&#39; myfile.fastq   # add -i to save the result to the same input file
 ```
 
-Built with Scroll v178.2.3
+Built with Scroll v180.0.1

@@ -24,4 +24,4 @@ city ?where .population &gt; 100_000 ?select .name, .country
 points ?sort .x
 ```
 
-Built with Scroll v178.2.3
+Built with Scroll v180.0.1

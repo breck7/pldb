@@ -18,4 +18,4 @@ EdgeQL is the primary language of EdgeDB. It is used to define, mutate, and quer
 SELECT User FILTER User.name = &#39;John&#39;;
 ```
 
-Built with Scroll v178.2.3
+Built with Scroll v180.0.1

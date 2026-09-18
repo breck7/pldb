@@ -22,4 +22,4 @@ query Q1 :=
  where {country: {name: &quot;France&quot;, people: {ethnicGroup: E}}} in db
 ```
 
-Built with Scroll v178.2.3
+Built with Scroll v180.0.1

@@ -27,4 +27,4 @@ spec = do
   trigger &quot;heatoff&quot; (ctemp &gt; 21.0) [arg ctemp]
 ```
 
-Built with Scroll v178.2.3
+Built with Scroll v180.0.1

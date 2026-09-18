@@ -96,7 +96,7 @@ abstractUrlMeasureParser
   homepageParser
    extends abstractUrlMeasureParser
   id Breck
-  homepage https://breckyunits.com
+  homepage https://breck.lol
  string typeForWebForms url
  atoms measureNameAtom urlAtom
  extends abstractAtomMeasureParser

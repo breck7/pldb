@@ -26,4 +26,4 @@ rel path(x, y) = path(x, z), dash(z, y)
 rel is_connected() = dot(x), dot(y), path(x, y), x != y
 ```
 
-Built with Scroll v178.2.3
+Built with Scroll v180.0.1

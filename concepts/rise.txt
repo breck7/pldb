@@ -21,4 +21,4 @@ fun(A : N.K.float =&gt; fun(B : K.M.float =&gt;
    zip(arow, bcol) |&gt; map(*) |&gt; reduce(+, 0) )) ))))
 ```
 
-Built with Scroll v178.2.3
+Built with Scroll v180.0.1
