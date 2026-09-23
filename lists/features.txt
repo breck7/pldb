@@ -11,60 +11,60 @@ We also have a page of all keywords and all file extensions.
  https://pldb.io/extensions.html file extensions
 
 title¶titleLink¶pseudoExample¶yes¶no¶percentage
-Comments¶../features/hasComments.html¶# Hello PLDB¶640¶4¶99%
-Line Comments¶../features/hasLineComments.html¶# Hello PLDB¶541¶22¶96%
-Strings¶../features/hasStrings.html¶"Hello PLDB"¶380¶2¶99%
+Comments¶../features/hasComments.html¶# Hello PLDB¶641¶4¶99%
+Line Comments¶../features/hasLineComments.html¶# Hello PLDB¶542¶22¶96%
+Strings¶../features/hasStrings.html¶"Hello PLDB"¶381¶2¶99%
 Print() Debugging¶../features/hasPrintDebugging.html¶print "Hello PLDB"¶323¶1¶100%
 MultiLine Comments¶../features/hasMultiLineComments.html¶/* Hello PLDB */¶229¶25¶90%
-Integers¶../features/hasIntegers.html¶80766866¶175¶1¶99%
-Floats¶../features/hasFloats.html¶80766866.0¶150¶0¶100%
+Integers¶../features/hasIntegers.html¶80766866¶176¶1¶99%
+Floats¶../features/hasFloats.html¶80766866.0¶151¶0¶100%
 Booleans¶../features/hasBooleans.html¶pldb = true¶124¶8¶94%
-Hexadecimals¶../features/hasHexadecimals.html¶0x4D06792¶111¶2¶98%
-Conditionals¶../features/hasConditionals.html¶if (isTrue) printPldb()¶80¶4¶95%
+Hexadecimals¶../features/hasHexadecimals.html¶0x4D06792¶112¶2¶98%
+Conditionals¶../features/hasConditionals.html¶if (isTrue) printPldb()¶81¶4¶95%
 Semantic Indentation¶../features/hasSemanticIndentation.html¶line0 if true line1  print "Hello PLDB"¶74¶528¶12%
 Assignment¶../features/hasAssignment.html¶name = "PLDB"¶58¶1¶98%
-Octals¶../features/hasOctals.html¶0o464063622¶55¶4¶93%
-File Imports¶../features/hasImports.html¶import pldb¶54¶3¶95%
-Functions¶../features/hasFunctions.html¶function computePLDBRanks() {}¶54¶2¶96%
-While Loops¶../features/hasWhileLoops.html¶while (pldb.pop()) loop()¶51¶5¶91%
-Binary Literals¶../features/hasBinaryNumbers.html¶0b100110100000110011110010010¶50¶1¶98%
-Standard Library¶../features/hasStandardLibrary.html¶print("print is part of stdlib")¶43¶5¶90%
+Octals¶../features/hasOctals.html¶0o464063622¶56¶4¶93%
+File Imports¶../features/hasImports.html¶import pldb¶55¶3¶95%
+Functions¶../features/hasFunctions.html¶function computePLDBRanks() {}¶55¶2¶96%
+While Loops¶../features/hasWhileLoops.html¶while (pldb.pop()) loop()¶51¶6¶89%
+Binary Literals¶../features/hasBinaryNumbers.html¶0b100110100000110011110010010¶51¶1¶98%
+Standard Library¶../features/hasStandardLibrary.html¶print("print is part of stdlib")¶44¶5¶90%
 Operator Overloading¶../features/hasOperatorOverloading.html¶def __add__(): doSomethingDifferent()¶36¶14¶72%
 Classes¶../features/hasClasses.html¶class PLDBFile {}¶32¶6¶84%
-Type Inference¶../features/hasTypeInference.html¶imAString = "pldb"¶31¶1¶97%
+Type Inference¶../features/hasTypeInference.html¶imAString = "pldb"¶31¶2¶94%
 Constants¶../features/hasConstants.html¶const name = "PLDB"¶30¶2¶94%
 Macros¶../features/hasMacros.html¶#define pldbItems 4000¶28¶10¶74%
 Lists¶../features/hasLists.html¶[2, 3, 10]¶28¶2¶93%
 Switch Statements¶../features/hasSwitch.html¶switch animal: case dog-buy; case cat-sell;¶27¶2¶93%
+Static Typing¶../features/hasStaticTyping.html¶int pldbRank = 100¶25¶2¶93%
 Exceptions¶../features/hasExceptions.html¶throw new Error("PLDB uh oh")¶25¶3¶89%
-Static Typing¶../features/hasStaticTyping.html¶int pldbRank = 100¶24¶2¶92%
 Case Insensitive Identifiers¶../features/hasCaseInsensitiveIdentifiers.html¶pLdB = "PLDB"¶24¶57¶30%
 Garbage Collection¶../features/hasGarbageCollection.html¶var iDontNeedToFreeThis¶23¶8¶74%
 Case Sensitivity¶../features/isCaseSensitive.html¶pldb != PLDB¶22¶9¶71%
+Pointers¶../features/hasPointers.html¶int *pldb¶22¶5¶81%
 Inheritance¶../features/hasInheritance.html¶class PLDBFile extends File¶22¶2¶92%
-Pointers¶../features/hasPointers.html¶int *pldb¶21¶5¶81%
 Directives¶../features/hasDirectives.html¶use strict;¶21¶3¶88%
-Access Modifiers¶../features/hasAccessModifiers.html¶class PLDBFile { public title }¶20¶3¶87%
+Access Modifiers¶../features/hasAccessModifiers.html¶class PLDBFile { public title }¶21¶3¶88%
 Constructors¶../features/hasConstructors.html¶PLDBFile { constructor() {} }¶17¶4¶81%
 Scientific Notation¶../features/hasScientificNotation.html¶8076686.6e1¶16¶1¶-
 Pattern Matching¶../features/hasPatternMatching.html¶fib 0 = 1; fib 1 = 1¶16¶2¶-
-Multiline Strings¶../features/hasMultilineStrings.html¶hello = """Hello\nPLDB"""¶15¶1¶-
-Module Pattern¶../features/hasModules.html¶module PLDB {}¶15¶0¶-
+Module Pattern¶../features/hasModules.html¶module PLDB {}¶16¶0¶-
+Multiline Strings¶../features/hasMultilineStrings.html¶hello = """Hello\nPLDB"""¶15¶2¶-
 Multiple Inheritance¶../features/hasMultipleInheritance.html¶extends parentWhichExtendsSomethingElse¶14¶6¶70%
 Bitwise Operators¶../features/hasBitWiseOperators.html¶3 == (2 &#124; 1)¶14¶1¶-
+Structs¶../features/hasStructs.html¶struct pldbFile { int rank; char *title; };¶13¶0¶-
 Message Passing¶../features/hasMessagePassing.html¶"get pldb"¶13¶1¶-
-Structs¶../features/hasStructs.html¶struct pldbFile { int rank; char *title; };¶12¶0¶-
 Enums¶../features/hasEnums.html¶colorsEnum { "red", "white", "blue"}¶12¶5¶-
 Infix Notation¶../features/hasInfixNotation.html¶1 + 2¶11¶0¶-
 Increment and decrement operators¶../features/hasIncrementAndDecrementOperators.html¶i++¶11¶5¶-
 Zero-based numbering¶../features/hasZeroBasedNumbering.html¶firstItem = pldb[0]¶10¶3¶-
 Maps¶../features/hasMaps.html¶{name: "PLDB"}¶10¶0¶-
+Generics¶../features/hasGenerics.html¶function identity&lt;T>(arg: T): T¶10¶1¶-
 Disk Output¶../features/canWriteToDisk.html¶write("pldb.csv", "...")¶10¶4¶-
 Ternary operators¶../features/hasTernaryOperators.html¶true ? 1 : 0¶9¶8¶-
 Single Dispatch¶../features/hasSingleDispatch.html¶person.run()¶9¶1¶-
 Regular Expression Syntax Sugar¶../features/hasRegularExpressionsSyntaxSugar.html¶/pldb/¶9¶6¶-
 Here Document¶../features/hasHereDocs.html¶`A big multliline text block`¶9¶1¶-
-Generics¶../features/hasGenerics.html¶function identity&lt;T>(arg: T): T¶9¶1¶-
 Function Composition¶../features/hasFunctionComposition.html¶o = (f, g) => x => f(g(x))¶9¶1¶-
 Anonymous Functions¶../features/hasAnonymousFunctions.html¶() => printPldb()¶9¶1¶-
 Namespaces¶../features/hasNamespaces.html¶namespace PLDB {}¶8¶2¶-

@@ -1,36 +1,36 @@
 Name	Values	Coverage	Question	Example	Type	Source	SortIndex	IsComputed	IsRequired	IsConceptDelimiter	Cue
-id	5155	100%	What is the ID of this concept?	05ab1e	string		1	false	true	true	
-name	5155	100%	What is the name of this concept?	05AB1E	string		1.1	false	true		
-appeared	5155	100%	What year was the language publicly released and/or announced?	2015	number		1.101	false	true		
-creators	1642	31%	"What are the name(s) of the original creators of the language delimited by "" and ""?"	Zach Leatherman	string		1.102	false			
+id	5156	100%	What is the ID of this concept?	05ab1e	string		1	false	true	true	
+name	5156	100%	What is the name of this concept?	05AB1E	string		1.1	false	true		
+appeared	5156	100%	What year was the language publicly released and/or announced?	2015	number		1.101	false	true		
+creators	1643	31%	"What are the name(s) of the original creators of the language delimited by "" and ""?"	Zach Leatherman	string		1.102	false			
 maintainers	3	0%	"What are the name(s) of the maintainer(s) of the language delimited by "" and ""?"	Daniel Stenberg	string		1.1021	false			
-measurements	5155	100%	How many measurements do we have about this thing?	11	number		1.11	true			
-tags	5155	100%	Which category(ies) in PLDB's subjective ontology does this entity fit into?	esolang	string		1.2	false	true		
+measurements	5156	100%	How many measurements do we have about this thing?	11	number		1.11	true			
+tags	5156	100%	Which category(ies) in PLDB's subjective ontology does this entity fit into?	esolang	string		1.2	false	true		
 rijuRepl_website	28	0%	What is the URL of the official homepage for this language project?	https://www.adaic.org/	string		1.21	false			
-website	1887	36%	What is the URL of the official homepage for this language project?	https://www.11ty.dev/	string		1.21	false			
+website	1888	36%	What is the URL of the official homepage for this language project?	https://www.11ty.dev/	string		1.21	false			
 spec	54	1%	What is a URL to the official spec for this language?	https://www.iso.org/standard/67472.html	string		1.22	false			
-foundationScore	5155	100%	How many languages are built using this language?	0	number		1.3	true			
+foundationScore	5156	100%	How many languages are built using this language?	0	number		1.3	true			
 blog	76	1%	What is the URL to the official blog for this language?	https://www.11ty.dev/blog/	string		1.33	false			
 releaseNotes	72	1%	What is the URL to the release notes or changelog for this language?	https://help.sap.com/docs/BTP/4726775c8bfc483abb210252604515b2/e9b10e43016e423ab0efe91e668a6efc.html	string		1.33	false			
 download	44	0%	What is a URL to the download page for this language?	https://developer.arm.com/downloads/-/arm-compiler-for-embedded	string		1.33	false			
 latestVersion	641	12%	What is the latest version?	v1.0.0-test.3-bugfix	string		1.33	false			
-rank	5155	100%	How does this concept rank amongst all other concepts?	1270	number		1.5	true			
-exampleCount	5155	100%	How many examples do we have written in this language?	2	number		1.5	true			
+rank	5156	100%	How does this concept rank amongst all other concepts?	1270	number		1.5	true			
+exampleCount	5156	100%	How many examples do we have written in this language?	2	number		1.5	true			
 lastActivity	0	0%	In our data on this entity, what year is the most recent activity?		number		1.55	true			
-writtenInCount	1277	24%	How many languages is this implementation written in?	3	number		1.6	true			
-pldbScore	5155	100%	What is the combined score of this language across all the categories of rankings?	22227	number		1.6	true			
+writtenInCount	1278	24%	How many languages is this implementation written in?	3	number		1.6	true			
+pldbScore	5156	100%	What is the combined score of this language across all the categories of rankings?	22229	number		1.6	true			
 hoplId	1808	35%	What is the HOPL id of this language?	4365	number		1.9	true			
-isLanguage	5155	100%	Does PLDB categorize this entity as a language?	true	boolean		1.9	true			
-inboundLinksCount	5155	100%	How many other concepts link to this one?	0	number		1.9	true			
-inboundLinks	482	9%	Which other concepts link to this one?	explorer	string		1.9	true			
+isLanguage	5156	100%	Does PLDB categorize this entity as a language?	true	boolean		1.9	true			
+inboundLinksCount	5156	100%	How many other concepts link to this one?	0	number		1.9	true			
+inboundLinks	483	9%	Which other concepts link to this one?	explorer	string		1.9	true			
 conferences	7	0%	What is a URL(s) to a recurring conference(s) focused on this language?	https://conf.11ty.dev/	string		1.9	false			
 dblp	0	0%	What are publications about this language from https://dblp.org/?		text	dblp.org	1.9	false			
 dblp_hits	0	0%	How many matching publications?		number		1.9	false			
 dblp_publications	0	0%	An inline PSV table of hits.		textarea		1.9	false			
 equation	15	0%	What is a LaTeX encoding of this equation?	∇xB=µ0*J	string		1.9	false			
 filenames	2	0%	What are the filenames commonly associated with this language?	horp.conf	string		1.9	false			
-mainRepo	1283	24%	Where is the main source code for this language?	https://github.com/Adriandmen/05AB1E	string		1.9	true			
-primaryTag	5155	100%	Where is the primary tag for this language?	esolang	string		1.9	true			
+mainRepo	1284	24%	Where is the main source code for this language?	https://github.com/Adriandmen/05AB1E	string		1.9	true			
+primaryTag	5156	100%	Where is the primary tag for this language?	esolang	string		1.9	true			
 githubBigQuery_users	419	8%	How many unique users have a repo using this language according to Google BigQuery?	250	number		1.9	false			
 githubBigQuery_repos	420	8%	How many repos for this language are listed in Google's BigQuery Public GitHub Dataset snapshot?	274	number		1.9	false			
 githubLanguage_filenames	53	1%	What are the filenames commonly associated with this language?	APKBUILD	string		1.9	false			
@@ -53,7 +53,7 @@ githubRepo_subscribers	1207	23%	How many subscribers to the repo?	24	number		1.9
 githubRepo_forks	1207	23%	How many forks of the repo?	48	number		1.9	false			
 githubRepo_stars	1209	23%	How many stars of the repo?	755	number		1.9	false			
 githubRepo_issues	1204	23%	How many isses on the repo?	40	number		1.9	false			
-isFinished	5155	100%	Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.	false	boolean		1.9	true			
+isFinished	5156	100%	Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.	false	boolean		1.9	true			
 nativeLanguage	17	0%	What is the native human language for this language, if not English?	Korean	string		1.9	false			
 screenshot	23	0%	What is the filename to a screenshot of this visual language in the concepts/screenshots/ folder?	activity-pub.png	string		1.9	false			
 photo	2	0%	What is a URL to a screenshot of this real world notation in the form https://pldb.io/photos/[id].png?	binary-notation.jpg	string		1.9	false			
@@ -99,12 +99,12 @@ wikipedia_backlinksCount	1615	31%	How many pages on WP link to this page?	112	nu
 wikipedia_revisionCount	1290	25%	How many revisions does this page have?	481	number		1.9	false			
 wikipedia_pageId	1598	30%	What is the internal ID for this entity on WP?	92577	number		1.9	false			
 zulip	2	0%	What is a URL to an official (or popular unofficial) Zulip for language development?	https://coq.zulipchat.com/	string		1.9	false			
-description	1218	23%	How is this language described here?	A simpler site generator. Transforms a directory of templates (of varying types) into HTML.	string		1.99	false			description
-githubRepo_description	1218	23%	How is this language described here?	A simpler site generator. Transforms a directory of templates (of varying types) into HTML.	string		1.99	false			description
+description	1219	23%	How is this language described here?	A simpler site generator. Transforms a directory of templates (of varying types) into HTML.	string		1.99	false			description
+githubRepo_description	1219	23%	How is this language described here?	A simpler site generator. Transforms a directory of templates (of varying types) into HTML.	string		1.99	false			description
 paper	46	0%	What is a URL to a paper(s) by the creator(s) introducing this language?	https://functional-art.org/2017/ait	string		1.99	false			
 lab	4015	77%	In what community(ies) did the language first originate?	Department of Computer Science, University of Toronto	string		1.99	false			
-rijuRepl_description	1218	23%	How is this language described here?	A simpler site generator. Transforms a directory of templates (of varying types) into HTML.	string		1.99	false			description
-fileExtensions	285	5%	What are the file extensions for this language?	3ds	string		1.991	false			
+rijuRepl_description	1219	23%	How is this language described here?	A simpler site generator. Transforms a directory of templates (of varying types) into HTML.	string		1.99	false			description
+fileExtensions	286	5%	What are the file extensions for this language?	3ds	string		1.991	false			
 githubLanguage_fileExtensions	519	10%	What are the file extensions for this language?	bsl os	string		1.991	false			
 leachim6_fileExtensions	369	7%	What are the file extensions for this language?	abap	string		1.991	false			
 pygmentsHighlighter_fileExtensions	326	6%	What are the file extensions for this language?	abap ABAP	string		1.991	false			
@@ -112,18 +112,18 @@ rijuRepl_fileExtensions	38	0%	What are the file extensions for this language?	ad
 wikipedia_fileExtensions	106	2%	What are the file extensions for this language?	adb ads	string		1.991	false			
 interviews	12	0%	What is a URL(s) to an interview with the creator(s) about this language?	https://pldb.io/blog/brianKernighan.html	string		1.999	false			
 languageServerProtocolProject_writtenIn	53	1%	What language(s) is the main implementation written in?	typescript	string		1.999	false			
-writtenIn	1277	24%	What language(s) is the main implementation written in?	elixir markdown yaml	string		1.999	false			
+writtenIn	1278	24%	What language(s) is the main implementation written in?	elixir markdown yaml	string		1.999	false			
 compilesTo	96	1%	Which language(s) does this language primarily compile to?	beam-bytecode	string		1.9991	false			
 leetSheets	86	1%	What is a URL(s) to a leet sheet(s) for this language?	https://github.com/liffiton/Arduino-Cheat-Sheet	string		1.9999	false			
 isPublicDomain	25	0%	Is this public domain?	true	boolean		2	false			
-isOpenSource	1628	31%	Is this an open source project?	true	boolean		2.01	true			
-numberOfUsersEstimate	5155	100%	What is our estimate of number of users of this language?	928	number		2.1	true			
-numberOfJobsEstimate	5155	100%	What is our estimate of the number of jobs in this language?	0	number		2.1	true			
+isOpenSource	1629	31%	Is this an open source project?	true	boolean		2.01	true			
+numberOfUsersEstimate	5156	100%	What is our estimate of number of users of this language?	928	number		2.1	true			
+numberOfJobsEstimate	5156	100%	What is our estimate of the number of jobs in this language?	0	number		2.1	true			
 exercism	71	1%	What is a URL to learn this language on Exercism?	https://exercism.org/tracks/8th	string		2.1	false			
-expandedMeasurements	5155	100%	How many measurements do we have about this thing counting each list item as a measurement?	15	number		2.11	true			
+expandedMeasurements	5156	100%	How many measurements do we have about this thing counting each list item as a measurement?	15	number		2.11	true			
 related	237	4%	What languages are related?	logo	string		2.2	false			
 runsOnVm	9	0%	What virtual machine(s) does this language run on?	jvm	string		2.2	false			
-influencedBy	120	2%	What languages influenced this one?	algol-60	string		2.2	false			
+influencedBy	121	2%	What languages influenced this one?	algol-60	string		2.2	false			
 successorOf	5	0%	Was this language launched as the successor of another?	asp	string		2.2	false			
 dialectOf	2	0%	Is this language a dialect of a broader one?	lisp	string		2.2	false			
 subsetOf	14	0%	Is this language a subset of another?	c	string		2.2	false			
@@ -136,8 +136,8 @@ inputLanguages	13	0%	Which language(s) does this take as input? For compilers, w
 protocols	1	0%	Which protocols does this speak?	www ftp http nntp gopher	string		2.2	false			
 iso	4	0%	What is the link to ISO standard for this language or standard?	https://www.iso.org/standard/27688.html	string		2.2	false			
 irc	7	0%	What is a link to an official (or popular unofficial) IRC channel(s) for language development?	https://darcs.net/IRC	string		2.3	false			
-numberOfCreators	1642	31%	How many creators?	1	number		2.33	true			
-isSelfHosted	1277	24%	Is the main implementation of this language written in this language?	false	boolean		2.33	true			
+numberOfCreators	1643	31%	How many creators?	1	number		2.33	true			
+isSelfHosted	1278	24%	Is the main implementation of this language written in this language?	false	boolean		2.33	true			
 latestMajorVersion	641	12%	What is the latest major version (if using semver)?	1	number		2.33	true			
 usesSemanticVersioning	641	12%	Does the official release of the language use semantic versioning?	true	boolean		2.34	true			
 demoVideo	18	0%	What is a URL of a demo video of this language?	https://www.youtube.com/watch?v=qGOIt0xh0dw	string		2.4	false			
@@ -145,7 +145,7 @@ clocExtensions	234	4%	What are the file extensions for this language recognized 
 gdbSupport	13	0%	Is the language supported by the GNU Debugger?	true	boolean	sourceware.org	2.4	false			
 visualParadigm	95	1%	"Is this a visual programming thing? Sometimes called ""no code"" or ""low code""?"	true	boolean		2.4	false			
 tryItOnline	134	2%	What is a link to try this language on https://tio.run?	https://tio.run/#abc	string	tio.run	2.4	false			
-docs	422	8%	What is a URL(s) to the official documentation for this language?	https://www.11ty.dev/docs/	string		2.5	false			
+docs	423	8%	What is a URL(s) to the official documentation for this language?	https://www.11ty.dev/docs/	string		2.5	false			
 devDocs	2	0%	What is a URL to the official documentation for developers who want to contribute to the language project?	https://github.com/coq/coq/blob/master/CONTRIBUTING.md	string		2.5	false			
 ebook	6	0%	What is a link to a free public domain high quality eBook about this language?	https://git-scm.com/book/en/v2	string		2.5	false			
 emailList	34	0%	What is a link to the mailing list for this language?	http://www.ada-auth.org/comment.html	string		2.5	false			
@@ -171,13 +171,13 @@ funFact	3	0%	What is a code block or some text containing a fun or unusual fact 
 proposals	11	0%	What is the URL to a the place where language proposals are made, if one exists?	https://github.com/golang/proposal	string		2.99	false			
 projectEuler	104	2%	Is this language one of the ones listed on https://projecteuler.net/?	ABAP	string	projecteuler.net	2.999	false			
 reference	2189	42%	What is a URL to more info about this thing?	https://pdfs.semanticscholar.org/5a43/c1b39643533b04a35f1811824c0c25d089fd.pdf?_ga=2.57752106.1877161244.1546024423-1663431151.1540068998	string		2.9999	false			
-example	985	19%	What is a representative snippet for this language?	PUSH 4 PUSH 5 MULTIPLY	string		3	false			
+example	986	19%	What is a representative snippet for this language?	PUSH 4 PUSH 5 MULTIPLY	string		3	false			
 compilerExplorer_example	34	0%	What is a representative snippet for this language?	"-- This pragma will remove the warning produced by the default -- CE filename and the procedure name differing, -- see : https://gcc.gnu.org/onlinedocs/gcc-8.2.0/gnat_rm/Pragma-Source_005fFile_005fName.html#Pragma-Source_005fFile_005fName pragma Source_File_Name (Square, Body_File_Name => ""example.adb"");  -- Type your code here, or load an example. function Square(num : Integer) return Integer is begin     return num**2; end Square;  -- Ada 2012 also provides Expression Functions -- (http://www.ada-auth.org/standards/12rm/html/RM-6-8.html) -- as a short hand for functions whose body consists of a -- single return statement. However they cannot be used as a -- compilation unit. -- function Square(num : Integer) return Integer is (num**2); "	string		3	false			
 tiktoks	4	0%	What is a URL to an official (or popular unofficial) TikTok(s) for this language?	https://www.tiktok.com/@blender_org	string		3	false			
 instagram	2	0%	What is a URL to an official (or popular unofficial) Instagram for this language?	https://instagram.com/blender.official/	string		3	false			
 facebook	4	0%	What is a URL to an official (or popular unofficial) Facebook group for this language?	https://www.facebook.com/YourOwn3DSoftware/	string		3	false			
 youtubes	11	0%	What is a URL to an official (or popular unofficial) YouTube channel(s) for this language?	https://www.youtube.com/c/EleventyVideo	string		3	false			
-discord	30	0%	What is a URL to an official (or popular unofficial) Discord for this language?	https://www.11ty.dev/blog/discord/	string		3	false			
+discord	31	0%	What is a URL to an official (or popular unofficial) Discord for this language?	https://www.11ty.dev/blog/discord/	string		3	false			
 mastodon	5	0%	What is a URL to an official (or popular unofficial) Mastodon for this language?	https://fosstodon.org/@eleventy	string		3	false			
 discourse	4	0%	What is a URL to an official (or popular unofficial) Discourse for this language?	https://chapel.discourse.group/	string		3	false			
 theLanguage	1	0%	What is the entire definition of the language, if it's a small one?	";;; Qlang version 0.1 ;;; R5RS Scheme plus getprop, putprop, error  ;; queue primitives from SICP pp. 209-212 ;; in classical Lisp, called ""tconc"" representation  (define front-ptr car) (define rear-ptr cdr) (define set-front-ptr! set-car!) (define set-rear-ptr! set-cdr!)  (define (empty-queue? queue) (null? (front-ptr queue))) (define (make-queue) (cons '() '())) (define (insert-queue! queue item)  (let ((new-pair (cons item '())))   (cond ((empty-queue? queue)    (set-front-ptr! queue new-pair)    (set-rear-ptr! queue new-pair))         (else    (set-cdr! (rear-ptr queue) new-pair)    (set-rear-ptr! queue new-pair)))))  (define (delete-queue! queue)  (if (empty-queue? queue)   (error ""delete-queue!"" ""empty queue"")   (let ((front (car (front-ptr queue))))    (set-front-ptr! queue (cdr (front-ptr queue)))    front)))  (define queue->list front-ptr)  ;; define a Qlang primitive (define (q-prim sym fn arity)  (putprop sym 'q-subr fn)  (putprop sym 'q-arity arity))  ;; return the arity of an operator, or -1 if not an operator (define (q-arity sym)  (if (symbol? sym)   (getprop sym 'q-arity -1)   -1))  ;; return the Qlang definition of a symbol (define (q-def sym) (getprop sym 'q-subr #f))  ;; execute Qlang expression encoded as list (define (q-exec list)  (let ((queue (make-queue)))   (for-each (lambda (elem) (insert-queue! queue elem)) list)   (q-exec-queue queue)))  ;; execute Qlang expression encoded as queue (define (q-exec-queue queue)  (let* ((item (delete-queue! queue))         (arity (q-arity item)))   (cond ((empty-queue? queue)    item)               ((negative? arity)    (insert-queue! queue item)    (q-exec-queue queue))         ((q-args-available? (queue->list queue) item arity)    (insert-queue! queue     (apply (q-def item)      (q-get-args! queue arity)))    (q-exec-queue queue))         (else    (insert-queue! queue item)    (q-exec-queue queue)))))  ;; Are the right number of arguments available? (define (q-args-available? args sym count)  (cond ((zero? count)   #t)        ((null? args)   (error (symbol->string sym) ""missing arguments""))        ((>= (q-arity (car args)) 0)   #f)        (else   (q-args-available? (cdr args) sym (- count 1)))))  (define (q-get-args! queue count)  (if (zero? count)   '()   (let ((arg (delete-queue! queue)))    (cons arg (q-get-args! queue (- count 1))))))  ;; some primitives (q-prim '+ + 2) (q-prim '* * 2) (q-prim 'pi (lambda () 3.141592653) 0)"	string		3	false			
@@ -196,7 +196,7 @@ gource	25	0%	What is a URL to a Gource visualization of this project's git histo
 languageServerProtocolProject	55	1%	What is the URL to a project implementing LSP for this language?	https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode-apex	string	langserver.org	3.4	false			
 githubCopilotOptimized	7	0%	Is this language optimized for GitHub copilot, as found on this list https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot?	true	boolean		3.5	false			
 keywords	121	2%	What are all the keywords in this language?	abap-source abbreviated abstract accept accepting according activation actual add add-corresponding adjacent after alias aliases align all allocate alpha analysis analyzer and append appendage appending application archive area arithmetic as ascending aspect assert assign assigned assigning association asynchronous at attributes authority authority-check avg back background backup backward badi base before begin between big binary bintohex bit black blank blanks blob block blocks blue bound boundaries bounds boxed break-point buffer by bypassing byte byte-order call calling case cast casting catch center centered chain chain-input chain-request change changing channels character char-to-hex check checkbox ci_ circular class class-coding class-data class-events class-methods class-pool cleanup clear client clob clock close coalesce code coding col_background col_group col_heading col_key col_negative col_normal col_positive col_total collect color column columns comment comments commit common communication comparing component components compression compute concat concat_with_space concatenate cond condense condition connect connection constants context contexts continue control controls conv conversion convert copies copy corresponding country cover cpi create creating critical currency currency_conversion current cursor cursor-selection customer customer-function dangerous data database datainfo dataset date dats_add_days dats_add_months dats_days_between dats_is_valid daylight dd/mm/yy dd/mm/yyyy ddmmyy deallocate decimal_shift decimals declarations deep default deferred define defining definition delete deleting demand department descending describe destination detail dialog directory disconnect display display-mode distinct divide divide-corresponding division do dummy duplicate duplicates duration during dynamic dynpro edit editor-call else elseif empty enabled enabling encoding end endat endcase endcatch endchain endclass enddo endenhancement end-enhancement-section endexec endform endfunction endian endif ending endinterface end-lines endloop endmethod endmodule end-of-definition end-of-editing end-of-file end-of-page end-of-selection endon endprovide endselect end-test-injection end-test-seam endtry endwhile endwith engineering enhancement enhancement-point enhancements enhancement-section entries entry enum environment equiv errormessage errors escaping event events exact except exception exceptions exception-table exclude excluding exec execute exists exit exit-command expand expanding expiration explicit exponent export exporting extend extended extension extract fail fetch field field-groups fields field-symbol field-symbols file filter filters filter-table final find first first-line fixed-point fkeq fkge flush font for form format forward found frame frames free friends from function functionality function-pool further gaps generate get giving gkeq gkge global grant green group groups handle handler harmless hashed having hdb header headers heading head-lines help-id help-request hextobin hide high hint hold hotspot icon id identification identifier ids if ignore ignoring immediately implementation implementations implemented implicit import importing in inactive incl include includes including increment index index-line infotypes inheriting init initial initialization inner inout input insert instance instances instr intensified interface interface-pool interfaces internal intervals into inverse inverted-date is iso job join keep keeping kernel key keys keywords kind language last late layout leading leave left left-justified leftplus leftspace legacy length let level levels like line lines line-count linefeed line-selection line-size list listbox list-processing little llang load load-of-program lob local locale locator logfile logical log-point long loop low lower lpad lpi ltrim mail main major-id mapping margin mark mask match matchcode max maximum medium members memory mesh message message-id messages messaging method methods min minimum minor-id mm/dd/yy mm/dd/yyyy mmddyy mode modif modifier modify module move move-corresponding multiply multiply-corresponding name nametab native nested nesting new new-line new-page new-section next no no-display no-extension no-gap no-gaps no-grouping no-heading no-scrolling no-sign no-title no-topofpage no-zero node nodes non-unicode non-unique not null number object objects obligatory occurrence occurrences occurs of off offset ole on only open option optional options or order other others out outer output output-length overflow overlay pack package pad padding page pages parameter parameters parameter-table part partially pattern percentage perform performing person pf1 pf10 pf11 pf12 pf13 pf14 pf15 pf2 pf3 pf4 pf5 pf6 pf7 pf8 pf9 pf-status pink places pool pos_high pos_low position pragmas precompiled preferred preserving primary print print-control priority private procedure process program property protected provide public push pushbutton put queue-only quickinfo radiobutton raise raising range ranges read reader read-only receive received receiver receiving red redefinition reduce reduced ref reference refresh regex reject remote renaming replace replacement replacing report request requested reserve reset resolution respecting responsible result results resumable resume retry return returncode returning returns right right-justified rightplus rightspace risk rmc_communication_failure rmc_invalid_status rmc_system_failure role rollback rows rpad rtrim run sap sap-spool saving scale_preserving scale_preserving_scientific scan scientific scientific_with_leading_zero scroll scroll-boundary scrolling search secondary seconds section select selection selections selection-screen selection-set selection-sets selection-table select-options send separate separated set shared shift short shortdump-id sign_as_postfix single size skip skipping smart some sort sortable sorted source specified split spool spots sql sqlscript stable stamp standard starting start-of-editing start-of-selection state statement statements static statics statusinfo step-loop stop structure structures style subkey submatches submit subroutine subscreen subtract subtract-corresponding suffix sum summary summing supplied supply suppress switch switchstates symbol syncpoints syntax syntax-check syntax-trace system-call system-exceptions system-exit tab tabbed table tables tableview tabstrip target task tasks test testing test-injection test-seam text textpool then throw time times timestamp timezone tims_is_valid title titlebar title-lines to tokenization tokens top-lines top-of-page trace-file trace-table trailing transaction transfer transformation translate transporting trmac truncate truncation try tstmp_add_seconds tstmp_current_utctimestamp tstmp_is_valid tstmp_seconds_between type type-pool type-pools types uline unassign under unicode union unique unit_conversion unix unpack until unwind up update upper user user-command using utf-8 valid value value-request values vary varying verification-message version via view visible wait warning when whenever where while width window windows with with-heading without with-title word work write writer xml xsd yellow yes yymmdd zero zone abap_system_timezone abap_user_timezone access action adabas adjust_numbers allow_precision_loss allowed amdp applicationuser as_geo_json as400 associations balance behavior breakup bulk cds cds_client check_before_save child clients corr corr_spearman cross cycles datn_add_days datn_add_months datn_days_between dats_from_datn dats_tims_to_tstmp dats_to_datn db2 db6 ddl dense_rank depth deterministic discarding entities entity error failed finalize first_value fltp_to_dec following fractional full graph grouping hierarchy hierarchy_ancestors hierarchy_ancestors_aggregate hierarchy_descendants hierarchy_descendants_aggregate hierarchy_siblings incremental indicators lag last_value lead leaves like_regexpr link locale_sap lock locks many mapped matched measures median mssqlnt multiple nodetype ntile nulls occurrences_regexpr one operations oracle orphans over parent parents partition pcre period pfcg_mapping preceding privileged product projection rank redirected replace_regexpr reported response responses root row row_number sap_system_date save schema session sets shortdump siblings spantree start stddev string_agg subtotal sybase tims_from_timn tims_to_timn to_blob to_clob total trace-entry tstmp_to_dats tstmp_to_dst tstmp_to_tims tstmpl_from_utcl tstmpl_to_utcl unbounded utcl_add_seconds utcl_current utcl_seconds_between uuid var verbatim	string		4	false			
-gitRepo	36	0%	What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?	https://git.savannah.gnu.org/git/bash.git	string		4	false			
+gitRepo	37	0%	What is the URL of the official git repo for the language project if not hosted on GitHub or GitLab or Sourcehut?	https://git.savannah.gnu.org/git/bash.git	string		4	false			
 githubRepo	1231	23%	What is the URL of the official GitHub repo for the project if it is hosted there?	https://github.com/Adriandmen/05AB1E	string	github.com	4	false			
 gitlabRepo	14	0%	What is the URL of the official GitLab repo for the language project?	https://gitlab.kitware.com/cmake/cmake	string	gitlab.com	4	false			
 meetup	58	1%	What is a URL for active meetup groups for this language on Meetup.com?	https://www.meetup.com/topics/android-developers	string	meetup.com	4	false			
@@ -211,19 +211,19 @@ assignmentToken	40	0%	What token(s) is used for assignment to an identifier?	:=	
 booleanTokens	103	1%	What token(s) is used for true and false?	true false	string		5	false			
 includeToken	4	0%	What token(s) is used for including another file?	require	string		5	false			
 canDoShebang	6	0%	Does this language support shebang executable scripts?	true	boolean		7	false			
-canReadCommandLineArgs	5	0%	Does this language support command line arguments?	true	boolean		7	false			
+canReadCommandLineArgs	6	0%	Does this language support command line arguments?	true	boolean		7	false			
 canUseQuestionMarksAsPartOfIdentifier	2	0%	Is the question mark (?) allowed as part of an identifier?	false	boolean		7	false			
 canWriteToDisk	14	0%	Does this language have methods or standard libraries for writing to disk?	true	boolean		7	false			
 hasSinglePassParser	13	0%	Is the language designed for a single pass parser requiring define before use (topological sorting)?	true	boolean		7	false			
 hasAbstractTypes	3	0%	Does this language have a keyword for abstract classes or types?	false	boolean		7	false			
-hasAccessModifiers	23	0%	Does this language have access modifiers?	true	boolean		7	false			
-hasAlgebraicTypes	4	0%	Does this language support algebraic types?	true	boolean		7	false			
+hasAccessModifiers	24	0%	Does this language have access modifiers?	true	boolean		7	false			
+hasAlgebraicTypes	5	0%	Does this language support algebraic types?	true	boolean		7	false			
 hasAnonymousFunctions	10	0%	Does the language support anonymous functions, aka Lambdas?	true	boolean		7	false			
 hasArraySlicingSyntax	4	0%	Does the language have array slicing syntax, such as [0:2]?	true	boolean		7	false			
 hasAssertStatements	6	0%	Does the language have built in assert statements?	true	boolean		7	false			
 hasAssignment	59	1%	Does the language allow assigning values to variables?	true	boolean		7	false			
 hasAsyncAwait	9	0%	Does the language have an async/await construct?	true	boolean		7	false			
-hasBinaryNumbers	51	0%	Does the language have a type and syntax for binary numbers?	true	boolean		7	false			
+hasBinaryNumbers	52	1%	Does the language have a type and syntax for binary numbers?	true	boolean		7	false			
 hasBinaryOperators	3	0%	Does the language have operators for operating on binary types?	true	boolean		7	false			
 hasBitWiseOperators	15	0%	Does the language have operators for bitwise manipulations?	true	boolean		7	false			
 hasBlobs	2	0%	Does the language have a blobs concept?	false	boolean		7	false			
@@ -235,8 +235,8 @@ hasCaseInsensitiveIdentifiers	81	1%	Are identifiers in this language case insens
 hasCharacters	3	0%	"Does this language have a syntax and type for a ""character""?"	true	boolean		7	false			
 hasClasses	38	0%	Does the language have a concept of classes?	true	boolean		7	false			
 hasClobs	1	0%	Does the language have a specific type for character large object?	true	boolean		7	false			
-hasComments	644	12%	Does the language have a syntax and support for comments?	true	boolean		7	false			
-hasConditionals	84	1%	Does the language have conditional statements and/or conditional expressions?	true	boolean		7	false			
+hasComments	645	12%	Does the language have a syntax and support for comments?	true	boolean		7	false			
+hasConditionals	85	1%	Does the language have conditional statements and/or conditional expressions?	true	boolean		7	false			
 hasConstants	32	0%	Does the language have a way to declare constant compile time variables?	true	boolean		7	false			
 hasConstructors	21	0%	Does the language have a syntax and/or notion of constructors?	true	boolean		7	false			
 hasContinue	5	0%	Does the language have a syntax/keyword for continuing a loop?	true	boolean		7	false			
@@ -247,52 +247,52 @@ hasDependentTypes	6	0%	Does a language have types who's definition depends on it
 hasDestructuring	7	0%	Does the language have a syntax for conveniently extracting multiple values from a structure?	true	boolean		7	false			
 hasDirectives	24	0%	Is the language embedded in a tiny compile-time directive language?	true	boolean		7	false			
 hasDisposeBlocks	4	0%	Does the language have a syntax for dispose blocks to free up resources allocated during execution?	true	boolean		7	false			
-hasDocComments	6	0%	Is there a standard mini language written in comments for documenting code?	true	boolean		7	false			
+hasDocComments	7	0%	Is there a standard mini language written in comments for documenting code?	true	boolean		7	false			
 hasDuckTyping	5	0%	Are types defined not by their name, but by the presence of certain methods and properties?	false	boolean		7	false			
 hasDynamicProperties	5	0%	Does all properties have to be declared or does the language support dynamic properties?	true	boolean		7	false			
 hasDynamicSizedArrays	3	0%	Do arrays have to have their size specified at compile time or can they be dynamically sized?	true	boolean		7	false			
 hasDynamicTyping	5	0%	Are types of variables fixed or can they change during runtime?	false	boolean		7	false			
 hasEnums	17	0%	Does the language have a syntax and type for enums?	true	boolean		7	false			
-hasEscapeCharacters	6	0%	Does the language have any notion of escape characters?	true	boolean		7	false			
+hasEscapeCharacters	7	0%	Does the language have any notion of escape characters?	true	boolean		7	false			
 hasExceptions	28	0%	Does the language have a concept and syntax for exceptions?	true	boolean		7	false			
 hasExplicitTypeCasting	8	0%	Does the language have a syntax for type casting?	true	boolean		7	false			
 hasExports	2	0%	Does the language have a syntax for explicitly exporting items from a module or file?	true	boolean		7	false			
 hasExpressions	8	0%	Does the language have a concept of expressions?	true	boolean		7	false			
 hasFirstClassFunctions	7	0%	Does the language have functions that can be passed as arguments to other functions, can be returned by other functions, and can be assigned to variables or stored in data structures?	true	boolean		7	false			
 hasFixedPoint	9	0%	Does the language have a type and syntax for fixed point numbers, such as currencies with 2 decimal points?	true	boolean		7	false			
-hasFloats	150	2%	Does the language have a syntax and type for floating points?	true	boolean		7	false			
+hasFloats	151	2%	Does the language have a syntax and type for floating points?	true	boolean		7	false			
 hasFnArguments	4	0%	Do functions accept arguments?	true	boolean		7	false			
 hasForEachLoops	7	0%	Does the language have a concept and syntax for for-each loops?	true	boolean		7	false			
 hasForLoops	9	0%	Does the language have a concept of and syntax for for-loops?	true	boolean		7	false			
 hasFunctionComposition	10	0%	Can you pass functions into other functions and get new combined functions?	true	boolean		7	false			
 hasFunctionOverloading	18	0%	Can you have multiple functions with the same name but different parameters?	false	boolean		7	false			
-hasFunctions	56	1%	Does the language have a concept of and syntax for functions?	true	boolean		7	false			
+hasFunctions	57	1%	Does the language have a concept of and syntax for functions?	true	boolean		7	false			
 hasGarbageCollection	31	0%	Does the language have a garbage collector or must memory of constructs be managed manually?	true	boolean		7	false			
 hasGradualTypes	3	0%	Does the language support gradual types?	true	boolean		7	false			
 hasGenerators	4	0%	Does the language have a concept of loops that yield?	true	boolean		7	false			
-hasGenerics	10	0%	Does the language have generics?	true	boolean		7	false			
+hasGenerics	11	0%	Does the language have generics?	true	boolean		7	false			
 hasGlobalScope	4	0%	Is there at least one top level scope?	true	boolean		7	false			
 hasGotos	9	0%	Does the language have a concept of and syntax for gotos?	true	boolean		7	false			
 hasHereDocs	10	0%	Does the language have a syntax for multiline text blocks?	true	boolean		7	false			
-hasHexadecimals	113	2%	Does the language have a syntax for hexadecimals?	true	boolean		7	false			
+hasHexadecimals	114	2%	Does the language have a syntax for hexadecimals?	true	boolean		7	false			
 hasHomoiconicity	9	0%	Is the language also a valid data structure in that language?	true	boolean		7	false			
 hasIds	1	0%	Does the language have a concept of unique identifiers?	true	boolean		7	false			
 hasIfElses	3	0%	Does the language have if-else statements or expressions?	true	boolean		7	false			
 hasIfs	4	0%	"Does the language have ""if"" statements or expressions?"	true	boolean		7	false			
 hasImplicitArguments	2	0%	Does the language have a concept of contextual or implicit parameters?	true	boolean		7	false			
 hasImplicitTypeConversions	3	0%	Does the language automatically convert types as needed?	true	boolean		7	false			
-hasImports	57	1%	Does this language have a syntax for importing other files?	true	boolean		7	false			
+hasImports	58	1%	Does this language have a syntax for importing other files?	true	boolean		7	false			
 hasIncrementAndDecrementOperators	16	0%	Does this language have increment and decrement operators?	true	boolean		7	false			
 hasInfixNotation	11	0%	Does this language use operators between operands?	true	boolean		7	false			
 hasInheritance	24	0%	Does this language have class inheritance?	true	boolean		7	false			
-hasIntegers	176	3%	Does this language have a syntax and type for integers?	true	boolean		7	false			
+hasIntegers	177	3%	Does this language have a syntax and type for integers?	true	boolean		7	false			
 hasInterfaces	8	0%	Does this language have a concept of interfaces?	true	boolean		7	false			
 hasIterators	9	0%	Does this language have iterators?	true	boolean		7	false			
 hasLabels	5	0%	Does the language have a way to label locations within the source code?	false	boolean		7	false			
 hasLazyEvaluation	3	0%	Does the language wait to evaluate expressions until needed?	true	boolean		7	false			
-hasLineComments	563	10%	Does the language have line comments?	true	boolean		7	false			
+hasLineComments	564	10%	Does the language have line comments?	true	boolean		7	false			
 hasLists	30	0%	Does the language have lists?	true	boolean		7	false			
-hasStandardLibrary	48	0%	Does the language have a standard library?	true	boolean		7	false			
+hasStandardLibrary	49	0%	Does the language have a standard library?	true	boolean		7	false			
 hasExplicitStandardLibrary	3	0%	Do you have to explicitly include the standard library?	true	boolean		7	false			
 hasMacros	38	0%	Does the language have a compile-time macro pass?	true	boolean		7	false			
 hasMagicGettersAndSetters	5	0%	Does the language have a way to handle undefined getters and setters?	false	boolean		7	false			
@@ -305,23 +305,23 @@ hasMethodChaining	2	0%	Does the language support method chaining?	true	boolean		
 hasMethodOverloading	2	0%	Does the language support method overloading?	false	boolean		7	false			
 hasMethods	4	0%	Does the language have methods on classes?	true	boolean		7	false			
 hasMixins	9	0%	Does the language allow including methods from a class without inheriting from that class?	false	boolean		7	false			
-hasModules	15	0%	Does the language have a concept of modules for organizing and packaging code?	true	boolean		7	false			
+hasModules	16	0%	Does the language have a concept of modules for organizing and packaging code?	true	boolean		7	false			
 hasMonads	1	0%	Does the language have monads?	true	boolean		7	false			
 hasMultiLineComments	254	4%	Does the language have multi-line comments?	true	boolean		7	false			
-hasMultilineStrings	16	0%	Does the language support multiline strings?	true	boolean		7	false			
+hasMultilineStrings	17	0%	Does the language support multiline strings?	true	boolean		7	false			
 hasMultipleDispatch	7	0%	Does the language support multiple dispatch?	true	boolean		7	false			
 hasMultipleInheritance	20	0%	Does the language allow multiple inheritance?	true	boolean		7	false			
 hasNamedArguments	12	0%	Does the language have named arguments / named parameters?	false	boolean		7	false			
 hasNamespaces	10	0%	Does the language have a namespace construct?	false	boolean		7	false			
 hasNull	5	0%	Does the language have a null value?	true	boolean		7	false			
-hasOctals	59	1%	Does the language have a syntax for octal numbers?	true	boolean		7	false			
+hasOctals	60	1%	Does the language have a syntax for octal numbers?	true	boolean		7	false			
 hasOperatorOverloading	50	0%	Does the language allow operator overloading?	true	boolean		7	false			
 hasOperators	7	0%	Does the language have operators?	true	boolean		7	false			
 hasPairs	1	0%	Does the language have a pair structure?	true	boolean		7	false			
 hasPartialApplication	6	0%	Does the language support partial application?	true	boolean		7	false			
 hasPatternMatching	18	0%	Does the language support pattern matching?	true	boolean		7	false			
 hasPipes	7	0%	Does the language have a pipe operator?	true	boolean		7	false			
-hasPointers	26	0%	Does the language have a structure that is a location in memory?	true	boolean		7	false			
+hasPointers	27	0%	Does the language have a structure that is a location in memory?	true	boolean		7	false			
 hasPolymorphism	7	0%	Does the language have polymorphism?	true	boolean		7	false			
 hasPostfixNotation	4	0%	Does the language allow operators to be placed at the end of the expression?	true	boolean		7	false			
 hasPrefixNotation	5	0%	Does the language allow operators to be placed at the beginning of the expression?	true	boolean		7	false			
@@ -345,11 +345,11 @@ hasSourceMaps	2	0%	Does the language support the generation of source maps?	true
 hasStatementTerminatorCharacter	2	0%	"Does the language have a statement terminator character such as "";""?"	true	boolean		7	false			
 hasStatements	3	0%	Does the language have a concept of statements?	true	boolean		7	false			
 hasStaticMethods	3	0%	Can a class have static methods?	true	boolean		7	false			
-hasStaticTyping	26	0%	Does the language have static typing at compile time?	false	boolean		7	false			
+hasStaticTyping	27	0%	Does the language have static typing at compile time?	false	boolean		7	false			
 hasStreams	4	0%	Does the language have a concept of streams?	true	boolean		7	false			
 hasStringConcatOperator	3	0%	Is there an operator for concatenating strings?	true	boolean		7	false			
-hasStrings	382	7%	Does the language have a strings data structure?	true	boolean		7	false			
-hasStructs	12	0%	Does the language have a structs structure?	true	boolean		7	false			
+hasStrings	383	7%	Does the language have a strings data structure?	true	boolean		7	false			
+hasStructs	13	0%	Does the language have a structs structure?	true	boolean		7	false			
 hasStructuralTyping	11	0%	Does the language feature (significant) structural typing?	false	boolean		7	false			
 hasSwitch	29	0%	Does the language have switch statements or expressions?	true	boolean		7	false			
 hasSymbolTables	4	0%	Does the compiler use symbol tables internally?	true	boolean		7	false			
@@ -361,10 +361,10 @@ hasTimestamps	2	0%	Does the language have a builtin timestamps data structure?	t
 hasTraits	2	0%	Does the language support traits?	true	boolean		7	false			
 hasTriples	1	0%	Does the language have a structure for subject–predicate–object expressions?	true	boolean		7	false			
 hasTryCatch	4	0%	Does the language have a try/catch construct?	true	boolean		7	false			
-hasTypeAliases	4	0%	Does the language have type aliases?	true	boolean		7	false			
+hasTypeAliases	5	0%	Does the language have type aliases?	true	boolean		7	false			
 hasTypeAnnotations	3	0%	Does the language have a syntax for annotating the types of variables?	true	boolean		7	false			
 hasTypeClasses	14	0%	Does the language have type classes?	false	boolean		7	false			
-hasTypeInference	32	0%	Can the parser infer the type of a variable at compile time without an annotation?	true	boolean		7	false			
+hasTypeInference	33	0%	Can the parser infer the type of a variable at compile time without an annotation?	true	boolean		7	false			
 hasTypeParameters	3	0%	Does the language support a concept of type parameters?	true	boolean		7	false			
 hasTypedHoles	4	0%	Does the language have a syntax for typed holes?	true	boolean		7	false			
 hasUnaryOperators	4	0%	Does the language have any unary operators like ++ or --?	true	boolean		7	false			
@@ -377,7 +377,7 @@ hasVariableSubstitutionSyntax	13	0%	Do you use different syntax when assigning v
 hasVariadicFunctions	8	0%	Does the language support functions that accept a variable number of parameters?	true	boolean		7	false			
 hasVirtualFunctions	2	0%	Does the language have virtual functions?	true	boolean		7	false			
 hasVoidFunctions	2	0%	Does the language have void functions that return nothing?	true	boolean		7	false			
-hasWhileLoops	56	1%	Does the language have while loops?	true	boolean		7	false			
+hasWhileLoops	57	1%	Does the language have while loops?	true	boolean		7	false			
 hasZeroBasedNumbering	13	0%	Does the language start counting from 0, rather than 1?	true	boolean		7	false			
 hasZippers	1	0%	Does the language have zippers built in or as a library, which are roughly a pointer with context on a tree?	true	boolean		7	false			
 isCaseSensitive	31	0%	Is this language case sensitive?	false	boolean		7	false			
@@ -386,8 +386,8 @@ mergesWhitespace	2	0%	Does this language merge whitespace, so N spaces is treate
 supportsBreakpoints	2	0%	Does this language support breakpoints?	true	boolean		7	false			
 jupyterKernel	73	1%	What is a link to a Jupyter Kernel for this language?	https://github.com/mattpap/IAldor	string	jupyter.org	9	false			
 wikipedia	1974	38%	What is the URL of this entity on Wikipedia, if and only if it has a page dedicated to it?	https://en.wikipedia.org/wiki/IBM_1620	string	wikipedia.org	9	false			
-bookCount	5155	100%	What is the count of booked we have published about this thing?	0	number		10	true			
-paperCount	5155	100%	What is the count of papers we have published about this thing?	0	number		10	true			
+bookCount	5156	100%	What is the count of booked we have published about this thing?	0	number		10	true			
+paperCount	5156	100%	What is the count of papers we have published about this thing?	0	number		10	true			
 hopl	1808	35%	What is the URL to this language in Diarmuid Pigott's Online Historical Encyclopaedia of Programming Languages site?	https://hopl.info/showlanguage.prx?exp=4365	string	hopl.info	11	false			
 pypl	29	0%	What is this language's id on https://pypl.github.io?	Abap	string	pypl.github.io	11	false			
 tiobe	204	3%	What is the ID of this language in Tiobe's ranking of programming languages here: https://www.tiobe.com/tiobe-index/?	ABAP	string	tiobe.com	11	false			
