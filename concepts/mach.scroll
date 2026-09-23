@@ -1,0 +1,68 @@
+../code/conceptPage.scroll
+
+id mach
+name Mach
+appeared 2022
+creators Ethan Reynolds
+tags pl
+website https://machlang.org
+description Mach is a small, explicit, self-hosted systems programming language for compilers, kernels, runtimes and games, with no hidden control flow, no hidden allocation and no type inference.
+fileExtensions mach
+writtenIn mach
+docs https://machlang.org/docs/
+discord https://discord.com/invite/dfWG9NhGj7
+
+isOpenSource true
+influencedBy c
+
+example
+ use std.print;
+ use std.runtime;
+ 
+ fun fibonacci(n: u64) u64 {
+     var a: u64 = 0;
+     var b: u64 = 1;
+     var i: u64 = 0;
+     for (i < n) {
+         val t: u64 = b;
+         b = a + b;
+         a = t;
+         i = i + 1;
+     }
+     ret a;
+ }
+ 
+ #[symbol("main")]
+ fun main(argc: i64, argv: **u8) i64 {
+     print.printlnf("fib(10) = {}", fibonacci(10));
+     ret 0;
+ }
+
+gitRepo https://github.com/briar-systems/mach
+
+hasComments true
+hasLineComments true
+hasDocComments true
+hasStaticTyping true
+hasTypeInference false
+hasGenerics true
+hasStructs true
+hasAlgebraicTypes true
+hasTypeAliases true
+hasAccessModifiers true
+hasPointers true
+hasFunctions true
+hasConditionals true
+hasWhileLoops false
+hasImports true
+hasModules true
+hasIntegers true
+hasFloats true
+hasHexadecimals true
+hasBinaryNumbers true
+hasOctals true
+hasStrings true
+hasEscapeCharacters true
+hasMultilineStrings false
+hasStandardLibrary true
+canReadCommandLineArgs true
