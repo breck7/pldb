@@ -4,24 +4,24 @@ All Features
 A list of 174 features found in programming languages.
 
 title¶titleLink¶pseudoExample¶yes¶no¶percentage
-Comments¶../features/hasComments.html¶# Hello PLDB¶641¶4¶99%
-Line Comments¶../features/hasLineComments.html¶# Hello PLDB¶542¶22¶96%
-Strings¶../features/hasStrings.html¶"Hello PLDB"¶381¶2¶99%
+Comments¶../features/hasComments.html¶# Hello PLDB¶642¶4¶99%
+Line Comments¶../features/hasLineComments.html¶# Hello PLDB¶543¶22¶96%
+Strings¶../features/hasStrings.html¶"Hello PLDB"¶382¶2¶99%
 Print() Debugging¶../features/hasPrintDebugging.html¶print "Hello PLDB"¶323¶1¶100%
-MultiLine Comments¶../features/hasMultiLineComments.html¶/* Hello PLDB */¶229¶25¶90%
-Integers¶../features/hasIntegers.html¶80766866¶176¶1¶99%
+MultiLine Comments¶../features/hasMultiLineComments.html¶/* Hello PLDB */¶229¶26¶90%
+Integers¶../features/hasIntegers.html¶80766866¶177¶1¶99%
 Floats¶../features/hasFloats.html¶80766866.0¶151¶0¶100%
 Booleans¶../features/hasBooleans.html¶pldb = true¶124¶8¶94%
 Hexadecimals¶../features/hasHexadecimals.html¶0x4D06792¶112¶2¶98%
-Conditionals¶../features/hasConditionals.html¶if (isTrue) printPldb()¶81¶4¶95%
-Semantic Indentation¶../features/hasSemanticIndentation.html¶line0 if true line1  print "Hello PLDB"¶74¶528¶12%
+Conditionals¶../features/hasConditionals.html¶if (isTrue) printPldb()¶82¶4¶95%
+Semantic Indentation¶../features/hasSemanticIndentation.html¶line0 if true line1  print "Hello PLDB"¶74¶529¶12%
 Assignment¶../features/hasAssignment.html¶name = "PLDB"¶58¶1¶98%
 Octals¶../features/hasOctals.html¶0o464063622¶56¶4¶93%
-File Imports¶../features/hasImports.html¶import pldb¶55¶3¶95%
-Functions¶../features/hasFunctions.html¶function computePLDBRanks() {}¶55¶2¶96%
-While Loops¶../features/hasWhileLoops.html¶while (pldb.pop()) loop()¶51¶6¶89%
+File Imports¶../features/hasImports.html¶import pldb¶56¶3¶95%
+Functions¶../features/hasFunctions.html¶function computePLDBRanks() {}¶56¶2¶97%
+While Loops¶../features/hasWhileLoops.html¶while (pldb.pop()) loop()¶52¶6¶90%
 Binary Literals¶../features/hasBinaryNumbers.html¶0b100110100000110011110010010¶51¶1¶98%
-Standard Library¶../features/hasStandardLibrary.html¶print("print is part of stdlib")¶44¶5¶90%
+Standard Library¶../features/hasStandardLibrary.html¶print("print is part of stdlib")¶44¶6¶88%
 Operator Overloading¶../features/hasOperatorOverloading.html¶def __add__(): doSomethingDifferent()¶36¶14¶72%
 Classes¶../features/hasClasses.html¶class PLDBFile {}¶32¶6¶84%
 Type Inference¶../features/hasTypeInference.html¶imAString = "pldb"¶31¶2¶94%
@@ -29,7 +29,7 @@ Constants¶../features/hasConstants.html¶const name = "PLDB"¶30¶2¶94%
 Macros¶../features/hasMacros.html¶#define pldbItems 4000¶28¶10¶74%
 Lists¶../features/hasLists.html¶[2, 3, 10]¶28¶2¶93%
 Switch Statements¶../features/hasSwitch.html¶switch animal: case dog-buy; case cat-sell;¶27¶2¶93%
-Static Typing¶../features/hasStaticTyping.html¶int pldbRank = 100¶25¶2¶93%
+Static Typing¶../features/hasStaticTyping.html¶int pldbRank = 100¶25¶3¶89%
 Exceptions¶../features/hasExceptions.html¶throw new Error("PLDB uh oh")¶25¶3¶89%
 Case Insensitive Identifiers¶../features/hasCaseInsensitiveIdentifiers.html¶pLdB = "PLDB"¶24¶57¶30%
 Garbage Collection¶../features/hasGarbageCollection.html¶var iDontNeedToFreeThis¶23¶8¶74%
@@ -68,19 +68,19 @@ Mixins¶../features/hasMixins.html¶extends pldbFile, diskFile¶8¶1¶-
 Iterators¶../features/hasIterators.html¶for lang in pldb()¶8¶1¶-
 Homoiconicity¶../features/hasHomoiconicity.html¶(list ())¶8¶1¶-
 Type Casting¶../features/hasExplicitTypeCasting.html¶(float)pldbRank;¶8¶0¶-
+Pipes¶../features/hasPipes.html¶ls pldb &#124; wc¶7¶1¶-
 Interfaces¶../features/hasInterfaces.html¶interface PLDBFile¶7¶1¶-
-Function Overloading¶../features/hasFunctionOverloading.html¶add(string: str, string2: str)¶7¶11¶-
+Function Overloading¶../features/hasFunctionOverloading.html¶add(string: str, string2: str)¶7¶12¶-
 hasForEachLoops¶../features/hasForEachLoops.html¶¶7¶0¶-
 Fixed Point Numbers¶../features/hasFixedPoint.html¶80766866.00¶7¶2¶-
 First-Class Functions¶../features/hasFirstClassFunctions.html¶[2.1].map(Math.round)¶7¶0¶-
 Expressions¶../features/hasExpressions.html¶(1 + 2)¶7¶1¶-
 Doc comments¶../features/hasDocComments.html¶// param1: A comment about the first param¶7¶0¶-
 Single Pass Compiler¶../features/hasSinglePassParser.html¶x = 2; print x¶7¶6¶-
-Units of Measure¶../features/hasUnitsOfMeasure.html¶42cm¶6¶5¶-
+Units of Measure¶../features/hasUnitsOfMeasure.html¶42cm¶6¶6¶-
 Type Classes¶../features/hasTypeClasses.html¶¶6¶8¶-
 Range Operator¶../features/hasRangeOperators.html¶1 ... 10¶6¶0¶-
 Polymorphism¶../features/hasPolymorphism.html¶a + "b"; 1 + 2¶6¶1¶-
-Pipes¶../features/hasPipes.html¶ls pldb &#124; wc¶6¶1¶-
 Partial Application¶../features/hasPartialApplication.html¶add5 = num => addNumbers(10, num)¶6¶0¶-
 Manual Memory Management¶../features/hasManualMemoryManagement.html¶malloc(4);¶6¶1¶-
 hasEscapeCharacters¶../features/hasEscapeCharacters.html¶¶6¶1¶-
@@ -92,10 +92,11 @@ Shebang¶../features/canDoShebang.html¶#! /run¶6¶0¶-
 Union Types¶../features/hasUnionTypes.html¶any = string &#124; number¶5¶0¶-
 Unicode Identifers¶../features/hasUnicodeIdentifiers.html¶δ = 0.00001¶5¶2¶-
 Type Aliases¶../features/hasTypeAliases.html¶type Year = number¶5¶0¶-
-Structural Typing¶../features/hasStructuralTyping.html¶¶5¶6¶-
+Structural Typing¶../features/hasStructuralTyping.html¶¶5¶7¶-
 Prefix Notation¶../features/hasPrefixNotation.html¶+ 1 2¶5¶0¶-
 Operators¶../features/hasOperators.html¶1 + 1¶5¶2¶-
 Null¶../features/hasNull.html¶uhOh = null¶5¶0¶-
+Named Arguments¶../features/hasNamedArguments.html¶¶5¶8¶-
 Gotos¶../features/hasGotos.html¶goto 10¶5¶4¶-
 Dependent types¶../features/hasDependentTypes.html¶pldbSortedList // a list where is sorted is true¶5¶1¶-
 hasContinue¶../features/hasContinue.html¶¶5¶0¶-
@@ -108,9 +109,8 @@ Templates¶../features/hasTemplates.html¶template TCopy(T) {}¶4¶2¶-
 Symbol Tables¶../features/hasSymbolTables.html¶SymbolName&#124;Type&#124;Scope;bar&#124;function,double&#124;extern¶4¶0¶-
 Streams¶../features/hasStreams.html¶echo 123 &#124; 123.txt¶4¶0¶-
 Single-Type Arrays¶../features/hasSingleTypeArrays.html¶const pldbRanks: int[]¶4¶0¶-
-Sets¶../features/hasSets.html¶{"pldb", "PLDB"}¶4¶2¶-
+Sets¶../features/hasSets.html¶{"pldb", "PLDB"}¶4¶3¶-
 Postfix Notation¶../features/hasPostfixNotation.html¶2 3 4 + 2 -¶4¶0¶-
-Named Arguments¶../features/hasNamedArguments.html¶¶4¶8¶-
 Multiple Dispatch¶../features/hasMultipleDispatch.html¶collide_with(x::Spaceship, y::Spaceship)¶4¶3¶-
 hasIfs¶../features/hasIfs.html¶¶4¶0¶-
 Generators¶../features/hasGenerators.html¶yield 2¶4¶0¶-

@@ -11,24 +11,24 @@ We also have a page of all keywords and all file extensions.
  https://pldb.io/extensions.html file extensions
 
 title¶titleLink¶pseudoExample¶yes¶no¶percentage
-Comments¶../features/hasComments.html¶# Hello PLDB¶641¶4¶99%
-Line Comments¶../features/hasLineComments.html¶# Hello PLDB¶542¶22¶96%
-Strings¶../features/hasStrings.html¶"Hello PLDB"¶381¶2¶99%
+Comments¶../features/hasComments.html¶# Hello PLDB¶642¶4¶99%
+Line Comments¶../features/hasLineComments.html¶# Hello PLDB¶543¶22¶96%
+Strings¶../features/hasStrings.html¶"Hello PLDB"¶382¶2¶99%
 Print() Debugging¶../features/hasPrintDebugging.html¶print "Hello PLDB"¶323¶1¶100%
-MultiLine Comments¶../features/hasMultiLineComments.html¶/* Hello PLDB */¶229¶25¶90%
-Integers¶../features/hasIntegers.html¶80766866¶176¶1¶99%
+MultiLine Comments¶../features/hasMultiLineComments.html¶/* Hello PLDB */¶229¶26¶90%
+Integers¶../features/hasIntegers.html¶80766866¶177¶1¶99%
 Floats¶../features/hasFloats.html¶80766866.0¶151¶0¶100%
 Booleans¶../features/hasBooleans.html¶pldb = true¶124¶8¶94%
 Hexadecimals¶../features/hasHexadecimals.html¶0x4D06792¶112¶2¶98%
-Conditionals¶../features/hasConditionals.html¶if (isTrue) printPldb()¶81¶4¶95%
-Semantic Indentation¶../features/hasSemanticIndentation.html¶line0 if true line1  print "Hello PLDB"¶74¶528¶12%
+Conditionals¶../features/hasConditionals.html¶if (isTrue) printPldb()¶82¶4¶95%
+Semantic Indentation¶../features/hasSemanticIndentation.html¶line0 if true line1  print "Hello PLDB"¶74¶529¶12%
 Assignment¶../features/hasAssignment.html¶name = "PLDB"¶58¶1¶98%
 Octals¶../features/hasOctals.html¶0o464063622¶56¶4¶93%
-File Imports¶../features/hasImports.html¶import pldb¶55¶3¶95%
-Functions¶../features/hasFunctions.html¶function computePLDBRanks() {}¶55¶2¶96%
-While Loops¶../features/hasWhileLoops.html¶while (pldb.pop()) loop()¶51¶6¶89%
+File Imports¶../features/hasImports.html¶import pldb¶56¶3¶95%
+Functions¶../features/hasFunctions.html¶function computePLDBRanks() {}¶56¶2¶97%
+While Loops¶../features/hasWhileLoops.html¶while (pldb.pop()) loop()¶52¶6¶90%
 Binary Literals¶../features/hasBinaryNumbers.html¶0b100110100000110011110010010¶51¶1¶98%
-Standard Library¶../features/hasStandardLibrary.html¶print("print is part of stdlib")¶44¶5¶90%
+Standard Library¶../features/hasStandardLibrary.html¶print("print is part of stdlib")¶44¶6¶88%
 Operator Overloading¶../features/hasOperatorOverloading.html¶def __add__(): doSomethingDifferent()¶36¶14¶72%
 Classes¶../features/hasClasses.html¶class PLDBFile {}¶32¶6¶84%
 Type Inference¶../features/hasTypeInference.html¶imAString = "pldb"¶31¶2¶94%
@@ -36,7 +36,7 @@ Constants¶../features/hasConstants.html¶const name = "PLDB"¶30¶2¶94%
 Macros¶../features/hasMacros.html¶#define pldbItems 4000¶28¶10¶74%
 Lists¶../features/hasLists.html¶[2, 3, 10]¶28¶2¶93%
 Switch Statements¶../features/hasSwitch.html¶switch animal: case dog-buy; case cat-sell;¶27¶2¶93%
-Static Typing¶../features/hasStaticTyping.html¶int pldbRank = 100¶25¶2¶93%
+Static Typing¶../features/hasStaticTyping.html¶int pldbRank = 100¶25¶3¶89%
 Exceptions¶../features/hasExceptions.html¶throw new Error("PLDB uh oh")¶25¶3¶89%
 Case Insensitive Identifiers¶../features/hasCaseInsensitiveIdentifiers.html¶pLdB = "PLDB"¶24¶57¶30%
 Garbage Collection¶../features/hasGarbageCollection.html¶var iDontNeedToFreeThis¶23¶8¶74%
@@ -68,12 +68,12 @@ Here Document¶../features/hasHereDocs.html¶`A big multliline text block`¶9¶1
 Function Composition¶../features/hasFunctionComposition.html¶o = (f, g) => x => f(g(x))¶9¶1¶-
 Anonymous Functions¶../features/hasAnonymousFunctions.html¶() => printPldb()¶9¶1¶-
 Namespaces¶../features/hasNamespaces.html¶namespace PLDB {}¶8¶2¶-
-Function Overloading¶../features/hasFunctionOverloading.html¶add(string: str, string2: str)¶7¶11¶-
+Function Overloading¶../features/hasFunctionOverloading.html¶add(string: str, string2: str)¶7¶12¶-
 Single Pass Compiler¶../features/hasSinglePassParser.html¶x = 2; print x¶7¶6¶-
-Units of Measure¶../features/hasUnitsOfMeasure.html¶42cm¶6¶5¶-
+Units of Measure¶../features/hasUnitsOfMeasure.html¶42cm¶6¶6¶-
 Type Classes¶../features/hasTypeClasses.html¶¶6¶8¶-
-Structural Typing¶../features/hasStructuralTyping.html¶¶5¶6¶-
-Named Arguments¶../features/hasNamedArguments.html¶¶4¶8¶-
+Structural Typing¶../features/hasStructuralTyping.html¶¶5¶7¶-
+Named Arguments¶../features/hasNamedArguments.html¶¶5¶8¶-
 Variable Substitution Syntax¶../features/hasVariableSubstitutionSyntax.html¶name = "PLDB"; print $name¶3¶10¶-
 
 Built with Scroll v180.0.1

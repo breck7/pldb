@@ -1,0 +1,53 @@
+../code/conceptPage.scroll
+id ussr
+name USSR
+appeared 2026
+creators Ted Smart
+tags pl shell
+isOpenSource true
+description USSR (Unified Shell Script REPL) is a general-purpose, multi-paradigm interpreted shell scripting language featuring a unique grammar resembling TCL and Conventional Commits. It is designed to work efficiently with low-quality code en masse and was partially AI-designed using ChatGPT.
+website https://github.com/notlibrary/USSR
+fileExtensions su
+repository website https://github.com/notlibrary/USSR
+
+githubRepo website https://github.com/notlibrary/USSR
+ firstCommit 2026
+ stars 3
+ forks 0
+
+example
+ # USSR first program
+ init(z): arg_cnt arg_vec [
+ 
+ set(name): "USSR"
+ set(a): 10
+ set(b): 20
+ 
+ add(result): a b
+ 
+ print(output): name
+ print(output2): result
+ ]
+ 
+hasComments true
+ # A comment
+hasLineComments true
+ # A comment
+hasUnitsOfMeasure false
+hasSemanticIndentation false
+hasStrings true
+ "Hello world"
+hasMultiLineComments false
+hasIntegers true
+hasSets false
+hasPipes true
+hasImports true
+ $include "library.su"
+hasWhileLoops true
+hasFunctions true
+hasFunctionOverloading false
+hasNamedArguments true
+hasConditionals true
+hasStandardLibrary false
+hasStaticTyping false
+hasStructuralTyping false
