@@ -1,0 +1,28 @@
+../code/conceptPage.scroll
+
+id tint
+name Tint
+appeared 2026
+tags pl
+website https://tint-gamma.vercel.app
+latestVersion 0.2.0
+fileExtensions tn
+writtenIn rust
+isOpenSource true
+
+githubRepo https://github.com/tintlang/tint
+ description Statically typed UI language that keeps structure, style, state and logic in a single file. Runs in the browser on a small WebAssembly runtime and renders into the real DOM.
+
+helloWorldCollection Tint
+ ui fn App() {
+     Text { "Hello, world!" }
+ }
+
+lineCommentToken //
+stringToken "
+
+hasComments true
+hasLineComments true
+ // A comment
+hasStrings true
+ "Hello world"
