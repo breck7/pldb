@@ -1,7 +1,7 @@
 const measures = [
   {
     "Name": "id",
-    "Values": 5157,
+    "Values": 5158,
     "Coverage": "100%",
     "Question": "What is the ID of this concept?",
     "Example": "05ab1e",
@@ -13,7 +13,7 @@ const measures = [
   },
   {
     "Name": "name",
-    "Values": 5157,
+    "Values": 5158,
     "Coverage": "100%",
     "Question": "What is the name of this concept?",
     "Example": "05AB1E",
@@ -24,7 +24,7 @@ const measures = [
   },
   {
     "Name": "appeared",
-    "Values": 5157,
+    "Values": 5158,
     "Coverage": "100%",
     "Question": "What year was the language publicly released and/or announced?",
     "Example": "2015",
@@ -55,7 +55,7 @@ const measures = [
   },
   {
     "Name": "measurements",
-    "Values": 5157,
+    "Values": 5158,
     "Coverage": "100%",
     "Question": "How many measurements do we have about this thing?",
     "Example": "11",
@@ -65,7 +65,7 @@ const measures = [
   },
   {
     "Name": "tags",
-    "Values": 5157,
+    "Values": 5158,
     "Coverage": "100%",
     "Question": "Which category(ies) in PLDB's subjective ontology does this entity fit into?",
     "Example": "esolang",
@@ -86,7 +86,7 @@ const measures = [
   },
   {
     "Name": "website",
-    "Values": 1889,
+    "Values": 1890,
     "Coverage": "36%",
     "Question": "What is the URL of the official homepage for this language project?",
     "Example": "https://www.11ty.dev/",
@@ -106,7 +106,7 @@ const measures = [
   },
   {
     "Name": "foundationScore",
-    "Values": 5157,
+    "Values": 5158,
     "Coverage": "100%",
     "Question": "How many languages are built using this language?",
     "Example": "0",
@@ -146,7 +146,7 @@ const measures = [
   },
   {
     "Name": "latestVersion",
-    "Values": 641,
+    "Values": 642,
     "Coverage": "12%",
     "Question": "What is the latest version?",
     "Example": "v1.0.0-test.3-bugfix",
@@ -156,7 +156,7 @@ const measures = [
   },
   {
     "Name": "rank",
-    "Values": 5157,
+    "Values": 5158,
     "Coverage": "100%",
     "Question": "How does this concept rank amongst all other concepts?",
     "Example": "1270",
@@ -166,7 +166,7 @@ const measures = [
   },
   {
     "Name": "exampleCount",
-    "Values": 5157,
+    "Values": 5158,
     "Coverage": "100%",
     "Question": "How many examples do we have written in this language?",
     "Example": "2",
@@ -185,7 +185,7 @@ const measures = [
   },
   {
     "Name": "writtenInCount",
-    "Values": 1278,
+    "Values": 1279,
     "Coverage": "24%",
     "Question": "How many languages is this implementation written in?",
     "Example": "3",
@@ -195,10 +195,10 @@ const measures = [
   },
   {
     "Name": "pldbScore",
-    "Values": 5157,
+    "Values": 5158,
     "Coverage": "100%",
     "Question": "What is the combined score of this language across all the categories of rankings?",
-    "Example": "22233",
+    "Example": "22237",
     "Type": "number",
     "SortIndex": 1.6,
     "IsComputed": true
@@ -215,7 +215,7 @@ const measures = [
   },
   {
     "Name": "isLanguage",
-    "Values": 5157,
+    "Values": 5158,
     "Coverage": "100%",
     "Question": "Does PLDB categorize this entity as a language?",
     "Example": "true",
@@ -225,7 +225,7 @@ const measures = [
   },
   {
     "Name": "inboundLinksCount",
-    "Values": 5157,
+    "Values": 5158,
     "Coverage": "100%",
     "Question": "How many other concepts link to this one?",
     "Example": "0",
@@ -303,7 +303,7 @@ const measures = [
   },
   {
     "Name": "mainRepo",
-    "Values": 1285,
+    "Values": 1286,
     "Coverage": "24%",
     "Question": "Where is the main source code for this language?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -313,7 +313,7 @@ const measures = [
   },
   {
     "Name": "primaryTag",
-    "Values": 5157,
+    "Values": 5158,
     "Coverage": "100%",
     "Question": "Where is the primary tag for this language?",
     "Example": "esolang",
@@ -543,7 +543,7 @@ const measures = [
   },
   {
     "Name": "isFinished",
-    "Values": 5157,
+    "Values": 5158,
     "Coverage": "100%",
     "Question": "Has the creator or maintainer announced the language officially over, or has all activity stopped? Include a link to proof of the announcement.",
     "Example": "false",
@@ -1054,7 +1054,7 @@ const measures = [
   },
   {
     "Name": "fileExtensions",
-    "Values": 287,
+    "Values": 288,
     "Coverage": "5%",
     "Question": "What are the file extensions for this language?",
     "Example": "3ds",
@@ -1134,7 +1134,7 @@ const measures = [
   },
   {
     "Name": "writtenIn",
-    "Values": 1278,
+    "Values": 1279,
     "Coverage": "24%",
     "Question": "What language(s) is the main implementation written in?",
     "Example": "elixir markdown yaml",
@@ -1174,7 +1174,7 @@ const measures = [
   },
   {
     "Name": "isOpenSource",
-    "Values": 1630,
+    "Values": 1631,
     "Coverage": "31%",
     "Question": "Is this an open source project?",
     "Example": "true",
@@ -1184,7 +1184,7 @@ const measures = [
   },
   {
     "Name": "numberOfUsersEstimate",
-    "Values": 5157,
+    "Values": 5158,
     "Coverage": "100%",
     "Question": "What is our estimate of number of users of this language?",
     "Example": "928",
@@ -1194,7 +1194,7 @@ const measures = [
   },
   {
     "Name": "numberOfJobsEstimate",
-    "Values": 5157,
+    "Values": 5158,
     "Coverage": "100%",
     "Question": "What is our estimate of the number of jobs in this language?",
     "Example": "0",
@@ -1214,7 +1214,7 @@ const measures = [
   },
   {
     "Name": "expandedMeasurements",
-    "Values": 5157,
+    "Values": 5158,
     "Coverage": "100%",
     "Question": "How many measurements do we have about this thing counting each list item as a measurement?",
     "Example": "15",
@@ -1384,7 +1384,7 @@ const measures = [
   },
   {
     "Name": "isSelfHosted",
-    "Values": 1278,
+    "Values": 1279,
     "Coverage": "24%",
     "Question": "Is the main implementation of this language written in this language?",
     "Example": "false",
@@ -1394,7 +1394,7 @@ const measures = [
   },
   {
     "Name": "latestMajorVersion",
-    "Values": 641,
+    "Values": 642,
     "Coverage": "12%",
     "Question": "What is the latest major version (if using semver)?",
     "Example": "1",
@@ -1404,7 +1404,7 @@ const measures = [
   },
   {
     "Name": "usesSemanticVersioning",
-    "Values": 641,
+    "Values": 642,
     "Coverage": "12%",
     "Question": "Does the official release of the language use semantic versioning?",
     "Example": "true",
@@ -1833,7 +1833,7 @@ const measures = [
   },
   {
     "Name": "helloWorldCollection",
-    "Values": 151,
+    "Values": 152,
     "Coverage": "2%",
     "Question": "What is the name of this project in the Hello World Collection?",
     "Example": "\\ Hello world in ABC  WRITE \"Hello, World!\" /",
@@ -2002,7 +2002,7 @@ const measures = [
   },
   {
     "Name": "githubRepo",
-    "Values": 1232,
+    "Values": 1233,
     "Coverage": "23%",
     "Question": "What is the URL of the official GitHub repo for the project if it is hosted there?",
     "Example": "https://github.com/Adriandmen/05AB1E",
@@ -2066,7 +2066,7 @@ const measures = [
   },
   {
     "Name": "lineCommentToken",
-    "Values": 493,
+    "Values": 494,
     "Coverage": "9%",
     "Question": "What is the token(s) that can be placed anywhere on a line and starts a comment that cannot be stopped except by a line break character or end of file?",
     "Example": "*",
@@ -2096,7 +2096,7 @@ const measures = [
   },
   {
     "Name": "stringToken",
-    "Values": 339,
+    "Values": 340,
     "Coverage": "6%",
     "Question": "What token(s) is used to delimit a string?",
     "Example": "\"",
@@ -2386,7 +2386,7 @@ const measures = [
   },
   {
     "Name": "hasComments",
-    "Values": 646,
+    "Values": 647,
     "Coverage": "12%",
     "Question": "Does the language have a syntax and support for comments?",
     "Example": "true",
@@ -2936,7 +2936,7 @@ const measures = [
   },
   {
     "Name": "hasLineComments",
-    "Values": 565,
+    "Values": 566,
     "Coverage": "10%",
     "Question": "Does the language have line comments?",
     "Example": "true",
@@ -3516,7 +3516,7 @@ const measures = [
   },
   {
     "Name": "hasStrings",
-    "Values": 384,
+    "Values": 385,
     "Coverage": "7%",
     "Question": "Does the language have a strings data structure?",
     "Example": "true",
@@ -3898,7 +3898,7 @@ const measures = [
   },
   {
     "Name": "bookCount",
-    "Values": 5157,
+    "Values": 5158,
     "Coverage": "100%",
     "Question": "What is the count of booked we have published about this thing?",
     "Example": "0",
@@ -3908,7 +3908,7 @@ const measures = [
   },
   {
     "Name": "paperCount",
-    "Values": 5157,
+    "Values": 5158,
     "Coverage": "100%",
     "Question": "What is the count of papers we have published about this thing?",
     "Example": "0",
