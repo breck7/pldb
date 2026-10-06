@@ -1,19 +1,28 @@
-# Same deployment pattern as breck.lol.
-# GitHub Pages source: Deploy from a branch, wws, / (root).
-name: Build and Deploy Scroll
+# Builds PLDB and publishes it to GitHub Pages using GitHub's artifact-based
+# deployment: this workflow builds the site, uploads it as a Pages artifact,
+# and `actions/deploy-pages` publishes it directly. No publishing branch and
+# no second GitHub-managed Pages build.
+#
+# One-time setup: repo Settings -> Pages -> Build and deployment -> Source
+# must be set to "GitHub Actions".
+name: Build and Deploy Pages
 on:
   push:
     branches: [main]
   workflow_dispatch:
 permissions:
-  contents: write
-concurrency: github-pages
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
       - name: Install and Build
@@ -21,9 +30,35 @@ jobs:
           npm install
           npm install -g cloc
           npm run build
-          # Publish generated files, including the Monaco browser assets.
-          printf 'node_modules/*\n!node_modules/monaco-editor/\n.github/\n' > .gitignore
-      - uses: JamesIves/github-pages-deploy-action@v4
+      - name: Stage the site for Pages
+        run: |
+          rm -rf _site
+          mkdir -p _site
+          # Copy everything the site needs, but leave out git metadata and the
+          # huge node_modules tree (only the Monaco editor assets are used by
+          # the generated concept pages).
+          rsync -a \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude '.DS_Store' \
+            --exclude 'ignore' \
+            --exclude '_site' \
+            --exclude 'node_modules' \
+            ./ _site/
+          mkdir -p _site/node_modules
+          cp -R node_modules/monaco-editor _site/node_modules/
+          # Preserve the custom domain for the Pages deployment.
+          printf 'pldb.io' > _site/CNAME
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
         with:
-          branch: wws
-          folder: .
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
