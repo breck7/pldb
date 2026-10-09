@@ -4,6 +4,7 @@ id nlp-plus-plus
 name NLP++
 appeared 1998
 creators Amnon Meyers and David de Hilster
+lab Text Analysis International
 tags pl
 website https://visualtext.org/nlp/
 description A programming language for natural language processing. An NLP++ analyzer is a sequence of passes; each pass matches pattern rules against a shared parse tree and runs C++-like code when a rule fires, with a hierarchical knowledge base (Conceptual Grammar) built into the language.
