@@ -1,0 +1,41 @@
+../code/conceptPage.scroll
+
+id nlp-plus-plus
+name NLP++
+appeared 1998
+creators Amnon Meyers and David de Hilster
+tags pl
+website https://visualtext.org/nlp/
+description A programming language for natural language processing. An NLP++ analyzer is a sequence of passes; each pass matches pattern rules against a shared parse tree and runs C++-like code when a rule fires, with a hierarchical knowledge base (Conceptual Grammar) built into the language.
+writtenIn cpp
+fileType text
+fileExtensions nlp pat
+country United States
+
+lineCommentToken #
+multiLineCommentTokens /* */
+hasComments true
+hasLineComments true
+ # A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+
+example
+ @POST
+ S("value") = num(N("value",1)) * num(N("numeric",2));
+ single();
+
+ @RULES
+ _money <-
+     _money          ### (1)
+     _number         ### (2)
+     _currency [opt] ### (3)
+     @@
+
+githubRepo https://github.com/VisualText/nlp-engine
+rosettaCode https://rosettacode.org/wiki/Category:NLP%2B%2B
+languageServerProtocolProject https://github.com/VisualText/vscode-nlp
+reference https://book.visualtext.org
+reference https://linguistlist.org/issues/37/2227/
