@@ -899,7 +899,7 @@ image ${image}
       tiktok: this.getPrimary("tiktoks"),
       festival: this.getPrimary("conferences"),
       twitter: this.get("twitter"),
-      edit: `/edit.html?folderName=pldb.io&fileName=concepts%2F${this.id}.scroll`
+      edit: `https://github.com/breck7/pldb/blob/main/concepts/${this.id}.scroll`
     }
     return Object.keys(links)
       .filter(key => links[key])
@@ -1479,7 +1479,7 @@ printTitle ${title}
 <a class="trueBaseThemePreviousItem" href="${previous.permalink}">&lt;</a>
 <a class="trueBaseThemeNextItem" href="${next.permalink}">&gt;</a>
 
-editUrl /edit.html?folderName=pldb.io&fileName=Computer.js
+editUrl https://github.com/breck7/pldb/blob/main/Computer.js
 
 container 600px
 
