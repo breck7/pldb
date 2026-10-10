@@ -1,0 +1,24 @@
+../code/conceptPage.scroll
+
+id gooo
+name Gooo
+appeared 2026
+tags pl
+website https://kimjooyoon.github.io/meta-ontology-go/
+description Gooo is an experimental metaprogramming language for expressing intent, constructing typed programs, and retaining execution evidence.
+fileExtensions gooo
+writtenIn go
+compilesTo go
+
+docs https://github.com/kimjooyoon/meta-ontology-go/tree/dev/docs
+reference https://github.com/kimjooyoon/meta-ontology-go/releases/tag/v0.1.0-dev
+reference https://github.com/kimjooyoon/meta-ontology-go/blob/94345d0762c277551be74ab747cf1adacf5f0879/README.md
+reference https://github.com/kimjooyoon/gooo-go-ports
+
+example
+ package example
+ namespace example
+ entity Integer id "gooo://std/integer"
+ activity Increment(Integer) -> Integer id "gooo://pldb/inc" computes `return input + 1`
+
+githubRepo https://github.com/kimjooyoon/meta-ontology-go
