@@ -1,0 +1,85 @@
+../code/conceptPage.scroll
+
+id kaikai
+name kaikai
+appeared 2026
+creators Eduardo Díaz
+tags pl
+website https://kaikai-lang.org/en/
+latestVersion v0.145.0
+webRepl https://kaikai-lang.org/en/playground
+description A statically typed functional language with algebraic effects and handlers, Perceus reference counting and native compilation through LLVM, designed to be written with and by coding agents.
+fileExtensions kai
+writtenIn kaikai c
+compilesTo llvmir
+
+influencedBy koka effekt elixir erlang
+docs https://kaikai-lang.org/en/book
+isOpenSource true
+fileType text
+country Chile
+reference https://kaikai-lang.org/en/blog/kaikai-in-six-minutes
+
+example
+ effect Log {
+   log(msg: String) : Unit
+ }
+ 
+ fn greet(name: String) : Unit / Log {
+   Log.log("hello, #{name}")
+ }
+ 
+ fn main() {
+   handle {
+     greet("world")
+   } with Log {
+     log(msg, resume) -> {
+       println("[INFO] #{msg}")
+       resume(())
+     }
+   }
+ }
+
+keywords if else match case when handle with where requires ensures fn type effect protocol impl for axiom const theory unit kind let var import use as pub priv extern test bench check assert and or not
+githubRepo https://github.com/kaikailang-org/kaikai
+
+lineCommentToken #
+printToken println
+
+hasImports true
+ import collections.map as cmap
+hasPrintDebugging true
+ println("Hello, kaikai")
+hasStrings true
+ "Hello, kaikai"
+hasComments true
+ # A comment
+hasLineComments true
+ # A comment
+hasSemanticIndentation false
+hasIntegers true
+ let answer = 42
+hasFunctions true
+ fn add(a: Int, b: Int) : Int = a + b
+hasStaticTyping true
+ fn add(a: Int, b: Int) : Int = a + b
+hasTypeInference true
+ let answer = 42
+hasAlgebraicTypes true
+ type Tag
+   = Both
+   | Fizz
+   | Buzz
+   | Other(Int)
+hasPatternMatching true
+ fn classify(n: Int) : Tag = match n {
+   n if n % 15 == 0 -> Both
+   n if n % 3 == 0 -> Fizz
+   n if n % 5 == 0 -> Buzz
+   n -> Other(n)
+ }
+hasPipes true
+ [1..100]
+   | classify
+   | label
+   |> list.foreach(println)
