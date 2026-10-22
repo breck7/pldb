@@ -1,0 +1,73 @@
+../code/conceptPage.scroll
+
+id faber
+name Faber
+appeared 2026
+creators Ian Zepp
+tags pl
+website https://faberlang.dev
+latestVersion v1.15.2
+description Faber (Faber Romanus) is an experimental, statically typed language designed to be written by language models and read by people. Every operator is a single glyph with one meaning, types come before names, and failure is a typed second channel. The same analysed program can be rendered in several reader languages (English, Latin and others). A reference interpreter defines the semantics, and code generators emit Rust, Go, TypeScript, Swift, Python, C and LLVM IR, each measured against it. Experimental through version 1.x.
+writtenIn rust
+compilesTo rust go typescript swift python c llvmir wgsl racket
+
+docs https://faberlang.dev/en-US/
+isOpenSource true
+fileType text
+country United States
+reference https://agentlanguages.dev/languages/faber/
+
+example
+ fn greet(string name) → string {
+     return "Salve, §!"(name)
+ }
+ 
+ fn divide(int a, int b) → int ⇥ string {
+     if b ≡ 0 then throw "division by zero"
+     return a / b
+ }
+ 
+ main {
+     let list<string> names ← ["Ana", "Ben"]
+     for from names let name {
+         print greet(name)
+     }
+     print divide(7, 0) ⊥ -1
+ }
+
+githubRepo https://github.com/faberlang/faber
+
+lineCommentToken #
+printToken print
+stringToken "
+
+hasPrintDebugging true
+ print "Hello world"
+hasStrings true
+ "Hello world"
+hasComments true
+ # A comment
+hasLineComments true
+ # A comment
+hasSemanticIndentation false
+hasIntegers true
+ let int answer ← 42
+hasFunctions true
+ fn add(int a, int b) → int {
+     return a + b
+ }
+hasStaticTyping true
+ fn add(int a, int b) → int {
+     return a + b
+ }
+hasTypeInference true
+ let _ answer ← 42
+hasGenerics true
+ fn first<T>(list<T> items, T fallback) → T {
+     return items.get(0) coalesce fallback
+ }
+hasExceptions true
+ fn divide(int a, int b) → int ⇥ string {
+     if b ≡ 0 then throw "division by zero"
+     return a / b
+ }
