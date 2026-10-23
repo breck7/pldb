@@ -1,0 +1,84 @@
+../code/conceptPage.scroll
+
+id chombit
+name Chombit
+appeared 2025
+creators Pete Gonzalez
+tags assembly
+website https://www.hybrix.dev
+description The assembly language for Chombit, the 32-bit CPU of the Hybrix virtual computer. Its 25 instructions each have a documented machine code and cycle cost, and its "framed registers" map a function's stack frame directly onto CPU registers. Devices are controlled exclusively via memory-mapped I/O. The Hybrix kernel and garbage collector are written in hand-coded Chombit assembly.
+fileExtensions casm
+writtenIn typescript
+
+isOpenSource false
+docs https://www.hybrix.dev/docs/assembler
+country United States
+funFact https://www.hybrix.dev/docs/assembler/cpu/framed_registers
+ Framed registers map a function's stack frame onto CPU registers: negative indexes are parameters and positive indexes are locals, so in i:-12 and i:0 the sign tells you which is which.
+
+example
+ # -----------------------------------------------------------------------------
+ # fibonacci(n: int): int    (assembles to 46 bytes)
+ @main.fibonacci:
+     push fp
+     move fp, sp
+     add sp, 12
+ 
+     # i:-16 return value
+     # i:-12 arg_n
+     # i:-8  return ip
+     # i:-4  fp
+     # i:0   a
+     # i:4   b
+     # i:8   next
+ 
+     compare i:-12, 0
+     if less
+     fail 20 # 20 = function was called with an invalid argument
+ 
+     move i:0, 0               # a = fibonacci(0)
+     move i:4, 1               # b = fibonacci(1)
+ 
+ @main.fibonacci.l_0:
+     compare i:-12, 0
+     if zero
+     jump @main.fibonacci.l_1
+ 
+     move i:8, i:0
+     add i:8, i:4              # next = a + b
+     move i:0, i:4             # a = b
+     move i:4, i:8             # b = next
+ 
+     add i:-12, -1
+     jump @main.fibonacci.l_0
+ 
+ @main.fibonacci.l_1:
+     move i:-16, i:0
+ 
+     add sp, -12
+     pop fp
+     pop ip
+     fill 4
+
+lineCommentToken #
+
+hasProcessorRegisters true
+ move i:8, i:0
+hasLabels true
+ @main.fibonacci.l_0:
+hasGotos true
+ jump @main.fibonacci.l_0
+hasConditionals true
+ compare i:-12, 0
+ if zero
+ jump @main.fibonacci.l_1
+hasConstants true
+ const kernel.constant.io_region                  = $d0_0000
+hasExpressions true
+ add sp, (-12 -16)
+hasPointers true
+ load b:12, [i:0]
+hasBitWiseOperators true
+ xor b:kernel.sweep_alloc.dead_mark, $10
+hasHexadecimals true
+ store [i:4], byte $ac
