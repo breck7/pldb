@@ -1,0 +1,116 @@
+../code/conceptPage.scroll
+
+id hybrix
+name Hybrix
+appeared 2025
+creators Pete Gonzalez
+tags pl
+website https://www.hybrix.dev
+description The programming language of Hybrix, a virtual computer with a 32-bit CPU called Chombit. It is small, imperative, statically typed, and garbage-collected, with classes and inheritance. Its design goal is that a programmer can understand any program all the way down to the machine: each variable has a fixed address for its lifetime, and every instruction has a documented cycle cost.
+fileExtensions hyb
+writtenIn typescript
+compilesTo chombit
+
+isOpenSource false
+docs https://www.hybrix.dev/docs/compiler
+rosettaCode https://rosettacode.org/wiki/Category:Hybrix
+country United States
+funFact https://github.com/writenrun/hybrix-framework/blob/main/assembly/gc.casm
+ The garbage collector is less than 260 CPU instructions of hand-coded Chombit assembly.
+
+example
+ module main
+   func start()
+     # Minimal initialization of the Hybrix framework console
+     console::init(io::tilemap_a)
+     var font_layer: tile_layer
+     font_layer <- new tile_layer(io::tilemap_a, io::tileset_a_addresses)
+     font_layer.load_tileset(art::fonts[0])
+ 
+     var i: int
+     i <- 1
+     loop
+       # Print the number
+       console::print_int(i)
+       # Print a special "newline" character, starting a new line
+       console::print("{n}")
+ 
+       # When i reaches 10, drop out of the loop
+       if i = 10
+       do drop
+ 
+       i <- i + 1
+     end loop
+   end func
+ end module
+
+keywords and as at base bool break byte byte_to_signed chombit class_id class const constructor data do drop else elsif end extends false float func get hook if infinity inset int intrinsic is lift located loop module nan new not null of or out pair pair_to_unsigned repeat return self set size then to_address to_byte to_int to_pair trio true type unsafe var view
+
+lineCommentToken #
+assignmentToken <-
+stringToken "
+
+hasComments true
+ # A comment
+hasLineComments true
+ # A comment
+hasStrings true
+ "Hello, world!"
+hasEscapeCharacters true
+ "This {quote}word{quote} is in quotes"
+hasIntegers true
+ var area: int
+hasHexadecimals true
+ $12ab_34de
+hasBooleans true
+ var touching: bool
+ touching <- true
+hasNull true
+ .next <- null
+hasAssignment true
+ area <- width * height
+hasStaticTyping true
+ func get_area(width: int, height: int): int
+hasTypeAliases true
+ type inches is int
+hasFunctions true
+ func get_area(width: int, height: int): int
+   var area: int
+   area <- width * height
+   return area
+ end func
+hasModules true
+ module rectangle
+   func get_area(width: int, height: int): int
+     return width * height
+   end func
+ end module
+hasConditionals true
+ if squared_distance < main::get_squared(r1 + r2) then
+   touching <- true
+ else
+   touching <- false
+ end if
+hasClasses true
+ class shape
+   var x: int
+   var y: int
+ end class
+hasInheritance true
+ class circle extends shape
+   var radius: int
+ end class
+hasConstructors true
+ constructor(item: string)
+   .item <- item
+   .next <- null
+ end constructor
+hasVirtualFunctions true
+ new hook get_name(): string
+   return "shape"
+ end hook
+hasGenerics true
+ class list<t>
+hasGarbageCollection true
+ node <- new queue_node(item)
+supportsBreakpoints true
