@@ -12,7 +12,7 @@ writtenIn abyss
 isOpenSource true
 description A minimalist, self-hosted systems programming language featuring compile-time reflection, arena allocation, and compile-time code splicing, compiling to both C99 and bytecode for a custom VM.
 
-compilesTo c bytecode
+compilesTo c
 
 hasTypeInference true
 hasStaticTyping true
