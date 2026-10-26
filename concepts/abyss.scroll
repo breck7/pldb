@@ -1,0 +1,32 @@
+../code/conceptPage.scroll
+
+id abyss
+name Abyss
+appeared 2025
+creators Hosein Jalili
+tags pl
+website https://github.com/jhosein58/abyss
+githubRepo https://github.com/jhosein58/abyss
+fileExtensions a
+writtenIn abyss
+isOpenSource true
+description A minimalist, self-hosted systems programming language featuring compile-time reflection, arena allocation, and compile-time code splicing, compiling to both C99 and bytecode for a custom VM.
+
+compilesTo c bytecode
+
+hasTypeInference true
+hasStaticTyping true
+hasGenerics true
+hasMacros true
+hasPointers true
+hasEnums true
+hasStructs true
+hasLineComments true
+lineCommentToken --
+
+example
+ import print from "std/io"
+
+ main :: fn() {
+     print("Hello, World!")
+ }
