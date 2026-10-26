@@ -6,7 +6,9 @@ appeared 2026
 creators Ian Zepp
 tags pl
 website https://faberlang.dev
-latestVersion v1.15.2
+latestVersion v1.16.0
+lab https://github.com/faberlang
+fileExtensions fab
 description Faber (Faber Romanus) is an experimental, statically typed language designed to be written by language models and read by people. Every operator is a single glyph with one meaning, types come before names, and failure is a typed second channel. The same analysed program can be rendered in several reader languages (English, Latin and others). A reference interpreter defines the semantics, and code generators emit Rust, Go, TypeScript, Swift, Python, C and LLVM IR, each measured against it. Experimental through version 1.x.
 writtenIn rust
 compilesTo rust go typescript swift python c llvmir wgsl racket
@@ -15,6 +17,8 @@ docs https://faberlang.dev/en-US/
 isOpenSource true
 fileType text
 country United States
+twitter https://twitter.com/faberlang
+domainName faberlang.dev
 reference https://agentlanguages.dev/languages/faber/
 
 example
@@ -71,3 +75,22 @@ hasExceptions true
      if b ≡ 0 then throw "division by zero"
      return a / b
  }
+hasBooleans true
+ let bool ready ← true
+hasLists true
+ let list<int> xs ← [1, 2, 3]
+hasAssignment true
+ mut int n ← 0
+ n ← n + 1
+hasWhileLoops true
+ while n ≺ 3 {
+     n ← n + 1
+ }
+hasConditionals true
+ if ready {
+     print xs[0]
+ }
+hasImports true
+ import from "norma:text"
+hasZeroBasedNumbering true
+ print xs[0]
