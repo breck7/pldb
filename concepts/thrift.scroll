@@ -10,6 +10,7 @@ lab Apache Software Foundation
 isOpenSource true
 clocExtensions thrift
 fileType text
+antlr https://github.com/antlr/grammars-v4/tree/master/thrift
 
 pygmentsHighlighter Thrift
  filename dsls.py

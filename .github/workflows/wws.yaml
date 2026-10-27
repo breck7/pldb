@@ -19,12 +19,14 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
+    # Keep the existing site until transfer; do not publish Pages from the organization.
+    if: github.repository == 'breck7/pldb' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v5
         with:
-          node-version: 22
+          node-version: 24
       - name: Install and Build
         run: |
           npm install

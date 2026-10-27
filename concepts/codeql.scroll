@@ -20,6 +20,7 @@ repoStats
  mb 429
  linesOfCode 798031
 reference https://www.cyberark.com/resources/threat-research-blog/make-memcpy-safe-again-codeql
+antlr https://github.com/antlr/grammars-v4/tree/master/codeql
 
 example
  from DataFlow::PathNode source, DataFlow::PathNode sink, UnsafeDeserializationConfig conf

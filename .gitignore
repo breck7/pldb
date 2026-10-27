@@ -13,12 +13,15 @@ sitemap.txt
 feed.xml
 katex.min*
 features/*.scroll
+news.scroll
 *.csv
 *.json
 *.tsv
 *.js
+!clean.js
 *.css
 *.txt
 pldb.parsers
 pro/
 .*
+!.github/

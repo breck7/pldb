@@ -1,7 +1,7 @@
 authors Breck Yunits
  https://github.com/breck7 Breck Yunits
 date 5/19/2024
-openGraphImage https://pldb.io/blog/ages.png
+openGraphImage http://pldb.info/blog/ages.png
 tags All frontpage
 title The Ages of Programming Language Creators
 
@@ -62,7 +62,7 @@ Creating your own languages is fun (most of the time), regardless of whether it 
 
 ohayoCode
  html.h1 The Ages of Programming Language Creators
- web.get https://pldb.io/blog/age.tsv
+ web.get http://pldb.info/blog/age.tsv
   vega.histogram
    xColumn ageAtCreation
   columns.describe

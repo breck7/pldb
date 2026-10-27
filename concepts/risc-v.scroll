@@ -42,6 +42,7 @@ leachim6 RISC V
           ecall
 
 stringToken "
+antlr https://github.com/antlr/grammars-v4/tree/master/asm/asmRISCV
 
 hasStrings true
  "Hello world"

@@ -1,0 +1,59 @@
+../code/conceptPage.scroll
+
+id graph-query-language
+name GQL (Graph Query Language)
+appeared 2024
+tags queryLanguage
+website https://www.gqlstandards.org
+spec https://www.iso.org/standard/76120.html
+latestVersion ISO/IEC 39075:2024
+standsFor Graph Query Language
+maintainerOrganization ISO/IEC JTC 1/SC 32 WG3
+description GQL (Graph Query Language) is a declarative, standardized query language for property graphs, published as ISO/IEC 39075:2024 on April 12, 2024. It is the first new ISO database query language standard since SQL was standardized in 1987. GQL queries property graphs by matching ASCII-art style node and edge patterns and supports both read and write operations on graph data.
+
+influencedBy sql cypher gsql pgql sparql
+fileType text
+country Various
+
+antlr https://github.com/opengql/grammar
+
+lineCommentToken //
+multiLineCommentTokens /* */
+stringToken "
+booleanTokens TRUE FALSE
+
+keywords ALL AND ANY AS ASC BY CALL CASE COUNT CREATE CURRENT DELETE DESC DETACH DISTINCT DROP ELSE END EXISTS FALSE FILTER FOR FROM GRAPH GROUP HAVING IN INSERT INTO IS KEEP LABEL LET LIKE LIMIT MATCH MERGE NEXT NOT NULL OF ON OPTIONAL OR ORDER PATH PATHS PROPERTY REMOVE RETURN SET SHORTEST SIMPLE SINGLE SKIP SOME THEN TRUE TRAIL UNION UNIQUE UNWIND USING WALK WHERE WITH XOR YIELD
+
+hasComments true
+hasLineComments true
+ // A comment
+hasMultiLineComments true
+ /* A comment
+ */
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers true
+isCaseSensitive false
+hasStrings true
+ "Hello world"
+hasBooleans true
+hasIntegers true
+hasFixedPoint true
+
+wikipedia https://en.wikipedia.org/wiki/Graph_Query_Language
+ example
+  // Find all friends of Alice and return their names
+  MATCH (p:Person {name: 'Alice'})-[:KNOWS]->(friend:Person)
+  RETURN friend.name AS name
+ related sql cypher gsql pgql sparql graphql gremlin graph-modeling-language
+ summary GQL (Graph Query Language) is a standardized query language for property graphs first described in ISO/IEC 39075, released in April 2024 by ISO/IEC. GQL is a declarative language designed to query and update property graph databases, playing a similar role to SQL for relational databases. Property graphs store data as nodes (entities) and edges (relationships), each optionally having labels and properties. GQL was developed by ISO/IEC JTC 1 SC 32 WG3 — the same standards body responsible for SQL — and synthesizes ideas from industry-proven graph query languages including openCypher (Neo4j), GSQL (TigerGraph), PGQL (Oracle), and G-CORE. GQL is complemented by SQL/PGQ (ISO/IEC 9075-16:2023), which adds read-only property graph query support inside SQL SELECT statements. The standard spans 628 pages and was developed over five years (2019–2024), involving 38 meetings and contributions from organizations including Google, IBM, Intel, Neo4j, Oracle, and TigerGraph. Notable implementations include Google Cloud Spanner, Google BigQuery, and Microsoft Fabric. GQL is the first new ISO database query language standard since SQL in 1987.
+ pageId 61985190
+ dailyPageViews 56
+ created 2019
+ backlinksCount 500
+ revisionCount 190
+ appeared 2024
+
+dblp https://dblp.org/search?q=GQL+graph+query+language
+ hits 0
+ publications
+  year|title|doi|url

@@ -1,6 +1,37 @@
 .pldbHomepageLink a {
   color: #000;
 }
+.pldbNewsHeading {
+  margin-left: 1.5em;
+}
+.pldbNewsList,
+.pldbNewsFull {
+  list-style: none;
+  padding: 0 0 0 1.5em;
+  margin: 0.4em 0 0.8em 1.5em;
+}
+.pldbNewsItem {
+  margin: 0.3em 0;
+  line-height: 1.4em;
+  font-size: 0.95em;
+}
+.pldbNewsAuthor {
+  color: #555;
+}
+.pldbNewsLangs a {
+  color: #36c;
+  font-size: 0.85em;
+}
+.pldbNewsSource {
+  color: #828282;
+  font-size: 0.85em;
+}
+.pldbNewsUpdated {
+  color: #828282;
+  font-size: 0.9em;
+  margin-bottom: 1.2em;
+  text-align: center;
+}
 .newPostLink {
   line-height: 1.3em;
 }

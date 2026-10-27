@@ -3,9 +3,9 @@ replaceJs CURRENT_YEAR require("dayjs")().format("YYYY")
 ## Citation
 PLDB content is published to the public domain and you can use it freely. If needed, here are 3 options for citing PLDB:
 
-> https://pldb.io
+> http://pldb.info
 
-> PLDB contributors. (CURRENT_YEAR) - "PLDB: a Programming Language Database". Retrieved from: 'https://pldb.io' [Online Resource]
+> PLDB contributors. (CURRENT_YEAR) - "PLDB: a Programming Language Database". Retrieved from: 'http://pldb.info' [Online Resource]
 
 code
  @article{pldb,
@@ -13,5 +13,5 @@ code
    title = {PLDB: a Programming Language Database},
    journal = {PLDB},
    year = {CURRENT_YEAR},
-   note = {https://pldb.io}
+   note = {http://pldb.info}
   }

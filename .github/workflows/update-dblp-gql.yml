@@ -1,0 +1,33 @@
+name: Update DBLP GQL Publications
+
+on:
+  schedule:
+    - cron: '0 6 * * 2'   # Every Tuesday at 06:00 UTC
+  workflow_dispatch:       # Allow manual runs
+
+jobs:
+  update-dblp-gql:
+    if: github.repository == 'Programming-Language-DataBase/pldb' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Update DBLP GQL publications
+        run: node code/updateDblpGql.js
+
+      - name: Commit updated scroll file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add concepts/graph-query-language.scroll
+          git diff --cached --quiet || git commit -m "Update DBLP GQL publications (weekly)"
+          git push
