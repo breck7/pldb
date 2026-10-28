@@ -44,6 +44,15 @@ npm test
 
 The consolidation check compares every source concept ID with the generated JSON and HTML files and checks representative records from both repositories, search, exports, canonical URLs, and contribution links. Deployment tests mock external services and check staging and rollback; they do not deploy to the live server.
 
+## Validation results
+
+- Full Windows build passed using Node 24. Linux PR CI also passed the full build, deployment tests, and consolidation checks: https://github.com/breck7/pldb/actions/runs/40592188718.
+- All 5,166 source concepts have generated JSON entries and HTML pages. No concept sources from either parent were removed; all organization concept sources remain byte-for-byte unchanged, with seven upstream records added.
+- Seven deployment regression tests and Bash/JavaScript syntax checks passed. Direct parser checks passed for the seven upstream additions and GQL.
+- The existing `npm test` command exhausted the Windows Node heap at both default and 8 GB limits. An isolated diagnostic run also exhausted a 4 GB heap on `csv.scroll`; the complete legacy suite is therefore not passing.
+- Isolated strict validation identified 17 errors across six existing concept records: `cobrust`, `lateralus`, `lsharp`, `naab`, `nova`, and `ussr`. Each file is byte-for-byte identical in both merge parents. These data/schema issues need separate follow-up; successful builds do not establish strict parser validity.
+- The local DBLP news endpoint returned HTML and was skipped by the existing fallback. Other feeds succeeded. npm audit reports inherited high-severity findings in the pinned dependency tree; dependency security remediation remains separate work.
+
 ## Maintainer handover checklist
 
 1. Review this PR, the combined build artifact, and any validation limitations. Do not squash the merge history.
@@ -52,7 +61,7 @@ The consolidation check compares every source concept ID with the generated JSON
 4. Pause existing production schedules (including server cron) and save the currently deployed artifact for rollback.
 5. Move the existing organization fork to the archival organization. Disable its workflows and remove its production credentials; retain its issues and PR history.
 6. Breck transfers the original repository into the now-vacant organization. Ken currently has WRITE access on the original, not ADMIN.
-7. Verify teams, protections, Actions permissions, and Pages/domain configuration. Configure the three production SSH secrets on the transferred repository.
+7. Verify teams, protections, Actions permissions, and Pages/domain configuration. Check that the production host has Node 24 or later before installing the new dependency set; upgrade its runtime separately if needed. Configure the three production SSH secrets on the transferred repository.
 8. Set the repository Actions variable `PLDB_DEPLOY_ENABLED` to `true` only when ready to deploy from the transferred repository. Set it to `false` or remove it to disable automatic SSH deployment.
 9. Run Build and Release manually on main. Verify the deployed commit, local port 3000 health, HTTPS, and reconciled records before resuming schedules.
 10. Update migration notices and important archive links. The two repositories' issue/PR numbers cannot be combined automatically.
