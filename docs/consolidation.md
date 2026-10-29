@@ -10,7 +10,7 @@ This branch merges the organization repository into the original repository; it 
 
 ## Resolution decisions
 
-- Preserve both Git histories with a merge commit; do not squash this consolidation.
+- Squash this consolidation into main. Preserve the combined pre-squash history under the `consolidation-before-squash` tag, alongside the separate repository archive and local Git bundle. The tag retains both original parent histories; main will contain a single consolidation commit.
 - Retain all source concept records and creator additions from both parents.
 - Keep upstream's pinned Scroll 180.0.1 / SDK 108.0.0 dependencies and its `scroll` package import. Adapt the organization's ordered build and Windows compatibility patches to that package location. Both dependencies require Node 24, so CI and documented prerequisites use Node 24.
 - Keep the organization's bootstrap fallback, feature generation, rankings, ANTLR references, news collection, and production deployment/rollback scripts.
@@ -55,9 +55,9 @@ The consolidation check compares every source concept ID with the generated JSON
 
 ## Maintainer handover checklist
 
-1. Review this PR, the combined build artifact, and any validation limitations. Do not squash the merge history.
+1. Review this PR, the combined build artifact, and any validation limitations. Use squash and merge after confirming the `consolidation-before-squash` tag is published. Record the archive tag and both source commit IDs in the squash commit message.
 2. Agree on the archival organization, the role/redirect of `pldb.io`, and a coordinated transfer window with Breck.
-3. Freeze merges briefly, fetch any intervening work, and merge only after review.
+3. Freeze merges briefly, fetch any intervening work, and merge only after review. Start subsequent work from the new main rather than reusing the consolidation branch.
 4. Pause existing production schedules (including server cron) and save the currently deployed artifact for rollback.
 5. Move the existing organization fork to the archival organization. Disable its workflows and remove its production credentials; retain its issues and PR history.
 6. Breck transfers the original repository into the now-vacant organization. Ken currently has WRITE access on the original, not ADMIN.
