@@ -12,6 +12,7 @@ rosettaCode http://www.rosettacode.org/wiki/Category:MOO
 country Canada
 
 helloWorldCollection MUD%2C object-oriented
+antlr https://github.com/antlr/grammars-v4/tree/master/moo
  "Hello World in MOO";
  
  player.location:announce_all("Hello, world!");

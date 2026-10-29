@@ -1,0 +1,93 @@
+name: Build and Release
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 6 * * 1'   # Every Monday at 06:00 UTC
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: latest-release
+      cancel-in-progress: false
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Check deployment scripts
+        run: |
+          bash -n setup-pldb.sh
+          bash -n code/deploy-release.sh
+          python3 code/test_deploy_release.py
+
+      - name: Build site
+        run: node --max-old-space-size=4096 build.js
+
+      - name: Check consolidated data and generated pages
+        run: node code/test_consolidation.js
+
+      - name: Create tarball
+        run: tar czf /tmp/site.tar.gz --exclude='.git' --exclude='node_modules' --exclude='ignore' .
+
+      - name: Upload PR artifact
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-pr-${{ github.event.pull_request.number }}
+          path: /tmp/site.tar.gz
+          retention-days: 7
+
+      - name: Delete existing latest release
+        if: github.repository == 'Programming-Language-DataBase/pldb' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: gh release delete latest --yes --cleanup-tag || true
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Create latest release
+        if: github.repository == 'Programming-Language-DataBase/pldb' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: gh release create latest /tmp/site.tar.gz --title "Latest Build" --notes "Auto-built from ${{ github.sha }}"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Deploy published build to production
+        if: github.repository == 'Programming-Language-DataBase/pldb' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.PLDB_DEPLOY_ENABLED == 'true'
+        timeout-minutes: 20
+        env:
+          DEPLOY_HOST: ${{ secrets.PLDB_DEPLOY_HOST }}
+          DEPLOY_KEY: ${{ secrets.PLDB_DEPLOY_KEY }}
+          DEPLOY_KNOWN_HOSTS: ${{ secrets.PLDB_DEPLOY_KNOWN_HOSTS }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          : "${DEPLOY_HOST:?Set PLDB_DEPLOY_HOST to the production server hostname or IP}"
+          : "${DEPLOY_KEY:?Set PLDB_DEPLOY_KEY to the root SSH private key}"
+          : "${DEPLOY_KNOWN_HOSTS:?Set PLDB_DEPLOY_KNOWN_HOSTS to the verified server SSH host key entry}"
+          ssh_dir=$(mktemp -d)
+          trap 'rm -rf "$ssh_dir"' EXIT
+          printf '%s\n' "$DEPLOY_KEY" > "$ssh_dir/key"
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > "$ssh_dir/known_hosts"
+          chmod 600 "$ssh_dir/key" "$ssh_dir/known_hosts"
+          ssh_options=(-i "$ssh_dir/key" -o BatchMode=yes -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o "UserKnownHostsFile=$ssh_dir/known_hosts" -o ConnectTimeout=30)
+          artifact="/tmp/pldb-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.tar.gz"
+          scp "${ssh_options[@]}" /tmp/site.tar.gz "root@${DEPLOY_HOST}:$artifact"
+          # Deploy this run's exact artifact, even if the latest release changes.
+          status=0
+          ssh "${ssh_options[@]}" "root@${DEPLOY_HOST}" "bash -s -- '$artifact'" < code/deploy-release.sh || status=$?
+          ssh "${ssh_options[@]}" "root@${DEPLOY_HOST}" "rm -f -- '$artifact'"
+          exit "$status"

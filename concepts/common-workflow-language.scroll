@@ -2,14 +2,15 @@
 
 id common-workflow-language
 name CWL
+standsFor Common Workflow Language
+fileExtensions cwl
 appeared 2014
-creators Luka Stojanovic
+creators Peter Amstutz John Chilton Michael R. Crusoe Nebojša Tijanić
 tags pl
 website https://www.commonwl.org/
-latestVersion 3.1.20240508115724
+latestVersion 1.2
 maintainerOrganization Software Freedom Conservancy
-description The Common Workflow Language (CWL) is a specification for describing analysis workflows and tools in a way that makes them portable and scalable across a variety of software and hardware environments, from workstations to cluster, cloud, and high performance computing (HPC) environments. CWL is designed to meet the needs of data-intensive science, such as Bioinformatics, Medical Imaging, Astronomy, Physics, and Chemistry.
-lab https://w3id.org/cwl/meeting_minutes
+description The Common Workflow Language (CWL) is a standard for describing analysis workflows and tools in a way that makes them portable and scalable across a variety of software and hardware environments, from workstations to cluster, cloud, and high performance computing (HPC) environments. CWL is designed to meet the needs of data-intensive science, such as Bioinformatics, Medical Imaging, Astronomy, Physics, and Chemistry.
 writtenIn python yaml markdown json restructuredtext bourne-shell javascript make ini dockerfile toml
 
 isOpenSource true
@@ -23,7 +24,7 @@ repoStats
  mb 13
  linesOfCode 167173
 country Various
-reference https://doi.org/10.6084/m9.figshare.3115156.v2
+reference https://doi.org/10.1145/3486897
 
 twitter https://twitter.com/commonwl
 

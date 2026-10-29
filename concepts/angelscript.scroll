@@ -15,6 +15,7 @@ helloWorldCollection Angelscript
  
  void main() { print("Hello world\n"); }
 leachim6 AngelScript
+antlr https://github.com/antlr/grammars-v4/tree/master/angelscript
  filepath a/AngelScript
  example
   void main() { print("Hello World\n"); }

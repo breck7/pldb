@@ -8,6 +8,7 @@ description WebAssembly has an S-expression-based textual representation, an int
 fileExtensions wast
 
 reference https://developer.mozilla.org/en-US/docs/WebAssembly/Text_format_to_wasm
+antlr https://github.com/antlr/grammars-v4/tree/master/wat
 
 example
   (module

@@ -7,6 +7,7 @@ tags dataValidationLanguage
 standsFor XML Schema Definition
 
 clocExtensions XSD xsd
+antlr https://github.com/antlr/grammars-v4/tree/master/xsd-regex
 
 example
  <xs:element name="PurchaseOrder" type="PurchaseOrderType"/>

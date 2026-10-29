@@ -8,6 +8,7 @@ description It includes embedded SQL, a report writer language, a form language,
 lab IBM
 
 fileType text
+antlr https://github.com/antlr/grammars-v4/tree/master/informix
 
 example
  SELECT UNIQUE city, state, zipcode, sname
