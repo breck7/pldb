@@ -1,3 +1,5 @@
+../code/conceptPage.scroll
+
 id sampilang
 name Sampi
 appeared 2025
@@ -7,14 +9,12 @@ website codewithsampi.org
 latestVersion 0.8.0
 fileExtensions sampi
 writtenIn python
+
 isOpenSource true
 docs codewithsampi.org/learn.html
 country UK
 
-githubRepo https://github.com/legospider15/Sampi
- description Sampi is a dynamicly typed language designed with a small set of keywords to be easy to learn.
-
-example 
+example
  set x to 2
  glue pi to 3.14
  
@@ -40,3 +40,5 @@ example
  
  say(add(2, 3)
 
+githubRepo https://github.com/legospider15/Sampi
+ description Sampi is a dynamicly typed language designed with a small set of keywords to be easy to learn.
