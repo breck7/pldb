@@ -1,0 +1,43 @@
+id sampilang
+name Sampi
+appeared 2025
+creators legospider15
+tags pl
+website codewithsampi.org
+latestVersion 0.8.0
+fileExtensions sampi
+writtenIn python
+isOpenSource true
+docs codewithsampi.org/learn.html
+country UK
+
+githubRepo https://github.com/legospider15/Sampi
+ description Sampi is a dynamicly typed language designed 
+ with a small set of keywords to be easy to learn.
+
+example 
+ set x to 2
+ glue pi to 3.14
+
+ if x = 0:
+   say("x is 0")
+ else if x > 0:
+   say("x is positive!")
+ else:
+   say("x is negative!)
+ end
+
+ repeat 5:
+   say("hello")
+ end
+
+ repeat 5 as i
+   say(i)
+ end
+
+ func add a b:
+  return a + b
+ end
+
+ say(add(2, 3)
+
