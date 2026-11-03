@@ -1,0 +1,24 @@
+../code/conceptPage.scroll
+
+id hilde
+name Hilde
+appeared 2026
+creators Heiko Zimmermann
+tags pl
+website https://hilde-lang.org/
+latestVersion 1.0.1
+description Hilde (High-Integrity, Linear, Deterministic, Explicit) is a systems programming language that compiles to C. It is a fork of Austral with linear types, contracts that are always checked, exhaustive pattern matching and Go-style tasks and channels. Its standard library includes Raft as a pure state machine with SQLite replication, and Sperli for message passing between hosts. It aims to make code written with AI assistants safer by turning their typical mistakes into compile errors.
+lab https://github.com/heikozim/
+writtenIn ocaml c
+fileExtensions hiq hih
+influencedBy austral ada go
+
+example
+ module body Example.HelloWorld is
+     function main(): ExitCode is
+         printLn("Hello, world!");
+         return ExitSuccess();
+     end;
+ end module body.
+
+githubRepo https://github.com/heikozim/hilde
