@@ -30,7 +30,7 @@ example
    say("hello")
  end
  
- repeat 5 as i
+ repeat 5 as i:
    say(i)
  end
  
@@ -41,4 +41,4 @@ example
  say(add(2, 3)
 
 githubRepo https://github.com/legospider15/Sampi
- description Sampi is a dynamicly typed language designed with a small set of keywords to be easy to learn.
+ description Sampi is a dynamically typed language with a small set of keywords, designed to be easy to learn.
