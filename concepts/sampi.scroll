@@ -4,15 +4,17 @@ id sampi
 name Sampi
 appeared 2026
 creators legospider15
-tags pl
 website codewithsampi.org
-latestVersion 0.8.0
+tags pl
+latestVersion 0.9.0
 fileExtensions sampi
-writtenIn python
+writtenIn python cpp
 
 isOpenSource true
 docs codewithsampi.org/learn.html
+githubRepo https://github.com/legospider15/Sampi
 country UK
+repos 1
 
 example
  set x to 2
@@ -42,3 +44,24 @@ example
 
 githubRepo https://github.com/legospider15/Sampi
  description Sampi is a dynamically typed language with a small set of keywords, designed to be easy to learn.
+
+hasLineComments true
+ // comment
+hasMultilineComments yes
+ # comment #
+hasStrings true
+hasIntegers true
+hasFloats true
+hasBooleans true
+ true false
+hasFunctions true
+hasClasses true
+hasConditionals true
+hasWhileLoops yes
+ through until not
+hasExceptions partial
+hasStaticTyping false
+hasZeroBasedIndexing false
+ 1 based indexing
+hasBitWiseOperators false
+hasTernaryOperators false
