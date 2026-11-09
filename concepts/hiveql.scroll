@@ -9,6 +9,7 @@ description SQL-like query language interface called the Hive query language. Wh
 
 fileType text
 reference https://en.wikipedia.org/wiki/Apache_Hive#HiveQL
+antlr https://github.com/antlr/grammars-v4/tree/master/sql/hive/v2
 
 example
  4 CREATE TABLE word_counts AS

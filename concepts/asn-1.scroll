@@ -9,6 +9,7 @@ lab International Telecommunication Union && International Electrotechnical Comm
 fileType text
 codeMirror asn-1
 country United Kingdom
+antlr https://github.com/antlr/grammars-v4/tree/master/asn/asn
 
 example
  FooProtocol DEFINITIONS ::= BEGIN

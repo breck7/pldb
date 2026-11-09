@@ -8,7 +8,7 @@ tags pl
 website http://www.cs.princeton.edu/~bwk/btl.mirror/
 standsFor Aho, Weinberger, Kernighan
 lab Bell Labs
-interviews https://pldb.io/blog/brianKernighan.html
+interviews http://pldb.info/blog/brianKernighan.html
 leetSheets https://cheatsheets.zip/awk
 
 exercism https://exercism.org/tracks/awk
@@ -26,6 +26,7 @@ projectEuler AWK
   2022 14
 
 helloWorldCollection Aho%2C Weinberger%2C Kernighan
+antlr https://github.com/antlr/grammars-v4/tree/master/awk
  # Hello world in AWK
  
  BEGIN {

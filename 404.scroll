@@ -1,9 +1,9 @@
 buildHtml
-// editBaseUrl /edit.html?folderName=pldb.io&fileName=
-editBaseUrl https://github.com/breck7/pldb/blob/main/
-replace BASE_URL
+editBaseUrl https://github.com/Programming-Language-DataBase/pldb/blob/main/
+replace BASE_URL .
 title Page not found
 
+settings.scroll
 header.scroll
 
 theme gazette

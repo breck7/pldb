@@ -1,7 +1,7 @@
 authors Breck Yunits
  https://github.com/breck7 Breck Yunits
 date 5/19/2024
-openGraphImage https://pldb.io/blog/age.png
+openGraphImage http://pldb.info/blog/age.png
 title Am I too old to create a popular programming language?
 
 standardPostHeader.scroll
@@ -44,7 +44,7 @@ Download the data
 
 ohayoCode
  html.h1 Am I too old to create a popular programming language?
- web.get https://pldb.io/blog/age.tsv
+ web.get http://pldb.info/blog/age.tsv
   vega.histogram
    xColumn ageAtCreation
   columns.describe

@@ -1,4 +1,5 @@
 importOnly
+buildHtml
 testStrict
 
 tags All
@@ -8,6 +9,6 @@ measures.parsers
 replace BASE_URL ..
 evalNodeJs
  const path = require("path")
- const filePath = particle.root.filePath
+ const filePath = path.resolve(particle.root.filePath)
  const {Tables} = require(path.join(path.dirname(filePath), "..", "Computer.js"))
  Tables.getLanguageTemplate(filePath);

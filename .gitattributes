@@ -1,3 +1,6 @@
 *.pldb linguist-language=pldb
 *.parsers linguist-language=Scroll
-*.scroll linguist-language=Scroll
+*.scroll linguist-language=Scroll eol=lf
+*.sh text eol=lf
+
+pldb.json linguist-generated=true

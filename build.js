@@ -1,0 +1,465 @@
+#!/usr/bin/env node
+
+/**
+ * PLDB Build Script
+ *
+ * This script builds the entire PLDB site from scratch.
+ * It handles the correct build order and all dependencies.
+ *
+ * Usage: node build.js [--serve]
+ *   --serve: Start a local server after building
+ */
+
+const { execSync, spawn } = require('child_process')
+const path = require('path')
+const fs = require('fs')
+
+const ROOT = __dirname
+const SCROLL_CLI = path.join(ROOT, 'node_modules', 'scroll', 'scroll.js')
+
+// Build order matters: creators must be before lists
+const SUBFOLDERS = ['blog', 'books', 'concepts', 'creators', 'features', 'lists', 'pages']
+
+const NODE_ENV = { ...process.env, NODE_OPTIONS: '--max-old-space-size=8192' }
+
+function run(cmd, cwd = ROOT) {
+  console.log(`\n📂 [${path.basename(cwd)}] Running: ${cmd}`)
+  try {
+    execSync(cmd, { cwd, stdio: 'inherit', env: NODE_ENV })
+  } catch (err) {
+    console.error(`❌ Command failed: ${cmd}`)
+    throw err
+  }
+}
+
+function runQuiet(cmd, cwd = ROOT) {
+  console.log(`📂 [${path.basename(cwd)}] Running: ${cmd}`)
+  try {
+    execSync(cmd, { cwd, stdio: 'pipe', env: NODE_ENV })
+  } catch (err) {
+    console.error(`❌ Command failed: ${cmd}`)
+    throw err
+  }
+}
+
+function fetchTiobeTop10() {
+  return new Promise((resolve, reject) => {
+    const https = require('https')
+    const options = {
+      hostname: 'www.tiobe.com',
+      path: '/tiobe-index/',
+      method: 'GET',
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+      }
+    }
+    let data = ''
+    const req = https.request(options, res => {
+      if (res.statusCode < 200 || res.statusCode >= 300) {
+        res.resume() // drain the response so the socket is freed
+        reject(new Error(`TIOBE fetch returned HTTP ${res.statusCode}`))
+        return
+      }
+      res.on('data', chunk => { data += chunk })
+      res.on('error', reject)
+      res.on('end', () => {
+        // The td-top20 cell contains the language logo image; the language name
+        // is in the immediately following plain <td>.
+        const matches = [...data.matchAll(/<td class="td-top20">.*?<\/td><td>([^<]+)<\/td>/g)]
+        if (matches.length < 10) {
+          reject(new Error(`Expected at least 10 TIOBE languages, but found ${matches.length} — HTML structure may have changed`))
+        } else {
+          const top10 = matches.slice(0, 10).map(m => ({ name: m[1].trim() }))
+          resolve(top10)
+        }
+      })
+    })
+    req.on('error', reject)
+    req.setTimeout(10000, () => { req.destroy(new Error('TIOBE fetch timed out')) })
+    req.end()
+  })
+}
+
+// Maps TIOBE display names to PLDB concept IDs
+const TIOBE_TO_PLDB = {
+  'Python': 'python',
+  'C': 'c',
+  'C++': 'cpp',
+  'Java': 'java',
+  'C#': 'csharp',
+  'JavaScript': 'javascript',
+  'Visual Basic': 'visual-basic',
+  'SQL': 'sql',
+  'R': 'r',
+  'Delphi/Object Pascal': 'delphi',
+  'Go': 'go',
+  'Fortran': 'fortran',
+  'Rust': 'rust',
+  'Kotlin': 'kotlin',
+  'Swift': 'swift',
+  'PHP': 'php',
+  'MATLAB': 'matlab',
+  'TypeScript': 'typescript',
+  'Scratch': 'scratch',
+  'Assembly language': 'assembly'
+}
+
+function escapeHtml(value) {
+    return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;')
+}
+
+function writeTiobeLangsScroll(languages, fetchDate) {
+  const heading = `<p class="pldbHomepageLink"><a href="https://www.tiobe.com/tiobe-index/">Top TIOBE Languages</a> <span style="color:#828282;font-size:0.85em;">(Fetched ${fetchDate})</span></p>`
+  const items = languages.map(l => {
+    const id = TIOBE_TO_PLDB[l.name]
+    const safeName = escapeHtml(l.name)
+    return id ? `<a href="concepts/${id}.html">${safeName}</a>` : safeName
+  })
+  const list = items.join('&nbsp;·&nbsp;')
+  const content = `importOnly
+
+${heading}
+
+${list}
+`
+  fs.writeFileSync(path.join(ROOT, 'topTiobeLangs.scroll'), content)
+}
+
+async function build() {
+  const startTime = Date.now()
+
+  console.log('🔨 PLDB Build Script')
+  console.log('=' .repeat(50))
+
+  // Step 1: Build parsers file
+  console.log('\n📋 Step 1: Building parsers file...')
+  run('node cli.js buildParsersFile')
+
+  // Step 2: Patch scroll for Windows compatibility (if needed)
+  console.log('\n🔧 Step 2: Checking scroll Windows compatibility...')
+  patchScrollCliIfNeeded()
+
+  // Step 2b: Patch scroll copy button for non-HTTPS contexts
+  console.log('\n🔧 Step 2b: Patching scroll copy button for non-HTTPS contexts...')
+  patchScrollCliCopyButton()
+
+  // Step 2c: Patch scroll snippets to use root-relative links
+  console.log('\n🔧 Step 2c: Patching scroll snippets links to be root-relative...')
+  patchScrollCliSnippetLinks()
+
+  // Step 2.5: Fetch TIOBE top 10 and write topTiobeLangs.scroll
+  console.log('\n📋 Step 2.5: Fetching TIOBE top 10 languages...')
+  try {
+    const tiobeLanguages = await fetchTiobeTop10()
+    const fetchDate = new Date().toISOString().split('T')[0]
+    writeTiobeLangsScroll(tiobeLanguages, fetchDate)
+    console.log(`✅ TIOBE top 10: ${tiobeLanguages.map(l => l.name).join(', ')}`)
+  } catch (err) {
+    console.warn(`⚠️  Could not fetch TIOBE data (${err.message}), keeping existing topTiobeLangs.scroll`)
+  }
+
+  // Step 2.6: Fetch latest PL news and write latestNews.scroll + news.scroll
+  console.log('\n📋 Step 2.6: Fetching latest PL news...')
+  try {
+    const { fetchLatestNews, writeLatestNewsScroll } = require('./code/fetchLatestNews.js')
+    const newsArticles = await fetchLatestNews()
+    const fetchDate = new Date().toISOString().split('T')[0]
+    writeLatestNewsScroll(newsArticles, fetchDate)
+    console.log(`✅ News: ${newsArticles.length} articles indexed`)
+  } catch (err) {
+    console.warn(`⚠️  Could not fetch latest news (${err.message}), keeping existing latestNews.scroll`)
+  }
+
+  // Step 3: Build root folder (generates pldb.json, measures.json)
+  console.log('\n📋 Step 3: Building root folder...')
+  run(`node "${SCROLL_CLI}" build`)
+
+  // Step 4: Generate feature pages (requires measures.json from step 3)
+  console.log('\n📋 Step 4: Generating feature pages...')
+  const { Tables } = require('./Computer.js')
+  Tables.writeAllFeaturePages()
+  console.log('✅ Feature pages generated')
+
+  // Step 5: Build all subfolders
+  console.log('\n📋 Step 5: Building subfolders...')
+  for (const dir of SUBFOLDERS) {
+    const folderPath = path.join(ROOT, dir)
+    if (fs.existsSync(folderPath)) {
+      console.log(`\n  📁 Building ${dir}/...`)
+      try {
+        runQuiet(`node "${SCROLL_CLI}" build`, folderPath)
+        console.log(`  ✅ ${dir}/ built successfully`)
+      } catch (err) {
+        console.error(`  ❌ ${dir}/ build failed; refusing to publish an incomplete site`)
+        throw err
+      }
+    }
+  }
+
+  const elapsed = ((Date.now() - startTime) / 1000).toFixed(1)
+  console.log('\n' + '=' .repeat(50))
+  console.log(`✅ Build complete in ${elapsed}s`)
+}
+
+function patchScrollCliIfNeeded() {
+  // Check if we're on Windows and need to patch
+  if (process.platform !== 'win32') {
+    console.log('  Not on Windows, skipping patch')
+    return
+  }
+
+  const rootParsersPath = path.join(ROOT, 'node_modules', 'scroll', 'parsers', 'root.parsers')
+
+  if (!fs.existsSync(rootParsersPath)) {
+    console.log('  scroll root.parsers not found, skipping patch')
+    return
+  }
+
+  let content = fs.readFileSync(rootParsersPath, 'utf8')
+
+  if (content.includes('Utils.posix.dirname')) {
+    console.log('  Patching scroll for Windows path compatibility...')
+    content = content.replace(
+      /Utils\.posix\.dirname\(this\.filePath\)/g,
+      'require("path").dirname(this.filePath)'
+    )
+    content = content.replace(
+      /Utils\.posix\.basename\(this\.filePath\)/g,
+      'require("path").basename(this.filePath)'
+    )
+    fs.writeFileSync(rootParsersPath, content)
+    console.log('  ✅ scroll patched')
+
+    // Also patch nested copy if exists
+    const nestedPath = path.join(ROOT, 'node_modules', 'scroll', 'node_modules', 'scroll', 'parsers', 'root.parsers')
+    if (fs.existsSync(nestedPath)) {
+      let nestedContent = fs.readFileSync(nestedPath, 'utf8')
+      nestedContent = nestedContent.replace(
+        /Utils\.posix\.dirname\(this\.filePath\)/g,
+        'require("path").dirname(this.filePath)'
+      )
+      nestedContent = nestedContent.replace(
+        /Utils\.posix\.basename\(this\.filePath\)/g,
+        'require("path").basename(this.filePath)'
+      )
+      fs.writeFileSync(nestedPath, nestedContent)
+      console.log('  ✅ Nested scroll patched')
+    }
+  } else {
+    console.log('  scroll already patched or uses compatible paths')
+  }
+}
+
+function patchScrollCliCopyButton() {
+  const targets = [
+    path.join(ROOT, 'node_modules', 'scroll', 'external', '.constants.js'),
+    path.join(ROOT, 'node_modules', 'scroll', 'node_modules', 'scroll', 'external', '.constants.js')
+  ]
+
+  const old = (
+    'if (!navigator.clipboard) return\\n' +
+    '    const button = document.createElement("span")\\n' +
+    '    button.classList.add("scrollCopyButton")\\n' +
+    '    block.appendChild(button)\\n' +
+    '    button.addEventListener("click", async () => {\\n' +
+    '      await navigator.clipboard.writeText(block.innerText)\\n' +
+    '      button.classList.add("scrollCopiedButton")\\n'
+  )
+
+  const patched = (
+    'const button = document.createElement("span")\\n' +
+    '    button.classList.add("scrollCopyButton")\\n' +
+    '    block.appendChild(button)\\n' +
+    '    button.addEventListener("click", async () => {\\n' +
+    '      if (navigator.clipboard) {\\n' +
+    '        await navigator.clipboard.writeText(block.innerText)\\n' +
+    '      } else {\\n' +
+    '        const sel = window.getSelection()\\n' +
+    '        const range = document.createRange()\\n' +
+    '        range.selectNodeContents(block)\\n' +
+    '        sel.removeAllRanges()\\n' +
+    '        sel.addRange(range)\\n' +
+    '        document.execCommand("copy")\\n' +
+    '        sel.removeAllRanges()\\n' +
+    '      }\\n' +
+    '      button.classList.add("scrollCopiedButton")\\n'
+  )
+
+  for (const filePath of targets) {
+    if (!fs.existsSync(filePath)) continue
+    const content = fs.readFileSync(filePath, 'utf8')
+    if (content.includes(old)) {
+      fs.writeFileSync(filePath, content.replace(old, patched))
+      console.log(`  ✅ Patched copy button in ${path.relative(ROOT, filePath)}`)
+    } else if (content.includes(patched)) {
+      console.log(`  Already patched: ${path.relative(ROOT, filePath)}`)
+    } else {
+      console.log(`  ⚠️  Copy button pattern not found in ${path.relative(ROOT, filePath)} — scroll may have changed`)
+    }
+  }
+}
+
+function patchScrollCliSnippetLinks() {
+  const patchFile = (filePath, oldStr, patchedStr, label) => {
+    if (!fs.existsSync(filePath)) return
+    const content = fs.readFileSync(filePath, 'utf8')
+    if (content.includes(oldStr)) {
+      fs.writeFileSync(filePath, content.replace(oldStr, patchedStr))
+      console.log(`  ✅ Patched ${label} in ${path.relative(ROOT, filePath)}`)
+    } else if (content.includes(patchedStr)) {
+      console.log(`  Already patched ${label}: ${path.relative(ROOT, filePath)}`)
+    } else {
+      console.log(`  ⚠️  ${label} pattern not found in ${path.relative(ROOT, filePath)} — scroll may have changed`)
+    }
+  }
+
+  for (const base of [
+    path.join(ROOT, 'node_modules', 'scroll'),
+    path.join(ROOT, 'node_modules', 'scroll', 'node_modules', 'scroll')
+  ]) {
+    // Patch makeSnippet in snippets.parsers.
+    // Single atomic replacement: adds _fixRelativePaths and rewrites both code
+    // paths so all relative href/src in snippet HTML become root-relative paths
+    // (e.g. /blog/foo.html), fixing links and images when the page is served
+    // without a trailing slash. Requires a local server; does not work under file://
+    patchFile(
+      path.join(base, 'parsers', 'snippets.parsers'),
+      [
+        '    if (endSnippetIndex === -1) return scrollProgram.buildHtmlSnippet(buildSettings) + scrollProgram.editHtml',
+        '    const linkRelativeToCompileTarget = buildSettings.relativePath + scrollProgram.permalink',
+        '    const joinChar = "\\n"',
+        '    const html = scrollProgram',
+        '        .map((subparticle, index) => (index >= endSnippetIndex || subparticle.noSnippet ? "" : subparticle.buildHtmlSnippet ? subparticle.buildHtmlSnippet(buildSettings) : (subparticle.buildHtml ? subparticle.buildHtml(buildSettings) : "") ))',
+        '        .filter(i => i)',
+        '        .join(joinChar)',
+        '        .trim() +',
+        '      `<a class="scrollContinueReadingLink" href="${linkRelativeToCompileTarget}">Continue reading...</a>`',
+        '    return html',
+        '  }'
+      ].join('\n'),
+      [
+        '    const _absLink = scrollProgram.absoluteLink',
+        '    const _dir = (_absLink && _absLink.includes("://")) ? new URL(_absLink).pathname.replace(/[^/]+$/, "") : ""',
+        '    const _fixRelativePaths = html => _dir ? html.replace(/(href|src)="(?!\\/|[a-z][a-z0-9+.-]*:|#)([^"]+)"/g, (_, attr, val) => `${attr}="${_dir}${val}"`) : html',
+        '    if (endSnippetIndex === -1) return _fixRelativePaths(scrollProgram.buildHtmlSnippet(buildSettings) + scrollProgram.editHtml)',
+        '    const linkRelativeToCompileTarget = (_absLink && _absLink.includes("://")) ? new URL(_absLink).pathname : buildSettings.relativePath + scrollProgram.permalink',
+        '    const joinChar = "\\n"',
+        '    const html = scrollProgram',
+        '        .map((subparticle, index) => (index >= endSnippetIndex || subparticle.noSnippet ? "" : subparticle.buildHtmlSnippet ? subparticle.buildHtmlSnippet(buildSettings) : (subparticle.buildHtml ? subparticle.buildHtml(buildSettings) : "") ))',
+        '        .filter(i => i)',
+        '        .join(joinChar)',
+        '        .trim() +',
+        '      `<a class="scrollContinueReadingLink" href="${linkRelativeToCompileTarget}">Continue reading...</a>`',
+        '    return _fixRelativePaths(html)',
+        '  }'
+      ].join('\n'),
+      'makeSnippet (atomic root-relative links + _fixRelativePaths)'
+    )
+
+    // Patch printTitle to use root-relative permalink
+    patchFile(
+      path.join(base, 'parsers', 'title.parsers'),
+      `   const { permalink } = this.root`,
+      [
+        `   const _absLink = this.root.absoluteLink`,
+        `   const permalink = (_absLink && _absLink.includes("://")) ? new URL(_absLink).pathname : this.root.permalink`
+      ].join('\n'),
+      'printTitle root-relative link'
+    )
+  }
+}
+
+function writeMaintenancePage() {
+  const maintenanceHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLDB - Building...</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .container { text-align: center; padding: 2rem; }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    p { font-size: 1.2rem; color: #666; }
+    .spinner {
+      margin: 2rem auto;
+      width: 40px;
+      height: 40px;
+      border: 4px solid #ddd;
+      border-top-color: #333;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+  <meta http-equiv="refresh" content="10">
+</head>
+<body>
+  <div class="container">
+    <h1>PLDB</h1>
+    <div class="spinner"></div>
+    <p>Site is rebuilding. This page will refresh automatically.</p>
+  </div>
+</body>
+</html>`
+  fs.writeFileSync(path.join(ROOT, 'index.html'), maintenanceHtml)
+  console.log('  Wrote maintenance page to index.html')
+}
+
+function startBackgroundServer() {
+  console.log('  Starting background server on http://localhost:3000 ...')
+  const serverProcess = spawn('npx', ['serve', '.'], {
+    cwd: ROOT,
+    stdio: 'ignore',
+    shell: true
+  })
+  return serverProcess
+}
+
+// Main
+const args = process.argv.slice(2)
+const shouldServe = args.includes('--serve') || args.includes('-s')
+
+let serverProcess = null
+
+if (shouldServe) {
+  console.log('\n🌐 Setting up maintenance page before build...')
+  writeMaintenancePage()
+  serverProcess = startBackgroundServer()
+}
+
+build()
+  .then(() => {
+    if (shouldServe) {
+      console.log('\n🌐 Server is running at http://localhost:3000')
+      console.log('   Build complete - server is now serving the real site')
+      console.log('   Press Ctrl+C to stop\n')
+      process.on('SIGINT', () => {
+        console.log('\n🛑 Shutting down server...')
+        if (serverProcess) serverProcess.kill()
+        process.exit(0)
+      })
+    } else {
+      console.log('\n💡 To start a local server, run: npm run serve')
+      console.log('   Or: node build.js --serve')
+    }
+  })
+  .catch(err => {
+    console.error('\n❌ Build failed:', err.message)
+    if (serverProcess) serverProcess.kill()
+    process.exit(1)
+  })

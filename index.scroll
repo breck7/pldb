@@ -10,10 +10,11 @@ rootHeader.scroll
 
 searchForm.scroll
 topLangs.scroll
+topTiobeLangs.scroll
 
-br 2
+br 1
 
-New Posts
+Recent Posts
  link ./blog/index.html
  class pldbHomepageLink
 posts blog/frontpage
@@ -21,6 +22,10 @@ posts blog/frontpage
   compose link <a class="newPostLink" href="{titleLink}">{title}</a>
    printColumn link
     join <br>
+
+br 1
+
+latestNews.scroll
 
 </center>
 

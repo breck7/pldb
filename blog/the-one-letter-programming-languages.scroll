@@ -75,7 +75,7 @@ comment
 
 ohayoCode
  html.h1 The Single Letter Programming Languages
- web.get https://pldb.io/pldb.csv
+ web.get http://pldb.info/pldb.csv
   tables.basic
    columns.keep title id aka appeared type rank
     filter.where aka !=

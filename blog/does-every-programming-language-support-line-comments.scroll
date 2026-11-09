@@ -65,7 +65,7 @@ observable https://observablehq.com/@breck7/line-comments-in-programming-languag
 
 ohayoCode
  html.h1 Line comments
- web.get https://pldb.io/languages.csv
+ web.get http://pldb.info/languages.csv
   filter.where rank < 300
    columns.keep appeared title rank features.hasLineComments lineCommentToken
     columns.rename features.hasLineComments hasLineComments

@@ -1,5 +1,6 @@
 replaceNodejs
- const {Tables} = require("../Computer.js")
+ const path = require("path")
+ const {Tables} = require(path.join(process.cwd(), "..", "Computer.js"))
  module.exports = Tables.creatorsTable
 tags All
 title List of people who created a programming language
@@ -12,7 +13,7 @@ container
 Here is the list of COUNT people who created a language(s) (or other significant programming project) in PLDB.
 
 Help us out by adding any missing information.
- https://github.com/breck7/pldb/blob/main/creators/creators.scroll adding any missing information
+ https://github.com/Programming-Language-DataBase/pldb/blob/main/creators/creators.scroll adding any missing information
 
 Download as JSON | TSV | CSV
  link ../creators/creators.json JSON

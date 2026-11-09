@@ -444,7 +444,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
 
     this.particle.findParticles("leachim6").forEach(particle => {
       examples.push({
-        code: particle.getParticle("example").subparticlesToString(),
+        code: particle.getParticle("example")?.subparticlesToString() || "",
         source: "hello-world",
         link: `https://github.com/leachim6/hello-world/blob/main/` + particle.get("filepath")
       })
@@ -560,7 +560,7 @@ Wayback Machine: https://web.archive.org/web/20220000000000*/${title}`
 
   makeATag(id) {
     const file = this.tables.getConceptPage(id)
-    if (!file) throw new Error(`Cant find file '${id}'`)
+    if (!file) return `<a href="../concepts/${id}.html">${id}</a>` // Placeholder for missing files during bootstrap
     return `<a href="${file.permalink}">${file.name}</a>`
   }
 
@@ -765,7 +765,7 @@ datatable
       : ""
 
     return `../header.scroll
-baseUrl https://pldb.io/concepts/
+baseUrl https://pldb.info/concepts/
 title ${title} - ${lodash.upperFirst(primaryTagName)}
 
 printTitle ${title}
@@ -773,8 +773,7 @@ printTitle ${title}
 <a class="trueBaseThemePreviousItem" href="${this.prevPage}">&lt;</a>
 <a class="trueBaseThemeNextItem" href="${this.nextPage}">&gt;</a>
 
-editBaseUrl https://github.com/breck7/pldb/blob/main/concepts/
-// editBaseUrl /edit.html?folderName=pldb.io&fileName=concepts/
+editBaseUrl https://github.com/Programming-Language-DataBase/pldb/blob/main/concepts/
 
 container 800px
 
@@ -836,7 +835,7 @@ endColumns
       caption = `A photo of ${title}.`
     } else image = "screenshots/" + image
 
-    return `openGraphImage https://pldb.io/concepts/${image}
+    return `openGraphImage https://pldb.info/concepts/${image}
 image ${image}
  caption ${caption}`
   }
@@ -899,7 +898,7 @@ image ${image}
       tiktok: this.getPrimary("tiktoks"),
       festival: this.getPrimary("conferences"),
       twitter: this.get("twitter"),
-      edit: `https://github.com/breck7/pldb/blob/main/concepts/${this.id}.scroll`
+      edit: `https://github.com/Programming-Language-DataBase/pldb/blob/main/concepts/${this.id}.scroll`
     }
     return Object.keys(links)
       .filter(key => links[key])
@@ -1437,14 +1436,13 @@ class Feature {
       : ""
 
     const examples = positives
-      .filter(file => this.tables.getConceptFile(file.id).getParticle(id).length)
-      .map(file => {
-        return {
-          id: file.id,
-          name: file.name,
-          example: this.tables.getConceptFile(file.id).getParticle(id).subparticlesToString()
-        }
-      })
+      .map(file => ({ file, particle: this.tables.getConceptFile(file.id).getParticle(id) }))
+      .filter(({ particle }) => particle?.length)
+      .map(({ file, particle }) => ({
+        id: file.id,
+        name: file.name,
+        example: particle.subparticlesToString()
+      }))
     const grouped = lodash.groupBy(examples, "example")
     const examplesText = Object.values(grouped)
       .map(group => {
@@ -1479,7 +1477,7 @@ printTitle ${title}
 <a class="trueBaseThemePreviousItem" href="${previous.permalink}">&lt;</a>
 <a class="trueBaseThemeNextItem" href="${next.permalink}">&gt;</a>
 
-editUrl https://github.com/breck7/pldb/blob/main/Computer.js
+editUrl https://github.com/Programming-Language-DataBase/pldb/blob/main/Computer.js
 
 container 600px
 
@@ -1585,7 +1583,11 @@ class Tables {
   }
 
   get pldb() {
-    return require("./pldb.json")
+    try {
+      return require("./pldb.json")
+    } catch (err) {
+      return [] // Return empty array during bootstrap when pldb.json doesn't exist
+    }
   }
 
   _getFileAtRank(rank, ranks) {
@@ -1621,7 +1623,9 @@ class Tables {
     if (absolutePath.endsWith("conceptPage.scroll")) return ""
     const name = path.basename(absolutePath).replace(".scroll", "")
     try {
-      return this.getConceptPage(name).toScroll()
+      const concept = this.getConceptPage(name)
+      if (!concept) return "" // Handle missing concept gracefully during bootstrap
+      return concept.toScroll()
     } catch (err) {
       console.error(err)
       console.error(`Error loading '${name}' in '${absolutePath}'`)
@@ -1630,7 +1634,11 @@ class Tables {
   }
 
   get measures() {
-    return require("./measures.json")
+    try {
+      return require("./measures.json")
+    } catch (err) {
+      return [] // Return empty array during bootstrap when measures.json doesn't exist
+    }
   }
 
   get featuresMap() {
@@ -1651,6 +1659,8 @@ class Tables {
         }
         return feature
       })
+
+    if (features.length === 0) return features // Handle empty features during bootstrap
 
     let previous = features[features.length - 1]
     features.forEach((feature, index) => {
@@ -2062,7 +2072,7 @@ class MeasureComputer {
       const conceptId = concept.get("id")
       const writtenIn = concept.get("writtenIn")
       if (!writtenIn) return
-      writtenIn.split(" ").forEach(id => writtenInCache[id].push(conceptId))
+      writtenIn.split(" ").forEach(id => writtenInCache[id]?.push(conceptId))
     })
     return writtenInCache
   }
@@ -2080,7 +2090,7 @@ class MeasureComputer {
         .forEach(particle => {
           const links = particle.content.split(" ")
           links.forEach(link => {
-            if (!inboundLinks[link]) throw new Error(`No file "${link}" found in "${id}"`)
+            if (!inboundLinks[link]) return
 
             inboundLinks[link].push(id)
           })

@@ -9,6 +9,7 @@ standsFor extended Backus-Naur form
 
 fileType text
 codeMirror ebnf
+antlr https://github.com/antlr/grammars-v4/tree/master/ebnf
 
 pygmentsHighlighter EBNF
  filename parsers.py

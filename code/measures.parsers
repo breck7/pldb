@@ -152,7 +152,7 @@ abstractComputedIntMeasureParser
   computeValue(concept, measureName, parsedProgram, concepts) {
     if (!parsedProgram.measureComputer) {
       const path = require("path")
-      const {MeasureComputer} = require(path.join(path.dirname(parsedProgram.file.filePath).replace("/concepts",""), "Computer.js"))
+      const {MeasureComputer} = require(path.join(path.dirname(parsedProgram.file.filePath).replace(/[\/\\]concepts$/, ""), "Computer.js"))
       parsedProgram.measureComputer = new MeasureComputer(concepts)
     }
     return parsedProgram.measureComputer.get(measureName, concept)
@@ -1499,7 +1499,7 @@ hasRegularExpressionsSyntaxSugarParser
  extends abstractFeatureParser
  description Does the language have special syntax for regular expressions?
  string title Regular Expression Syntax Sugar
- string reference https://pldb.io/concepts/regex.html
+ string reference http://pldb.info/concepts/regex.html
  string pseudoExample /pldb/
 
 hasRequiredMainFunctionParser
@@ -1541,7 +1541,7 @@ hasSemanticIndentationParser
  description Does the language use semantic indentation?
  string aka off-side rule
  string title Semantic Indentation
- string reference https://pldb.io/blog/which-programming-languages-use-indentation.html
+ string reference http://pldb.info/blog/which-programming-languages-use-indentation.html
  string pseudoExample line0 if true line1  print "Hello PLDB"
 
 hasSetsParser
@@ -1866,7 +1866,7 @@ screenshotParser
  description What is the filename to a screenshot of this visual language in the concepts/screenshots/ folder?
  extends abstractUrlMeasureParser
 photoParser
- description What is a URL to a screenshot of this real world notation in the form https://pldb.io/photos/[id].png?
+ description What is a URL to a screenshot of this real world notation in the form http://pldb.info/photos/[id].png?
  extends abstractUrlMeasureParser
 
 indeedJobsParser

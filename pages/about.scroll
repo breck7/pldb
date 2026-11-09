@@ -25,11 +25,10 @@ Want to get involved? Read more here.
 
 ## Open source
 All data and source code used to generate this site are on GitHub.
- https://github.com/breck7/pldb GitHub
+ https://github.com/Programming-Language-DataBase/pldb GitHub
 
 ## Web server
-PLDB is an entirely static site. PLDB.io is served via ScrollHub. You can clone the source to PLDB and build it locally and use PLDB entirely offline on your own machine.
- https://hub.scroll.pub/ ScrollHub
+PLDB is an entirely static site. PLDB.info is served through Nginx with HTTPS. You can clone the source to PLDB and build it locally and use PLDB entirely offline on your own machine.
 
 ## Acknowledgements
 This site is powered by information and software from so many people and organizations, a few of which are listed on the acknowledgements page.
@@ -38,13 +37,13 @@ This site is powered by information and software from so many people and organiz
 ## Cloc Stats
 Below are the cloc stats for the pldb repo as of BUILT_ON_DAY.
  BASE_URL/concepts/cloc.html cloc
- https://github.com/breck7/pldb pldb repo
+ https://github.com/Programming-Language-DataBase/pldb pldb repo
 
 ../code/scrollExtensions.parsers
 bash cd ..; cloc --quiet --vcs git . --read-lang-def=code/clocLangs.txt
 
 # Mirrors
-The URL for the official PLDB site is https://pldb.io. DNS will take that domain name and send your browser an IPv4 address. Your browser will send a request to that address which will reach a DigitalOcean server running ScrollHub. That server will send you the HTML, CSS, Javascript, PNGs, SVGs and JSON that make up the built website.
+The URL for the official PLDB site is https://pldb.info. DNS will take that domain name and send your browser an IPv4 address. Your browser will send a request to that address which will reach a DigitalOcean server running Nginx. That server will send you the HTML, CSS, Javascript, PNGs, SVGs and JSON that make up the built website.
  ../concepts/url.html URL
  ../concepts/dns.html DNS
  ../concepts/ipv4.html IPv4
@@ -55,12 +54,12 @@ The URL for the official PLDB site is https://pldb.io. DNS will take that domain
  ../concepts/svg.html SVG
  ../concepts/json.html JSON
 
-In case there's a problem with ScrollHub, you should be able to access the exact same site locally by downloading the source.
+In case there's a problem with the server, you should be able to access the exact same site locally by downloading the source.
 
-If ScrollHub AND GitHub were to go down at the same time...well that's why it's good to regularly download the entire source code of the site to your own machine! You can do that with:
+If the server AND GitHub were to go down at the same time...well that's why it's good to regularly download the entire source code of the site to your own machine! You can do that with:
 
 bashCode
- git clone https://github.com/breck7/pldb.git
+ git clone https://github.com/Programming-Language-DataBase/pldb.git
  # Then to keep it updated:
  cd pldb
  git pull

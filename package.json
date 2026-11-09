@@ -4,7 +4,10 @@
   "description": "PLDB: a Programming Language Database",
   "main": "./pldb.json",
   "scripts": {
-    "build": "./cli.js buildParsersFile && scroll build concepts.scroll && scroll build code/generateFeaturePages.scroll && scroll list | scroll build",
+    "clean": "node clean.js",
+    "build": "node build.js",
+    "build:serve": "node build.js --serve",
+    "serve": "npx serve .",
     "test": "scroll list | scroll test",
     "format": "scroll list | scroll format",
     "open": "open index.html",
@@ -26,12 +29,12 @@
     "pldb": "./cli.js"
   },
   "bugs": {
-    "url": "https://issues.pldb.io",
-    "email": "bugs@pldb.io"
+    "url": "https://github.com/Programming-Language-DataBase/pldb/issues",
+    "email": "bugs@pldb.info"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/breck7/pldb.git"
+    "url": "git+https://github.com/Programming-Language-DataBase/pldb.git"
   },
   "keywords": [
     "programming languages"
@@ -40,7 +43,7 @@
   "files": [
     "pldb.json"
   ],
-  "homepage": "https://pldb.io",
+  "homepage": "https://pldb.info",
   "devDependencies": {
     "dayjs": "^1.11.7",
     "lodash": "^4.17.21",
@@ -53,5 +56,8 @@
   "dependencies": {
     "ky": "^1.4.0",
     "prettier": "^3.4.1"
+  },
+  "engines": {
+    "node": ">=24.0.0"
   }
 }

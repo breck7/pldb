@@ -10,6 +10,7 @@ lab International Federation for Information Processing
 
 fileType text
 docs http://www.algol60.org/4documentation.htm
+antlr https://github.com/antlr/grammars-v4/tree/master/algol60
 
 example
  procedure Absmax(a) Size:(n, m) Result:(y) Subscripts:(i, k);

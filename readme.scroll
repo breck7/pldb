@@ -36,41 +36,78 @@ printTitle
 wideColumns 1
 
 #### View this readme as HTML
- https://pldb.io/readme.html
+ https://pldb.info/readme.html
 
 code/ciBadges.scroll
 
 PLDB is a public domain ScrollSet and website containing over 135,000 facts about over 5,000 programming languages.
 
-This repo contains the entire ScrollSet, code, and website for https://pldb.io.
+This repo contains the entire ScrollSet, code, and website for https://pldb.info.
 
 ## To download the data
-The entire ScrollSet is ready to analyze in popular formats. Full documentation is here: https://pldb.io/csv.html
-- As CSV: https://pldb.io/pldb.csv
-- As TSV: https://pldb.io/pldb.tsv
-- As JSON: https://pldb.io/pldb.json
+The entire ScrollSet is ready to analyze in popular formats. Full documentation is here: https://pldb.info/csv.html
+- As CSV: https://pldb.info/pldb.csv
+- As TSV: https://pldb.info/pldb.tsv
+- As JSON: https://pldb.info/pldb.json
 
 ## To build the site locally
 code
- git clone https://github.com/breck7/pldb
+ git clone https://github.com/Programming-Language-DataBase/pldb.git
  cd pldb
- # Required to run this during first install only.
- npm i -g cloc
- # Required to run this on fresh checkout and when upgrading from an old checkout or periodically when there are new releases
- npm install .
- # (Optional) Run tests
- npm run test
- npm run build
- # After you make changes and before you commit make sure to run:
- npm run format
+ npm install
+ npm run build:serve
+
+## Making changes and deploying
+
+### 1. Make your changes locally
+Edit the ScrollSet files in `concepts/`, update parsers in `code/measures.parsers`, or modify any other source files.
+
+### 2. Push to main
+When you push to the `main` branch, a GitHub Actions workflow automatically:
+- Installs dependencies and builds the site
+- Packages the built site into `site.tar.gz`
+- Publishes it as a GitHub Release tagged `latest`
+
+The build takes about 2 minutes on GitHub's runners.
+
+### 3. Deploy to server
+The `setup-pldb.sh` script deploys the pre-built site to a fresh Ubuntu server (tested on Ubuntu 24.04). It downloads the build artifact from GitHub Releases, so no building happens on the server.
+
+Requirements:
+- A fresh Ubuntu server with SSH access as root
+- SSH key authentication configured
+- A successful GitHub Actions build (the `latest` release must exist)
+
+code
+ ./setup-pldb.sh <ip-address> <repo-url>
+ # Example:
+ ./setup-pldb.sh 159.65.99.188 https://github.com/kaby76/pldb.git
+
+The script will:
+- Install Node.js 20.x
+- Show a maintenance page while deploying
+- Download the pre-built site from GitHub Releases
+- Configure a systemd service (`pldb`) to serve the site on port 80
+- Start the server automatically on boot
+
+### Managing the server
+After deployment, manage the server with:
+code
+ systemctl status pldb    # Check status
+ systemctl restart pldb   # Restart server
+ systemctl stop pldb      # Stop server
+ journalctl -u pldb -f    # View logs
+
+### Redeploying after changes
+After pushing new changes to `main`, wait for the GitHub Actions build to complete, then re-run `setup-pldb.sh` to deploy the updated site.
 
 ## To explore this repo
 The most important folder is `concepts`, which contains the ScrollSet (a file for each concept). The file `code/measures.parsers` contains the Parsers (schema) for the ScrollSet.
-You can see the `cloc` language stats on this repo at https://pldb.io/pages/about.html.
+You can see the `cloc` language stats on this repo at https://pldb.info/pages/about.html.
 
 citation.scroll
 
-All sources for PLDB can be found here: https://pldb.io/pages/acknowledgements.html
+All sources for PLDB can be found here: https://pldb.info/pages/acknowledgements.html
 
 endColumns
 

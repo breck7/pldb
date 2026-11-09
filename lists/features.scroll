@@ -1,5 +1,6 @@
 replaceNodejs
- const {Tables} = require("../Computer.js")
+ const path = require("path")
+ const {Tables} = require(path.join(process.cwd(), "..", "Computer.js"))
  module.exports = Tables.topFeaturesImports
 tags All
 title Features
