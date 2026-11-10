@@ -1,15 +1,17 @@
+../code/conceptPage.scroll
+
 id slowlang
 name SlowLang
 appeared 2025
 creators Sebin Mathew, Abin Zachariah Abraham
 tags esolang
-aka TortoiseLang
 website https://sebin-gg.github.io/slowlang/
-githubRepo https://github.com/sebin-gg/slowlang
+aka TortoiseLang
+description A Python-like esoteric language distributed with a Tkinter IDE and browser demo that enforces slow typing. Typing above 30 WPM triggers an angry ASCII turtle and haiku-formatted errors, and programs must call the please() builtin within every politeness window or the run is refused.
+
 docs https://esolangs.org/wiki/SlowLang
 fileType text
 country India
-description A Python-like esoteric language distributed with a Tkinter IDE and browser demo that enforces slow typing. Typing above 30 WPM triggers an angry ASCII turtle and haiku-formatted errors, and programs must call the please() builtin within every politeness window or the run is refused.
 
 helloWorldCollection SlowLang
  Hello World in SlowLang
@@ -17,3 +19,5 @@ helloWorldCollection SlowLang
  please()
  print("Hello World")
  please()
+
+githubRepo https://github.com/sebin-gg/slowlang
