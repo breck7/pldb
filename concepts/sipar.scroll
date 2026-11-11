@@ -1,0 +1,31 @@
+../code/conceptPage.scroll
+
+id sipar
+name Sipar
+appeared 2026
+creators osimmoapies
+tags pl
+website https://osimmoapies.github.io/sipar/
+latestVersion 0.1.0
+description Sipar is a small programming language for AI agents with prompt-injection defence built into the runtime. Every value that came from a model, a web page, a file or a shell command carries a label, and the runtime does not let labelled data reach a shell command, a file write or a URL until the program has checked it.
+writtenIn python
+fileExtensions sipar
+isOpenSource true
+docs https://github.com/osimmoapies/sipar/blob/main/SPEC.md
+
+example
+ allow ai
+ allow fs.read ["."]
+ allow shell ["curl", "ls"]
+ 
+ /// Read one email file.
+ fn read_email(name: Str) -> Str uses fs.read { fs.read(name) }
+ /// Run a listed shell command.
+ fn run_cmd(cmd: Str) -> Str uses shell { shell.run(cmd) }
+ 
+ agent fn assistant(task: Str) -> Str uses fs.read, shell {
+     tools [read_email, run_cmd]
+     "You are an email assistant. {task}"
+ }
+
+githubRepo https://github.com/osimmoapies/sipar
