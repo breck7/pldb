@@ -4,11 +4,11 @@ id sampi
 name Sampi
 appeared 2026
 creators legospider15
-website codewithsampi.org
+website https://codewithsampi.org
 tags pl
 latestVersion 0.9.0
 fileExtensions sampi
-writtenIn python cpp
+writtenIn python
 
 isOpenSource true
 docs codewithsampi.org/learn.html
@@ -25,7 +25,7 @@ example
  else if x > 0:
    say("x is positive!")
  else:
-   say("x is negative!)
+   say("x is negative!")
  end
  
  repeat 5:
@@ -40,7 +40,7 @@ example
   return a + b
  end
  
- say(add(2, 3)
+ say(add(2, 3))
 
 githubRepo https://github.com/legospider15/Sampi
  description Sampi is a dynamically typed language with a small set of keywords, designed to be easy to learn.
@@ -58,7 +58,7 @@ hasFunctions true
 hasClasses true
 hasConditionals true
 hasWhileLoops yes
- through until not
+ by using until not
 hasExceptions partial
 hasStaticTyping false
 hasZeroBasedIndexing false
