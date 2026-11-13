@@ -1,0 +1,22 @@
+../code/conceptPage.scroll
+
+id leksika
+name Leksika
+appeared 2026
+creators zmlsaggg
+tags pl
+website https://leksika.gleeze.com/
+fileExtensions lek
+description Leksika is an open-source, Russian-first programming language with Cyrillic syntax, case-based grammar, and Russian morphology-aware parsing. It provides its own compiler and runtime (Leksus), command-line tooling, and a browser-based playground. An experimental native C11 bootstrap and compiler/VM for a limited language subset are in development; the primary runtime currently remains Python-based.
+gitRepo https://github.com/zmlsaggg/Leksika
+
+example
+ заметка Пример программы на Лексике
+ пусть сумма равно пяти.
+ положить десять в сумму.
+ прибавить два к сумме.
+ если сумма больше десяти то
+  сказать речь Сумма больше десяти: (сумма) конец речи.
+ иначе
+  сказать речь Сумма: (сумма) конец речи.
+ конец если.
