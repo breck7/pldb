@@ -1,0 +1,34 @@
+../code/conceptPage.scroll
+
+id gala
+name GALA
+appeared 2026
+creators Maksim Martianov
+tags pl
+website https://gala.fyi/
+fileExtensions gala
+description GALA (Go Alternative LAnguage) is a statically typed, functional-first language that transpiles to Go. It adds sealed types with exhaustive pattern matching, Option/Either/Try in place of nil and error pairs, immutability by default and compile-time data-race checks, and it calls any Go module directly.
+writtenIn go
+compilesTo go
+influencedBy scala go
+githubRepo https://github.com/martianoff/gala
+
+example
+ package main
+ 
+ import . "martianoff/gala/collection_immutable"
+ 
+ sealed type Shape {
+     case Circle(Radius float64)
+     case Rectangle(Width float64, Height float64)
+ }
+ 
+ func area(s Shape) float64 = s match {
+     case Circle(r)       => 3.14159 * r * r
+     case Rectangle(w, h) => w * h
+ }
+ 
+ func main() {
+     val shapes = ListOf(Circle(1.0), Rectangle(2.0, 3.0))
+     shapes.ForEach((s) => Println(f"area: ${area(s)}%.2f"))
+ }
