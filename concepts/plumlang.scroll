@@ -1,0 +1,88 @@
+../code/conceptPage.scroll
+
+id plumlang
+name Plumlang
+appeared 2026
+creators Ayushman Bhattacharya and Subhro Koley and Rohan Hudati
+tags pl
+website https://plum.elixpo.com
+latestVersion 2.1.4
+webRepl https://plum.elixpo.com/playground/
+description Plumlang is a small, statically typed programming language with a plain-English syntax. Programs compile to typed bytecode for a virtual machine written in C11, with reference counting and copy-on-write values instead of a garbage collector, and the standard library includes JSON, files, sockets, TLS and an HTTP server.
+lab https://github.com/plumlang
+fileExtensions plum
+writtenIn c
+docs https://plum.elixpo.com/docs/
+packageRepository https://plum.elixpo.com/packages/
+githubRepo https://github.com/plumlang/plumlang
+isOpenSource true
+fileType text
+
+example
+ seed math
+
+ tree Point {
+     x: float
+     y: float
+
+     branch length() -> float {
+         return math.sqrt(self.x * self.x + self.y * self.y)
+     }
+ }
+
+ plant p = Point(x: 3.0, y: 4.0)
+ drop("Length: {p.length()}")
+
+hasComments true
+ # A comment runs to the end of the line.
+hasLineComments true
+ # A comment runs to the end of the line.
+lineCommentToken #
+hasMultiLineComments false
+hasSemanticIndentation false
+hasPrintDebugging true
+ drop("Hello, world!")
+printToken drop
+hasStrings true
+ "Hello, world!"
+hasImports true
+ seed math
+hasIntegers true
+ plant age: int = 3
+hasFloats true
+ plant ratio = 0.75
+hasBooleans true
+ plant ready = good
+booleanTokens good bad
+hasStaticTyping true
+hasTypeInference true
+ plant name = "Plum"
+hasFunctions true
+ branch square(x: int) -> int {
+     return x * x
+ }
+hasClasses true
+ tree Point {
+     x: float
+     y: float
+ }
+hasNull true
+ plant maybe: int? = none
+hasForLoops true
+ for i in 0..3 {
+     drop(i)
+ }
+hasConditionals true
+ if i == 1 {
+     continue
+ }
+hasLists true
+ plant words = ["a", "b"]
+hasMaps true
+ plant counts = {"a": 1}
+hasExceptions true
+ try {
+     throw ValueError("bad")
+ } catch e: ValueError {
+     drop(e.message)
+ }
