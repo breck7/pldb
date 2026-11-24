@@ -6,7 +6,7 @@ appeared 2026
 creators Ayushman Bhattacharya and Subhro Koley and Rohan Hudati
 tags pl
 website https://plum.elixpo.com
-latestVersion 2.1.4
+latestVersion 2.2.0
 webRepl https://plum.elixpo.com/playground/
 description Plumlang is a small, statically typed programming language with a plain-English syntax. Programs compile to typed bytecode for a virtual machine written in C11, with reference counting and copy-on-write values instead of a garbage collector, and the standard library includes JSON, files, sockets, TLS and an HTTP server.
 lab https://github.com/plumlang
@@ -38,7 +38,16 @@ hasComments true
 hasLineComments true
  # A comment runs to the end of the line.
 lineCommentToken #
-hasMultiLineComments false
+hasMultiLineComments true
+ #[ A block comment
+    #[ nests ]#
+    and spans lines. ]#
+multiLineCommentTokens #[ ]#
+hasDocComments true
+ ## Doc comments document what follows them.
+ branch square(x: int) -> int {
+     return x * x
+ }
 hasSemanticIndentation false
 hasPrintDebugging true
  drop("Hello, world!")
@@ -85,4 +94,33 @@ hasExceptions true
      throw ValueError("bad")
  } catch e: ValueError {
      drop(e.message)
+ }
+hasHexadecimals true
+ plant h = 0xff
+hasBinaryNumbers true
+ plant b = 0b1010
+hasOctals true
+ plant o = 0o17
+hasScientificNotation true
+ plant e = 1.5e3
+hasEnums true
+ kind Shape {
+     Circle(radius: float)
+     Square(side: float)
+ }
+hasPatternMatching true
+ branch area(s: Shape) -> float => match s {
+     Circle(r) => 3.14 * r * r
+     Square(a) => a * a
+ }
+hasInterfaces true
+ trait Named {
+     branch name() -> str
+ }
+hasInheritance true
+ tree Animal : Named {
+     branch name() -> str => "animal"
+ }
+ tree Dog : Animal {
+     branch name() -> str => "dog"
  }
